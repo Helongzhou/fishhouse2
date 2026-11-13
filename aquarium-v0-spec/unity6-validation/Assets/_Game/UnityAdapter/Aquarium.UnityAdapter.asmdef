@@ -1,6 +1,6 @@
 {
   "name": "Aquarium.UnityAdapter",
   "rootNamespace": "Aquarium.UnityAdapter",
-  "references": ["Aquarium.Core"],
+  "references": ["Aquarium.Core", "glTFast"],
   "autoReferenced": true
 }

@@ -153,13 +153,11 @@ def main():
     model_names = sorted(path.name for path in MODELS.iterdir() if path.suffix == ".glb")
     if model_names != sorted(WIRED):
         fail("Unity Models contains " + str(model_names))
-    if list((ROOT / "unity6-validation/Assets/_Game/TechProxies").glob("*")):
-        fail("unity6-validation received technical proxies")
     manifest = (ROOT / "unity/Packages/manifest.json").read_text(encoding="utf-8")
     if '"com.unity.cloud.gltfast": "6.10.1"' not in manifest:
         fail("Unity 2022 manifest is not pinned to glTFast 6.10.1")
-    if "gltfast" in (ROOT / "unity6-validation/Packages/manifest.json").read_text(encoding="utf-8"):
-        fail("Unity 6 manifest was changed")
+    if "6.16.1" in manifest:
+        fail("Unity 2022 manifest received the Unity 6 glTFast pin")
     build = (ROOT / "unity/ProjectSettings/EditorBuildSettings.asset").read_text(encoding="utf-8")
     if build.count("path:") != 1 or "Assets/_Game/Scenes/Aquarium.unity" not in build:
         fail("player build scene list changed")
@@ -176,7 +174,7 @@ def main():
     if "public bool EnableTechnicalProxyVisuals;" not in entry:
         fail("game entry has no default-off proxy switch")
     print("PASS technical proxy files: 10 GLB headers, triangles, skin samples and rotation-only clips")
-    print("PASS Unity 2022 wiring: 3 L0 copies, glTFast 6.10.1 pin, player scene unchanged, Unity 6 untouched")
+    print("PASS Unity 2022 wiring: 3 L0 copies, glTFast 6.10.1 pin, player scene unchanged")
     print("NOT RUN Unity import, compile, Play, alpha clip, skinning or screenshots")
 
 if __name__ == "__main__":

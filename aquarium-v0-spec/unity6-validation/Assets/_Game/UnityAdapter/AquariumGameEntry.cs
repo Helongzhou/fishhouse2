@@ -40,9 +40,10 @@ namespace Aquarium.UnityAdapter
         private GUIStyle productButtonStyle;
         private string loggedUiLayout;
         public bool EnableDevelopmentQaLocales;
+        public bool EnableTechnicalProxyVisuals;
         private const float DesignWidth = 1280f, DesignPanelWidth = 288f;
         private const string LanguageKey = "aquarium.language";
-        private string SavePath { get { return Path.Combine(Application.persistentDataPath, "aquarium-session-v1.json"); } }
+        private string SavePath { get { return SessionSaveLocation.Resolve(); } }
         private static string Tx() { return Guid.NewGuid().ToString("N"); }
         private string T(string key, params object[] args) { return text.Text(key, args); }
         private void Awake()
@@ -111,6 +112,7 @@ namespace Aquarium.UnityAdapter
                 go.transform.localRotation=Quaternion.Euler(0,(float)p.YawDegrees,0);
                 var handle=go.AddComponent<AquariumPlacementHandle>();handle.PlacementId=p.Id;handle.BatchId=p.PurchaseBatchId;
                 if(p.Id==selectedPlacement)go.GetComponent<Renderer>().sharedMaterial=selectedMaterial;
+                TechProxyVisuals.ConsiderPlant(go.transform, item.ItemId, EnableTechnicalProxyVisuals);
             }
             if(state.Filled)
             {
@@ -214,6 +216,7 @@ namespace Aquarium.UnityAdapter
                 Vector3 displayPosition=U(agent.State.Position);if(agent.Profile.Kind==AgentKind.Shrimp)displayPosition.y=Mathf.Max(displayPosition.y,(float)session.Gameplay.GetSubstrateHeight(agent.State.Position.X,agent.State.Position.Z)+.003f);
                 body.localPosition=displayPosition;Vector3 velocity=U(agent.State.Velocity);
                 if(velocity.sqrMagnitude>.000001f)body.localRotation=Quaternion.Slerp(body.localRotation,Quaternion.LookRotation(velocity),Time.unscaledDeltaTime*7);
+                TechProxyVisuals.ConsiderFish(body, agent.State.SpeciesId, EnableTechnicalProxyVisuals);
             }
             var remove=new List<string>();foreach(var pair in animals)if(!live.Contains(pair.Key)){Destroy(pair.Value.gameObject);remove.Add(pair.Key);}foreach(string id in remove)animals.Remove(id);
         }
@@ -311,7 +314,9 @@ namespace Aquarium.UnityAdapter
             try
             {
             GUILayout.BeginArea(new Rect(12,12,panelWidth,Screen.height-24),GUI.skin.box);
-            UiLabel(T("game.title"));UiLabel(T("game.prototype"));UiLabel(T("ui.wallet",session.Gameplay.WalletCoin));
+            UiLabel(T("game.title"));UiLabel(T("game.prototype"));
+            if(EnableTechnicalProxyVisuals)UiLabel("Technical proxy: generic tetra and two plant stand-ins. Not species art.");
+            UiLabel(T("ui.wallet",session.Gameplay.WalletCoin));
             GUILayout.BeginHorizontal();if(GUILayout.Button(T(session.Paused?"ui.resume":"ui.pause")))session.SetPaused(!session.Paused);
             foreach(int rate in new[]{1,2,4})if(GUILayout.Button(T("game.rate",rate)))session.SetEcologyRate(rate);GUILayout.EndHorizontal();
             GUILayout.BeginHorizontal();if(GUILayout.Button(T("ui.save")))Save();if(GUILayout.Button(T("ui.load")))Load();if(GUILayout.Button(T("ui.language"))){text.CycleLanguage();PlayerPrefs.SetString(LanguageKey,text.CaptureLanguagePreference());PlayerPrefs.Save();}GUILayout.EndHorizontal();
