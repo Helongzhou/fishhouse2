@@ -1,0 +1,2851 @@
+{
+  "timezone": "Asia/Shanghai (UTC+8)",
+  "loader": "independent GLB re-parse + pygltflib; not a copy of v0 self_check.json conclusions",
+  "unity_urp": "NOT_RUN",
+  "v0_first_batch_hashes": {
+    "checked": 70,
+    "mismatches": [],
+    "missing": [],
+    "unchanged": true
+  },
+  "v0_reinspect": {
+    "fh_v0_tetra_proxy_L0": {
+      "path": "/workspace/aquarium-art-v0/export/glb/fh_v0_tetra_proxy_L0.glb",
+      "file_name": "fh_v0_tetra_proxy_L0.glb",
+      "bytes": 834476,
+      "sha256": "533236e7d53c6741d488cb1570a628ec19daa8d624212437fe959e6214ecefd9",
+      "pygltflib": {
+        "ok": true,
+        "nodes": 10,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 2,
+        "accessors": 26,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "fh_v0_tetra_proxy_L0",
+        "pivot": "body_center",
+        "length_m": 0.038,
+        "animations": [
+          "swim_tail_loop",
+          "turn_left"
+        ],
+        "root_motion": false,
+        "species_claim": "none_technical_proxy_only"
+      },
+      "meshes": [
+        {
+          "name": "fh_v0_tetra_proxy_L0",
+          "verts": 304,
+          "tris": 534,
+          "aabb_min": [
+            -0.006965140346437693,
+            -0.00405494961887598,
+            -0.026599999517202377
+          ],
+          "aabb_max": [
+            0.006965140346437693,
+            0.010134062729775906,
+            0.021299999207258224
+          ],
+          "size_m": [
+            0.013930280692875385,
+            0.014189012348651886,
+            0.0478999987244606
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 2.9802322387695312e-08,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 534,
+      "materials": [
+        {
+          "name": "mat_fish",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "fish_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_leaf_fg",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "leaf_fg_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.21844482421875,
+            "frac_a255": 0.102935791015625,
+            "frac_a_lt_102": 0.4373779296875,
+            "unique_alpha": 241
+          }
+        },
+        {
+          "name": "mat_leaf_md",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "leaf_md_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.21844482421875,
+            "frac_a255": 0.06146240234375,
+            "frac_a_lt_102": 0.44232177734375,
+            "unique_alpha": 242
+          }
+        },
+        {
+          "name": "mat_wood",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "wood_bc",
+            "is_png": true,
+            "size": [
+              512,
+              256
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_stone",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "stone_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_sand",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "sand_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_glass",
+          "alphaMode": "BLEND",
+          "alphaCutoff": null,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "baseColor_tex": {
+            "name": "glass_bc",
+            "is_png": true,
+            "size": [
+              64,
+              64
+            ],
+            "alpha_min": 40,
+            "alpha_max": 40,
+            "frac_a0": 0.0,
+            "frac_a255": 0.0,
+            "frac_a_lt_102": 1.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_water",
+          "alphaMode": "BLEND",
+          "alphaCutoff": null,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "baseColor_tex": {
+            "name": "water_bc",
+            "is_png": true,
+            "size": [
+              64,
+              64
+            ],
+            "alpha_min": 38,
+            "alpha_max": 38,
+            "frac_a0": 0.0,
+            "frac_a255": 0.0,
+            "frac_a_lt_102": 1.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_rim",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": false,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ]
+        }
+      ],
+      "skins": [
+        {
+          "name": "fh_v0_tetra_proxy_L0_skin",
+          "joints": [
+            "fh_head",
+            "fh_spine_01",
+            "fh_spine_02",
+            "fh_spine_03",
+            "fh_tail_01",
+            "fh_tail_02",
+            "fh_pectoral_L",
+            "fh_pectoral_R"
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "swim_tail_loop",
+          "duration_s": 2.0,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "fh_head",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_spine_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_spine_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_spine_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_tail_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_tail_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_pectoral_L",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_pectoral_R",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          },
+          "vertex_motion": {
+            "max_m": 0.004527520763595588,
+            "mean_m": 0.00213932932418135,
+            "moved": true
+          }
+        },
+        {
+          "name": "turn_left",
+          "duration_s": 1.5,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "fh_head",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_spine_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_spine_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_spine_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_tail_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_tail_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_pectoral_L",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "fh_pectoral_R",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          },
+          "vertex_motion": {
+            "max_m": 0.012883751917134208,
+            "mean_m": 0.00408384454132666,
+            "moved": true
+          }
+        }
+      ],
+      "world_aabb_bind": {
+        "min": [
+          -0.006965140345633345,
+          -0.00405494961887598,
+          -0.026599999535153428
+        ],
+        "max": [
+          0.006965140345680737,
+          0.010134062729775906,
+          0.021299999311339014
+        ],
+        "size_m": [
+          0.013930280691314082,
+          0.014189012348651886,
+          0.047899998846492445
+        ],
+        "height_m": 0.014189012348651886
+      }
+    },
+    "pl_fg_v0_carpet_proxy": {
+      "path": "/workspace/aquarium-art-v0/export/glb/pl_fg_v0_carpet_proxy.glb",
+      "file_name": "pl_fg_v0_carpet_proxy.glb",
+      "bytes": 848212,
+      "sha256": "0fd250242bfc64d0d413b235f1a1d54581fd789355ecefd6c8d73836cd7600b7",
+      "pygltflib": {
+        "ok": true,
+        "nodes": 6,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 1,
+        "accessors": 13,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "pl_fg_v0_carpet_proxy",
+        "pivot": "base_on_substrate",
+        "animation": [
+          "sway_loop"
+        ],
+        "root_motion": false
+      },
+      "meshes": [
+        {
+          "name": "pl_fg_v0_carpet_proxy",
+          "verts": 648,
+          "tris": 720,
+          "aabb_min": [
+            -0.06776580959558487,
+            -0.00782730896025896,
+            -0.06829629093408585
+          ],
+          "aabb_max": [
+            0.06563632190227509,
+            0.0444086492061615,
+            0.07041527330875397
+          ],
+          "size_m": [
+            0.13340213149785995,
+            0.05223595816642046,
+            0.1387115642428398
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 1
+        }
+      ],
+      "total_tris": 720,
+      "materials": [
+        {
+          "name": "mat_fish",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "fish_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_leaf_fg",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "leaf_fg_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.21844482421875,
+            "frac_a255": 0.102935791015625,
+            "frac_a_lt_102": 0.4373779296875,
+            "unique_alpha": 241
+          }
+        },
+        {
+          "name": "mat_leaf_md",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "leaf_md_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.21844482421875,
+            "frac_a255": 0.06146240234375,
+            "frac_a_lt_102": 0.44232177734375,
+            "unique_alpha": 242
+          }
+        },
+        {
+          "name": "mat_wood",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "wood_bc",
+            "is_png": true,
+            "size": [
+              512,
+              256
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_stone",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "stone_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_sand",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "sand_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_glass",
+          "alphaMode": "BLEND",
+          "alphaCutoff": null,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "baseColor_tex": {
+            "name": "glass_bc",
+            "is_png": true,
+            "size": [
+              64,
+              64
+            ],
+            "alpha_min": 40,
+            "alpha_max": 40,
+            "frac_a0": 0.0,
+            "frac_a255": 0.0,
+            "frac_a_lt_102": 1.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_water",
+          "alphaMode": "BLEND",
+          "alphaCutoff": null,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "baseColor_tex": {
+            "name": "water_bc",
+            "is_png": true,
+            "size": [
+              64,
+              64
+            ],
+            "alpha_min": 38,
+            "alpha_max": 38,
+            "frac_a0": 0.0,
+            "frac_a255": 0.0,
+            "frac_a_lt_102": 1.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_rim",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": false,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ]
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_fg_v0_carpet_proxy_skin",
+          "joints": [
+            "pl_fg_v0_carpet_proxy_root",
+            "pl_fg_v0_carpet_proxy_stem_01",
+            "pl_fg_v0_carpet_proxy_stem_02",
+            "pl_fg_v0_carpet_proxy_stem_03"
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "pl_fg_v0_carpet_proxy_root",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_fg_v0_carpet_proxy_stem_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_fg_v0_carpet_proxy_stem_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_fg_v0_carpet_proxy_stem_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          },
+          "vertex_motion": {
+            "max_m": 0.005305462040683735,
+            "mean_m": 0.0022330350643952157,
+            "moved": true
+          }
+        }
+      ],
+      "world_aabb_bind": {
+        "min": [
+          -0.06776580939211599,
+          -0.007827308216979589,
+          -0.06829629080844496
+        ],
+        "max": [
+          0.06563632198868602,
+          0.04440864977198081,
+          0.07041527338012665
+        ],
+        "size_m": [
+          0.133402131380802,
+          0.0522359579889604,
+          0.1387115641885716
+        ],
+        "height_m": 0.0522359579889604
+      }
+    },
+    "pl_md_v0_leaf_proxy": {
+      "path": "/workspace/aquarium-art-v0/export/glb/pl_md_v0_leaf_proxy.glb",
+      "file_name": "pl_md_v0_leaf_proxy.glb",
+      "bytes": 821872,
+      "sha256": "93c77dc62793e0439379a5af7867192d03434106054ace103b59afc502cb6776",
+      "pygltflib": {
+        "ok": true,
+        "nodes": 6,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 1,
+        "accessors": 13,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "pl_md_v0_leaf_proxy",
+        "pivot": "base_on_substrate",
+        "animation": [
+          "sway_loop"
+        ],
+        "root_motion": false
+      },
+      "meshes": [
+        {
+          "name": "pl_md_v0_leaf_proxy",
+          "verts": 306,
+          "tris": 464,
+          "aabb_min": [
+            -0.0778682678937912,
+            -0.0065338388085365295,
+            -0.004000000189989805
+          ],
+          "aabb_max": [
+            0.07373887300491333,
+            0.07005180418491364,
+            0.07649237662553787
+          ],
+          "size_m": [
+            0.15160714089870453,
+            0.07658564299345016,
+            0.08049237681552768
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 2.9802322387695312e-08,
+          "material_index": 2
+        }
+      ],
+      "total_tris": 464,
+      "materials": [
+        {
+          "name": "mat_fish",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "fish_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_leaf_fg",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "leaf_fg_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.21844482421875,
+            "frac_a255": 0.102935791015625,
+            "frac_a_lt_102": 0.4373779296875,
+            "unique_alpha": 241
+          }
+        },
+        {
+          "name": "mat_leaf_md",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "leaf_md_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.21844482421875,
+            "frac_a255": 0.06146240234375,
+            "frac_a_lt_102": 0.44232177734375,
+            "unique_alpha": 242
+          }
+        },
+        {
+          "name": "mat_wood",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "wood_bc",
+            "is_png": true,
+            "size": [
+              512,
+              256
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_stone",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "stone_bc",
+            "is_png": true,
+            "size": [
+              256,
+              256
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_sand",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "sand_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_glass",
+          "alphaMode": "BLEND",
+          "alphaCutoff": null,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "baseColor_tex": {
+            "name": "glass_bc",
+            "is_png": true,
+            "size": [
+              64,
+              64
+            ],
+            "alpha_min": 40,
+            "alpha_max": 40,
+            "frac_a0": 0.0,
+            "frac_a255": 0.0,
+            "frac_a_lt_102": 1.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_water",
+          "alphaMode": "BLEND",
+          "alphaCutoff": null,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "baseColor_tex": {
+            "name": "water_bc",
+            "is_png": true,
+            "size": [
+              64,
+              64
+            ],
+            "alpha_min": 38,
+            "alpha_max": 38,
+            "frac_a0": 0.0,
+            "frac_a255": 0.0,
+            "frac_a_lt_102": 1.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_rim",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": false,
+          "has_normalTexture": false,
+          "has_mrTexture": false,
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ]
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_md_v0_leaf_proxy_skin",
+          "joints": [
+            "pl_md_v0_leaf_proxy_root",
+            "pl_md_v0_leaf_proxy_stem_01",
+            "pl_md_v0_leaf_proxy_stem_02",
+            "pl_md_v0_leaf_proxy_stem_03"
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "pl_md_v0_leaf_proxy_root",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_md_v0_leaf_proxy_stem_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_md_v0_leaf_proxy_stem_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_md_v0_leaf_proxy_stem_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          },
+          "vertex_motion": {
+            "max_m": 0.007057429807058753,
+            "mean_m": 0.001672436027627305,
+            "moved": true
+          }
+        }
+      ],
+      "world_aabb_bind": {
+        "min": [
+          -0.0778682679187982,
+          -0.00653383847468796,
+          -0.004000000158795691
+        ],
+        "max": [
+          0.07373887302391888,
+          0.07005180485384936,
+          0.07649237671548628
+        ],
+        "size_m": [
+          0.15160714094271707,
+          0.07658564332853732,
+          0.08049237687428197
+        ],
+        "height_m": 0.07658564332853732
+      }
+    }
+  },
+  "v02_inspect": {
+    "pl_v0_2_anubias_proxy": {
+      "path": "/workspace/aquarium-art-v0.2/export/glb/pl_v0_2_anubias_proxy.glb",
+      "file_name": "pl_v0_2_anubias_proxy.glb",
+      "bytes": 299428,
+      "sha256": "ec3d6cb8729f6a7ddb17ff4323d4d960a29eff45495e0ca8cdfde93bf043fdee",
+      "pygltflib": {
+        "ok": true,
+        "nodes": 16,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 1,
+        "animations": 1,
+        "accessors": 29,
+        "images": 6,
+        "textures": 6
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "species_claim": "none_technical_proxy_only",
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "source": "original_procedural",
+        "license": "project-original_procedural_no_exclusive_rights_claimed",
+        "batch": "aquarium-art-v0.2",
+        "asset": "pl_v0_2_anubias_proxy",
+        "pivot": "rhizome_base_origin",
+        "animation": [
+          "sway_loop"
+        ],
+        "root_motion": false,
+        "sway_note": "Procedural sine flex on petiole/leaf bones only; rhizome/root unanimated. Not a water-physics simulation.",
+        "morphology_targets": {
+          "rhizome_length_m": 0.08,
+          "rhizome_diameter_m": 0.0084,
+          "leaf_count": 6,
+          "leaf_blade_length_m_range": [
+            0.04,
+            0.052
+          ],
+          "petiole_length_m_range": [
+            0.027,
+            0.036
+          ],
+          "height_target_m": [
+            0.06,
+            0.1
+          ],
+          "silhouette": "anubias-like: creeping rhizome, petioles, thick ovate leaves; not a carpet"
+        },
+        "mapping_role": "candidate technical stand-in for plant_anubias_nana; not a species scan"
+      },
+      "meshes": [
+        {
+          "name": "pl_v0_2_anubias_proxy_rhizome",
+          "verts": 162,
+          "tris": 320,
+          "aabb_min": [
+            -0.040458183735609055,
+            -0.0006252907915040851,
+            -0.006704519037157297
+          ],
+          "aabb_max": [
+            0.04031434282660484,
+            0.01033927034586668,
+            0.006543377880007029
+          ],
+          "size_m": [
+            0.0807725265622139,
+            0.010964561137370765,
+            0.013247896917164326
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 2.9802322387695312e-08,
+          "material_index": 1
+        },
+        {
+          "name": "pl_v0_2_anubias_proxy_leaves",
+          "verts": 720,
+          "tris": 1224,
+          "aabb_min": [
+            -0.04364278167486191,
+            0.007193565834313631,
+            -0.03392546623945236
+          ],
+          "aabb_max": [
+            0.03537748381495476,
+            0.092572882771492,
+            0.02590549923479557
+          ],
+          "size_m": [
+            0.07902026548981667,
+            0.08537931693717837,
+            0.05983096547424793
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 1544,
+      "materials": [
+        {
+          "name": "mat_anubias_leaf",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "anubias_leaf_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.09301376342773438,
+            "frac_a255": 0.8341941833496094,
+            "frac_a_lt_102": 0.10994338989257812,
+            "unique_alpha": 256
+          }
+        },
+        {
+          "name": "mat_anubias_rhizome",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "anubias_rhizome_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_v0_2_anubias_proxy_skin",
+          "joints": [
+            "pl_an_root",
+            "pl_an_petiole_01",
+            "pl_an_blade_01",
+            "pl_an_petiole_02",
+            "pl_an_blade_02",
+            "pl_an_petiole_03",
+            "pl_an_blade_03",
+            "pl_an_petiole_04",
+            "pl_an_blade_04",
+            "pl_an_petiole_05",
+            "pl_an_blade_05",
+            "pl_an_petiole_06",
+            "pl_an_blade_06"
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "pl_an_root",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_04",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_04",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_05",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_05",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_06",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_06",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "not_water_physics": true,
+            "units": "seconds"
+          },
+          "vertex_motion": {
+            "max_m": 0.007532445502827895,
+            "mean_m": 0.002029944160861004,
+            "moved": true
+          }
+        }
+      ],
+      "world_aabb_bind": {
+        "min": [
+          -0.04364278162339483,
+          -0.0006252911051664044,
+          -0.03392546611558071
+        ],
+        "max": [
+          0.04031434303156796,
+          0.09257288371942692,
+          0.025905499220214973
+        ],
+        "size_m": [
+          0.08395712465496279,
+          0.09319817482459332,
+          0.05983096533579568
+        ],
+        "height_m": 0.09319817482459332
+      }
+    },
+    "pl_v0_2_java_fern_proxy": {
+      "path": "/workspace/aquarium-art-v0.2/export/glb/pl_v0_2_java_fern_proxy.glb",
+      "file_name": "pl_v0_2_java_fern_proxy.glb",
+      "bytes": 332748,
+      "sha256": "b7026e69ba2eea71f6f2fa5b608b4769c7ba1dfecf4f14c7d92fc87affeafd0c",
+      "pygltflib": {
+        "ok": true,
+        "nodes": 18,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 1,
+        "animations": 1,
+        "accessors": 31,
+        "images": 6,
+        "textures": 6
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "species_claim": "none_technical_proxy_only",
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "source": "original_procedural",
+        "license": "project-original_procedural_no_exclusive_rights_claimed",
+        "batch": "aquarium-art-v0.2",
+        "asset": "pl_v0_2_java_fern_proxy",
+        "pivot": "rhizome_base_origin",
+        "animation": [
+          "sway_loop"
+        ],
+        "root_motion": false,
+        "sway_note": "Procedural sine flex on petiole/leaf bones only; rhizome/root unanimated. Not a water-physics simulation.",
+        "morphology_targets": {
+          "rhizome_length_m": 0.07,
+          "rhizome_diameter_m": 0.0076,
+          "leaf_count": 7,
+          "leaf_blade_length_m_range": [
+            0.095,
+            0.125
+          ],
+          "height_target_m": [
+            0.1,
+            0.14
+          ],
+          "silhouette": "java-fern-like: epiphytic rhizome, long lanceolate leaves"
+        },
+        "mapping_role": "candidate technical stand-in for plant_java_fern; not a species scan"
+      },
+      "meshes": [
+        {
+          "name": "pl_v0_2_java_fern_proxy_rhizome",
+          "verts": 142,
+          "tris": 280,
+          "aabb_min": [
+            -0.03569526597857475,
+            0.0009480416774749756,
+            -0.004816974047571421
+          ],
+          "aabb_max": [
+            0.03552327677607536,
+            0.011654888279736042,
+            0.007109381724148989
+          ],
+          "size_m": [
+            0.07121854275465012,
+            0.010706846602261066,
+            0.01192635577172041
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 1
+        },
+        {
+          "name": "pl_v0_2_java_fern_proxy_leaves",
+          "verts": 770,
+          "tris": 1274,
+          "aabb_min": [
+            -0.04672921821475029,
+            0.009459690190851688,
+            -0.041802678257226944
+          ],
+          "aabb_max": [
+            0.02894396334886551,
+            0.14328905940055847,
+            0.030005067586898804
+          ],
+          "size_m": [
+            0.0756731815636158,
+            0.13382936920970678,
+            0.07180774584412575
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 1554,
+      "materials": [
+        {
+          "name": "mat_java_fern_leaf",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "java_fern_leaf_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.22156143188476562,
+            "frac_a255": 0.6785392761230469,
+            "frac_a_lt_102": 0.25753021240234375,
+            "unique_alpha": 256
+          }
+        },
+        {
+          "name": "mat_java_fern_rhizome",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "java_fern_rhizome_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_v0_2_java_fern_proxy_skin",
+          "joints": [
+            "pl_jf_root",
+            "pl_jf_leaf_01_a",
+            "pl_jf_leaf_01_b",
+            "pl_jf_leaf_02_a",
+            "pl_jf_leaf_02_b",
+            "pl_jf_leaf_03_a",
+            "pl_jf_leaf_03_b",
+            "pl_jf_leaf_04_a",
+            "pl_jf_leaf_04_b",
+            "pl_jf_leaf_05_a",
+            "pl_jf_leaf_05_b",
+            "pl_jf_leaf_06_a",
+            "pl_jf_leaf_06_b",
+            "pl_jf_leaf_07_a",
+            "pl_jf_leaf_07_b"
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.5,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "pl_jf_root",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_01_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_01_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_02_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_02_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_03_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_03_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_04_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_04_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_05_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_05_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_06_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_06_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_07_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_07_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "not_water_physics": true,
+            "units": "seconds"
+          },
+          "vertex_motion": {
+            "max_m": 0.012047905125325895,
+            "mean_m": 0.0020409478259010394,
+            "moved": true
+          }
+        }
+      ],
+      "world_aabb_bind": {
+        "min": [
+          -0.04672921806398546,
+          0.0009480418632865752,
+          -0.04180267852120385
+        ],
+        "max": [
+          0.03552327679780001,
+          0.14328905866930222,
+          0.030005067481859223
+        ],
+        "size_m": [
+          0.08225249486178547,
+          0.14234101680601566,
+          0.07180774600306307
+        ],
+        "height_m": 0.14328905866930222
+      }
+    },
+    "scn_v0_2_two_plants_proxy": {
+      "path": "/workspace/aquarium-art-v0.2/export/glb/scn_v0_2_two_plants_proxy.glb",
+      "file_name": "scn_v0_2_two_plants_proxy.glb",
+      "bytes": 630364,
+      "sha256": "4cb6a2097c18e4d6ad6ef540ab64fef787b1b9b8a7ba2fade6222def3ae1e7c8",
+      "pygltflib": {
+        "ok": true,
+        "nodes": 34,
+        "meshes": 4,
+        "materials": 4,
+        "skins": 2,
+        "animations": 2,
+        "accessors": 60,
+        "images": 12,
+        "textures": 12
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "species_claim": "none_technical_proxy_only",
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "source": "original_procedural",
+        "license": "project-original_procedural_no_exclusive_rights_claimed",
+        "batch": "aquarium-art-v0.2",
+        "asset": "scn_v0_2_two_plants_proxy",
+        "contains": [
+          "pl_v0_2_anubias_proxy",
+          "pl_v0_2_java_fern_proxy"
+        ],
+        "note": "Layout for comparison only; not a tank template."
+      },
+      "meshes": [
+        {
+          "name": "pl_v0_2_anubias_proxy_rhizome",
+          "verts": 162,
+          "tris": 320,
+          "aabb_min": [
+            -0.040458183735609055,
+            -0.0006252907915040851,
+            -0.006704519037157297
+          ],
+          "aabb_max": [
+            0.04031434282660484,
+            0.01033927034586668,
+            0.006543377880007029
+          ],
+          "size_m": [
+            0.0807725265622139,
+            0.010964561137370765,
+            0.013247896917164326
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 2.9802322387695312e-08,
+          "material_index": 1
+        },
+        {
+          "name": "pl_v0_2_anubias_proxy_leaves",
+          "verts": 720,
+          "tris": 1224,
+          "aabb_min": [
+            -0.04364278167486191,
+            0.007193565834313631,
+            -0.03392546623945236
+          ],
+          "aabb_max": [
+            0.03537748381495476,
+            0.092572882771492,
+            0.02590549923479557
+          ],
+          "size_m": [
+            0.07902026548981667,
+            0.08537931693717837,
+            0.05983096547424793
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 0
+        },
+        {
+          "name": "pl_v0_2_java_fern_proxy_rhizome",
+          "verts": 142,
+          "tris": 280,
+          "aabb_min": [
+            -0.03569526597857475,
+            0.0009480416774749756,
+            -0.004816974047571421
+          ],
+          "aabb_max": [
+            0.03552327677607536,
+            0.011654888279736042,
+            0.007109381724148989
+          ],
+          "size_m": [
+            0.07121854275465012,
+            0.010706846602261066,
+            0.01192635577172041
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 3
+        },
+        {
+          "name": "pl_v0_2_java_fern_proxy_leaves",
+          "verts": 770,
+          "tris": 1274,
+          "aabb_min": [
+            -0.04672921821475029,
+            0.009459690190851688,
+            -0.041802678257226944
+          ],
+          "aabb_max": [
+            0.02894396334886551,
+            0.14328905940055847,
+            0.030005067586898804
+          ],
+          "size_m": [
+            0.0756731815636158,
+            0.13382936920970678,
+            0.07180774584412575
+          ],
+          "has_uv": true,
+          "has_skin": true,
+          "weight_err_max": 3.725290298461914e-08,
+          "material_index": 2
+        }
+      ],
+      "total_tris": 3098,
+      "materials": [
+        {
+          "name": "mat_anubias_leaf",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "anubias_leaf_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.09301376342773438,
+            "frac_a255": 0.8341941833496094,
+            "frac_a_lt_102": 0.10994338989257812,
+            "unique_alpha": 256
+          }
+        },
+        {
+          "name": "mat_anubias_rhizome",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "anubias_rhizome_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        },
+        {
+          "name": "mat_java_fern_leaf",
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.4,
+          "doubleSided": true,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "java_fern_leaf_bc",
+            "is_png": true,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "frac_a0": 0.22156143188476562,
+            "frac_a255": 0.6785392761230469,
+            "frac_a_lt_102": 0.25753021240234375,
+            "unique_alpha": 256
+          }
+        },
+        {
+          "name": "mat_java_fern_rhizome",
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": null,
+          "doubleSided": false,
+          "has_baseColorTexture": true,
+          "has_normalTexture": true,
+          "has_mrTexture": true,
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "baseColor_tex": {
+            "name": "java_fern_rhizome_bc",
+            "is_png": true,
+            "size": [
+              256,
+              128
+            ],
+            "alpha_min": 255,
+            "alpha_max": 255,
+            "frac_a0": 0.0,
+            "frac_a255": 1.0,
+            "frac_a_lt_102": 0.0,
+            "unique_alpha": 1
+          }
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_v0_2_anubias_proxy_skin",
+          "joints": [
+            "pl_an_root",
+            "pl_an_petiole_01",
+            "pl_an_blade_01",
+            "pl_an_petiole_02",
+            "pl_an_blade_02",
+            "pl_an_petiole_03",
+            "pl_an_blade_03",
+            "pl_an_petiole_04",
+            "pl_an_blade_04",
+            "pl_an_petiole_05",
+            "pl_an_blade_05",
+            "pl_an_petiole_06",
+            "pl_an_blade_06"
+          ]
+        },
+        {
+          "name": "pl_v0_2_java_fern_proxy_skin",
+          "joints": [
+            "pl_jf_root",
+            "pl_jf_leaf_01_a",
+            "pl_jf_leaf_01_b",
+            "pl_jf_leaf_02_a",
+            "pl_jf_leaf_02_b",
+            "pl_jf_leaf_03_a",
+            "pl_jf_leaf_03_b",
+            "pl_jf_leaf_04_a",
+            "pl_jf_leaf_04_b",
+            "pl_jf_leaf_05_a",
+            "pl_jf_leaf_05_b",
+            "pl_jf_leaf_06_a",
+            "pl_jf_leaf_06_b",
+            "pl_jf_leaf_07_a",
+            "pl_jf_leaf_07_b"
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "pl_v0_2_anubias_proxy__sway_loop",
+          "duration_s": 3.0,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "pl_an_root",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_01",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_02",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_03",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_04",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_04",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_05",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_05",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_petiole_06",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_an_blade_06",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "not_water_physics": true
+          },
+          "vertex_motion": {
+            "max_m": 0.007532445502827896,
+            "mean_m": 0.002029944160861004,
+            "moved": true
+          }
+        },
+        {
+          "name": "pl_v0_2_java_fern_proxy__sway_loop",
+          "duration_s": 3.5,
+          "paths": [
+            "rotation"
+          ],
+          "has_translation_channels": false,
+          "loop_keys_close": true,
+          "channels": [
+            {
+              "node": "pl_jf_root",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_01_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_01_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_02_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_02_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_03_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_03_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_04_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_04_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_05_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_05_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_06_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_06_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_07_a",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "node": "pl_jf_leaf_07_b",
+              "path": "rotation",
+              "t0": 0.0,
+              "t1": 3.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "not_water_physics": true
+          },
+          "vertex_motion": {
+            "max_m": 0.012047905125325895,
+            "mean_m": 0.0020409478259010407,
+            "moved": true
+          }
+        }
+      ],
+      "world_aabb_bind": {
+        "min": [
+          -0.13364278162339482,
+          -0.0006252911051664044,
+          -0.04180267852120385
+        ],
+        "max": [
+          0.12552327679779998,
+          0.14328905866930222,
+          0.030005067481859223
+        ],
+        "size_m": [
+          0.2591660584211948,
+          0.14391434977446863,
+          0.07180774600306307
+        ],
+        "height_m": 0.14391434977446863
+      }
+    },
+    "ref_unchanged_fh_v0_tetra_proxy_L0": {
+      "sha256": "533236e7d53c6741d488cb1570a628ec19daa8d624212437fe959e6214ecefd9",
+      "matches_v0": true,
+      "bytes": 834476
+    }
+  },
+  "sway_region_samples": {
+    "anubias": {
+      "low_y_mean_disp_m": 0.0002768848784888646,
+      "high_y_mean_disp_m": 0.00535766980955971,
+      "tip_moves_more_than_base": true,
+      "note": "Sine bone flex sample, not a water-flow simulation."
+    },
+    "java_fern": {
+      "low_y_mean_disp_m": 0.0002259251552910318,
+      "high_y_mean_disp_m": 0.007121181903705702,
+      "tip_moves_more_than_base": true,
+      "note": "Sine bone flex sample, not a water-flow simulation."
+    }
+  },
+  "acceptance_items": [
+    {
+      "id": "fish_proportion",
+      "asset": "fh_v0_tetra_proxy_L0",
+      "mapping": "ember_tetra (technical slot only)",
+      "file_status": "已过",
+      "engine_status": "待引擎验证",
+      "detail": "再导入体长 4.79 cm（含尾鳍；extras 曾写 3.8 cm 为生成目标，实测更长）。相对 60 cm 缸比例合理。不是 Ember Tetra 物种还原。"
+    },
+    {
+      "id": "fish_tail_wag",
+      "asset": "fh_v0_tetra_proxy_L0",
+      "file_status": "已过",
+      "engine_status": "待引擎验证",
+      "detail": "8 骨链，仅 rotation，循环闭合，无根位移通道。t=0.5s 相对 t=0 最大顶点位移 4.53 mm。文件层证明摆尾存在；游戏观感待 URP。"
+    },
+    {
+      "id": "fish_turn_semantics",
+      "asset": "fh_v0_tetra_proxy_L0 / ember_tetra",
+      "file_status": "有条件通过（文件层有原地弯曲 clip）；若当作空间转弯则不合格",
+      "engine_status": "待引擎验证",
+      "detail": "turn_left 只有骨骼旋转通道，无 translation；首尾关键帧回到绑定姿势（loop_keys_close=True）。中段最大顶点位移约 12.9 mm。这是「身体弯曲后回到原朝向」的原地姿态，不是世界空间航向改变，也不产生位移。玩法转向必须由逻辑旋转/移动根节点；不要把该 clip 当成完成了一次空间转弯。"
+    },
+    {
+      "id": "fish_species_mapping",
+      "asset": "fh_v0_tetra_proxy_L0 -> ember_tetra",
+      "file_status": "仅技术占位可接受，物种还原不合格（未声称）",
+      "engine_status": "待引擎验证近景品种可读性",
+      "detail": "资产 extras 已标明 technical_proxy / not_real_species。可作为 ember_tetra 技术槽验证蒙皮与 clip 名称，不能当作灯鱼品种造型通过。"
+    },
+    {
+      "id": "mapping_carpet_as_anubias",
+      "asset": "pl_fg_v0_carpet_proxy -> plant_anubias_nana",
+      "file_status": "不合格",
+      "engine_status": "不要在引擎里按水榕验收此网格",
+      "detail": "该网格是前景地毯丛：约 13.3×5.2×13.9 cm，36 叶状细条、径向铺开，骨骼为 1 根 + 3 簇茎，无可辨识匍匐根茎、叶柄或厚实卵形叶。把地毯代理映射为 plant_anubias_nana 会误导形态。应停用该映射；改用 v0.2 pl_v0_2_anubias_proxy 做技术验证（仍非物种还原）。地毯网格可继续当「前景地毯占位」，不要叫水榕。"
+    },
+    {
+      "id": "v0_carpet_alphaclip_fields",
+      "asset": "pl_fg_v0_carpet_proxy",
+      "file_status": "已过（glTF 字段与 alpha 贴图）",
+      "engine_status": "待引擎验证 URP Alpha Clipping / 双面",
+      "detail": "alphaMode=MASK, doubleSided=True, tex={'name': 'leaf_fg_bc', 'is_png': True, 'size': [256, 256], 'alpha_min': 0, 'alpha_max': 255, 'frac_a0': 0.21844482421875, 'frac_a255': 0.102935791015625, 'frac_a_lt_102': 0.4373779296875, 'unique_alpha': 241}。文件层 MASK+doubleSided+有效透明通道成立；URP 转换未测。"
+    },
+    {
+      "id": "mapping_midleaf_as_java_fern",
+      "asset": "pl_md_v0_leaf_proxy -> plant_java_fern",
+      "file_status": "不合格（形态不足以代表铁皇冠）",
+      "engine_status": "不要按铁皇冠近景验收此网格",
+      "detail": "尺寸约 15.2×7.7×8.0 cm，高仅约 7.7 cm；叶片为偏卵形/阔叶剖面（生成宽度约 2.2–3.0 cm、长 4.2–6.2 cm），不是长披针叶。虽有短管状根茎痕迹，但不足以读成附生铁皇冠。4 骨簇状 sway，不是沿叶长的柔摆。技术槽可保留默认关闭；形态验收请改用 v0.2 pl_v0_2_java_fern_proxy。"
+    },
+    {
+      "id": "v0_midleaf_alphaclip_fields",
+      "asset": "pl_md_v0_leaf_proxy",
+      "file_status": "已过（glTF 字段与 alpha 贴图）",
+      "engine_status": "待引擎验证 URP Alpha Clipping / 双面",
+      "detail": "alphaMode=MASK, doubleSided=True, tex={'name': 'leaf_fg_bc', 'is_png': True, 'size': [256, 256], 'alpha_min': 0, 'alpha_max': 255, 'frac_a0': 0.21844482421875, 'frac_a255': 0.102935791015625, 'frac_a_lt_102': 0.4373779296875, 'unique_alpha': 241}。"
+    },
+    {
+      "id": "v0_plant_sway_generic",
+      "asset": "both v0 plant proxies",
+      "file_status": "已过（有循环旋转 sway，无根位移通道）",
+      "engine_status": "待引擎验证",
+      "detail": "sway_loop 为程序正弦骨骼旋转，不是水流物理。v0 草是整簇 3 茎骨带动，容易显得偏刚体。v0.2 改为叶柄/叶片分级相位。"
+    },
+    {
+      "id": "closeup_readability_v0",
+      "asset": "v0 mapped trio",
+      "file_status": "文件层仅确认有网格/UV/贴图，不签字",
+      "engine_status": "待引擎验证（近景阅读未做）",
+      "detail": "无 Unity 画面。软件预览不能代替近景侧纹、叶脉、透明叠加验收。"
+    },
+    {
+      "id": "v02_anubias_morphology",
+      "asset": "pl_v0_2_anubias_proxy",
+      "file_status": "已过（技术代理形态）",
+      "engine_status": "待引擎验证近景可读；不签物种还原",
+      "detail": "实测包围盒 8.4×9.3×6.0 cm（宽×高×深），高目标 6–10 cm，实测 9.3 cm。独立根茎网格 + 6 枚带叶柄的卵形叶，不是地毯。仍是程序化技术代理，不承诺水榕精模或物种还原。"
+    },
+    {
+      "id": "v02_anubias_sway",
+      "asset": "pl_v0_2_anubias_proxy",
+      "file_status": "已过（文件层分级柔摆）",
+      "engine_status": "待引擎验证；非水流物理",
+      "detail": "根/低处平均位移 0.28 mm，叶尖平均 5.36 mm。叶柄/叶片分骨、相位错开，根骨不转。这是正弦采样对比，不是流体解算。"
+    },
+    {
+      "id": "v02_anubias_alphaclip",
+      "asset": "pl_v0_2_anubias_proxy",
+      "file_status": "已过（glTF MASK + doubleSided + 有效 alpha）",
+      "engine_status": "待引擎验证 URP 双面 Alpha Clip",
+      "detail": "leaf mat={'name': 'mat_anubias_leaf', 'alphaMode': 'MASK', 'alphaCutoff': 0.4, 'doubleSided': True, 'has_baseColorTexture': True, 'has_normalTexture': True, 'has_mrTexture': True, 'baseColorFactor': [1.0, 1.0, 1.0, 1.0], 'baseColor_tex': {'name': 'anubias_leaf_bc', 'is_png': True, 'size': [512, 512], 'alpha_min': 0, 'alpha_max': 255, 'frac_a0': 0.09301376342773438, 'frac_a255': 0.8341941833496094, 'frac_a_lt_102': 0.10994338989257812, 'unique_alpha': 256}}"
+    },
+    {
+      "id": "v02_java_fern_morphology",
+      "asset": "pl_v0_2_java_fern_proxy",
+      "file_status": "已过（技术代理形态）",
+      "engine_status": "待引擎验证近景可读；不签物种还原",
+      "detail": "实测 8.2×14.3×7.2 cm，高目标 10–14 cm，实测 14.3 cm（略高于目标上限 14 cm）。附生向根茎 + 7 枚长披针叶（叶长目标 9.5–12.5 cm）。仍是技术代理，不是铁皇冠精模。"
+    },
+    {
+      "id": "v02_java_fern_sway",
+      "asset": "pl_v0_2_java_fern_proxy",
+      "file_status": "已过（文件层分级柔摆）",
+      "engine_status": "待引擎验证；非水流物理",
+      "detail": "低处平均 0.23 mm，叶尖平均 7.12 mm。沿叶长分 a/b 骨，根茎不摆。"
+    },
+    {
+      "id": "v02_java_alphaclip",
+      "asset": "pl_v0_2_java_fern_proxy",
+      "file_status": "已过（glTF MASK + doubleSided + 有效 alpha）",
+      "engine_status": "待引擎验证 URP 双面 Alpha Clip",
+      "detail": "leaf mat={'name': 'mat_java_fern_leaf', 'alphaMode': 'MASK', 'alphaCutoff': 0.4, 'doubleSided': True, 'has_baseColorTexture': True, 'has_normalTexture': True, 'has_mrTexture': True, 'baseColorFactor': [1.0, 1.0, 1.0, 1.0], 'baseColor_tex': {'name': 'java_fern_leaf_bc', 'is_png': True, 'size': [512, 512], 'alpha_min': 0, 'alpha_max': 255, 'frac_a0': 0.22156143188476562, 'frac_a255': 0.6785392761230469, 'frac_a_lt_102': 0.25753021240234375, 'unique_alpha': 256}}"
+    },
+    {
+      "id": "unity_urp_visual",
+      "asset": "all",
+      "file_status": "未做，不签字",
+      "engine_status": "未做",
+      "detail": "本次无 Unity URP 实机画面。玻璃/水体/近景/植被透明叠加以引擎验收为准。软件光栅预览明确非引擎。"
+    },
+    {
+      "id": "license_source",
+      "asset": "v0.2 new plants + copied fish reference",
+      "file_status": "已过（来源声明准确，无排他权承诺）",
+      "engine_status": "N/A",
+      "detail": "新网格与贴图为本次原创程序化。第三方运行库：numpy 2.5.4 (BSD)、Pillow 13.0.0 (HPND)、pygltflib 1.16.5 (MIT)。不声称独家版权或商业素材授权。复制的鱼 GLB 与 v0 哈希一致，未改。"
+    }
+  ],
+  "preview_index": [
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/01_anubias_oblique_t0.png",
+      "source_glb": "pl_v0_2_anubias_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 43142,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/02_anubias_oblique_t1.5.png",
+      "source_glb": "pl_v0_2_anubias_proxy.glb",
+      "animation": "sway_loop",
+      "t": 1.5,
+      "bytes": 41731,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/03_anubias_front_rhizome.png",
+      "source_glb": "pl_v0_2_anubias_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 35406,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/04_anubias_near_leaves.png",
+      "source_glb": "pl_v0_2_anubias_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 31397,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/05_java_fern_oblique_t0.png",
+      "source_glb": "pl_v0_2_java_fern_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 30087,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/06_java_fern_oblique_t1.75.png",
+      "source_glb": "pl_v0_2_java_fern_proxy.glb",
+      "animation": "sway_loop",
+      "t": 1.75,
+      "bytes": 31437,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/07_java_fern_front_rhizome.png",
+      "source_glb": "pl_v0_2_java_fern_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 25889,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/08_java_fern_near.png",
+      "source_glb": "pl_v0_2_java_fern_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 27233,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/09_two_plants_front.png",
+      "source_glb": "scn_v0_2_two_plants_proxy.glb",
+      "animation": null,
+      "t": 0.0,
+      "bytes": 32676,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/10_two_plants_oblique.png",
+      "source_glb": "scn_v0_2_two_plants_proxy.glb",
+      "animation": null,
+      "t": 0.0,
+      "bytes": 35908,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/11_fish_turn_t0.png",
+      "source_glb": "ref_unchanged_from_v0/fh_v0_tetra_proxy_L0.glb",
+      "animation": "turn_left",
+      "t": 0.0,
+      "bytes": 23208,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/12_fish_turn_t0.75.png",
+      "source_glb": "ref_unchanged_from_v0/fh_v0_tetra_proxy_L0.glb",
+      "animation": "turn_left",
+      "t": 0.75,
+      "bytes": 28846,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/13_fish_turn_t1.5.png",
+      "source_glb": "ref_unchanged_from_v0/fh_v0_tetra_proxy_L0.glb",
+      "animation": "turn_left",
+      "t": 1.5,
+      "bytes": 23638,
+      "renderer": "cpu_software_zbuffer_textured",
+      "not_unity_urp": true,
+      "not_water_physics": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/14_contact_anubias_sway.png",
+      "kind": "motion_contact",
+      "bytes": 80114,
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/15_contact_java_fern_sway.png",
+      "kind": "motion_contact",
+      "bytes": 57987,
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0.2/preview/16_contact_fish_turn_loopback.png",
+      "kind": "turn_semantics",
+      "bytes": 55262,
+      "not_unity_urp": true
+    }
+  ],
+  "explicitly_not_passed": [
+    "Unity URP import and visuals were not run and are not signed off.",
+    "Species reconstruction is not claimed and not passed.",
+    "pl_fg_v0_carpet_proxy as plant_anubias_nana is unqualified.",
+    "pl_md_v0_leaf_proxy as plant_java_fern silhouette is unqualified.",
+    "turn_left is in-place bone bend returning to bind, not a spatial turn.",
+    "Plant sway samples are not water-physics simulations."
+  ]
+}

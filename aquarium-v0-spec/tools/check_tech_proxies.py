@@ -12,8 +12,12 @@ GLB = ART / "export/glb"
 MODELS = ROOT / "unity/Assets/_Game/TechProxies/Models"
 WIRED = {
     "fh_v0_tetra_proxy_L0.glb": ("ember_tetra", "swim_tail_loop", False),
-    "pl_fg_v0_carpet_proxy.glb": ("plant_anubias_nana", "sway_loop", True),
-    "pl_md_v0_leaf_proxy.glb": ("plant_java_fern", "sway_loop", True),
+    "pl_v0_2_anubias_proxy.glb": ("plant_anubias_nana", "sway_loop", True),
+    "pl_v0_2_java_fern_proxy.glb": ("plant_java_fern", "sway_loop", True),
+}
+PLANT_SHA = {
+    "pl_v0_2_anubias_proxy.glb": "ec3d6cb8729f6a7ddb17ff4323d4d960a29eff45495e0ca8cdfde93bf043fdee",
+    "pl_v0_2_java_fern_proxy.glb": "b7026e69ba2eea71f6f2fa5b608b4769c7ba1dfecf4f14c7d92fc87affeafd0c",
 }
 
 def fail(message):
@@ -131,11 +135,19 @@ def main():
     if checked != 10:
         fail("checked " + str(checked))
 
+    sources = {
+        "fh_v0_tetra_proxy_L0.glb": GLB,
+        "pl_v0_2_anubias_proxy.glb": ROOT / "art/tech-proxies-v0.2/export/glb",
+        "pl_v0_2_java_fern_proxy.glb": ROOT / "art/tech-proxies-v0.2/export/glb",
+    }
     for name, (binding, clip, plant) in WIRED.items():
-        document, _binary = read_glb(GLB / name)
+        source = sources[name] / name
+        document, _binary = read_glb(source)
         animation_names = [animation.get("name") for animation in document.get("animations", [])]
         if clip not in animation_names:
             fail(name + " missing " + clip)
+        if "turn_left" in animation_names and name.startswith("pl_"):
+            fail(name + " contains turn_left")
         mesh_material = None
         for mesh in document["meshes"]:
             for primitive in mesh["primitives"]:
@@ -145,10 +157,21 @@ def main():
             fail(name + " leaf material is not double-sided MASK")
         if not plant and alpha != "OPAQUE":
             fail(name + " fish material is not opaque")
-        art_hash = hashlib.sha256((GLB / name).read_bytes()).hexdigest()
-        unity_hash = hashlib.sha256((MODELS / name).read_bytes()).hexdigest()
-        if art_hash != unity_hash:
-            fail(name + " Unity copy differs from the art pack")
+        if name in PLANT_SHA and hashlib.sha256(source.read_bytes()).hexdigest() != PLANT_SHA[name]:
+            fail(name + " hash differs from the v0.2 manifest")
+        art_hash = hashlib.sha256(source.read_bytes()).hexdigest()
+        for copy_root in (MODELS, ROOT / "unity6-validation/Assets/_Game/TechProxies/Models"):
+            if hashlib.sha256((copy_root / name).read_bytes()).hexdigest() != art_hash:
+                fail(name + " Unity copy differs from the art pack")
+    fern, _binary = read_glb(sources["pl_v0_2_java_fern_proxy.glb"] / "pl_v0_2_java_fern_proxy.glb")
+    top = 0.0
+    for mesh in fern["meshes"]:
+        for primitive in mesh["primitives"]:
+            accessor = fern["accessors"][primitive["attributes"]["POSITION"]]
+            top = max(top, accessor["max"][1])
+    over_cm = (top - 0.14) * 100
+    if not (0.2 < over_cm < 0.5):
+        fail("java fern height exception is not the measured 0.3 cm band: " + str(over_cm))
 
     model_names = sorted(path.name for path in MODELS.iterdir() if path.suffix == ".glb")
     if model_names != sorted(WIRED):
@@ -166,16 +189,25 @@ def main():
     scene = (ROOT / "unity/Assets/_Game/Scenes/Aquarium.unity").read_text(encoding="utf-8")
     if "EnableTechnicalProxyVisuals" in scene:
         fail("player scene enables the technical proxy")
-    source = (ROOT / "unity/Assets/_Game/UnityAdapter/TechProxyVisuals.cs").read_text(encoding="utf-8")
-    for token in list(WIRED) + ["ember_tetra", "plant_anubias_nana", "plant_java_fern", "swim_tail_loop", "sway_loop"]:
-        if token not in source:
-            fail("adapter is missing " + token)
+    for adapter in (
+        ROOT / "unity/Assets/_Game/UnityAdapter/TechProxyVisuals.cs",
+        ROOT / "unity6-validation/Assets/_Game/UnityAdapter/TechProxyVisuals.cs",
+    ):
+        source = adapter.read_text(encoding="utf-8")
+        for token in list(WIRED) + ["ember_tetra", "plant_anubias_nana", "plant_java_fern", "swim_tail_loop", "sway_loop"]:
+            if token not in source:
+                fail(adapter.name + " is missing " + token)
+        if "turn_left" in source or "pl_fg_v0_carpet_proxy" in source or "pl_md_v0_leaf_proxy" in source:
+            fail(adapter.name + " still maps the old plant files or turn_left")
+        if "0.14f" in source or "14.3" in source:
+            fail(adapter.name + " scales a proxy toward the size cap")
     entry = (ROOT / "unity/Assets/_Game/UnityAdapter/AquariumGameEntry.cs").read_text(encoding="utf-8")
     if "public bool EnableTechnicalProxyVisuals;" not in entry:
         fail("game entry has no default-off proxy switch")
-    print("PASS technical proxy files: 10 GLB headers, triangles, skin samples and rotation-only clips")
-    print("PASS Unity 2022 wiring: 3 L0 copies, glTFast 6.10.1 pin, player scene unchanged")
-    print("NOT RUN Unity import, compile, Play, alpha clip, skinning or screenshots")
+    print("PASS technical proxy files: v0 pack plus v0.2 plant hashes, triangles, skin samples and rotation-only clips")
+    print("ACCEPTED FILE EXCEPTION java fern top " + format(top, ".6f") + " m, " + format(over_cm, ".3f") + " cm over 0.14 m; README 0.4 cm is not this measurement")
+    print("PASS Unity 2022 and Unity 6 wiring use the same three file names; glTFast 6.10.1 pin unchanged; player scene unchanged")
+    print("NOT RUN Unity import, compile, Play, alpha clip, double-sided mask, rhizome pivot, animation loop or screenshots")
 
 if __name__ == "__main__":
     main()

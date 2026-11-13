@@ -1,0 +1,148 @@
+[
+  {
+    "id": "pl_v0_2_anubias_proxy",
+    "kind": "anubias",
+    "role": "technical_proxy",
+    "species_claim": "none_technical_proxy_only",
+    "replaces_mapping_suggestion": "plant_anubias_nana (do not use pl_fg_v0_carpet_proxy)",
+    "tris_rhizome": 320,
+    "tris_leaves": 1224,
+    "tris_total": 1544,
+    "bones": [
+      "pl_an_root",
+      "pl_an_petiole_01",
+      "pl_an_blade_01",
+      "pl_an_petiole_02",
+      "pl_an_blade_02",
+      "pl_an_petiole_03",
+      "pl_an_blade_03",
+      "pl_an_petiole_04",
+      "pl_an_blade_04",
+      "pl_an_petiole_05",
+      "pl_an_blade_05",
+      "pl_an_petiole_06",
+      "pl_an_blade_06"
+    ],
+    "animations": [
+      "sway_loop"
+    ],
+    "root_motion": false,
+    "aabb_min": [
+      -0.04364278167486191,
+      -0.0006252907915040851,
+      -0.03392546623945236
+    ],
+    "aabb_max": [
+      0.04031434282660484,
+      0.092572882771492,
+      0.02590549923479557
+    ],
+    "measured_height_m": 0.09319817274808884,
+    "measured_size_m": [
+      0.08395712077617645,
+      0.09319817274808884,
+      0.05983096361160278
+    ],
+    "targets": {
+      "rhizome_length_m": 0.08,
+      "rhizome_diameter_m": 0.0084,
+      "leaf_count": 6,
+      "leaf_blade_length_m_range": [
+        0.04,
+        0.052
+      ],
+      "petiole_length_m_range": [
+        0.027,
+        0.036
+      ],
+      "height_target_m": [
+        0.06,
+        0.1
+      ],
+      "silhouette": "anubias-like: creeping rhizome, petioles, thick ovate leaves; not a carpet"
+    },
+    "pivot": "rhizome_base_origin",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "unchanged_from_v0": false
+  },
+  {
+    "id": "pl_v0_2_java_fern_proxy",
+    "kind": "java_fern",
+    "role": "technical_proxy",
+    "species_claim": "none_technical_proxy_only",
+    "replaces_mapping_suggestion": "plant_java_fern (prefer over pl_md_v0_leaf_proxy for this silhouette)",
+    "tris_rhizome": 280,
+    "tris_leaves": 1274,
+    "tris_total": 1554,
+    "bones": [
+      "pl_jf_root",
+      "pl_jf_leaf_01_a",
+      "pl_jf_leaf_01_b",
+      "pl_jf_leaf_02_a",
+      "pl_jf_leaf_02_b",
+      "pl_jf_leaf_03_a",
+      "pl_jf_leaf_03_b",
+      "pl_jf_leaf_04_a",
+      "pl_jf_leaf_04_b",
+      "pl_jf_leaf_05_a",
+      "pl_jf_leaf_05_b",
+      "pl_jf_leaf_06_a",
+      "pl_jf_leaf_06_b",
+      "pl_jf_leaf_07_a",
+      "pl_jf_leaf_07_b"
+    ],
+    "animations": [
+      "sway_loop"
+    ],
+    "root_motion": false,
+    "aabb_min": [
+      -0.04672921821475029,
+      0.0009480416774749756,
+      -0.041802678257226944
+    ],
+    "aabb_max": [
+      0.03552327677607536,
+      0.14328905940055847,
+      0.030005067586898804
+    ],
+    "measured_height_m": 0.14328905940055847,
+    "measured_size_m": [
+      0.08225249499082565,
+      0.1423410177230835,
+      0.07180774211883545
+    ],
+    "targets": {
+      "rhizome_length_m": 0.07,
+      "rhizome_diameter_m": 0.0076,
+      "leaf_count": 7,
+      "leaf_blade_length_m_range": [
+        0.095,
+        0.125
+      ],
+      "height_target_m": [
+        0.1,
+        0.14
+      ],
+      "silhouette": "java-fern-like: epiphytic rhizome, long lanceolate leaves"
+    },
+    "pivot": "rhizome_base_origin",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "unchanged_from_v0": false
+  },
+  {
+    "id": "scn_v0_2_two_plants_proxy",
+    "kind": "comparison_scene",
+    "role": "technical_proxy",
+    "formats": [
+      "glb"
+    ],
+    "note": "Anubias proxy at x=-0.09, Java fern proxy at x=+0.09. Clips are prefixed per plant.",
+    "unchanged_from_v0": false
+  }
+]

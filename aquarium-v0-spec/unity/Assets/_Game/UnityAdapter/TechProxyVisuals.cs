@@ -15,8 +15,8 @@ namespace Aquarium.UnityAdapter
         public const string CarpetPlantItemId = "plant_anubias_nana";
         public const string LeafPlantItemId = "plant_java_fern";
         public const string FishFile = "fh_v0_tetra_proxy_L0.glb";
-        public const string CarpetFile = "pl_fg_v0_carpet_proxy.glb";
-        public const string LeafFile = "pl_md_v0_leaf_proxy.glb";
+        public const string AnubiasFile = "pl_v0_2_anubias_proxy.glb";
+        public const string FernFile = "pl_v0_2_java_fern_proxy.glb";
         public const string SwimClip = "swim_tail_loop";
         public const string SwayClip = "sway_loop";
 
@@ -31,8 +31,8 @@ namespace Aquarium.UnityAdapter
 
         public static void AttachPlant(Transform driver, string itemId)
         {
-            if (itemId == CarpetPlantItemId) Bind(driver, CarpetFile, SwayClip, true, new Vector3(0f, -0.5f, 0f));
-            else if (itemId == LeafPlantItemId) Bind(driver, LeafFile, SwayClip, true, new Vector3(0f, -0.5f, 0f));
+            if (itemId == CarpetPlantItemId) Bind(driver, AnubiasFile, SwayClip, true, new Vector3(0f, -0.5f, 0f));
+            else if (itemId == LeafPlantItemId) Bind(driver, FernFile, SwayClip, true, new Vector3(0f, -0.5f, 0f));
         }
 
         public static void Present(Transform parent, string fileName, string clip, bool plantMaterial, Vector3 localPosition)

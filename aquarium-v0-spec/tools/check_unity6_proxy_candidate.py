@@ -6,12 +6,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 U6 = ROOT / "unity6-validation"
 U2022 = ROOT / "unity"
-ART = ROOT / "art/tech-proxies-v0/export/glb"
+ART = {
+    "fh_v0_tetra_proxy_L0.glb": ROOT / "art/tech-proxies-v0/export/glb",
+    "pl_v0_2_anubias_proxy.glb": ROOT / "art/tech-proxies-v0.2/export/glb",
+    "pl_v0_2_java_fern_proxy.glb": ROOT / "art/tech-proxies-v0.2/export/glb",
+}
 MODELS = U6 / "Assets/_Game/TechProxies/Models"
 WIRED = (
     "fh_v0_tetra_proxy_L0.glb",
-    "pl_fg_v0_carpet_proxy.glb",
-    "pl_md_v0_leaf_proxy.glb",
+    "pl_v0_2_anubias_proxy.glb",
+    "pl_v0_2_java_fern_proxy.glb",
 )
 
 def fail(message):
@@ -60,7 +64,7 @@ def main():
     if names != sorted(WIRED):
         fail("candidate Models contents " + str(names))
     for name in WIRED:
-        art = hashlib.sha256((ART / name).read_bytes()).hexdigest()
+        art = hashlib.sha256((ART[name] / name).read_bytes()).hexdigest()
         copy = hashlib.sha256((MODELS / name).read_bytes()).hexdigest()
         base = hashlib.sha256((U2022 / "Assets/_Game/TechProxies/Models" / name).read_bytes()).hexdigest()
         if not (art == copy == base):

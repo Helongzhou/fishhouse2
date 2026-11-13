@@ -22,8 +22,8 @@ namespace Aquarium.UnityAdapter
             light.type = LightType.Directional;
             light.intensity = 1.1f;
             TechProxyVisuals.Present(transform, TechProxyVisuals.FishFile, TechProxyVisuals.SwimClip, false, new Vector3(0f, 0.08f, 0f));
-            TechProxyVisuals.Present(transform, TechProxyVisuals.CarpetFile, TechProxyVisuals.SwayClip, true, new Vector3(-0.22f, 0f, 0f));
-            TechProxyVisuals.Present(transform, TechProxyVisuals.LeafFile, TechProxyVisuals.SwayClip, true, new Vector3(0.22f, 0f, 0f));
+            TechProxyVisuals.Present(transform, TechProxyVisuals.AnubiasFile, TechProxyVisuals.SwayClip, true, new Vector3(-0.22f, 0f, 0f));
+            TechProxyVisuals.Present(transform, TechProxyVisuals.FernFile, TechProxyVisuals.SwayClip, true, new Vector3(0.22f, 0f, 0f));
         }
 
         void OnGUI()
