@@ -1,0 +1,24 @@
+[
+  {
+    "id": "new-fish-observation",
+    "title": {
+      "en": "New arrivals and isolation",
+      "zh-CN": "新鱼观察与隔离"
+    },
+    "body": {
+      "en": "Observe new arrivals in a separate, filtered setup when possible before adding them to an established tank. Match their water needs, feed appropriately, and watch appetite, breathing and behavior over time. A short observation period does not guarantee that health risks are gone; seek qualified aquarium or veterinary advice when signs persist.",
+      "zh-CN": "条件允许时，让新到个体先在独立、具备过滤的环境中观察，再加入原缸。按其需求维持水质、适量喂食，并持续留意食欲、呼吸和行为。短期观察不能保证健康风险已经排除；异常持续时应咨询有经验的水族专业人员或兽医。"
+    }
+  },
+  {
+    "id": "water-quality-maintenance",
+    "title": {
+      "en": "Water quality and changes",
+      "zh-CN": "水质与换水"
+    },
+    "body": {
+      "en": "Use a mature biological filter and test the tank water, especially ammonia and nitrite, when establishing or changing a setup. Treat replacement tap water with a conditioner suitable for both chlorine and chloramine where either may be present; standing water alone is not a reliable chloramine treatment. Match temperature and other relevant water conditions, change water according to measured conditions and the tank's occupants, and avoid sudden large swings.",
+      "zh-CN": "开缸或调整设备时保持成熟的生物过滤，并检测缸水，特别留意氨和亚硝酸盐。自来水可能含氯或氯胺时，应使用能处理相应消毒剂的水质处理剂；单靠静置不能可靠去除氯胺。新水尽量匹配水温及相关水质，依据实测情况和缸内生物安排换水，避免水质骤变。"
+    }
+  }
+]

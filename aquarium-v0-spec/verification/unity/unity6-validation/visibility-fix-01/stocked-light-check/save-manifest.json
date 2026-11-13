@@ -1,0 +1,24 @@
+{
+  "saveDirectory": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal",
+  "fixture": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/01-paused.json",
+  "fixtureSha256": "42139ce1725e7853d13e5f959b34c5fd1d79e9c3dd8db121e173718963d90052",
+  "files": {
+    "aquarium-session-v1.json": {
+      "existed": true,
+      "sha256": "7de4837dca22088b213391acbbabf361e34c589d710a374546a869aad2302a4b"
+    },
+    "aquarium-session-v1.json.bak1": {
+      "existed": false
+    },
+    "aquarium-session-v1.json.bak2": {
+      "existed": false
+    },
+    "aquarium-session-v1.json.bak3": {
+      "existed": false
+    },
+    "aquarium-session-v1.json.tmp": {
+      "existed": false
+    }
+  },
+  "status": "restored"
+}

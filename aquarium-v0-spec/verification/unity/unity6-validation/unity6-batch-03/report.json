@@ -1,0 +1,102 @@
+{
+    "status": "failed",
+    "mode": "editor-batch",
+    "projectPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "expectedUnityVersion": "6000.6.8f1",
+    "expectedUrpVersion": "17.6.0",
+    "unityVersion": "6000.6.8f1",
+    "urpVersion": "17.6.0",
+    "startedUtc": "2026-11-05T11:44:15.9986440Z",
+    "finishedUtc": "2026-11-05T11:44:16.1389030Z",
+    "failure": "System.InvalidOperationException: Acceptance failed: Unity JsonUtility roundtrips populated nonrecursive retry checkpoint. JSON differs at character 1566; expected length 29681, actual 29573. Expected: atchId\":\"batch:unity-accept-11\",\"SupportPlacementId\":\"main\",\"Position\":{\"X\":-0.13999999999999999,\"Y\":0.1455,\"Z\":0.02},\"Size\":{\"X\":0.02,\"Y\":0.035,\"Z\":0.02},\"YawDegrees\":0.0,\"RhizomeBuried\":false},{\"Id\"; actual: atchId\":\"batch:unity-accept-11\",\"SupportPlacementId\":\"main\",\"Position\":{\"X\":-0.14,\"Y\":0.1455,\"Z\":0.02},\"Size\":{\"X\":0.02,\"Y\":0.035,\"Z\":0.02},\"YawDegrees\":0.0,\"RhizomeBuried\":false},{\"Id\":\"fern\",\"Purcha\n  at Aquarium.Validation.UnitySliceAcceptance.Check (System.Boolean condition, System.String name, System.String detail) [0x00053] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:98 \n  at Aquarium.Validation.UnitySliceAcceptance.ValidateJsonAndRoute (Aquarium.Core.Configuration.RuntimeCatalog catalog) [0x00154] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:218 \n  at Aquarium.Validation.UnitySliceAcceptance.RunBatch () [0x00014] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:56 ",
+    "coverage": "Real Unity APIs and production domain/adapter calls. No human input, visual quality, Windows player, font-layout or Steam certification.",
+    "checks": [
+        {
+            "name": "Unity editor matches selected project's ProjectVersion",
+            "detail": "6000.6.8f1 expected; 6000.6.8f1 actual",
+            "passed": true
+        },
+        {
+            "name": "selected project freezes an exact URP version",
+            "detail": "17.6.0",
+            "passed": true
+        },
+        {
+            "name": "selected project's pinned URP package resolved",
+            "detail": "17.6.0 expected; 17.6.0 actual",
+            "passed": true
+        },
+        {
+            "name": "Prepare assigns actual URP graphics and quality pipelines",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "opaque and transparent shader materials import",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene imports with one real entry and no missing scripts",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene registered for builds",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "runtime resource imported",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "nine-table runtime configuration validates through JsonUtility",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Unity JsonUtility roundtrips initial save with explicit absent checkpoint",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Unity inline checkpoint without laid substrate preserves absence semantics",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "retry of empty editing checkpoint does not invent substrate or money",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "undo to absent substrate survives Unity JsonUtility without refunding its purchase",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "redo restores actual substrate after Unity roundtrip of absent state/history",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "present substrate with invalid actual height still rejects after absence handling fix",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "dry tank ecology remains stopped",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Unity JsonUtility roundtrips populated nonrecursive retry checkpoint",
+            "detail": "JSON differs at character 1566; expected length 29681, actual 29573. Expected: atchId\":\"batch:unity-accept-11\",\"SupportPlacementId\":\"main\",\"Position\":{\"X\":-0.13999999999999999,\"Y\":0.1455,\"Z\":0.02},\"Size\":{\"X\":0.02,\"Y\":0.035,\"Z\":0.02},\"YawDegrees\":0.0,\"RhizomeBuried\":false},{\"Id\"; actual: atchId\":\"batch:unity-accept-11\",\"SupportPlacementId\":\"main\",\"Position\":{\"X\":-0.14,\"Y\":0.1455,\"Z\":0.02},\"Size\":{\"X\":0.02,\"Y\":0.035,\"Z\":0.02},\"YawDegrees\":0.0,\"RhizomeBuried\":false},{\"Id\":\"fern\",\"Purcha",
+            "passed": false
+        }
+    ],
+    "errors": [],
+    "warnings": []
+}

@@ -1,0 +1,4 @@
+[
+  {"id":"note-neon-1","entity_type":"species","entity_id":"neon-tetra","note_type":"editor_note","text":"适合成熟、稳定的社区缸；参数范围是整理后的参考区间。","text_localized":{"en":"Suitable for a mature, stable community tank; the water ranges are reference values.","zh-CN":"适合成熟、稳定的社区缸；参数范围是整理后的参考区间。"},"author_id":"editor","created_at":"2026-11-05","visibility":"public"},
+  {"id":"note-honey-1","entity_type":"care_profile","entity_id":"honey-gourami","note_type":"uncertainty","text":"硬度范围仍待确认。","text_localized":{"en":"The hardness range still needs confirmation.","zh-CN":"硬度范围仍待确认。"},"author_id":"editor","created_at":"2026-11-05","visibility":"public"}
+]

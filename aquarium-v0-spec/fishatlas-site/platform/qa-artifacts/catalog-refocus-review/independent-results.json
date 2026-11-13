@@ -1,0 +1,441 @@
+{
+  "base": "http://127.0.0.1:4174",
+  "time": "2026-11-06T07:54:02.347Z",
+  "evidence": [
+    {
+      "name": "Independent baseline comparison",
+      "status": "PASS",
+      "details": {
+        "entities": 26,
+        "fishFeedingAndRevisionOnly": [
+          "bristlenose-pleco",
+          "zebra-danio",
+          "betta-splendens",
+          "guppy",
+          "panda-corydoras",
+          "honey-gourami",
+          "harlequin-rasbora",
+          "ember-tetra",
+          "neon-tetra"
+        ]
+      }
+    },
+    {
+      "name": "Read APIs reject writes and retired APIs remain unavailable",
+      "status": "PASS",
+      "details": [
+        {
+          "method": "POST",
+          "path": "/api/public/deployment",
+          "status": 405
+        },
+        {
+          "method": "PUT",
+          "path": "/api/public/deployment",
+          "status": 405
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/public/deployment",
+          "status": 405
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/public/deployment",
+          "status": 405
+        },
+        {
+          "method": "POST",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/catalog",
+          "status": 405
+        },
+        {
+          "method": "PUT",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/catalog",
+          "status": 405
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/catalog",
+          "status": 405
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/catalog",
+          "status": 405
+        },
+        {
+          "method": "POST",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/manifest",
+          "status": 405
+        },
+        {
+          "method": "PUT",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/manifest",
+          "status": 405
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/manifest",
+          "status": 405
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/manifest",
+          "status": 405
+        },
+        {
+          "method": "POST",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/entities/neon-tetra",
+          "status": 405
+        },
+        {
+          "method": "PUT",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/entities/neon-tetra",
+          "status": 405
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/entities/neon-tetra",
+          "status": 405
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/entities/neon-tetra",
+          "status": 405
+        },
+        {
+          "method": "GET",
+          "path": "/admin",
+          "status": 410
+        },
+        {
+          "method": "POST",
+          "path": "/admin",
+          "status": 410
+        },
+        {
+          "method": "PUT",
+          "path": "/admin",
+          "status": 410
+        },
+        {
+          "method": "PATCH",
+          "path": "/admin",
+          "status": 410
+        },
+        {
+          "method": "DELETE",
+          "path": "/admin",
+          "status": 410
+        },
+        {
+          "method": "GET",
+          "path": "/admin/login",
+          "status": 410
+        },
+        {
+          "method": "POST",
+          "path": "/admin/login",
+          "status": 410
+        },
+        {
+          "method": "PUT",
+          "path": "/admin/login",
+          "status": 410
+        },
+        {
+          "method": "PATCH",
+          "path": "/admin/login",
+          "status": 410
+        },
+        {
+          "method": "DELETE",
+          "path": "/admin/login",
+          "status": 410
+        },
+        {
+          "method": "GET",
+          "path": "/admin/collections/users",
+          "status": 410
+        },
+        {
+          "method": "POST",
+          "path": "/admin/collections/users",
+          "status": 410
+        },
+        {
+          "method": "PUT",
+          "path": "/admin/collections/users",
+          "status": 410
+        },
+        {
+          "method": "PATCH",
+          "path": "/admin/collections/users",
+          "status": 410
+        },
+        {
+          "method": "DELETE",
+          "path": "/admin/collections/users",
+          "status": 410
+        },
+        {
+          "method": "GET",
+          "path": "/api/entities",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/entities",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/entities",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/entities",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/entities",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/users",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/users",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/users",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/users",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/users",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/graphql",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/graphql",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/graphql",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/graphql",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/graphql",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/graphql-playground",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/graphql-playground",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/graphql-playground",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/graphql-playground",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/graphql-playground",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/admin/releases",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/admin/releases",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/admin/releases",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/admin/releases",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/admin/releases",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/activate",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/activate",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/activate",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/activate",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/activate",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/rollback",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/rollback",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/rollback",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/rollback",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/admin/releases/catalog-2026-11-06-refocus/rollback",
+          "status": 404
+        },
+        {
+          "method": "GET",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates",
+          "status": 405
+        },
+        {
+          "method": "PUT",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates",
+          "status": 405
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates",
+          "status": 405
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates",
+          "status": 405
+        },
+        {
+          "method": "GET",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates/foo",
+          "status": 404
+        },
+        {
+          "method": "POST",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates/foo",
+          "status": 404
+        },
+        {
+          "method": "PUT",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates/foo",
+          "status": 404
+        },
+        {
+          "method": "PATCH",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates/foo",
+          "status": 404
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/public/releases/catalog-2026-11-06-refocus/templates/foo",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "name": "Bilingual homepage search, result search, empty reset and keyboard access",
+      "status": "PASS",
+      "details": {
+        "locales": [
+          "zh-CN",
+          "en"
+        ],
+        "resetResults": 18,
+        "skipLink": "keyboard reaches main"
+      }
+    },
+    {
+      "name": "All nonfish details exclude fish diameter in both languages; controls have labels and images have alt",
+      "status": "PASS",
+      "details": {
+        "detailPages": 34,
+        "controlsAndImages": "named",
+        "pageH1": "single"
+      }
+    },
+    {
+      "name": "320px feeding visual capture",
+      "status": "PASS",
+      "details": "feeding-en-320.png"
+    },
+    {
+      "name": "No browser exceptions",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,35 @@
+# Guards for caches and secrets around the imported aquarium snapshot.
+# The sanitized aquarium-v0-spec tree itself is tracked.
+# These rules only skip regenerated output and local secret files.
+
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+.env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
+
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]serSettings/
+**/[Bb]uilds/
+**/.tools/
+**/.runtime/
+**/.next/
+**/node_modules/
+**/bin/
+**/obj/
+**/__pycache__/
+
+*.log
+*.tsbuildinfo
+*.pyc
+*.suo
+*.user
+*.csproj.user

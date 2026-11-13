@@ -1,0 +1,31 @@
+{
+  "time": "2026-11-06T06:36:29.782Z",
+  "browser": "Headless installed desktop Google Chrome; viewport emulation only",
+  "results": [
+    {
+      "name": "Desktop filters really open; mobile collapse/toggle",
+      "status": "PASS"
+    },
+    {
+      "name": "Image credits linked from footer and includes home photography",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTP404 scene resources keep every editable placeholder",
+      "status": "PASS"
+    },
+    {
+      "name": "Rule explanations identify objects; passed checks collapsed",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing locale plan retained and explicit upgrade creates a new copy",
+      "status": "PASS"
+    },
+    {
+      "name": "No exceptions in limited recovery checks",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

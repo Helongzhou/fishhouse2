@@ -1,0 +1,87 @@
+{
+  "captured_at": "2026-11-06T15:40:46.990482+08:00",
+  "policy": "Read-only originals; copies only; never restore manual-player-02 defaults over latest user save.",
+  "files": {
+    "aquarium-session-v1.json": {
+      "source": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal/aquarium-session-v1.json",
+      "exists": true,
+      "bytes": 12630,
+      "sha256": "7de4837dca22088b213391acbbabf361e34c589d710a374546a869aad2302a4b",
+      "copy_sha256": "7de4837dca22088b213391acbbabf361e34c589d710a374546a869aad2302a4b"
+    },
+    "aquarium-session-v1.json.bak1": {
+      "source": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal/aquarium-session-v1.json.bak1",
+      "exists": false
+    },
+    "aquarium-session-v1.json.bak2": {
+      "source": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal/aquarium-session-v1.json.bak2",
+      "exists": false
+    },
+    "aquarium-session-v1.json.bak3": {
+      "source": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal/aquarium-session-v1.json.bak3",
+      "exists": false
+    },
+    "aquarium-session-v1.json.tmp": {
+      "source": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal/aquarium-session-v1.json.tmp",
+      "exists": false
+    }
+  },
+  "language_preferences": [
+    {
+      "source": "/Users/zhouhelong/Library/Preferences/unity.Aquarium Journal.Aquarium Journal.plist",
+      "exists": true,
+      "source_sha256": "7d21405ee2ebe183b79be0decb74f29b7b69df1a77bd739f3603153ae560e932",
+      "language_entries": {}
+    },
+    {
+      "source": "/Users/zhouhelong/Library/Preferences/com.Aquarium-Journal.Aquarium-Journal.plist",
+      "exists": true,
+      "source_sha256": "c1d25738ae64770387cd92af11834c26efde95f40150ec843618a6c3436cb049",
+      "language_entries": {
+        "aquarium.language": "zh-CN"
+      },
+      "copy": "language-prefs.plist",
+      "copy_sha256": "65c715e258b7379d094f501fff004f492bc72039f9bd7311f6e6893ff90625ac",
+      "scope": "language entries only"
+    }
+  ],
+  "screenshot": {
+    "source": "/var/folders/6k/1sggjq8j3rxc2vlyclflq5080000gn/T/codex-clipboard-cbdc1a77-e48f-48a9-9ae3-50771623b68b.png",
+    "copy": "user-reported-visibility.png",
+    "sha256": "bc8248c0d8cc08dac3f9e9aa70e3052b24a117d305769be201ecc7a65036294a",
+    "copy_sha256": "bc8248c0d8cc08dac3f9e9aa70e3052b24a117d305769be201ecc7a65036294a"
+  },
+  "business_state": {
+    "SaveId": "2348b1d76a4f42cd834a820bc8eab831",
+    "WalletCoin": 1300,
+    "Stage": 0,
+    "Filled": false,
+    "HasSubstrate": false,
+    "PlacementsCount": 0,
+    "Batches": [
+      {
+        "Id": "batch:a8285d78384f4b35bf6b2de38887b70b",
+        "ItemId": "plant_java_fern",
+        "TransactionId": "a8285d78384f4b35bf6b2de38887b70b",
+        "PaidCoin": 110,
+        "DeliveredUnits": 1,
+        "SaleCoin": 0,
+        "Refunded": false,
+        "Sold": false,
+        "EntityIds": []
+      },
+      {
+        "Id": "batch:65fb9db55d004624bd1dca7947e2bf21",
+        "ItemId": "plant_anubias_nana",
+        "TransactionId": "65fb9db55d004624bd1dca7947e2bf21",
+        "PaidCoin": 90,
+        "DeliveredUnits": 1,
+        "SaleCoin": 0,
+        "Refunded": false,
+        "Sold": false,
+        "EntityIds": []
+      }
+    ],
+    "LightIsOn": false
+  }
+}

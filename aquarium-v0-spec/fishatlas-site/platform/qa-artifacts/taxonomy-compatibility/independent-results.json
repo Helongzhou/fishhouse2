@@ -1,0 +1,29 @@
+{
+  "time": "2026-11-09T01:57:54.829Z",
+  "checks": [
+    {
+      "name": "Valid marine and brackish URLs remain valid zero-result selections",
+      "status": "PASS"
+    },
+    {
+      "name": "Old shrimp and snail URLs are exact nonempty intersections with water",
+      "status": "PASS"
+    },
+    {
+      "name": "Aggregate scope removes fish categories and retains both invertebrate categories",
+      "status": "PASS"
+    },
+    {
+      "name": "Water is data-backed, missing water stays unknown, future water options sort stably",
+      "status": "PASS"
+    },
+    {
+      "name": "Exactly three approved undirected recommendations, no hidden old rule enters output",
+      "status": "PASS"
+    },
+    {
+      "name": "Unpublished rule and unpublished partner are removed before cap and deduplication",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/Applications/Unity/Hub/Editor/6000.6.8f1/Unity.app/Contents/MacOS/Unity",
+    "-batchmode",
+    "-quit",
+    "-projectPath",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "-executeMethod",
+    "Aquarium.UnityEditorTools.AquariumProjectSetup.BuildMacOS",
+    "-aquariumBuildOutput",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app",
+    "-aquariumBuildReport",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-macos-build-03/build-report.json",
+    "-logFile",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-macos-build-03/editor.log"
+  ],
+  "cwd": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+  "startedUtc": "2026-11-06T04:21:41.667362+00:00",
+  "source_sha256": {
+    "Assets/_Game/Editor/AquariumProjectSetup.cs": "11f1b8ab73b9742531931197beb04f21ee27ea60c1f37ff5655d2084f1612ea7",
+    "Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs": "c82fc949301c41c4882355e0c865b0519ec62921f096ae38d9a0680de46ff1d1",
+    "Assets/_Game/UnityAdapter/AquariumGameEntry.cs": "0f6b00671e2ef2e3fd9ed538345113c957f8405291759263220be9cce7ba9aa7",
+    "Assets/_Game/UnityAdapter/AquariumInteractionDemo.cs": "f5ebb98c9a25da57486edcac587d42e1ef137c8fc386478a78e9314f48f65234",
+    "Assets/_Game/Resources/Fonts/NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "Assets/_Game/Resources/Fonts/NotoSansCJKsc-Regular.otf.meta": "86d02f2f79f97daee79a8a788edce5bf8429766e83e39dc095745db13c581c50",
+    "Packages/manifest.json": "2f50caae375aa376e1554466b86ca29d69a4316c6398c18f507db8aee7b50b08",
+    "ProjectSettings/ProjectVersion.txt": "1eac9aed61309ea22f15b0324e5a6e73f2e45db08c90deb7ae4495a25f454664"
+  },
+  "finishedUtc": "2026-11-06T04:21:48.203190+00:00",
+  "exitCode": 0
+}

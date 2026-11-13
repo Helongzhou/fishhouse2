@@ -1,0 +1,19 @@
+{
+  "aquarium-session-v1.json": {
+    "existed": true,
+    "sha256": "473847d83d371adca1c8a4d8f3858c04320659118e5ed715e9c098af65a0f94d"
+  },
+  "aquarium-session-v1.json.bak1": {
+    "existed": true,
+    "sha256": "42139ce1725e7853d13e5f959b34c5fd1d79e9c3dd8db121e173718963d90052"
+  },
+  "aquarium-session-v1.json.bak2": {
+    "existed": false
+  },
+  "aquarium-session-v1.json.bak3": {
+    "existed": false
+  },
+  "aquarium-session-v1.json.tmp": {
+    "existed": false
+  }
+}

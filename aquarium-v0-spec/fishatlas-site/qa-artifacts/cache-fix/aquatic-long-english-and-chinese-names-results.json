@@ -1,0 +1,10 @@
+{
+  "base": "http://127.0.0.1:4173/",
+  "results": [
+    {
+      "name": "long English and Chinese names remain inside mobile cards",
+      "status": "PASS"
+    }
+  ],
+  "exceptions": []
+}

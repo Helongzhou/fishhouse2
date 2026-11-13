@@ -1,0 +1,25 @@
+{
+  "note": "Actual build04 manual-player evidence reported by the coordinator. No Chinese-language pass is claimed; the sample named 07zh remains unconfirmed.",
+  "snapshots": {
+    "fixture": "../unity6-batch-04/stocked-with-food-and-checkpoint.json",
+    "pause_f5_a": "snapshots/01-paused.json",
+    "pause_f5_b": "snapshots/02-paused-later.json",
+    "paused_after_f_l": "snapshots/03-paused-commands.json",
+    "resumed_light": "snapshots/04-light-on.json",
+    "resumed_feed": "snapshots/05-fed-paused.json",
+    "loaded_paused": "snapshots/06-restored-paused.json"
+  },
+  "checks": [
+    { "kind": "paused_exact", "before": "pause_f5_a", "after": "pause_f5_b" },
+    { "kind": "paused_commands", "before": "pause_f5_b", "after": "paused_after_f_l" },
+    { "kind": "resume_light", "before": "paused_after_f_l", "after": "resumed_light", "after_paused": true },
+    { "kind": "resume_feed", "before": "resumed_light", "after": "resumed_feed", "after_paused": true },
+    { "kind": "restore_paused", "before": "resumed_feed", "after": "loaded_paused" }
+  ],
+  "screenshots": [
+    { "label": "09-light-on", "path": "09-light-on.png", "observation": "Coordinator reports Space resume, L turns light on, Space pauses, F5 records snapshot 04." },
+    { "label": "10-fed", "path": "10-fed.png", "observation": "Coordinator reports Space resume, F feeds, simulation runs, Space pauses and F5 records snapshot 05." },
+    { "label": "11-unsaved-light-off", "path": "11-unsaved-light-off.png", "observation": "Coordinator reports resumed L turns light off in memory; no F5 occurs before F9." },
+    { "label": "12-restored", "path": "12-restored.png", "observation": "Coordinator reports F9 restores primary snapshot 05 and F5 records snapshot 06." }
+  ]
+}

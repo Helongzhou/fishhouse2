@@ -1,0 +1,117 @@
+{
+    "status": "failed",
+    "purpose": "Readiness inspector validation; not sample acceptance",
+    "unity_version": "6000.6.8f1",
+    "started_utc": "2026-11-09T06:12:13.6606920Z",
+    "finished_utc": "2026-11-09T06:12:13.6627670Z",
+    "schema_version": 1,
+    "expected_assets": 11,
+    "found_assets": 11,
+    "missing_models": 11,
+    "schema_valid": true,
+    "glb_import": "pending: use compatible Unity glTFast after package/license verification, or offline FBX export; no package installed",
+    "scene": "not_created",
+    "visual_qa": "not_run",
+    "failure": "11 of 11 models missing. No sample created.",
+    "assets": [
+        {
+            "asset_id": "ember_tetra",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "neocaridina_red",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "snail_reference",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "anubias_nana",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "java_fern",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "java_moss",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "crypt_wendtii",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "buce_bukit_kelam",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "stone_main",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "stone_secondary",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        },
+        {
+            "asset_id": "wood_optional",
+            "model": "",
+            "status": "missing",
+            "import": "not_run",
+            "lod": "not_run",
+            "rig_animation": "not_run",
+            "detail": "No generated local model assigned."
+        }
+    ]
+}

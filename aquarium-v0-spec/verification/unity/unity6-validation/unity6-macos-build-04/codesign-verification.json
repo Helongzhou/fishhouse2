@@ -1,0 +1,16 @@
+{
+  "command": [
+    "codesign",
+    "--verify",
+    "--deep",
+    "--strict",
+    "--verbose=2",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app"
+  ],
+  "exitCode": 0,
+  "output": "--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/PlugIns/lib_burst_generated.bundle\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/PlugIns/lib_burst_generated.bundle\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libMonoPosixHelper.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libMonoPosixHelper.dylib\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmono-native.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmono-native.dylib\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/UnityPlayer.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/UnityPlayer.dylib\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmonobdwgc-2.0.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmonobdwgc-2.0.dylib\n/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app: valid on disk\n/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app: satisfies its Designated Requirement\n",
+  "readableNoticesSha256": {
+    "OFL-1.1.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "NOTICE.txt": "cde4fb2bd2283d4e4e75d98cf640048ecbcd0d6cdfdc8d317ad97f716009327e"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "codesign_verify_command": [
+    "/usr/bin/codesign",
+    "--verify",
+    "--deep",
+    "--strict",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app"
+  ],
+  "codesign_exit_code": 0,
+  "codesign_output": "",
+  "notices": {
+    "OFL-1.1.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "NOTICE.txt": "cde4fb2bd2283d4e4e75d98cf640048ecbcd0d6cdfdc8d317ad97f716009327e"
+  },
+  "player_launched": false,
+  "visual_acceptance": "pending root real GUI screenshots"
+}

@@ -1,0 +1,29 @@
+{
+  "checkedUtc": "2026-11-05T12:19:46.447404+00:00",
+  "applicationStartedByThisCheck": false,
+  "codesign": [
+    {
+      "command": [
+        "codesign",
+        "-dv",
+        "--verbose=4",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app"
+      ],
+      "exitCode": 0,
+      "output": "Executable=/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/MacOS/Aquarium Journal\nIdentifier=com.Aquarium-Journal.Aquarium-Journal\nFormat=app bundle with Mach-O thin (arm64)\nCodeDirectory v=20400 size=510 flags=0x2(adhoc) hashes=9+3 location=embedded\nVersionPlatform=1\nVersionMin=786432\nVersionSDK=1704192\nHash type=sha256 size=32\nCandidateCDHash sha256=56c24b6ef5319497b2493cfd5cd30fd7c72d94c1\nCandidateCDHashFull sha256=56c24b6ef5319497b2493cfd5cd30fd7c72d94c12543037e466c985a3e57923c\nHash choices=sha256\nCMSDigest=56c24b6ef5319497b2493cfd5cd30fd7c72d94c12543037e466c985a3e57923c\nCMSDigestType=2\nExecutable Segment base=0\nExecutable Segment limit=16384\nExecutable Segment flags=0x1\nPage size=4096\nCDHash=56c24b6ef5319497b2493cfd5cd30fd7c72d94c1\nSignature=adhoc\nInfo.plist entries=17\nTeamIdentifier=not set\nSealed Resources version=2 rules=13 files=176\nInternal requirements count=0 size=12\nTotal signatures=1\nChosen signature=1\n"
+    },
+    {
+      "command": [
+        "codesign",
+        "--verify",
+        "--deep",
+        "--strict",
+        "--verbose=2",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app"
+      ],
+      "exitCode": 0,
+      "output": "--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/PlugIns/lib_burst_generated.bundle\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/PlugIns/lib_burst_generated.bundle\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libMonoPosixHelper.dylib\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmono-native.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libMonoPosixHelper.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmono-native.dylib\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmonobdwgc-2.0.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/libmonobdwgc-2.0.dylib\n--prepared:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/UnityPlayer.dylib\n--validated:/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/UnityPlayer.dylib\n/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app: valid on disk\n/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app: satisfies its Designated Requirement\n"
+    }
+  ],
+  "editorPlayerProcesses": []
+}

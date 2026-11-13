@@ -1,0 +1,19 @@
+{
+  "note": "Template only. Copy into the manual evidence directory and replace paths with explicitly recorded snapshots. This file is not a passing result.",
+  "snapshots": {
+    "pause_f5_a": "snapshots/01-pause-f5-a.json",
+    "pause_f5_b": "snapshots/02-pause-f5-b.json",
+    "paused_after_f_l": "snapshots/03-paused-after-f-l-f5.json",
+    "resumed_light": "snapshots/04-resume-light-f5.json",
+    "resumed_feed": "snapshots/05-running-feed-f5.json",
+    "loaded_paused": "snapshots/06-f9-paused-f5.json"
+  },
+  "checks": [
+    { "kind": "paused_exact", "before": "pause_f5_a", "after": "pause_f5_b" },
+    { "kind": "paused_commands", "before": "pause_f5_b", "after": "paused_after_f_l" },
+    { "kind": "resume_light", "before": "paused_after_f_l", "after": "resumed_light" },
+    { "kind": "resume_feed", "before": "resumed_light", "after": "resumed_feed" },
+    { "kind": "restore_paused", "before": "pause_f5_a", "after": "loaded_paused" }
+  ],
+  "screenshots": []
+}

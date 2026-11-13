@@ -1,0 +1,16 @@
+{
+  "checkedUtc": "2026-11-05T12:23:59.656121+00:00",
+  "manifestStatus": "restored",
+  "restoredSaveFilesExist": {
+    "aquarium-session-v1.json": false,
+    "aquarium-session-v1.json.bak1": false,
+    "aquarium-session-v1.json.bak2": false,
+    "aquarium-session-v1.json.bak3": false,
+    "aquarium-session-v1.json.tmp": false
+  },
+  "retainedFixture": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-01/after/aquarium-session-v1.json",
+  "retainedFixtureSha256": "523cb867ae4b53d73cad4cb5498e0fda6abbad80c988cff5785f0124cc19807a",
+  "editorPlayerProcesses": [],
+  "playerPrefsModified": false,
+  "manualGuiResult": "not_run_locked"
+}

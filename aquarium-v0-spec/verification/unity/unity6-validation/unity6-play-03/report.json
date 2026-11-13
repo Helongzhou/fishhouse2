@@ -1,0 +1,120 @@
+{
+    "status": "passed",
+    "mode": "editor-play-smoke",
+    "projectPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "expectedUnityVersion": "6000.6.8f1",
+    "expectedUrpVersion": "17.6.0",
+    "unityVersion": "6000.6.8f1",
+    "urpVersion": "17.6.0",
+    "startedUtc": "2026-11-05T12:12:19.0398080Z",
+    "finishedUtc": "2026-11-05T12:12:30.3933840Z",
+    "failure": "",
+    "coverage": "Real Unity APIs and production domain/adapter calls. No human input, visual quality, Windows player, font-layout or Steam certification.",
+    "checks": [
+        {
+            "name": "Unity editor matches selected project's ProjectVersion",
+            "detail": "6000.6.8f1 expected; 6000.6.8f1 actual",
+            "passed": true
+        },
+        {
+            "name": "selected project freezes an exact URP version",
+            "detail": "17.6.0",
+            "passed": true
+        },
+        {
+            "name": "selected project's pinned URP package resolved",
+            "detail": "17.6.0 expected; 17.6.0 actual",
+            "passed": true
+        },
+        {
+            "name": "Prepare assigns actual URP graphics and quality pipelines",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "opaque and transparent shader materials import",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene imports with one real entry and no missing scripts",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene registered for builds",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Editor startup completes before entering Play",
+            "detail": "initial delayCall completed; editor idle; indexPath=/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/UserSettings/Search.index present; defaultDBPath=UserSettings/Search.index found=True ready=True updating=False loading=Complete",
+            "passed": true
+        },
+        {
+            "name": "real scene entry survives Awake and initial Update frames",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "scene Awake starts actual production session",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real nonzero challenge and continuous window unlock first stocking",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "first stocking delivers eight Ember and six shrimp",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "snapshot contains both active food ownership and ingested per-animal nitrogen",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "stocked observation grants 450 exactly once",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "full real route ends at 8 Ember + 8 Neon + 6 shrimp and 280 coins",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real adapter elapsed-time entry exists",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real adapter 0.5-second host frame equals fifteen 30Hz frames",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real adapter view methods build all 22 animal bodies, camera and substrate collider",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Play smoke emitted no uncaught engine or adapter errors",
+            "detail": "90 observed editor updates; no automated physical input/visual-quality or every-OnGUI-path claim.",
+            "passed": true
+        }
+    ],
+    "snapshotComparisons": [],
+    "startupObservations": [
+        "2.966s delayCall=False compiling=False updating=False",
+        "3.047s initial delayCall completed; editor idle; indexPath=/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/UserSettings/Search.index present; defaultDBPath=UserSettings/Search.index found=True ready=False updating=True loading=Loading",
+        "13.351s initial delayCall completed; editor idle; indexPath=/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/UserSettings/Search.index present; defaultDBPath=UserSettings/Search.index found=True ready=True updating=False loading=Complete"
+    ],
+    "errors": [],
+    "warnings": [
+        "Batch editor is unfocused. Real view methods were invoked explicitly; focused physical-input/Update routing remains separate acceptance."
+    ]
+}

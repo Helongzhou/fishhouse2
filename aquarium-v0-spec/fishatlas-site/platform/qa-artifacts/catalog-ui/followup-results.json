@@ -1,0 +1,114 @@
+{
+  "base": "http://127.0.0.1:4175",
+  "results": [
+    {
+      "name": "Shortcut contrast in default/hover/focus/pressed and applied selected states",
+      "status": "PASS"
+    },
+    {
+      "name": "Fish/shrimp bilingual structured notes render once, diet localized, feeding retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Material preparation and plant content without structured care remain",
+      "status": "PASS"
+    },
+    {
+      "name": "No page exceptions",
+      "status": "PASS"
+    }
+  ],
+  "buttonStates": [
+    {
+      "locale": "zh-CN",
+      "state": "default",
+      "foreground": "rgb(23, 78, 67)",
+      "background": "rgb(232, 238, 228)",
+      "contrast": 8.055892186906302,
+      "outline": "none",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "zh-CN",
+      "state": "hover",
+      "foreground": "rgb(13, 59, 50)",
+      "background": "rgb(220, 231, 219)",
+      "contrast": 9.76836255582448,
+      "outline": "none",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "zh-CN",
+      "state": "focus",
+      "foreground": "rgb(13, 59, 50)",
+      "background": "rgb(220, 231, 219)",
+      "contrast": 9.76836255582448,
+      "outline": "solid",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "zh-CN",
+      "state": "active",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(23, 78, 67)",
+      "contrast": 9.514157695741567,
+      "outline": "solid",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "zh-CN",
+      "state": "selected",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(13, 59, 50)",
+      "contrast": 12.43518288962806,
+      "outline": "solid",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "en",
+      "state": "default",
+      "foreground": "rgb(23, 78, 67)",
+      "background": "rgb(232, 238, 228)",
+      "contrast": 8.055892186906302,
+      "outline": "none",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "en",
+      "state": "hover",
+      "foreground": "rgb(13, 59, 50)",
+      "background": "rgb(220, 231, 219)",
+      "contrast": 9.76836255582448,
+      "outline": "none",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "en",
+      "state": "focus",
+      "foreground": "rgb(13, 59, 50)",
+      "background": "rgb(220, 231, 219)",
+      "contrast": 9.76836255582448,
+      "outline": "solid",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "en",
+      "state": "active",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(23, 78, 67)",
+      "contrast": 9.514157695741567,
+      "outline": "solid",
+      "outlineWidth": "3px"
+    },
+    {
+      "locale": "en",
+      "state": "selected",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(13, 59, 50)",
+      "contrast": 12.43518288962806,
+      "outline": "solid",
+      "outlineWidth": "3px"
+    }
+  ],
+  "errors": []
+}

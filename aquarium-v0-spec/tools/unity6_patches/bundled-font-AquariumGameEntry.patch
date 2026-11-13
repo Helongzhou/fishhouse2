@@ -1,0 +1,17 @@
+--- a/Assets/_Game/UnityAdapter/AquariumGameEntry.cs
++++ b/Assets/_Game/UnityAdapter/AquariumGameEntry.cs
+@@ -335,8 +335,11 @@
+         private Font FontFor()
+         {
+             string group=text.CurrentLocale.font_group??"latin";Font font;if(fonts.TryGetValue(group,out font))return font;
+-            string[] families=group.StartsWith("cjk",StringComparison.Ordinal)?new[]{"Noto Sans CJK SC","PingFang SC","Microsoft YaHei","Arial Unicode MS"}:new[]{"Noto Sans","Segoe UI","Arial"};
+-            font=Font.CreateDynamicFontFromOSFont(families,14);fonts.Add(group,font);return font;
++            // Every shipped locale uses the bundled OFL Noto Sans CJK SC face. It covers Latin and zh-CN;
++            // planned locales retain their metadata but need separate glyph/layout QA before release.
++            font=Resources.Load<Font>("Fonts/NotoSansCJKsc-Regular");
++            if(font==null)throw new InvalidOperationException("Missing bundled font asset for font_group "+group+".");
++            fonts.Add(group,font);return font;
+         }
+-        private void OnDestroy(){if(substrateMesh!=null)Destroy(substrateMesh);foreach(Material m in materials)if(m!=null)Destroy(m);foreach(Font f in fonts.Values)if(f!=null)Destroy(f);}
++        private void OnDestroy(){if(substrateMesh!=null)Destroy(substrateMesh);foreach(Material m in materials)if(m!=null)Destroy(m);fonts.Clear();}
+     }

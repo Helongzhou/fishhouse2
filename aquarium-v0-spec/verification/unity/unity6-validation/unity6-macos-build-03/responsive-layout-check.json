@@ -1,0 +1,33 @@
+{
+  "formula": "scale=max(0.75,min(3,min(width/1280,height/800))); panel=(12+360+12)*scale; cameraLeft=panel/width",
+  "cases": [
+    {
+      "screen": {
+        "width": 1280,
+        "height": 800
+      },
+      "uiScale": 1.0,
+      "logicalWidth": 1280.0,
+      "logicalHeight": 800.0,
+      "panelDesignWidth": 360,
+      "panelPixelWidth": 384.0,
+      "cameraViewportX": 0.3,
+      "cameraViewportWidth": 0.7,
+      "productButtonDesignWidth": 260
+    },
+    {
+      "screen": {
+        "width": 3840,
+        "height": 2160
+      },
+      "uiScale": 2.7,
+      "logicalWidth": 1422.2222222222222,
+      "logicalHeight": 800.0,
+      "panelDesignWidth": 360,
+      "panelPixelWidth": 1036.8000000000002,
+      "cameraViewportX": 0.2700000000000001,
+      "cameraViewportWidth": 0.73,
+      "productButtonDesignWidth": 260
+    }
+  ]
+}

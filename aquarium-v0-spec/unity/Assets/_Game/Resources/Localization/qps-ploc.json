@@ -1,0 +1,1081 @@
+{
+  "language": "qps-ploc",
+  "entries": [
+    {
+      "key": "compatibility.reason.ADULT_MALE_BETTA_CONSPECIFIC_BLOCK.message",
+      "value": "⟦Ṁüľţïþľë àďüľţ ṁàľë {source} çàññôţ šħàřë ţħïš ţàñķ. ~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.ADULT_MALE_BETTA_CONSPECIFIC_BLOCK.repair",
+      "value": "⟦Ħôüšë àďüľţ ṁàľëš ïñ šëþàřàţë šüïţàƀľë šÿšţëṁš. Ďô ñôţ řëľÿ ôñ à ľàřğëř ğřôüþ ôř ïñďïṽïďüàľ ţëṁþëřàṁëñţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_INSUFFICIENT.message",
+      "value": "⟦Ţħë àďüľţ šþàçë řëʠüïřëṁëñţ ƒôř {source} ïš ñôţ ṁëţ àţ {target}. ~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_INSUFFICIENT.repair",
+      "value": "⟦Üšë à ţàñķ ţħàţ ṁëëţš àďüľţ ľëñğţħ, ħëïğħţ àñď üšàƀľë šŵïṁṁïñğ-šþàçë řëʠüïřëṁëñţš, ôř çħôôšë à šüïţàƀľë šþëçïëš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_UNKNOWN.message",
+      "value": "⟦Ţħë àďüľţ šþàçë řëʠüïřëṁëñţ ôř àṽàïľàƀľë šþàçë ƒôř {source} àţ {target} ïš üñṽëřïƒïëď. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ àďüľţ řëʠüïřëṁëñţš àñď üšàƀľë šþàçë àƒţëř šüƀšţřàţë àñď ħàřďšçàþë ďïšþľàçëṁëñţ. Ĵüṽëñïľëš šţïľľ řëʠüïřë àñ àďüľţ þľàñ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BETTA_CONSPECIFIC_CONDITIONS_REVIEW.message",
+      "value": "⟦Ñô ṁüľţïþľë-àďüľţ-ṁàľë řüľë ŵàš ţřïğğëřëď ƒôř {source}, ƀüţ ţħïš šàṁë-šþëçïëš ğřôüþ šţïľľ ħàš üñṁëţ řëṽïëŵ çôñďïţïôñš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BETTA_CONSPECIFIC_CONDITIONS_REVIEW.repair",
+      "value": "⟦Řëṽïëŵ ïñďïṽïďüàľš, šëẋ, šþàçë, çôṽëř àñď ṁàñàğëṁëñţ. Þřëþàřë ïṁṁëďïàţë šëþàřàţïôñ; Ṽ0 ďëƒàüľţš ţô ôñë ïñďïṽïďüàľ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BETTA_SEX_OR_STAGE_UNKNOWN.message",
+      "value": "⟦Šëẋ ôř ľïƒë šţàğë ïš üñķñôŵñ ƒôř {source}; àďüľţ ṁàľë çôñƒľïçţ çàññôţ ƀë řüľëď ôüţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BETTA_SEX_OR_STAGE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ ţħë šëẋ àñď ľïƒë šţàğë ôƒ ëṽëřÿ ïñďïṽïďüàľ ƀëƒôřë àþþřôṽïñğ à šàṁë-šþëçïëš çôṁƀïñàţïôñ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_FOOD_UNKNOWN.message",
+      "value": "⟦Àþþřôþřïàţë šïñķïñğ ƒôôď ƒôř {source} ħàš ñôţ ƀëëñ çôñƒïřṁëď. ~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_FOOD_UNKNOWN.repair",
+      "value": "⟦Þřôṽïďë šþëçïëš-àþþřôþřïàţë šïñķïñğ ƒôôď. Ƒëçëš àñď ľëƒţôṽëřš àřë ñôţ àñ àďëʠüàţë ƒëëďïñğ þľàñ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SINKING_FOOD.message",
+      "value": "⟦Ñô àþþřôþřïàţë šïñķïñğ-ƒôôď þľàñ ïš þřëšëñţ ƒôř {source}. ~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SINKING_FOOD.repair",
+      "value": "⟦Þřôṽïďë šüïţàƀľë šïñķïñğ ƒôôď àñď ôƀšëřṽë ƒëëďïñğ. Ƀôţţôṁ-šïƒţïñğ ƒïšħ àřë ñôţ ƒëçëš çľëàñëřš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SOFT_SAND.message",
+      "value": "⟦Ţħë ṁôďëľëď šôƒţ-šàñď ƒôřàğïñğ řëʠüïřëṁëñţ ôƒ {source} ïš üñṁëţ. ~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SOFT_SAND.repair",
+      "value": "⟦Þřôṽïďë à šàƒë, àççëššïƀľë šôƒţ-šàñď ƒôřàğïñğ àřëà àñď řëàššëšš. Šïƒţïñğ ďôëš ñôţ řëṁôṽë ţħë ñëëď ƒôř ŵàšţë ṁàñàğëṁëñţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_SUBSTRATE_UNKNOWN.message",
+      "value": "⟦Ţħë ƒôřàğïñğ šüƀšţřàţë ƒôř {source} ïš üñṽëřïƒïëď. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_SUBSTRATE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ à šàƒë šôƒţ-šàñď šüƀšţřàţë ƒôř ţħïš ƀôţţôṁ-šïƒţïñğ þřôƒïľë. ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_RANGE_EMPTY.message",
+      "value": "⟦Ţħë ŵħôľë-çôṁṁüñïţÿ ŵàţëř-þàřàṁëţëř ïñţëřšëçţïôñ ïš ëṁþţÿ; {source} àñď {target} ďëƒïñë çôñƒľïçţïñğ ƀôüñďš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_RANGE_EMPTY.repair",
+      "value": "⟦Šëþàřàţë ïñçôṁþàţïƀľë šþëçïëš ôř řëṁôṽë à çôñƒľïçţïñğ ṁëṁƀëř, ţħëñ řëçôṁþüţë ţħë ëñţïřë çôṁƀïñàţïôñ. À ƒřëšħŵàţëř ľàƀëľ ïš ïñšüƒƒïçïëñţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_WATER_TYPE_MISMATCH.message",
+      "value": "⟦{source} àñď {target} řëʠüïřë ďïƒƒëřëñţ ŵàţëř šÿšţëṁš. ~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_WATER_TYPE_MISMATCH.repair",
+      "value": "⟦Šëþàřàţë ƒřëšħŵàţëř, ƀřàçķïšħ àñď šàľţŵàţëř řëʠüïřëṁëñţš ïñţô šüïţàƀľë šÿšţëṁš; ďô ñôţ ïñṽëñţ à çôṁþřôṁïšë ŵàţëř ţÿþë. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.CONTENT_POLICY_UNKNOWN.message",
+      "value": "⟦Ţħë Ṽ0 þüřçħàšïñğ þôľïçÿ ƒôř {source} ïš üñķñôŵñ. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.CONTENT_POLICY_UNKNOWN.repair",
+      "value": "⟦Ħàṽë ţħë çôñţëñţ ôŵñëř çôñƒïřṁ þüřçħàšàƀľë_ṽ0, þľàññëď ôř řëƒëřëñçë_ôñľÿ. ~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.DIRECTIONAL_FIN_NIPPING_RISK.message",
+      "value": "⟦{source} ṁàÿ ñïþ ţħë ƒïñš ôƒ {target}; šôüřçë ğřôüþ šïžë ïš {source_count}. Ţħïš ïš à řïšķ, ñôţ à ğüàřàñţëëď àţţàçķ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.DIRECTIONAL_FIN_NIPPING_RISK.repair",
+      "value": "⟦Þřëƒëř šëþàřàţïñğ ţħë ƒïñ-ñïþþïñğ šôüřçë àñď ľôñğ-ƒïññëď ţàřğëţ. Řëṽïëŵ ğřôüþ šïžë, šþàçë àñď šţřëšš; àďëʠüàţë ñüṁƀëřš ďô ñôţ ğüàřàñţëë šàƒëţÿ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.GAPE_PREDATION_RISK.message",
+      "value": "⟦Ţħë ğàþë ôƒ {source} ïš ñôţ šṁàľľëř ţħàñ ţħë ƀôďÿ çřôšš-šëçţïôñ ôƒ {target}; šïžë-řëľàţëď þřëďàţïôñ ïš þôššïƀľë. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.GAPE_PREDATION_RISK.repair",
+      "value": "⟦Šëþàřàţë þôţëñţïàľ þřëÿ ôř üšë à ďëďïçàţëď ñüřšëřÿ. Çôṽëř ďôëš ñôţ ğüàřàñţëë šüřṽïṽàľ; řëàššëšš àš àñïṁàľš ğřôŵ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.INCONSISTENT_SPECIES_PROFILE.message",
+      "value": "⟦Ţħë šàṁë šþëçïëš ÏĎ {source} üšëš ïñçôñšïšţëñţ þřôƒïľë ïñšţàñçëš. ~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.INCONSISTENT_SPECIES_PROFILE.repair",
+      "value": "⟦Řëƒëřëñçë ôñë řëṽïëŵëď þřôƒïľë ṽëřšïôñ ƒôř àľľ çôħôřţš ôƒ ţħë šàṁë šþëçïëš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.INVALID_STOCK_GROUP.message",
+      "value": "⟦{target} ħàš à ṁïššïñğ šþëçïëš/ğřôüþ ÏĎ, ďüþľïçàţë ğřôüþ ÏĎ, ôř à ñôñ-þôšïţïṽë çôüñţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.INVALID_STOCK_GROUP.repair",
+      "value": "⟦Þřôṽïďë à řëṽïëŵëď šþëçïëš, üñïʠüë ğřôüþ ÏĎ àñď þôšïţïṽë ïñţëğëř çôüñţ, ţħëñ řëàššëšš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.NO_VALID_STOCK.message",
+      "value": "⟦Ñô ṽàľïď šţôçķ ğřôüþ ïš àṽàïľàƀľë ƒôř àššëššṁëñţ. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.NO_VALID_STOCK.repair",
+      "value": "⟦Àďď àţ ľëàšţ ôñë řëṽïëŵëď šþëçïëš çôħôřţ; àñ ëṁþţÿ ôř ïñṽàľïď çôṁþôšïţïôñ ïš ñôţ àñ àþþřôṽàľ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_PROFILE_UNKNOWN.message",
+      "value": "⟦Ţħë àƀïľïţÿ ôƒ {source} ţô þřëÿ ôñ šṁàľľëř àñïṁàľš ïš üñṽëřïƒïëď. ~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_PROFILE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ ďïëţ àñď šïžë-řëľàţëď þřëďàţïôñ çàþàƀïľïţÿ. Ďô ñôţ ïñƒëř šàƒëţÿ ôř ţôţàľ ľôšš ƒřôṁ ƒïšħ/šħřïṁþ çàţëğôřïëš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_SIZE_UNKNOWN.message",
+      "value": "⟦Ğàþë ôř çüřřëñţ ƀôďÿ çřôšš-šëçţïôñ ďàţà ƒôř {source} àñď {target} ïš ṁïššïñğ; šŵàľľôŵïñğ řïšķ ïš üñřëšôľṽëď. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_SIZE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ çüřřëñţ-šţàğë ğàþë àñď ƀôďÿ çřôšš-šëçţïôñ, àñď šëþàřàţë þôţëñţïàľ þřëÿ üñţïľ ṽëřïƒïëď. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SAME_SPECIES_GROUP_TOO_SMALL.message",
+      "value": "⟦{source} ħàš {source_count} ïñďïṽïďüàľš, ƀëľôŵ ïţš řëçôṁṁëñďëď šàṁë-šþëçïëš ṁïñïṁüṁ ôƒ {required_count}. Ôţħëř ƒïšħ ôř šħřïṁþ ďô ñôţ çôüñţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SAME_SPECIES_GROUP_TOO_SMALL.repair",
+      "value": "⟦Àƒţëř řëàššëššïñğ šþàçë, ƒïľţřàţïôñ àñď çôñƒľïçţš, àďď ţħë šàṁë šþëçïëš ôř çħôôšë à šþëçïëš ŵïţħ ďïƒƒëřëñţ šôçïàľ řëʠüïřëṁëñţš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_GROUP_MIN_UNKNOWN.message",
+      "value": "⟦Ţħë šàṁë-šþëçïëš ğřôüþ řëʠüïřëṁëñţ ƒôř {source} ïš üñķñôŵñ. ~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_GROUP_MIN_UNKNOWN.repair",
+      "value": "⟦Ṽëřïƒÿ šôçïàľ àñď çôñšþëçïƒïç-ïšôľàţïôñ řëʠüïřëṁëñţš ïñšţëàď ôƒ šüƀšţïţüţïñğ ôţħëř šþëçïëš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_RANGE_UNKNOWN.message",
+      "value": "⟦Ţħë řëṽïëŵëď {parameter} řàñğë ƒôř {source} ïš ṁïššïñğ ôř ïñṽàľïď. ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_RANGE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ ţħë çôṁþľëţë šþëçïëš řàñğë àñď řëàššëšš. Ďô ñôţ ţřëàţ üñķñôŵñ ďàţà àš à çôṁþàţïƀľë ƒřëšħŵàţëř ďëƒàüľţ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_WATER_TYPE_UNKNOWN.message",
+      "value": "⟦Ţħë ŵàţëř šÿšţëṁ řëʠüïřëď ƀÿ {source} ïš üñṽëřïƒïëď. ~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_WATER_TYPE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ ţħë šþëçïëš ŵàţëř šÿšţëṁ; üñķñôŵñ ṁüšţ ñôţ ďëƒàüľţ ţô ƒřëšħŵàţëř. ~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_OUTSIDE_SPECIES_RANGE.message",
+      "value": "⟦Ţħë çüřřëñţ ţàñķ {parameter} ïš ôüţšïďë ţħë řëṽïëŵëď řàñğë ƒôř {source}. ~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_OUTSIDE_SPECIES_RANGE.repair",
+      "value": "⟦Ïƒ à ŵħôľë-çôṁṁüñïţÿ řàñğë ëẋïšţš, àďĵüšţ ğřàďüàľľÿ ïñţô ïţš ïñţëřïôř. Ôţħëřŵïšë šëþàřàţë šþëçïëš; àṽôïď šüďďëñ þàřàṁëţëř çħàñğëš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_UNKNOWN.message",
+      "value": "⟦Ţħë çüřřëñţ ţàñķ ṁëàšüřëṁëñţ ƒôř {parameter} ïš ṁïššïñğ ôř ïñṽàľïď. ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_UNKNOWN.repair",
+      "value": "⟦Ṁëàšüřë àñď řëçôřď ţħë çüřřëñţ ṽàľüë; çôṁþàţïƀľë šþëçïëš řàñğëš ďô ñôţ þřôṽë çüřřëñţ ŵàţëř çôñďïţïôñš àřë šüïţàƀľë. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_MISMATCH.message",
+      "value": "⟦{source} řëʠüïřëš à ďïƒƒëřëñţ ŵàţëř šÿšţëṁ ƒřôṁ ţħë çüřřëñţ ţàñķ. ~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_MISMATCH.repair",
+      "value": "⟦Ṁôṽë ţħë šþëçïëš ïñţô à šüïţàƀľë ïñďëþëñďëñţ ŵàţëř šÿšţëṁ. ~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_UNKNOWN.message",
+      "value": "⟦Ţħë çüřřëñţ ţàñķ ŵàţëř šÿšţëṁ ïš üñķñôŵñ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_UNKNOWN.repair",
+      "value": "⟦Çôñƒïřṁ ŵħëţħëř ţħïš ïš à ƒřëšħŵàţëř, ƀřàçķïšħ ôř šàľţŵàţëř šÿšţëṁ. ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.V0_CONTENT_NOT_PURCHASABLE.message",
+      "value": "⟦{source} ïš þľàññëď ôř řëƒëřëñçë-ôñľÿ àñď çàññôţ ƀë þüřçħàšëď ïñ Ṽ0. Ţħïš ïš çôñţëñţ þôľïçÿ, ñôţ àñ ëçôľôğïçàľ ïñçôṁþàţïƀïľïţÿ çľàïṁ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.reason.V0_CONTENT_NOT_PURCHASABLE.repair",
+      "value": "⟦Řëṁôṽë ïţ ƒřôṁ ţħë Ṽ0 þüřçħàšë ľïšţ ôř ŵàïţ ƒôř àñ àþþřôṽëď çôñţëñţ ṽëřšïôñ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.summary.action_required",
+      "value": "⟦Řëṽïëŵ ëṽëřÿ ƀľôçķïñğ, řïšķ, üñṁëţ-çôñďïţïôñ àñď üñṽëřïƒïëď-ďàţà řëàšôñ. Řëšôľṽë àñď řëàššëšš ƀëƒôřë ïñţřôďüçţïôñ. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "compatibility.summary.monitor",
+      "value": "⟦Ñô ṁôďëľëď çôñƒľïçţ ƒôüñď. Ɋüàřàñţïñë, šţàğëď ïñţřôďüçţïôñ, ṁôñïţôřïñğ àñď àñ ïšôľàţïôñ þľàñ àřë šţïľľ řëʠüïřëď. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.clock",
+      "value": "⟦Řëàľ: {0:F1}š  Ëçôľôğÿ ďàÿ: {1:F3} ({2}ẋ)  Ľïğħţ: {3}  {4} ~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.controls.camera",
+      "value": "⟦Řïğħţ ṁôüšë ôřƀïţ | Ŵħëëľ àþþřôàçħ | Ƒ5 šàṽë | Ƒ9 ľôàď | Ţ ľàñğüàğë ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.controls.events",
+      "value": "⟦Ľ ľïğħţ | Ğ àþþřôàçħ ğľàšš | Ƒ ƒôôď | Šþàçë þàüšë | 1 / 2 / 4 ëçôľôğÿ ~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.light.off",
+      "value": "⟦ÔƑƑ ~~~~⟧"
+    },
+    {
+      "key": "demo.light.on",
+      "value": "⟦ÔÑ ~~~~⟧"
+    },
+    {
+      "key": "demo.state.paused",
+      "value": "⟦ÞÀÜŠËĎ ~~~~⟧"
+    },
+    {
+      "key": "demo.state.running",
+      "value": "⟦ŘÜÑÑÏÑĞ ~~~~⟧"
+    },
+    {
+      "key": "demo.status.load_failed",
+      "value": "⟦Ľôàď ƒàïľëď; ţħë çüřřëñţ ţàñķ ŵàš řëţàïñëď. Šëë ţħë ďëṽëľôþëř çôñšôľë. ~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.status.loaded",
+      "value": "⟦Ľôàďëď šàṽëď àğëñţš àñď ţħëïř ïñďëþëñďëñţ řàñďôṁ šţàţëš. ~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.status.ready",
+      "value": "⟦Àþþřôàçħ ţħë ğľàšš, ƒëëď, ôř šŵïţçħ ţħë ľïğħţ ţô ôƀšëřṽë ïñďïṽïďüàľ řëàçţïôñš. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.status.save_failed",
+      "value": "⟦Šàṽë ƒàïľëď. Šëë ţħë ďëṽëľôþëř çôñšôľë ƒôř ďëţàïľš. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "demo.status.saved",
+      "value": "⟦Šàṽëď: {0} ~~~~⟧"
+    },
+    {
+      "key": "demo.title",
+      "value": "⟦Àʠüàřïüṁ ïñţëřàçţïôñ þřôţôţÿþë (þľàçëħôľďëř àřţ) ~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.apply_slope",
+      "value": "⟦Àþþľÿ šüƀšţřàţë šľôþë ~~~~~~~~⟧"
+    },
+    {
+      "key": "game.back",
+      "value": "⟦Ƀàçķ · ľëƒţ / řïğħţ ~~~~~~~⟧"
+    },
+    {
+      "key": "game.camera",
+      "value": "⟦Řïğħţ ďřàğ ţô ôřƀïţ · ŵħëëľ ţô àþþřôàçħ · šëľëçţ àñď ďřàğ ţô ṁôṽë ~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.challenge",
+      "value": "⟦Šţàřţ ƒïšħľëšš ñïţřôğëñ çħàľľëñğë ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.clock",
+      "value": "⟦Ďàÿ {0:0.00} · {1}× · {2:0.0} Ľ ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.front",
+      "value": "⟦Ƒřôñţ · ľëƒţ / řïğħţ ~~~~~~~⟧"
+    },
+    {
+      "key": "game.loaded",
+      "value": "⟦Àʠüàřïüṁ řëšţôřëď. ~~~~~~~⟧"
+    },
+    {
+      "key": "game.move",
+      "value": "⟦Ṁôṽë ~~~~⟧"
+    },
+    {
+      "key": "game.place",
+      "value": "⟦Çľïçķ ïñšïďë ţħë ţàñķ ţô þľàçë. Ř řôţàţëš. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.place_plant",
+      "value": "⟦Çľïçķ à šţôñë ţô àţţàçħ ţħë þľàñţ. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.product",
+      "value": "⟦{0} · ôŵñëď {1} ~~~~~~⟧"
+    },
+    {
+      "key": "game.prototype",
+      "value": "⟦Ëẋþëřïṁëñţàľ ţëàçħïñğ ṁôďë ~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.rate",
+      "value": "⟦{0}× ~~~~⟧"
+    },
+    {
+      "key": "game.ready",
+      "value": "⟦Çħôôšë ţħë ëššëñţïàľš ţô ƀëğïñ. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.recovered",
+      "value": "⟦Àʠüàřïüṁ řëçôṽëřëď ƒřôṁ à ƀàçķüþ. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.refund",
+      "value": "⟦Řëƒüñď þüřçħàšë ~~~~~~⟧"
+    },
+    {
+      "key": "game.rotate",
+      "value": "⟦Řôţàţë 15° ~~~~⟧"
+    },
+    {
+      "key": "game.stage.Complete",
+      "value": "⟦Ôƀšëřṽë àñď çàřë ƒôř ÿôüř àʠüàřïüṁ. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.stage.Confirmed",
+      "value": "⟦Řëàďÿ ţô ƒïľľ. ~~~~~⟧"
+    },
+    {
+      "key": "game.stage.CyclePassed",
+      "value": "⟦Ïñţřôďüçë Ember Tetra àñď Red Cherry Shrimp. ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.stage.Cycling",
+      "value": "⟦Ľëţ ţħë ƒïľţëř þřôçëšš ţħë ñïţřôğëñ ďôšë. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.stage.Editing",
+      "value": "⟦Àřřàñğë ÿôüř àʠüàřïüṁ. ~~~~~~~~⟧"
+    },
+    {
+      "key": "game.stage.Filled",
+      "value": "⟦Šţàřţ ţħë ƒïšħľëšš çħàľľëñğë. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.stage.MainUnlocked",
+      "value": "⟦Řëàďÿ ƒôř Neon Tetra. ~~~~~~~~⟧"
+    },
+    {
+      "key": "game.stage.TrialObserving",
+      "value": "⟦Ôƀšëřṽë ţħë ƒïřšţ àñïṁàľš àš ţħë ŵàţëř šţàÿš šţàƀľë. ~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.template",
+      "value": "⟦Àřřàñğë þüřçħàšëď ëššëñţïàľš ~~~~~~~~~~⟧"
+    },
+    {
+      "key": "game.title",
+      "value": "⟦Àʠüàřïüṁ Ĵôüřñàľ ~~~~~~⟧"
+    },
+    {
+      "key": "game.water",
+      "value": "⟦ŢÀÑ {0:0.000} · ÑÔ₂-Ñ {1:0.000} · ÑÔ₃-Ñ {2:0.000} ṁğ Ñ/Ľ · {3} ~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.already_filled",
+      "value": "⟦Ţħë àʠüàřïüṁ ïš àľřëàďÿ ƒïľľëď. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.batch_unavailable",
+      "value": "⟦Ţħïš þüřçħàšë ïš ñô ľôñğëř àṽàïľàƀľë. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.budget_reserved",
+      "value": "⟦Ķëëþ {0} çôïñš ƒôř ţħë řëṁàïñïñğ ëššëñţïàľš. ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.care_requires_simulation",
+      "value": "⟦Üšë ţħë ƒëëďïñğ ôř ŵàţëř-çħàñğë àçţïôñ. ~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.coin_overflow",
+      "value": "⟦Ţħë çôïñ ƀàľàñçë ïš ţôô ľàřğë. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.command_invalid",
+      "value": "⟦Ţħïš àçţïôñ çôüľď ñôţ ƀë çôṁþľëţëď. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.condition_unmet",
+      "value": "⟦Ţħë àʠüàřïüṁ ïš ñôţ řëàďÿ ƒôř ţħïš àçţïôñ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.content_unavailable",
+      "value": "⟦Ţħïš ïţëṁ ïš ôüţšïďë ţħë çüřřëñţ ţëàçħïñğ řôüţë. ~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.ecology_required",
+      "value": "⟦Ŵàţëř-ʠüàľïţÿ ïñƒôřṁàţïôñ ïš üñàṽàïľàƀľë. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.ecology_review_pending",
+      "value": "⟦Šţôçķïñğ ïš ŵàïţïñğ ƒôř ëçôľôğïçàľ řëṽïëŵ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.gate_locked",
+      "value": "⟦Çôṁþľëţë ţħë ëàřľïëř šţàğë ƒïřšţ. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.hardscape_overlap",
+      "value": "⟦Ṁôṽë ţħë šţôñëš àþàřţ. ~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.insufficient_coin",
+      "value": "⟦Ÿôü ñëëď {0} çôïñš. ~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.item_not_placeable",
+      "value": "⟦Ţħïš ïţëṁ çàññôţ ƀë þľàçëď àš šçëñëřÿ. ~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.item_unavailable",
+      "value": "⟦Ţħïš ïţëṁ ïš üñàṽàïľàƀľë. ~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.layout_locked",
+      "value": "⟦Ôñľÿ ëẋïšţïñğ þľàñţš çàñ ƀë ṁôṽëď àƒţëř çôñƒïřṁàţïôñ. ~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.ledger_full",
+      "value": "⟦Ţħë àçţïôñ ħïšţôřÿ ïš ƒüľľ. ~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.nothing_to_redo",
+      "value": "⟦Ñôţħïñğ ţô řëďô. ~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.nothing_to_undo",
+      "value": "⟦Ñôţħïñğ ţô üñďô. ~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.ok",
+      "value": "⟦Ďôñë. ~~~~⟧"
+    },
+    {
+      "key": "gameplay.outside_tank",
+      "value": "⟦Ķëëþ ţħë ŵħôľë ôƀĵëçţ ïñšïďë ţħë àʠüàřïüṁ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.paused",
+      "value": "⟦Řëšüṁë ţô çôñţïñüë. ~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.placement_id_conflict",
+      "value": "⟦Ţħïš þľàçëṁëñţ ƀëľôñğš ţô àñôţħëř þüřçħàšë. ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.placement_invalid",
+      "value": "⟦Çħôôšë à ṽàľïď þôšïţïôñ àñď ôƀĵëçţ šïžë. ~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.placement_missing",
+      "value": "⟦Ţħïš ôƀĵëçţ ïš ñô ľôñğëř þľàçëď. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.placement_size_locked",
+      "value": "⟦Ṁôṽë ôř řôţàţë ţħë ôƀĵëçţ ŵïţħôüţ řëšïžïñğ ïţ. ~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.plant_buried",
+      "value": "⟦Ķëëþ ţħë þľàñţ àƀôṽë ţħë šüƀšţřàţë. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.plant_rule_missing",
+      "value": "⟦Ţħïš þľàñţ çàññôţ ƀë þľàçëď ÿëţ. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.refund_closed",
+      "value": "⟦Ƒüľľ řëƒüñďš ëñď ŵħëñ ţħë ľàÿôüţ ïš çôñƒïřṁëď. ~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.required_deployment_missing",
+      "value": "⟦Þľàçë àľľ ëššëñţïàľš ƀëƒôřë çôñƒïřṁïñğ. ~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.required_item_protected",
+      "value": "⟦Ķëëþ ţħë ëššëñţïàľš üñţïľ ţħë ţüţôřïàľ ïš çôṁþľëţë. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.required_purchase_missing",
+      "value": "⟦Ôƀţàïñ ţħë řëṁàïñïñğ ëššëñţïàľš ƒïřšţ. ~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.retry_unavailable",
+      "value": "⟦Ñô řëţřÿ çħëçķþôïñţ ïš àṽàïľàƀľë ÿëţ. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.rhizome_buried",
+      "value": "⟦Ķëëþ ţħë řħïžôṁë ëẋþôšëď. ~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.stage_invalid",
+      "value": "⟦Ţħïš àçţïôñ ïš üñàṽàïľàƀľë àţ ţħïš šţàğë. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.stocking_limit",
+      "value": "⟦Ķëëþ ţħë ţëàçħïñğ ğřôüþ àţ 8 Ember Tetra, 6 šħřïṁþ àñď 8 Neon Tetra. ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.substrate_invalid",
+      "value": "⟦Ķëëþ ţħë šüƀšţřàţë šľôþë ŵïţħïñ ţħë àľľôŵëď řàñğë. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.support_in_use",
+      "value": "⟦Ṁôṽë ţħë àţţàçħëď þľàñţš ƒïřšţ. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.support_invalid",
+      "value": "⟦Þľàçë ïţ ôñ à ṽàľïď šüþþôřţ šüřƒàçë. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.support_required",
+      "value": "⟦Àţţàçħ ţħïš þľàñţ ţô à šţôñë ôř ŵôôď. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.transaction_conflict",
+      "value": "⟦Ţħïš àçţïôñ ÏĎ ŵàš àľřëàďÿ üšëď. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.transaction_id_conflict",
+      "value": "⟦Ţħïš àçţïôñ ÏĎ ŵàš àľřëàďÿ üšëď. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.transaction_id_invalid",
+      "value": "⟦Ţħïš àçţïôñ ħàš àñ ïñṽàľïď ÏĎ. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.transaction_invalid",
+      "value": "⟦Ţħïš àçţïôñ ħàš àñ ïñṽàľïď ÏĎ. ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.use_refund",
+      "value": "⟦Řëƒüñď ţħïš þüřçħàšë ƀëƒôřë çôñƒïřṁïñğ. ~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.water_unstable",
+      "value": "⟦Řëšţôřë šţàƀľë ŵàţëř ʠüàľïţÿ ƀëƒôřë àďďïñğ àñïṁàľš. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.water_volume_invalid",
+      "value": "⟦Ľëàṽë üšàƀľë ŵàţëř šþàçë ïñ ţħë àʠüàřïüṁ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.water_volume_mismatch",
+      "value": "⟦Ţħë ľàÿôüţ àñď ŵàţëř ṽôľüṁë ďô ñôţ ṁàţçħ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "gameplay.wet_required",
+      "value": "⟦Ƒïľľ ţħë àʠüàřïüṁ ƒïřšţ. ~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.acclimation",
+      "value": "⟦Ôƀšëřṽë ţħë ñëŵ àřřïṽàľš àñď ķëëþ çôñďïţïôñš šţàƀľë. ~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.challenge",
+      "value": "⟦Çôṁþľëţë ţħë ƒïšħľëšš çÿçľë çħëçķ ƀëƒôřë àďďïñğ àñïṁàľš. ~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.cycle",
+      "value": "⟦Ëšţàƀľïšħ ţħë ƀïôƒïľţëř ~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.fill",
+      "value": "⟦Ƒïľľ ţħë àʠüàřïüṁ ~~~~~~⟧"
+    },
+    {
+      "key": "guide.first_stocking",
+      "value": "⟦Ïñţřôďüçë ţħë ƒïřšţ ğřôüþ ~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.hardscape",
+      "value": "⟦Àřřàñğë ţħë ħàřďšçàþë ~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.main_stocking",
+      "value": "⟦Ïñţřôďüçë ÿôüř ṁàïñ ğřôüþ ~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.plants",
+      "value": "⟦Àďď þľàñţš ~~~~⟧"
+    },
+    {
+      "key": "guide.ready",
+      "value": "⟦Ÿôüř àʠüàřïüṁ ïš řëàďÿ ţô ŵàţçħ àñď çàřë ƒôř. ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "guide.substrate",
+      "value": "⟦Ľàÿ ţħë šüƀšţřàţë ~~~~~~⟧"
+    },
+    {
+      "key": "item.debug_fish_spawn.name",
+      "value": "⟦Ďëƀüğ ƒïšħ šþàŵñëř ~~~~~~~⟧"
+    },
+    {
+      "key": "item.filter_hangon_basic.name",
+      "value": "⟦Ƀàšïç ħàñğ-ôñ-ƀàçķ ƒïľţëř ~~~~~~~~~⟧"
+    },
+    {
+      "key": "item.filter_sump.name",
+      "value": "⟦Ƀàšïç šüṁþ ƒïľţëř ~~~~~~⟧"
+    },
+    {
+      "key": "item.filter_top.name",
+      "value": "⟦Ƀàšïç ôṽëřħëàď ƒïľţëř ~~~~~~~~⟧"
+    },
+    {
+      "key": "item.fish_main_pack.name",
+      "value": "⟦Neon Tetra (8 ƒïšħ) ~~~~~~~⟧"
+    },
+    {
+      "key": "item.fish_trial_pack.name",
+      "value": "⟦Ember Tetra (8 ƒïšħ) ~~~~~~~⟧"
+    },
+    {
+      "key": "item.food_basic.name",
+      "value": "⟦Ƀàšïç ƒïšħ ƒôôď ~~~~~~⟧"
+    },
+    {
+      "key": "item.light_low.name",
+      "value": "⟦Ƀàšïç ľôŵ-ľïğħţ ƒïẋţüřë ~~~~~~~~~⟧"
+    },
+    {
+      "key": "item.plant_anubias_nana.name",
+      "value": "⟦Anubias barteri var. nana (1 þôřţïôñ) ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "item.plant_java_fern.name",
+      "value": "⟦Microsorum pteropus (1 þôřţïôñ) ~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "item.plant_java_moss.name",
+      "value": "⟦Taxiphyllum barbieri 'Bogor Moss' (1 þôřţïôñ) ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "item.shrimp_pack.name",
+      "value": "⟦Red Cherry Shrimp (6 šħřïṁþ) ~~~~~~~~~~⟧"
+    },
+    {
+      "key": "item.stone_main.name",
+      "value": "⟦Ṁàïñ šţôñë ~~~~⟧"
+    },
+    {
+      "key": "item.stone_secondary.name",
+      "value": "⟦Šëçôñďàřÿ šţôñë ~~~~~~⟧"
+    },
+    {
+      "key": "item.substrate_natural_sand.name",
+      "value": "⟦Ñàţüřàľ çřëëķ šàñď ~~~~~~~⟧"
+    },
+    {
+      "key": "item.water_change_basic.name",
+      "value": "⟦Ƀàšïç ŵàţëř çħàñğë ~~~~~~~⟧"
+    },
+    {
+      "key": "item.wood_optional.name",
+      "value": "⟦Ôþţïôñàľ ďřïƒţŵôôď ~~~~~~~⟧"
+    },
+    {
+      "key": "plant.anubias_nana.name",
+      "value": "⟦Anubias barteri var. nana ~~~~~~~~~⟧"
+    },
+    {
+      "key": "plant.buce_bukit_kelam.name",
+      "value": "⟦Bucephalandra pygmaea 'Bukit Kelam' ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "plant.crypt_wendtii.name",
+      "value": "⟦Cryptocoryne wendtii 'Green' ~~~~~~~~~~⟧"
+    },
+    {
+      "key": "plant.java_fern.name",
+      "value": "⟦Microsorum pteropus ~~~~~~~⟧"
+    },
+    {
+      "key": "plant.java_moss.name",
+      "value": "⟦Taxiphyllum barbieri 'Bogor Moss' ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "species.anubias_nana.name",
+      "value": "⟦Anubias barteri var. nana ~~~~~~~~~⟧"
+    },
+    {
+      "key": "species.ember_tetra.name",
+      "value": "⟦Ember Tetra ~~~~⟧"
+    },
+    {
+      "key": "species.java_fern.name",
+      "value": "⟦Microsorum pteropus ~~~~~~~⟧"
+    },
+    {
+      "key": "species.java_moss.name",
+      "value": "⟦Taxiphyllum barbieri 'Bogor Moss' ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "species.neocaridina_red.name",
+      "value": "⟦Red Cherry Shrimp ~~~~~~⟧"
+    },
+    {
+      "key": "species.neon_tetra.name",
+      "value": "⟦Neon Tetra ~~~~⟧"
+    },
+    {
+      "key": "species.snail_reference.name",
+      "value": "⟦Nerite snail ~~~~~⟧"
+    },
+    {
+      "key": "species.white_cloud.name",
+      "value": "⟦White Cloud Mountain Minnow ~~~~~~~~~~⟧"
+    },
+    {
+      "key": "tank.tank_60cm.name",
+      "value": "⟦60 çṁ ţëàçħïñğ àʠüàřïüṁ ~~~~~~~~~⟧"
+    },
+    {
+      "key": "template.triangle.name",
+      "value": "⟦Šţàřţëř ţřïàñğľë ~~~~~~⟧"
+    },
+    {
+      "key": "ui.algae",
+      "value": "⟦Àľğàë ~~~~⟧"
+    },
+    {
+      "key": "ui.aliases",
+      "value": "⟦Àľšô ķñôŵñ àš ~~~~~⟧"
+    },
+    {
+      "key": "ui.ammonia",
+      "value": "⟦Ţôţàľ àṁṁôñïà ~~~~~⟧"
+    },
+    {
+      "key": "ui.behavior.bottom_sifting",
+      "value": "⟦Šëàřçħïñğ ţħë šüƀšţřàţë ƒôř ƒôôď. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.behavior.expecting_food",
+      "value": "⟦Ŵàïţïñğ ñëàř à ƒàṁïľïàř ƒëëďïñğ àřëà. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.behavior.grazing",
+      "value": "⟦Ğřàžïñğ ôñ à šüřƒàçë. ~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.behavior.group_short",
+      "value": "⟦Ṁôřë ôƒ ţħë šàṁë šþëçïëš ṁàÿ ħëľþ ţħïš ğřôüþ ƒëëľ šëçüřë. ~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.behavior.startled",
+      "value": "⟦Àľëřţ àƒţëř à šüďďëñ ľïğħţ çħàñğë. ~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.budget_guard",
+      "value": "⟦Ķëëþ {0} çôïñš ƒôř ţħë řëṁàïñïñğ ëššëñţïàľš. ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.build",
+      "value": "⟦Àʠüàšçàþë ~~~~⟧"
+    },
+    {
+      "key": "ui.buy",
+      "value": "⟦Ƀüÿ ~~~~⟧"
+    },
+    {
+      "key": "ui.cancel",
+      "value": "⟦Çàñçëľ ~~~~⟧"
+    },
+    {
+      "key": "ui.common_name",
+      "value": "⟦Çôṁṁôñ ñàṁë ~~~~⟧"
+    },
+    {
+      "key": "ui.compatibility_review",
+      "value": "⟦Çħëçķ ţàñķṁàţëš ~~~~~~⟧"
+    },
+    {
+      "key": "ui.confirm",
+      "value": "⟦Çôñƒïřṁ ~~~~⟧"
+    },
+    {
+      "key": "ui.continue",
+      "value": "⟦Çôñţïñüë ~~~~⟧"
+    },
+    {
+      "key": "ui.details",
+      "value": "⟦Ďëţàïľš ~~~~⟧"
+    },
+    {
+      "key": "ui.feed",
+      "value": "⟦Ƒëëď ~~~~⟧"
+    },
+    {
+      "key": "ui.filter_reserve",
+      "value": "⟦Ƒïľţëř řëšëřṽë ~~~~~⟧"
+    },
+    {
+      "key": "ui.free",
+      "value": "⟦Ƒřëë ~~~~⟧"
+    },
+    {
+      "key": "ui.gh",
+      "value": "⟦Ğëñëřàľ ħàřďñëšš (ĞĦ) ~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.journal",
+      "value": "⟦Àʠüàřïüṁ ĵôüřñàľ ~~~~~~⟧"
+    },
+    {
+      "key": "ui.kh",
+      "value": "⟦Çàřƀôñàţë ħàřďñëšš (ĶĦ) ~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.language",
+      "value": "⟦Ľàñğüàğë ~~~~⟧"
+    },
+    {
+      "key": "ui.language.en",
+      "value": "⟦Ëñğľïšħ ~~~~⟧"
+    },
+    {
+      "key": "ui.language.zh-CN",
+      "value": "⟦Šïṁþľïƒïëď Çħïñëšë ~~~~~~~⟧"
+    },
+    {
+      "key": "ui.light",
+      "value": "⟦Àʠüàřïüṁ ľïğħţ ~~~~~⟧"
+    },
+    {
+      "key": "ui.light_off",
+      "value": "⟦Ôƒƒ ~~~~⟧"
+    },
+    {
+      "key": "ui.light_on",
+      "value": "⟦Ôñ ~~~~⟧"
+    },
+    {
+      "key": "ui.light_ramp",
+      "value": "⟦Ğřàďüàľ ľïğħţïñğ ~~~~~~⟧"
+    },
+    {
+      "key": "ui.load",
+      "value": "⟦Ľôàď ~~~~⟧"
+    },
+    {
+      "key": "ui.load_error",
+      "value": "⟦Çôüľď ñôţ ľôàď ţħïš šàṽë. Çħôôšë à ƀàçķüþ. ~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.needs_attention",
+      "value": "⟦Ñëëďš àţţëñţïôñ ~~~~~~⟧"
+    },
+    {
+      "key": "ui.new_aquarium",
+      "value": "⟦Ñëŵ àʠüàřïüṁ ~~~~~⟧"
+    },
+    {
+      "key": "ui.next_action",
+      "value": "⟦Ŵħàţ ÿôü çàñ ďô ~~~~~~⟧"
+    },
+    {
+      "key": "ui.nitrate",
+      "value": "⟦Ñïţřàţë ~~~~⟧"
+    },
+    {
+      "key": "ui.nitrite",
+      "value": "⟦Ñïţřïţë ~~~~⟧"
+    },
+    {
+      "key": "ui.observe",
+      "value": "⟦Ôƀšëřṽë ~~~~⟧"
+    },
+    {
+      "key": "ui.pause",
+      "value": "⟦Þàüšë ~~~~⟧"
+    },
+    {
+      "key": "ui.ph",
+      "value": "⟦þĦ ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.background",
+      "value": "⟦Ƀàçķğřôüñď ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.foreground",
+      "value": "⟦Ƒôřëğřôüñď ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.hardscape",
+      "value": "⟦Ôñ ħàřďšçàþë ~~~~~⟧"
+    },
+    {
+      "key": "ui.plant.high",
+      "value": "⟦Ħïğħ ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.low",
+      "value": "⟦Ľôŵ ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.medium",
+      "value": "⟦Ṁëďïüṁ ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.midground",
+      "value": "⟦Ṁïďğřôüñď ~~~~⟧"
+    },
+    {
+      "key": "ui.plant.moss_hint",
+      "value": "⟦Àţţàçħ à šṁàľľ þôřţïôñ; ţřïṁ ŵħëñ ïţ ƀëçôṁëš ţôô ďëñšë. ~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.plant.rhizome_hint",
+      "value": "⟦Àţţàçħ ţô řôçķ ôř ŵôôď. Ķëëþ ţħë řħïžôṁë üñçôṽëřëď. ~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.plant.rosette_hint",
+      "value": "⟦Þľàñţ ţħë řôôţš ïñ ţħë šüƀšţřàţë ŵïţħôüţ ƀüřÿïñğ ţħë çřôŵñ ďëëþľÿ. ~~~~~~~~~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.plant.surface",
+      "value": "⟦Ƒľôàţïñğ ~~~~⟧"
+    },
+    {
+      "key": "ui.price",
+      "value": "⟦{0} çôïñš ~~~~⟧"
+    },
+    {
+      "key": "ui.quantity",
+      "value": "⟦Ɋüàñţïţÿ: {0} ~~~~~⟧"
+    },
+    {
+      "key": "ui.quit",
+      "value": "⟦Ɋüïţ ~~~~⟧"
+    },
+    {
+      "key": "ui.reason_source",
+      "value": "⟦Řëšëàřçħ šôüřçë ~~~~~~⟧"
+    },
+    {
+      "key": "ui.redo",
+      "value": "⟦Řëďô ~~~~⟧"
+    },
+    {
+      "key": "ui.resume",
+      "value": "⟦Řëšüṁë ~~~~⟧"
+    },
+    {
+      "key": "ui.retry",
+      "value": "⟦Řëšţôřë šàƒë çħëçķþôïñţ ~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.save",
+      "value": "⟦Šàṽë ~~~~⟧"
+    },
+    {
+      "key": "ui.save_error",
+      "value": "⟦Çôüľď ñôţ šàṽë. Ÿôüř þřëṽïôüš šàṽë ïš šàƒë. ~~~~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.save_ok",
+      "value": "⟦Àʠüàřïüṁ šàṽëď. ~~~~~~⟧"
+    },
+    {
+      "key": "ui.scientific_name",
+      "value": "⟦Šçïëñţïƒïç ñàṁë ~~~~~~⟧"
+    },
+    {
+      "key": "ui.sell",
+      "value": "⟦Řëţüřñ ïţëṁ ~~~~⟧"
+    },
+    {
+      "key": "ui.settings",
+      "value": "⟦Šëţţïñğš ~~~~⟧"
+    },
+    {
+      "key": "ui.shop",
+      "value": "⟦Šħôþ ~~~~⟧"
+    },
+    {
+      "key": "ui.shortfall",
+      "value": "⟦Ÿôü ñëëď {0} ṁôřë çôïñš. ~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.sinking_food",
+      "value": "⟦Šïñķïñğ ƒôôď ~~~~~⟧"
+    },
+    {
+      "key": "ui.stable",
+      "value": "⟦Šţàƀľë ~~~~⟧"
+    },
+    {
+      "key": "ui.temperature",
+      "value": "⟦Ţëṁþëřàţüřë ~~~~⟧"
+    },
+    {
+      "key": "ui.undo",
+      "value": "⟦Üñďô ~~~~⟧"
+    },
+    {
+      "key": "ui.unit.fish",
+      "value": "⟦ƒïšħ ~~~~⟧"
+    },
+    {
+      "key": "ui.unit.item",
+      "value": "⟦ïţëṁš ~~~~⟧"
+    },
+    {
+      "key": "ui.unit.portion",
+      "value": "⟦þôřţïôñš ~~~~⟧"
+    },
+    {
+      "key": "ui.unit.shrimp",
+      "value": "⟦šħřïṁþ ~~~~⟧"
+    },
+    {
+      "key": "ui.unit.snail",
+      "value": "⟦šñàïľš ~~~~⟧"
+    },
+    {
+      "key": "ui.unsupported_save",
+      "value": "⟦Ţħïš šàṽë ñëëďš à ñëŵëř ğàṁë ṽëřšïôñ. ~~~~~~~~~~~~~⟧"
+    },
+    {
+      "key": "ui.wallet",
+      "value": "⟦Çôïñš: {0} ~~~~⟧"
+    },
+    {
+      "key": "ui.water_change",
+      "value": "⟦Çħàñğë ŵàţëř ~~~~~⟧"
+    },
+    {
+      "key": "ui.water_quality",
+      "value": "⟦Ŵàţëř ʠüàľïţÿ ~~~~~⟧"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "sampledAtUtc": "2026-11-06T05:03:00.722875+00:00",
+  "scope": "Read-only process, logs, source/settings and CGSession/CGWindow metadata; only these evidence files are newly written. No window actions, input injection, process lifecycle actions, source changes, or save changes.",
+  "player": {
+    "pid": 53279,
+    "psExitCode": 0,
+    "psOutput": "53279     1 Ss   10:46 /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/MacOS/Aquarium Journal -screen-fullscreen 0 -screen-width 1280 -screen-height 800 -logFile /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280.log",
+    "invocationRecord": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280-invocation.json"
+  },
+  "cgSession": {
+    "kCGSSessionLoginwindowSafeLogin": false,
+    "kCGSSessionOnConsoleKey": true,
+    "kCGSSessionUserIDKey": 501,
+    "kCGSessionLoginDoneKey": true
+  },
+  "lockStatusLimit": "No ScreenIsLocked key returned. OnConsole and LoginDone do not independently prove an unlocked screen or the game being on the current desktop.",
+  "cgWindowObservations": [
+    {
+      "option": 0,
+      "label": "all",
+      "totalWindowCount": 286,
+      "playerWindowCount": 6,
+      "relatedWindowsOnly": [
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 500.0,
+            "Width": 500.0,
+            "X": 0.0,
+            "Y": 580.0
+          },
+          "kCGWindowLayer": 0,
+          "kCGWindowNumber": 45061,
+          "kCGWindowOwnerName": "Aquarium Journal",
+          "kCGWindowOwnerPID": 53279,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 30.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowLayer": 0,
+          "kCGWindowNumber": 45060,
+          "kCGWindowOwnerName": "Aquarium Journal",
+          "kCGWindowOwnerPID": 53279,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 30.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowLayer": 0,
+          "kCGWindowNumber": 45059,
+          "kCGWindowOwnerName": "Aquarium Journal",
+          "kCGWindowOwnerPID": 53279,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 30.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowLayer": 0,
+          "kCGWindowNumber": 45057,
+          "kCGWindowOwnerName": "Aquarium Journal",
+          "kCGWindowOwnerPID": 53279,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 432.0,
+            "Width": 640.0,
+            "X": 0.0,
+            "Y": 30.0
+          },
+          "kCGWindowLayer": 0,
+          "kCGWindowNumber": 45042,
+          "kCGWindowOwnerName": "Aquarium Journal",
+          "kCGWindowOwnerPID": 53279,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 30.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowLayer": 0,
+          "kCGWindowNumber": 45058,
+          "kCGWindowOwnerName": "Aquarium Journal",
+          "kCGWindowOwnerPID": 53279,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 1080.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowIsOnscreen": true,
+          "kCGWindowLayer": 2147483629,
+          "kCGWindowNumber": 45008,
+          "kCGWindowOwnerName": "CUALockScreenGuardian",
+          "kCGWindowOwnerPID": 76799,
+          "kCGWindowSharingState": 0
+        },
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 1080.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowLayer": 2147483629,
+          "kCGWindowNumber": 44889,
+          "kCGWindowOwnerName": "CUALockScreenGuardian",
+          "kCGWindowOwnerPID": 76799,
+          "kCGWindowSharingState": 0
+        }
+      ]
+    },
+    {
+      "option": 1,
+      "label": "onScreenOnly",
+      "totalWindowCount": 8,
+      "playerWindowCount": 0,
+      "relatedWindowsOnly": [
+        {
+          "kCGWindowAlpha": 1.0,
+          "kCGWindowBounds": {
+            "Height": 1080.0,
+            "Width": 1920.0,
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "kCGWindowIsOnscreen": true,
+          "kCGWindowLayer": 2147483629,
+          "kCGWindowNumber": 45008,
+          "kCGWindowOwnerName": "CUALockScreenGuardian",
+          "kCGWindowOwnerPID": 76799,
+          "kCGWindowSharingState": 0
+        }
+      ]
+    }
+  ],
+  "earlierSameTurnObservation": {
+    "allWindowCount": 286,
+    "onScreenWindowCount": 8,
+    "playerAllWindowCount": 6,
+    "playerOnScreenWindowCount": 0,
+    "playerMainWindowId": 45042,
+    "mainWindowBoundsPoints": {
+      "X": 0,
+      "Y": 30,
+      "Width": 640,
+      "Height": 432
+    },
+    "guardianOnscreen": true,
+    "guardianLayer": 2147483629,
+    "note": "Observed directly earlier in this diagnostic turn; no unrelated app content retained."
+  },
+  "cuaReportedErrors": [
+    {
+      "source": "Parent root CUA report; not generated by this script",
+      "operation": "performSecondaryAction Raise",
+      "verbatimAvailableText": "SCStreamError -3812"
+    },
+    {
+      "source": "Parent root CUA report; not generated by this script",
+      "operation": "coordinate click on Language; repeated after successful AX click(0)",
+      "verbatimAvailableText": "noWindowsAvailable"
+    }
+  ],
+  "cuaErrorLimit": "Only exact error fragments above were supplied. Full CUA exception objects or stack traces are not reconstructed.",
+  "cuaReportedSuccess": {
+    "source": "Parent root CUA report",
+    "items": [
+      "F9 restored staged fixture; screenshots succeeded",
+      "AX showed a standard focused game window",
+      "AX click(0) succeeded",
+      "No evidence of successful coordinate-click delivery"
+    ]
+  },
+  "projectSettings": {
+    "defaultScreenWidth": "1280",
+    "defaultScreenHeight": "800",
+    "macRetinaSupport": "1",
+    "runInBackground": "0",
+    "resizableWindow": "0",
+    "fullscreenMode": "1",
+    "activeInputHandler": "0"
+  },
+  "codeFacts": [
+    {
+      "path": "unity6-validation/Assets/_Game/UnityAdapter/AquariumGameEntry.cs",
+      "line": 140,
+      "fact": "Update returns before key/mouse polling if applicationPaused or not applicationFocused. Focus/pause callbacks do not log transitions."
+    },
+    {
+      "path": "unity6-validation/Assets/_Game/UnityAdapter/AquariumGameEntry.cs",
+      "line": 143,
+      "fact": "Keys use UnityEngine.Input.GetKeyDown; root observed keyboard success in this Player."
+    },
+    {
+      "path": "unity6-validation/Assets/_Game/UnityAdapter/AquariumGameEntry.cs",
+      "line": 149,
+      "fact": "Camera uses legacy UnityEngine.Input; requires mousePosition.x > PanelPixels(), which is 312 physical pixels at 1280 width."
+    },
+    {
+      "path": "unity6-validation/Assets/_Game/UnityAdapter/AquariumGameEntry.cs",
+      "line": 311,
+      "fact": "Language uses GUILayout.Button in OnGUI before pause-specific GUI.enabled changes; does not depend on Input.GetMouseButton."
+    },
+    {
+      "path": "unity6-validation/ProjectSettings/InputManager.asset",
+      "line": 105,
+      "fact": "Mouse X type 1 axis 0 and Mouse Y type 1 axis 1 exist. Camera wheel uses Input.mouseScrollDelta.y directly."
+    },
+    {
+      "path": "unity6-validation/Assets/_Game/Scenes/Aquarium.unity",
+      "line": 45,
+      "fact": "Enabled behaviour guid 52ed68faf8184d3fa1f4eddb4bd062f8 matches AquariumGameEntry.cs.meta. Legacy demo is not the scene behaviour."
+    }
+  ],
+  "logs": [
+    {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280.log",
+      "bytesAtSample": 1945,
+      "sha256AtSample": "15dd75033cd67c684a1b61d0a309519b808406c113c7b8fdf64f551603489294",
+      "matchedLines": [
+        {
+          "line": 4,
+          "text": "Input System module state changed to: Initialized."
+        },
+        {
+          "line": 32,
+          "text": "AQUARIUM_UI_LAYOUT 1280x800:en panel=288 cameraLeft=0.24375 font=NotoSansCJKsc-Regular fontSize=14 labelLineHeight=20 fixedHeight=0 wordWrap=True matrix=1.00000\t0.00000\t0.00000\t0.00000"
+        }
+      ]
+    },
+    {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280-stdout.log",
+      "bytesAtSample": 1853,
+      "sha256AtSample": "9d82fc59cc2c195c9dfe973c037469a51222684f5d1b07101c64176e5564a625",
+      "matchedLines": []
+    },
+    {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/build04-player-4k.log",
+      "bytesAtSample": 2579,
+      "sha256AtSample": "c575b32fc3d04bde0f2266673a835a04316b238348992709a6063382511b7049",
+      "matchedLines": [
+        {
+          "line": 4,
+          "text": "Input System module state changed to: Initialized."
+        },
+        {
+          "line": 32,
+          "text": "AQUARIUM_UI_LAYOUT 3840x2160:en panel=960 cameraLeft=0.25625 font=NotoSansCJKsc-Regular fontSize=24 labelLineHeight=35 fixedHeight=0 wordWrap=True matrix=1.00000\t0.00000\t0.00000\t0.00000"
+        },
+        {
+          "line": 36,
+          "text": "2026-11-06 12:42:49.322 Aquarium Journal[46812:16391296] error messaging the mach port for IMKCFRunLoopWakeUpReliable"
+        },
+        {
+          "line": 40,
+          "text": "Input System module state changed to: ShutdownInProgress."
+        },
+        {
+          "line": 41,
+          "text": "Input Polling Thread exited."
+        },
+        {
+          "line": 42,
+          "text": "Input System module state changed to: Shutdown."
+        }
+      ]
+    }
+  ],
+  "interpretationLimits": [
+    "Player has no per-mouse-event or per-focus-transition instrumentation. Absence of log errors cannot establish mouse delivery.",
+    "AX availability and WindowServer on-screen filtering are different observations; CUA coordinate failure alone does not establish a product input bug.",
+    "Guardian presence is not proof of macOS lock state or the reason for CUA failure.",
+    "Sharing state 0 alone does not establish a cause; no screen capture permissions, session protections, or settings changed.",
+    "Historical 4K log has an IMK mach-port error adjacent to shutdown; its causal relation to mouse behavior is not established.",
+    "No source/settings input mismatch identified. Actual mouse interaction remains unverified."
+  ]
+}

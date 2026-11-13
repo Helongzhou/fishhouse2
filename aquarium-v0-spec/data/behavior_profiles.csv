@@ -1,0 +1,6 @@
+﻿behavior_profile_id,content_status,actor_kind,time_domain,startle_sensitivity01,recovery_min_real_s,recovery_max_real_s,approach_probability_min01,approach_probability_max01,approach_cooldown_real_s,min_behavior_real_s,supports_schooling,parameter_basis,notes
+fish_shoal_default,shipping,fish,real_seconds,0.65,8,25,0.15,0.7,30,3,true,game_tuning_pending_playtest,真实细节的设计起点；不是物种实证结论
+shrimp_grazer_default,shipping,shrimp,real_seconds,0.75,10,35,0,0.1,30,4,false,game_tuning_pending_playtest,受惊后暂离藻面；无藻不得生成清藻效果
+plant_static,shipping,plant,real_seconds,0,0,0,0,0,0,0,false,game_tuning_pending_playtest,不驱动移动行为；冒氧是条件化艺术展示
+debug_all_reactions,test_only,fish,real_seconds,1,1,2,1,1,1,1,true,test_fixture,仅供开发者压力测试；不进入商店
+snail_surface_reference,planned,snail,real_seconds,0.2,10,30,0,0,30,10,false,reference_only_pending_research,只预留沿表面爬行类型；没有V0商品或场景实例

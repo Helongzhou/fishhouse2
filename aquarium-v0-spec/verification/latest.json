@@ -1,0 +1,136 @@
+{
+  "status": "source_checks_passed",
+  "unity_editor_play_build": "not_run_no_editor",
+  "pending_release_reviews": 14,
+  "checks": [
+    {
+      "name": "runtime export",
+      "exit_code": 0,
+      "tail": [
+        "    \"compatibility\": 4",
+        "  },",
+        "  \"pending\": 14",
+        "}"
+      ]
+    },
+    {
+      "name": "locale export",
+      "exit_code": 0,
+      "tail": [
+        "en: ready 269/269 keys (100.0%)",
+        "zh-CN: ready 269/269 keys (100.0%)",
+        "qps-ploc: qa 269/269 keys (100.0%)",
+        "Planned, not exported: ja, ko, de, fr, es-ES, pt-BR, ru, zh-TW, es-419"
+      ]
+    },
+    {
+      "name": "locale coverage",
+      "exit_code": 0,
+      "tail": [
+        "PASS: 269 source keys; registered catalogs {'en': 269, 'zh-CN': 269, 'qps-ploc': 269}; 15 source/model tasks checked",
+        "Ready: en, zh-CN | QA: qps-ploc",
+        "Planned only: ja, ko, de, fr, es-ES, pt-BR, ru, zh-TW, es-419"
+      ]
+    },
+    {
+      "name": "locale isolated self-tests",
+      "exit_code": 0,
+      "tail": [
+        "PASS: unregistered fallback rejected",
+        "PASS: duplicate Steam API mapping (case-insensitive) rejected",
+        "PASS: partial draft warns, preserves translation, exports sparse keys and English fallback",
+        "PASS: pseudolocalization preserves canonical names/format tokens, adds accents/brackets and expansion"
+      ]
+    },
+    {
+      "name": "Core netstandard2.1",
+      "exit_code": 0,
+      "tail": [
+        "    0 Warning(s)",
+        "    0 Error(s)",
+        "",
+        "Time Elapsed 00:00:00.23"
+      ]
+    },
+    {
+      "name": "behavior",
+      "exit_code": 0,
+      "tail": [
+        "Behavior checks complete: 49",
+        "Observed actions: Roam, Flee, Forage, Shoal, Hide, BottomProbe, Graze, Rest, ApproachGlass, SeekFood",
+        "Meals=28 probes=573 grazes=437 startles=15",
+        "Light stress integral across 8 seeds: flashing=153.990 steady=27.964"
+      ]
+    },
+    {
+      "name": "compatibility",
+      "exit_code": 0,
+      "tail": [
+        "PASS same species id with inconsistent profile instances is unverified",
+        "PASS every emitted reason has structured source, target, keys and parameters",
+        "PASS registry-driven compatibility message coverage for every ready and QA locale",
+        "Compatibility checks: 42 passed, 0 failed; observed 28 reason codes."
+      ]
+    },
+    {
+      "name": "ecology",
+      "exit_code": 0,
+      "tail": [
+        "Ecology checks passed: 287. Pure C#/.NET only; Unity import, Play and builds remain unverified."
+      ]
+    },
+    {
+      "name": "gameplay",
+      "exit_code": 0,
+      "tail": [
+        "PASS: whole-pack sale pays once and removes all eight main fish IDs",
+        "PASS: balanced wallet cannot conceal a corrupted whole-pack sale price",
+        "PASS: domain checkpoint replacement restores wallet and batches together without retaining sale money",
+        "Gameplay checks passed: 47"
+      ]
+    },
+    {
+      "name": "integration",
+      "exit_code": 0,
+      "tail": [
+        "PASS observation waits for the still-missing required shrimp purchase",
+        "PASS delayed reward scenario reaches unstable water",
+        "PASS unstable no-op cannot consume the observation progress transaction and softlock rewards",
+        "Integration checks: 49 passed."
+      ]
+    },
+    {
+      "name": "strict release negative gate",
+      "exit_code": 1,
+      "tail": [
+        "    \"design_filter_margin\": 0.3,",
+        "    \"care_cost_coin\": 0",
+        "  }",
+        "}"
+      ]
+    },
+    {
+      "name": "repeat deterministic runtime export",
+      "exit_code": 0,
+      "tail": [
+        "    \"compatibility\": 4",
+        "  },",
+        "  \"pending\": 14",
+        "}"
+      ]
+    }
+  ],
+  "protected_sources_sha256": {
+    "data/species.csv": "683481a02ca67a47775e23e89bb4898eed7e3c519220922cd891fcf1fc2fd77d",
+    "data/compatibility.csv": "e17a6ad30a8474b0433ed43c2224d21661b82580dbce45f323936cbdffba33a2",
+    "data/economy.csv": "9683b3873079e28baca4281127c881dfd0b2ba8edfa0a1f4ae1b7827ae712a5e",
+    "data/plants.csv": "2318f80b74b6d5d05e1df1f9b1d9f0b0d67a46b81eab0eae23fc6b8734d2722c",
+    "data/route.csv": "17998dabbd6218ff778b8687dc2cfc8830e6476bff227d2ed6ae23b880cdfe18",
+    "data/gates.csv": "798c95ea7a90b63b736875b59a92d2f1bfffd17c4e4563be40e2d43687b18878",
+    "data/tanks.csv": "0ec0ca1ac1c03df8a4e4baf07cb12a02984c6ba12660212f9da3dd5c4655b21e",
+    "data/items.csv": "b5dc6601c9bdfd4cf8c51b18a301fadfcc68aebd7661f12524ba23ab16335b26",
+    "data/behavior_profiles.csv": "bf4810df052186451c646a5251df9c588fdb10560f97dc98147e234e7639abd9",
+    "sources/references.json": "55f297f2843c71981663bf69bd986886f0ceb4caeba22411b2205d2d5bd7c8a5",
+    "art/reference_manifest.json": "5ee6accadd09c15000118c59a1955944a64c9ea82d9b80c739f0dc3c816db41b"
+  }
+}

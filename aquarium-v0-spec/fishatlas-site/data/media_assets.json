@@ -1,0 +1,82 @@
+[
+  {
+    "id": "media-neon-placeholder",
+    "species_id": "neon-tetra",
+    "file_url": "/images/neon-tetra-placeholder.webp",
+    "alt": "Neon Tetra placeholder",
+    "image_status": "placeholder",
+    "is_ai_placeholder": true
+  },
+  {
+    "id": "media-ember-placeholder",
+    "species_id": "ember-tetra",
+    "file_url": null,
+    "alt": "Ember Tetra photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-harlequin-placeholder",
+    "species_id": "harlequin-rasbora",
+    "file_url": null,
+    "alt": "Harlequin Rasbora photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-honey-placeholder",
+    "species_id": "honey-gourami",
+    "file_url": null,
+    "alt": "Honey Gourami photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-panda-placeholder",
+    "species_id": "panda-corydoras",
+    "file_url": null,
+    "alt": "Panda Corydoras photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-shrimp-placeholder",
+    "species_id": "red-cherry-shrimp",
+    "file_url": null,
+    "alt": "Red Cherry Shrimp photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-guppy-none",
+    "species_id": "guppy",
+    "file_url": null,
+    "alt": "Guppy photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-betta-splendens-none",
+    "species_id": "betta-splendens",
+    "file_url": null,
+    "alt": "Siamese Fighting Fish photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-zebra-danio-none",
+    "species_id": "zebra-danio",
+    "file_url": null,
+    "alt": "Zebra Danio photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  },
+  {
+    "id": "media-bristlenose-pleco-none",
+    "species_id": "bristlenose-pleco",
+    "file_url": null,
+    "alt": "Bristlenose Pleco photo unavailable",
+    "image_status": "none",
+    "is_ai_placeholder": false
+  }
+]

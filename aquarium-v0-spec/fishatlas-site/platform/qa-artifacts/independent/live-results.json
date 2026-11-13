@@ -1,0 +1,69 @@
+{
+  "releaseId": "r-1793947213469-5b5275e195",
+  "quality": "local-preview",
+  "entityCount": 26,
+  "denials": [
+    {
+      "path": "/api/entities",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/entities",
+      "method": "POST",
+      "status": 403
+    },
+    {
+      "path": "/api/media",
+      "method": "POST",
+      "status": 403
+    },
+    {
+      "path": "/api/templates",
+      "method": "POST",
+      "status": 403
+    },
+    {
+      "path": "/api/rules",
+      "method": "POST",
+      "status": 403
+    },
+    {
+      "path": "/api/admin/releases",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/releases",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/releases/r-1793947213469-5b5275e195/activate",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/releases/r-1793947213469-5b5275e195/rollback",
+      "method": "POST",
+      "status": 401
+    }
+  ],
+  "formalStatus": 422,
+  "photoIssues": [
+    "catalog.aquasoil.media",
+    "catalog.inert-substrate.media",
+    "catalog.java-moss.media"
+  ],
+  "crossOriginStatus": 403,
+  "localeIsolation": true,
+  "incompatibleCoreBlocked": true,
+  "candidateId": "r-1793948428129-99069f0505",
+  "candidatePublicStatus": 404,
+  "previewAnonymousStatus": 401,
+  "previewAuthorizedStatus": 200,
+  "previewChangeCount": 0,
+  "activationCASStatus": 409,
+  "rollbackCASStatus": 409,
+  "activeUnchanged": true
+}

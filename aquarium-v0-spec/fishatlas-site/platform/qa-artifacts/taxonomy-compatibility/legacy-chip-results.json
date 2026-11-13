@@ -1,0 +1,38 @@
+{
+  "time": "2026-11-09T02:05:19.450Z",
+  "base": "http://127.0.0.1:4174",
+  "checks": [
+    {
+      "name": "zh-CN shrimp chip display and aggregate removal",
+      "status": "PASS",
+      "query": "?type=invertebrate&q=a&sort=name&water=freshwater",
+      "remainingChips": [
+        "淡水 ×"
+      ]
+    },
+    {
+      "name": "zh-CN snail chip display and aggregate removal",
+      "status": "PASS",
+      "query": "?type=invertebrate&q=a&sort=name&water=freshwater",
+      "remainingChips": [
+        "淡水 ×"
+      ]
+    },
+    {
+      "name": "en shrimp chip display and aggregate removal",
+      "status": "PASS",
+      "query": "?type=invertebrate&q=a&sort=name&water=freshwater",
+      "remainingChips": [
+        "Freshwater ×"
+      ]
+    },
+    {
+      "name": "en snail chip display and aggregate removal",
+      "status": "PASS",
+      "query": "?type=invertebrate&q=a&sort=name&water=freshwater",
+      "remainingChips": [
+        "Freshwater ×"
+      ]
+    }
+  ]
+}

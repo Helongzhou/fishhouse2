@@ -1,0 +1,20 @@
+{
+  "startedAt": "2026-11-06T04:52:14.163397+00:00",
+  "pid": 53279,
+  "argv": [
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/MacOS/Aquarium Journal",
+    "-screen-fullscreen",
+    "0",
+    "-screen-width",
+    "1280",
+    "-screen-height",
+    "800",
+    "-logFile",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280.log"
+  ],
+  "cwd": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/MacOS",
+  "logFile": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280.log",
+  "stdout": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280-stdout.log",
+  "sourceBuild": "unity6-macos-build-04",
+  "saveFilesModifiedByLauncher": false
+}

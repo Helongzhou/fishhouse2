@@ -1,0 +1,47 @@
+[
+  {
+    "case": "p2-colored",
+    "wire_model": "P2-20260801",
+    "valid": true,
+    "credits": 110,
+    "warnings": [],
+    "payload": {
+      "prompt": "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "texture": true,
+      "pbr": false,
+      "texture_quality": "standard",
+      "face_limit": 5000,
+      "model": "P2-20260801"
+    }
+  },
+  {
+    "case": "h31-colored",
+    "wire_model": "v3.1-20260211",
+    "valid": true,
+    "credits": 20,
+    "warnings": [],
+    "payload": {
+      "prompt": "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "texture": true,
+      "pbr": false,
+      "texture_quality": "standard",
+      "face_limit": 5000,
+      "model": "v3.1-20260211"
+    }
+  },
+  {
+    "case": "h31-bare",
+    "wire_model": "v3.1-20260211",
+    "valid": true,
+    "credits": 10,
+    "warnings": [],
+    "payload": {
+      "prompt": "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "texture": false,
+      "pbr": false,
+      "texture_quality": "standard",
+      "face_limit": 5000,
+      "model": "v3.1-20260211"
+    }
+  }
+]

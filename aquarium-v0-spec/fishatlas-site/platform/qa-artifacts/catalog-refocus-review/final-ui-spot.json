@@ -1,0 +1,414 @@
+{
+  "time": "2026-11-06T08:00:06.634Z",
+  "base": "http://127.0.0.1:4174",
+  "evidence": [
+    {
+      "name": "Final bilingual shortcut and related controls contrast",
+      "status": "PASS",
+      "details": [
+        {
+          "locale": "zh-CN",
+          "selector": ".preset-bar button",
+          "index": 0,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".preset-bar button",
+          "index": 1,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".preset-bar button",
+          "index": 2,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".preset-bar button",
+          "index": 3,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".preset-bar button",
+          "index": 4,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".preset-bar button",
+          "index": 5,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".type-tabs button",
+          "index": 0,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".type-tabs button",
+          "index": 1,
+          "normalRatio": 7.71,
+          "hoverRatio": 8.07
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".type-tabs button",
+          "index": 2,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".type-tabs button",
+          "index": 3,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".type-tabs button",
+          "index": 4,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".active-chip",
+          "index": 0,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".library-search button",
+          "index": 0,
+          "normalRatio": 9.51,
+          "hoverRatio": 12.44
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".filter-form button",
+          "index": 0,
+          "normalRatio": 8.92,
+          "hoverRatio": 8.04
+        },
+        {
+          "locale": "zh-CN",
+          "selector": ".filter-form button",
+          "index": 1,
+          "normalRatio": 9.51,
+          "hoverRatio": 12.44
+        },
+        {
+          "locale": "en",
+          "selector": ".preset-bar button",
+          "index": 0,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".preset-bar button",
+          "index": 1,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".preset-bar button",
+          "index": 2,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".preset-bar button",
+          "index": 3,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".preset-bar button",
+          "index": 4,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".preset-bar button",
+          "index": 5,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".type-tabs button",
+          "index": 0,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "en",
+          "selector": ".type-tabs button",
+          "index": 1,
+          "normalRatio": 7.71,
+          "hoverRatio": 8.07
+        },
+        {
+          "locale": "en",
+          "selector": ".type-tabs button",
+          "index": 2,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "en",
+          "selector": ".type-tabs button",
+          "index": 3,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "en",
+          "selector": ".type-tabs button",
+          "index": 4,
+          "normalRatio": 5.31,
+          "hoverRatio": 4.8
+        },
+        {
+          "locale": "en",
+          "selector": ".active-chip",
+          "index": 0,
+          "normalRatio": 8.06,
+          "hoverRatio": 9.77
+        },
+        {
+          "locale": "en",
+          "selector": ".library-search button",
+          "index": 0,
+          "normalRatio": 9.51,
+          "hoverRatio": 12.44
+        },
+        {
+          "locale": "en",
+          "selector": ".filter-form button",
+          "index": 0,
+          "normalRatio": 8.92,
+          "hoverRatio": 8.04
+        },
+        {
+          "locale": "en",
+          "selector": ".filter-form button",
+          "index": 1,
+          "normalRatio": 9.51,
+          "hoverRatio": 12.44
+        }
+      ]
+    },
+    {
+      "name": "Final diet translation and care-note deduplication",
+      "status": "PASS",
+      "details": [
+        {
+          "id": "ramshorn-snail",
+          "locale": "zh-CN",
+          "diet": "刮食",
+          "extraNotes": [
+            "可在淡水繁殖，投喂过量可能使数量增加。保护壳体并控制剩食，不替代清洁。"
+          ]
+        },
+        {
+          "id": "ramshorn-snail",
+          "locale": "en",
+          "diet": "Grazer",
+          "extraNotes": [
+            "Reproduces in freshwater; excess food can increase numbers. Protect shells and manage leftovers; snails do not replace maintenance."
+          ]
+        },
+        {
+          "id": "nerite-snail",
+          "locale": "zh-CN",
+          "diet": "刮食",
+          "extraNotes": [
+            "壳体需要足够矿物质，避免酸性水体侵蚀。幼体发育需要咸水条件；吃藻不代表无需补充食物。"
+          ]
+        },
+        {
+          "id": "nerite-snail",
+          "locale": "en",
+          "diet": "Grazer",
+          "extraNotes": [
+            "Shells need adequate minerals; acidic water may erode them. Larval development requires brackish conditions. Grazing does not remove the need to assess food availability."
+          ]
+        },
+        {
+          "id": "bristlenose-pleco",
+          "locale": "zh-CN",
+          "diet": "刮食",
+          "extraNotes": [
+            "个体可能争夺躲避处和底部领地，空间不足时尤需注意。"
+          ]
+        },
+        {
+          "id": "bristlenose-pleco",
+          "locale": "en",
+          "diet": "Grazer",
+          "extraNotes": [
+            "Individuals can dispute shelters and bottom territory, especially with limited space."
+          ]
+        },
+        {
+          "id": "zebra-danio",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": [
+            "活跃游泳时可能跳缸；请固定缸盖。"
+          ]
+        },
+        {
+          "id": "zebra-danio",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": [
+            "Active swimmers may jump; keep the lid secure."
+          ]
+        },
+        {
+          "id": "betta-splendens",
+          "locale": "zh-CN",
+          "diet": "肉食",
+          "extraNotes": [
+            "不要同缸饲养两条雄鱼；混养对象需逐一评估。",
+            "某些混养鱼可能啄咬长鳍，或受到斗鱼攻击。",
+            "斗鱼可能跳缸；固定缸盖，并保留水面呼吸空间。"
+          ]
+        },
+        {
+          "id": "betta-splendens",
+          "locale": "en",
+          "diet": "Carnivore",
+          "extraNotes": [
+            "Do not house two males together; assess any tank mates individually.",
+            "Some tank mates may nip long fins or be attacked by the betta.",
+            "Betta can jump; keep a secure lid with access to air at the surface."
+          ]
+        },
+        {
+          "id": "guppy",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": [
+            "混养雌雄可能较快繁殖；需预先考虑幼鱼照料与空间。"
+          ]
+        },
+        {
+          "id": "guppy",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": [
+            "Mixed-sex groups may produce young quickly; plan for their care and space."
+          ]
+        },
+        {
+          "id": "red-cherry-shrimp",
+          "locale": "zh-CN",
+          "diet": "刮食",
+          "extraNotes": [
+            "许多鱼即使不捕食成虾，也会捕食幼虾。",
+            "给过滤进水口加防护，避免幼虾被吸入。"
+          ]
+        },
+        {
+          "id": "red-cherry-shrimp",
+          "locale": "en",
+          "diet": "Grazer",
+          "extraNotes": [
+            "Many fish will eat young shrimp even when they leave adults alone.",
+            "Guard the filter intake so young shrimp are not drawn in."
+          ]
+        },
+        {
+          "id": "panda-corydoras",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": [
+            "确认食物到达底层鱼群，避免被动作较快的混养鱼先吃完。"
+          ]
+        },
+        {
+          "id": "panda-corydoras",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": [
+            "Check that food reaches the bottom group before faster tank mates take it."
+          ]
+        },
+        {
+          "id": "honey-gourami",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": [
+            "成对个体未必能和平共处；留意追逐，必要时分开。"
+          ]
+        },
+        {
+          "id": "honey-gourami",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": [
+            "A pair may not coexist peacefully; watch for chasing and separate if needed."
+          ]
+        },
+        {
+          "id": "harlequin-rasbora",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": []
+        },
+        {
+          "id": "harlequin-rasbora",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": []
+        },
+        {
+          "id": "ember-tetra",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": []
+        },
+        {
+          "id": "ember-tetra",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": []
+        },
+        {
+          "id": "neon-tetra",
+          "locale": "zh-CN",
+          "diet": "杂食",
+          "extraNotes": []
+        },
+        {
+          "id": "neon-tetra",
+          "locale": "en",
+          "diet": "Omnivore",
+          "extraNotes": []
+        }
+      ]
+    }
+  ]
+}

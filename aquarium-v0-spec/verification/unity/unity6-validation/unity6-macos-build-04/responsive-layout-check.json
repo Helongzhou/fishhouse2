@@ -1,0 +1,36 @@
+{
+  "formula": "identity GUI matrix; panel=width<=1280?288:clamp(width*0.25,288,960); cameraLeft=(panel+24)/width; font=14..24",
+  "cases": [
+    {
+      "screen": {
+        "width": 1280,
+        "height": 800
+      },
+      "matrix": "identity",
+      "panelWidthPixels": 288,
+      "panelRightWithMarginsPixels": 312,
+      "fontSizePixels": 14,
+      "cameraViewportX": 0.24375,
+      "cameraViewportWidth": 0.75625,
+      "productButtonWidthRule": "actual panel inner width - actual price CalcSize - scrollbar and style margins",
+      "labelHeightRule": "ceil(max(style.lineHeight + vertical padding, style.CalcHeight(content, available width)))",
+      "productHeightRule": "ceil(productStyle.CalcHeight(content, same GUILayout.Width))"
+    },
+    {
+      "screen": {
+        "width": 3840,
+        "height": 2160
+      },
+      "matrix": "identity",
+      "panelWidthPixels": 960,
+      "panelRightWithMarginsPixels": 984,
+      "fontSizePixels": 24,
+      "cameraViewportX": 0.25625,
+      "cameraViewportWidth": 0.74375,
+      "productButtonWidthRule": "actual panel inner width - actual price CalcSize - scrollbar and style margins",
+      "labelHeightRule": "ceil(max(style.lineHeight + vertical padding, style.CalcHeight(content, available width)))",
+      "productHeightRule": "ceil(productStyle.CalcHeight(content, same GUILayout.Width))"
+    }
+  ],
+  "scope": "Static dimension calculation only; actual native font metrics are recorded by AQUARIUM_UI_LAYOUT in Player.log on first Repaint. Human screenshot required."
+}

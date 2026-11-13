@@ -1,0 +1,54 @@
+[
+  {
+    "name": "desktop baseline, honest image status, screenshot",
+    "status": "PASS"
+  },
+  {
+    "name": "OR within color and AND across dimensions",
+    "status": "PASS"
+  },
+  {
+    "name": "livebearing, large, exact numeric filters and empty state",
+    "status": "PASS"
+  },
+  {
+    "name": "medium difficulty and unknown reproduction via isolated response fixture",
+    "status": "PASS"
+  },
+  {
+    "name": "invalid and repeated query values are deduplicated and merged",
+    "status": "PASS"
+  },
+  {
+    "name": "invalid numeric URL values show an error and can be cleared",
+    "status": "PASS"
+  },
+  {
+    "name": "preset, chip removal, language switch, history and reload",
+    "status": "PASS"
+  },
+  {
+    "name": "numeric range validation blocks inverted limits",
+    "status": "PASS"
+  },
+  {
+    "name": "detail and P1 calculator regression",
+    "status": "PASS"
+  },
+  {
+    "name": "390px collapsed and expanded mobile filters, focus and overflow",
+    "status": "PASS"
+  },
+  {
+    "name": "390px English first viewport fits without horizontal overflow",
+    "status": "PASS"
+  },
+  {
+    "name": "sort control is available",
+    "status": "PASS"
+  },
+  {
+    "name": "no browser exceptions",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,112 @@
+{
+    "status": "failed",
+    "mode": "editor-play-smoke",
+    "projectPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "expectedUnityVersion": "6000.6.8f1",
+    "expectedUrpVersion": "17.6.0",
+    "unityVersion": "6000.6.8f1",
+    "urpVersion": "17.6.0",
+    "startedUtc": "2026-11-05T11:55:04.8954150Z",
+    "finishedUtc": "2026-11-05T11:55:07.9719930Z",
+    "failure": "System.InvalidOperationException: Acceptance failed: Play smoke emitted no uncaught engine or adapter errors. 90 observed editor updates; no automated physical input/visual-quality or every-OnGUI-path claim.\n  at Aquarium.Validation.UnitySliceAcceptance.Check (System.Boolean condition, System.String name, System.String detail) [0x00053] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:99 \n  at Aquarium.Validation.UnitySliceAcceptance.PlayUpdate () [0x002a3] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:337 ",
+    "coverage": "Real Unity APIs and production domain/adapter calls. No human input, visual quality, Windows player, font-layout or Steam certification.",
+    "checks": [
+        {
+            "name": "Unity editor matches selected project's ProjectVersion",
+            "detail": "6000.6.8f1 expected; 6000.6.8f1 actual",
+            "passed": true
+        },
+        {
+            "name": "selected project freezes an exact URP version",
+            "detail": "17.6.0",
+            "passed": true
+        },
+        {
+            "name": "selected project's pinned URP package resolved",
+            "detail": "17.6.0 expected; 17.6.0 actual",
+            "passed": true
+        },
+        {
+            "name": "Prepare assigns actual URP graphics and quality pipelines",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "opaque and transparent shader materials import",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene imports with one real entry and no missing scripts",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene registered for builds",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real scene entry survives Awake and initial Update frames",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "scene Awake starts actual production session",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real nonzero challenge and continuous window unlock first stocking",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "first stocking delivers eight Ember and six shrimp",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "snapshot contains both active food ownership and ingested per-animal nitrogen",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "stocked observation grants 450 exactly once",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "full real route ends at 8 Ember + 8 Neon + 6 shrimp and 280 coins",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real adapter elapsed-time entry exists",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real adapter 0.5-second host frame equals fifteen 30Hz frames",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real adapter view methods build all 22 animal bodies, camera and substrate collider",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Play smoke emitted no uncaught engine or adapter errors",
+            "detail": "90 observed editor updates; no automated physical input/visual-quality or every-OnGUI-path claim.",
+            "passed": false
+        }
+    ],
+    "snapshotComparisons": [],
+    "errors": [
+        "Exception: ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\nParameter name: index\nSystem.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <2d46e6b023034f37b1d478b12927ab18>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__78.MoveNext () (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/SearchDatabase.cs:351)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <a161b0c3dc9b452a8233caa46a54fd4f>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <a161b0c3dc9b452a8233caa46a54fd4f>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/SearchDatabase.cs:325)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/SearchInit.cs:109)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:427)\nUnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)\n"
+    ],
+    "warnings": [
+        "Batch editor is unfocused. Real view methods were invoked explicitly; focused physical-input/Update routing remains separate acceptance."
+    ]
+}

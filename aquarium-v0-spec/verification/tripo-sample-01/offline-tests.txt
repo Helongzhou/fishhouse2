@@ -1,0 +1,12 @@
+test_credit_cap_stops_next_job (__main__.RunnerTests) ... ok
+test_failed_submit_never_retried (__main__.RunnerTests) ... ok
+test_success_repeat_verifies_hashes_without_cli (__main__.RunnerTests) ... ok
+test_unconfirmed_no_cli (__main__.RunnerTests) ... ok
+test_unknown_accounting_stops_and_preserves_task (__main__.RunnerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.020s
+
+OK
+All approved jobs succeeded; see execution-state.json
+All approved jobs succeeded; see execution-state.json

@@ -1,0 +1,23 @@
+{
+  "accessed_on": "2026-11-05",
+  "publisher": "Valve / Steamworks Documentation",
+  "url": "https://partner.steamgames.com/doc/store/localization/languages",
+  "verification": "page_read",
+  "purpose": "Locale-to-Steam API mapping; supported store-language distinctions",
+  "api_language_mapping": {
+    "en": "english",
+    "zh-CN": "schinese",
+    "zh-TW": "tchinese",
+    "ja": "japanese",
+    "ko": "koreana",
+    "de": "german",
+    "fr": "french",
+    "es-ES": "spanish",
+    "es-419": "latam",
+    "pt-BR": "brazilian",
+    "ru": "russian"
+  },
+  "priority_basis": "Design recommendation based on regional coverage, genre fit and localization cost; not a measured sales-share forecast",
+  "launch_target_locale_count": 11,
+  "launch_translation_complete": false
+}

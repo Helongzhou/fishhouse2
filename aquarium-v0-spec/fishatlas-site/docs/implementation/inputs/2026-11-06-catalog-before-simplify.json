@@ -1,0 +1,4586 @@
+{
+  "id": "r-1793947213469-5b5275e195",
+  "catalog": [
+    {
+      "id": "aquasoil",
+      "kind": "substrate",
+      "tags": [
+        "substrate",
+        "layer"
+      ],
+      "media": {
+        "photo": null,
+        "attribution": null,
+        "photoStatus": "missing"
+      },
+      "scene": {
+        "top": "/media/releases/32c609ff9316fbdb45afd2edd6f3dc7ee927d500c3e06ab2f2570dde48f5b562.svg",
+        "color": "#8c8b7a",
+        "front": "/media/releases/5fb2cfde7088352dd1b137c837096176beb773c60d4cb968b0ba5531f166ddd0.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 300,
+        "widthMm": 600,
+        "heightMm": 30
+      },
+      "active": true,
+      "colors": [
+        "gray"
+      ],
+      "aliases": [
+        "水草泥",
+        "Aquarium planting soil"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Aquarium planting soil",
+          "name": "Aquarium planting soil",
+          "summary": "May lower pH and hardness; fresh soil may release ammonia. Follow product preparation and establish stable water before adding animals.",
+          "description": "May lower pH and hardness; fresh soil may release ammonia. Follow product preparation and establish stable water before adding animals."
+        },
+        "zh-CN": {
+          "alt": "水草泥",
+          "name": "水草泥",
+          "summary": "可能降低pH和硬度，新泥可能释放氨。按产品准备并完成水质稳定后再加入动物。",
+          "description": "可能降低pH和硬度，新泥可能释放氨。按产品准备并完成水质稳定后再加入动物。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "area",
+          "zh-CN": "区域"
+        },
+        "placement": "layer",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "May lower pH and hardness; fresh soil may release ammonia. Follow product preparation and establish stable water before adding animals.",
+          "zh-CN": "可能降低pH和硬度，新泥可能释放氨。按产品准备并完成水质稳定后再加入动物。"
+        },
+        "waterEffect": {
+          "value": "softening",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": 30
+      },
+      "revision": "695c7aa0f3dca61c",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "inert-substrate",
+      "kind": "substrate",
+      "tags": [
+        "substrate",
+        "layer"
+      ],
+      "media": {
+        "photo": null,
+        "attribution": null,
+        "photoStatus": "missing"
+      },
+      "scene": {
+        "top": "/media/releases/b044a5d9feb828f45f713e7c7c846f74bf7d6ad025dd343f68e6ddfff3f86e23.svg",
+        "color": "#8c8b7a",
+        "front": "/media/releases/30dee3060fccbd2485cd59e785ccb8630c1bcd0ea4458902bb980f201f6c3b66.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 300,
+        "widthMm": 600,
+        "heightMm": 30
+      },
+      "active": true,
+      "colors": [
+        "gray"
+      ],
+      "aliases": [
+        "惰性底床",
+        "Inert planted substrate"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Inert planted substrate",
+          "name": "Inert planted substrate",
+          "summary": "This entry denotes substrate of confirmed inert composition; it makes no nutrient guarantee. Assess root feeding separately.",
+          "description": "This entry denotes substrate of confirmed inert composition; it makes no nutrient guarantee. Assess root feeding separately."
+        },
+        "zh-CN": {
+          "alt": "惰性底床",
+          "name": "惰性底床",
+          "summary": "本条目指成分已确认的惰性底床；不含肥力保证，根肥需求另行评估。",
+          "description": "本条目指成分已确认的惰性底床；不含肥力保证，根肥需求另行评估。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "area",
+          "zh-CN": "区域"
+        },
+        "placement": "layer",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "This entry denotes substrate of confirmed inert composition; it makes no nutrient guarantee. Assess root feeding separately.",
+          "zh-CN": "本条目指成分已确认的惰性底床；不含肥力保证，根肥需求另行评估。"
+        },
+        "waterEffect": {
+          "value": "inert",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": 30
+      },
+      "revision": "59ba80aa1f137251",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "block-wood",
+      "kind": "wood",
+      "tags": [
+        "wood",
+        "piece"
+      ],
+      "media": {
+        "photo": "/media/releases/62d878fd947a24969e98e1c5d1b1ac117431d585547b8bdfcf7c045779ac6d0e.jpg",
+        "attribution": "Evan Baldonado · CC BY 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/ec29ac617e893b270112f8f26c96b3158efc4f8f67485fcf4ffbe3702f9c5ccb.svg",
+        "color": "#75573d",
+        "front": "/media/releases/17c5fa2b7fe17aa2c882d03e0d471225e4af5021046775406e3651fe1dc9511c.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 110,
+        "widthMm": 180,
+        "heightMm": 120
+      },
+      "active": true,
+      "colors": [
+        "brown"
+      ],
+      "aliases": [
+        "块状沉木",
+        "Chunk driftwood"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Chunk driftwood",
+          "name": "Chunk driftwood",
+          "summary": "Remove decayed areas, soak and secure. Tannin release varies with wood and time.",
+          "description": "Remove decayed areas, soak and secure. Tannin release varies with wood and time."
+        },
+        "zh-CN": {
+          "alt": "块状沉木",
+          "name": "块状沉木",
+          "summary": "清除腐烂部分并浸泡固定，单宁释放量随木材和时间变化。",
+          "description": "清除腐烂部分并浸泡固定，单宁释放量随木材和时间变化。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "piece",
+          "zh-CN": "件"
+        },
+        "placement": "piece",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "Remove decayed areas, soak and secure. Tannin release varies with wood and time.",
+          "zh-CN": "清除腐烂部分并浸泡固定，单宁释放量随木材和时间变化。"
+        },
+        "waterEffect": {
+          "value": "tannins",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": null
+      },
+      "revision": "9730ba863256c7e8",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "branch-wood",
+      "kind": "wood",
+      "tags": [
+        "wood",
+        "piece"
+      ],
+      "media": {
+        "photo": "/media/releases/d53300b95b45ea7388711316e49e8e1520558394bcc5375028671f8ed493d2cf.jpg",
+        "attribution": "User:Rijans007 · CC BY-SA 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/d65b47222a21c35cf5de476fbeaefb01f07882010925a51077350a39d34e8ef3.svg",
+        "color": "#75573d",
+        "front": "/media/releases/922ab4b23c0e7fa3f6d496728e4ebf82e5bd30ae9156051a77d1487cbe0f14a9.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 120,
+        "widthMm": 240,
+        "heightMm": 200
+      },
+      "active": true,
+      "colors": [
+        "brown"
+      ],
+      "aliases": [
+        "分枝沉木",
+        "Branch driftwood"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Branch driftwood",
+          "name": "Branch driftwood",
+          "summary": "Use untreated aquarium-safe wood. Soak and secure; tannins may colour water.",
+          "description": "Use untreated aquarium-safe wood. Soak and secure; tannins may colour water."
+        },
+        "zh-CN": {
+          "alt": "分枝沉木",
+          "name": "分枝沉木",
+          "summary": "选无涂层水族沉木，浸泡固定；可能释放单宁并使水色变深。",
+          "description": "选无涂层水族沉木，浸泡固定；可能释放单宁并使水色变深。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "piece",
+          "zh-CN": "件"
+        },
+        "placement": "piece",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "Use untreated aquarium-safe wood. Soak and secure; tannins may colour water.",
+          "zh-CN": "选无涂层水族沉木，浸泡固定；可能释放单宁并使水色变深。"
+        },
+        "waterEffect": {
+          "value": "tannins",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": null
+      },
+      "revision": "9205815db045f11d",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "smooth-gravel",
+      "kind": "sand",
+      "tags": [
+        "sand",
+        "layer"
+      ],
+      "media": {
+        "photo": "/media/releases/d2a9ed392dcfd21413380f4688a08c14eabd338ac7a5bd9a2e2f6ab0ce0524e1.jpg",
+        "attribution": "Green Yoshi · CC BY 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/8293ab4052eab9f34e3edd3db9f565bd3d2026792ce11a010cd0b86762b2400a.svg",
+        "color": "#8c8b7a",
+        "front": "/media/releases/e41f376bff198a99299637661307cdf9357df0343a28e8b2d0a04e1008278123.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 300,
+        "widthMm": 600,
+        "heightMm": 30
+      },
+      "active": true,
+      "colors": [
+        "gray"
+      ],
+      "aliases": [
+        "圆润细砾",
+        "Smooth fine gravel"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Smooth fine gravel",
+          "name": "Smooth fine gravel",
+          "summary": "Use smooth grains. Check composition and rinse; avoid abrasive edges near bottom feeders.",
+          "description": "Use smooth grains. Check composition and rinse; avoid abrasive edges near bottom feeders."
+        },
+        "zh-CN": {
+          "alt": "圆润细砾",
+          "name": "圆润细砾",
+          "summary": "使用圆润颗粒，检查成分并清洗，避免伤及底栖鱼触须。",
+          "description": "使用圆润颗粒，检查成分并清洗，避免伤及底栖鱼触须。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "area",
+          "zh-CN": "区域"
+        },
+        "placement": "layer",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "Use smooth grains. Check composition and rinse; avoid abrasive edges near bottom feeders.",
+          "zh-CN": "使用圆润颗粒，检查成分并清洗，避免伤及底栖鱼触须。"
+        },
+        "waterEffect": {
+          "value": "conditional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": 30
+      },
+      "revision": "bdd07d26eaf7ba62",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "fine-sand",
+      "kind": "sand",
+      "tags": [
+        "sand",
+        "layer"
+      ],
+      "media": {
+        "photo": "/media/releases/e2ce3dfc6ce5fcdb7d68935bb5e56c82986e63b466f79a823ef0a501941a354a.jpg",
+        "attribution": "Krzem Anonim · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/7e3ac0fa140c7d47038590f52bba7b29a1c863b653f192e5f3d0d8b0040b2d67.svg",
+        "color": "#8c8b7a",
+        "front": "/media/releases/d3bee8b61f9ed3a477b85016d480e9c0b75016f8de18e820857b0b626dd4042c.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 300,
+        "widthMm": 600,
+        "heightMm": 30
+      },
+      "active": true,
+      "colors": [
+        "gray"
+      ],
+      "aliases": [
+        "细砂",
+        "Fine silica sand"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Fine silica sand",
+          "name": "Fine silica sand",
+          "summary": "Use clean aquarium-grade silica sand and rinse thoroughly. This does not imply all sand is inert.",
+          "description": "Use clean aquarium-grade silica sand and rinse thoroughly. This does not imply all sand is inert."
+        },
+        "zh-CN": {
+          "alt": "细砂",
+          "name": "细砂",
+          "summary": "选适用于水族的洁净硅砂，充分漂洗；不要将名称推广为所有砂材均惰性。",
+          "description": "选适用于水族的洁净硅砂，充分漂洗；不要将名称推广为所有砂材均惰性。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "area",
+          "zh-CN": "区域"
+        },
+        "placement": "layer",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "Use clean aquarium-grade silica sand and rinse thoroughly. This does not imply all sand is inert.",
+          "zh-CN": "选适用于水族的洁净硅砂，充分漂洗；不要将名称推广为所有砂材均惰性。"
+        },
+        "waterEffect": {
+          "value": "inert",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": 30
+      },
+      "revision": "2bff73d7e4f92487",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "slate-rock",
+      "kind": "rock",
+      "tags": [
+        "rock",
+        "piece"
+      ],
+      "media": {
+        "photo": "/media/releases/7891f7949dfd7d9e6efea4b131d9269f3bb1e8bfee492331a7accf0ca9ec95ac.jpg",
+        "attribution": " · Public domain",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/ef229877b3a9ca6ff4e8dfcabf9ab95b47d1863414eb6272fcf799082bf91e8f.svg",
+        "color": "#8c8b7a",
+        "front": "/media/releases/9bbf9a621b9fc601c046ec042f7de99020cb299f972498b43856a8cf4d504ab3.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 90,
+        "widthMm": 160,
+        "heightMm": 100
+      },
+      "active": true,
+      "colors": [
+        "gray"
+      ],
+      "aliases": [
+        "板岩石",
+        "Slate rock"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Slate rock",
+          "name": "Slate rock",
+          "summary": "Inspect sharp edges and inclusions. Scrub and secure; appearance alone does not prove inertness.",
+          "description": "Inspect sharp edges and inclusions. Scrub and secure; appearance alone does not prove inertness."
+        },
+        "zh-CN": {
+          "alt": "板岩石",
+          "name": "板岩石",
+          "summary": "检查锐边及矿物夹杂；刷洗后摆稳，不能仅凭外观假定惰性。",
+          "description": "检查锐边及矿物夹杂；刷洗后摆稳，不能仅凭外观假定惰性。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "piece",
+          "zh-CN": "件"
+        },
+        "placement": "piece",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "Inspect sharp edges and inclusions. Scrub and secure; appearance alone does not prove inertness.",
+          "zh-CN": "检查锐边及矿物夹杂；刷洗后摆稳，不能仅凭外观假定惰性。"
+        },
+        "waterEffect": {
+          "value": "conditional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": null
+      },
+      "revision": "d7abe0e965d0aaa3",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "river-pebbles",
+      "kind": "rock",
+      "tags": [
+        "rock",
+        "piece"
+      ],
+      "media": {
+        "photo": "/media/releases/1064446237b350fab467cfb8560d8742d90c757f154e31722d8e3c035d820b87.jpg",
+        "attribution": "ADARSHluck · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/0febae6b3f70e9f80cbeccfd5b304d38eb82c1ca8de2eb08b8be3f499f773b64.svg",
+        "color": "#8c8b7a",
+        "front": "/media/releases/2095daee31fee8902700b9d88cef3dc40f186f127b4f279326490549ec491b21.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 90,
+        "widthMm": 130,
+        "heightMm": 80
+      },
+      "active": true,
+      "colors": [
+        "gray"
+      ],
+      "aliases": [
+        "圆润卵石",
+        "Rounded river pebbles"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Rounded river pebbles",
+          "name": "Rounded river pebbles",
+          "summary": "Use rock confirmed suitable for aquaria; composition varies and may contain carbonates. Test before use.",
+          "description": "Use rock confirmed suitable for aquaria; composition varies and may contain carbonates. Test before use."
+        },
+        "zh-CN": {
+          "alt": "圆润卵石",
+          "name": "圆润卵石",
+          "summary": "仅使用可确认适用于水族的石材；来源不同可能含碳酸盐，先检测。",
+          "description": "仅使用可确认适用于水族的石材；来源不同可能含碳酸盐，先检测。"
+        }
+      },
+      "material": {
+        "unit": {
+          "en": "piece",
+          "zh-CN": "件"
+        },
+        "placement": "piece",
+        "waterTypes": [
+          "freshwater"
+        ],
+        "preparation": {
+          "en": "Use rock confirmed suitable for aquaria; composition varies and may contain carbonates. Test before use.",
+          "zh-CN": "仅使用可确认适用于水族的石材；来源不同可能含碳酸盐，先检测。"
+        },
+        "waterEffect": {
+          "value": "conditional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "defaultThicknessMm": null
+      },
+      "revision": "04bde89e88e9c7c1",
+      "scientificName": "",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "hygrophila-difformis",
+      "kind": "plant",
+      "tags": [
+        "midground",
+        "background",
+        "rooted"
+      ],
+      "media": {
+        "photo": "/media/releases/01b8964ed77e93e241a36cc6bb36cd9b8bab3c391f1f3d721835f65bd5316a27.jpg",
+        "attribution": "en:User:Tsunamicarlos · Public domain",
+        "photoStatus": "verified"
+      },
+      "plant": {
+        "co2": {
+          "value": "optional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "unit": {
+          "en": "bunch",
+          "zh-CN": "丛"
+        },
+        "light": {
+          "value": [
+            "medium",
+            "high"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "placement": [
+          "midground",
+          "background"
+        ],
+        "submerged": {
+          "value": true,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "attachment": "rooted",
+        "adultWidthMm": {
+          "max": 250,
+          "min": 120
+        },
+        "adultHeightMm": {
+          "max": 500,
+          "min": 200
+        }
+      },
+      "scene": {
+        "top": "/media/releases/88fa55ba8d16a1875d8bce970aaeb1632159c6c0479aa858e861476b0951cbc0.svg",
+        "color": "#4f8757",
+        "front": "/media/releases/af1dde1bfb8d29b632a1fde74e375a7b6c1cd6822ebf5b3fcdb1cc5896905ca1.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 120,
+        "widthMm": 120,
+        "heightMm": 200
+      },
+      "active": true,
+      "colors": [
+        "green"
+      ],
+      "aliases": [
+        "水蓑衣",
+        "Water wisteria",
+        "Hygrophila difformis"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Water wisteria",
+          "name": "Water wisteria",
+          "summary": "Submerged leaf shape varies with conditions. Plant separated bunches and trim to avoid shading neighbours.",
+          "description": "Submerged leaf shape varies with conditions. Plant separated bunches and trim to avoid shading neighbours."
+        },
+        "zh-CN": {
+          "alt": "水蓑衣",
+          "name": "水蓑衣",
+          "summary": "沉水叶形会随条件变化。分丛种植并及时修剪，避免遮挡其他水草。",
+          "description": "沉水叶形会随条件变化。分丛种植并及时修剪，避免遮挡其他水草。"
+        }
+      },
+      "revision": "af46d4898437125b",
+      "scientificName": "Hygrophila difformis",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "vallisneria-spiralis",
+      "kind": "plant",
+      "tags": [
+        "background",
+        "rooted"
+      ],
+      "media": {
+        "photo": "/media/releases/771090f02d275013b33c569e45facdc004c75a8bfc254d22c33a05a2792b9c38.jpg",
+        "attribution": "Lamiot · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "plant": {
+        "co2": {
+          "value": "optional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "unit": {
+          "en": "bunch",
+          "zh-CN": "丛"
+        },
+        "light": {
+          "value": [
+            "medium",
+            "high"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "placement": [
+          "background"
+        ],
+        "submerged": {
+          "value": true,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "attachment": "rooted",
+        "adultWidthMm": {
+          "max": 120,
+          "min": 50
+        },
+        "adultHeightMm": {
+          "max": 600,
+          "min": 300
+        }
+      },
+      "scene": {
+        "top": "/media/releases/7e83faa270e629c235108351c004747f91d924cf7b5d8d728c6b5a50732c698a.svg",
+        "color": "#4f8757",
+        "front": "/media/releases/ed346f595dc9d1e5cc3209d18cb49c33d048d917887f3eee0493cb2441e38b3d.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 50,
+        "widthMm": 50,
+        "heightMm": 300
+      },
+      "active": true,
+      "colors": [
+        "green"
+      ],
+      "aliases": [
+        "螺旋苦草",
+        "Tape grass",
+        "Vallisneria spiralis"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Tape grass",
+          "name": "Tape grass",
+          "summary": "Use in the background with room to grow. Keep the crown exposed; runners spread.",
+          "description": "Use in the background with room to grow. Keep the crown exposed; runners spread."
+        },
+        "zh-CN": {
+          "alt": "螺旋苦草",
+          "name": "螺旋苦草",
+          "summary": "适合后景，保留生长空间，勿深埋生长点。匍匐茎会扩展。",
+          "description": "适合后景，保留生长空间，勿深埋生长点。匍匐茎会扩展。"
+        }
+      },
+      "revision": "de2d7ba3906105b2",
+      "scientificName": "Vallisneria spiralis",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "crypt-wendtii",
+      "kind": "plant",
+      "tags": [
+        "foreground",
+        "midground",
+        "rooted"
+      ],
+      "media": {
+        "photo": "/media/releases/e99a4e2f57a8faac5a32334ed1194e75504d700d47cd6fbf2a9ea84e051040dd.jpg",
+        "attribution": "Haplochromis · CC BY 2.5",
+        "photoStatus": "verified"
+      },
+      "plant": {
+        "co2": {
+          "value": "optional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "unit": {
+          "en": "bunch",
+          "zh-CN": "丛"
+        },
+        "light": {
+          "value": [
+            "medium",
+            "high"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "placement": [
+          "foreground",
+          "midground"
+        ],
+        "submerged": {
+          "value": true,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "attachment": "rooted",
+        "adultWidthMm": {
+          "max": 220,
+          "min": 100
+        },
+        "adultHeightMm": {
+          "max": 250,
+          "min": 100
+        }
+      },
+      "scene": {
+        "top": "/media/releases/78208268f37d94cffe9885b4ec5fc75d97108fff1ac5d931049f5df42c08c213.svg",
+        "color": "#4f8757",
+        "front": "/media/releases/498faca1f3c694dfdf8aa216e95a4b9bd2a5e3502d9ef542b1bf42b83bbee0b2.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 100,
+        "widthMm": 100,
+        "heightMm": 100
+      },
+      "active": true,
+      "colors": [
+        "green"
+      ],
+      "aliases": [
+        "温蒂椒草",
+        "Wendt’s crypt",
+        "Cryptocoryne wendtii"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Wendt’s crypt",
+          "name": "Wendt’s crypt",
+          "summary": "Root in substrate. Leaves may melt after a change of conditions; healthy roots can regrow.",
+          "description": "Root in substrate. Leaves may melt after a change of conditions; healthy roots can regrow."
+        },
+        "zh-CN": {
+          "alt": "温蒂椒草",
+          "name": "温蒂椒草",
+          "summary": "根植底床，转水或环境变化后可能融叶；根部仍可重新萌芽。",
+          "description": "根植底床，转水或环境变化后可能融叶；根部仍可重新萌芽。"
+        }
+      },
+      "revision": "2f99b24ae22a3524",
+      "scientificName": "Cryptocoryne wendtii",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "java-moss",
+      "kind": "plant",
+      "tags": [
+        "foreground",
+        "midground",
+        "epiphyte"
+      ],
+      "media": {
+        "photo": null,
+        "attribution": " · CC BY-SA 3.0",
+        "photoStatus": "missing"
+      },
+      "plant": {
+        "co2": {
+          "value": "optional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "unit": {
+          "en": "portion",
+          "zh-CN": "份"
+        },
+        "light": {
+          "value": [
+            "low",
+            "medium"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "placement": [
+          "foreground",
+          "midground"
+        ],
+        "submerged": {
+          "value": true,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "attachment": "epiphyte",
+        "adultWidthMm": {
+          "max": 160,
+          "min": 60
+        },
+        "adultHeightMm": {
+          "max": 100,
+          "min": 30
+        }
+      },
+      "scene": {
+        "top": "/media/releases/7b7e4544e1b56a7079dba502ddecb591bc913514a22fb664228dee9f20f2f1b3.svg",
+        "color": "#4f8757",
+        "front": "/media/releases/bb9d43fbc76d0388f0880d57dca64d24927b159d256e547f69e9dbd064539f39.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 60,
+        "widthMm": 60,
+        "heightMm": 30
+      },
+      "active": true,
+      "colors": [
+        "green"
+      ],
+      "aliases": [
+        "爪哇莫丝",
+        "Java moss",
+        "Taxiphyllum barbieri"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Java moss",
+          "name": "Java moss",
+          "summary": "One portion is an editing unit; tie down a thin layer. Trim and remove accumulated debris.",
+          "description": "One portion is an editing unit; tie down a thin layer. Trim and remove accumulated debris."
+        },
+        "zh-CN": {
+          "alt": "爪哇莫丝",
+          "name": "爪哇莫丝",
+          "summary": "一份为编辑单位，可薄铺绑附。定期修剪并清除积屑。",
+          "description": "一份为编辑单位，可薄铺绑附。定期修剪并清除积屑。"
+        }
+      },
+      "revision": "c651c086f4b49e25",
+      "scientificName": "Taxiphyllum barbieri",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "java-fern",
+      "kind": "plant",
+      "tags": [
+        "midground",
+        "background",
+        "epiphyte"
+      ],
+      "media": {
+        "photo": "/media/releases/dc7f4a27fd8f64d4e3e5a8ea48d9b1dfb9ced07b73e04d3a9c2f72d5451a0d30.jpg",
+        "attribution": "Tsunamicarlos at English Wikipedia · Public domain",
+        "photoStatus": "verified"
+      },
+      "plant": {
+        "co2": {
+          "value": "optional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "unit": {
+          "en": "bunch",
+          "zh-CN": "丛"
+        },
+        "light": {
+          "value": [
+            "low",
+            "medium"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "placement": [
+          "midground",
+          "background"
+        ],
+        "submerged": {
+          "value": true,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "attachment": "epiphyte",
+        "adultWidthMm": {
+          "max": 250,
+          "min": 100
+        },
+        "adultHeightMm": {
+          "max": 350,
+          "min": 150
+        }
+      },
+      "scene": {
+        "top": "/media/releases/18cb1156634343c35872b5f03e5c3761f2d496a9e20e37c4462f72ca1ee61421.svg",
+        "color": "#4f8757",
+        "front": "/media/releases/d1387d3fb271e3f2e3d76c83197c515befb841f9f07442fddf20c9b32e6de58c.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 100,
+        "widthMm": 100,
+        "heightMm": 150
+      },
+      "active": true,
+      "colors": [
+        "green"
+      ],
+      "aliases": [
+        "爪哇蕨",
+        "Java fern",
+        "Microsorum pteropus"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Java fern",
+          "name": "Java fern",
+          "summary": "Attach the rhizome to wood or rock rather than burying it. Can grow without injected CO₂.",
+          "description": "Attach the rhizome to wood or rock rather than burying it. Can grow without injected CO₂."
+        },
+        "zh-CN": {
+          "alt": "爪哇蕨",
+          "name": "爪哇蕨",
+          "summary": "根茎附着石木，不要深埋。可在无额外CO₂的缸中生长。",
+          "description": "根茎附着石木，不要深埋。可在无额外CO₂的缸中生长。"
+        }
+      },
+      "revision": "342263373e9a984b",
+      "scientificName": "Microsorum pteropus",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "anubias-nana",
+      "kind": "plant",
+      "tags": [
+        "foreground",
+        "midground",
+        "epiphyte"
+      ],
+      "media": {
+        "photo": "/media/releases/36f5e290d02cdd2832811c6c3210b4978f46d62aff20978f64c887a796ca1260.jpg",
+        "attribution": "Krzysztof Ziarnek, Kenraiz · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "plant": {
+        "co2": {
+          "value": "optional",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "unit": {
+          "en": "bunch",
+          "zh-CN": "丛"
+        },
+        "light": {
+          "value": [
+            "low",
+            "medium"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "placement": [
+          "foreground",
+          "midground"
+        ],
+        "submerged": {
+          "value": true,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "attachment": "epiphyte",
+        "adultWidthMm": {
+          "max": 180,
+          "min": 60
+        },
+        "adultHeightMm": {
+          "max": 150,
+          "min": 50
+        }
+      },
+      "scene": {
+        "top": "/media/releases/131da6911583bc87d6a0c49f6bfc0532b53fb100027212a3543c886d164e1141.svg",
+        "color": "#4f8757",
+        "front": "/media/releases/f2e85e40f3c1acf1a18620228ea76896b36a7bc1fa0d3c774484eccfb769b088.svg",
+        "style": "diagram",
+        "anchor": "bottom",
+        "depthMm": 60,
+        "widthMm": 60,
+        "heightMm": 50
+      },
+      "active": true,
+      "colors": [
+        "green"
+      ],
+      "aliases": [
+        "小水榕",
+        "Anubias nana",
+        "Anubias barteri var. nana"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Anubias nana",
+          "name": "Anubias nana",
+          "summary": "Attach to stone or wood; keep the rhizome above substrate. Tolerates low light and grows slowly.",
+          "description": "Attach to stone or wood; keep the rhizome above substrate. Tolerates low light and grows slowly."
+        },
+        "zh-CN": {
+          "alt": "小水榕",
+          "name": "小水榕",
+          "summary": "附着在石木上，根茎勿埋入底床。耐低光，生长缓慢。",
+          "description": "附着在石木上，根茎勿埋入底床。耐低光，生长缓慢。"
+        }
+      },
+      "revision": "24e472916257cc2e",
+      "scientificName": "Anubias barteri var. nana",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "ramshorn-snail",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 20,
+            "min": 6
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 8.5,
+            "min": 7
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "grazer",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "independent",
+            "minimum": 1,
+            "recommended": 1
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Reproduces in freshwater; excess food can increase numbers. Protect shells and manage leftovers; snails do not replace maintenance.",
+          "zh-CN": "可在淡水繁殖，投喂过量可能使数量增加。保护壳体并控制剩食，不替代清洁。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "bottom"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": null,
+          "knowledgeState": "unknown"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 18
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 25,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": null,
+          "ph": null,
+          "diet": null,
+          "flow": null,
+          "group": null,
+          "oxygen": null,
+          "difficulty": null,
+          "temperament": null,
+          "waterLayers": null,
+          "minimumTankL": null,
+          "temperatureC": null,
+          "adultLengthMm": null,
+          "minimumTankLengthMm": null
+        },
+        "legacyDataStatus": null,
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "snail",
+      "tags": [
+        "snail"
+      ],
+      "media": {
+        "photo": "/media/releases/4f785c3526c37bb86164311f213488c83827b7595003bc41cd2ab84c3196bea9.jpg",
+        "attribution": "Dat doris · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/98dc8f7f91a6346e962bb8206726ba375df0391fd3fe8256dd4b483149ab0652.svg",
+        "color": "#5e503d",
+        "front": "/media/releases/5680dcb8fce51b13ae7dc58d693a112aad392dcec983edc34d79aeae2c8b5620.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 25,
+        "widthMm": 25,
+        "heightMm": 25
+      },
+      "active": true,
+      "colors": [
+        "brown"
+      ],
+      "aliases": [
+        "扁卷螺",
+        "Ramshorn snail",
+        "Planorbella duryi"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Ramshorn snail",
+          "name": "Ramshorn snail",
+          "summary": "Reproduces in freshwater; excess food can increase numbers.",
+          "description": "Reproduces in freshwater; excess food can increase numbers. Protect shells and manage leftovers; snails do not replace maintenance."
+        },
+        "zh-CN": {
+          "alt": "扁卷螺",
+          "name": "扁卷螺",
+          "summary": "可在淡水繁殖，投喂过量可能使数量增加",
+          "description": "可在淡水繁殖，投喂过量可能使数量增加。保护壳体并控制剩食，不替代清洁。"
+        }
+      },
+      "revision": "48d074aba09b2fb4",
+      "scientificName": "Planorbella duryi",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "nerite-snail",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 20,
+            "min": 6
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 8.5,
+            "min": 7
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "grazer",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "independent",
+            "minimum": 1,
+            "recommended": 1
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Shells need adequate minerals; acidic water may erode them. Larval development requires brackish conditions. Grazing does not remove the need to assess food availability.",
+          "zh-CN": "壳体需要足够矿物质，避免酸性水体侵蚀。幼体发育需要咸水条件；吃藻不代表无需补充食物。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "bottom"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": null,
+          "knowledgeState": "unknown"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 22
+          },
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 30,
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": null,
+          "ph": null,
+          "diet": null,
+          "flow": null,
+          "group": null,
+          "oxygen": null,
+          "difficulty": null,
+          "temperament": null,
+          "waterLayers": null,
+          "minimumTankL": null,
+          "temperatureC": null,
+          "adultLengthMm": null,
+          "minimumTankLengthMm": null
+        },
+        "legacyDataStatus": null,
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "snail",
+      "tags": [
+        "snail"
+      ],
+      "media": {
+        "photo": "/media/releases/7865501998f5e0d5db634e526e46b4a1caf85d3515544e9ab5798ebe2f0dcbe4.jpg",
+        "attribution": "Kacper Aleksander · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/141d670c3d0ba7f38aafcd026cc4daff5ebd6ecfd4bcc2c2f44467c068339cc4.svg",
+        "color": "#5e503d",
+        "front": "/media/releases/8a318cc024d155fe6fcb4c75ccb6363054529bf49e7bc75046fa8967927b075d.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 30,
+        "widthMm": 30,
+        "heightMm": 30
+      },
+      "active": true,
+      "colors": [
+        "brown"
+      ],
+      "aliases": [
+        "黑金刚螺",
+        "Black helmet nerite",
+        "Neritina pulligera"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Black helmet nerite",
+          "name": "Black helmet nerite",
+          "summary": "Shells need adequate minerals; acidic water may erode them.",
+          "description": "Shells need adequate minerals; acidic water may erode them. Larval development requires brackish conditions. Grazing does not remove the need to assess food availability."
+        },
+        "zh-CN": {
+          "alt": "黑金刚螺",
+          "name": "黑金刚螺",
+          "summary": "壳体需要足够矿物质，避免酸性水体侵蚀",
+          "description": "壳体需要足够矿物质，避免酸性水体侵蚀。幼体发育需要咸水条件；吃藻不代表无需补充食物。"
+        }
+      },
+      "revision": "0d8d53cb585724a5",
+      "scientificName": "Neritina pulligera",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "bristlenose-pleco",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 15,
+            "min": 3
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 6
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "grazer",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "solitary",
+            "minimum": 1,
+            "recommended": 1
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Keep filtration and gas exchange adequate for this larger fish. Provide circulation without removing sheltered resting places. Prioritize adult bottom area and a retreat; tank length is unconfirmed. House singly unless individual compatibility and space are assessed. Supply sinking vegetable-based foods; algae alone is insufficient. Provide wood and a suitable hiding place.",
+          "zh-CN": "为这种体型较大的鱼维持足够过滤和气体交换。 保证水体循环，同时留有遮蔽休息处。 优先考虑成鱼底面积与躲避处；缸长尚未确认。 默认单养；增加个体前需评估个体相容性和空间。 提供沉底植物性食物，不能只靠缸壁藻类。 提供沉木和合适的躲避处。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "medium",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "territorial",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "bottom"
+          ],
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 80,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 27,
+            "min": 23
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 120,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "needsReview",
+          "ph": "needsReview",
+          "diet": "needsReview",
+          "flow": "checked",
+          "group": "needsReview",
+          "oxygen": "checked",
+          "difficulty": "needsReview",
+          "temperament": "needsReview",
+          "waterLayers": "needsReview",
+          "minimumTankL": "needsReview",
+          "temperatureC": "needsReview",
+          "adultLengthMm": "needsReview",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "unavailable",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "pleco",
+        "catfish",
+        "solitary_tendency",
+        "elongated"
+      ],
+      "media": {
+        "photo": "/media/releases/bb269156f16a25a694661ce7f4e31bd62e3a539ec94220c31864008bdb3f10bd.jpg",
+        "attribution": "André Karwath aka Aka\n · CC BY-SA 2.5",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/7425190034613a194409bc305ee88a78b0005d235c86d85cde1d0dfacf0f1b9b.svg",
+        "color": "#705b44",
+        "front": "/media/releases/c045ccba8f5b3b704ad23ddd7e89f2acd52f630af57e1d8f1517734b7f8f2da5.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 36,
+        "widthMm": 120,
+        "heightMm": 48
+      },
+      "active": true,
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "aliases": [
+        "胡子异型",
+        "胡子鱼",
+        "胡子",
+        "bristlenose catfish"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Bristlenose Pleco",
+          "name": "Bristlenose Pleco",
+          "summary": "A bottom-dwelling Ancistrus form whose adult size and waste need planning.",
+          "description": "Common shop forms vary in exact identity. Provide hiding places and aquarium-safe wood, sinking food with a plant component and small portions of vegetables; remove leftovers. It produces waste and cannot replace maintenance."
+        },
+        "zh-CN": {
+          "alt": "胡子异型",
+          "name": "胡子异型",
+          "summary": "需要按成体尺寸和排泄负担规划的底栖胡子异型。",
+          "description": "常见商品品系的准确种名可能不同。提供躲避处和适用沉木，投喂含植物成分的沉底饲料及少量蔬菜，及时取出残饵；排泄量需考虑，不能代替清洁维护。"
+        }
+      },
+      "revision": "d7de32f366c676e8",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Ancistrus",
+          "family": "Loricariidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Provide circulation without removing sheltered resting places.",
+              "group": "House singly unless individual compatibility and space are assessed.",
+              "setup": "Provide wood and a suitable hiding place.",
+              "space": "Prioritize adult bottom area and a retreat; tank length is unconfirmed.",
+              "oxygen": "Keep filtration and gas exchange adequate for this larger fish.",
+              "feeding": "Supply sinking vegetable-based foods; algae alone is insufficient."
+            },
+            "zh-CN": {
+              "flow": "保证水体循环，同时留有遮蔽休息处。",
+              "group": "默认单养；增加个体前需评估个体相容性和空间。",
+              "setup": "提供沉木和合适的躲避处。",
+              "space": "优先考虑成鱼底面积与躲避处；缸长尚未确认。",
+              "oxygen": "为这种体型较大的鱼维持足够过滤和气体交换。",
+              "feeding": "提供沉底植物性食物，不能只靠缸壁藻类。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "same_species_territory",
+              "text": {
+                "en": "Individuals can dispute shelters and bottom territory, especially with limited space.",
+                "zh-CN": "个体可能争夺躲避处和底部领地，空间不足时尤需注意。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "single",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "bottom"
+          ],
+          "habitat_tags": [
+            "hiding_places",
+            "wood",
+            "mature_biofilm"
+          ],
+          "food_form_tags": [
+            "sinking",
+            "vegetable",
+            "biofilm"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "gentle",
+            "moderate"
+          ],
+          "light_preference": "subdued",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "large",
+        "bodyShapes": [
+          "elongated"
+        ],
+        "distribution": "Captive-bred Ancistrus forms of South American origin",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Brown",
+              "Black"
+            ],
+            "social": [
+              "Solitary tendency"
+            ],
+            "body_shape": [
+              "Elongated"
+            ],
+            "categories": [
+              "Pleco",
+              "Catfish"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "棕色",
+              "黑色"
+            ],
+            "social": [
+              "单养倾向"
+            ],
+            "body_shape": [
+              "长条形"
+            ],
+            "categories": [
+              "异型",
+              "鲶鱼类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "solitary_tendency"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Ancistrus sp.",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "zebra-danio",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 19,
+            "min": 5
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 8,
+            "min": 6.5
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "shoal",
+            "minimum": 6,
+            "recommended": 6
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Provide well-oxygenated water independently of current strength. Moderate circulation suits active swimming; retain a calmer resting area. Aim for about 60 cm of continuous swimming length and a secure lid. Keep at least 6 together, with enough swimming space for the group. Offer suitably sized food at the surface and in midwater. Keep a clear swim path and cover the tank to limit jumping.",
+          "zh-CN": "无论水流强弱，都要保持较高溶氧。 适中水流便于活跃游动，也留一处平缓休息区。 争取约60厘米连续游泳长度，并加牢固缸盖。 至少6尾同养，并为群体保留足够游泳空间。 在水面和中层提供大小合适的食物。 保留连续游泳空间，盖好缸盖防跳。"
+        },
+        "oxygen": {
+          "value": "high",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "community",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "top",
+            "mid"
+          ],
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 60,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 24,
+            "min": 18
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 50,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "needsReview",
+          "ph": "needsReview",
+          "diet": "needsReview",
+          "flow": "checked",
+          "group": "needsReview",
+          "oxygen": "checked",
+          "difficulty": "needsReview",
+          "temperament": "needsReview",
+          "waterLayers": "needsReview",
+          "minimumTankL": "needsReview",
+          "temperatureC": "needsReview",
+          "adultLengthMm": "needsReview",
+          "minimumTankLengthMm": "checked"
+        },
+        "legacyDataStatus": "unavailable",
+        "minimumTankLengthMm": {
+          "value": 600,
+          "editorialState": null,
+          "knowledgeState": "known"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "danio",
+        "schooling",
+        "slender"
+      ],
+      "media": {
+        "photo": "/media/releases/d3b25396632f4e2129f44f54d56f49207d34c87b320c0a240cb092a87f5c071a.jpg",
+        "attribution": "Ffish.asia · CC BY 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/3971f3ecadc562c6e6ce4f3b63e8fd714dab7f1eef8cef43cdacf50ca44feab9.svg",
+        "color": "#617b9a",
+        "front": "/media/releases/8f35c5a61f9b2b747d7828c4fa2e206dd841c8a0c2764f8a31afab98ae607626.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 15,
+        "widthMm": 50,
+        "heightMm": 20
+      },
+      "active": true,
+      "colors": [
+        "blue",
+        "silver"
+      ],
+      "aliases": [
+        "斑马鱼",
+        "斑马",
+        "zebrafish"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Zebra Danio",
+          "name": "Zebra Danio",
+          "summary": "An active, striped schooling fish that needs a long swimming run.",
+          "description": "Keep at least six and prioritise a tank about 60 cm long or longer over height alone. Secure the lid: these quick swimmers can jump."
+        },
+        "zh-CN": {
+          "alt": "斑马鱼",
+          "name": "斑马鱼",
+          "summary": "游动活跃、需要连续游泳空间的条纹群游鱼。",
+          "description": "至少六尾群养，优先选择约60厘米或更长的缸体，不能只看高度或升数。它们游动快，也会跳缸，应加盖。"
+        }
+      },
+      "revision": "452e1af5916f9fdd",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Danio",
+          "family": "Danionidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Moderate circulation suits active swimming; retain a calmer resting area.",
+              "group": "Keep at least 6 together, with enough swimming space for the group.",
+              "setup": "Keep a clear swim path and cover the tank to limit jumping.",
+              "space": "Aim for about 60 cm of continuous swimming length and a secure lid.",
+              "oxygen": "Provide well-oxygenated water independently of current strength.",
+              "feeding": "Offer suitably sized food at the surface and in midwater."
+            },
+            "zh-CN": {
+              "flow": "适中水流便于活跃游动，也留一处平缓休息区。",
+              "group": "至少6尾同养，并为群体保留足够游泳空间。",
+              "setup": "保留连续游泳空间，盖好缸盖防跳。",
+              "space": "争取约60厘米连续游泳长度，并加牢固缸盖。",
+              "oxygen": "无论水流强弱，都要保持较高溶氧。",
+              "feeding": "在水面和中层提供大小合适的食物。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "jump_risk",
+              "text": {
+                "en": "Active swimmers may jump; keep the lid secure.",
+                "zh-CN": "活跃游泳时可能跳缸；请固定缸盖。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "shoal",
+          "oxygen_need": "high",
+          "feeding_zone": [
+            "surface",
+            "midwater"
+          ],
+          "habitat_tags": [
+            "open_swimming"
+          ],
+          "food_form_tags": [
+            "small_particles",
+            "floating"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "moderate"
+          ],
+          "light_preference": "adaptable",
+          "minimum_tank_length_cm": 60
+        },
+        "sizeClass": "medium",
+        "bodyShapes": [
+          "slender"
+        ],
+        "distribution": "South Asia",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Blue",
+              "Silver"
+            ],
+            "social": [
+              "Schooling"
+            ],
+            "body_shape": [
+              "Slender"
+            ],
+            "categories": [
+              "Danio"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "蓝色",
+              "银色"
+            ],
+            "social": [
+              "群游"
+            ],
+            "body_shape": [
+              "细长"
+            ],
+            "categories": [
+              "斑马鱼类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "schooling"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Danio rerio",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "betta-splendens",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 12,
+            "min": 3
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 6
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "carnivore",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "minimal",
+            "gentle"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "solitary",
+            "minimum": 1,
+            "recommended": 1
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Air breathing does not make stagnant or poor-quality water safe. Use gentle filtered circulation, especially for long fins. Provide accessible surface and places to rest. Keep a single betta; do not infer pair housing from the count of one. Offer suitable small foods near the surface without overfeeding. Use a secure lid and surface access, with cover for resting.",
+          "zh-CN": "可呼吸空气也不代表停水或差水质安全。 保持缓和的过滤水流，长鳍品系尤其需要。 保证能到达水面，并有休息位置。 单养斗鱼；数量为一不意味着可以配对饲养。 在水面附近提供适合的小型食物，避免过量。 缸盖牢固，保留上浮通道及休息遮蔽。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "territorial",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "top",
+            "mid"
+          ],
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 20,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 24
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 70,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "needsReview",
+          "ph": "needsReview",
+          "diet": "needsReview",
+          "flow": "checked",
+          "group": "needsReview",
+          "oxygen": "checked",
+          "difficulty": "needsReview",
+          "temperament": "needsReview",
+          "waterLayers": "needsReview",
+          "minimumTankL": "needsReview",
+          "temperatureC": "needsReview",
+          "adultLengthMm": "needsReview",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "unavailable",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "betta",
+        "gourami",
+        "solitary_tendency",
+        "laterally_compressed"
+      ],
+      "media": {
+        "photo": "/media/releases/2f82fec5b4f7cbb194e2c5be2caaf28d6c7d96db0620488792f85e106ede5d1c.jpg",
+        "attribution": "Nippyfish · CC BY 2.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/283bea6f7c4bd6c07f478a91675371e94ddb19b20778fbc8865d2e5b310c00bb.svg",
+        "color": "#3c80a4",
+        "front": "/media/releases/4ee1dba6deb2374990ae3769af01575383aa49f44c8edf0b8b26f88551296048.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 21,
+        "widthMm": 70,
+        "heightMm": 28
+      },
+      "active": true,
+      "colors": [
+        "mixed"
+      ],
+      "aliases": [
+        "斗鱼",
+        "暹罗斗鱼",
+        "泰国斗鱼",
+        "Siamese fighting fish"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Siamese Fighting Fish",
+          "name": "Siamese Fighting Fish",
+          "summary": "A warm-water labyrinth fish usually best planned as a single male.",
+          "description": "Keep males separately. Use a secure lid with an air gap, gentle flow and resting places near the surface; assess tank mates individually."
+        },
+        "zh-CN": {
+          "alt": "暹罗斗鱼",
+          "name": "暹罗斗鱼",
+          "summary": "适合以单尾雄鱼规划饲养的暖水迷鳃鱼。",
+          "description": "雄鱼分开饲养。使用留有空气层的牢固缸盖，保持缓水流，并在近水面提供休息点；混养需逐一评估。"
+        }
+      },
+      "revision": "11d5c4021d0acd29",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Betta",
+          "family": "Osphronemidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Use gentle filtered circulation, especially for long fins.",
+              "group": "Keep a single betta; do not infer pair housing from the count of one.",
+              "setup": "Use a secure lid and surface access, with cover for resting.",
+              "space": "Provide accessible surface and places to rest.",
+              "oxygen": "Air breathing does not make stagnant or poor-quality water safe.",
+              "feeding": "Offer suitable small foods near the surface without overfeeding."
+            },
+            "zh-CN": {
+              "flow": "保持缓和的过滤水流，长鳍品系尤其需要。",
+              "group": "单养斗鱼；数量为一不意味着可以配对饲养。",
+              "setup": "缸盖牢固，保留上浮通道及休息遮蔽。",
+              "space": "保证能到达水面，并有休息位置。",
+              "oxygen": "可呼吸空气也不代表停水或差水质安全。",
+              "feeding": "在水面附近提供适合的小型食物，避免过量。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "male_territory",
+              "text": {
+                "en": "Do not house two males together; assess any tank mates individually.",
+                "zh-CN": "不要同缸饲养两条雄鱼；混养对象需逐一评估。"
+              },
+              "severity": "important"
+            },
+            {
+              "code": "fin_nipping",
+              "text": {
+                "en": "Some tank mates may nip long fins or be attacked by the betta.",
+                "zh-CN": "某些混养鱼可能啄咬长鳍，或受到斗鱼攻击。"
+              },
+              "severity": "caution"
+            },
+            {
+              "code": "jump_risk",
+              "text": {
+                "en": "Betta can jump; keep a secure lid with access to air at the surface.",
+                "zh-CN": "斗鱼可能跳缸；固定缸盖，并保留水面呼吸空间。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "single",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "surface",
+            "midwater"
+          ],
+          "habitat_tags": [
+            "surface_cover",
+            "plants",
+            "hiding_places"
+          ],
+          "food_form_tags": [
+            "floating",
+            "small_particles"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "minimal",
+            "gentle"
+          ],
+          "light_preference": "subdued",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "medium",
+        "bodyShapes": [
+          "laterally_compressed"
+        ],
+        "distribution": "Mainland Southeast Asia; widespread captive-bred strains",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Mixed"
+            ],
+            "social": [
+              "Solitary tendency"
+            ],
+            "body_shape": [
+              "Laterally compressed"
+            ],
+            "categories": [
+              "Betta",
+              "Labyrinth fish"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "混色"
+            ],
+            "social": [
+              "单养倾向"
+            ],
+            "body_shape": [
+              "侧扁"
+            ],
+            "categories": [
+              "斗鱼",
+              "迷鳃类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "solitary_tendency"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Betta splendens",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "guppy",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 20,
+            "min": 8
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 8,
+            "min": 7
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "colony",
+            "minimum": 3,
+            "recommended": 3
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Maintain stable filtration and gas exchange. Leave calmer water for long-finned strains. Plan for adult fish and possible offspring, not just the initial group. A small loose group can start with about 3; plan for offspring if sexes are mixed. Offer varied small foods that reach surface and midwater. Plant cover while retaining open swimming room.",
+          "zh-CN": "保持稳定过滤和气体交换。 为长鳍品系留有较平缓的水域。 按成鱼和可能的后代规划，而非只看初始数量。 松散小群可从约3尾起养；混养雌雄需考虑后代。 提供可到达水面和中层的多样小型食物。 有水草遮蔽，也要保留游泳空间。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "top",
+            "mid"
+          ],
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 45,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 22
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 60,
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "needsReview",
+          "ph": "needsReview",
+          "diet": "needsReview",
+          "flow": "checked",
+          "group": "needsReview",
+          "oxygen": "checked",
+          "difficulty": "needsReview",
+          "temperament": "needsReview",
+          "waterLayers": "needsReview",
+          "minimumTankL": "needsReview",
+          "temperatureC": "needsReview",
+          "adultLengthMm": "needsReview",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "unavailable",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "livebearer",
+        "colony",
+        "slender"
+      ],
+      "media": {
+        "photo": "/media/releases/bc2b20f0fe960ed4b33116360188023742dce74f127769460c2e7ac4a5a87b14.jpg",
+        "attribution": "Holger Krisp · CC BY 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/c84d6a893b36bffa6f3208d72b5418a02ebe966d095fae5da4d84de7b03f5176.svg",
+        "color": "#ce9075",
+        "front": "/media/releases/1248e0c3ab8f14d9975836093b74c5ad7cb0d2657ec4ab97e76ab84f5cfb5218.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 18,
+        "widthMm": 60,
+        "heightMm": 24
+      },
+      "active": true,
+      "colors": [
+        "mixed"
+      ],
+      "aliases": [
+        "孔雀鱼",
+        "孔雀",
+        "guppies"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Guppy",
+          "name": "Guppy",
+          "summary": "A small livebearer with many colour strains and frequent broods.",
+          "description": "Plan for adult females and their fry. Separating males and females helps control numbers, but previously mated females can still produce later broods; keep a rehoming plan."
+        },
+        "zh-CN": {
+          "alt": "孔雀鱼",
+          "name": "孔雀鱼",
+          "summary": "色彩品系丰富、繁殖速度较快的小型胎生鱼。",
+          "description": "按成鱼和后代的空间规划数量。公母分养有助于控制繁殖，但已交配的母鱼仍可能连续产仔，提前安排幼鱼去向。"
+        }
+      },
+      "revision": "82e52281d6f69e7b",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Poecilia",
+          "family": "Poeciliidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Leave calmer water for long-finned strains.",
+              "group": "A small loose group can start with about 3; plan for offspring if sexes are mixed.",
+              "setup": "Plant cover while retaining open swimming room.",
+              "space": "Plan for adult fish and possible offspring, not just the initial group.",
+              "oxygen": "Maintain stable filtration and gas exchange.",
+              "feeding": "Offer varied small foods that reach surface and midwater."
+            },
+            "zh-CN": {
+              "flow": "为长鳍品系留有较平缓的水域。",
+              "group": "松散小群可从约3尾起养；混养雌雄需考虑后代。",
+              "setup": "有水草遮蔽，也要保留游泳空间。",
+              "space": "按成鱼和可能的后代规划，而非只看初始数量。",
+              "oxygen": "保持稳定过滤和气体交换。",
+              "feeding": "提供可到达水面和中层的多样小型食物。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "rapid_breeding",
+              "text": {
+                "en": "Mixed-sex groups may produce young quickly; plan for their care and space.",
+                "zh-CN": "混养雌雄可能较快繁殖；需预先考虑幼鱼照料与空间。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "loose_group",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "surface",
+            "midwater"
+          ],
+          "habitat_tags": [
+            "plants",
+            "open_swimming"
+          ],
+          "food_form_tags": [
+            "small_particles",
+            "floating"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "gentle",
+            "moderate"
+          ],
+          "light_preference": "adaptable",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "medium",
+        "bodyShapes": [
+          "slender"
+        ],
+        "distribution": "Northern South America; widespread captive-bred strains",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Mixed"
+            ],
+            "social": [
+              "Colony"
+            ],
+            "body_shape": [
+              "Slender"
+            ],
+            "categories": [
+              "Livebearer"
+            ],
+            "reproduction": "Livebearing"
+          },
+          "zh-CN": {
+            "colors": [
+              "混色"
+            ],
+            "social": [
+              "群居"
+            ],
+            "body_shape": [
+              "细长"
+            ],
+            "categories": [
+              "胎生鳉类"
+            ],
+            "reproduction": "胎生"
+          }
+        },
+        "socialPatterns": [
+          "colony"
+        ],
+        "reproductionMode": "livebearing"
+      },
+      "scientificName": "Poecilia reticulata",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "red-cherry-shrimp",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 14,
+            "min": 4
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 8,
+            "min": 6.5
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "grazer",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "colony",
+            "minimum": 6,
+            "recommended": 10
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Keep the established tank filtered and oxygenated. Gentle circulation lets shrimp graze without being swept away. Usable surfaces and cover matter more than a guessed tank length. Start a colony with about 10 when space and water quality allow. Let them graze established biofilm and supplement sparingly. Provide dense cover, especially for young shrimp and molts.",
+          "zh-CN": "成熟缸仍需过滤并保持充足溶氧。 缓和水流便于觅食，也避免把虾冲走。 可攀附表面与遮蔽比推测缸长更重要。 空间和水质允许时，可从约10只开始建立虾群。 以成熟生物膜为食源之一，少量补充饲料。 提供密集遮蔽，尤其保护幼虾和蜕壳个体。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "bottom"
+          ],
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 20,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 27,
+            "min": 20
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 25,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "checked",
+          "ph": "checked",
+          "diet": "checked",
+          "flow": "checked",
+          "group": "checked",
+          "oxygen": "checked",
+          "difficulty": "checked",
+          "temperament": "checked",
+          "waterLayers": "checked",
+          "minimumTankL": "checked",
+          "temperatureC": "checked",
+          "adultLengthMm": "checked",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "ready",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "shrimp",
+      "tags": [
+        "shrimp",
+        "colony",
+        "short_round"
+      ],
+      "media": {
+        "photo": "/media/releases/49889f354ff71d96ae0623446881947ba4899331ca88f3d01d0af4f10df42dae.jpg",
+        "attribution": "DirkBlankenhaus · CC BY-SA 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/f4fa5dd2e6baf89113f85527f7fb1243b7cc614f06152c81e960fefb8d62d7c9.svg",
+        "color": "#cd4c3d",
+        "front": "/media/releases/53830b579ba8da7a81aac4c1a96fefaf731201c5914a8a01a217f3d00fe1fe08.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 7.5,
+        "widthMm": 25,
+        "heightMm": 10
+      },
+      "active": true,
+      "colors": [
+        "red",
+        "transparent"
+      ],
+      "aliases": [
+        "cherry shrimp",
+        "neocaridina",
+        "樱花虾",
+        "樱桃虾"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Red Cherry Shrimp",
+          "name": "Red Cherry Shrimp",
+          "summary": "A small freshwater shrimp that grazes on surfaces and biofilm.",
+          "description": "Provide cover, stable water and a mature grazing surface. Guard filter intakes with shrimp-safe sponge or mesh, especially for juveniles; many fish will eat shrimplets."
+        },
+        "zh-CN": {
+          "alt": "樱花虾",
+          "name": "樱花虾",
+          "summary": "会在缸体表面和生物膜上取食的小型淡水虾。",
+          "description": "提供躲避处、稳定水质和成熟取食表面。过滤进水口加防虾海绵或细网，尤其保护幼虾；许多鱼会捕食幼虾。"
+        }
+      },
+      "revision": "6c661c1bd1a9f347",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Neocaridina",
+          "family": "Atyidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Gentle circulation lets shrimp graze without being swept away.",
+              "group": "Start a colony with about 10 when space and water quality allow.",
+              "setup": "Provide dense cover, especially for young shrimp and molts.",
+              "space": "Usable surfaces and cover matter more than a guessed tank length.",
+              "oxygen": "Keep the established tank filtered and oxygenated.",
+              "feeding": "Let them graze established biofilm and supplement sparingly."
+            },
+            "zh-CN": {
+              "flow": "缓和水流便于觅食，也避免把虾冲走。",
+              "group": "空间和水质允许时，可从约10只开始建立虾群。",
+              "setup": "提供密集遮蔽，尤其保护幼虾和蜕壳个体。",
+              "space": "可攀附表面与遮蔽比推测缸长更重要。",
+              "oxygen": "成熟缸仍需过滤并保持充足溶氧。",
+              "feeding": "以成熟生物膜为食源之一，少量补充饲料。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "shrimplet_predation",
+              "text": {
+                "en": "Many fish will eat young shrimp even when they leave adults alone.",
+                "zh-CN": "许多鱼即使不捕食成虾，也会捕食幼虾。"
+              },
+              "severity": "important"
+            },
+            {
+              "code": "filter_intake",
+              "text": {
+                "en": "Guard the filter intake so young shrimp are not drawn in.",
+                "zh-CN": "给过滤进水口加防护，避免幼虾被吸入。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "colony",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "bottom"
+          ],
+          "habitat_tags": [
+            "plants",
+            "hiding_places",
+            "mature_biofilm"
+          ],
+          "food_form_tags": [
+            "biofilm",
+            "sinking",
+            "vegetable"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "gentle"
+          ],
+          "light_preference": "adaptable",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "small",
+        "bodyShapes": [
+          "short_round"
+        ],
+        "distribution": "Captive-bred freshwater form",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Red",
+              "Transparent"
+            ],
+            "social": [
+              "Colony"
+            ],
+            "body_shape": [
+              "Short and round"
+            ],
+            "categories": [
+              "Shrimp"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "红色",
+              "透明/半透明"
+            ],
+            "social": [
+              "群居"
+            ],
+            "body_shape": [
+              "短圆"
+            ],
+            "categories": [
+              "虾类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "colony"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Neocaridina davidi",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "panda-corydoras",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 12,
+            "min": 2
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 6
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "shoal",
+            "minimum": 6,
+            "recommended": 8
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Keep water well oxygenated; surface visits do not replace this. Use circulation that leaves resting spots on the bottom. Prioritize usable bottom area for the group. Keep at least 6 together; 8 or more is preferable when bottom space allows. Deliver sinking food to the bottom; do not rely on leftovers. Use smooth substrate to protect foraging barbels.",
+          "zh-CN": "保持水体溶氧充足；上浮换气不能替代这一点。 让水体循环，同时在底部留有休息区。 优先保证群体可用的底面积。 至少6尾同养；底部空间允许时以8尾或更多为宜。 把沉底食物送到底层，不依赖其他鱼的剩食。 用圆润底材保护觅食时的触须。"
+        },
+        "oxygen": {
+          "value": "high",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "bottom"
+          ],
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 60,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 25,
+            "min": 20
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 50,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "checked",
+          "ph": "checked",
+          "diet": "checked",
+          "flow": "checked",
+          "group": "checked",
+          "oxygen": "checked",
+          "difficulty": "checked",
+          "temperament": "checked",
+          "waterLayers": "checked",
+          "minimumTankL": "checked",
+          "temperatureC": "checked",
+          "adultLengthMm": "checked",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "ready",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "corydoras",
+        "catfish",
+        "schooling",
+        "short_round"
+      ],
+      "media": {
+        "photo": "/media/releases/629df2277d78a7c3b26c4e707c45ae279eb449c4348c428e7396133453ec3a1e.jpg",
+        "attribution": "Chronotopian · CC BY-SA 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/59cbf89cd880c2b14e3f965263169fd6604a11b7364080b7459429b88420e142.svg",
+        "color": "#9b9e92",
+        "front": "/media/releases/cb7e7bade33023ee2c5fb339f3662d6e72afe8dd765f3e2f2ba1d0309407186b.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 15,
+        "widthMm": 50,
+        "heightMm": 20
+      },
+      "active": true,
+      "colors": [
+        "white",
+        "black",
+        "silver"
+      ],
+      "aliases": [
+        "panda cory",
+        "panda catfish",
+        "熊猫鼠",
+        "熊猫鼠鱼"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Panda Corydoras",
+          "name": "Panda Corydoras",
+          "summary": "A social bottom-dweller that spends much of its time sifting the substrate.",
+          "description": "Keep a group on smooth substrate and feed a suitable sinking food. Leftover food and algae alone do not meet their needs; they are not a substitute for cleaning."
+        },
+        "zh-CN": {
+          "alt": "熊猫鼠",
+          "name": "熊猫鼠",
+          "summary": "喜欢群居、主要活动在底层的底栖鱼。",
+          "description": "使用圆润底材并保持足够群体，专门投喂合适的沉底食物。残饵和藻类不能满足它们的需要，鼠鱼也不能代替清洁。"
+        }
+      },
+      "revision": "1fbc5901ba88a7fa",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Corydoras",
+          "family": "Callichthyidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Use circulation that leaves resting spots on the bottom.",
+              "group": "Keep at least 6 together; 8 or more is preferable when bottom space allows.",
+              "setup": "Use smooth substrate to protect foraging barbels.",
+              "space": "Prioritize usable bottom area for the group.",
+              "oxygen": "Keep water well oxygenated; surface visits do not replace this.",
+              "feeding": "Deliver sinking food to the bottom; do not rely on leftovers."
+            },
+            "zh-CN": {
+              "flow": "让水体循环，同时在底部留有休息区。",
+              "group": "至少6尾同养；底部空间允许时以8尾或更多为宜。",
+              "setup": "用圆润底材保护觅食时的触须。",
+              "space": "优先保证群体可用的底面积。",
+              "oxygen": "保持水体溶氧充足；上浮换气不能替代这一点。",
+              "feeding": "把沉底食物送到底层，不依赖其他鱼的剩食。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "bottom_feeding",
+              "text": {
+                "en": "Check that food reaches the bottom group before faster tank mates take it.",
+                "zh-CN": "确认食物到达底层鱼群，避免被动作较快的混养鱼先吃完。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "shoal",
+          "oxygen_need": "high",
+          "feeding_zone": [
+            "bottom"
+          ],
+          "habitat_tags": [
+            "hiding_places",
+            "open_swimming"
+          ],
+          "food_form_tags": [
+            "sinking",
+            "small_particles"
+          ],
+          "substrate_tags": [
+            "smooth_sand",
+            "smooth_gravel"
+          ],
+          "flow_preference": [
+            "gentle",
+            "moderate"
+          ],
+          "light_preference": "adaptable",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "medium",
+        "bodyShapes": [
+          "short_round"
+        ],
+        "distribution": "Upper Madeira basin",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "White",
+              "Black",
+              "Silver"
+            ],
+            "social": [
+              "Schooling"
+            ],
+            "body_shape": [
+              "Short and round"
+            ],
+            "categories": [
+              "Corydoras",
+              "Catfish"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "白色",
+              "黑色",
+              "银色"
+            ],
+            "social": [
+              "群游"
+            ],
+            "body_shape": [
+              "短圆"
+            ],
+            "categories": [
+              "鼠鱼",
+              "鲶鱼类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "schooling"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Corydoras panda",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "honey-gourami",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 12,
+            "min": 2
+          },
+          "editorialState": "needsReview",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 6
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "minimal",
+            "gentle"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "conditional_pair",
+            "minimum": 1,
+            "recommended": 1
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Maintain good water quality and gas exchange even with gentle flow. Avoid a strong current at the surface. Allow separate sheltered areas if keeping a pair. One can be kept alone; pair only with room and a backup separation plan. Offer small foods at the surface and in midwater. Provide surface cover without sealing off gas exchange.",
+          "zh-CN": "即使水流缓和，也要保持良好水质与气体交换。 避免水面持续强流。 成对饲养时提供各自可躲避的区域。 可单养；成对需空间和必要时分开的预案。 提供水面和中层可摄取的小型食物。 提供水面遮蔽，但不要妨碍气体交换。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "top",
+            "mid"
+          ],
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 45,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 23
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 55,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "needsReview",
+          "ph": "checked",
+          "diet": "checked",
+          "flow": "checked",
+          "group": "checked",
+          "oxygen": "checked",
+          "difficulty": "checked",
+          "temperament": "checked",
+          "waterLayers": "checked",
+          "minimumTankL": "checked",
+          "temperatureC": "checked",
+          "adultLengthMm": "checked",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "partial",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "gourami",
+        "pairing",
+        "solitary_tendency",
+        "deep_bodied",
+        "laterally_compressed"
+      ],
+      "media": {
+        "photo": "/media/releases/0a8cf4a69fb127e86dbcfc38b8e4ec309a9bc35d51e99d3db3704eac351e5c47.jpg",
+        "attribution": "Antoondommerholt at Dutch Wikipedia · CC BY-SA 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/ab5727ae9f8fe7bc73c92763d50d227efa4720b2fe1a06477cd43c125ff9e66e.svg",
+        "color": "#ddb64f",
+        "front": "/media/releases/3bf4e670aa16ee4f8bc0638e10aecc88faa2b5bbe4db0acac653688cd2f205db.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 16.5,
+        "widthMm": 55,
+        "heightMm": 22
+      },
+      "active": true,
+      "colors": [
+        "yellow",
+        "orange",
+        "brown"
+      ],
+      "aliases": [
+        "sunset honey gourami",
+        "蜜丽丽",
+        "蜜蜂丽丽",
+        "蜜糖丽丽",
+        "蜜丝足鲈"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Honey Gourami",
+          "name": "Honey Gourami",
+          "summary": "A gentle labyrinth fish that often explores the upper half of the tank.",
+          "description": "Keep calm tank mates and surface cover; avoid strong surface flow."
+        },
+        "zh-CN": {
+          "alt": "蜜丽丽",
+          "name": "蜜丽丽",
+          "summary": "性情温和、常活动于上层的迷鳃鱼。",
+          "description": "建议搭配安静的混养鱼，并保留水面遮蔽物，避免强水流。"
+        }
+      },
+      "revision": "93ffd7ef4d657701",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Trichogaster",
+          "family": "Osphronemidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Avoid a strong current at the surface.",
+              "group": "One can be kept alone; pair only with room and a backup separation plan.",
+              "setup": "Provide surface cover without sealing off gas exchange.",
+              "space": "Allow separate sheltered areas if keeping a pair.",
+              "oxygen": "Maintain good water quality and gas exchange even with gentle flow.",
+              "feeding": "Offer small foods at the surface and in midwater."
+            },
+            "zh-CN": {
+              "flow": "避免水面持续强流。",
+              "group": "可单养；成对需空间和必要时分开的预案。",
+              "setup": "提供水面遮蔽，但不要妨碍气体交换。",
+              "space": "成对饲养时提供各自可躲避的区域。",
+              "oxygen": "即使水流缓和，也要保持良好水质与气体交换。",
+              "feeding": "提供水面和中层可摄取的小型食物。"
+            }
+          },
+          "alerts": [
+            {
+              "code": "pair_territory",
+              "text": {
+                "en": "A pair may not coexist peacefully; watch for chasing and separate if needed.",
+                "zh-CN": "成对个体未必能和平共处；留意追逐，必要时分开。"
+              },
+              "severity": "caution"
+            }
+          ],
+          "group_mode": "conditional_pair",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "surface",
+            "midwater"
+          ],
+          "habitat_tags": [
+            "surface_cover",
+            "plants",
+            "hiding_places"
+          ],
+          "food_form_tags": [
+            "small_particles",
+            "floating"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "minimal",
+            "gentle"
+          ],
+          "light_preference": "subdued",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "medium",
+        "bodyShapes": [
+          "deep_bodied",
+          "laterally_compressed"
+        ],
+        "distribution": "Northeast India and Bangladesh",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Yellow",
+              "Orange",
+              "Brown"
+            ],
+            "social": [
+              "Pairing",
+              "Solitary tendency"
+            ],
+            "body_shape": [
+              "Deep-bodied",
+              "Laterally compressed"
+            ],
+            "categories": [
+              "Labyrinth fish"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "黄色",
+              "橙色",
+              "棕色"
+            ],
+            "social": [
+              "成对",
+              "单养倾向"
+            ],
+            "body_shape": [
+              "深体",
+              "侧扁"
+            ],
+            "categories": [
+              "迷鳃类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "pairing",
+          "solitary_tendency"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Trichogaster chuna",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "harlequin-rasbora",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 12,
+            "min": 2
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 6
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "shoal",
+            "minimum": 8,
+            "recommended": 10
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Keep normal filtration and gas exchange stable. Allow moderate flow with sheltered edges. Reserve a clear swimming run for the adult group. Keep at least 8 together; aim for 10 or more when space allows. Offer appropriately sized food in midwater. Combine plant cover with open water.",
+          "zh-CN": "保持稳定过滤和正常气体交换。 可有适中水流，边缘留遮蔽区。 为成鱼群体留出开阔游泳区。 至少8尾同养；空间允许时以10尾或更多为宜。 在中层提供合适大小的食物。 水草遮蔽与开阔水域兼顾。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "mid"
+          ],
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 60,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 23
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 50,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "checked",
+          "ph": "checked",
+          "diet": "checked",
+          "flow": "checked",
+          "group": "checked",
+          "oxygen": "checked",
+          "difficulty": "checked",
+          "temperament": "checked",
+          "waterLayers": "checked",
+          "minimumTankL": "checked",
+          "temperatureC": "checked",
+          "adultLengthMm": "checked",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "ready",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "rasbora",
+        "schooling",
+        "deep_bodied",
+        "laterally_compressed"
+      ],
+      "media": {
+        "photo": "/media/releases/6292bbfb919ab6208546f3cea1a5c762d473498a8cf328af5d55930a3725e299.jpg",
+        "attribution": "NasserHalaweh · CC BY-SA 4.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/54a3e94057d9c917b10d56daf45e830a350ff1c0150e343df19234c88d6c68e2.svg",
+        "color": "#c68b5d",
+        "front": "/media/releases/523cd493d9a634150731b0d259698778dc7b8da185eef29d6fbb2d5d974e3f2e.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 15,
+        "widthMm": 50,
+        "heightMm": 20
+      },
+      "active": true,
+      "colors": [
+        "orange",
+        "black",
+        "silver"
+      ],
+      "aliases": [
+        "harlequin",
+        "rasbora",
+        "三角灯",
+        "三角波鱼"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Harlequin Rasbora",
+          "name": "Harlequin Rasbora",
+          "summary": "A hardy mid-water schooling fish for peaceful community tanks.",
+          "description": "Keep at least eight with cover and a clear swimming run. Size the aquarium for the adult group rather than the number of small fish sold together."
+        },
+        "zh-CN": {
+          "alt": "三角灯",
+          "name": "三角灯",
+          "summary": "适合温和社区缸的耐养中层群游鱼。",
+          "description": "至少八尾群养，提供遮蔽和连续游泳空间。按成年群体规划缸体，不能以店内幼鱼装得下为标准。"
+        }
+      },
+      "revision": "5385ac0fecc7e458",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Trigonostigma",
+          "family": "Cyprinidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Allow moderate flow with sheltered edges.",
+              "group": "Keep at least 8 together; aim for 10 or more when space allows.",
+              "setup": "Combine plant cover with open water.",
+              "space": "Reserve a clear swimming run for the adult group.",
+              "oxygen": "Keep normal filtration and gas exchange stable.",
+              "feeding": "Offer appropriately sized food in midwater."
+            },
+            "zh-CN": {
+              "flow": "可有适中水流，边缘留遮蔽区。",
+              "group": "至少8尾同养；空间允许时以10尾或更多为宜。",
+              "setup": "水草遮蔽与开阔水域兼顾。",
+              "space": "为成鱼群体留出开阔游泳区。",
+              "oxygen": "保持稳定过滤和正常气体交换。",
+              "feeding": "在中层提供合适大小的食物。"
+            }
+          },
+          "alerts": [],
+          "group_mode": "shoal",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "midwater"
+          ],
+          "habitat_tags": [
+            "plants",
+            "open_swimming"
+          ],
+          "food_form_tags": [
+            "small_particles"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "gentle",
+            "moderate"
+          ],
+          "light_preference": "adaptable",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "medium",
+        "bodyShapes": [
+          "deep_bodied",
+          "laterally_compressed"
+        ],
+        "distribution": "Malay Peninsula and Sumatra",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Orange",
+              "Black",
+              "Silver"
+            ],
+            "social": [
+              "Schooling"
+            ],
+            "body_shape": [
+              "Deep-bodied",
+              "Laterally compressed"
+            ],
+            "categories": [
+              "Rasbora"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "橙色",
+              "黑色",
+              "银色"
+            ],
+            "social": [
+              "群游"
+            ],
+            "body_shape": [
+              "深体",
+              "侧扁"
+            ],
+            "categories": [
+              "波鱼类"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "schooling"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Trigonostigma heteromorpha",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "ember-tetra",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 10,
+            "min": 1
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 5.5
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "shoal",
+            "minimum": 8,
+            "recommended": 10
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Keep filtration and gas exchange steady. Use a gentle current with quiet planted areas. Plan space for the adult shoal, despite their small size. Keep at least 8 together; aim for 10 or more when space allows. Use fine food that small mouths can take. Plant cover without filling the whole swim path.",
+          "zh-CN": "保持稳定过滤和气体交换。 采用缓和水流，并留有安静的水草区。 体型虽小，仍按成鱼群体规划空间。 至少8尾同养；空间允许时以10尾或更多为宜。 提供适合小口径的细小食物。 用水草遮蔽，但不要占满游泳空间。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "mid"
+          ],
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 30,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 28,
+            "min": 24
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 25,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "checked",
+          "ph": "checked",
+          "diet": "checked",
+          "flow": "checked",
+          "group": "checked",
+          "oxygen": "checked",
+          "difficulty": "checked",
+          "temperament": "checked",
+          "waterLayers": "checked",
+          "minimumTankL": "checked",
+          "temperatureC": "checked",
+          "adultLengthMm": "checked",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "ready",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "tetra",
+        "schooling",
+        "slender",
+        "laterally_compressed"
+      ],
+      "media": {
+        "photo": "/media/releases/71cea5e0d19da3e8a9ccf1dcb52668c7d93b3411b3c20e185cd898a97a1abccf.jpg",
+        "attribution": "Pascal Wolterman · CC BY-SA 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/162c66f6b6a461717dd842cd0cfbcfc207333fe3c7d9d10363eac7f9fa5d3262.svg",
+        "color": "#e77535",
+        "front": "/media/releases/aea4a33bfc0c923e314cadea52dc0e41a3dbdbd4e6743e10fa1528c3926e22f7.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 7.5,
+        "widthMm": 25,
+        "heightMm": 10
+      },
+      "active": true,
+      "colors": [
+        "orange",
+        "red"
+      ],
+      "aliases": [
+        "ember",
+        "fire tetra",
+        "火焰灯",
+        "喷火灯"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Ember Tetra",
+          "name": "Ember Tetra",
+          "summary": "A tiny, warm-water schooling fish with a calm temperament.",
+          "description": "Keep at least eight in planted cover with gentle flow. Small individual size does not remove the need for enough space for the adult group."
+        },
+        "zh-CN": {
+          "alt": "火焰灯",
+          "name": "火焰灯",
+          "summary": "体型小、性情温和的暖水群游鱼。",
+          "description": "至少八尾群养，提供水草遮蔽和缓水流。单尾体型小，也需要为成鱼群体保留足够空间。"
+        }
+      },
+      "revision": "98a50b6960bfc724",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Hyphessobrycon",
+          "family": "Characidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Use a gentle current with quiet planted areas.",
+              "group": "Keep at least 8 together; aim for 10 or more when space allows.",
+              "setup": "Plant cover without filling the whole swim path.",
+              "space": "Plan space for the adult shoal, despite their small size.",
+              "oxygen": "Keep filtration and gas exchange steady.",
+              "feeding": "Use fine food that small mouths can take."
+            },
+            "zh-CN": {
+              "flow": "采用缓和水流，并留有安静的水草区。",
+              "group": "至少8尾同养；空间允许时以10尾或更多为宜。",
+              "setup": "用水草遮蔽，但不要占满游泳空间。",
+              "space": "体型虽小，仍按成鱼群体规划空间。",
+              "oxygen": "保持稳定过滤和气体交换。",
+              "feeding": "提供适合小口径的细小食物。"
+            }
+          },
+          "alerts": [],
+          "group_mode": "shoal",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "midwater"
+          ],
+          "habitat_tags": [
+            "plants",
+            "open_swimming"
+          ],
+          "food_form_tags": [
+            "small_particles"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "gentle"
+          ],
+          "light_preference": "subdued",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "small",
+        "bodyShapes": [
+          "slender",
+          "laterally_compressed"
+        ],
+        "distribution": "Araguaia basin",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Orange",
+              "Red"
+            ],
+            "social": [
+              "Schooling"
+            ],
+            "body_shape": [
+              "Slender",
+              "Laterally compressed"
+            ],
+            "categories": [
+              "Tetra"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "橙色",
+              "红色"
+            ],
+            "social": [
+              "群游"
+            ],
+            "body_shape": [
+              "细长",
+              "侧扁"
+            ],
+            "categories": [
+              "灯科鱼"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "schooling"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Hyphessobrycon amandae",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "id": "neon-tetra",
+      "care": {
+        "gh": {
+          "value": {
+            "max": 10,
+            "min": 1
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "ph": {
+          "value": {
+            "max": 7.5,
+            "min": 5.5
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "diet": {
+          "value": "omnivore",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "flow": {
+          "value": [
+            "gentle",
+            "moderate"
+          ],
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "group": {
+          "value": {
+            "mode": "shoal",
+            "minimum": 8,
+            "recommended": 10
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "notes": {
+          "en": "Keep filtered water well oxygenated. Leave a calm area beside the swimming run. Leave an uninterrupted swim path for the adult group. Keep at least 8 together; aim for 10 or more when space allows. Offer small food that reaches midwater. Provide cover around open swimming space.",
+          "zh-CN": "保持过滤水体溶氧充足。 游泳区旁留有平缓水流区域。 为成鱼群体保留连续游泳空间。 至少8尾同养；空间允许时以10尾或更多为宜。 提供能到达中层的小颗粒食物。 在开阔游泳区周围提供遮蔽。"
+        },
+        "oxygen": {
+          "value": "standard",
+          "editorialState": null,
+          "knowledgeState": "known"
+        },
+        "difficulty": {
+          "value": "easy",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperament": {
+          "value": "peaceful",
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "waterLayers": {
+          "value": [
+            "mid"
+          ],
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "minimumTankL": {
+          "value": 45,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "temperatureC": {
+          "value": {
+            "max": 26,
+            "min": 22
+          },
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "adultLengthMm": {
+          "value": 40,
+          "editorialState": "checked",
+          "knowledgeState": "known"
+        },
+        "editorialState": {
+          "gh": "checked",
+          "ph": "checked",
+          "diet": "checked",
+          "flow": "checked",
+          "group": "checked",
+          "oxygen": "checked",
+          "difficulty": "checked",
+          "temperament": "checked",
+          "waterLayers": "checked",
+          "minimumTankL": "checked",
+          "temperatureC": "checked",
+          "adultLengthMm": "checked",
+          "minimumTankLengthMm": "needsReview"
+        },
+        "legacyDataStatus": "ready",
+        "minimumTankLengthMm": {
+          "value": null,
+          "knowledgeState": "unknown"
+        }
+      },
+      "kind": "fish",
+      "tags": [
+        "tetra",
+        "schooling",
+        "slender",
+        "laterally_compressed"
+      ],
+      "media": {
+        "photo": "/media/releases/dc7be883a9ef25b7a920cbe9500ea275f1c972eae3130464e19b1ea19307afb5.jpg",
+        "attribution": "Holger Krisp · CC BY 3.0",
+        "photoStatus": "verified"
+      },
+      "scene": {
+        "top": "/media/releases/d35d3b8f699b18d971a281d179669af8b6c0ed386958dc900b7a57af32942775.svg",
+        "color": "#3dafa6",
+        "front": "/media/releases/82e3e0e0952aa6e6b8764eab86443b8f328eb7a7fb3cee84559733b0a95526b7.svg",
+        "style": "diagram",
+        "anchor": "center",
+        "depthMm": 12,
+        "widthMm": 40,
+        "heightMm": 16
+      },
+      "active": true,
+      "colors": [
+        "blue",
+        "red",
+        "silver"
+      ],
+      "aliases": [
+        "neon",
+        "neon fish",
+        "霓虹灯",
+        "红绿灯"
+      ],
+      "locales": {
+        "en": {
+          "alt": "Neon Tetra",
+          "name": "Neon Tetra",
+          "summary": "A peaceful schooling fish for mature community aquariums.",
+          "description": "Keep at least eight and plan swimming room for the adult group, not the shop-sized juveniles. Use mature, stable water and leave an open swimming run."
+        },
+        "zh-CN": {
+          "alt": "霓虹灯",
+          "name": "霓虹灯",
+          "summary": "适合成熟社区缸的温和群游鱼。",
+          "description": "至少八尾群养，按成鱼群体而非店内幼鱼规划空间。使用成熟稳定的水体，并保留连续游泳空间。"
+        }
+      },
+      "revision": "444c9e00742e9ef2",
+      "discovery": {
+        "taxonomy": {
+          "genus": "Paracheirodon",
+          "family": "Characidae"
+        },
+        "husbandry": {
+          "notes": {
+            "en": {
+              "flow": "Leave a calm area beside the swimming run.",
+              "group": "Keep at least 8 together; aim for 10 or more when space allows.",
+              "setup": "Provide cover around open swimming space.",
+              "space": "Leave an uninterrupted swim path for the adult group.",
+              "oxygen": "Keep filtered water well oxygenated.",
+              "feeding": "Offer small food that reaches midwater."
+            },
+            "zh-CN": {
+              "flow": "游泳区旁留有平缓水流区域。",
+              "group": "至少8尾同养；空间允许时以10尾或更多为宜。",
+              "setup": "在开阔游泳区周围提供遮蔽。",
+              "space": "为成鱼群体保留连续游泳空间。",
+              "oxygen": "保持过滤水体溶氧充足。",
+              "feeding": "提供能到达中层的小颗粒食物。"
+            }
+          },
+          "alerts": [],
+          "group_mode": "shoal",
+          "oxygen_need": "standard",
+          "feeding_zone": [
+            "midwater"
+          ],
+          "habitat_tags": [
+            "plants",
+            "open_swimming"
+          ],
+          "food_form_tags": [
+            "small_particles"
+          ],
+          "substrate_tags": [
+            "optional"
+          ],
+          "flow_preference": [
+            "gentle",
+            "moderate"
+          ],
+          "light_preference": "subdued",
+          "minimum_tank_length_cm": null
+        },
+        "sizeClass": "small",
+        "bodyShapes": [
+          "slender",
+          "laterally_compressed"
+        ],
+        "distribution": "Upper Amazon basin",
+        "filterLabels": {
+          "en": {
+            "colors": [
+              "Blue",
+              "Red",
+              "Silver"
+            ],
+            "social": [
+              "Schooling"
+            ],
+            "body_shape": [
+              "Slender",
+              "Laterally compressed"
+            ],
+            "categories": [
+              "Tetra"
+            ],
+            "reproduction": "Egg-laying"
+          },
+          "zh-CN": {
+            "colors": [
+              "蓝色",
+              "红色",
+              "银色"
+            ],
+            "social": [
+              "群游"
+            ],
+            "body_shape": [
+              "细长",
+              "侧扁"
+            ],
+            "categories": [
+              "灯科鱼"
+            ],
+            "reproduction": "卵生"
+          }
+        },
+        "socialPatterns": [
+          "schooling"
+        ],
+        "reproductionMode": "egg_laying"
+      },
+      "scientificName": "Paracheirodon innesi",
+      "publishedLocales": [
+        "zh-CN",
+        "en"
+      ]
+    }
+  ],
+  "createdAt": "2026-11-06T06:40:13.470Z",
+  "pairRules": [
+    {
+      "a": "bristlenose-pleco",
+      "b": "panda-corydoras",
+      "id": "bristlenose-pleco-panda-corydoras",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Bottom food and shelters may be contested; verify that both receive food.",
+        "zh-CN": "底部食物和躲避处可能竞争，分别确认获得食物。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "160f6ef521e11299",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "ember-tetra",
+      "b": "red-cherry-shrimp",
+      "id": "ember-tetra-red-cherry-shrimp",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Even small fish may eat newly hatched shrimp.",
+        "zh-CN": "小型鱼也可能捕食新生幼虾。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "0c7dba6fafc23144",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "harlequin-rasbora",
+      "b": "red-cherry-shrimp",
+      "id": "harlequin-rasbora-red-cherry-shrimp",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Shrimplets may be eaten; provide dense cover.",
+        "zh-CN": "幼虾可能被捕食，需要密集躲避区。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "b090857145a4f9f9",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "guppy",
+      "b": "red-cherry-shrimp",
+      "id": "guppy-red-cherry-shrimp",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Guppies may eat shrimplets; adult coexistence does not guarantee breeding.",
+        "zh-CN": "孔雀鱼可能捕食幼虾，成虾共处不保证繁殖。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "2aa5b3cf8eca584c",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "zebra-danio",
+      "b": "betta-splendens",
+      "id": "zebra-danio-betta-splendens",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Active swimming and possible fin nipping may stress long-finned betta.",
+        "zh-CN": "活跃游动和啄鳍风险可能使长鳍斗鱼紧迫。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "3d2b4d764600a894",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "betta-splendens",
+      "b": "honey-gourami",
+      "id": "betta-splendens-honey-gourami",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Both use upper water and can be territorial; chasing may occur.",
+        "zh-CN": "同占上层且有领地行为，个体间可能追逐。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "f943da552c36f963",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "betta-splendens",
+      "b": "red-cherry-shrimp",
+      "id": "betta-splendens-red-cherry-shrimp",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Betta may prey on adult and juvenile shrimp.",
+        "zh-CN": "斗鱼可能捕食成虾及幼虾。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "580c508ac84a5677",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "betta-splendens",
+      "b": "guppy",
+      "id": "betta-splendens-guppy",
+      "action": {
+        "en": "Provide cover, observe feeding separately and prepare separation.",
+        "zh-CN": "增加遮蔽，分别观察投喂并准备分隔。"
+      },
+      "reason": {
+        "en": "Long fins may trigger aggression or fin nipping; overlapping water ranges do not establish compatibility.",
+        "zh-CN": "长鳍可能引发攻击或啄鳍，不能据水质重叠判断适配。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "1d34d3bdc9bfe534",
+      "condition": {
+        "en": "Assess individual temperament, shelter and feeding conditions.",
+        "zh-CN": "按个体性情、躲避处和投喂条件评估。"
+      },
+      "conditionKeys": [
+        "cover",
+        "separateFeeding"
+      ]
+    },
+    {
+      "a": "panda-corydoras",
+      "b": "red-cherry-shrimp",
+      "id": "panda-corydoras-red-cherry-shrimp",
+      "action": {
+        "en": "Verify each condition, observe individuals and prepare separation.",
+        "zh-CN": "逐项核对条件并观察个体，准备分隔方案。"
+      },
+      "reason": {
+        "en": "They use different food and movement patterns; accidental losses remain possible.",
+        "zh-CN": "两者取食和活动方式不同，但仍可能出现偶然损失。"
+      },
+      "enabled": true,
+      "decision": "conditional",
+      "revision": "738d87f611e242b5",
+      "condition": {
+        "en": "adequate bottom area",
+        "zh-CN": "使用圆润底材，并保证底层有足够活动面积。"
+      },
+      "conditionKeys": [
+        "cover",
+        "shrimpletSurvival"
+      ]
+    },
+    {
+      "a": "honey-gourami",
+      "b": "red-cherry-shrimp",
+      "id": "honey-gourami-red-cherry-shrimp",
+      "action": {
+        "en": "Verify each condition, observe individuals and prepare separation.",
+        "zh-CN": "逐项核对条件并观察个体，准备分隔方案。"
+      },
+      "reason": {
+        "en": "A calm gourami may still take very small shrimp.",
+        "zh-CN": "温和的蜜蜂鱼也可能捕食很小的虾。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "d9355bae8e0180dd",
+      "condition": {
+        "en": "cover and feeding availability",
+        "zh-CN": "需要足够遮蔽和稳定的投喂条件；幼虾存活存在不确定性。"
+      },
+      "conditionKeys": [
+        "cover",
+        "shrimpletSurvival"
+      ]
+    },
+    {
+      "a": "neon-tetra",
+      "b": "red-cherry-shrimp",
+      "id": "neon-tetra-red-cherry-shrimp",
+      "action": {
+        "en": "Verify each condition, observe individuals and prepare separation.",
+        "zh-CN": "逐项核对条件并观察个体，准备分隔方案。"
+      },
+      "reason": {
+        "en": "Adult shrimp are usually ignored, but tiny shrimplets may be eaten.",
+        "zh-CN": "成虾通常不会被理会，但很小的幼虾可能被吃掉。"
+      },
+      "enabled": true,
+      "decision": "caution",
+      "revision": "7073d632d71075cd",
+      "condition": {
+        "en": "shrimplet survival varies",
+        "zh-CN": "如果在意繁殖，需要提供密集遮蔽物。"
+      },
+      "conditionKeys": [
+        "cover",
+        "shrimpletSurvival"
+      ]
+    },
+    {
+      "a": "neon-tetra",
+      "b": "ember-tetra",
+      "id": "neon-tetra-ember-tetra",
+      "action": {
+        "en": "Verify each condition, observe individuals and prepare separation.",
+        "zh-CN": "逐项核对条件并观察个体，准备分隔方案。"
+      },
+      "reason": {
+        "en": "Similar size and calm mid-water behavior.",
+        "zh-CN": "相近体型，且都在中层温和活动。"
+      },
+      "enabled": true,
+      "decision": "conditional",
+      "revision": "b93739ab3c977a4f",
+      "condition": {
+        "en": "similar warm-water community setup",
+        "zh-CN": "适合相近的暖水社区缸，需保留足够游动空间并满足群养数量。"
+      },
+      "conditionKeys": [
+        "cover"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "sand-and-wood",
+      "tank": {
+        "gh": 7,
+        "ph": 7,
+        "co2": false,
+        "flow": "gentle",
+        "light": "medium",
+        "region": "",
+        "depthMm": 300,
+        "aeration": true,
+        "heightMm": 360,
+        "lengthMm": 600,
+        "structure": "fully-aquatic",
+        "waterType": "freshwater",
+        "conditions": {},
+        "temperatureC": 23,
+        "waterHeightMm": 330,
+        "substrateAverageMm": null,
+        "hardscapeDisplacementL": null
+      },
+      "cover": null,
+      "active": true,
+      "locales": {
+        "en": {
+          "name": "Sand & wood",
+          "description": "An editable shrimp aquarium with sand and driftwood."
+        },
+        "zh-CN": {
+          "name": "淡水砂木景观缸",
+          "description": "樱花虾与砂木景观的可修改起点。"
+        }
+      },
+      "revision": "5c5097dd8ca0de9b",
+      "initialItems": [
+        {
+          "id": "6aed764c5a56a22dd094f456",
+          "entityId": "red-cherry-shrimp",
+          "quantity": 10
+        },
+        {
+          "id": "6aed764c5a56a22dd094f457",
+          "entityId": "java-moss",
+          "quantity": 3
+        },
+        {
+          "id": "6aed764c5a56a22dd094f458",
+          "entityId": "block-wood",
+          "quantity": 2
+        },
+        {
+          "id": "6aed764c5a56a22dd094f459",
+          "entityId": "river-pebbles",
+          "quantity": 2
+        },
+        {
+          "id": "6aed764c5a56a22dd094f45a",
+          "entityId": "fine-sand",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "planted-community",
+      "tank": {
+        "gh": 7,
+        "ph": 7,
+        "co2": false,
+        "flow": "gentle",
+        "light": "medium",
+        "region": "",
+        "depthMm": 300,
+        "aeration": true,
+        "heightMm": 360,
+        "lengthMm": 600,
+        "structure": "fully-aquatic",
+        "waterType": "freshwater",
+        "conditions": {},
+        "temperatureC": 24,
+        "waterHeightMm": 330,
+        "substrateAverageMm": null,
+        "hardscapeDisplacementL": null
+      },
+      "cover": null,
+      "active": true,
+      "locales": {
+        "en": {
+          "name": "Planted community",
+          "description": "An editable starting point with neon tetras and epiphytes."
+        },
+        "zh-CN": {
+          "name": "淡水水草社区缸",
+          "description": "霓虹灯与附生水草的可修改起点。"
+        }
+      },
+      "revision": "73f3e845fe90be11",
+      "initialItems": [
+        {
+          "id": "6aed764c5a56a22dd094f451",
+          "entityId": "neon-tetra",
+          "quantity": 10
+        },
+        {
+          "id": "6aed764c5a56a22dd094f452",
+          "entityId": "anubias-nana",
+          "quantity": 3
+        },
+        {
+          "id": "6aed764c5a56a22dd094f453",
+          "entityId": "java-fern",
+          "quantity": 2
+        },
+        {
+          "id": "6aed764c5a56a22dd094f454",
+          "entityId": "branch-wood",
+          "quantity": 1
+        },
+        {
+          "id": "6aed764c5a56a22dd094f455",
+          "entityId": "fine-sand",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "substrate",
+      "kinds": [
+        "substrate"
+      ],
+      "names": {
+        "en": "Substrate",
+        "zh-CN": "底床"
+      },
+      "order": 7,
+      "active": true
+    },
+    {
+      "id": "wood",
+      "kinds": [
+        "wood"
+      ],
+      "names": {
+        "en": "Wood",
+        "zh-CN": "沉木"
+      },
+      "order": 6,
+      "active": true
+    },
+    {
+      "id": "sand",
+      "kinds": [
+        "sand"
+      ],
+      "names": {
+        "en": "Sand & gravel",
+        "zh-CN": "砂砾"
+      },
+      "order": 5,
+      "active": true
+    },
+    {
+      "id": "rock",
+      "kinds": [
+        "rock"
+      ],
+      "names": {
+        "en": "Rock",
+        "zh-CN": "石"
+      },
+      "order": 4,
+      "active": true
+    },
+    {
+      "id": "plant",
+      "kinds": [
+        "plant"
+      ],
+      "names": {
+        "en": "Plants",
+        "zh-CN": "水草"
+      },
+      "order": 3,
+      "active": true
+    },
+    {
+      "id": "snail",
+      "kinds": [
+        "snail"
+      ],
+      "names": {
+        "en": "Snails",
+        "zh-CN": "螺"
+      },
+      "order": 2,
+      "active": true
+    },
+    {
+      "id": "shrimp",
+      "kinds": [
+        "shrimp"
+      ],
+      "names": {
+        "en": "Shrimp",
+        "zh-CN": "虾"
+      },
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "fish",
+      "kinds": [
+        "fish"
+      ],
+      "names": {
+        "en": "Fish",
+        "zh-CN": "鱼"
+      },
+      "order": 0,
+      "active": true
+    }
+  ],
+  "capabilities": {
+    "designer": true
+  },
+  "engineVersion": "engine-1",
+  "schemaVersion": 1,
+  "rulesetVersion": "rules-v1",
+  "localeRevisions": {
+    "en": "b9b186815598004b",
+    "zh-CN": "9e7d1735f22d060d"
+  },
+  "publishedLocales": [
+    "zh-CN",
+    "en"
+  ],
+  "assetManifestVersion": "assets-778f3119f9e1a7e8",
+  "parameterDefinitions": []
+}

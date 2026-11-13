@@ -1,0 +1,146 @@
+# Aquarium V0 sanitized snapshot exclusion report
+# Generated: 2026-11-13T11:00:17.384097+08:00
+# Paths/patterns only; no file contents
+# Excluded entries: 95
+
+## Reason counts
+45	suffix:.log
+13	exact:.DS_Store
+11	dir:obj
+11	dir:bin
+3	symlink-dir
+2	dir:node_modules
+1	dir:.tools
+1	dir:.runtime
+1	dir:.next
+1	suffix:.tsbuildinfo
+1	env-file
+1	local-runtime-media
+1	dir:Library
+1	dir:Builds
+1	dir:UserSettings
+1	dir:Logs
+
+## Applied directory name patterns
+dir-name:.git
+dir-name:.idea
+dir-name:.next
+dir-name:.runtime
+dir-name:.tools
+dir-name:.vs
+dir-name:Builds
+dir-name:Library
+dir-name:Logs
+dir-name:Obj
+dir-name:Temp
+dir-name:UserSettings
+dir-name:__pycache__
+dir-name:bin
+dir-name:node_modules
+dir-name:obj
+
+## Applied file patterns
+exact:.DS_Store,Thumbs.db,admin-credentials.txt,desktop.ini
+suffix:.pem,.key,.p12,.pfx,.crt,.cer,.der,.csproj.user,.suo,.user,.log,.dmg,.pkg,.msi,.tsbuildinfo
+database-suffix:.sqlite,.sqlite3,.db,.mdb,.dump
+env-files:.env and .env.* except confirmed placeholder .env.example
+path-prefix:fishatlas-site/platform/media/
+names-containing:credential
+symlinks:not copied (no follow, no zip escape)
+
+## Excluded paths
+dir:.next	fishatlas-site/platform/.next/
+dir:.runtime	fishatlas-site/platform/.runtime/
+dir:.tools	unity/.tools/
+dir:Builds	unity6-validation/Builds/
+dir:Library	unity6-validation/Library/
+dir:Logs	unity6-validation/Logs/
+dir:UserSettings	unity6-validation/UserSettings/
+dir:bin	compatibility-checks/bin/
+dir:bin	ecology-checks/bin/
+dir:bin	gameplay-checks/bin/
+dir:bin	integration-checks/bin/
+dir:bin	unity/Verification/bin/
+dir:bin	verification/unity/unity6-validation/unity6-source-regression-01/stage/Core-netstandard2.1/bin/
+dir:bin	verification/unity/unity6-validation/unity6-source-regression-01/stage/behavior/bin/
+dir:bin	verification/unity/unity6-validation/unity6-source-regression-01/stage/compatibility/bin/
+dir:bin	verification/unity/unity6-validation/unity6-source-regression-01/stage/ecology/bin/
+dir:bin	verification/unity/unity6-validation/unity6-source-regression-01/stage/gameplay/bin/
+dir:bin	verification/unity/unity6-validation/unity6-source-regression-01/stage/integration/bin/
+dir:node_modules	fishatlas-site/node_modules/
+dir:node_modules	fishatlas-site/platform/node_modules/
+dir:obj	compatibility-checks/obj/
+dir:obj	ecology-checks/obj/
+dir:obj	gameplay-checks/obj/
+dir:obj	integration-checks/obj/
+dir:obj	unity/Verification/obj/
+dir:obj	verification/unity/unity6-validation/unity6-source-regression-01/stage/Core-netstandard2.1/obj/
+dir:obj	verification/unity/unity6-validation/unity6-source-regression-01/stage/behavior/obj/
+dir:obj	verification/unity/unity6-validation/unity6-source-regression-01/stage/compatibility/obj/
+dir:obj	verification/unity/unity6-validation/unity6-source-regression-01/stage/ecology/obj/
+dir:obj	verification/unity/unity6-validation/unity6-source-regression-01/stage/gameplay/obj/
+dir:obj	verification/unity/unity6-validation/unity6-source-regression-01/stage/integration/obj/
+env-file	fishatlas-site/platform/.env
+exact:.DS_Store	.DS_Store
+exact:.DS_Store	compatibility-checks/.DS_Store
+exact:.DS_Store	data/.DS_Store
+exact:.DS_Store	docs/.DS_Store
+exact:.DS_Store	ecology-checks/.DS_Store
+exact:.DS_Store	fishatlas-site/.DS_Store
+exact:.DS_Store	fishatlas-site/platform/.DS_Store
+exact:.DS_Store	gameplay-checks/.DS_Store
+exact:.DS_Store	integration-checks/.DS_Store
+exact:.DS_Store	tools/.DS_Store
+exact:.DS_Store	unity/.DS_Store
+exact:.DS_Store	unity6-validation/.DS_Store
+exact:.DS_Store	verification/.DS_Store
+local-runtime-media	fishatlas-site/platform/media/qa-runtime-probe-69435447-a9f8-4c36-893d-ae0847ab4b89.png
+suffix:.log	fishatlas-site/qa-artifacts/cache-fix/preview-server.log
+suffix:.log	verification/tripo-sample-01/unity-readiness/Editor.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/build02-player.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/build03-player.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/build04-player-4k.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/player-1280-final.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/player-1280-stdout-final.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/player-1280-stdout.log
+suffix:.log	verification/unity/unity6-validation/manual-player-02/player-1280.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-01/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-01/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-02/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-02/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-03/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-03/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-04/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-04/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-05/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-05/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-06/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-06/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-07/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-batch-07/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-01/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-01/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-02/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-02/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-03/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-03/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-04/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-04/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-macos-build-05/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-play-01/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-play-01/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-play-02/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-play-02/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-play-03/editor.log
+suffix:.log	verification/unity/unity6-validation/unity6-play-03/stdout.log
+suffix:.log	verification/unity/unity6-validation/unity6-source-regression-01/Core-netstandard2.1.log
+suffix:.log	verification/unity/unity6-validation/unity6-source-regression-01/behavior.log
+suffix:.log	verification/unity/unity6-validation/unity6-source-regression-01/compatibility.log
+suffix:.log	verification/unity/unity6-validation/unity6-source-regression-01/ecology.log
+suffix:.log	verification/unity/unity6-validation/unity6-source-regression-01/gameplay.log
+suffix:.log	verification/unity/unity6-validation/unity6-source-regression-01/integration.log
+suffix:.log	verification/unity/unity6-validation/visibility-fix-01/stocked-light-check/Player.log
+suffix:.tsbuildinfo	fishatlas-site/platform/tsconfig.tsbuildinfo
+symlink-dir	verification/unity/unity6-validation/unity6-source-regression-01/stage/Assets/
+symlink-dir	verification/unity/unity6-validation/unity6-source-regression-01/stage/data/
+symlink-dir	verification/unity/unity6-validation/unity6-source-regression-01/stage/unity/

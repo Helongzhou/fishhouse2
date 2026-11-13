@@ -1,0 +1,6 @@
+{
+  "name": "Aquarium.UnityAdapter",
+  "rootNamespace": "Aquarium.UnityAdapter",
+  "references": ["Aquarium.Core"],
+  "autoReferenced": true
+}

@@ -1,0 +1,18 @@
+﻿item_id,display_name,display_name_en,display_name_zh_cn,item_kind,content_status,species_id,unlock_gate_id,purchase_price_coin,units_per_purchase,unit_name,post_confirm_sell_price_per_purchase_coin,pre_first_confirm_refund_ratio,game_filter_capacity,game_light_output_class,route_role,notes
+substrate_natural_sand,天然溪砂,Natural creek sand,天然溪砂,substrate,shipping,,none,120,1,缸份,60,1,0,none,required_base,价格覆盖教学缸一份；不按一粒售卖
+stone_main,主景石,Main stone,主景石,hardscape,shipping,,none,160,1,件,80,1,0,none,required_base,主石至少一件
+stone_secondary,辅景石,Secondary stone,辅景石,hardscape,shipping,,none,80,1,件,40,1,0,none,required_base,辅石至少一件
+filter_hangon_basic,基础瀑布过滤,Basic hang-on-back filter,基础瀑布过滤,equipment,shipping,,none,260,1,台,130,1,12,none,required_base,过滤点是游戏容量；不可换算成现实建议流量
+light_low,基础低光灯,Basic low-light fixture,基础低光灯,equipment,shipping,,none,220,1,盏,110,1,0,low,required_base,允许条件化冒氧展示；表现经过艺术化
+plant_anubias_nana,矮水榕一丛,Anubias barteri var. nana (1 portion),矮水榕一丛,plant,shipping,anubias_nana,none,90,1,丛,45,1,0,none,required_base,初始可购；不按未开始的游戏日锁定
+plant_java_fern,铁皇冠一丛,Microsorum pteropus (1 portion),铁皇冠一丛,plant,shipping,java_fern,none,110,1,丛,55,1,0,none,required_base,初始可购
+plant_java_moss,莫丝一份,Taxiphyllum barbieri 'Bogor Moss' (1 portion),莫丝一份,plant,shipping,java_moss,none,70,1,份,35,1,0,none,required_base,初始可购
+fish_trial_pack,火焰灯（8尾）,Ember Tetra (8 fish),火焰灯（8尾）,fish,shipping,ember_tetra,gate_cycle,120,8,尾,60,1,0,none,required_trial,120金币为8尾整组价；仅在无鱼氮源挑战通过后首批入缸适应观察；不使用活鱼检验毒性
+shrimp_pack,樱花虾（6只）,Red Cherry Shrimp (6 shrimp),樱花虾（6只）,shrimp,shipping,neocaridina_red,gate_cycle,180,6,只,90,1,0,none,required_shrimp,180金币为6只整组价
+fish_main_pack,霓虹灯（8尾）,Neon Tetra (8 fish),霓虹灯（8尾）,fish,shipping,neon_tetra,gate_mainfish,260,8,尾,130,1,0,none,required_mainfish,260金币为8尾整组价
+food_basic,基础饲料,Basic fish food,基础饲料,care,shipping,,gate_filled,0,1,次,0,1,0,none,care,单机无持续收入前养护免费；过量仍有水质后果
+water_change_basic,基础换水,Basic water change,基础换水,care,shipping,,gate_filled,0,1,次,0,1,0,none,care,基本换水免费；效果由待整合模拟器结算
+wood_optional,可选沉木,Optional driftwood,可选沉木,hardscape,shipping,,none,140,1,件,70,1,0,none,optional,教学预算保护会保留后续强制路线资金
+filter_top,基础上滤,Basic overhead filter,基础上滤,equipment,planned,,none,420,1,台,210,1,16,none,optional,V0切片外内容；不进入默认商店
+filter_sump,基础底滤,Basic sump filter,基础底滤,equipment,planned,,none,780,1,台,390,1,20,none,optional,V0切片外内容；不进入默认商店
+debug_fish_spawn,调试鱼生成器,Debug fish spawner,调试鱼生成器,fish,test_only,white_cloud,none,0,1,尾,0,1,0,none,debug,只允许开发者面板；不显示在默认商店

@@ -1,0 +1,106 @@
+--- a/Assets/_Game/Core/Gameplay/GameplayModels.cs
++++ b/Assets/_Game/Core/Gameplay/GameplayModels.cs
+@@ -119,11 +119,12 @@
+     [Serializable]
+     public sealed class LayoutState
+     {
++        public bool HasSubstrate;
+         public SubstrateProfile Substrate;
+         public LayoutPlacement[] Placements = new LayoutPlacement[0];
+         public LayoutState Clone()
+         {
+-            LayoutState c = new LayoutState { Substrate = Substrate == null ? null : Substrate.Clone(), Placements = new LayoutPlacement[Placements.Length] };
++            LayoutState c = new LayoutState { HasSubstrate = HasSubstrate, Substrate = Substrate == null ? null : Substrate.Clone(), Placements = new LayoutPlacement[Placements.Length] };
+             for (int i = 0; i < Placements.Length; i++) c.Placements[i] = Placements[i].Clone(); return c;
+         }
+     }
+@@ -137,7 +138,7 @@
+     [Serializable]
+     public sealed class GameplaySnapshot
+     {
+-        public int SchemaVersion = 1;
++        public int SchemaVersion = 2;
+         public string SaveId;
+         public int WalletCoin;
+         public GameplayStage Stage;
+--- a/Assets/_Game/Core/Gameplay/GameplayLayoutCommands.cs
++++ b/Assets/_Game/Core/Gameplay/GameplayLayoutCommands.cs
+@@ -90,7 +90,7 @@
+                     double dy;
+                     if (p.SupportPlacementId != null && deltas.TryGetValue(p.SupportPlacementId, out dy)) p.Position.Y += dy;
+                 }
+-                layout.Substrate = requested.Clone(); return CommandResult.Ok();
++                layout.Substrate = requested.Clone(); layout.HasSubstrate = true; return CommandResult.Ok();
+             });
+         }
+         public CommandResult Undo(string transactionId) { return NavigateHistory(transactionId, true); }
+--- a/Assets/_Game/Core/Gameplay/GameplaySession.cs
++++ b/Assets/_Game/Core/Gameplay/GameplaySession.cs
+@@ -150,7 +150,7 @@
+                 {
+                     if (s.Layout.Placements.Length != 0) return CommandResult.Fail("support_in_use", "substrate");
+                     if (!refund) return CommandResult.Fail("layout_locked");
+-                    s.Layout.Substrate = null;
++                    s.Layout.Substrate = null; s.Layout.HasSubstrate = false;
+                 }
+                 int amount = refund ? batch.PaidCoin : Math.Min(batch.PaidCoin, item.SellPriceCoin);
+                 if ((long)s.WalletCoin + amount > int.MaxValue) return CommandResult.Fail("coin_overflow");
+--- a/Assets/_Game/Core/Gameplay/LayoutGeometry.cs
++++ b/Assets/_Game/Core/Gameplay/LayoutGeometry.cs
+@@ -67,7 +67,7 @@
+         internal static CommandResult Validate(LayoutState layout, GameplayCatalog catalog, TankBounds tank,
+             Func<string, PurchaseBatch> findBatch)
+         {
+-            if (layout == null || layout.Placements == null || !ValidSubstrate(layout.Substrate, tank))
++            if (layout == null || layout.Placements == null || layout.HasSubstrate != (layout.Substrate != null) || !ValidSubstrate(layout.Substrate, tank))
+                 return CommandResult.Fail("substrate_invalid");
+             HashSet<string> batches = new HashSet<string>();
+             if (layout.Substrate != null)
+--- a/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs
++++ b/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs
+@@ -22,13 +22,43 @@
+         public static GameplaySession Restore(GameplaySnapshot snapshot, GameplayCatalog catalog, TankBounds tank)
+         {
+             GameplaySession candidate = new GameplaySession(catalog, tank);
+-            candidate.ValidateSnapshot(snapshot); candidate.state = Clone(snapshot); return candidate;
++            GameplaySnapshot normalized = NormalizeOptionalLayouts(snapshot);
++            candidate.ValidateSnapshot(normalized); candidate.state = Clone(normalized); return candidate;
++        }
++        // Unity serializes null ordinary inline classes as empty objects. Presence is explicit;
++        // only an exactly empty absent payload is normalized, never a zero-height present substrate.
++        private static LayoutState NormalizeOptionalSubstrate(LayoutState layout)
++        {
++            if (layout == null) return null;
++            SubstrateProfile p = layout.Substrate;
++            if (layout.HasSubstrate)
++            { if (p == null) Invalid(); }
++            else if (p != null && (!string.IsNullOrEmpty(p.PurchaseBatchId) || p.FrontLeftHeight != 0 ||
++                p.FrontRightHeight != 0 || p.BackLeftHeight != 0 || p.BackRightHeight != 0)) Invalid();
++            return new LayoutState { HasSubstrate = layout.HasSubstrate, Substrate = layout.HasSubstrate ? p : null, Placements = layout.Placements };
++        }
++        private static LayoutState[] NormalizeOptionalSubstrates(LayoutState[] layouts)
++        {
++            if (layouts == null) return null;
++            if (layouts.Length > HistoryLimit) Invalid();
++            var result = new LayoutState[layouts.Length];
++            for (int i = 0; i < result.Length; i++) result[i] = NormalizeOptionalSubstrate(layouts[i]);
++            return result;
++        }
++        private static GameplaySnapshot NormalizeOptionalLayouts(GameplaySnapshot s)
++        {
++            if (s == null) return null;
++            return new GameplaySnapshot { SchemaVersion = s.SchemaVersion, SaveId = s.SaveId, WalletCoin = s.WalletCoin,
++                Stage = s.Stage, Paused = s.Paused, Filled = s.Filled, WaterlineHeight = s.WaterlineHeight,
++                Layout = NormalizeOptionalSubstrate(s.Layout), Batches = s.Batches, Receipts = s.Receipts,
++                ClaimedRewardIds = s.ClaimedRewardIds, UndoHistory = NormalizeOptionalSubstrates(s.UndoHistory),
++                RedoHistory = NormalizeOptionalSubstrates(s.RedoHistory) };
+         }
+         private static void Invalid() { throw new ArgumentException("Invalid or inconsistent gameplay snapshot."); }
+         private static bool ValidArray<T>(T[] values, int max) { return values != null && values.Length <= max; }
+         private void ValidateSnapshot(GameplaySnapshot s)
+         {
+-            if (s == null || s.SchemaVersion != 1 || string.IsNullOrWhiteSpace(s.SaveId) || s.SaveId.Length > 100 ||
++            if (s == null || s.SchemaVersion != 2 || string.IsNullOrWhiteSpace(s.SaveId) || s.SaveId.Length > 100 ||
+                 s.WalletCoin < 0 || !Enum.IsDefined(typeof(GameplayStage), s.Stage) ||
+                 s.Filled != (s.Stage >= GameplayStage.Filled) || !Scalar.IsFinite(s.WaterlineHeight) ||
+                 Math.Abs(s.WaterlineHeight - (tank.Height - .03)) > .0000001 ||

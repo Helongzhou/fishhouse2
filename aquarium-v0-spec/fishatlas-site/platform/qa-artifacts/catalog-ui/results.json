@@ -1,0 +1,36 @@
+{
+  "base": "http://127.0.0.1:4174",
+  "time": "2026-11-06T07:50:43.896Z",
+  "browser": "Installed headless Google Chrome; desktop/mobile viewport emulation",
+  "results": [
+    {
+      "name": "Homepage bilingual search, four kinds and no planner",
+      "status": "PASS"
+    },
+    {
+      "name": "Category link opens fish library, desktop three columns",
+      "status": "PASS"
+    },
+    {
+      "name": "Filter URL, detail return, language change and separate care dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "Retired designer and calculator URLs redirect to localized library",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile 390/320 home, library, detail and material pages fit",
+      "status": "PASS"
+    },
+    {
+      "name": "All fish feeding in both languages, wafer exception and no fish profile on other kinds",
+      "status": "PASS"
+    },
+    {
+      "name": "No browser exceptions",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "default_language": "en",
+  "fallback_language": "en",
+  "locales": [
+    {
+      "code": "en",
+      "native_name": "English",
+      "english_name": "English",
+      "culture": "en-US",
+      "steam_language": "english",
+      "direction": "ltr",
+      "font_group": "latin",
+      "status": "ready",
+      "fallback": "",
+      "release_required": true
+    },
+    {
+      "code": "zh-CN",
+      "native_name": "简体中文",
+      "english_name": "Simplified Chinese",
+      "culture": "zh-CN",
+      "steam_language": "schinese",
+      "direction": "ltr",
+      "font_group": "cjk_simplified",
+      "status": "ready",
+      "fallback": "en",
+      "release_required": true
+    },
+    {
+      "code": "qps-ploc",
+      "native_name": "Pseudo-localization",
+      "english_name": "Pseudo-localization QA",
+      "culture": "en-US",
+      "steam_language": "",
+      "direction": "ltr",
+      "font_group": "latin_extended_qa",
+      "status": "qa",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "ja",
+      "native_name": "日本語",
+      "english_name": "Japanese",
+      "culture": "ja-JP",
+      "steam_language": "japanese",
+      "direction": "ltr",
+      "font_group": "cjk_japanese",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "ko",
+      "native_name": "한국어",
+      "english_name": "Korean",
+      "culture": "ko-KR",
+      "steam_language": "koreana",
+      "direction": "ltr",
+      "font_group": "cjk_korean",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "de",
+      "native_name": "Deutsch",
+      "english_name": "German",
+      "culture": "de-DE",
+      "steam_language": "german",
+      "direction": "ltr",
+      "font_group": "latin",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "fr",
+      "native_name": "Français",
+      "english_name": "French",
+      "culture": "fr-FR",
+      "steam_language": "french",
+      "direction": "ltr",
+      "font_group": "latin",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "es-ES",
+      "native_name": "Español (España)",
+      "english_name": "Spanish - Spain",
+      "culture": "es-ES",
+      "steam_language": "spanish",
+      "direction": "ltr",
+      "font_group": "latin",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "pt-BR",
+      "native_name": "Português (Brasil)",
+      "english_name": "Portuguese - Brazil",
+      "culture": "pt-BR",
+      "steam_language": "brazilian",
+      "direction": "ltr",
+      "font_group": "latin",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "ru",
+      "native_name": "Русский",
+      "english_name": "Russian",
+      "culture": "ru-RU",
+      "steam_language": "russian",
+      "direction": "ltr",
+      "font_group": "cyrillic",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "zh-TW",
+      "native_name": "繁體中文",
+      "english_name": "Traditional Chinese",
+      "culture": "zh-TW",
+      "steam_language": "tchinese",
+      "direction": "ltr",
+      "font_group": "cjk_traditional",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    },
+    {
+      "code": "es-419",
+      "native_name": "Español (Latinoamérica)",
+      "english_name": "Spanish - Latin America",
+      "culture": "es-MX",
+      "steam_language": "latam",
+      "direction": "ltr",
+      "font_group": "latin",
+      "status": "planned",
+      "fallback": "en",
+      "release_required": false
+    }
+  ]
+}

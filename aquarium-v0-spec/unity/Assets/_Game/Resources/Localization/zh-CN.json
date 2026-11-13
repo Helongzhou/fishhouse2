@@ -1,0 +1,1081 @@
+{
+  "language": "zh-CN",
+  "entries": [
+    {
+      "key": "compatibility.reason.ADULT_MALE_BETTA_CONSPECIFIC_BLOCK.message",
+      "value": "多只同物种成年雄性{source}不能共缸。"
+    },
+    {
+      "key": "compatibility.reason.ADULT_MALE_BETTA_CONSPECIFIC_BLOCK.repair",
+      "value": "为成年雄鱼安排独立且合适的系统，不以增加数量或赌个性代替隔离。"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_INSUFFICIENT.message",
+      "value": "{target}未满足{source}的成体空间要求。"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_INSUFFICIENT.repair",
+      "value": "换用满足成体长度、高度和可游空间的缸，或选择适合现有缸的物种。"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_UNKNOWN.message",
+      "value": "{source}在{target}的成体要求或可用空间未核实。"
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_UNKNOWN.repair",
+      "value": "核验成体要求及扣除底床、硬景后的可游空间；幼鱼也需成体规划。"
+    },
+    {
+      "key": "compatibility.reason.BETTA_CONSPECIFIC_CONDITIONS_REVIEW.message",
+      "value": "{source}未触发多成年雄鱼规则，但同类组合仍有待审核条件。"
+    },
+    {
+      "key": "compatibility.reason.BETTA_CONSPECIFIC_CONDITIONS_REVIEW.repair",
+      "value": "审核个体、性别、空间、遮挡与管理条件并准备立即隔离；V0默认采用单只方案。"
+    },
+    {
+      "key": "compatibility.reason.BETTA_SEX_OR_STAGE_UNKNOWN.message",
+      "value": "{source}的性别或生命阶段未知，不能排除同类成年雄鱼冲突。"
+    },
+    {
+      "key": "compatibility.reason.BETTA_SEX_OR_STAGE_UNKNOWN.repair",
+      "value": "核实每个个体的性别和生命阶段后，再评估同类组合。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_FOOD_UNKNOWN.message",
+      "value": "{source}的适口沉底饲料供应未核实。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_FOOD_UNKNOWN.repair",
+      "value": "确认针对该物种的适口沉底饲料，不能依赖粪便或其他鱼的剩食。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SINKING_FOOD.message",
+      "value": "{source}没有适口沉底饲料计划。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SINKING_FOOD.repair",
+      "value": "提供适合该物种的沉底饲料并观察摄食；底栖翻砂鱼不是排泄物清洁工。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SOFT_SAND.message",
+      "value": "{source}的软砂觅食需求未满足。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SOFT_SAND.repair",
+      "value": "提供安全可达的软砂觅食区后重评；翻砂不能替代废物处理。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_SUBSTRATE_UNKNOWN.message",
+      "value": "{source}的觅食底材未核实。"
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_SUBSTRATE_UNKNOWN.repair",
+      "value": "确认该翻砂物种有可供安全觅食的软砂底材。"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_RANGE_EMPTY.message",
+      "value": "全组合的水参数交集为空；{source}与{target}形成冲突边界。"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_RANGE_EMPTY.repair",
+      "value": "分缸或移除冲突物种，再对完整组合求交；同属淡水不能代替参数兼容。"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_WATER_TYPE_MISMATCH.message",
+      "value": "{source}和{target}需要不同水型系统。"
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_WATER_TYPE_MISMATCH.repair",
+      "value": "按淡水、汽水、海水要求分开建立系统，不用折中水型解决。"
+    },
+    {
+      "key": "compatibility.reason.CONTENT_POLICY_UNKNOWN.message",
+      "value": "{source}的V0购买政策未核实。"
+    },
+    {
+      "key": "compatibility.reason.CONTENT_POLICY_UNKNOWN.repair",
+      "value": "由内容负责人确认purchasable_v0、planned或reference_only。"
+    },
+    {
+      "key": "compatibility.reason.DIRECTIONAL_FIN_NIPPING_RISK.message",
+      "value": "{source}可能咬伤{target}的长鳍；来源同种数量为{source_count}。这是风险，不等于必然攻击。"
+    },
+    {
+      "key": "compatibility.reason.DIRECTIONAL_FIN_NIPPING_RISK.repair",
+      "value": "优先分开咬鳍来源与长鳍对象；核验群体、空间和压力，数量达标也不保证安全。"
+    },
+    {
+      "key": "compatibility.reason.GAPE_PREDATION_RISK.message",
+      "value": "{source}的口裂不小于{target}的身体横截面，存在尺寸相关捕食风险。"
+    },
+    {
+      "key": "compatibility.reason.GAPE_PREDATION_RISK.repair",
+      "value": "隔离潜在猎物或使用独立育幼系统；遮挡不保证存活，并需随生长重评。"
+    },
+    {
+      "key": "compatibility.reason.INCONSISTENT_SPECIES_PROFILE.message",
+      "value": "同一物种ID {source}使用了不一致的配置实例。"
+    },
+    {
+      "key": "compatibility.reason.INCONSISTENT_SPECIES_PROFILE.repair",
+      "value": "同一物种的所有群组引用同一份已核验配置版本。"
+    },
+    {
+      "key": "compatibility.reason.INVALID_STOCK_GROUP.message",
+      "value": "{target}存在物种/群组ID缺失、群组ID重复或非正数量。"
+    },
+    {
+      "key": "compatibility.reason.INVALID_STOCK_GROUP.repair",
+      "value": "补齐已核验物种、唯一群组ID及正整数数量后重新评估。"
+    },
+    {
+      "key": "compatibility.reason.NO_VALID_STOCK.message",
+      "value": "没有可用于评估的有效生物群组。"
+    },
+    {
+      "key": "compatibility.reason.NO_VALID_STOCK.repair",
+      "value": "添加至少一个已核验生物群组；空组合或无效组合不表示通过。"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_PROFILE_UNKNOWN.message",
+      "value": "{source}捕食较小动物的能力未核实。"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_PROFILE_UNKNOWN.repair",
+      "value": "核验食性及尺寸相关捕食能力；不从鱼虾分类推断安全或全灭。"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_SIZE_UNKNOWN.message",
+      "value": "{source}与{target}的口裂或当前身体横截面数据缺失，吞食风险待核实。"
+    },
+    {
+      "key": "compatibility.reason.PREDATION_SIZE_UNKNOWN.repair",
+      "value": "核验当前生命阶段的口裂和身体横截面；未知前将潜在猎物分开。"
+    },
+    {
+      "key": "compatibility.reason.SAME_SPECIES_GROUP_TOO_SMALL.message",
+      "value": "{source}同种数量为{source_count}，低于建议的{required_count}；其他鱼虾不能代替。"
+    },
+    {
+      "key": "compatibility.reason.SAME_SPECIES_GROUP_TOO_SMALL.repair",
+      "value": "空间、过滤及冲突重新评估通过后补足同种，或选择群居要求不同的物种。"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_GROUP_MIN_UNKNOWN.message",
+      "value": "{source}的同种群体数量要求未核实。"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_GROUP_MIN_UNKNOWN.repair",
+      "value": "核验群居、独居及同类隔离要求，不能用其他物种替代。"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_RANGE_UNKNOWN.message",
+      "value": "{source}已核验的{parameter}区间缺失或无效。"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_RANGE_UNKNOWN.repair",
+      "value": "核验完整区间后重评；不能把未知值当作兼容的淡水默认值。"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_WATER_TYPE_UNKNOWN.message",
+      "value": "{source}所需水型未核实。"
+    },
+    {
+      "key": "compatibility.reason.SPECIES_WATER_TYPE_UNKNOWN.repair",
+      "value": "确认该物种水型，不能将未知默认成淡水。"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_OUTSIDE_SPECIES_RANGE.message",
+      "value": "当前缸的{parameter}不在{source}的已核验区间内。"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_OUTSIDE_SPECIES_RANGE.repair",
+      "value": "若全组合有共同安全区间，渐进调整至其内部；否则分缸，避免参数突变。"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_UNKNOWN.message",
+      "value": "当前缸的{parameter}测量值缺失或无效。"
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_UNKNOWN.repair",
+      "value": "测量并录入当前值；物种区间兼容不代表当前水质合格。"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_MISMATCH.message",
+      "value": "{source}所需水型与当前缸不符。"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_MISMATCH.repair",
+      "value": "将该物种移入匹配水型的独立系统。"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_UNKNOWN.message",
+      "value": "当前缸水型未知。"
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_UNKNOWN.repair",
+      "value": "确认当前为淡水、汽水或海水系统。"
+    },
+    {
+      "key": "compatibility.reason.V0_CONTENT_NOT_PURCHASABLE.message",
+      "value": "{source}为planned或reference_only，V0不开放购买；这是内容政策，不是生态不兼容断言。"
+    },
+    {
+      "key": "compatibility.reason.V0_CONTENT_NOT_PURCHASABLE.repair",
+      "value": "从V0购物清单移除，或等待审核后的内容版本开放。"
+    },
+    {
+      "key": "compatibility.summary.action_required",
+      "value": "请查看所有阻止、风险、未满足条件及待核实原因，修复后重新评估。"
+    },
+    {
+      "key": "compatibility.summary.monitor",
+      "value": "未发现已建模的冲突；仍须检疫、分批入缸、持续观察并准备隔离。"
+    },
+    {
+      "key": "demo.clock",
+      "value": "真实时间：{0:F1}秒  生态日：{1:F3}（{2}倍）  灯光：{3}  {4}"
+    },
+    {
+      "key": "demo.controls.camera",
+      "value": "鼠标右键环绕 | 滚轮推近 | F5 保存 | F9 读取 | T 切换语言"
+    },
+    {
+      "key": "demo.controls.events",
+      "value": "L 开关灯 | G 靠近玻璃 | F 投喂 | 空格 暂停 | 1 / 2 / 4 生态倍率"
+    },
+    {
+      "key": "demo.light.off",
+      "value": "关"
+    },
+    {
+      "key": "demo.light.on",
+      "value": "开"
+    },
+    {
+      "key": "demo.state.paused",
+      "value": "已暂停"
+    },
+    {
+      "key": "demo.state.running",
+      "value": "运行中"
+    },
+    {
+      "key": "demo.status.load_failed",
+      "value": "读取失败，已保留当前鱼缸，详情请查看开发控制台。"
+    },
+    {
+      "key": "demo.status.loaded",
+      "value": "已恢复个体状态及各自独立的随机序列。"
+    },
+    {
+      "key": "demo.status.ready",
+      "value": "靠近玻璃、投喂或开关灯，观察不同个体的反应。"
+    },
+    {
+      "key": "demo.status.save_failed",
+      "value": "保存失败，详情请查看开发控制台。"
+    },
+    {
+      "key": "demo.status.saved",
+      "value": "已保存：{0}"
+    },
+    {
+      "key": "demo.title",
+      "value": "鱼缸交互原型（几何占位美术）"
+    },
+    {
+      "key": "game.apply_slope",
+      "value": "应用底砂坡度"
+    },
+    {
+      "key": "game.back",
+      "value": "后侧 · 左 / 右"
+    },
+    {
+      "key": "game.camera",
+      "value": "右键拖动环绕 · 滚轮推近 · 选中后拖动移动"
+    },
+    {
+      "key": "game.challenge",
+      "value": "开始无鱼氮源挑战"
+    },
+    {
+      "key": "game.clock",
+      "value": "第{0:0.00}天 · {1}× · {2:0.0} L"
+    },
+    {
+      "key": "game.front",
+      "value": "前侧 · 左 / 右"
+    },
+    {
+      "key": "game.loaded",
+      "value": "已恢复缸内状态。"
+    },
+    {
+      "key": "game.move",
+      "value": "移动"
+    },
+    {
+      "key": "game.place",
+      "value": "点击缸内放置，R旋转。"
+    },
+    {
+      "key": "game.place_plant",
+      "value": "点击石头，附着植物。"
+    },
+    {
+      "key": "game.product",
+      "value": "{0} · 已有{1}份"
+    },
+    {
+      "key": "game.prototype",
+      "value": "实验性教学模式"
+    },
+    {
+      "key": "game.rate",
+      "value": "{0}×"
+    },
+    {
+      "key": "game.ready",
+      "value": "选择必需品，开始布景。"
+    },
+    {
+      "key": "game.recovered",
+      "value": "已从备份恢复缸内状态。"
+    },
+    {
+      "key": "game.refund",
+      "value": "整份退款"
+    },
+    {
+      "key": "game.rotate",
+      "value": "旋转15°"
+    },
+    {
+      "key": "game.stage.Complete",
+      "value": "停留观察，照料你的水草缸。"
+    },
+    {
+      "key": "game.stage.Confirmed",
+      "value": "可以注水了。"
+    },
+    {
+      "key": "game.stage.CyclePassed",
+      "value": "分批引入火焰灯与樱花虾。"
+    },
+    {
+      "key": "game.stage.Cycling",
+      "value": "等待过滤处理氮源并持续稳定。"
+    },
+    {
+      "key": "game.stage.Editing",
+      "value": "布置你的水草缸。"
+    },
+    {
+      "key": "game.stage.Filled",
+      "value": "开始无鱼氮源挑战。"
+    },
+    {
+      "key": "game.stage.MainUnlocked",
+      "value": "可以引入霓虹灯了。"
+    },
+    {
+      "key": "game.stage.TrialObserving",
+      "value": "保持水质稳定，观察首批鱼虾适应。"
+    },
+    {
+      "key": "game.template",
+      "value": "摆放已购必需品"
+    },
+    {
+      "key": "game.title",
+      "value": "水草缸日记"
+    },
+    {
+      "key": "game.water",
+      "value": "氨氮{0:0.000} · 亚硝酸盐氮{1:0.000} · 硝酸盐氮{2:0.000} mg N/L · {3}"
+    },
+    {
+      "key": "gameplay.already_filled",
+      "value": "缸内已经注水。"
+    },
+    {
+      "key": "gameplay.batch_unavailable",
+      "value": "此批物品已不可使用。"
+    },
+    {
+      "key": "gameplay.budget_reserved",
+      "value": "后续必需品还需预留{0}金币。"
+    },
+    {
+      "key": "gameplay.care_requires_simulation",
+      "value": "请使用投喂或换水操作。"
+    },
+    {
+      "key": "gameplay.coin_overflow",
+      "value": "金币余额超出范围。"
+    },
+    {
+      "key": "gameplay.command_invalid",
+      "value": "当前操作无法完成。"
+    },
+    {
+      "key": "gameplay.condition_unmet",
+      "value": "缸内条件暂不满足此操作。"
+    },
+    {
+      "key": "gameplay.content_unavailable",
+      "value": "此内容不在当前教学路线中。"
+    },
+    {
+      "key": "gameplay.ecology_required",
+      "value": "水质数据暂不可用。"
+    },
+    {
+      "key": "gameplay.ecology_review_pending",
+      "value": "入缸仍需完成生态资料审核。"
+    },
+    {
+      "key": "gameplay.gate_locked",
+      "value": "请先完成前一阶段。"
+    },
+    {
+      "key": "gameplay.hardscape_overlap",
+      "value": "请分开重叠的石头。"
+    },
+    {
+      "key": "gameplay.insufficient_coin",
+      "value": "需要{0}金币。"
+    },
+    {
+      "key": "gameplay.item_not_placeable",
+      "value": "此物品不能作为布景摆放。"
+    },
+    {
+      "key": "gameplay.item_unavailable",
+      "value": "暂不可使用此物品。"
+    },
+    {
+      "key": "gameplay.layout_locked",
+      "value": "确认后只可移动已有植物。"
+    },
+    {
+      "key": "gameplay.ledger_full",
+      "value": "操作记录已满。"
+    },
+    {
+      "key": "gameplay.nothing_to_redo",
+      "value": "没有可重做操作。"
+    },
+    {
+      "key": "gameplay.nothing_to_undo",
+      "value": "没有可撤销操作。"
+    },
+    {
+      "key": "gameplay.ok",
+      "value": "已完成。"
+    },
+    {
+      "key": "gameplay.outside_tank",
+      "value": "请将整个物件移回缸内。"
+    },
+    {
+      "key": "gameplay.paused",
+      "value": "继续后再操作。"
+    },
+    {
+      "key": "gameplay.placement_id_conflict",
+      "value": "此摆放位置已关联其他物品。"
+    },
+    {
+      "key": "gameplay.placement_invalid",
+      "value": "请选择有效位置与物件尺寸。"
+    },
+    {
+      "key": "gameplay.placement_missing",
+      "value": "此物件已不在缸内。"
+    },
+    {
+      "key": "gameplay.placement_size_locked",
+      "value": "请移动或旋转物件，保持原有尺寸。"
+    },
+    {
+      "key": "gameplay.plant_buried",
+      "value": "请将植物移到底砂上方。"
+    },
+    {
+      "key": "gameplay.plant_rule_missing",
+      "value": "此植物暂不支持摆放。"
+    },
+    {
+      "key": "gameplay.refund_closed",
+      "value": "布景确认后不再全额退款。"
+    },
+    {
+      "key": "gameplay.required_deployment_missing",
+      "value": "请摆好全部必需品后确认。"
+    },
+    {
+      "key": "gameplay.required_item_protected",
+      "value": "教学完成前请保留必需品。"
+    },
+    {
+      "key": "gameplay.required_purchase_missing",
+      "value": "请先补齐必需品。"
+    },
+    {
+      "key": "gameplay.retry_unavailable",
+      "value": "当前还没有可重试检查点。"
+    },
+    {
+      "key": "gameplay.rhizome_buried",
+      "value": "请露出根茎。"
+    },
+    {
+      "key": "gameplay.stage_invalid",
+      "value": "当前阶段无法进行此操作。"
+    },
+    {
+      "key": "gameplay.stocking_limit",
+      "value": "教学组合上限为8尾火焰灯、6只虾和8尾霓虹灯。"
+    },
+    {
+      "key": "gameplay.substrate_invalid",
+      "value": "请将底砂坡度保持在允许范围。"
+    },
+    {
+      "key": "gameplay.support_in_use",
+      "value": "请先移走附着植物。"
+    },
+    {
+      "key": "gameplay.support_invalid",
+      "value": "请将物件放在有效支撑面上。"
+    },
+    {
+      "key": "gameplay.support_required",
+      "value": "请将植物附着在石或木上。"
+    },
+    {
+      "key": "gameplay.transaction_conflict",
+      "value": "此操作编号已被使用。"
+    },
+    {
+      "key": "gameplay.transaction_id_conflict",
+      "value": "此操作编号已被使用。"
+    },
+    {
+      "key": "gameplay.transaction_id_invalid",
+      "value": "操作编号无效。"
+    },
+    {
+      "key": "gameplay.transaction_invalid",
+      "value": "操作编号无效。"
+    },
+    {
+      "key": "gameplay.use_refund",
+      "value": "确认前请使用退款。"
+    },
+    {
+      "key": "gameplay.water_unstable",
+      "value": "请先恢复稳定水质，再添加鱼虾。"
+    },
+    {
+      "key": "gameplay.water_volume_invalid",
+      "value": "请为缸内留下有效水体。"
+    },
+    {
+      "key": "gameplay.water_volume_mismatch",
+      "value": "布景与水量不一致。"
+    },
+    {
+      "key": "gameplay.wet_required",
+      "value": "请先注水。"
+    },
+    {
+      "key": "guide.acclimation",
+      "value": "观察新鱼的适应状态，保持环境稳定。"
+    },
+    {
+      "key": "guide.challenge",
+      "value": "加入生物前，先通过无鱼氮源挑战。"
+    },
+    {
+      "key": "guide.cycle",
+      "value": "建立生物过滤"
+    },
+    {
+      "key": "guide.fill",
+      "value": "注水"
+    },
+    {
+      "key": "guide.first_stocking",
+      "value": "加入第一批鱼"
+    },
+    {
+      "key": "guide.hardscape",
+      "value": "摆放硬景"
+    },
+    {
+      "key": "guide.main_stocking",
+      "value": "加入主养鱼"
+    },
+    {
+      "key": "guide.plants",
+      "value": "种植水草"
+    },
+    {
+      "key": "guide.ready",
+      "value": "你的鱼缸已可以继续观察和养护。"
+    },
+    {
+      "key": "guide.substrate",
+      "value": "铺设底砂"
+    },
+    {
+      "key": "item.debug_fish_spawn.name",
+      "value": "调试鱼生成器"
+    },
+    {
+      "key": "item.filter_hangon_basic.name",
+      "value": "基础瀑布过滤"
+    },
+    {
+      "key": "item.filter_sump.name",
+      "value": "基础底滤"
+    },
+    {
+      "key": "item.filter_top.name",
+      "value": "基础上滤"
+    },
+    {
+      "key": "item.fish_main_pack.name",
+      "value": "霓虹灯（8尾）"
+    },
+    {
+      "key": "item.fish_trial_pack.name",
+      "value": "火焰灯（8尾）"
+    },
+    {
+      "key": "item.food_basic.name",
+      "value": "基础饲料"
+    },
+    {
+      "key": "item.light_low.name",
+      "value": "基础低光灯"
+    },
+    {
+      "key": "item.plant_anubias_nana.name",
+      "value": "矮水榕一丛"
+    },
+    {
+      "key": "item.plant_java_fern.name",
+      "value": "铁皇冠一丛"
+    },
+    {
+      "key": "item.plant_java_moss.name",
+      "value": "莫丝一份"
+    },
+    {
+      "key": "item.shrimp_pack.name",
+      "value": "樱花虾（6只）"
+    },
+    {
+      "key": "item.stone_main.name",
+      "value": "主景石"
+    },
+    {
+      "key": "item.stone_secondary.name",
+      "value": "辅景石"
+    },
+    {
+      "key": "item.substrate_natural_sand.name",
+      "value": "天然溪砂"
+    },
+    {
+      "key": "item.water_change_basic.name",
+      "value": "基础换水"
+    },
+    {
+      "key": "item.wood_optional.name",
+      "value": "可选沉木"
+    },
+    {
+      "key": "plant.anubias_nana.name",
+      "value": "矮水榕"
+    },
+    {
+      "key": "plant.buce_bukit_kelam.name",
+      "value": "辣椒榕"
+    },
+    {
+      "key": "plant.crypt_wendtii.name",
+      "value": "温蒂椒草"
+    },
+    {
+      "key": "plant.java_fern.name",
+      "value": "铁皇冠"
+    },
+    {
+      "key": "plant.java_moss.name",
+      "value": "爪哇莫丝"
+    },
+    {
+      "key": "species.anubias_nana.name",
+      "value": "矮水榕"
+    },
+    {
+      "key": "species.ember_tetra.name",
+      "value": "火焰灯"
+    },
+    {
+      "key": "species.java_fern.name",
+      "value": "爪哇铁皇冠"
+    },
+    {
+      "key": "species.java_moss.name",
+      "value": "爪哇莫丝"
+    },
+    {
+      "key": "species.neocaridina_red.name",
+      "value": "樱花虾"
+    },
+    {
+      "key": "species.neon_tetra.name",
+      "value": "霓虹灯"
+    },
+    {
+      "key": "species.snail_reference.name",
+      "value": "螺类（资料参考）"
+    },
+    {
+      "key": "species.white_cloud.name",
+      "value": "白云金丝"
+    },
+    {
+      "key": "tank.tank_60cm.name",
+      "value": "教学60缸"
+    },
+    {
+      "key": "template.triangle.name",
+      "value": "三角入门"
+    },
+    {
+      "key": "ui.algae",
+      "value": "藻类"
+    },
+    {
+      "key": "ui.aliases",
+      "value": "别名"
+    },
+    {
+      "key": "ui.ammonia",
+      "value": "总氨"
+    },
+    {
+      "key": "ui.behavior.bottom_sifting",
+      "value": "正在底砂上寻找食物。"
+    },
+    {
+      "key": "ui.behavior.expecting_food",
+      "value": "正在熟悉的投喂位置附近等候。"
+    },
+    {
+      "key": "ui.behavior.grazing",
+      "value": "正在表面啄食。"
+    },
+    {
+      "key": "ui.behavior.group_short",
+      "value": "增加同种伙伴可能让这群鱼更有安全感。"
+    },
+    {
+      "key": "ui.behavior.startled",
+      "value": "刚才的灯光突变提高了警觉。"
+    },
+    {
+      "key": "ui.budget_guard",
+      "value": "还需为剩余必需品预留 {0} 金币。"
+    },
+    {
+      "key": "ui.build",
+      "value": "布景"
+    },
+    {
+      "key": "ui.buy",
+      "value": "购买"
+    },
+    {
+      "key": "ui.cancel",
+      "value": "取消"
+    },
+    {
+      "key": "ui.common_name",
+      "value": "常用名"
+    },
+    {
+      "key": "ui.compatibility_review",
+      "value": "检查混养条件"
+    },
+    {
+      "key": "ui.confirm",
+      "value": "确认"
+    },
+    {
+      "key": "ui.continue",
+      "value": "继续游戏"
+    },
+    {
+      "key": "ui.details",
+      "value": "详情"
+    },
+    {
+      "key": "ui.feed",
+      "value": "投喂"
+    },
+    {
+      "key": "ui.filter_reserve",
+      "value": "过滤余量"
+    },
+    {
+      "key": "ui.free",
+      "value": "免费"
+    },
+    {
+      "key": "ui.gh",
+      "value": "总硬度（GH）"
+    },
+    {
+      "key": "ui.journal",
+      "value": "鱼缸日记"
+    },
+    {
+      "key": "ui.kh",
+      "value": "碳酸盐硬度（KH）"
+    },
+    {
+      "key": "ui.language",
+      "value": "语言"
+    },
+    {
+      "key": "ui.language.en",
+      "value": "英语"
+    },
+    {
+      "key": "ui.language.zh-CN",
+      "value": "简体中文"
+    },
+    {
+      "key": "ui.light",
+      "value": "缸灯"
+    },
+    {
+      "key": "ui.light_off",
+      "value": "关"
+    },
+    {
+      "key": "ui.light_on",
+      "value": "开"
+    },
+    {
+      "key": "ui.light_ramp",
+      "value": "渐亮灯光"
+    },
+    {
+      "key": "ui.load",
+      "value": "读取"
+    },
+    {
+      "key": "ui.load_error",
+      "value": "读取失败，请选择备份存档。"
+    },
+    {
+      "key": "ui.needs_attention",
+      "value": "需要留意"
+    },
+    {
+      "key": "ui.new_aquarium",
+      "value": "新建鱼缸"
+    },
+    {
+      "key": "ui.next_action",
+      "value": "建议操作"
+    },
+    {
+      "key": "ui.nitrate",
+      "value": "硝酸盐"
+    },
+    {
+      "key": "ui.nitrite",
+      "value": "亚硝酸盐"
+    },
+    {
+      "key": "ui.observe",
+      "value": "观察"
+    },
+    {
+      "key": "ui.pause",
+      "value": "暂停"
+    },
+    {
+      "key": "ui.ph",
+      "value": "pH"
+    },
+    {
+      "key": "ui.plant.background",
+      "value": "后景"
+    },
+    {
+      "key": "ui.plant.foreground",
+      "value": "前景"
+    },
+    {
+      "key": "ui.plant.hardscape",
+      "value": "附着硬景"
+    },
+    {
+      "key": "ui.plant.high",
+      "value": "高"
+    },
+    {
+      "key": "ui.plant.low",
+      "value": "低"
+    },
+    {
+      "key": "ui.plant.medium",
+      "value": "中"
+    },
+    {
+      "key": "ui.plant.midground",
+      "value": "中景"
+    },
+    {
+      "key": "ui.plant.moss_hint",
+      "value": "绑附小片莫丝，过密时修剪。"
+    },
+    {
+      "key": "ui.plant.rhizome_hint",
+      "value": "附着石头或沉木，根茎保持露出。"
+    },
+    {
+      "key": "ui.plant.rosette_hint",
+      "value": "将根种入底床，避免深埋冠部。"
+    },
+    {
+      "key": "ui.plant.surface",
+      "value": "浮水"
+    },
+    {
+      "key": "ui.price",
+      "value": "{0} 金币"
+    },
+    {
+      "key": "ui.quantity",
+      "value": "数量：{0}"
+    },
+    {
+      "key": "ui.quit",
+      "value": "退出"
+    },
+    {
+      "key": "ui.reason_source",
+      "value": "资料来源"
+    },
+    {
+      "key": "ui.redo",
+      "value": "重做"
+    },
+    {
+      "key": "ui.resume",
+      "value": "继续"
+    },
+    {
+      "key": "ui.retry",
+      "value": "恢复安全检查点"
+    },
+    {
+      "key": "ui.save",
+      "value": "保存"
+    },
+    {
+      "key": "ui.save_error",
+      "value": "保存失败，原存档已保留。"
+    },
+    {
+      "key": "ui.save_ok",
+      "value": "鱼缸已保存。"
+    },
+    {
+      "key": "ui.scientific_name",
+      "value": "拉丁学名"
+    },
+    {
+      "key": "ui.sell",
+      "value": "退还物品"
+    },
+    {
+      "key": "ui.settings",
+      "value": "设置"
+    },
+    {
+      "key": "ui.shop",
+      "value": "商店"
+    },
+    {
+      "key": "ui.shortfall",
+      "value": "还需要 {0} 金币。"
+    },
+    {
+      "key": "ui.sinking_food",
+      "value": "沉底饲料"
+    },
+    {
+      "key": "ui.stable",
+      "value": "稳定"
+    },
+    {
+      "key": "ui.temperature",
+      "value": "温度"
+    },
+    {
+      "key": "ui.undo",
+      "value": "撤销"
+    },
+    {
+      "key": "ui.unit.fish",
+      "value": "尾"
+    },
+    {
+      "key": "ui.unit.item",
+      "value": "件"
+    },
+    {
+      "key": "ui.unit.portion",
+      "value": "丛"
+    },
+    {
+      "key": "ui.unit.shrimp",
+      "value": "只"
+    },
+    {
+      "key": "ui.unit.snail",
+      "value": "只"
+    },
+    {
+      "key": "ui.unsupported_save",
+      "value": "此存档需要更新的游戏版本。"
+    },
+    {
+      "key": "ui.wallet",
+      "value": "金币：{0}"
+    },
+    {
+      "key": "ui.water_change",
+      "value": "换水"
+    },
+    {
+      "key": "ui.water_quality",
+      "value": "水质"
+    }
+  ]
+}

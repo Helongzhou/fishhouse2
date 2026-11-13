@@ -1,0 +1,602 @@
+[
+  {
+    "species_id": "neon-tetra",
+    "locale": "en",
+    "common_name": "Neon Tetra",
+    "slug": "neon-tetra",
+    "title": "Neon Tetra care guide",
+    "summary": "A peaceful schooling fish for mature community aquariums.",
+    "body": "Keep at least eight and plan swimming room for the adult group, not the shop-sized juveniles. Use mature, stable water and leave an open swimming run.",
+    "seo_title": "Neon Tetra care and tank mates",
+    "seo_description": "Tank size, water range, group size and temperament for Neon Tetra.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Tetra"
+      ],
+      "colors": [
+        "Blue",
+        "Red",
+        "Silver"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Schooling"
+      ],
+      "body_shape": [
+        "Slender",
+        "Laterally compressed"
+      ]
+    }
+  },
+  {
+    "species_id": "neon-tetra",
+    "locale": "zh-CN",
+    "common_name": "霓虹灯",
+    "slug": "neon-tetra",
+    "title": "霓虹灯饲养指南",
+    "summary": "适合成熟社区缸的温和群游鱼。",
+    "body": "至少八尾群养，按成鱼群体而非店内幼鱼规划空间。使用成熟稳定的水体，并保留连续游泳空间。",
+    "seo_title": "霓虹灯饲养与混养",
+    "seo_description": "查看霓虹灯的缸体、水质、群养和性情建议。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "灯科鱼"
+      ],
+      "colors": [
+        "蓝色",
+        "红色",
+        "银色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "群游"
+      ],
+      "body_shape": [
+        "细长",
+        "侧扁"
+      ]
+    }
+  },
+  {
+    "species_id": "ember-tetra",
+    "locale": "en",
+    "common_name": "Ember Tetra",
+    "slug": "ember-tetra",
+    "title": "Ember Tetra care guide",
+    "summary": "A tiny, warm-water schooling fish with a calm temperament.",
+    "body": "Keep at least eight in planted cover with gentle flow. Small individual size does not remove the need for enough space for the adult group.",
+    "seo_title": "Ember Tetra care and tank mates",
+    "seo_description": "Tank size, water range, group size and temperament for Ember Tetra.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Tetra"
+      ],
+      "colors": [
+        "Orange",
+        "Red"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Schooling"
+      ],
+      "body_shape": [
+        "Slender",
+        "Laterally compressed"
+      ]
+    }
+  },
+  {
+    "species_id": "ember-tetra",
+    "locale": "zh-CN",
+    "common_name": "火焰灯",
+    "slug": "ember-tetra",
+    "title": "火焰灯饲养指南",
+    "summary": "体型小、性情温和的暖水群游鱼。",
+    "body": "至少八尾群养，提供水草遮蔽和缓水流。单尾体型小，也需要为成鱼群体保留足够空间。",
+    "seo_title": "火焰灯饲养与混养",
+    "seo_description": "查看火焰灯的缸体、水质、群养和性情建议。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "灯科鱼"
+      ],
+      "colors": [
+        "橙色",
+        "红色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "群游"
+      ],
+      "body_shape": [
+        "细长",
+        "侧扁"
+      ]
+    }
+  },
+  {
+    "species_id": "harlequin-rasbora",
+    "locale": "en",
+    "common_name": "Harlequin Rasbora",
+    "slug": "harlequin-rasbora",
+    "title": "Harlequin Rasbora care guide",
+    "summary": "A hardy mid-water schooling fish for peaceful community tanks.",
+    "body": "Keep at least eight with cover and a clear swimming run. Size the aquarium for the adult group rather than the number of small fish sold together.",
+    "seo_title": "Harlequin Rasbora care and tank mates",
+    "seo_description": "Tank size, water range, group size and temperament for Harlequin Rasbora.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Rasbora"
+      ],
+      "colors": [
+        "Orange",
+        "Black",
+        "Silver"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Schooling"
+      ],
+      "body_shape": [
+        "Deep-bodied",
+        "Laterally compressed"
+      ]
+    }
+  },
+  {
+    "species_id": "harlequin-rasbora",
+    "locale": "zh-CN",
+    "common_name": "三角灯",
+    "slug": "harlequin-rasbora",
+    "title": "三角灯饲养指南",
+    "summary": "适合温和社区缸的耐养中层群游鱼。",
+    "body": "至少八尾群养，提供遮蔽和连续游泳空间。按成年群体规划缸体，不能以店内幼鱼装得下为标准。",
+    "seo_title": "三角灯饲养与混养",
+    "seo_description": "查看三角灯的缸体、水质、群养和性情建议。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "波鱼类"
+      ],
+      "colors": [
+        "橙色",
+        "黑色",
+        "银色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "群游"
+      ],
+      "body_shape": [
+        "深体",
+        "侧扁"
+      ]
+    }
+  },
+  {
+    "species_id": "honey-gourami",
+    "locale": "en",
+    "common_name": "Honey Gourami",
+    "slug": "honey-gourami",
+    "title": "Honey Gourami care guide",
+    "summary": "A gentle labyrinth fish that often explores the upper half of the tank.",
+    "body": "Keep calm tank mates and surface cover; avoid strong surface flow.",
+    "seo_title": "Honey Gourami care and tank mates",
+    "seo_description": "Tank size, water range, group size and temperament for Honey Gourami.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Labyrinth fish"
+      ],
+      "colors": [
+        "Yellow",
+        "Orange",
+        "Brown"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Pairing",
+        "Solitary tendency"
+      ],
+      "body_shape": [
+        "Deep-bodied",
+        "Laterally compressed"
+      ]
+    }
+  },
+  {
+    "species_id": "honey-gourami",
+    "locale": "zh-CN",
+    "common_name": "蜜丽丽",
+    "slug": "honey-gourami",
+    "title": "蜜丽丽饲养指南",
+    "summary": "性情温和、常活动于上层的迷鳃鱼。",
+    "body": "建议搭配安静的混养鱼，并保留水面遮蔽物，避免强水流。",
+    "seo_title": "蜜丽丽饲养与混养",
+    "seo_description": "查看蜜丽丽的缸体、水质、群养和性情建议。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "迷鳃类"
+      ],
+      "colors": [
+        "黄色",
+        "橙色",
+        "棕色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "成对",
+        "单养倾向"
+      ],
+      "body_shape": [
+        "深体",
+        "侧扁"
+      ]
+    }
+  },
+  {
+    "species_id": "panda-corydoras",
+    "locale": "en",
+    "common_name": "Panda Corydoras",
+    "slug": "panda-corydoras",
+    "title": "Panda Corydoras care guide",
+    "summary": "A social bottom-dweller that spends much of its time sifting the substrate.",
+    "body": "Keep a group on smooth substrate and feed a suitable sinking food. Leftover food and algae alone do not meet their needs; they are not a substitute for cleaning.",
+    "seo_title": "Panda Corydoras care and tank mates",
+    "seo_description": "Tank size, water range, group size and temperament for Panda Corydoras.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Corydoras",
+        "Catfish"
+      ],
+      "colors": [
+        "White",
+        "Black",
+        "Silver"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Schooling"
+      ],
+      "body_shape": [
+        "Short and round"
+      ]
+    }
+  },
+  {
+    "species_id": "panda-corydoras",
+    "locale": "zh-CN",
+    "common_name": "熊猫鼠",
+    "slug": "panda-corydoras",
+    "title": "熊猫鼠饲养指南",
+    "summary": "喜欢群居、主要活动在底层的底栖鱼。",
+    "body": "使用圆润底材并保持足够群体，专门投喂合适的沉底食物。残饵和藻类不能满足它们的需要，鼠鱼也不能代替清洁。",
+    "seo_title": "熊猫鼠饲养与混养",
+    "seo_description": "查看熊猫鼠的缸体、水质、群养和性情建议。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "鼠鱼",
+        "鲶鱼类"
+      ],
+      "colors": [
+        "白色",
+        "黑色",
+        "银色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "群游"
+      ],
+      "body_shape": [
+        "短圆"
+      ]
+    }
+  },
+  {
+    "species_id": "red-cherry-shrimp",
+    "locale": "en",
+    "common_name": "Red Cherry Shrimp",
+    "slug": "red-cherry-shrimp",
+    "title": "Red Cherry Shrimp care guide",
+    "summary": "A small freshwater shrimp that grazes on surfaces and biofilm.",
+    "body": "Provide cover, stable water and a mature grazing surface. Guard filter intakes with shrimp-safe sponge or mesh, especially for juveniles; many fish will eat shrimplets.",
+    "seo_title": "Red Cherry Shrimp care and tank mates",
+    "seo_description": "Tank size, water range, group size and compatibility notes for Red Cherry Shrimp.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Shrimp"
+      ],
+      "colors": [
+        "Red",
+        "Transparent"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Colony"
+      ],
+      "body_shape": [
+        "Short and round"
+      ]
+    }
+  },
+  {
+    "species_id": "red-cherry-shrimp",
+    "locale": "zh-CN",
+    "common_name": "樱花虾",
+    "slug": "red-cherry-shrimp",
+    "title": "樱花虾饲养指南",
+    "summary": "会在缸体表面和生物膜上取食的小型淡水虾。",
+    "body": "提供躲避处、稳定水质和成熟取食表面。过滤进水口加防虾海绵或细网，尤其保护幼虾；许多鱼会捕食幼虾。",
+    "seo_title": "樱花虾饲养与混养",
+    "seo_description": "查看樱花虾的缸体、水质、群养和混养注意事项。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "虾类"
+      ],
+      "colors": [
+        "红色",
+        "透明/半透明"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "群居"
+      ],
+      "body_shape": [
+        "短圆"
+      ]
+    }
+  },
+  {
+    "species_id": "guppy",
+    "locale": "en",
+    "common_name": "Guppy",
+    "slug": "guppy",
+    "title": "Guppy care guide",
+    "summary": "A small livebearer with many colour strains and frequent broods.",
+    "body": "Plan for adult females and their fry. Separating males and females helps control numbers, but previously mated females can still produce later broods; keep a rehoming plan.",
+    "seo_title": "Guppy care and tank planning",
+    "seo_description": "A small livebearer with many colour strains and frequent broods.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Livebearer"
+      ],
+      "colors": [
+        "Mixed"
+      ],
+      "reproduction": "Livebearing",
+      "social": [
+        "Colony"
+      ],
+      "body_shape": [
+        "Slender"
+      ]
+    }
+  },
+  {
+    "species_id": "guppy",
+    "locale": "zh-CN",
+    "common_name": "孔雀鱼",
+    "slug": "guppy",
+    "title": "孔雀鱼饲养指南",
+    "summary": "色彩品系丰富、繁殖速度较快的小型胎生鱼。",
+    "body": "按成鱼和后代的空间规划数量。公母分养有助于控制繁殖，但已交配的母鱼仍可能连续产仔，提前安排幼鱼去向。",
+    "seo_title": "孔雀鱼饲养与缸体规划",
+    "seo_description": "色彩品系丰富、繁殖速度较快的小型胎生鱼。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "胎生鳉类"
+      ],
+      "colors": [
+        "混色"
+      ],
+      "reproduction": "胎生",
+      "social": [
+        "群居"
+      ],
+      "body_shape": [
+        "细长"
+      ]
+    }
+  },
+  {
+    "species_id": "betta-splendens",
+    "locale": "en",
+    "common_name": "Siamese Fighting Fish",
+    "slug": "betta-splendens",
+    "title": "Siamese Fighting Fish care guide",
+    "summary": "A warm-water labyrinth fish usually best planned as a single male.",
+    "body": "Keep males separately. Use a secure lid with an air gap, gentle flow and resting places near the surface; assess tank mates individually.",
+    "seo_title": "Siamese Fighting Fish care and tank planning",
+    "seo_description": "A warm-water labyrinth fish usually best planned as a single male.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Betta",
+        "Labyrinth fish"
+      ],
+      "colors": [
+        "Mixed"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Solitary tendency"
+      ],
+      "body_shape": [
+        "Laterally compressed"
+      ]
+    }
+  },
+  {
+    "species_id": "betta-splendens",
+    "locale": "zh-CN",
+    "common_name": "暹罗斗鱼",
+    "slug": "betta-splendens",
+    "title": "暹罗斗鱼饲养指南",
+    "summary": "适合以单尾雄鱼规划饲养的暖水迷鳃鱼。",
+    "body": "雄鱼分开饲养。使用留有空气层的牢固缸盖，保持缓水流，并在近水面提供休息点；混养需逐一评估。",
+    "seo_title": "暹罗斗鱼饲养与缸体规划",
+    "seo_description": "适合以单尾雄鱼规划饲养的暖水迷鳃鱼。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "斗鱼",
+        "迷鳃类"
+      ],
+      "colors": [
+        "混色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "单养倾向"
+      ],
+      "body_shape": [
+        "侧扁"
+      ]
+    }
+  },
+  {
+    "species_id": "zebra-danio",
+    "locale": "en",
+    "common_name": "Zebra Danio",
+    "slug": "zebra-danio",
+    "title": "Zebra Danio care guide",
+    "summary": "An active, striped schooling fish that needs a long swimming run.",
+    "body": "Keep at least six and prioritise a tank about 60 cm long or longer over height alone. Secure the lid: these quick swimmers can jump.",
+    "seo_title": "Zebra Danio care and tank planning",
+    "seo_description": "An active, striped schooling fish that needs a long swimming run.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Danio"
+      ],
+      "colors": [
+        "Blue",
+        "Silver"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Schooling"
+      ],
+      "body_shape": [
+        "Slender"
+      ]
+    }
+  },
+  {
+    "species_id": "zebra-danio",
+    "locale": "zh-CN",
+    "common_name": "斑马鱼",
+    "slug": "zebra-danio",
+    "title": "斑马鱼饲养指南",
+    "summary": "游动活跃、需要连续游泳空间的条纹群游鱼。",
+    "body": "至少六尾群养，优先选择约60厘米或更长的缸体，不能只看高度或升数。它们游动快，也会跳缸，应加盖。",
+    "seo_title": "斑马鱼饲养与缸体规划",
+    "seo_description": "游动活跃、需要连续游泳空间的条纹群游鱼。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "斑马鱼类"
+      ],
+      "colors": [
+        "蓝色",
+        "银色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "群游"
+      ],
+      "body_shape": [
+        "细长"
+      ]
+    }
+  },
+  {
+    "species_id": "bristlenose-pleco",
+    "locale": "en",
+    "common_name": "Bristlenose Pleco",
+    "slug": "bristlenose-pleco",
+    "title": "Bristlenose Pleco care guide",
+    "summary": "A bottom-dwelling Ancistrus form whose adult size and waste need planning.",
+    "body": "Common shop forms vary in exact identity. Provide hiding places and aquarium-safe wood, sinking food with a plant component and small portions of vegetables; remove leftovers. It produces waste and cannot replace maintenance.",
+    "seo_title": "Bristlenose Pleco care and tank planning",
+    "seo_description": "A bottom-dwelling Ancistrus form whose adult size and waste need planning.",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "Pleco",
+        "Catfish"
+      ],
+      "colors": [
+        "Brown",
+        "Black"
+      ],
+      "reproduction": "Egg-laying",
+      "social": [
+        "Solitary tendency"
+      ],
+      "body_shape": [
+        "Elongated"
+      ]
+    }
+  },
+  {
+    "species_id": "bristlenose-pleco",
+    "locale": "zh-CN",
+    "common_name": "胡子异型",
+    "slug": "bristlenose-pleco",
+    "title": "胡子异型饲养指南",
+    "summary": "需要按成体尺寸和排泄负担规划的底栖胡子异型。",
+    "body": "常见商品品系的准确种名可能不同。提供躲避处和适用沉木，投喂含植物成分的沉底饲料及少量蔬菜，及时取出残饵；排泄量需考虑，不能代替清洁维护。",
+    "seo_title": "胡子异型饲养与缸体规划",
+    "seo_description": "需要按成体尺寸和排泄负担规划的底栖胡子异型。",
+    "translation_status": "published",
+    "last_reviewed_at": "2026-11-05",
+    "filter_labels": {
+      "categories": [
+        "异型",
+        "鲶鱼类"
+      ],
+      "colors": [
+        "棕色",
+        "黑色"
+      ],
+      "reproduction": "卵生",
+      "social": [
+        "单养倾向"
+      ],
+      "body_shape": [
+        "长条形"
+      ]
+    }
+  }
+]

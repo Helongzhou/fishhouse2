@@ -1,0 +1,6 @@
+﻿economy_id,content_status,event_key,amount_coin,repeatable,required_gate_id,policy,notes
+starter_grant,shipping,new_save,1500,false,none,once_per_save,起始预算含1410强制物品和90可用余量
+trial_reward,shipping,trial_observation_passed,450,false,gate_mainfish,once_per_save_ledger,首批火焰灯适应观察通过后发放；恢复快照不能重复领取
+free_retry,shipping,required_route_failed,0,true,none,restore_snapshot_transactionally,恢复确认前快照与钱包库存奖励领取账本；不铸造可出售赠品
+optional_budget_guard,shipping,optional_purchase_requested,0,true,none,reserve_remaining_required_cost,教学未完成时购买可选物必须保留当前阶段余下强制路线资金
+pre_confirm_refund,shipping,layout_edit_refund,0,true,none,exact_purchase_ledger_refund,首次布景确认前按实际支付额全额退款；退还库存和现金同一事务提交

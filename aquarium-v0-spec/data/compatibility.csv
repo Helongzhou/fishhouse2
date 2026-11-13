@@ -1,0 +1,5 @@
+﻿rule_id,content_status,subject_kind,subject_id,object_kind,object_id,decision,source_status,notes
+freshwater_only,shipping,tank,tank_60cm,water_type,saltwater,block,product_scope,V0仅淡水；不代表已设计海水物种
+no_goldfish,shipping,species,goldfish_common,tank,tank_60cm,block,product_scope_pending_ecology_review,既定草金黑名单；不展示为默认可购物种
+trial_mainfish_provisional,shipping,species,ember_tetra,species,neon_tetra,prototype_allow,pending_review,火焰灯与霓虹灯为热带教学候选；只供切片，完整温度水质和群体兼容性研究后方可发布
+mainfish_shrimp_provisional,shipping,species,neon_tetra,species,neocaridina_red,prototype_allow,pending_review,只供切片；虾躲藏点及幼虾风险需单独研究

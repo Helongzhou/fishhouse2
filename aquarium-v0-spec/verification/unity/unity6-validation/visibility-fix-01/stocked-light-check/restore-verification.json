@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-11-06T15:49:18.734610+08:00",
+  "status": "restored",
+  "files": {
+    "aquarium-session-v1.json": {
+      "exists": true,
+      "sha256": "7de4837dca22088b213391acbbabf361e34c589d710a374546a869aad2302a4b"
+    },
+    "aquarium-session-v1.json.bak1": {
+      "exists": false
+    },
+    "aquarium-session-v1.json.bak2": {
+      "exists": false
+    },
+    "aquarium-session-v1.json.bak3": {
+      "exists": false
+    },
+    "aquarium-session-v1.json.tmp": {
+      "exists": false
+    }
+  },
+  "language": "zh-CN",
+  "fixture_after": {
+    "LightIsOn": true,
+    "Paused": true,
+    "WalletCoin": 90,
+    "agents": 14
+  },
+  "archived_log_sha256": "3921fe5af793ce61c13771e9b111fdb0579eb05cd74eac6231aed188682f21b4"
+}

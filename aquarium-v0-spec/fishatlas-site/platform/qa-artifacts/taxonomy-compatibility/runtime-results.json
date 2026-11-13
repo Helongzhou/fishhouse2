@@ -1,0 +1,37 @@
+{
+  "time": "2026-11-09T01:58:05.587Z",
+  "base": "http://127.0.0.1:4174",
+  "checks": [
+    {
+      "name": "Bilingual homepage and library have the three public type entries",
+      "status": "PASS"
+    },
+    {
+      "name": "Old exact URLs, aggregate categories and valid empty water links",
+      "status": "PASS",
+      "details": {
+        "shrimp": 1,
+        "snail": 2,
+        "invertebrate": 3
+      }
+    },
+    {
+      "name": "Quick filter preserves type and water; recommendation links preserve the original from query",
+      "status": "PASS"
+    },
+    {
+      "name": "No recommendation leaves a full-width care column on desktop; bilingual 390px remains within viewport",
+      "status": "PASS",
+      "details": {
+        "outer": 1320,
+        "child": 1320,
+        "children": 1
+      }
+    },
+    {
+      "name": "No browser exception",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "neon-tetra-ember-tetra",
+    "subject_species_id": "neon-tetra",
+    "object_species_id": "ember-tetra",
+    "decision": "compatible",
+    "risk_level": "low",
+    "conditions": "similar warm-water community setup",
+    "reason": "Similar size and calm mid-water behavior.",
+    "editor_note": "Keep enough swimming room and groups.",
+    "status": "published",
+    "reviewed_at": "2026-11-05",
+    "reason_localized": {
+      "en": "Similar size and calm mid-water behavior.",
+      "zh-CN": "相近体型，且都在中层温和活动。"
+    },
+    "conditions_localized": {
+      "en": "similar warm-water community setup",
+      "zh-CN": "适合相近的暖水社区缸，需保留足够游动空间并满足群养数量。"
+    }
+  },
+  {
+    "id": "neon-tetra-red-cherry-shrimp",
+    "subject_species_id": "neon-tetra",
+    "object_species_id": "red-cherry-shrimp",
+    "decision": "caution",
+    "risk_level": "medium",
+    "conditions": "shrimplet survival varies",
+    "reason": "Adult shrimp are usually ignored, but tiny shrimplets may be eaten.",
+    "editor_note": "Provide dense cover if breeding matters.",
+    "status": "published",
+    "reviewed_at": "2026-11-05",
+    "reason_localized": {
+      "en": "Adult shrimp are usually ignored, but tiny shrimplets may be eaten.",
+      "zh-CN": "成虾通常不会被理会，但很小的幼虾可能被吃掉。"
+    },
+    "conditions_localized": {
+      "en": "shrimplet survival varies",
+      "zh-CN": "如果在意繁殖，需要提供密集遮蔽物。"
+    }
+  },
+  {
+    "id": "honey-gourami-red-cherry-shrimp",
+    "subject_species_id": "honey-gourami",
+    "object_species_id": "red-cherry-shrimp",
+    "decision": "caution",
+    "risk_level": "medium",
+    "conditions": "cover and feeding availability",
+    "reason": "A calm gourami may still take very small shrimp.",
+    "editor_note": "Treat shrimplet survival as uncertain.",
+    "status": "published",
+    "reviewed_at": "2026-11-05",
+    "reason_localized": {
+      "en": "A calm gourami may still take very small shrimp.",
+      "zh-CN": "温和的蜜蜂鱼也可能捕食很小的虾。"
+    },
+    "conditions_localized": {
+      "en": "cover and feeding availability",
+      "zh-CN": "需要足够遮蔽和稳定的投喂条件；幼虾存活存在不确定性。"
+    }
+  },
+  {
+    "id": "panda-corydoras-red-cherry-shrimp",
+    "subject_species_id": "panda-corydoras",
+    "object_species_id": "red-cherry-shrimp",
+    "decision": "compatible",
+    "risk_level": "low",
+    "conditions": "adequate bottom area",
+    "reason": "They use different food and movement patterns; accidental losses remain possible.",
+    "editor_note": "Use smooth substrate.",
+    "status": "published",
+    "reviewed_at": "2026-11-05",
+    "reason_localized": {
+      "en": "They use different food and movement patterns; accidental losses remain possible.",
+      "zh-CN": "两者取食和活动方式不同，但仍可能出现偶然损失。"
+    },
+    "conditions_localized": {
+      "en": "adequate bottom area",
+      "zh-CN": "使用圆润底材，并保证底层有足够活动面积。"
+    }
+  }
+]

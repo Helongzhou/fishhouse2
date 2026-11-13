@@ -1,0 +1,1081 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "key": "compatibility.reason.ADULT_MALE_BETTA_CONSPECIFIC_BLOCK.message",
+      "value": "Multiple adult male {source} cannot share this tank."
+    },
+    {
+      "key": "compatibility.reason.ADULT_MALE_BETTA_CONSPECIFIC_BLOCK.repair",
+      "value": "House adult males in separate suitable systems. Do not rely on a larger group or individual temperament."
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_INSUFFICIENT.message",
+      "value": "The adult space requirement for {source} is not met at {target}."
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_INSUFFICIENT.repair",
+      "value": "Use a tank that meets adult length, height and usable swimming-space requirements, or choose a suitable species."
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_UNKNOWN.message",
+      "value": "The adult space requirement or available space for {source} at {target} is unverified."
+    },
+    {
+      "key": "compatibility.reason.ADULT_SPACE_UNKNOWN.repair",
+      "value": "Confirm adult requirements and usable space after substrate and hardscape displacement. Juveniles still require an adult plan."
+    },
+    {
+      "key": "compatibility.reason.BETTA_CONSPECIFIC_CONDITIONS_REVIEW.message",
+      "value": "No multiple-adult-male rule was triggered for {source}, but this same-species group still has unmet review conditions."
+    },
+    {
+      "key": "compatibility.reason.BETTA_CONSPECIFIC_CONDITIONS_REVIEW.repair",
+      "value": "Review individuals, sex, space, cover and management. Prepare immediate separation; V0 defaults to one individual."
+    },
+    {
+      "key": "compatibility.reason.BETTA_SEX_OR_STAGE_UNKNOWN.message",
+      "value": "Sex or life stage is unknown for {source}; adult male conflict cannot be ruled out."
+    },
+    {
+      "key": "compatibility.reason.BETTA_SEX_OR_STAGE_UNKNOWN.repair",
+      "value": "Confirm the sex and life stage of every individual before approving a same-species combination."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_FOOD_UNKNOWN.message",
+      "value": "Appropriate sinking food for {source} has not been confirmed."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_FOOD_UNKNOWN.repair",
+      "value": "Provide species-appropriate sinking food. Feces and leftovers are not an adequate feeding plan."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SINKING_FOOD.message",
+      "value": "No appropriate sinking-food plan is present for {source}."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SINKING_FOOD.repair",
+      "value": "Provide suitable sinking food and observe feeding. Bottom-sifting fish are not feces cleaners."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SOFT_SAND.message",
+      "value": "The modeled soft-sand foraging requirement of {source} is unmet."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_NEEDS_SOFT_SAND.repair",
+      "value": "Provide a safe, accessible soft-sand foraging area and reassess. Sifting does not remove the need for waste management."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_SUBSTRATE_UNKNOWN.message",
+      "value": "The foraging substrate for {source} is unverified."
+    },
+    {
+      "key": "compatibility.reason.BOTTOM_SIFTER_SUBSTRATE_UNKNOWN.repair",
+      "value": "Confirm a safe soft-sand substrate for this bottom-sifting profile."
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_RANGE_EMPTY.message",
+      "value": "The whole-community water-parameter intersection is empty; {source} and {target} define conflicting bounds."
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_RANGE_EMPTY.repair",
+      "value": "Separate incompatible species or remove a conflicting member, then recompute the entire combination. A freshwater label is insufficient."
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_WATER_TYPE_MISMATCH.message",
+      "value": "{source} and {target} require different water systems."
+    },
+    {
+      "key": "compatibility.reason.COMMUNITY_WATER_TYPE_MISMATCH.repair",
+      "value": "Separate freshwater, brackish and saltwater requirements into suitable systems; do not invent a compromise water type."
+    },
+    {
+      "key": "compatibility.reason.CONTENT_POLICY_UNKNOWN.message",
+      "value": "The V0 purchasing policy for {source} is unknown."
+    },
+    {
+      "key": "compatibility.reason.CONTENT_POLICY_UNKNOWN.repair",
+      "value": "Have the content owner confirm purchasable_v0, planned or reference_only."
+    },
+    {
+      "key": "compatibility.reason.DIRECTIONAL_FIN_NIPPING_RISK.message",
+      "value": "{source} may nip the fins of {target}; source group size is {source_count}. This is a risk, not a guaranteed attack."
+    },
+    {
+      "key": "compatibility.reason.DIRECTIONAL_FIN_NIPPING_RISK.repair",
+      "value": "Prefer separating the fin-nipping source and long-finned target. Review group size, space and stress; adequate numbers do not guarantee safety."
+    },
+    {
+      "key": "compatibility.reason.GAPE_PREDATION_RISK.message",
+      "value": "The gape of {source} is not smaller than the body cross-section of {target}; size-related predation is possible."
+    },
+    {
+      "key": "compatibility.reason.GAPE_PREDATION_RISK.repair",
+      "value": "Separate potential prey or use a dedicated nursery. Cover does not guarantee survival; reassess as animals grow."
+    },
+    {
+      "key": "compatibility.reason.INCONSISTENT_SPECIES_PROFILE.message",
+      "value": "The same species ID {source} uses inconsistent profile instances."
+    },
+    {
+      "key": "compatibility.reason.INCONSISTENT_SPECIES_PROFILE.repair",
+      "value": "Reference one reviewed profile version for all cohorts of the same species."
+    },
+    {
+      "key": "compatibility.reason.INVALID_STOCK_GROUP.message",
+      "value": "{target} has a missing species/group ID, duplicate group ID, or a non-positive count."
+    },
+    {
+      "key": "compatibility.reason.INVALID_STOCK_GROUP.repair",
+      "value": "Provide a reviewed species, unique group ID and positive integer count, then reassess."
+    },
+    {
+      "key": "compatibility.reason.NO_VALID_STOCK.message",
+      "value": "No valid stock group is available for assessment."
+    },
+    {
+      "key": "compatibility.reason.NO_VALID_STOCK.repair",
+      "value": "Add at least one reviewed species cohort; an empty or invalid composition is not an approval."
+    },
+    {
+      "key": "compatibility.reason.PREDATION_PROFILE_UNKNOWN.message",
+      "value": "The ability of {source} to prey on smaller animals is unverified."
+    },
+    {
+      "key": "compatibility.reason.PREDATION_PROFILE_UNKNOWN.repair",
+      "value": "Confirm diet and size-related predation capability. Do not infer safety or total loss from fish/shrimp categories."
+    },
+    {
+      "key": "compatibility.reason.PREDATION_SIZE_UNKNOWN.message",
+      "value": "Gape or current body cross-section data for {source} and {target} is missing; swallowing risk is unresolved."
+    },
+    {
+      "key": "compatibility.reason.PREDATION_SIZE_UNKNOWN.repair",
+      "value": "Confirm current-stage gape and body cross-section, and separate potential prey until verified."
+    },
+    {
+      "key": "compatibility.reason.SAME_SPECIES_GROUP_TOO_SMALL.message",
+      "value": "{source} has {source_count} individuals, below its recommended same-species minimum of {required_count}. Other fish or shrimp do not count."
+    },
+    {
+      "key": "compatibility.reason.SAME_SPECIES_GROUP_TOO_SMALL.repair",
+      "value": "After reassessing space, filtration and conflicts, add the same species or choose a species with different social requirements."
+    },
+    {
+      "key": "compatibility.reason.SPECIES_GROUP_MIN_UNKNOWN.message",
+      "value": "The same-species group requirement for {source} is unknown."
+    },
+    {
+      "key": "compatibility.reason.SPECIES_GROUP_MIN_UNKNOWN.repair",
+      "value": "Verify social and conspecific-isolation requirements instead of substituting other species."
+    },
+    {
+      "key": "compatibility.reason.SPECIES_RANGE_UNKNOWN.message",
+      "value": "The reviewed {parameter} range for {source} is missing or invalid."
+    },
+    {
+      "key": "compatibility.reason.SPECIES_RANGE_UNKNOWN.repair",
+      "value": "Confirm the complete species range and reassess. Do not treat unknown data as a compatible freshwater default."
+    },
+    {
+      "key": "compatibility.reason.SPECIES_WATER_TYPE_UNKNOWN.message",
+      "value": "The water system required by {source} is unverified."
+    },
+    {
+      "key": "compatibility.reason.SPECIES_WATER_TYPE_UNKNOWN.repair",
+      "value": "Confirm the species water system; unknown must not default to freshwater."
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_OUTSIDE_SPECIES_RANGE.message",
+      "value": "The current tank {parameter} is outside the reviewed range for {source}."
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_OUTSIDE_SPECIES_RANGE.repair",
+      "value": "If a whole-community range exists, adjust gradually into its interior. Otherwise separate species; avoid sudden parameter changes."
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_UNKNOWN.message",
+      "value": "The current tank measurement for {parameter} is missing or invalid."
+    },
+    {
+      "key": "compatibility.reason.TANK_PARAMETER_UNKNOWN.repair",
+      "value": "Measure and record the current value; compatible species ranges do not prove current water conditions are suitable."
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_MISMATCH.message",
+      "value": "{source} requires a different water system from the current tank."
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_MISMATCH.repair",
+      "value": "Move the species into a suitable independent water system."
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_UNKNOWN.message",
+      "value": "The current tank water system is unknown."
+    },
+    {
+      "key": "compatibility.reason.TANK_WATER_TYPE_UNKNOWN.repair",
+      "value": "Confirm whether this is a freshwater, brackish or saltwater system."
+    },
+    {
+      "key": "compatibility.reason.V0_CONTENT_NOT_PURCHASABLE.message",
+      "value": "{source} is planned or reference-only and cannot be purchased in V0. This is content policy, not an ecological incompatibility claim."
+    },
+    {
+      "key": "compatibility.reason.V0_CONTENT_NOT_PURCHASABLE.repair",
+      "value": "Remove it from the V0 purchase list or wait for an approved content version."
+    },
+    {
+      "key": "compatibility.summary.action_required",
+      "value": "Review every blocking, risk, unmet-condition and unverified-data reason. Resolve and reassess before introduction."
+    },
+    {
+      "key": "compatibility.summary.monitor",
+      "value": "No modeled conflict found. Quarantine, staged introduction, monitoring and an isolation plan are still required."
+    },
+    {
+      "key": "demo.clock",
+      "value": "Real: {0:F1}s  Ecology day: {1:F3} ({2}x)  Light: {3}  {4}"
+    },
+    {
+      "key": "demo.controls.camera",
+      "value": "Right mouse orbit | Wheel approach | F5 save | F9 load | T language"
+    },
+    {
+      "key": "demo.controls.events",
+      "value": "L light | G approach glass | F food | Space pause | 1 / 2 / 4 ecology"
+    },
+    {
+      "key": "demo.light.off",
+      "value": "OFF"
+    },
+    {
+      "key": "demo.light.on",
+      "value": "ON"
+    },
+    {
+      "key": "demo.state.paused",
+      "value": "PAUSED"
+    },
+    {
+      "key": "demo.state.running",
+      "value": "RUNNING"
+    },
+    {
+      "key": "demo.status.load_failed",
+      "value": "Load failed; the current tank was retained. See the developer console."
+    },
+    {
+      "key": "demo.status.loaded",
+      "value": "Loaded saved agents and their independent random states."
+    },
+    {
+      "key": "demo.status.ready",
+      "value": "Approach the glass, feed, or switch the light to observe individual reactions."
+    },
+    {
+      "key": "demo.status.save_failed",
+      "value": "Save failed. See the developer console for details."
+    },
+    {
+      "key": "demo.status.saved",
+      "value": "Saved: {0}"
+    },
+    {
+      "key": "demo.title",
+      "value": "Aquarium interaction prototype (placeholder art)"
+    },
+    {
+      "key": "game.apply_slope",
+      "value": "Apply substrate slope"
+    },
+    {
+      "key": "game.back",
+      "value": "Back · left / right"
+    },
+    {
+      "key": "game.camera",
+      "value": "Right drag to orbit · wheel to approach · select and drag to move"
+    },
+    {
+      "key": "game.challenge",
+      "value": "Start fishless nitrogen challenge"
+    },
+    {
+      "key": "game.clock",
+      "value": "Day {0:0.00} · {1}× · {2:0.0} L"
+    },
+    {
+      "key": "game.front",
+      "value": "Front · left / right"
+    },
+    {
+      "key": "game.loaded",
+      "value": "Aquarium restored."
+    },
+    {
+      "key": "game.move",
+      "value": "Move"
+    },
+    {
+      "key": "game.place",
+      "value": "Click inside the tank to place. R rotates."
+    },
+    {
+      "key": "game.place_plant",
+      "value": "Click a stone to attach the plant."
+    },
+    {
+      "key": "game.product",
+      "value": "{0} · owned {1}"
+    },
+    {
+      "key": "game.prototype",
+      "value": "Experimental teaching mode"
+    },
+    {
+      "key": "game.rate",
+      "value": "{0}×"
+    },
+    {
+      "key": "game.ready",
+      "value": "Choose the essentials to begin."
+    },
+    {
+      "key": "game.recovered",
+      "value": "Aquarium recovered from a backup."
+    },
+    {
+      "key": "game.refund",
+      "value": "Refund purchase"
+    },
+    {
+      "key": "game.rotate",
+      "value": "Rotate 15°"
+    },
+    {
+      "key": "game.stage.Complete",
+      "value": "Observe and care for your aquarium."
+    },
+    {
+      "key": "game.stage.Confirmed",
+      "value": "Ready to fill."
+    },
+    {
+      "key": "game.stage.CyclePassed",
+      "value": "Introduce Ember Tetra and Red Cherry Shrimp."
+    },
+    {
+      "key": "game.stage.Cycling",
+      "value": "Let the filter process the nitrogen dose."
+    },
+    {
+      "key": "game.stage.Editing",
+      "value": "Arrange your aquarium."
+    },
+    {
+      "key": "game.stage.Filled",
+      "value": "Start the fishless challenge."
+    },
+    {
+      "key": "game.stage.MainUnlocked",
+      "value": "Ready for Neon Tetra."
+    },
+    {
+      "key": "game.stage.TrialObserving",
+      "value": "Observe the first animals as the water stays stable."
+    },
+    {
+      "key": "game.template",
+      "value": "Arrange purchased essentials"
+    },
+    {
+      "key": "game.title",
+      "value": "Aquarium Journal"
+    },
+    {
+      "key": "game.water",
+      "value": "TAN {0:0.000} · NO₂-N {1:0.000} · NO₃-N {2:0.000} mg N/L · {3}"
+    },
+    {
+      "key": "gameplay.already_filled",
+      "value": "The aquarium is already filled."
+    },
+    {
+      "key": "gameplay.batch_unavailable",
+      "value": "This purchase is no longer available."
+    },
+    {
+      "key": "gameplay.budget_reserved",
+      "value": "Keep {0} coins for the remaining essentials."
+    },
+    {
+      "key": "gameplay.care_requires_simulation",
+      "value": "Use the feeding or water-change action."
+    },
+    {
+      "key": "gameplay.coin_overflow",
+      "value": "The coin balance is too large."
+    },
+    {
+      "key": "gameplay.command_invalid",
+      "value": "This action could not be completed."
+    },
+    {
+      "key": "gameplay.condition_unmet",
+      "value": "The aquarium is not ready for this action."
+    },
+    {
+      "key": "gameplay.content_unavailable",
+      "value": "This item is outside the current teaching route."
+    },
+    {
+      "key": "gameplay.ecology_required",
+      "value": "Water-quality information is unavailable."
+    },
+    {
+      "key": "gameplay.ecology_review_pending",
+      "value": "Stocking is waiting for ecological review."
+    },
+    {
+      "key": "gameplay.gate_locked",
+      "value": "Complete the earlier stage first."
+    },
+    {
+      "key": "gameplay.hardscape_overlap",
+      "value": "Move the stones apart."
+    },
+    {
+      "key": "gameplay.insufficient_coin",
+      "value": "You need {0} coins."
+    },
+    {
+      "key": "gameplay.item_not_placeable",
+      "value": "This item cannot be placed as scenery."
+    },
+    {
+      "key": "gameplay.item_unavailable",
+      "value": "This item is unavailable."
+    },
+    {
+      "key": "gameplay.layout_locked",
+      "value": "Only existing plants can be moved after confirmation."
+    },
+    {
+      "key": "gameplay.ledger_full",
+      "value": "The action history is full."
+    },
+    {
+      "key": "gameplay.nothing_to_redo",
+      "value": "Nothing to redo."
+    },
+    {
+      "key": "gameplay.nothing_to_undo",
+      "value": "Nothing to undo."
+    },
+    {
+      "key": "gameplay.ok",
+      "value": "Done."
+    },
+    {
+      "key": "gameplay.outside_tank",
+      "value": "Keep the whole object inside the aquarium."
+    },
+    {
+      "key": "gameplay.paused",
+      "value": "Resume to continue."
+    },
+    {
+      "key": "gameplay.placement_id_conflict",
+      "value": "This placement belongs to another purchase."
+    },
+    {
+      "key": "gameplay.placement_invalid",
+      "value": "Choose a valid position and object size."
+    },
+    {
+      "key": "gameplay.placement_missing",
+      "value": "This object is no longer placed."
+    },
+    {
+      "key": "gameplay.placement_size_locked",
+      "value": "Move or rotate the object without resizing it."
+    },
+    {
+      "key": "gameplay.plant_buried",
+      "value": "Keep the plant above the substrate."
+    },
+    {
+      "key": "gameplay.plant_rule_missing",
+      "value": "This plant cannot be placed yet."
+    },
+    {
+      "key": "gameplay.refund_closed",
+      "value": "Full refunds end when the layout is confirmed."
+    },
+    {
+      "key": "gameplay.required_deployment_missing",
+      "value": "Place all essentials before confirming."
+    },
+    {
+      "key": "gameplay.required_item_protected",
+      "value": "Keep the essentials until the tutorial is complete."
+    },
+    {
+      "key": "gameplay.required_purchase_missing",
+      "value": "Obtain the remaining essentials first."
+    },
+    {
+      "key": "gameplay.retry_unavailable",
+      "value": "No retry checkpoint is available yet."
+    },
+    {
+      "key": "gameplay.rhizome_buried",
+      "value": "Keep the rhizome exposed."
+    },
+    {
+      "key": "gameplay.stage_invalid",
+      "value": "This action is unavailable at this stage."
+    },
+    {
+      "key": "gameplay.stocking_limit",
+      "value": "Keep the teaching group at 8 Ember Tetra, 6 shrimp and 8 Neon Tetra."
+    },
+    {
+      "key": "gameplay.substrate_invalid",
+      "value": "Keep the substrate slope within the allowed range."
+    },
+    {
+      "key": "gameplay.support_in_use",
+      "value": "Move the attached plants first."
+    },
+    {
+      "key": "gameplay.support_invalid",
+      "value": "Place it on a valid support surface."
+    },
+    {
+      "key": "gameplay.support_required",
+      "value": "Attach this plant to a stone or wood."
+    },
+    {
+      "key": "gameplay.transaction_conflict",
+      "value": "This action ID was already used."
+    },
+    {
+      "key": "gameplay.transaction_id_conflict",
+      "value": "This action ID was already used."
+    },
+    {
+      "key": "gameplay.transaction_id_invalid",
+      "value": "This action has an invalid ID."
+    },
+    {
+      "key": "gameplay.transaction_invalid",
+      "value": "This action has an invalid ID."
+    },
+    {
+      "key": "gameplay.use_refund",
+      "value": "Refund this purchase before confirming."
+    },
+    {
+      "key": "gameplay.water_unstable",
+      "value": "Restore stable water quality before adding animals."
+    },
+    {
+      "key": "gameplay.water_volume_invalid",
+      "value": "Leave usable water space in the aquarium."
+    },
+    {
+      "key": "gameplay.water_volume_mismatch",
+      "value": "The layout and water volume do not match."
+    },
+    {
+      "key": "gameplay.wet_required",
+      "value": "Fill the aquarium first."
+    },
+    {
+      "key": "guide.acclimation",
+      "value": "Observe the new arrivals and keep conditions stable."
+    },
+    {
+      "key": "guide.challenge",
+      "value": "Complete the fishless cycle check before adding animals."
+    },
+    {
+      "key": "guide.cycle",
+      "value": "Establish the biofilter"
+    },
+    {
+      "key": "guide.fill",
+      "value": "Fill the aquarium"
+    },
+    {
+      "key": "guide.first_stocking",
+      "value": "Introduce the first group"
+    },
+    {
+      "key": "guide.hardscape",
+      "value": "Arrange the hardscape"
+    },
+    {
+      "key": "guide.main_stocking",
+      "value": "Introduce your main group"
+    },
+    {
+      "key": "guide.plants",
+      "value": "Add plants"
+    },
+    {
+      "key": "guide.ready",
+      "value": "Your aquarium is ready to watch and care for."
+    },
+    {
+      "key": "guide.substrate",
+      "value": "Lay the substrate"
+    },
+    {
+      "key": "item.debug_fish_spawn.name",
+      "value": "Debug fish spawner"
+    },
+    {
+      "key": "item.filter_hangon_basic.name",
+      "value": "Basic hang-on-back filter"
+    },
+    {
+      "key": "item.filter_sump.name",
+      "value": "Basic sump filter"
+    },
+    {
+      "key": "item.filter_top.name",
+      "value": "Basic overhead filter"
+    },
+    {
+      "key": "item.fish_main_pack.name",
+      "value": "Neon Tetra (8 fish)"
+    },
+    {
+      "key": "item.fish_trial_pack.name",
+      "value": "Ember Tetra (8 fish)"
+    },
+    {
+      "key": "item.food_basic.name",
+      "value": "Basic fish food"
+    },
+    {
+      "key": "item.light_low.name",
+      "value": "Basic low-light fixture"
+    },
+    {
+      "key": "item.plant_anubias_nana.name",
+      "value": "Anubias barteri var. nana (1 portion)"
+    },
+    {
+      "key": "item.plant_java_fern.name",
+      "value": "Microsorum pteropus (1 portion)"
+    },
+    {
+      "key": "item.plant_java_moss.name",
+      "value": "Taxiphyllum barbieri 'Bogor Moss' (1 portion)"
+    },
+    {
+      "key": "item.shrimp_pack.name",
+      "value": "Red Cherry Shrimp (6 shrimp)"
+    },
+    {
+      "key": "item.stone_main.name",
+      "value": "Main stone"
+    },
+    {
+      "key": "item.stone_secondary.name",
+      "value": "Secondary stone"
+    },
+    {
+      "key": "item.substrate_natural_sand.name",
+      "value": "Natural creek sand"
+    },
+    {
+      "key": "item.water_change_basic.name",
+      "value": "Basic water change"
+    },
+    {
+      "key": "item.wood_optional.name",
+      "value": "Optional driftwood"
+    },
+    {
+      "key": "plant.anubias_nana.name",
+      "value": "Anubias barteri var. nana"
+    },
+    {
+      "key": "plant.buce_bukit_kelam.name",
+      "value": "Bucephalandra pygmaea 'Bukit Kelam'"
+    },
+    {
+      "key": "plant.crypt_wendtii.name",
+      "value": "Cryptocoryne wendtii 'Green'"
+    },
+    {
+      "key": "plant.java_fern.name",
+      "value": "Microsorum pteropus"
+    },
+    {
+      "key": "plant.java_moss.name",
+      "value": "Taxiphyllum barbieri 'Bogor Moss'"
+    },
+    {
+      "key": "species.anubias_nana.name",
+      "value": "Anubias barteri var. nana"
+    },
+    {
+      "key": "species.ember_tetra.name",
+      "value": "Ember Tetra"
+    },
+    {
+      "key": "species.java_fern.name",
+      "value": "Microsorum pteropus"
+    },
+    {
+      "key": "species.java_moss.name",
+      "value": "Taxiphyllum barbieri 'Bogor Moss'"
+    },
+    {
+      "key": "species.neocaridina_red.name",
+      "value": "Red Cherry Shrimp"
+    },
+    {
+      "key": "species.neon_tetra.name",
+      "value": "Neon Tetra"
+    },
+    {
+      "key": "species.snail_reference.name",
+      "value": "Nerite snail"
+    },
+    {
+      "key": "species.white_cloud.name",
+      "value": "White Cloud Mountain Minnow"
+    },
+    {
+      "key": "tank.tank_60cm.name",
+      "value": "60 cm teaching aquarium"
+    },
+    {
+      "key": "template.triangle.name",
+      "value": "Starter triangle"
+    },
+    {
+      "key": "ui.algae",
+      "value": "Algae"
+    },
+    {
+      "key": "ui.aliases",
+      "value": "Also known as"
+    },
+    {
+      "key": "ui.ammonia",
+      "value": "Total ammonia"
+    },
+    {
+      "key": "ui.behavior.bottom_sifting",
+      "value": "Searching the substrate for food."
+    },
+    {
+      "key": "ui.behavior.expecting_food",
+      "value": "Waiting near a familiar feeding area."
+    },
+    {
+      "key": "ui.behavior.grazing",
+      "value": "Grazing on a surface."
+    },
+    {
+      "key": "ui.behavior.group_short",
+      "value": "More of the same species may help this group feel secure."
+    },
+    {
+      "key": "ui.behavior.startled",
+      "value": "Alert after a sudden light change."
+    },
+    {
+      "key": "ui.budget_guard",
+      "value": "Keep {0} coins for the remaining essentials."
+    },
+    {
+      "key": "ui.build",
+      "value": "Aquascape"
+    },
+    {
+      "key": "ui.buy",
+      "value": "Buy"
+    },
+    {
+      "key": "ui.cancel",
+      "value": "Cancel"
+    },
+    {
+      "key": "ui.common_name",
+      "value": "Common name"
+    },
+    {
+      "key": "ui.compatibility_review",
+      "value": "Check tankmates"
+    },
+    {
+      "key": "ui.confirm",
+      "value": "Confirm"
+    },
+    {
+      "key": "ui.continue",
+      "value": "Continue"
+    },
+    {
+      "key": "ui.details",
+      "value": "Details"
+    },
+    {
+      "key": "ui.feed",
+      "value": "Feed"
+    },
+    {
+      "key": "ui.filter_reserve",
+      "value": "Filter reserve"
+    },
+    {
+      "key": "ui.free",
+      "value": "Free"
+    },
+    {
+      "key": "ui.gh",
+      "value": "General hardness (GH)"
+    },
+    {
+      "key": "ui.journal",
+      "value": "Aquarium journal"
+    },
+    {
+      "key": "ui.kh",
+      "value": "Carbonate hardness (KH)"
+    },
+    {
+      "key": "ui.language",
+      "value": "Language"
+    },
+    {
+      "key": "ui.language.en",
+      "value": "English"
+    },
+    {
+      "key": "ui.language.zh-CN",
+      "value": "Simplified Chinese"
+    },
+    {
+      "key": "ui.light",
+      "value": "Aquarium light"
+    },
+    {
+      "key": "ui.light_off",
+      "value": "Off"
+    },
+    {
+      "key": "ui.light_on",
+      "value": "On"
+    },
+    {
+      "key": "ui.light_ramp",
+      "value": "Gradual lighting"
+    },
+    {
+      "key": "ui.load",
+      "value": "Load"
+    },
+    {
+      "key": "ui.load_error",
+      "value": "Could not load this save. Choose a backup."
+    },
+    {
+      "key": "ui.needs_attention",
+      "value": "Needs attention"
+    },
+    {
+      "key": "ui.new_aquarium",
+      "value": "New aquarium"
+    },
+    {
+      "key": "ui.next_action",
+      "value": "What you can do"
+    },
+    {
+      "key": "ui.nitrate",
+      "value": "Nitrate"
+    },
+    {
+      "key": "ui.nitrite",
+      "value": "Nitrite"
+    },
+    {
+      "key": "ui.observe",
+      "value": "Observe"
+    },
+    {
+      "key": "ui.pause",
+      "value": "Pause"
+    },
+    {
+      "key": "ui.ph",
+      "value": "pH"
+    },
+    {
+      "key": "ui.plant.background",
+      "value": "Background"
+    },
+    {
+      "key": "ui.plant.foreground",
+      "value": "Foreground"
+    },
+    {
+      "key": "ui.plant.hardscape",
+      "value": "On hardscape"
+    },
+    {
+      "key": "ui.plant.high",
+      "value": "High"
+    },
+    {
+      "key": "ui.plant.low",
+      "value": "Low"
+    },
+    {
+      "key": "ui.plant.medium",
+      "value": "Medium"
+    },
+    {
+      "key": "ui.plant.midground",
+      "value": "Midground"
+    },
+    {
+      "key": "ui.plant.moss_hint",
+      "value": "Attach a small portion; trim when it becomes too dense."
+    },
+    {
+      "key": "ui.plant.rhizome_hint",
+      "value": "Attach to rock or wood. Keep the rhizome uncovered."
+    },
+    {
+      "key": "ui.plant.rosette_hint",
+      "value": "Plant the roots in the substrate without burying the crown deeply."
+    },
+    {
+      "key": "ui.plant.surface",
+      "value": "Floating"
+    },
+    {
+      "key": "ui.price",
+      "value": "{0} coins"
+    },
+    {
+      "key": "ui.quantity",
+      "value": "Quantity: {0}"
+    },
+    {
+      "key": "ui.quit",
+      "value": "Quit"
+    },
+    {
+      "key": "ui.reason_source",
+      "value": "Research source"
+    },
+    {
+      "key": "ui.redo",
+      "value": "Redo"
+    },
+    {
+      "key": "ui.resume",
+      "value": "Resume"
+    },
+    {
+      "key": "ui.retry",
+      "value": "Restore safe checkpoint"
+    },
+    {
+      "key": "ui.save",
+      "value": "Save"
+    },
+    {
+      "key": "ui.save_error",
+      "value": "Could not save. Your previous save is safe."
+    },
+    {
+      "key": "ui.save_ok",
+      "value": "Aquarium saved."
+    },
+    {
+      "key": "ui.scientific_name",
+      "value": "Scientific name"
+    },
+    {
+      "key": "ui.sell",
+      "value": "Return item"
+    },
+    {
+      "key": "ui.settings",
+      "value": "Settings"
+    },
+    {
+      "key": "ui.shop",
+      "value": "Shop"
+    },
+    {
+      "key": "ui.shortfall",
+      "value": "You need {0} more coins."
+    },
+    {
+      "key": "ui.sinking_food",
+      "value": "Sinking food"
+    },
+    {
+      "key": "ui.stable",
+      "value": "Stable"
+    },
+    {
+      "key": "ui.temperature",
+      "value": "Temperature"
+    },
+    {
+      "key": "ui.undo",
+      "value": "Undo"
+    },
+    {
+      "key": "ui.unit.fish",
+      "value": "fish"
+    },
+    {
+      "key": "ui.unit.item",
+      "value": "items"
+    },
+    {
+      "key": "ui.unit.portion",
+      "value": "portions"
+    },
+    {
+      "key": "ui.unit.shrimp",
+      "value": "shrimp"
+    },
+    {
+      "key": "ui.unit.snail",
+      "value": "snails"
+    },
+    {
+      "key": "ui.unsupported_save",
+      "value": "This save needs a newer game version."
+    },
+    {
+      "key": "ui.wallet",
+      "value": "Coins: {0}"
+    },
+    {
+      "key": "ui.water_change",
+      "value": "Change water"
+    },
+    {
+      "key": "ui.water_quality",
+      "value": "Water quality"
+    }
+  ]
+}

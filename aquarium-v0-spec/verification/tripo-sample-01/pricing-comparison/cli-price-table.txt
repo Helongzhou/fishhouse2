@@ -1,0 +1,38 @@
+/opt/homebrew/lib/node_modules/tripo-cli/dist/knowledge/models.js
+213: }
+214: /**
+215:  * Official list price per generation task in credits, identical on the ov and cn
+216:  * model pages. Tiers: [no texture, standard/fast, detailed, extreme]. P1 and the
+217:  * legacy models publish no price, so they are never estimated.
+218:  */
+219: const GENERATION_CREDITS = {
+220:     [MODEL_V31]: {
+221:         text_to_model: [10, 20, 30, 40],
+222:         image_to_model: [20, 30, 40, 50],
+223:         multiview_to_model: [20, 30, 40, 50],
+224:     },
+225:     [MODEL_P2]: {
+226:         text_to_model: [100, 110, 120, 130],
+227:         image_to_model: [100, 110, 120, 130],
+228:         multiview_to_model: [100, 110, 120, 130],
+229:     },
+230: };
+231: /** List-price credits for one generation task from its validated payload; undefined when no price is published. */
+232: export function estimateGenerationCredits(model, taskType, params) {
+233:     const wire = normalizeModel(model);
+234:     const tiers = GENERATION_CREDITS[wire]?.[taskType];
+235:     if (!tiers)
+236:         return undefined;
+237:     let credits = tiers[params.texture === false ? 0 : params.texture_quality === 'extreme' ? 3 : params.texture_quality === 'detailed' ? 2 : 1];
+238:     if (wire === MODEL_V31) {
+239:         if (params.geometry_quality === 'detailed')
+240:             credits += 20;
+241:         if (params.quad === true)
+242:             credits += 5;
+243:         if (params.smart_low_poly === true)
+244:             credits += 10;
+245:         if (params.generate_parts === true)
+246:             credits += 20;
+247:     }
+248:     return credits;
+249: }

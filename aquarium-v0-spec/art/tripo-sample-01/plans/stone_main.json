@@ -1,0 +1,38 @@
+{
+  "exit_code": 0,
+  "result": {
+    "dry_run": true,
+    "valid": true,
+    "input": "One isolated upright asymmetrical aquarium ridge stone, broad stable base and one sloping softened peak, diagonal layered charcoal gray rock planes, shallow eroded creases and small restrained pits, high left-to-right falling silhouette, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+    "model": "P2-20260801",
+    "model_reason": "explicit --model",
+    "steps": [
+      {
+        "name": "text-to-model",
+        "endpoint": "/v3/generation/text-to-model",
+        "task_type": "text_to_model",
+        "payload": {
+          "prompt": "One isolated upright asymmetrical aquarium ridge stone, broad stable base and one sloping softened peak, diagonal layered charcoal gray rock planes, shallow eroded creases and small restrained pits, high left-to-right falling silhouette, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+          "texture": true,
+          "pbr": false,
+          "texture_quality": "standard",
+          "face_limit": 6500,
+          "model": "P2-20260801"
+        }
+      }
+    ],
+    "pending_uploads": [],
+    "deliverables": [
+      "GLB"
+    ],
+    "candidates": 1,
+    "warnings": [],
+    "errors": [],
+    "generation_credits_estimate": 110,
+    "cost_notes": [
+      "estimated generation cost: 110 credits (official list price)"
+    ]
+  },
+  "stdout": "{\"dry_run\":true,\"valid\":true,\"input\":\"One isolated upright asymmetrical aquarium ridge stone, broad stable base and one sloping softened peak, diagonal layered charcoal gray rock planes, shallow eroded creases and small restrained pits, high left-to-right falling silhouette, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.\",\"model\":\"P2-20260801\",\"model_reason\":\"explicit --model\",\"steps\":[{\"name\":\"text-to-model\",\"endpoint\":\"/v3/generation/text-to-model\",\"task_type\":\"text_to_model\",\"payload\":{\"prompt\":\"One isolated upright asymmetrical aquarium ridge stone, broad stable base and one sloping softened peak, diagonal layered charcoal gray rock planes, shallow eroded creases and small restrained pits, high left-to-right falling silhouette, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.\",\"texture\":true,\"pbr\":false,\"texture_quality\":\"standard\",\"face_limit\":6500,\"model\":\"P2-20260801\"}}],\"pending_uploads\":[],\"deliverables\":[\"GLB\"],\"candidates\":1,\"warnings\":[],\"errors\":[],\"generation_credits_estimate\":110,\"cost_notes\":[\"estimated generation cost: 110 credits (official list price)\"]}\n",
+  "stderr": ""
+}

@@ -1,0 +1,11 @@
+{
+  "currentMediaReferences": 75,
+  "allHttpHashesMatch": true,
+  "database55432Closed": true,
+  "httpCatalogEqualsFile": true,
+  "catalogCacheControl": "no-store",
+  "redirect4173": {
+    "status": 308,
+    "location": "http://127.0.0.1:4174/en/aquatic?type=fish&q=neon"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "unity6-validation/Assets/_Game/UnityAdapter/AquariumGameEntry.cs": "c50e07f82ac58c77ad26c31d36cb152842be3ca05778e963578ed7489c65f46a",
+  "tools/prepare_unity6_validation.py": "f4ea5eef9d2e54316d91d770ccfe79e0d88a081dfa8567cc96dfb052be550ae8",
+  "tools/unity6_patches/visibility-lighting.patch": "f3d69bc835290982c8ebfa3f4b19de32f10a150f866cd2ce662f0abb32b6f231"
+}

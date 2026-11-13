@@ -1,0 +1,34 @@
+{
+  "sampledAtUtc": "2026-11-06T05:07:28.878715+00:00",
+  "pid53279Exited": true,
+  "finalLogs": [
+    {
+      "source": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280.log",
+      "archive": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280-final.log",
+      "bytes": 2569,
+      "sha256": "5d1c0e5162baafc7483dc537daad5a6f6b313a801693a0517978aa812d71009b"
+    },
+    {
+      "source": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280-stdout.log",
+      "archive": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/player-1280-stdout-final.log",
+      "bytes": 1853,
+      "sha256": "9d82fc59cc2c195c9dfe973c037469a51222684f5d1b07101c64176e5564a625"
+    }
+  ],
+  "playerPrefsReadOnlyBeforeSaveRestore": [
+    {
+      "path": "/Users/zhouhelong/Library/Preferences/unity.Aquarium Journal.Aquarium Journal.plist",
+      "sha256": "7d21405ee2ebe183b79be0decb74f29b7b69df1a77bd739f3603153ae560e932",
+      "languageKeyPresent": false,
+      "languageValue": null
+    },
+    {
+      "path": "/Users/zhouhelong/Library/Preferences/com.Aquarium-Journal.Aquarium-Journal.plist",
+      "sha256": "70d6e9d7ec44f5bb9f62d48b1a311755b5938519c547a4c2ea58a983bc315de8",
+      "languageKeyPresent": false,
+      "languageValue": null
+    }
+  ],
+  "languageInterpretation": "No aquarium.language key in either inspected preference plist. Actual Player log and root screenshots show en; no language toggle succeeded. This is not a persisted explicit en value.",
+  "exitLogNote": "Final1280 log contains native thread-prematurely-finalized messages during shutdown; no IMK mach-port error in this log. Historical4K IMK error retained separately."
+}

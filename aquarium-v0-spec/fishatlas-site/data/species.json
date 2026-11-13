@@ -1,0 +1,341 @@
+[
+  {
+    "id": "neon-tetra",
+    "organism_type": "fish",
+    "scientific_name": "Paracheirodon innesi",
+    "taxonomy": {
+      "family": "Characidae",
+      "genus": "Paracheirodon"
+    },
+    "distribution": "Upper Amazon basin",
+    "aliases": [
+      "neon",
+      "neon fish",
+      "霓虹灯",
+      "红绿灯"
+    ],
+    "status": "published",
+    "content_confidence": "high",
+    "category_tags": [
+      "tetra"
+    ],
+    "primary_colors": [
+      "blue",
+      "red",
+      "silver"
+    ],
+    "size_class": "small",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "schooling"
+    ],
+    "body_shape_tags": [
+      "slender",
+      "laterally_compressed"
+    ]
+  },
+  {
+    "id": "ember-tetra",
+    "organism_type": "fish",
+    "scientific_name": "Hyphessobrycon amandae",
+    "taxonomy": {
+      "family": "Characidae",
+      "genus": "Hyphessobrycon"
+    },
+    "distribution": "Araguaia basin",
+    "aliases": [
+      "ember",
+      "fire tetra",
+      "火焰灯",
+      "喷火灯"
+    ],
+    "status": "published",
+    "content_confidence": "high",
+    "category_tags": [
+      "tetra"
+    ],
+    "primary_colors": [
+      "orange",
+      "red"
+    ],
+    "size_class": "small",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "schooling"
+    ],
+    "body_shape_tags": [
+      "slender",
+      "laterally_compressed"
+    ]
+  },
+  {
+    "id": "harlequin-rasbora",
+    "organism_type": "fish",
+    "scientific_name": "Trigonostigma heteromorpha",
+    "taxonomy": {
+      "family": "Cyprinidae",
+      "genus": "Trigonostigma"
+    },
+    "distribution": "Malay Peninsula and Sumatra",
+    "aliases": [
+      "harlequin",
+      "rasbora",
+      "三角灯",
+      "三角波鱼"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "rasbora"
+    ],
+    "primary_colors": [
+      "orange",
+      "black",
+      "silver"
+    ],
+    "size_class": "medium",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "schooling"
+    ],
+    "body_shape_tags": [
+      "deep_bodied",
+      "laterally_compressed"
+    ]
+  },
+  {
+    "id": "honey-gourami",
+    "organism_type": "fish",
+    "scientific_name": "Trichogaster chuna",
+    "taxonomy": {
+      "family": "Osphronemidae",
+      "genus": "Trichogaster"
+    },
+    "distribution": "Northeast India and Bangladesh",
+    "aliases": [
+      "sunset honey gourami",
+      "蜜丽丽",
+      "蜜蜂丽丽",
+      "蜜糖丽丽",
+      "蜜丝足鲈"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "gourami"
+    ],
+    "primary_colors": [
+      "yellow",
+      "orange",
+      "brown"
+    ],
+    "size_class": "medium",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "pairing",
+      "solitary_tendency"
+    ],
+    "body_shape_tags": [
+      "deep_bodied",
+      "laterally_compressed"
+    ]
+  },
+  {
+    "id": "panda-corydoras",
+    "organism_type": "fish",
+    "scientific_name": "Corydoras panda",
+    "taxonomy": {
+      "family": "Callichthyidae",
+      "genus": "Corydoras"
+    },
+    "distribution": "Upper Madeira basin",
+    "aliases": [
+      "panda cory",
+      "panda catfish",
+      "熊猫鼠",
+      "熊猫鼠鱼"
+    ],
+    "status": "published",
+    "content_confidence": "high",
+    "category_tags": [
+      "corydoras",
+      "catfish"
+    ],
+    "primary_colors": [
+      "white",
+      "black",
+      "silver"
+    ],
+    "size_class": "medium",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "schooling"
+    ],
+    "body_shape_tags": [
+      "short_round"
+    ]
+  },
+  {
+    "id": "red-cherry-shrimp",
+    "organism_type": "shrimp",
+    "scientific_name": "Neocaridina davidi",
+    "taxonomy": {
+      "family": "Atyidae",
+      "genus": "Neocaridina"
+    },
+    "distribution": "Captive-bred freshwater form",
+    "aliases": [
+      "cherry shrimp",
+      "neocaridina",
+      "樱花虾",
+      "樱桃虾"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "shrimp"
+    ],
+    "primary_colors": [
+      "red",
+      "transparent"
+    ],
+    "size_class": "small",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "colony"
+    ],
+    "body_shape_tags": [
+      "short_round"
+    ]
+  },
+  {
+    "id": "guppy",
+    "organism_type": "fish",
+    "scientific_name": "Poecilia reticulata",
+    "taxonomy": {
+      "family": "Poeciliidae",
+      "genus": "Poecilia"
+    },
+    "distribution": "Northern South America; widespread captive-bred strains",
+    "aliases": [
+      "孔雀鱼",
+      "孔雀",
+      "guppies"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "livebearer"
+    ],
+    "primary_colors": [
+      "mixed"
+    ],
+    "size_class": "medium",
+    "reproduction_mode": "livebearing",
+    "social_pattern": [
+      "colony"
+    ],
+    "body_shape_tags": [
+      "slender"
+    ]
+  },
+  {
+    "id": "betta-splendens",
+    "organism_type": "fish",
+    "scientific_name": "Betta splendens",
+    "taxonomy": {
+      "family": "Osphronemidae",
+      "genus": "Betta"
+    },
+    "distribution": "Mainland Southeast Asia; widespread captive-bred strains",
+    "aliases": [
+      "斗鱼",
+      "暹罗斗鱼",
+      "泰国斗鱼",
+      "Siamese fighting fish"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "betta",
+      "gourami"
+    ],
+    "primary_colors": [
+      "mixed"
+    ],
+    "size_class": "medium",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "solitary_tendency"
+    ],
+    "body_shape_tags": [
+      "laterally_compressed"
+    ]
+  },
+  {
+    "id": "zebra-danio",
+    "organism_type": "fish",
+    "scientific_name": "Danio rerio",
+    "taxonomy": {
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "distribution": "South Asia",
+    "aliases": [
+      "斑马鱼",
+      "斑马",
+      "zebrafish"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "danio"
+    ],
+    "primary_colors": [
+      "blue",
+      "silver"
+    ],
+    "size_class": "medium",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "schooling"
+    ],
+    "body_shape_tags": [
+      "slender"
+    ]
+  },
+  {
+    "id": "bristlenose-pleco",
+    "organism_type": "fish",
+    "scientific_name": "Ancistrus sp.",
+    "taxonomy": {
+      "family": "Loricariidae",
+      "genus": "Ancistrus"
+    },
+    "distribution": "Captive-bred Ancistrus forms of South American origin",
+    "aliases": [
+      "胡子异型",
+      "胡子鱼",
+      "胡子",
+      "bristlenose catfish"
+    ],
+    "status": "published",
+    "content_confidence": "medium",
+    "category_tags": [
+      "pleco",
+      "catfish"
+    ],
+    "primary_colors": [
+      "brown",
+      "black"
+    ],
+    "size_class": "large",
+    "reproduction_mode": "egg_laying",
+    "social_pattern": [
+      "solitary_tendency"
+    ],
+    "body_shape_tags": [
+      "elongated"
+    ]
+  }
+]

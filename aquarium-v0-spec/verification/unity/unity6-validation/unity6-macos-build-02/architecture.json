@@ -1,0 +1,18 @@
+{
+  "bundleExecutable": "Aquarium Journal",
+  "fontAssetSha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "binaries": [
+    {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/MacOS/Aquarium Journal",
+      "sha256": "b75b6de70fdf8bccf846caace1e22121e3ec12f6f460d676d5d79da1a43169df",
+      "file": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/MacOS/Aquarium Journal: Mach-O 64-bit executable arm64",
+      "architectures": "arm64"
+    },
+    {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/UnityPlayer.dylib",
+      "sha256": "8c7eafe53b5e2ffd69b583b6c9925cee2bbe035a708488a66f77b39f706b32f0",
+      "file": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app/Contents/Frameworks/UnityPlayer.dylib: Mach-O 64-bit dynamically linked shared library arm64",
+      "architectures": "arm64"
+    }
+  ]
+}

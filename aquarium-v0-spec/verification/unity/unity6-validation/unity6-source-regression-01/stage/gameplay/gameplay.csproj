@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework>
+    <LangVersion>7.3</LangVersion><ImplicitUsings>disable</ImplicitUsings><Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/AquariumWorld.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Compatibility/CompatibilityEvaluator.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Compatibility/CompatibilityModels.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Configuration/CatalogFactory.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Configuration/RuntimeCatalog.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Ecology/EcologyEngine.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Ecology/EcologyModels.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Ecology/LivingReserveLedger.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplayLayoutCommands.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplayModels.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySession.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/LayoutGeometry.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/MathTypes.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Profiles.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/AtomicSaveStore.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/GameSession.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/SessionModels.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/State.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/UnityAdapter/DemoLocalization.cs" />
+    <Compile Include="/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/gameplay-checks/Program.cs" />
+  </ItemGroup>
+</Project>

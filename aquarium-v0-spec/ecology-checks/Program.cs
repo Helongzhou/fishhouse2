@@ -1,0 +1,190 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Text;
+using Aquarium.Core;
+using Aquarium.Core.Ecology;
+
+internal static class Program
+{
+    private static int checks;
+    private static void Check(bool condition, string name) { if (!condition) throw new Exception(name); checks++; }
+    private static void Near(double actual, double expected, string name, double tolerance = 1e-7) { Check(Math.Abs(actual - expected) <= tolerance, name + ": " + actual + " != " + expected); }
+    private static void Reject(Action action, string name)
+    { bool rejected = false; try { action(); } catch (ArgumentException) { rejected = true; } catch (InvalidOperationException) { rejected = true; } Check(rejected, name); }
+    private static void Balance(EcologyEngine e, string name)
+    { Near(e.State.TotalMgN, e.Audit.CumulativeInputMgN - e.Audit.CumulativeOutputMgN, name, 1e-6); EcologyEngine.Restore(e.Capture()); }
+    private static EcologyEngine Mature()
+    { var e = new EcologyEngine(); e.BeginFishlessChallenge(0); e.AdvanceGameDays(7); Check(e.Challenge.Status == FishlessChallengeStatus.Passed, "nonzero challenge passes with processing and window"); return e; }
+    public static int Main()
+    {
+        var empty = new EcologyEngine(); empty.AdvanceGameDays(7);
+        Check(empty.Challenge.Status == FishlessChallengeStatus.NotStarted, "empty zeros never pass"); Balance(empty, "empty seven days");
+        var e = Mature(); Near(e.Challenge.DoseMgN, 27, "default challenge dose");
+        Check(e.Challenge.OxidizedTanMgN >= 24.3 && e.Challenge.OxidizedNitriteMgN >= 24.3, "both oxidation stages proven");
+        Check(e.Challenge.StableGameHours >= 24 - 1e-7, "continuous challenge window"); Balance(e, "challenge conserved");
+        Reject(() => new EcologyEngine().BeginFishlessChallenge(1), "fish not challenge probes");
+        foreach (string operation in new[] { "input", "transfer", "remove", "water" }) {
+            var challenge = new EcologyEngine(); challenge.BeginFishlessChallenge(0);
+            if (operation == "input") challenge.AddNitrogen(NitrogenPool.Organic, 1, "extra");
+            if (operation == "transfer") challenge.TransferNitrogen(NitrogenPool.Tan, NitrogenPool.Nitrate, 1, "bypass");
+            if (operation == "remove") challenge.RemoveNitrogen(NitrogenPool.Tan, 1, "siphon");
+            if (operation == "water") challenge.ChangeWater(27, new WaterComposition());
+            Check(challenge.Challenge.Status == FishlessChallengeStatus.Invalidated, operation + " invalidates active challenge");
+            challenge.AdvanceGameDays(7); Check(challenge.Challenge.Status != FishlessChallengeStatus.Passed, "invalidated challenge never silently passes"); Balance(challenge, operation + " balance");
+        }
+        var retry = new EcologyEngine(); retry.BeginFishlessChallenge(0); retry.ChangeWater(27, new WaterComposition());
+        retry.ChangeWater(54, new WaterComposition()); retry.BeginFishlessChallenge(0); retry.AdvanceGameDays(7);
+        Check(retry.Challenge.Status == FishlessChallengeStatus.Passed, "fully drained invalidated challenge can restart"); Balance(retry, "drain retry balance");
+        retry = new EcologyEngine(); retry.BeginFishlessChallenge(0); retry.AddNitrogen(NitrogenPool.Tan, 1, "invalidating-input");
+        retry.AdvanceGameDays(7); retry.BeginFishlessChallenge(0); retry.AdvanceGameDays(7);
+        Check(retry.Challenge.Status == FishlessChallengeStatus.Passed, "waiting for processed residues permits challenge retry"); Balance(retry, "wait retry balance");
+        var water = new EcologyEngine(); water.AddNitrogen(NitrogenPool.Tan, 54, "fixture"); water.AddNitrogen(NitrogenPool.Food, 10, "solid-food");
+        water.ChangeWater(27, new WaterComposition { TanMgNPerLiter = .2, NitrateMgNPerLiter = 1 });
+        Near(water.State.TanMgN, 32.4, "drain old mass then replacement input"); Near(water.State.NitrateMgN, 27, "new water contains nitrate");
+        Near(water.State.FoodMgN, 10, "water change does not remove solid portions"); Near(water.Audit.CumulativeOutputMgN, 27, "drained mass audit"); Balance(water, "water balance");
+        var feed = new EcologyEngine(); feed.AddNitrogen(NitrogenPool.Food, 30, "meal");
+        feed.TransferNitrogen(NitrogenPool.Food, NitrogenPool.Living, 20, "consumed"); feed.TransferNitrogen(NitrogenPool.Food, NitrogenPool.Organic, 10, "expired");
+        feed.SetFilterEnabled(false); feed.AdvanceGameDays(1);
+        Near(feed.State.LivingMgN, 20 * Math.Exp(-.35), "stored ingestion metabolism uses ecological days", 1e-6);
+        Near(feed.State.OrganicMgN, 10 * Math.Exp(-.65), "organic decay uses ecological days", 1e-6);
+        Check(feed.State.TanMgN > 0 && feed.State.NitrateMgN == 0, "filter stop retains TAN"); Balance(feed, "feeding conserved");
+        feed.SetFilterEnabled(true); feed.AdvanceGameDays(6); Check(feed.State.NitrateMgN > 0, "restored filter processes backlog"); Balance(feed, "filter recovery seven days");
+        foreach (double load in new[] { .5, 500.0 }) {
+            var loadWorld = new EcologyEngine(); loadWorld.AddNitrogen(NitrogenPool.Organic, load, "load-fixture"); loadWorld.AdvanceGameDays(7); Balance(loadWorld, "seven-day load " + load);
+        }
+        var plant = new EcologyEngine(new EcologyParameters { PlantUptakeMgNPerDay = 2 }); plant.AddNitrogen(NitrogenPool.Nitrate, 10, "plant-fixture"); plant.AdvanceGameDays(2);
+        Near(plant.State.PlantMgN, 4, "plants store nitrogen rather than delete"); Balance(plant, "plant balance");
+        var stopped = new EcologyEngine(); stopped.BeginFishlessChallenge(0); stopped.AdvanceGameDays(5); stopped.SetFilterEnabled(false);
+        Near(stopped.Challenge.StableGameHours, 0, "filter off resets continuous window"); stopped.AdvanceGameDays(2);
+        Check(stopped.Challenge.Status != FishlessChallengeStatus.Passed, "filter off cannot pass"); stopped.SetFilterEnabled(true); stopped.AdvanceGameDays(2);
+        Check(stopped.Challenge.Status == FishlessChallengeStatus.Passed, "restart obtains a new continuous window");
+        e.BeginTrialObservation(8); e.AdvanceGameDays(.5); Check(e.TrialObservation.Status == TrialObservationStatus.Observing, "half day cannot pass trial");
+        e.AddNitrogen(NitrogenPool.Tan, 54, "trial-overfeed"); Near(e.TrialObservation.StableGameHours, 0, "unsafe chemistry resets trial");
+        e.SetFilterEnabled(false); e.AdvanceGameDays(1); Check(e.TrialObservation.Status == TrialObservationStatus.Observing, "unsafe trial cannot pass");
+        e.SetFilterEnabled(true); e.AdvanceGameDays(7); Check(e.TrialObservation.Status == TrialObservationStatus.Passed, "stable stocked observation eventually passes"); Balance(e, "trial balance");
+        var waterTrial = Mature(); waterTrial.BeginTrialObservation(8); waterTrial.AdvanceGameDays(.5);
+        Check(waterTrial.TrialObservation.StableGameHours > 11.9, "trial accrued a window before exchange");
+        waterTrial.ChangeWater(27, new WaterComposition()); Near(waterTrial.TrialObservation.StableGameHours, 0, "water exchange resets stocked window");
+        waterTrial.AdvanceGameDays(23.0 / 24); Check(waterTrial.TrialObservation.Status == TrialObservationStatus.Observing, "old trial time not reused after exchange");
+        waterTrial.AdvanceGameDays(1.0 / 24); Check(waterTrial.TrialObservation.Status == TrialObservationStatus.Passed, "new complete window after exchange passes");
+        var noFood = new EcologyEngine(); noFood.AdvanceGameDays(30); Near(noFood.State.TotalMgN, 0, "fasting without ingested reserve creates no nitrogen");
+        var baseClock = new EcologyEngine(); baseClock.AddNitrogen(NitrogenPool.Organic, 40, "rate-fixture");
+        var clockResults = new List<EcologySnapshot>();
+        foreach (double rate in new[] { 1.0, 2.0, 4.0 }) {
+            var clock = EcologyEngine.Restore(baseClock.Capture());
+            // Same seven ecological days, driven by different counts of real-second frames.
+            int realSeconds = (int)(7 * 480 / rate);
+            for (int s = 0; s < realSeconds; s++) clock.AdvanceGameDays(rate / 480);
+            clockResults.Add(clock.Capture()); Balance(clock, "rate " + rate);
+        }
+        foreach (var result in clockResults) {
+            Near(result.State.TanMgN, clockResults[0].State.TanMgN, "same ecology time TAN");
+            Near(result.State.NitriteMgN, clockResults[0].State.NitriteMgN, "same ecology time nitrite");
+            Near(result.State.NitrateMgN, clockResults[0].State.NitrateMgN, "same ecology time nitrate");
+            Near(result.TanCapacityMgNPerDay, clockResults[0].TanCapacityMgNPerDay, "same ecology time capacity");
+        }
+        var continuous = new EcologyEngine(); continuous.BeginFishlessChallenge(0); continuous.AdvanceGameDays(2.123456);
+        var restored = EcologyEngine.Restore(continuous.Capture()); continuous.AdvanceGameDays(4); restored.AdvanceGameDays(4);
+        Near(restored.State.NitrateMgN, continuous.State.NitrateMgN, "save resume chemistry"); Near(restored.Challenge.StableGameHours, continuous.Challenge.StableGameHours, "save resume window");
+        Check(restored.Capture().RecentLedger.Length <= 256, "bounded ledger");
+        foreach (Action<EcologySnapshot> corrupt in new Action<EcologySnapshot>[] {
+            s => s.State.TanMgN = double.NaN, s => s.State.NitrateMgN += 1,
+            s => s.Audit.TransferMgN[0] = -1, s => s.TanCapacityMgNPerDay = -1,
+            s => s.RecentLedger[0].Sequence++, s => s.FixedAccumulatorGameDays = 1,
+            s => s.Challenge.DoseMgN = 0, s => s.Challenge.StableGameHours = 10000,
+            s => s.Challenge.OxidizedNitriteMgN = 10000 }) {
+            var broken = restored.Capture(); corrupt(broken); Reject(() => EcologyEngine.Restore(broken), "reject corrupted ecology save");
+        }
+        var invalid = new EcologyEngine(); invalid.BeginFishlessChallenge(0); double before = invalid.State.TotalMgN;
+        Reject(() => invalid.AddNitrogen(NitrogenPool.Tan, double.NaN, "bad"), "reject NaN input");
+        Reject(() => invalid.TransferNitrogen(NitrogenPool.Tan, NitrogenPool.Nitrate, 1000, "bad"), "reject excessive transfer");
+        Reject(() => invalid.ChangeWater(55, new WaterComposition()), "reject excessive exchange");
+        Reject(() => invalid.ChangeWater(20, new WaterComposition { NitrateMgNPerLiter = double.PositiveInfinity }), "reject bad incoming water");
+        Reject(() => invalid.AdvanceGameDays(-1), "reject reversed time"); Near(invalid.State.TotalMgN, before, "rejected operations do not mutate mass");
+        Check(invalid.Challenge.Status == FishlessChallengeStatus.Processing, "rejected operations do not invalidate challenge");
+        FoodEvents();
+        LivingReserves();
+        WriteCurves();
+        Console.WriteLine("Ecology checks passed: " + checks + ". Pure C#/.NET only; Unity import, Play and builds remain unverified.");
+        return 0;
+    }
+    private static void LivingReserves()
+    {
+        var e = new EcologyEngine(); var reserve = new LivingReserveLedger();
+        foreach (var meal in new[] { new LivingReserveEntry { EntityId = "fish-a", MgN = 2 }, new LivingReserveEntry { EntityId = "fish-b", MgN = 3 }, new LivingReserveEntry { EntityId = "fish-a", MgN = 4 } }) {
+            e.AddNitrogen(NitrogenPool.Food, meal.MgN, "meal"); e.TransferNitrogen(NitrogenPool.Food, NitrogenPool.Living, meal.MgN, "ingested");
+            reserve.Record(meal.EntityId, meal.MgN); Near(reserve.TotalMgN, e.State.LivingMgN, "split meals keep ownership total");
+        }
+        e.AdvanceGameDays(2); reserve.Reconcile(e.State.LivingMgN);
+        var snapshot = reserve.Capture(); Near(snapshot.Entries[0].MgN, 6 * Math.Exp(-.7), "individual reserve follows ecological metabolism", 1e-6);
+        Near(snapshot.Entries[1].MgN, 3 * Math.Exp(-.7), "second reserve follows same decay", 1e-6);
+        var restored = LivingReserveLedger.Restore(snapshot, e.State.LivingMgN);
+        snapshot.Entries[0].MgN = 900; Near(restored.TotalMgN, e.State.LivingMgN, "reserve snapshots isolate ownership state");
+        double sold = restored.Remove("fish-a"); e.RemoveNitrogen(NitrogenPool.Living, sold, "sold:fish-a");
+        Near(restored.TotalMgN, e.State.LivingMgN, "sold ingested reserve leaves tank"); Near(e.Audit.CumulativeOutputMgN, sold, "sale nitrogen included in cumulative output");
+        e.AdvanceGameDays(1); restored.Reconcile(e.State.LivingMgN); Near(restored.TotalMgN, e.State.LivingMgN, "remaining animal continues metabolism");
+        sold = restored.Remove("fish-b"); e.RemoveNitrogen(NitrogenPool.Living, sold, "sold:fish-b");
+        Near(restored.TotalMgN, 0, "all sold reserve ownership empty"); Near(e.State.LivingMgN, 0, "all sold reserves exported"); Balance(e, "sold animal nitrogen balance");
+        Near(restored.Remove("never-fed"), 0, "unfed animal has no reserve output");
+        Reject(() => restored.Reconcile(1), "unowned reserve growth rejected"); Reject(() => restored.Record("fish", double.NaN), "bad ingestion rejected");
+        reserve.Reconcile(0); Near(reserve.TotalMgN, 0, "zero reserve clears ownership");
+        var duplicate = new LivingReserveSnapshot { Entries = new[] { new LivingReserveEntry { EntityId = "fish", MgN = 1 }, new LivingReserveEntry { EntityId = "fish", MgN = 1 } } };
+        Reject(() => LivingReserveLedger.Restore(duplicate, 2), "duplicate reserve owner rejected");
+        Reject(() => LivingReserveLedger.Restore(new LivingReserveSnapshot(), 1), "reserve ecology mismatch rejected");
+    }
+    private static void WriteCurves()
+    {
+        var csv = new StringBuilder("scenario,game_day,food_mgN,organic_mgN,living_reserve_mgN,TAN_mgN_L,nitrite_mgN_L,nitrate_mgN_L,total_mgN,input_mgN,output_mgN,balance_error_mgN,tan_capacity_mgN_day,nitrite_capacity_mgN_day,filter_on,challenge\n");
+        foreach (string scenario in new[] { "empty", "low_load", "high_load", "fishless_challenge", "filter_stop_restore", "overfeed_water_exchange" }) {
+            var e = new EcologyEngine();
+            if (scenario == "fishless_challenge") e.BeginFishlessChallenge(0);
+            if (scenario == "low_load") e.AddNitrogen(NitrogenPool.Organic, .5, scenario);
+            if (scenario == "high_load") e.AddNitrogen(NitrogenPool.Organic, 500, scenario);
+            if (scenario == "filter_stop_restore" || scenario == "overfeed_water_exchange") e.AddNitrogen(NitrogenPool.Organic, 40, scenario);
+            for (int sample = 0; sample <= 28; sample++) {
+                if (scenario == "filter_stop_restore" && sample == 8) e.SetFilterEnabled(false);
+                if (scenario == "filter_stop_restore" && sample == 16) e.SetFilterEnabled(true);
+                if (scenario == "overfeed_water_exchange" && sample == 8) e.AddNitrogen(NitrogenPool.Organic, 200, "overfeed");
+                if (scenario == "overfeed_water_exchange" && sample == 16) e.ChangeWater(27, new WaterComposition { NitrateMgNPerLiter = .1 });
+                var s = e.State; var a = e.Audit;
+                double[] values = { e.GameDays, s.FoodMgN, s.OrganicMgN, s.LivingMgN, e.TanMgNPerLiter, e.NitriteMgNPerLiter,
+                    e.NitrateMgNPerLiter, s.TotalMgN, a.CumulativeInputMgN, a.CumulativeOutputMgN,
+                    s.TotalMgN - a.CumulativeInputMgN + a.CumulativeOutputMgN, e.TanCapacityMgNPerDay, e.NitriteCapacityMgNPerDay };
+                csv.Append(scenario);
+                foreach (double v in values) csv.Append(',').Append(v.ToString("G17", CultureInfo.InvariantCulture));
+                csv.Append(',').Append(e.FilterEnabled ? "true" : "false").Append(',').Append(e.Challenge.Status).Append('\n');
+                Balance(e, "curve mass " + scenario + " " + sample);
+                if (sample < 28) e.AdvanceGameDays(.25);
+            }
+        }
+        string directory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../results"));
+        Directory.CreateDirectory(directory); File.WriteAllText(Path.Combine(directory, "regression-curves.csv"), csv.ToString());
+    }
+    private static void FoodEvents()
+    {
+        var tank = new TankBounds(); var w = new AquariumWorld(tank); long removedId = 0; int removedPortions = 0; string reason = null;
+        w.FoodRemoved += (id, portions, why) => { removedId = id; removedPortions += portions; reason = why; };
+        long source = w.Feed(new Vec3(0, .1, 0), 12); w.Advance(36);
+        Check(removedId == source && removedPortions == 12 && reason == "expired", "expiry reports original source and remaining portions");
+        var restored = AquariumWorld.Restore(w.Capture(), tank, new Dictionary<string, SpeciesProfile>()); Check(restored.Capture().SchemaVersion == 2, "food events preserve schema two");
+        w = new AquariumWorld(tank); removedId = 0; removedPortions = 0;
+        w.FoodRemoved += (id, portions, why) => { removedId = id; removedPortions += portions; reason = why; };
+        source = w.Feed(new Vec3(0, .1, 0), 3); for (int i = 0; i < 64; i++) w.ApproachGlass(new Vec3());
+        Check(removedId == source && removedPortions == 3 && reason == "capacity_evicted", "capacity eviction reports remaining food");
+        var profile = DemoProfiles.CommunityFish(); w = new AquariumWorld(tank); w.AddAgent(profile, "eater", 77);
+        var snapshot = w.Capture(); var a = snapshot.Agents[0]; a.Position = new Vec3(0, .1, 0); a.Target = a.Position;
+        a.Action = ActionKind.SeekFood; a.MinActionRemaining = 100; a.NextDecision = 100; a.Hunger = 1;
+        w = AquariumWorld.Restore(snapshot, tank, new Dictionary<string, SpeciesProfile> { { profile.Id, profile } });
+        long eatenId = 0; int eaten = 0; string eater = null;
+        w.FoodConsumed += (id, entity, portions) => { eatenId = id; eater = entity; eaten += portions; };
+        source = w.Feed(a.Position, 1); w.Advance(AquariumWorld.FixedStep);
+        Check(eatenId == source && eaten == 1 && eater == "eater", "consumption reports source entity and exact portions");
+        Check(w.Stimuli.Count == 0, "consumed food removed once");
+        var ec = new EcologyEngine(); ec.AddNitrogen(NitrogenPool.Food, 1, "food-1");
+        var physical = new AquariumWorld(tank); physical.FoodRemoved += (id, portions, why) => ec.TransferNitrogen(NitrogenPool.Food, NitrogenPool.Organic, portions, id.ToString());
+        physical.Feed(new Vec3(0, .1, 0), 1); physical.Advance(36);
+        Near(ec.State.FoodMgN, 0, "event integration clears available food"); Near(ec.State.OrganicMgN, 1, "event integration preserves expired nitrogen"); Balance(ec, "food event balance");
+    }
+}

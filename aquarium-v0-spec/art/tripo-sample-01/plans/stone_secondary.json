@@ -1,0 +1,38 @@
+{
+  "exit_code": 0,
+  "result": {
+    "dry_run": true,
+    "valid": true,
+    "input": "One isolated low asymmetric aquarium wedge stone, charcoal gray layered rock matching a ridge-stone family, broad stable base and sloping top, softened eroded edges, sparse shallow creases, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+    "model": "P2-20260801",
+    "model_reason": "explicit --model",
+    "steps": [
+      {
+        "name": "text-to-model",
+        "endpoint": "/v3/generation/text-to-model",
+        "task_type": "text_to_model",
+        "payload": {
+          "prompt": "One isolated low asymmetric aquarium wedge stone, charcoal gray layered rock matching a ridge-stone family, broad stable base and sloping top, softened eroded edges, sparse shallow creases, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+          "texture": true,
+          "pbr": false,
+          "texture_quality": "standard",
+          "face_limit": 4000,
+          "model": "P2-20260801"
+        }
+      }
+    ],
+    "pending_uploads": [],
+    "deliverables": [
+      "GLB"
+    ],
+    "candidates": 1,
+    "warnings": [],
+    "errors": [],
+    "generation_credits_estimate": 110,
+    "cost_notes": [
+      "estimated generation cost: 110 credits (official list price)"
+    ]
+  },
+  "stdout": "{\"dry_run\":true,\"valid\":true,\"input\":\"One isolated low asymmetric aquarium wedge stone, charcoal gray layered rock matching a ridge-stone family, broad stable base and sloping top, softened eroded edges, sparse shallow creases, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.\",\"model\":\"P2-20260801\",\"model_reason\":\"explicit --model\",\"steps\":[{\"name\":\"text-to-model\",\"endpoint\":\"/v3/generation/text-to-model\",\"task_type\":\"text_to_model\",\"payload\":{\"prompt\":\"One isolated low asymmetric aquarium wedge stone, charcoal gray layered rock matching a ridge-stone family, broad stable base and sloping top, softened eroded edges, sparse shallow creases, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.\",\"texture\":true,\"pbr\":false,\"texture_quality\":\"standard\",\"face_limit\":4000,\"model\":\"P2-20260801\"}}],\"pending_uploads\":[],\"deliverables\":[\"GLB\"],\"candidates\":1,\"warnings\":[],\"errors\":[],\"generation_credits_estimate\":110,\"cost_notes\":[\"estimated generation cost: 110 credits (official list price)\"]}\n",
+  "stderr": ""
+}

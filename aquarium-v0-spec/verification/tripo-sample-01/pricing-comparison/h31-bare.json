@@ -1,0 +1,56 @@
+{
+  "argv": [
+    "make",
+    "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+    "--model",
+    "H3.1",
+    "-n",
+    "1",
+    "-p",
+    "texture=false",
+    "-p",
+    "pbr=false",
+    "-p",
+    "texture_quality=standard",
+    "-p",
+    "face_limit=5000",
+    "--dry-run",
+    "--json"
+  ],
+  "exit_code": 0,
+  "result": {
+    "dry_run": true,
+    "valid": true,
+    "input": "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+    "model": "v3.1-20260211",
+    "model_reason": "explicit --model",
+    "steps": [
+      {
+        "name": "text-to-model",
+        "endpoint": "/v3/generation/text-to-model",
+        "task_type": "text_to_model",
+        "payload": {
+          "prompt": "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+          "texture": false,
+          "pbr": false,
+          "texture_quality": "standard",
+          "face_limit": 5000,
+          "model": "v3.1-20260211"
+        }
+      }
+    ],
+    "pending_uploads": [],
+    "deliverables": [
+      "GLB"
+    ],
+    "candidates": 1,
+    "warnings": [],
+    "errors": [],
+    "generation_credits_estimate": 10,
+    "cost_notes": [
+      "estimated generation cost: 10 credits (official list price)",
+      "bare geometry: no texture credits"
+    ]
+  },
+  "stderr": ""
+}

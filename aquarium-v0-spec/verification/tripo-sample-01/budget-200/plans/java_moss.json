@@ -1,0 +1,62 @@
+{
+  "asset_id": "java_moss",
+  "argv": [
+    "tripo",
+    "make",
+    "One isolated mature submerged Taxiphyllum barbieri 'Bogor Moss' patch, irregular branching fine green stems densely covered in tiny alternating pointed leaves, loose airy tuft with readable gaps, low attached-growth silhouette but no support object, no rhizome and no broad vascular leaves. Relaxed untensioned growth pose. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+    "--model",
+    "H3.1",
+    "-n",
+    "1",
+    "-p",
+    "texture=true",
+    "-p",
+    "pbr=false",
+    "-p",
+    "texture_quality=standard",
+    "-p",
+    "face_limit=9000",
+    "--dry-run",
+    "--json"
+  ],
+  "environment_metadata": {
+    "TRIPO_CLIENT_APP": "codex"
+  },
+  "exit_code": 0,
+  "result": {
+    "dry_run": true,
+    "valid": true,
+    "input": "One isolated mature submerged Taxiphyllum barbieri 'Bogor Moss' patch, irregular branching fine green stems densely covered in tiny alternating pointed leaves, loose airy tuft with readable gaps, low attached-growth silhouette but no support object, no rhizome and no broad vascular leaves. Relaxed untensioned growth pose. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+    "model": "v3.1-20260211",
+    "model_reason": "explicit --model",
+    "steps": [
+      {
+        "name": "text-to-model",
+        "endpoint": "/v3/generation/text-to-model",
+        "task_type": "text_to_model",
+        "payload": {
+          "prompt": "One isolated mature submerged Taxiphyllum barbieri 'Bogor Moss' patch, irregular branching fine green stems densely covered in tiny alternating pointed leaves, loose airy tuft with readable gaps, low attached-growth silhouette but no support object, no rhizome and no broad vascular leaves. Relaxed untensioned growth pose. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+          "texture": true,
+          "pbr": false,
+          "texture_quality": "standard",
+          "face_limit": 9000,
+          "model": "v3.1-20260211"
+        }
+      }
+    ],
+    "pending_uploads": [],
+    "deliverables": [
+      "GLB"
+    ],
+    "candidates": 1,
+    "warnings": [],
+    "errors": [],
+    "generation_credits_estimate": 20,
+    "cost_notes": [
+      "estimated generation cost: 20 credits (official list price)"
+    ]
+  },
+  "stdout": "{\"dry_run\":true,\"valid\":true,\"input\":\"One isolated mature submerged Taxiphyllum barbieri 'Bogor Moss' patch, irregular branching fine green stems densely covered in tiny alternating pointed leaves, loose airy tuft with readable gaps, low attached-growth silhouette but no support object, no rhizome and no broad vascular leaves. Relaxed untensioned growth pose. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.\",\"model\":\"v3.1-20260211\",\"model_reason\":\"explicit --model\",\"steps\":[{\"name\":\"text-to-model\",\"endpoint\":\"/v3/generation/text-to-model\",\"task_type\":\"text_to_model\",\"payload\":{\"prompt\":\"One isolated mature submerged Taxiphyllum barbieri 'Bogor Moss' patch, irregular branching fine green stems densely covered in tiny alternating pointed leaves, loose airy tuft with readable gaps, low attached-growth silhouette but no support object, no rhizome and no broad vascular leaves. Relaxed untensioned growth pose. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.\",\"texture\":true,\"pbr\":false,\"texture_quality\":\"standard\",\"face_limit\":9000,\"model\":\"v3.1-20260211\"}}],\"pending_uploads\":[],\"deliverables\":[\"GLB\"],\"candidates\":1,\"warnings\":[],\"errors\":[],\"generation_credits_estimate\":20,\"cost_notes\":[\"estimated generation cost: 20 credits (official list price)\"]}\n",
+  "stderr": "",
+  "paid_tasks_submitted": 0
+}

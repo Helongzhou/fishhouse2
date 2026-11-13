@@ -1,0 +1,18 @@
+{
+  "aquarium-session-v1.json": {
+    "existed": true,
+    "sha256": "523cb867ae4b53d73cad4cb5498e0fda6abbad80c988cff5785f0124cc19807a"
+  },
+  "aquarium-session-v1.json.bak1": {
+    "existed": false
+  },
+  "aquarium-session-v1.json.bak2": {
+    "existed": false
+  },
+  "aquarium-session-v1.json.bak3": {
+    "existed": false
+  },
+  "aquarium-session-v1.json.tmp": {
+    "existed": false
+  }
+}

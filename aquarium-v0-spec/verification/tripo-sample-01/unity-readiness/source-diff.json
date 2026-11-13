@@ -1,0 +1,12 @@
+{
+  "modified": [],
+  "deleted": [],
+  "added": [
+    "unity6-validation/Assets/_TripoSample.meta",
+    "unity6-validation/Assets/_TripoSample/Editor.meta",
+    "unity6-validation/Assets/_TripoSample/Editor/TripoSampleReadiness.cs.meta",
+    "unity6-validation/Assets/_TripoSample/Editor/Aquarium.TripoSample.Editor.asmdef",
+    "unity6-validation/Assets/_TripoSample/Editor/TripoSampleReadiness.cs",
+    "unity6-validation/Assets/_TripoSample/Editor/Aquarium.TripoSample.Editor.asmdef.meta"
+  ]
+}

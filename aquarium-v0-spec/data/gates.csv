@@ -1,0 +1,7 @@
+﻿gate_id,content_status,prerequisite_gate_id,event_key,requires_wet_tank,min_stable_game_hours,condition_contract_status,notes
+gate_setup,shipping,none,layout_confirmed,false,0,defined,底砂主石辅石三草齐全；首次确认前全额退款
+gate_filled,shipping,gate_setup,fill_complete,true,0,defined,注水完成；此后游戏日才推进
+gate_cycle,shipping,gate_filled,cycle_challenge_passed,true,24,pending_simulation_contract,无鱼非零氮源挑战后稳定通过；不得靠空缸双零或活鱼验证水体毒性；阈值由主方案整合
+gate_trial,shipping,gate_cycle,trial_pack_introduced,true,0,defined,无鱼氮源挑战通过后放入8尾火焰灯作首批适应观察；失败免费恢复快照
+gate_mainfish,shipping,gate_trial,trial_observation_passed,true,24,pending_simulation_contract,首批火焰灯适应观察通过；连续稳定阈值由主方案整合
+gate_complete,shipping,gate_mainfish,mainfish_pack_introduced,true,0,defined,主养套装入缸；进入长期观察

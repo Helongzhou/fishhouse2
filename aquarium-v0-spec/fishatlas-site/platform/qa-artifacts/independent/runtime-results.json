@@ -1,0 +1,17 @@
+{
+  "runtime": "production",
+  "pid": 22656,
+  "releaseId": "r-1793947213469-5b5275e195",
+  "mediaId": 1,
+  "filename": "qa-runtime-probe-69435447-a9f8-4c36-893d-ae0847ab4b89.png",
+  "status": "placeholder",
+  "boundToEntity": false,
+  "sourceFile": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/fishatlas-site/platform/media/qa-runtime-probe-69435447-a9f8-4c36-893d-ae0847ab4b89.png",
+  "destination": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/fishatlas-site/platform/public/media/releases/d6790e423b665410d0d834f2d9d74e502d4c4885f2da1b6f73f950b2c0025cd7.png",
+  "frozenURL": "/media/releases/d6790e423b665410d0d834f2d9d74e502d4c4885f2da1b6f73f950b2c0025cd7.png",
+  "sha256": "d6790e423b665410d0d834f2d9d74e502d4c4885f2da1b6f73f950b2c0025cd7",
+  "headStatus": 200,
+  "getStatus": 200,
+  "httpSha256": "d6790e423b665410d0d834f2d9d74e502d4c4885f2da1b6f73f950b2c0025cd7",
+  "activeUnchanged": true
+}

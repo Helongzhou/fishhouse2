@@ -1,0 +1,33 @@
+{
+  "time": "2026-11-06T06:24:07.640Z",
+  "release": "r-1793945868339-734497e70a",
+  "tests": [
+    {
+      "name": "40 nodes import/render/both projections/save",
+      "status": "PASS",
+      "observedMs": 950
+    },
+    {
+      "name": "40 objects pointer drag 30 seconds",
+      "status": "PASS",
+      "count": 1802,
+      "p95": 16.700000000000728,
+      "max": 16.80000000000291,
+      "limitation": "Development server, headless installed desktop Chrome; no physical phone or production trace"
+    },
+    {
+      "name": "200 nodes import/render/both projections/save",
+      "status": "PASS",
+      "observedMs": 985
+    },
+    {
+      "name": "300 nodes import/render/both projections/save",
+      "status": "PASS",
+      "observedMs": 952
+    },
+    {
+      "name": "300-node export/reload conservation",
+      "status": "PASS"
+    }
+  ]
+}

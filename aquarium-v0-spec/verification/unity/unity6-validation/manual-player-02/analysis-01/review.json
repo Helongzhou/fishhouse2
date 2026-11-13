@@ -1,0 +1,85 @@
+{
+  "state_verdict": "passed",
+  "physical_review_basis": "Coordinator-provided input timeline plus direct review of the four recorded screenshots. No new input was supplied by the analyst.",
+  "pause_bytes_identical": true,
+  "restore_comparison": {
+    "strict_values": 2258,
+    "decimal_values": 1433,
+    "nonzero_decimal_differences": 80,
+    "strict_types": {
+      "int": 1262,
+      "str": 827,
+      "bool": 169
+    },
+    "max_absolute_decimal_error": "4E-15",
+    "business_differences": 0,
+    "note": "Complete field sets and array order match. Only Decimal values use the approved codec bound; all integer/string/bool/null values compare exactly."
+  },
+  "feeding_interval": {
+    "elapsed_real_seconds": "42.1666666666283",
+    "new_external_food_input_mg_n": "1.44",
+    "consumed_portions_from_meal_counter": 13,
+    "food_to_living_delta_mg_n": "1.5600000000000006",
+    "food_to_organic_delta_mg_n": "1.3199999999999985",
+    "remaining_portions": 0,
+    "attribution": "Ingestion includes pre-existing food. LastFoodId records perception, not consumption; it does not assign all ingested nitrogen to the new F command."
+  },
+  "after_feeding": {
+    "coins": 90,
+    "species": {
+      "ember_tetra": 8,
+      "neocaridina_red": 6
+    },
+    "actions_by_kind": {
+      "fish": {
+        "Shoal": 3,
+        "Roam": 3,
+        "Forage": 2
+      },
+      "shrimp": {
+        "Graze": 4,
+        "Roam": 1,
+        "Forage": 1
+      },
+      "unknown": {}
+    },
+    "cumulative_behavior_counters": {
+      "Meals": 14,
+      "Startles": 10,
+      "GlassApproaches": 0,
+      "ProbeBursts": 0,
+      "GrazeDwells": 87,
+      "ActionChanges": 129
+    },
+    "living_mg_n": "1.5311985518550821",
+    "owned_living_reserves_mg_n": "1.53119855185508219"
+  },
+  "screenshots": [
+    {
+      "file": "09-light-on.png",
+      "observed": "Resume button (paused), Off light-action button (current light on), Coins90, Day5.51, Aquarium saved; English labels and long product names visibly complete."
+    },
+    {
+      "file": "10-fed.png",
+      "observed": "Resume, Off, Coins90, Day5.86; fish/shrimp positions changed from09; Aquarium saved; English."
+    },
+    {
+      "file": "11-unsaved-light-off.png",
+      "observed": "Pause button (running), On light-action button (current light off), darker tank, Coins90, Day5.87, Done; English."
+    },
+    {
+      "file": "12-restored.png",
+      "observed": "Resume (paused), Off (current light on), brighter tank, Coins90, Day5.86, Aquarium saved; fish/shrimp scene matches10; English."
+    }
+  ],
+  "not_claimed": [
+    "Chinese locale or mouse language-button acceptance",
+    "Every keyboard/mouse route",
+    "Whole-game visual quality or physical fish navigation"
+  ],
+  "report_sha256": "2b2cedd87cdfaa06b640cbc48bf06ba55e6ee7f1c8dc85ad567bc1613e1b4a37",
+  "executed_analyzer_copy": {
+    "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/analysis-01/executed-analyzer.py",
+    "sha256": "5074603a2eb70e8e8217a7f217286cce58a3a6b6614c38edefe7275af47ca0b6"
+  }
+}

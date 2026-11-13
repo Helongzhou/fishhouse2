@@ -1,0 +1,62 @@
+{
+    "status": "failed",
+    "mode": "editor-batch",
+    "projectPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "expectedUnityVersion": "6000.6.8f1",
+    "expectedUrpVersion": "17.6.0",
+    "unityVersion": "6000.6.8f1",
+    "urpVersion": "17.6.0",
+    "startedUtc": "2026-11-05T11:31:41.1936920Z",
+    "finishedUtc": "2026-11-05T11:31:43.4323020Z",
+    "failure": "System.ArgumentException: Invalid or inconsistent gameplay snapshot.\n  at Aquarium.Core.Gameplay.GameplaySession.ValidateSavedLayout (Aquarium.Core.Gameplay.GameplaySnapshot s, Aquarium.Core.Gameplay.LayoutState layout) [0x00047] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs:105 \n  at Aquarium.Core.Gameplay.GameplaySession.ValidateSnapshot (Aquarium.Core.Gameplay.GameplaySnapshot s) [0x00838] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs:83 \n  at Aquarium.Core.Gameplay.GameplaySession.Restore (Aquarium.Core.Gameplay.GameplaySnapshot snapshot, Aquarium.Core.Gameplay.GameplayCatalog catalog, Aquarium.Core.TankBounds tank) [0x00007] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs:25 \n  at Aquarium.Core.Session.GameSession.Restore (Aquarium.Core.Configuration.RuntimeCatalog catalog, Aquarium.Core.Session.SessionSnapshot snapshot, Aquarium.Core.Session.SessionMode mode) [0x00063] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/GameSession.cs:260 \n  at Aquarium.Validation.UnitySliceAcceptance.Decode (Aquarium.Core.Configuration.RuntimeCatalog catalog, System.String payload) [0x00000] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:113 \n  at Aquarium.Validation.UnitySliceAcceptance.ValidateJsonAndRoute (Aquarium.Core.Configuration.RuntimeCatalog catalog) [0x0000f] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:206 \n  at Aquarium.Validation.UnitySliceAcceptance.RunBatch () [0x00014] in /Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs:56 ",
+    "coverage": "Real Unity APIs and production domain/adapter calls. No human input, visual quality, Windows player, font-layout or Steam certification.",
+    "checks": [
+        {
+            "name": "Unity editor matches selected project's ProjectVersion",
+            "detail": "6000.6.8f1 expected; 6000.6.8f1 actual",
+            "passed": true
+        },
+        {
+            "name": "selected project freezes an exact URP version",
+            "detail": "17.6.0",
+            "passed": true
+        },
+        {
+            "name": "selected project's pinned URP package resolved",
+            "detail": "17.6.0 expected; 17.6.0 actual",
+            "passed": true
+        },
+        {
+            "name": "Prepare assigns actual URP graphics and quality pipelines",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "opaque and transparent shader materials import",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene imports with one real entry and no missing scripts",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene registered for builds",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "runtime resource imported",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "nine-table runtime configuration validates through JsonUtility",
+            "detail": "",
+            "passed": true
+        }
+    ],
+    "errors": [],
+    "warnings": []
+}

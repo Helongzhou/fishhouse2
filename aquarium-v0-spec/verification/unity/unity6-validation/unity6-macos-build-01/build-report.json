@@ -1,0 +1,19 @@
+{
+    "unityVersion": "6000.6.8f1",
+    "target": "StandaloneOSX",
+    "architecture": "ARM64",
+    "backend": "Mono2x",
+    "options": "None",
+    "outputPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app",
+    "result": "Succeeded",
+    "failure": "",
+    "totalErrors": 0,
+    "totalWarnings": 0,
+    "totalSizeBytes": 76685191,
+    "totalSeconds": 16.717302,
+    "messages": [
+        "Preprocess Player: Log: Default Volume Profile has been modified to ensure all overrides are present. This is required to avoid missing overrides at runtime which can lead to unexpected rendering issues. Please save these changes to avoid this message in the future.",
+        "Preprocess Player: Log: 1 URP assets included in build\n- AquariumURP - Assets/_Game/Rendering/AquariumURP.asset\n\t - AquariumRenderer - Assets/_Game/Rendering/AquariumRenderer.asset - UnityEngine.Rendering.Universal.UniversalRendererData\n",
+        "Prepare splash screen: Log: Including Unity Splash Screen logo because 'Show Unity Logo' is enabled."
+    ]
+}

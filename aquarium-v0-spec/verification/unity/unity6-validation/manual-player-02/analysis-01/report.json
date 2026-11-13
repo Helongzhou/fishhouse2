@@ -1,0 +1,2246 @@
+{
+  "status": "state_evidence_passed",
+  "coverage": "Read-only recorded JSON comparison. No live-save discovery, Unity Restore execution, input injection, screenshot interpretation or physical-input certification.",
+  "created_utc": "2026-11-06T04:51:18.156832+00:00",
+  "plan": {
+    "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/analysis-plan.json",
+    "sha256": "40fd0d1fede8917459fb60964b1679eaf9c48683843991c91c47bc0522efa3d3"
+  },
+  "source_sha256": {
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/analyze_manual_snapshots.py": "5074603a2eb70e8e8217a7f217286cce58a3a6b6614c38edefe7275af47ca0b6",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Resources/Configuration/runtime.json": "521af01fdb1ba4167cfd249d14c2485d34f19c36428155a36102d67de87c91f1",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Profiles.cs": "b18ccb9d0281d9a7e47d22957ca3806f86f94628e73e966e83d37ffd928d581f",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplayModels.cs": "ca06fe0331e638a3256383d3476e2ee858bb4ecebe7ddb530e4f64cdbcc5b6f6"
+  },
+  "snapshots": [
+    {
+      "label": "fixture",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-batch-04/stocked-with-food-and-checkpoint.json",
+      "sha256": "523cb867ae4b53d73cad4cb5498e0fda6abbad80c988cff5785f0124cc19807a",
+      "bytes": 83930,
+      "file_mtime_utc": "2026-11-05T11:52:22.630582+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "721.0000000000016",
+      "world_ecology_days": "5.5083333333341",
+      "ecology_days": "5.50833333333307",
+      "fixed_accumulator": "0.0",
+      "ecology_rate": "4.0",
+      "paused": false,
+      "light": false,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [
+        {
+          "SourceId": 2,
+          "RemainingPortions": 12,
+          "MgNPerPortion": "0.12"
+        }
+      ],
+      "food_portions": 12,
+      "food_mg_n": "1.44",
+      "living_mg_n": "0.11967959517647449",
+      "food_input_mg_n": "1.56",
+      "cumulative_ingested_mg_n": "0.12",
+      "cumulative_food_to_organic_mg_n": "0.0",
+      "owned_living_reserves_mg_n": "0.11967959517647449",
+      "stimuli": [
+        {
+          "Id": 2,
+          "Kind": 2,
+          "Position": {
+            "X": "0.0",
+            "Y": "0.29",
+            "Z": "0.0"
+          },
+          "Strength": "1.0",
+          "Remaining": "35.0",
+          "Portions": 12
+        }
+      ],
+      "next_event_id": 3,
+      "receipts": 23,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 2
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "SeekFood": 3,
+        "Forage": 2,
+        "Shoal": 1,
+        "Roam": 6,
+        "Graze": 2
+      },
+      "actions_by_kind": {
+        "fish": {
+          "SeekFood": 3,
+          "Forage": 2,
+          "Shoal": 1,
+          "Roam": 2
+        },
+        "shrimp": {
+          "Roam": 4,
+          "Graze": 2
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 1,
+        "Startles": 0,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 1,
+        "ActionChanges": 8
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 1
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 1
+        }
+      ]
+    },
+    {
+      "label": "pause_f5_a",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/01-paused.json",
+      "sha256": "42139ce1725e7853d13e5f959b34c5fd1d79e9c3dd8db121e173718963d90052",
+      "bytes": 182696,
+      "file_mtime_utc": "2026-11-06T04:40:25.962590+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "721.1666666666681",
+      "world_ecology_days": "5.509722222222989",
+      "ecology_days": "5.509722222221958",
+      "fixed_accumulator": "0.016541664799054487",
+      "ecology_rate": "4.0",
+      "paused": true,
+      "light": false,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [
+        {
+          "SourceId": 2,
+          "RemainingPortions": 12,
+          "MgNPerPortion": "0.12"
+        }
+      ],
+      "food_portions": 12,
+      "food_mg_n": "1.44",
+      "living_mg_n": "0.1196214317335792",
+      "food_input_mg_n": "1.56",
+      "cumulative_ingested_mg_n": "0.12",
+      "cumulative_food_to_organic_mg_n": "0.0",
+      "owned_living_reserves_mg_n": "0.1196214317335792",
+      "stimuli": [
+        {
+          "Id": 2,
+          "Kind": 2,
+          "Position": {
+            "X": "0.0",
+            "Y": "0.2893333333333334",
+            "Z": "0.0"
+          },
+          "Strength": "1.0",
+          "Remaining": "34.83333333333334",
+          "Portions": 12
+        }
+      ],
+      "next_event_id": 3,
+      "receipts": 23,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 2
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "SeekFood": 3,
+        "Forage": 2,
+        "Shoal": 1,
+        "Roam": 6,
+        "Graze": 2
+      },
+      "actions_by_kind": {
+        "fish": {
+          "SeekFood": 3,
+          "Forage": 2,
+          "Shoal": 1,
+          "Roam": 2
+        },
+        "shrimp": {
+          "Roam": 4,
+          "Graze": 2
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 1,
+        "Startles": 0,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 1,
+        "ActionChanges": 8
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        }
+      ]
+    },
+    {
+      "label": "pause_f5_b",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/02-paused-later.json",
+      "sha256": "42139ce1725e7853d13e5f959b34c5fd1d79e9c3dd8db121e173718963d90052",
+      "bytes": 182696,
+      "file_mtime_utc": "2026-11-06T04:41:14.877450+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "721.1666666666681",
+      "world_ecology_days": "5.509722222222989",
+      "ecology_days": "5.509722222221958",
+      "fixed_accumulator": "0.016541664799054487",
+      "ecology_rate": "4.0",
+      "paused": true,
+      "light": false,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [
+        {
+          "SourceId": 2,
+          "RemainingPortions": 12,
+          "MgNPerPortion": "0.12"
+        }
+      ],
+      "food_portions": 12,
+      "food_mg_n": "1.44",
+      "living_mg_n": "0.1196214317335792",
+      "food_input_mg_n": "1.56",
+      "cumulative_ingested_mg_n": "0.12",
+      "cumulative_food_to_organic_mg_n": "0.0",
+      "owned_living_reserves_mg_n": "0.1196214317335792",
+      "stimuli": [
+        {
+          "Id": 2,
+          "Kind": 2,
+          "Position": {
+            "X": "0.0",
+            "Y": "0.2893333333333334",
+            "Z": "0.0"
+          },
+          "Strength": "1.0",
+          "Remaining": "34.83333333333334",
+          "Portions": 12
+        }
+      ],
+      "next_event_id": 3,
+      "receipts": 23,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 2
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "SeekFood": 3,
+        "Forage": 2,
+        "Shoal": 1,
+        "Roam": 6,
+        "Graze": 2
+      },
+      "actions_by_kind": {
+        "fish": {
+          "SeekFood": 3,
+          "Forage": 2,
+          "Shoal": 1,
+          "Roam": 2
+        },
+        "shrimp": {
+          "Roam": 4,
+          "Graze": 2
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 1,
+        "Startles": 0,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 1,
+        "ActionChanges": 8
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        }
+      ]
+    },
+    {
+      "label": "paused_after_f_l",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/03-paused-commands.json",
+      "sha256": "42139ce1725e7853d13e5f959b34c5fd1d79e9c3dd8db121e173718963d90052",
+      "bytes": 182696,
+      "file_mtime_utc": "2026-11-06T04:42:10.954177+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "721.1666666666681",
+      "world_ecology_days": "5.509722222222989",
+      "ecology_days": "5.509722222221958",
+      "fixed_accumulator": "0.016541664799054487",
+      "ecology_rate": "4.0",
+      "paused": true,
+      "light": false,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [
+        {
+          "SourceId": 2,
+          "RemainingPortions": 12,
+          "MgNPerPortion": "0.12"
+        }
+      ],
+      "food_portions": 12,
+      "food_mg_n": "1.44",
+      "living_mg_n": "0.1196214317335792",
+      "food_input_mg_n": "1.56",
+      "cumulative_ingested_mg_n": "0.12",
+      "cumulative_food_to_organic_mg_n": "0.0",
+      "owned_living_reserves_mg_n": "0.1196214317335792",
+      "stimuli": [
+        {
+          "Id": 2,
+          "Kind": 2,
+          "Position": {
+            "X": "0.0",
+            "Y": "0.2893333333333334",
+            "Z": "0.0"
+          },
+          "Strength": "1.0",
+          "Remaining": "34.83333333333334",
+          "Portions": 12
+        }
+      ],
+      "next_event_id": 3,
+      "receipts": 23,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 2
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "SeekFood": 3,
+        "Forage": 2,
+        "Shoal": 1,
+        "Roam": 6,
+        "Graze": 2
+      },
+      "actions_by_kind": {
+        "fish": {
+          "SeekFood": 3,
+          "Forage": 2,
+          "Shoal": 1,
+          "Roam": 2
+        },
+        "shrimp": {
+          "Roam": 4,
+          "Graze": 2
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 1,
+        "Startles": 0,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 1,
+        "ActionChanges": 8
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        }
+      ]
+    },
+    {
+      "label": "resumed_light",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/04-light-on.json",
+      "sha256": "edb1095b7b74b4fc881e46977461109753c2d2420a8bd786e96e8f327d0ad092",
+      "bytes": 183797,
+      "file_mtime_utc": "2026-11-06T04:45:52.234980+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "721.2333333333347",
+      "world_ecology_days": "5.510277777778545",
+      "ecology_days": "5.509722222221958",
+      "fixed_accumulator": "0.0005321195969979209",
+      "ecology_rate": "4.0",
+      "paused": true,
+      "light": true,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [
+        {
+          "SourceId": 2,
+          "RemainingPortions": 12,
+          "MgNPerPortion": "0.12"
+        }
+      ],
+      "food_portions": 12,
+      "food_mg_n": "1.44",
+      "living_mg_n": "0.1196214317335792",
+      "food_input_mg_n": "1.56",
+      "cumulative_ingested_mg_n": "0.12",
+      "cumulative_food_to_organic_mg_n": "0.0",
+      "owned_living_reserves_mg_n": "0.1196214317335792",
+      "stimuli": [
+        {
+          "Id": 2,
+          "Kind": 2,
+          "Position": {
+            "X": "0.0",
+            "Y": "0.28906666666666675",
+            "Z": "0.0"
+          },
+          "Strength": "1.0",
+          "Remaining": "34.76666666666668",
+          "Portions": 12
+        },
+        {
+          "Id": 3,
+          "Kind": 0,
+          "Position": {
+            "X": "0.0",
+            "Y": "0.36",
+            "Z": "0.0"
+          },
+          "Strength": "1.0",
+          "Remaining": "1.4666666666666666",
+          "Portions": 0
+        }
+      ],
+      "next_event_id": 4,
+      "receipts": 24,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 2,
+        "light": 1
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "SeekFood": 3,
+        "Forage": 2,
+        "Shoal": 1,
+        "Roam": 6,
+        "Graze": 2
+      },
+      "actions_by_kind": {
+        "fish": {
+          "SeekFood": 3,
+          "Forage": 2,
+          "Shoal": 1,
+          "Roam": 2
+        },
+        "shrimp": {
+          "Roam": 4,
+          "Graze": 2
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 1,
+        "Startles": 0,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 1,
+        "ActionChanges": 8
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 2
+        }
+      ]
+    },
+    {
+      "label": "resumed_feed",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/05-fed-paused.json",
+      "sha256": "52455db68d0eea8f52bc306648ad74acb7643d265927627dcc879159fd4f8c6a",
+      "bytes": 185285,
+      "file_mtime_utc": "2026-11-06T04:47:31.810219+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "763.399999999963",
+      "world_ecology_days": "5.861666666667489",
+      "ecology_days": "5.861111111110677",
+      "fixed_accumulator": "0.00012563113123239406",
+      "ecology_rate": "4.0",
+      "paused": true,
+      "light": true,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [],
+      "food_portions": 0,
+      "food_mg_n": "0.0",
+      "living_mg_n": "1.5311985518550821",
+      "food_input_mg_n": "3.0",
+      "cumulative_ingested_mg_n": "1.6800000000000006",
+      "cumulative_food_to_organic_mg_n": "1.3199999999999985",
+      "owned_living_reserves_mg_n": "1.53119855185508219",
+      "stimuli": [],
+      "next_event_id": 5,
+      "receipts": 25,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 3,
+        "light": 1
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "Shoal": 3,
+        "Roam": 4,
+        "Forage": 3,
+        "Graze": 4
+      },
+      "actions_by_kind": {
+        "fish": {
+          "Shoal": 3,
+          "Roam": 3,
+          "Forage": 2
+        },
+        "shrimp": {
+          "Graze": 4,
+          "Roam": 1,
+          "Forage": 1
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 14,
+        "Startles": 10,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 87,
+        "ActionChanges": 129
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 3,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        }
+      ]
+    },
+    {
+      "label": "loaded_paused",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/06-restored-paused.json",
+      "sha256": "dcfe29a5d3968b2798af85d2ec521115ef877a9e494dd6f4ba4e5b919bc2621a",
+      "bytes": 185255,
+      "file_mtime_utc": "2026-11-06T04:48:30.241026+00:00",
+      "save_id": "e45d778765d54b099e8ce9938366d0c3",
+      "real_seconds": "763.399999999963",
+      "world_ecology_days": "5.861666666667489",
+      "ecology_days": "5.861111111110677",
+      "fixed_accumulator": "0.00012563113123239406",
+      "ecology_rate": "4.0",
+      "paused": true,
+      "light": true,
+      "coins": 90,
+      "stage": "TrialObserving",
+      "filled": true,
+      "food_bindings": [],
+      "food_portions": 0,
+      "food_mg_n": "0.0",
+      "living_mg_n": "1.531198551855082",
+      "food_input_mg_n": "3.0",
+      "cumulative_ingested_mg_n": "1.6800000000000006",
+      "cumulative_food_to_organic_mg_n": "1.3199999999999985",
+      "owned_living_reserves_mg_n": "1.53119855185508224",
+      "stimuli": [],
+      "next_event_id": 5,
+      "receipts": 25,
+      "receipts_by_operation": {
+        "buy": 10,
+        "substrate": 1,
+        "place": 7,
+        "confirm": 1,
+        "fill": 1,
+        "challenge": 1,
+        "feed": 3,
+        "light": 1
+      },
+      "agents": 14,
+      "species": {
+        "ember_tetra": 8,
+        "neocaridina_red": 6
+      },
+      "kinds": {
+        "fish": 8,
+        "shrimp": 6
+      },
+      "actions": {
+        "Shoal": 3,
+        "Roam": 4,
+        "Forage": 3,
+        "Graze": 4
+      },
+      "actions_by_kind": {
+        "fish": {
+          "Shoal": 3,
+          "Roam": 3,
+          "Forage": 2
+        },
+        "shrimp": {
+          "Graze": 4,
+          "Roam": 1,
+          "Forage": 1
+        },
+        "unknown": {}
+      },
+      "behavior_counters": {
+        "Meals": 14,
+        "Startles": 10,
+        "GlassApproaches": 0,
+        "ProbeBursts": 0,
+        "GrazeDwells": 87,
+        "ActionChanges": 129
+      },
+      "agent_food_counters": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 3,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "kind": "paused_exact",
+      "before": "pause_f5_a",
+      "after": "pause_f5_b",
+      "assertions": [
+        {
+          "name": "same save identity",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "same fish and shrimp identities",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "both snapshots paused",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "whole snapshot matches",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "serialized bytes identical",
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "physical_evidence": "Requires the coordinator's input observation and screenshot review; state alone cannot identify a key or mouse click.",
+      "snapshot_comparison": {
+        "passed": true,
+        "comparison": "exact",
+        "difference_count": 0,
+        "differences_first_64": [],
+        "nonzero_decimal_differences": [],
+        "maximum_decimal_error": "0"
+      },
+      "byte_equal": true,
+      "passed": true
+    },
+    {
+      "kind": "paused_commands",
+      "before": "pause_f5_b",
+      "after": "paused_after_f_l",
+      "assertions": [
+        {
+          "name": "same save identity",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "same fish and shrimp identities",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "both snapshots paused",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "whole snapshot matches",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "serialized bytes identical",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "no accepted F/L receipt",
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "physical_evidence": "Requires the coordinator's input observation and screenshot review; state alone cannot identify a key or mouse click.",
+      "snapshot_comparison": {
+        "passed": true,
+        "comparison": "exact",
+        "difference_count": 0,
+        "differences_first_64": [],
+        "nonzero_decimal_differences": [],
+        "maximum_decimal_error": "0"
+      },
+      "byte_equal": true,
+      "passed": true
+    },
+    {
+      "kind": "resume_light",
+      "before": "paused_after_f_l",
+      "after": "resumed_light",
+      "assertions": [
+        {
+          "name": "same save identity",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "same fish and shrimp identities",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "pause state matches declared capture state",
+          "passed": true,
+          "detail": {
+            "expected_paused": true,
+            "actual_paused": true
+          }
+        },
+        {
+          "name": "real clock advanced",
+          "passed": true,
+          "detail": {
+            "before": "721.1666666666681",
+            "after": "721.2333333333347"
+          }
+        },
+        {
+          "name": "prior receipts retained unchanged",
+          "passed": true,
+          "detail": {
+            "removed": [],
+            "changed": []
+          }
+        },
+        {
+          "name": "exactly one accepted light command",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "light toggled",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "light receipt matches saved state",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "wallet unchanged",
+          "passed": true,
+          "detail": {
+            "before": 90,
+            "after": 90
+          }
+        }
+      ],
+      "physical_evidence": "Requires the coordinator's input observation and screenshot review; state alone cannot identify a key or mouse click.",
+      "new_receipts": [
+        {
+          "TransactionId": "28f554483ed04c639fce8c84b6a6cae8",
+          "Fingerprint": "5:light4:True",
+          "Result": {
+            "Success": true,
+            "Code": "gameplay.ok",
+            "Args": [],
+            "BatchId": "",
+            "EntityIds": []
+          },
+          "decoded": [
+            "light",
+            "True"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "resume_feed",
+      "before": "resumed_light",
+      "after": "resumed_feed",
+      "assertions": [
+        {
+          "name": "same save identity",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "same fish and shrimp identities",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "pause state matches declared capture state",
+          "passed": true,
+          "detail": {
+            "expected_paused": true,
+            "actual_paused": true
+          }
+        },
+        {
+          "name": "real clock advanced",
+          "passed": true,
+          "detail": {
+            "before": "721.2333333333347",
+            "after": "763.399999999963"
+          }
+        },
+        {
+          "name": "prior receipts retained unchanged",
+          "passed": true,
+          "detail": {
+            "removed": [],
+            "changed": []
+          }
+        },
+        {
+          "name": "exactly one accepted feed command",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "feed receipt has position and portion arguments",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "feed receipt contains integer portions",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "new external food nitrogen matches receipt portions",
+          "passed": true,
+          "detail": {
+            "expected": "1.44",
+            "actual": "1.44",
+            "bound": "1.44E-12"
+          }
+        },
+        {
+          "name": "food source event allocated",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "wallet unchanged",
+          "passed": true,
+          "detail": {
+            "before": 90,
+            "after": 90
+          }
+        }
+      ],
+      "physical_evidence": "Requires the coordinator's input observation and screenshot review; state alone cannot identify a key or mouse click.",
+      "new_receipts": [
+        {
+          "TransactionId": "b09053b5395e429a85a1b593a63e97e3",
+          "Fingerprint": "4:feed1:04:0.291:02:12",
+          "Result": {
+            "Success": true,
+            "Code": "gameplay.ok",
+            "Args": [],
+            "BatchId": "",
+            "EntityIds": []
+          },
+          "decoded": [
+            "feed",
+            "0",
+            "0.29",
+            "0",
+            "12"
+          ]
+        }
+      ],
+      "external_food_input_delta_mg_n": "1.44",
+      "ingested_delta_mg_n": "1.5600000000000006",
+      "meal_counter_delta": 13,
+      "agents_reporting_new_food_event": [
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+          "species_id": "ember_tetra",
+          "meals": 3,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+          "species_id": "ember_tetra",
+          "meals": 2,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+          "species_id": "ember_tetra",
+          "meals": 1,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        },
+        {
+          "entity_id": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+          "species_id": "neocaridina_red",
+          "meals": 0,
+          "last_food_id": 4
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "restore_paused",
+      "before": "resumed_feed",
+      "after": "loaded_paused",
+      "assertions": [
+        {
+          "name": "same save identity",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "same fish and shrimp identities",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "both snapshots paused",
+          "passed": true,
+          "detail": null
+        },
+        {
+          "name": "whole snapshot matches",
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "physical_evidence": "Requires the coordinator's input observation and screenshot review; state alone cannot identify a key or mouse click.",
+      "snapshot_comparison": {
+        "passed": true,
+        "comparison": "codec",
+        "difference_count": 0,
+        "differences_first_64": [],
+        "nonzero_decimal_differences": [
+          {
+            "path": "$.Ecology.Audit.TransferMgN[17]",
+            "before": "26.777717481046714",
+            "after": "26.77771748104671",
+            "absolute_error": "4E-15",
+            "bound": "2.6777717481046714E-11"
+          },
+          {
+            "path": "$.Ecology.Audit.TransferMgN[25]",
+            "before": "26.777717481046714",
+            "after": "26.77771748104671",
+            "absolute_error": "4E-15",
+            "bound": "2.6777717481046714E-11"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[1].MgN",
+            "before": "0.00037795489650794043",
+            "after": "0.0003779548965079404",
+            "absolute_error": "3E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[9].MgN",
+            "before": "0.00037777121308214324",
+            "after": "0.0003777712130821432",
+            "absolute_error": "4E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[10].MgN",
+            "before": "0.0009669790210416955",
+            "after": "0.0009669790210416956",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[11].MgN",
+            "before": "0.0009669790210416955",
+            "after": "0.0009669790210416956",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[22].MgN",
+            "before": "0.0009659063176865163",
+            "after": "0.0009659063176865164",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[23].MgN",
+            "before": "0.0009659063176865163",
+            "after": "0.0009659063176865164",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[25].MgN",
+            "before": "0.00037740411399373044",
+            "after": "0.0003774041139937304",
+            "absolute_error": "4E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[46].MgN",
+            "before": "0.0009637647485194675",
+            "after": "0.0009637647485194676",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[47].MgN",
+            "before": "0.0009637647485194675",
+            "after": "0.0009637647485194676",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[58].MgN",
+            "before": "0.0009626958794967519",
+            "after": "0.000962695879496752",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[59].MgN",
+            "before": "0.0009626958794967519",
+            "after": "0.000962695879496752",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[66].MgN",
+            "before": "0.0009619840085267871",
+            "after": "0.0009619840085267872",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[67].MgN",
+            "before": "0.0009619840085267871",
+            "after": "0.0009619840085267872",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[70].MgN",
+            "before": "0.0009616282853774791",
+            "after": "0.0009616282853774792",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[71].MgN",
+            "before": "0.0009616282853774791",
+            "after": "0.0009616282853774792",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[97].MgN",
+            "before": "0.00037575657760875573",
+            "after": "0.0003757565776087558",
+            "absolute_error": "7E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[118].MgN",
+            "before": "0.0009573706259614187",
+            "after": "0.0009573706259614188",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[119].MgN",
+            "before": "0.0009573706259614187",
+            "after": "0.0009573706259614188",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[122].MgN",
+            "before": "0.0009570167374160859",
+            "after": "0.000957016737416086",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[123].MgN",
+            "before": "0.0009570167374160859",
+            "after": "0.000957016737416086",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[134].MgN",
+            "before": "0.0009559559158063701",
+            "after": "0.00095595591580637",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[135].MgN",
+            "before": "0.0009559559158063701",
+            "after": "0.00095595591580637",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[142].MgN",
+            "before": "0.0009552494041666021",
+            "after": "0.000955249404166602",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[143].MgN",
+            "before": "0.0009552494041666021",
+            "after": "0.000955249404166602",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[146].MgN",
+            "before": "0.0009548963590003065",
+            "after": "0.0009548963590003064",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[147].MgN",
+            "before": "0.0009548963590003065",
+            "after": "0.0009548963590003064",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[150].MgN",
+            "before": "0.0009545434541913849",
+            "after": "0.0009545434541913848",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[151].MgN",
+            "before": "0.0009545434541913849",
+            "after": "0.0009545434541913848",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[158].MgN",
+            "before": "0.0009538380654107615",
+            "after": "0.0009538380654107616",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[159].MgN",
+            "before": "0.0009538380654107615",
+            "after": "0.0009538380654107616",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[170].MgN",
+            "before": "0.0009527810334526585",
+            "after": "0.0009527810334526584",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[171].MgN",
+            "before": "0.0009527810334526585",
+            "after": "0.0009527810334526584",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[182].MgN",
+            "before": "0.0009517252615429757",
+            "after": "0.0009517252615429756",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[183].MgN",
+            "before": "0.0009517252615429757",
+            "after": "0.0009517252615429756",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[185].MgN",
+            "before": "0.00037375268608818955",
+            "after": "0.0003737526860881895",
+            "absolute_error": "5E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[186].MgN",
+            "before": "0.0009513736173105281",
+            "after": "0.000951373617310528",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[187].MgN",
+            "before": "0.0009513736173105281",
+            "after": "0.000951373617310528",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[202].MgN",
+            "before": "0.0009499684375080383",
+            "after": "0.0009499684375080384",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[203].MgN",
+            "before": "0.0009499684375080383",
+            "after": "0.0009499684375080384",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[206].MgN",
+            "before": "0.0009496174915470375",
+            "after": "0.0009496174915470376",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[207].MgN",
+            "before": "0.0009496174915470375",
+            "after": "0.0009496174915470376",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[209].MgN",
+            "before": "0.00037320802733118347",
+            "after": "0.0003732080273311834",
+            "absolute_error": "7E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[218].MgN",
+            "before": "0.0009485654903049853",
+            "after": "0.0009485654903049852",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[219].MgN",
+            "before": "0.0009485654903049853",
+            "after": "0.0009485654903049852",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[222].MgN",
+            "before": "0.0009482151019101943",
+            "after": "0.0009482151019101944",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[223].MgN",
+            "before": "0.0009482151019101943",
+            "after": "0.0009482151019101944",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[234].MgN",
+            "before": "0.0009471647719676273",
+            "after": "0.0009471647719676272",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[235].MgN",
+            "before": "0.0009471647719676273",
+            "after": "0.0009471647719676272",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[241].MgN",
+            "before": "0.00037248305012318973",
+            "after": "0.0003724830501231898",
+            "absolute_error": "7E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[253].MgN",
+            "before": "0.00037221154689672236",
+            "after": "0.0003722115468967224",
+            "absolute_error": "4E-20",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[254].MgN",
+            "before": "0.0009454170027106297",
+            "after": "0.0009454170027106296",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.RecentLedger[255].MgN",
+            "before": "0.0009454170027106297",
+            "after": "0.0009454170027106296",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.Ecology.State.LivingMgN",
+            "before": "1.5311985518550821",
+            "after": "1.531198551855082",
+            "absolute_error": "1E-16",
+            "bound": "1.5311985518550821E-12"
+          },
+          {
+            "path": "$.Ecology.State.NitrateMgN",
+            "before": "26.777717481046714",
+            "after": "26.77771748104671",
+            "absolute_error": "4E-15",
+            "bound": "2.6777717481046714E-11"
+          },
+          {
+            "path": "$.LivingReserves.Entries[0].MgN",
+            "before": "0.10577835447911627",
+            "after": "0.10577835447911628",
+            "absolute_error": "1E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.LivingReserves.Entries[4].MgN",
+            "before": "0.10909444391471103",
+            "after": "0.10909444391471104",
+            "absolute_error": "1E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.LivingReserves.Entries[6].MgN",
+            "before": "0.21879961081855342",
+            "after": "0.21879961081855345",
+            "absolute_error": "3E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[1].Target.X",
+            "before": "0.11490395609502885",
+            "after": "0.11490395609502883",
+            "absolute_error": "2E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[3].Velocity.Z",
+            "before": "0.012914312447850105",
+            "after": "0.012914312447850103",
+            "absolute_error": "2E-18",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[6].MinActionRemaining",
+            "before": "-0.23910562252470438",
+            "after": "-0.2391056225247044",
+            "absolute_error": "2E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[8].Hunger",
+            "before": "0.46791971392146764",
+            "after": "0.4679197139214677",
+            "absolute_error": "6E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[8].MinActionRemaining",
+            "before": "-0.09224024617965979",
+            "after": "-0.0922402461796598",
+            "absolute_error": "1E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[8].Position.Y",
+            "before": "0.013494893490372903",
+            "after": "0.013494893490372905",
+            "absolute_error": "2E-18",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[8].Velocity.X",
+            "before": "9.021316001287046E-30",
+            "after": "9.021316001287047E-30",
+            "absolute_error": "1E-45",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[9].Velocity.Y",
+            "before": "-0.0012900191145629775",
+            "after": "-0.0012900191145629777",
+            "absolute_error": "2E-19",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[9].Velocity.Z",
+            "before": "0.009674834847603961",
+            "after": "0.00967483484760396",
+            "absolute_error": "1E-18",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[10].NextProbe",
+            "before": "0.10949730014156767",
+            "after": "0.10949730014156768",
+            "absolute_error": "1E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[10].NextTargetRefresh",
+            "before": "-3.9793137662461917",
+            "after": "-3.979313766246192",
+            "absolute_error": "3E-16",
+            "bound": "3.979313766246192E-12"
+          },
+          {
+            "path": "$.World.Agents[10].Velocity.X",
+            "before": "1.0458963548903804E-10",
+            "after": "1.0458963548903803E-10",
+            "absolute_error": "1E-26",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[10].Velocity.Z",
+            "before": "1.319913922605712E-10",
+            "after": "1.3199139226057118E-10",
+            "absolute_error": "2E-26",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[11].NextDecision",
+            "before": "0.9677486943255665",
+            "after": "0.9677486943255664",
+            "absolute_error": "1E-16",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[11].Position.Y",
+            "before": "0.010928857810651749",
+            "after": "0.010928857810651747",
+            "absolute_error": "2E-18",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[11].Target.Z",
+            "before": "0.11619436009478973",
+            "after": "0.11619436009478971",
+            "absolute_error": "2E-17",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[12].Target.X",
+            "before": "-0.045209378066587404",
+            "after": "-0.04520937806658741",
+            "absolute_error": "6E-18",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[12].Velocity.X",
+            "before": "-0.000010672848804021065",
+            "after": "-0.000010672848804021063",
+            "absolute_error": "2E-21",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[12].Velocity.Z",
+            "before": "-0.0000038015975626337962",
+            "after": "-0.000003801597562633796",
+            "absolute_error": "2E-22",
+            "bound": "1E-12"
+          },
+          {
+            "path": "$.World.Agents[13].NextProbe",
+            "before": "-1.8127178593984983",
+            "after": "-1.8127178593984985",
+            "absolute_error": "2E-16",
+            "bound": "1.8127178593984985E-12"
+          },
+          {
+            "path": "$.World.Agents[13].Velocity.Y",
+            "before": "-0.0009101800746859047",
+            "after": "-0.0009101800746859048",
+            "absolute_error": "1E-19",
+            "bound": "1E-12"
+          }
+        ],
+        "maximum_decimal_error": "4E-15"
+      },
+      "byte_equal": false,
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "label": "09-light-on",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/09-light-on.png",
+      "observation": "Coordinator reports Space resume, L turns light on, Space pauses, F5 records snapshot 04.",
+      "sha256": "2e07d91da9a506441a69f96883a75133269008fed36e77ac4228bf915704e734",
+      "visual_review": "not_performed_by_this_tool"
+    },
+    {
+      "label": "10-fed",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/10-fed.png",
+      "observation": "Coordinator reports Space resume, F feeds, simulation runs, Space pauses and F5 records snapshot 05.",
+      "sha256": "8d640196a79cd65ddfcad2cf49ad60180b12b6e92c1dcbb92daa2335f20d57ef",
+      "visual_review": "not_performed_by_this_tool"
+    },
+    {
+      "label": "11-unsaved-light-off",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/11-unsaved-light-off.png",
+      "observation": "Coordinator reports resumed L turns light off in memory; no F5 occurs before F9.",
+      "sha256": "b8b23e1332f06a0000ef919669f0ab3972a219210a51a017fce5d0217151af81",
+      "visual_review": "not_performed_by_this_tool"
+    },
+    {
+      "label": "12-restored",
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/12-restored.png",
+      "observation": "Coordinator reports F9 restores primary snapshot 05 and F5 records snapshot 06.",
+      "sha256": "956478fbaacb09d49de2b2af01d6dc47bec35aeadd108f789e12cf06831fb810",
+      "visual_review": "not_performed_by_this_tool"
+    }
+  ]
+}

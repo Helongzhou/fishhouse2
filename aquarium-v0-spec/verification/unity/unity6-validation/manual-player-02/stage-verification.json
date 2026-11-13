@@ -1,0 +1,16 @@
+{
+  "stagedUtc": "2026-11-06T03:42:04.078737+00:00",
+  "saveDirectory": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal",
+  "filesExistAfterStage": {
+    "aquarium-session-v1.json": true,
+    "aquarium-session-v1.json.bak1": false,
+    "aquarium-session-v1.json.bak2": false,
+    "aquarium-session-v1.json.bak3": false,
+    "aquarium-session-v1.json.tmp": false
+  },
+  "fixtureSha256": "523cb867ae4b53d73cad4cb5498e0fda6abbad80c988cff5785f0124cc19807a",
+  "fixtureSizeBytes": 83930,
+  "editorPlayerProcesses": [],
+  "playerPrefsModified": false,
+  "manualGuiResult": "not_run"
+}

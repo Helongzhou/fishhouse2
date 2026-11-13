@@ -1,0 +1,46 @@
+{
+  "base": "http://127.0.0.1:4173/",
+  "results": [
+    {
+      "name": "English and Chinese type tabs, empty snail state and category cleanup",
+      "status": "PASS"
+    },
+    {
+      "name": "fixed category, color, layer and sorting semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "oxygen and flow are independent, unknown values never pass explicit filters",
+      "status": "PASS"
+    },
+    {
+      "name": "cards expose precise essentials without invented media",
+      "status": "PASS"
+    },
+    {
+      "name": "group modes, care notes, alerts and shared guides",
+      "status": "PASS"
+    },
+    {
+      "name": "responsive columns, text bounds and mobile filter keyboard",
+      "status": "PASS"
+    },
+    {
+      "name": "long English and Chinese names remain inside mobile cards",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh mobile context renders each detail once through full-page scrolling",
+      "status": "PASS"
+    },
+    {
+      "name": "list context survives detail, in-page return, reload and browser history",
+      "status": "PASS"
+    },
+    {
+      "name": "P1 calculator remains a planning placeholder and browser has no exceptions",
+      "status": "PASS"
+    }
+  ],
+  "exceptions": []
+}

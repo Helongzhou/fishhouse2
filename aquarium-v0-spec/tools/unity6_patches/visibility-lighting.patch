@@ -1,0 +1,29 @@
+--- a/Assets/_Game/UnityAdapter/AquariumGameEntry.cs
++++ b/Assets/_Game/UnityAdapter/AquariumGameEntry.cs
+@@ -80,15 +80,21 @@
+         }
+         private void BuildTank()
+         {
+-            Shape(root,"Tank base",PrimitiveType.Cube,new Vector3(0,-.008f,0),new Vector3(.61f,.016f,.31f),metal);
+-            Shape(root,"Tank back",PrimitiveType.Cube,new Vector3(0,.18f,.158f),new Vector3(.61f,.36f,.008f),Material(new Color(.035f,.10f,.13f)));
++            Shape(root,"Tank base",PrimitiveType.Cube,new Vector3(0,-.008f,0),new Vector3(.61f,.016f,.31f),Material(new Color(.38f,.43f,.44f)));
++            Shape(root,"Tank back",PrimitiveType.Cube,new Vector3(0,.18f,.158f),new Vector3(.61f,.36f,.008f),Material(new Color(.16f,.25f,.28f)));
+             for(int x=-1;x<=1;x+=2)for(int z=-1;z<=1;z+=2)
+-                Shape(root,"Glass edge",PrimitiveType.Cube,new Vector3(x*.3f,.18f,z*.15f),new Vector3(.002f,.36f,.002f),metal);
++                Shape(root,"Glass edge",PrimitiveType.Cube,new Vector3(x*.3f,.18f,z*.15f),new Vector3(.002f,.36f,.002f),Material(new Color(.44f,.53f,.55f)));
+             var cameraObject=new GameObject("Aquarium camera");cameraObject.transform.SetParent(root,false);view=cameraObject.AddComponent<Camera>();
+-            view.nearClipPlane=.01f;view.farClipPlane=10;view.clearFlags=CameraClearFlags.SolidColor;view.backgroundColor=new Color(.025f,.045f,.05f);
++            view.nearClipPlane=.01f;view.farClipPlane=10;view.clearFlags=CameraClearFlags.SolidColor;view.backgroundColor=new Color(.065f,.10f,.115f);
+             var lightObject=new GameObject("Aquarium light");lightObject.transform.SetParent(root,false);lamp=lightObject.AddComponent<Light>();lamp.type=LightType.Directional;
+             lightObject.transform.localRotation=Quaternion.Euler(45,-35,0);lamp.intensity=.55f;
+-            RenderSettings.ambientLight=new Color(.28f,.31f,.32f);UpdateCamera();
++            // Room illumination is presentation-only: a dry or unlit tank must remain usable.
++            // Set SH explicitly because runtime geometry has no baked probes or skybox lighting.
++            Color roomLight=new Color(.42f,.46f,.48f);
++            RenderSettings.ambientMode=AmbientMode.Flat;RenderSettings.ambientLight=roomLight;
++            var roomProbe=new SphericalHarmonicsL2();roomProbe.AddAmbientLight(roomLight.linear);
++            RenderSettings.ambientProbe=roomProbe;RenderSettings.sun=lamp;
++            UpdateCamera();
+         }
+         private void RebuildLayout()
+         {

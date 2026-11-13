@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Applications/Unity/Hub/Editor/6000.6.8f1/Unity.app/Contents/MacOS/Unity",
+    "-batchmode",
+    "-quit",
+    "-projectPath",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "-executeMethod",
+    "Aquarium.Validation.UnitySliceAcceptance.RunBatch",
+    "-aquariumReport",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-batch-05/report.json",
+    "-logFile",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-batch-05/editor.log"
+  ],
+  "cwd": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+  "startedUtc": "2026-11-06T04:05:27.965272+00:00",
+  "finishedUtc": "2026-11-06T04:05:33.466659+00:00",
+  "exitCode": 0
+}

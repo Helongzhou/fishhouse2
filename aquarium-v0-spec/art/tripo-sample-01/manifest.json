@@ -1,0 +1,985 @@
+{
+  "schema_version": 1,
+  "batch_id": "tripo-sample-01",
+  "created_on": "2026-11-09",
+  "status": "planned",
+  "generation_status": "blocked_no_credits",
+  "scope": "11 unique sample assets; no catalog changes; no generations submitted",
+  "authority": {
+    "user_direction": [
+      "11 assets: Ember Tetra, Red Cherry Shrimp, one snail study, five named plants, two stones, one driftwood",
+      "soft cartoon naturalism",
+      "eventual Unity material, animation, LOD and lighting acceptance"
+    ],
+    "team_recommendations": [
+      "all design dimensions, prompts, morphology interpretation and provisional budgets",
+      "left-high triangle composition with open right swimming space"
+    ]
+  },
+  "service_gates": {
+    "credits": "blocked_no_credits",
+    "authentication": "not_asserted_by_this_document",
+    "commercial_license": "pending_verification",
+    "photo_reuse": "not_obtained_no_images_uploaded",
+    "generation_submission": "not_started"
+  },
+  "runtime_target": {
+    "project": "unity6-validation",
+    "unity_version": "6000.6.8f1",
+    "render_pipeline": "URP 17.6.0",
+    "validation_status": "not_run",
+    "legacy_project": "unity remains unchanged"
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "forward": "+Z",
+    "transform_scale": [
+      1,
+      1,
+      1
+    ],
+    "apply_scale_before_export": true
+  },
+  "composition": {
+    "status": "team_recommendation",
+    "tank_assumption_m": [
+      0.6,
+      0.36,
+      0.3
+    ],
+    "coordinate_note": "x left-right, y up, z depth; placement is scene-only, not baked into individual assets",
+    "placements": [
+      {
+        "asset_id": "stone_main",
+        "position_m": [
+          -0.14,
+          0,
+          0.035
+        ],
+        "role": "left high apex"
+      },
+      {
+        "asset_id": "stone_secondary",
+        "position_m": [
+          0.035,
+          0,
+          -0.025
+        ],
+        "role": "low descending support"
+      },
+      {
+        "asset_id": "wood_optional",
+        "position_m": [
+          -0.065,
+          0,
+          0.045
+        ],
+        "role": "diagonal link toward low right"
+      }
+    ],
+    "plant_layout": "fern behind left apex; crypt at left midground; anubias/buce on exposed hardscape; moss patch on wood; leave right-front open"
+  },
+  "delivery": {
+    "status": "planned",
+    "required": [
+      "editable original source where available",
+      "clean FBX or glTF with external textures",
+      "URP material definitions and texture color-space notes",
+      "three LOD meshes, rig and required clips",
+      "scale/pivot/axis validation record",
+      "reference provenance and generation/license evidence"
+    ],
+    "file_paths_assigned": false
+  },
+  "assets": [
+    {
+      "asset_id": "ember_tetra",
+      "source_id": "seriouslyfish_ember_tetra",
+      "source_url": "https://www.seriouslyfish.com/species/hyphessobrycon-amandae",
+      "reference_asset_id": "ember_tetra",
+      "product_id": "fish_trial_pack",
+      "product_mapping_status": "existing",
+      "display_name_en": "Ember Tetra",
+      "display_name_zh_cn": "火焰灯",
+      "scientific_name": "Hyphessobrycon amandae",
+      "kind": "fish",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.006,
+        "y": 0.011,
+        "z": 0.02
+      },
+      "size_measurement": "total length including tail",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "A single adult Ember Tetra (Hyphessobrycon amandae), slender laterally compressed orange amber body, small terminal mouth, dark natural eye, distinct dorsal, anal, paired pectoral and pelvic fins, small adipose fin and forked translucent caudal fin. Straight relaxed swimming pose facing +Z; fins separated and gently spread. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "侧扁细长体、尾柄与叉尾清楚",
+        "保留脂鳍及主要鳍，不新增霓虹横带",
+        "琥珀橙躯干与透明鳍边可区分"
+      ],
+      "animation": {
+        "required_clips": [
+          "idle_swim",
+          "steady_swim",
+          "turn_left_right",
+          "feeding_peck"
+        ],
+        "rigging_risks": "躯干3–5节+尾柄/尾鳍，主要鳍独立控制；Tripo不保证可变形拓扑，需重拓扑与手工蒙皮，透明鳍不能焊成厚实体。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 5000
+          },
+          {
+            "level": 1,
+            "triangles": 2200
+          },
+          {
+            "level": 2,
+            "triangles": 700
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "body center; +Z head, +Y dorsal",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 5000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "neocaridina_red",
+      "source_id": "aquarium_breeder_red_cherry_shrimp",
+      "source_url": "https://aquariumbreeder.com/red-cherry-shrimp-detailed-guide-care-diet-and-breeding/",
+      "reference_asset_id": "neocaridina_red",
+      "product_id": "shrimp_pack",
+      "product_mapping_status": "existing",
+      "display_name_en": "Red Cherry Shrimp",
+      "display_name_zh_cn": "樱花虾",
+      "scientific_name": "Neocaridina davidi",
+      "kind": "shrimp",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.008,
+        "y": 0.012,
+        "z": 0.025
+      },
+      "size_measurement": "body length excluding antennae",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "A single adult Red Cherry Shrimp (Neocaridina davidi), red segmented curved abdomen, compact cephalothorax, short serrated rostrum, black eyes on short stalks, paired long antennae, anatomically distinct walking legs, underside swimmerets, and a spread but resting uropod tail fan. Neutral surface-resting pose facing +Z, all appendages separated; no eggs. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "额角、头胸甲、腹节与尾扇分开",
+        "步足/腹部游泳足/触须可辨，不能鱼鳍化",
+        "保持樱花虾轮廓，不做海虾巨螯"
+      ],
+      "animation": {
+        "required_clips": [
+          "grazing_idle",
+          "surface_walk",
+          "tail_flick",
+          "antenna_idle"
+        ],
+        "rigging_risks": "腿、触须及尾扇细长易粘连/断裂；分组控制左右步足，腹节需尾弹弯曲；触须可曲线重建，不接受只有壳体平移。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 10000
+          },
+          {
+            "level": 1,
+            "triangles": 4500
+          },
+          {
+            "level": 2,
+            "triangles": 1500
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "foot contact center; +Z head, +Y surface normal",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 10000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "snail_reference",
+      "source_id": "aquarium_breeder_nerite_snail",
+      "source_url": "https://aquariumbreeder.com/nerite-snails-detailed-guide-care-diet-and-breeding/",
+      "reference_asset_id": "snail_reference",
+      "product_id": null,
+      "product_mapping_status": "not_in_catalog",
+      "display_name_en": "Nerite snail",
+      "display_name_zh_cn": "汽水螺类参考",
+      "scientific_name": null,
+      "kind": "snail",
+      "scope": "morphology_research_only_not_for_store",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.023,
+        "y": 0.02,
+        "z": 0.025
+      },
+      "size_measurement": "shell maximum dimension",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "A single nerite-type snail morphology study, taxon intentionally unresolved, low rounded dome shell with a small off-center apex and low spire, modest dark olive brown shell without species-specific decorative bands, broad pale muscular foot, separate aperture and operculum, two slender tentacles. Neutral extended crawling pose facing +Z, shell and soft tissue visibly distinct. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "仅nerite类群形态研究，不命名具体种",
+        "低螺塔、壳口/厣/腹足/触角可辨",
+        "壳与软体独立，不把壳拟人成脸"
+      ],
+      "animation": {
+        "required_clips": [
+          "surface_crawl",
+          "pause_retract",
+          "extend",
+          "tentacle_idle"
+        ],
+        "rigging_risks": "壳为刚体子节点，腹足与头部可变形；局部+Y为附着面法线，转向不能让壳穿玻璃；准确壳旋/口位待具体种核验。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 6500
+          },
+          {
+            "level": 1,
+            "triangles": 2800
+          },
+          {
+            "level": 2,
+            "triangles": 900
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "foot contact center; +Z head, +Y surface normal",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 6500,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "anubias_nana",
+      "source_id": "tropica_anubias_nana",
+      "source_url": "https://tropica.com/en/plants/plantdetails/Anubiasbarterivar.nana(101)/4545",
+      "reference_asset_id": "anubias_nana",
+      "product_id": "plant_anubias_nana",
+      "product_mapping_status": "existing",
+      "display_name_en": "Anubias barteri var. nana",
+      "display_name_zh_cn": "矮水榕",
+      "scientific_name": "Anubias barteri var. nana",
+      "kind": "plant",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.12,
+        "y": 0.1,
+        "z": 0.1
+      },
+      "size_measurement": "sample clump width/height/depth",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "One mature submerged Anubias barteri var. nana clump, 7 to 10 thick broad oval dark green leaves on separate short petioles, visible horizontal creeping rhizome and fine attachment roots, naturally irregular leaf arrangement, rhizome exposed. Upright resting growth pose, roots free, not attached to a rock. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "厚椭圆叶、短柄与横走根茎",
+        "根茎露出，独立根；无花盆/石头"
+      ],
+      "animation": {
+        "required_clips": [
+          "current_sway"
+        ],
+        "rigging_risks": "根茎/根固定，叶柄到叶尖柔度渐增；不能整株刚性摇摆或把叶片与根茎熔成团。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 6500
+          },
+          {
+            "level": 1,
+            "triangles": 2800
+          },
+          {
+            "level": 2,
+            "triangles": 900
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "attachment base / crown center; roots extend below y=0",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 6500,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "java_fern",
+      "source_id": "tropica_java_fern",
+      "source_url": "https://tropica.com/en/plants/plantdetails/Microsorumpteropus(008)/4408",
+      "reference_asset_id": "java_fern",
+      "product_id": "plant_java_fern",
+      "product_mapping_status": "existing",
+      "display_name_en": "Microsorum pteropus",
+      "display_name_zh_cn": "铁皇冠",
+      "scientific_name": "Microsorum pteropus",
+      "kind": "plant",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.16,
+        "y": 0.24,
+        "z": 0.12
+      },
+      "size_measurement": "sample clump width/height/depth",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "One mature submerged Microsorum pteropus clump, 7 to 9 long simple lanceolate medium dark green leaves with slightly irregular margins and visible central veins, leaves rising separately from a horizontal creeping rhizome with fine attachment roots. Upright resting growth pose, exposed rhizome, ordinary undivided leaf form, no attached stone. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "长披针形完整叶，不做鹿角/细叶品系",
+        "横走根茎和附着根可辨"
+      ],
+      "animation": {
+        "required_clips": [
+          "current_sway"
+        ],
+        "rigging_risks": "长叶下半段较硬、尖端柔软；双面叶法线和背面亮度需验证；保留叶间隙。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 7000
+          },
+          {
+            "level": 1,
+            "triangles": 3000
+          },
+          {
+            "level": 2,
+            "triangles": 1000
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "attachment base / crown center; roots extend below y=0",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 7000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "java_moss",
+      "source_id": "tropica_java_moss",
+      "source_url": "https://tropica.com/en/plants/plantdetails/Taxiphyllumbarbieri'BogorMoss'(003POR)/4391",
+      "reference_asset_id": "java_moss",
+      "product_id": "plant_java_moss",
+      "product_mapping_status": "existing",
+      "display_name_en": "Taxiphyllum barbieri 'Bogor Moss'",
+      "display_name_zh_cn": "爪哇莫丝",
+      "scientific_name": "Taxiphyllum barbieri",
+      "kind": "plant",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.14,
+        "y": 0.045,
+        "z": 0.1
+      },
+      "size_measurement": "sample patch width/height/depth",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "One isolated mature submerged Taxiphyllum barbieri 'Bogor Moss' patch, irregular branching fine green stems densely covered in tiny alternating pointed leaves, loose airy tuft with readable gaps, low attached-growth silhouette but no support object, no rhizome and no broad vascular leaves. Relaxed untensioned growth pose. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "细分枝茎+微小叶，不做草坪毛球",
+        "疏密和空隙可辨，无伪造粗根茎"
+      ],
+      "animation": {
+        "required_clips": [
+          "current_sway"
+        ],
+        "rigging_risks": "密细叶易变实心团且alpha overdraw高；允许重建分簇卡片，基部固定、枝梢微摆。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 9000
+          },
+          {
+            "level": 1,
+            "triangles": 3500
+          },
+          {
+            "level": 2,
+            "triangles": 900
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "attachment base / crown center; roots extend below y=0",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 9000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "crypt_wendtii",
+      "source_id": "tropica_crypt_wendtii",
+      "source_url": "https://tropica.com/en/plants/plantdetails/Cryptocorynewendtii'Green'(109)/4562",
+      "reference_asset_id": "crypt_wendtii",
+      "product_id": null,
+      "product_mapping_status": "not_in_catalog",
+      "display_name_en": "Cryptocoryne wendtii 'Green'",
+      "display_name_zh_cn": "绿温蒂椒草",
+      "scientific_name": "Cryptocoryne wendtii",
+      "kind": "plant",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.15,
+        "y": 0.16,
+        "z": 0.13
+      },
+      "size_measurement": "sample clump width/height/depth",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "One mature submerged Cryptocoryne wendtii 'Green' rosette, 8 to 12 green elongated lanceolate leaves with subtly undulating margins and gently textured blades, separate petioles all arising from one exposed basal crown, fine substrate roots beneath. Upright neutral growth pose, no horizontal creeping rhizome, no substrate. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "莲座冠部聚生、披针叶与波缘",
+        "冠部可见、根在下；不能附石根茎化"
+      ],
+      "animation": {
+        "required_clips": [
+          "current_sway"
+        ],
+        "rigging_risks": "冠部固定，叶柄与叶片差异柔度；根不参与水流大摆，近景防叶片互穿。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 6500
+          },
+          {
+            "level": 1,
+            "triangles": 2800
+          },
+          {
+            "level": 2,
+            "triangles": 900
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "attachment base / crown center; roots extend below y=0",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 6500,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "buce_bukit_kelam",
+      "source_id": "tropica_buce_bukit_kelam",
+      "source_url": "https://tropica.com/en/plants/plantdetails/Bucephalandrapygmaea'BukitKelam'(139)/18757",
+      "reference_asset_id": "buce_bukit_kelam",
+      "product_id": null,
+      "product_mapping_status": "not_in_catalog",
+      "display_name_en": "Bucephalandra pygmaea 'Bukit Kelam'",
+      "display_name_zh_cn": "辣椒榕 ‘Bukit Kelam’",
+      "scientific_name": "Bucephalandra pygmaea",
+      "kind": "plant",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.085,
+        "y": 0.07,
+        "z": 0.075
+      },
+      "size_measurement": "sample clump width/height/depth",
+      "real_world_size": {
+        "status": "not_verified_in_local_research",
+        "range_m": null,
+        "note": "Design dimensions are sample authoring targets, not verified adult-size ranges or husbandry recommendations."
+      },
+      "prompt_en": "One mature submerged Bucephalandra pygmaea 'Bukit Kelam' clump, 7 to 10 small elongated oval deep green leaves with restrained wavy edges and short separate petioles, compact horizontal exposed rhizome with fine attachment roots. Upright neutral resting growth pose, no support rock, no flower, no speculative metallic glitter. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "小型椭圆长叶、波缘、短柄",
+        "横走根茎露出；不夸大金属闪片"
+      ],
+      "animation": {
+        "required_clips": [
+          "current_sway"
+        ],
+        "rigging_risks": "低幅度叶尖摆动，保持厚叶；与水榕靠叶比例/波缘区分，勿用材质颜色替代形态。",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 6000
+          },
+          {
+            "level": 1,
+            "triangles": 2600
+          },
+          {
+            "level": 2,
+            "triangles": 800
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 2
+      },
+      "pivot": "attachment base / crown center; roots extend below y=0",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 6000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "stone_main",
+      "source_id": null,
+      "source_mapping_status": "original_team_shape_design_no_existing_research_source",
+      "product_id": "stone_main",
+      "product_mapping_status": "existing",
+      "display_name_en": "Main ridge stone",
+      "display_name_zh_cn": "主景脊石",
+      "scientific_name": null,
+      "kind": "hardscape",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.18,
+        "y": 0.24,
+        "z": 0.13
+      },
+      "real_world_size": {
+        "status": "original_shape_not_a_biological_range",
+        "range_m": null
+      },
+      "prompt_en": "One isolated upright asymmetrical aquarium ridge stone, broad stable base and one sloping softened peak, diagonal layered charcoal gray rock planes, shallow eroded creases and small restrained pits, high left-to-right falling silhouette, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "宽稳底座、单主峰和斜向纹理",
+        "非刺状刀锋；天然石身份/矿物化学不作宣称"
+      ],
+      "animation": {
+        "required_clips": [],
+        "rigging_risks": "Static; no skeleton. Simplified independent placement collider.",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 6500
+          },
+          {
+            "level": 1,
+            "triangles": 2500
+          },
+          {
+            "level": 2,
+            "triangles": 700
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 1
+      },
+      "pivot": "lowest stable contact patch center; +Y up, +Z authored forward",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 6500,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "stone_secondary",
+      "source_id": null,
+      "source_mapping_status": "original_team_shape_design_no_existing_research_source",
+      "product_id": "stone_secondary",
+      "product_mapping_status": "existing",
+      "display_name_en": "Secondary wedge stone",
+      "display_name_zh_cn": "辅景楔石",
+      "scientific_name": null,
+      "kind": "hardscape",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.13,
+        "y": 0.09,
+        "z": 0.09
+      },
+      "real_world_size": {
+        "status": "original_shape_not_a_biological_range",
+        "range_m": null
+      },
+      "prompt_en": "One isolated low asymmetric aquarium wedge stone, charcoal gray layered rock matching a ridge-stone family, broad stable base and sloping top, softened eroded edges, sparse shallow creases, neutral resting orientation with base level. No plants, no wood, no moss, no separate rubble. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "材质语言与主石一致，低矮楔形",
+        "与主石体量可明显区分"
+      ],
+      "animation": {
+        "required_clips": [],
+        "rigging_risks": "Static; no skeleton. Simplified independent placement collider.",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 4000
+          },
+          {
+            "level": 1,
+            "triangles": 1600
+          },
+          {
+            "level": 2,
+            "triangles": 500
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 1
+      },
+      "pivot": "lowest stable contact patch center; +Y up, +Z authored forward",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 4000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    },
+    {
+      "asset_id": "wood_optional",
+      "source_id": null,
+      "source_mapping_status": "original_team_shape_design_no_existing_research_source",
+      "product_id": "wood_optional",
+      "product_mapping_status": "existing",
+      "display_name_en": "Forked driftwood",
+      "display_name_zh_cn": "分叉沉木",
+      "scientific_name": null,
+      "kind": "hardscape",
+      "scope": "sample_only_catalog_unchanged",
+      "status": "planned",
+      "generation_status": "blocked_no_credits",
+      "design_size_m": {
+        "x": 0.28,
+        "y": 0.16,
+        "z": 0.12
+      },
+      "real_world_size": {
+        "status": "original_shape_not_a_biological_range",
+        "range_m": null
+      },
+      "prompt_en": "One isolated weathered aquarium driftwood piece, a single connected gently curved trunk splitting into two tapered branches, warm muted dark brown exposed grain, rounded worn tips, one broad stable contact region, low diagonal arch and open negative space, neutral resting orientation. No bark flakes, no leaves, no moss, no rocks, no animals. Soft cartoon naturalism; believable proportions, gently rounded forms, restrained natural colors. No anthropomorphic face. Single isolated object; no scene, tank, ground, pot, pedestal, text or watermark. Neutral pose, separated anatomy, neutral light, no baked shadows.",
+      "morphology_acceptance": [
+        "一个连通木体，两主分枝和可读负空间",
+        "圆钝端点，木纹顺结构；不伪定木种"
+      ],
+      "animation": {
+        "required_clips": [],
+        "rigging_risks": "Static; no skeleton. Simplified independent placement collider.",
+        "status": "planned"
+      },
+      "lod": {
+        "status": "provisional_team_recommendation",
+        "triangle_max": [
+          {
+            "level": 0,
+            "triangles": 8000
+          },
+          {
+            "level": 1,
+            "triangles": 3200
+          },
+          {
+            "level": 2,
+            "triangles": 900
+          }
+        ],
+        "texture_max_px": [
+          1024,
+          1024,
+          512
+        ],
+        "material_slots_max": 1
+      },
+      "pivot": "lowest stable contact patch center; +Y up, +Z authored forward",
+      "generated_outputs": [],
+      "tripo_request": {
+        "model_version": "P2",
+        "face_limit": 8000,
+        "texture": true,
+        "pbr": false,
+        "preset": null,
+        "then": null,
+        "status": "planned",
+        "note": "Native generation only; retopology, rigging and export conversion are separate tasks. CLI dry-run must confirm actual field compatibility and cost."
+      },
+      "local_files": {
+        "model": null,
+        "textures": [],
+        "source": null,
+        "lods": [],
+        "animation": null,
+        "status": "not_generated"
+      }
+    }
+  ]
+}

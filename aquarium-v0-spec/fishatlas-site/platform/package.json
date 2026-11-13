@@ -1,0 +1,33 @@
+{
+  "name": "fishatlas-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 4174",
+    "build": "next build",
+    "start": "python3 scripts/service.py start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/catalog/*.test.ts",
+    "service:start": "python3 scripts/service.py start",
+    "service:stop": "python3 scripts/service.py stop",
+    "service:status": "python3 scripts/service.py status"
+  },
+  "dependencies": {
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sharp": "0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.6",
+    "@types/react-dom": "19.2.3",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=24.22.1 <25"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

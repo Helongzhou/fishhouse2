@@ -1,0 +1,34 @@
+--- a/Assets/_Game/UnityAdapter/AquariumInteractionDemo.cs
++++ b/Assets/_Game/UnityAdapter/AquariumInteractionDemo.cs
+@@ -213,26 +213,17 @@
+         }
+         private Font FontFor(LocaleMetadata locale)
+         {
+-            // Metadata-driven temporary OS fallbacks. Production still needs licensed font assets,
+-            // coverage/layout QA and an actual shaping/bidi renderer for RTL languages.
+             string group = locale.font_group ?? "latin";
+             Font cached;
+             if (localeFonts.TryGetValue(group, out cached)) return cached;
+-            string[] families;
+-            switch (group)
+-            {
+-                case "cjk_simplified": families = new[] { "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Arial Unicode MS" }; break;
+-                case "cjk_traditional": families = new[] { "Noto Sans CJK TC", "PingFang TC", "Microsoft JhengHei", "Arial Unicode MS" }; break;
+-                case "cjk_japanese": families = new[] { "Noto Sans CJK JP", "Hiragino Sans", "Yu Gothic", "Arial Unicode MS" }; break;
+-                case "cjk_korean": families = new[] { "Noto Sans CJK KR", "Apple SD Gothic Neo", "Malgun Gothic", "Arial Unicode MS" }; break;
+-                case "cyrillic": families = new[] { "Noto Sans", "Segoe UI", "Arial Unicode MS", "Arial" }; break;
+-                default: families = new[] { "Noto Sans", "Segoe UI", "Arial Unicode MS", "Arial" }; break;
+-            }
+-            cached = Font.CreateDynamicFontFromOSFont(families, 14);
++            // Use only the bundled OFL face; never depend on an OS font installed on the machine.
++            // It covers Latin and zh-CN. Other planned locales require separate glyph/layout QA.
++            cached = Resources.Load<Font>("Fonts/NotoSansCJKsc-Regular");
++            if (cached == null) throw new InvalidOperationException("Missing bundled font asset for font_group " + group + ".");
+             localeFonts.Add(group, cached); return cached;
+         }
+         private void OnDestroy()
+-        { foreach (Font font in localeFonts.Values) if (font != null) Destroy(font); }
++        { localeFonts.Clear(); }
+         private static Vector3 ToUnity(Vec3 v) { return new Vector3((float)v.X, (float)v.Y, (float)v.Z); }
+     }
+ }

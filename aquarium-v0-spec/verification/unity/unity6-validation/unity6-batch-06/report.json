@@ -1,0 +1,2316 @@
+{
+    "status": "passed",
+    "mode": "editor-batch",
+    "projectPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "expectedUnityVersion": "6000.6.8f1",
+    "expectedUrpVersion": "17.6.0",
+    "unityVersion": "6000.6.8f1",
+    "urpVersion": "17.6.0",
+    "startedUtc": "2026-11-06T04:20:28.4618770Z",
+    "finishedUtc": "2026-11-06T04:20:28.7701280Z",
+    "failure": "",
+    "coverage": "Real Unity APIs and production domain/adapter calls. No human input, visual quality, Windows player, font-layout or Steam certification.",
+    "checks": [
+        {
+            "name": "Unity editor matches selected project's ProjectVersion",
+            "detail": "6000.6.8f1 expected; 6000.6.8f1 actual",
+            "passed": true
+        },
+        {
+            "name": "selected project freezes an exact URP version",
+            "detail": "17.6.0",
+            "passed": true
+        },
+        {
+            "name": "selected project's pinned URP package resolved",
+            "detail": "17.6.0 expected; 17.6.0 actual",
+            "passed": true
+        },
+        {
+            "name": "bundled UI font imports and loads from Resources",
+            "detail": "Noto Sans CJK SC",
+            "passed": true
+        },
+        {
+            "name": "Prepare assigns actual URP graphics and quality pipelines",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "opaque and transparent shader materials import",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene imports with one real entry and no missing scripts",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "startup scene registered for builds",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "runtime resource imported",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "nine-table runtime configuration validates through JsonUtility",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Unity JsonUtility roundtrips initial save with explicit absent checkpoint",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "fresh codec snapshot equality",
+            "detail": "50 strict values; 216 finite doubles; 0 nonzero double differences; maximum absolute error 0",
+            "passed": true
+        },
+        {
+            "name": "Unity inline checkpoint without laid substrate preserves absence semantics",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "retry of empty editing checkpoint does not invent substrate or money",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "undo to absent substrate survives Unity JsonUtility without refunding its purchase",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "redo restores actual substrate after Unity roundtrip of absent state/history",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "present substrate with invalid actual height still rejects after absence handling fix",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "dry tank ecology remains stopped",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Unity JsonUtility roundtrips populated nonrecursive retry checkpoint",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "filled checkpoint codec snapshot equality",
+            "detail": "675 strict values; 493 finite doubles; 7 nonzero double differences; maximum absolute error 2.7755575615628914E-17",
+            "passed": true
+        },
+        {
+            "name": "paused commands reject feeding, lighting and challenge",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "pause freezes both clocks and state",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real nonzero challenge and continuous window unlock first stocking",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "first stocking delivers eight Ember and six shrimp",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "snapshot contains both active food ownership and ingested per-animal nitrogen",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "Unity JsonUtility preserves checkpoint, active food, reserves, RNG and all domain ledgers",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "stocked food/reserve codec snapshot equality",
+            "detail": "2281 strict values; 1450 finite doubles; 123 nonzero double differences; maximum absolute error 3.5527136788005009E-15",
+            "passed": true
+        },
+        {
+            "name": "restored session continues matching trajectories and nitrogen for five seconds",
+            "detail": "2272 strict values; 1438 finite doubles; 89 nonzero double differences; maximum absolute error 3.5527136788005009E-15",
+            "passed": true
+        },
+        {
+            "name": "stocked observation grants 450 exactly once",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "full real route ends at 8 Ember + 8 Neon + 6 shrimp and 280 coins",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "completed full route roundtrips with Unity JsonUtility",
+            "detail": "2425 strict values; 1673 finite doubles; 72 nonzero double differences; maximum absolute error 4.4408920985006262E-16",
+            "passed": true
+        },
+        {
+            "name": "actual host file store recovers corrupt primary through Unity semantic validation",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "full checkpoint retry replaces wallet, animals, ecology and rewards atomically",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "real Resources locales load with English final fallback",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "ready locale selects: en",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "gameplay UI scalar key coverage: en",
+            "detail": "183 keys formatted through actual runtime formatter; font/layout not certified.",
+            "passed": true
+        },
+        {
+            "name": "locale choice survives independent preference restore: en",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "ready locale selects: zh-CN",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "gameplay UI scalar key coverage: zh-CN",
+            "detail": "183 keys formatted through actual runtime formatter; font/layout not certified.",
+            "passed": true
+        },
+        {
+            "name": "locale choice survives independent preference restore: zh-CN",
+            "detail": "",
+            "passed": true
+        },
+        {
+            "name": "no Unity errors/exceptions",
+            "detail": "Error/Assert/Exception log callback remains empty.",
+            "passed": true
+        }
+    ],
+    "snapshotComparisons": [
+        {
+            "name": "fresh codec snapshot equality",
+            "failure": "",
+            "maxErrorPath": "",
+            "passed": true,
+            "strictlyComparedValues": 50,
+            "doubleValues": 216,
+            "maxAbsoluteError": 0.0,
+            "nonzeroDoubleDifferences": []
+        },
+        {
+            "name": "filled checkpoint codec snapshot equality",
+            "failure": "",
+            "maxErrorPath": "$.RetryCheckpoint.Gameplay.Layout.Placements[4].Position.X",
+            "passed": true,
+            "strictlyComparedValues": 675,
+            "doubleValues": 493,
+            "maxAbsoluteError": 2.7755575615628914e-17,
+            "nonzeroDoubleDifferences": [
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[6].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                }
+            ]
+        },
+        {
+            "name": "stocked food/reserve codec snapshot equality",
+            "failure": "",
+            "maxErrorPath": "$.Ecology.State.NitrateMgN",
+            "passed": true,
+            "strictlyComparedValues": 2281,
+            "doubleValues": 1450,
+            "maxAbsoluteError": 3.552713678800501e-15,
+            "nonzeroDoubleDifferences": [
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[6].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Personality.FoodDrive",
+                    "before": 0.9739238918991759,
+                    "after": 0.973923891899176,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Position.Y",
+                    "before": 0.18823074247691673,
+                    "after": 0.1882307424769167,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Velocity.X",
+                    "before": -0.024845069510545374,
+                    "after": -0.024845069510545378,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Target.Z",
+                    "before": -0.09517278259221319,
+                    "after": -0.0951727825922132,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].MinActionRemaining",
+                    "before": 1.8181477053634238,
+                    "after": 1.818147705363424,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.8181477053634241e-12
+                },
+                {
+                    "path": "$.World.Agents[1].NextTargetRefresh",
+                    "before": 0.22023109278719066,
+                    "after": 0.22023109278719064,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Personality.Sociality",
+                    "before": 0.9252725690254011,
+                    "after": 0.9252725690254012,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Position.X",
+                    "before": -0.12281888031052739,
+                    "after": -0.1228188803105274,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Position.Y",
+                    "before": 0.19629541120590827,
+                    "after": 0.1962954112059083,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Velocity.Y",
+                    "before": -0.019393651643231778,
+                    "after": -0.019393651643231775,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Target.Z",
+                    "before": -0.09517278259221319,
+                    "after": -0.0951727825922132,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].NextDecision",
+                    "before": 1.9769151633236735,
+                    "after": 1.9769151633236737,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.9769151633236736e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Velocity.Z",
+                    "before": -0.019386829106351342,
+                    "after": -0.019386829106351346,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Target.Z",
+                    "before": -0.09517278259221319,
+                    "after": -0.0951727825922132,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Hunger",
+                    "before": 0.00046666666666666677,
+                    "after": 0.0004666666666666668,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].NextTargetRefresh",
+                    "before": 1.2328500877638955,
+                    "after": 1.2328500877638957,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2328500877638956e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Personality.Sociality",
+                    "before": 1.0388936356059277,
+                    "after": 1.0388936356059275,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.0388936356059278e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Target.Z",
+                    "before": -0.09517278259221319,
+                    "after": -0.0951727825922132,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Personality.Curiosity",
+                    "before": 1.1594221623032355,
+                    "after": 1.1594221623032357,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1594221623032356e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Personality.Sociality",
+                    "before": 0.9824955898686313,
+                    "after": 0.9824955898686312,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Position.X",
+                    "before": 0.21507206088571218,
+                    "after": 0.21507206088571215,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Position.Z",
+                    "before": -0.015582977465886123,
+                    "after": -0.015582977465886124,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Target.X",
+                    "before": 0.24103665054806442,
+                    "after": 0.2410366505480644,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Target.Z",
+                    "before": 0.059450077193339404,
+                    "after": 0.05945007719333941,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Personality.Boldness",
+                    "before": 1.2484315110254103,
+                    "after": 1.2484315110254105,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2484315110254104e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Personality.Activity",
+                    "before": 1.1291491725714877,
+                    "after": 1.1291491725714875,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1291491725714876e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Position.Y",
+                    "before": 0.20269096580774834,
+                    "after": 0.2026909658077483,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Target.Y",
+                    "before": 0.18372706921458754,
+                    "after": 0.1837270692145875,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Personality.Boldness",
+                    "before": 1.2659656620933675,
+                    "after": 1.2659656620933677,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2659656620933677e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Target.X",
+                    "before": 0.09866749985221793,
+                    "after": 0.09866749985221791,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Personality.Curiosity",
+                    "before": 1.2532148162950763,
+                    "after": 1.2532148162950765,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2532148162950764e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Personality.Sociality",
+                    "before": 1.2590983604430221,
+                    "after": 1.259098360443022,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2590983604430222e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Position.Z",
+                    "before": 0.015141961915514557,
+                    "after": 0.015141961915514555,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Target.X",
+                    "before": -0.10543402621988207,
+                    "after": -0.10543402621988208,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].NextDecision",
+                    "before": 1.5281855741612753,
+                    "after": 1.528185574161275,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.5281855741612753e-12
+                },
+                {
+                    "path": "$.World.Agents[9].Target.X",
+                    "before": -0.10543402621988207,
+                    "after": -0.10543402621988208,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[10].Personality.Boldness",
+                    "before": 0.9391100379056297,
+                    "after": 0.9391100379056296,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[10].Velocity.X",
+                    "before": -0.00011307777217006785,
+                    "after": -0.00011307777217006784,
+                    "absoluteError": 1.3552527156068805e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[11].NextTargetRefresh",
+                    "before": -0.12497087602581239,
+                    "after": -0.1249708760258124,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Personality.Curiosity",
+                    "before": 0.9054332984494977,
+                    "after": 0.9054332984494976,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Position.X",
+                    "before": -0.20507922284668315,
+                    "after": -0.20507922284668317,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Position.Y",
+                    "before": 0.011051810133637095,
+                    "after": 0.011051810133637097,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Stimuli[0].Position.X",
+                    "before": -0.10543402621988207,
+                    "after": -0.10543402621988208,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Stimuli[1].Position.X",
+                    "before": -0.11027795940704403,
+                    "after": -0.11027795940704405,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Stimuli[2].Position.Z",
+                    "before": -0.11992783052369729,
+                    "after": -0.11992783052369728,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.State.NitrateMgN",
+                    "before": 26.578791482429878,
+                    "after": 26.57879148242988,
+                    "absoluteError": 3.552713678800501e-15,
+                    "allowedError": 2.657879148242988e-11
+                },
+                {
+                    "path": "$.Ecology.Audit.TransferMgN[17]",
+                    "before": 26.578791482429878,
+                    "after": 26.57879148242988,
+                    "absoluteError": 3.552713678800501e-15,
+                    "allowedError": 2.657879148242988e-11
+                },
+                {
+                    "path": "$.Ecology.Audit.TransferMgN[25]",
+                    "before": 26.578791482429878,
+                    "after": 26.57879148242988,
+                    "absoluteError": 3.552713678800501e-15,
+                    "allowedError": 2.657879148242988e-11
+                },
+                {
+                    "path": "$.Ecology.TrialObservation.StableGameHours",
+                    "before": 1.0000000000000013,
+                    "after": 1.000000000000001,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.0000000000000014e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[6].MgN",
+                    "before": 0.011231771307667919,
+                    "after": 0.01123177130766792,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[7].MgN",
+                    "before": 0.011231771307667919,
+                    "after": 0.01123177130766792,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[10].MgN",
+                    "before": 0.011240820947740593,
+                    "after": 0.011240820947740591,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[11].MgN",
+                    "before": 0.011240820947740593,
+                    "after": 0.011240820947740591,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[20].MgN",
+                    "before": 0.011263476960902281,
+                    "after": 0.01126347696090228,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[21].MgN",
+                    "before": 0.011263476960902281,
+                    "after": 0.01126347696090228,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[24].MgN",
+                    "before": 0.011272552146789787,
+                    "after": 0.011272552146789789,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[25].MgN",
+                    "before": 0.011272552146789787,
+                    "after": 0.011272552146789789,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[28].MgN",
+                    "before": 0.011281634644717717,
+                    "after": 0.011281634644717715,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[29].MgN",
+                    "before": 0.011281634644717717,
+                    "after": 0.011281634644717715,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[32].MgN",
+                    "before": 0.011290724460577519,
+                    "after": 0.01129072446057752,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[33].MgN",
+                    "before": 0.011290724460577519,
+                    "after": 0.01129072446057752,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[34].MgN",
+                    "before": 0.011295272114574243,
+                    "after": 0.011295272114574244,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[35].MgN",
+                    "before": 0.011295272114574243,
+                    "after": 0.011295272114574244,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[36].MgN",
+                    "before": 0.011299821600265377,
+                    "after": 0.011299821600265375,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[37].MgN",
+                    "before": 0.011299821600265377,
+                    "after": 0.011299821600265375,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[46].MgN",
+                    "before": 0.011322596529969411,
+                    "after": 0.011322596529969413,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[47].MgN",
+                    "before": 0.011322596529969411,
+                    "after": 0.011322596529969413,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[52].MgN",
+                    "before": 0.011336283515387553,
+                    "after": 0.011336283515387551,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[53].MgN",
+                    "before": 0.011336283515387553,
+                    "after": 0.011336283515387551,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[62].MgN",
+                    "before": 0.011359131934530893,
+                    "after": 0.011359131934530892,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[63].MgN",
+                    "before": 0.011359131934530893,
+                    "after": 0.011359131934530892,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[66].MgN",
+                    "before": 0.011368284191350381,
+                    "after": 0.01136828419135038,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[67].MgN",
+                    "before": 0.011368284191350381,
+                    "after": 0.01136828419135038,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[68].MgN",
+                    "before": 0.011372863084690593,
+                    "after": 0.011372863084690592,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[69].MgN",
+                    "before": 0.011372863084690593,
+                    "after": 0.011372863084690592,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[86].MgN",
+                    "before": 0.011414156206417099,
+                    "after": 0.0114141562064171,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[87].MgN",
+                    "before": 0.011414156206417099,
+                    "after": 0.0114141562064171,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[88].MgN",
+                    "before": 0.011418753575990027,
+                    "after": 0.011418753575990028,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[89].MgN",
+                    "before": 0.011418753575990027,
+                    "after": 0.011418753575990028,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[102].MgN",
+                    "before": 0.011450987052912925,
+                    "after": 0.011450987052912923,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[103].MgN",
+                    "before": 0.011450987052912925,
+                    "after": 0.011450987052912923,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[112].MgN",
+                    "before": 0.011474066658449859,
+                    "after": 0.01147406665844986,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[113].MgN",
+                    "before": 0.011474066658449859,
+                    "after": 0.01147406665844986,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[122].MgN",
+                    "before": 0.011497192781216203,
+                    "after": 0.011497192781216204,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[123].MgN",
+                    "before": 0.011497192781216203,
+                    "after": 0.011497192781216204,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[128].MgN",
+                    "before": 0.011511090822140791,
+                    "after": 0.011511090822140793,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[129].MgN",
+                    "before": 0.011511090822140791,
+                    "after": 0.011511090822140793,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[140].MgN",
+                    "before": 0.011538937325003683,
+                    "after": 0.011538937325003685,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[141].MgN",
+                    "before": 0.011538937325003683,
+                    "after": 0.011538937325003685,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[144].MgN",
+                    "before": 0.011548234454258899,
+                    "after": 0.0115482344542589,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[145].MgN",
+                    "before": 0.011548234454258899,
+                    "after": 0.0115482344542589,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[154].MgN",
+                    "before": 0.011571510063131805,
+                    "after": 0.011571510063131804,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[155].MgN",
+                    "before": 0.011571510063131805,
+                    "after": 0.011571510063131804,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[164].MgN",
+                    "before": 0.011594832584281265,
+                    "after": 0.011594832584281263,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[165].MgN",
+                    "before": 0.011594832584281265,
+                    "after": 0.011594832584281263,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[178].MgN",
+                    "before": 0.011627563106578915,
+                    "after": 0.011627563106578916,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[179].MgN",
+                    "before": 0.011627563106578915,
+                    "after": 0.011627563106578916,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[182].MgN",
+                    "before": 0.011636931643219703,
+                    "after": 0.011636931643219705,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[183].MgN",
+                    "before": 0.011636931643219703,
+                    "after": 0.011636931643219705,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[200].MgN",
+                    "before": 0.011679183557384865,
+                    "after": 0.011679183557384863,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[201].MgN",
+                    "before": 0.011679183557384865,
+                    "after": 0.011679183557384863,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[206].MgN",
+                    "before": 0.011693301592468307,
+                    "after": 0.011693301592468308,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[207].MgN",
+                    "before": 0.011693301592468307,
+                    "after": 0.011693301592468308,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[208].MgN",
+                    "before": 0.011698011395626427,
+                    "after": 0.011698011395626429,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[209].MgN",
+                    "before": 0.011698011395626427,
+                    "after": 0.011698011395626429,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[212].MgN",
+                    "before": 0.011707436693720253,
+                    "after": 0.011707436693720251,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[213].MgN",
+                    "before": 0.011707436693720253,
+                    "after": 0.011707436693720251,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[218].MgN",
+                    "before": 0.011721588881770639,
+                    "after": 0.01172158888177064,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[219].MgN",
+                    "before": 0.011721588881770639,
+                    "after": 0.01172158888177064,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[220].MgN",
+                    "before": 0.011726310078423015,
+                    "after": 0.011726310078423017,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[221].MgN",
+                    "before": 0.011726310078423015,
+                    "after": 0.011726310078423017,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[226].MgN",
+                    "before": 0.011740485081005433,
+                    "after": 0.011740485081005432,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[227].MgN",
+                    "before": 0.011740485081005433,
+                    "after": 0.011740485081005432,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[236].MgN",
+                    "before": 0.000029163122393636166,
+                    "after": 0.00002916312239363617,
+                    "absoluteError": 3.3881317890172014e-21,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[237].MgN",
+                    "before": 0.000029163122393636166,
+                    "after": 0.00002916312239363617,
+                    "absoluteError": 3.3881317890172014e-21,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[238].MgN",
+                    "before": 0.000029163122393636166,
+                    "after": 0.00002916312239363617,
+                    "absoluteError": 3.3881317890172014e-21,
+                    "allowedError": 1e-12
+                }
+            ]
+        },
+        {
+            "name": "restored session continues matching trajectories and nitrogen for five seconds",
+            "failure": "",
+            "maxErrorPath": "$.Ecology.State.NitrateMgN",
+            "passed": true,
+            "strictlyComparedValues": 2272,
+            "doubleValues": 1438,
+            "maxAbsoluteError": 3.552713678800501e-15,
+            "nonzeroDoubleDifferences": [
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[6].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Personality.FoodDrive",
+                    "before": 0.9739238918991759,
+                    "after": 0.973923891899176,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Position.X",
+                    "before": -0.0926411586379329,
+                    "after": -0.09264115863793304,
+                    "absoluteError": 1.3877787807814457e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Position.Y",
+                    "before": 0.14258380949009064,
+                    "after": 0.14258380949009072,
+                    "absoluteError": 8.326672684688674e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Velocity.X",
+                    "before": 0.008924674631229841,
+                    "after": 0.008924674631229857,
+                    "absoluteError": 1.5612511283791264e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Velocity.Y",
+                    "before": 0.014467706821598796,
+                    "after": 0.014467706821598762,
+                    "absoluteError": 3.469446951953614e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Target.X",
+                    "before": -0.19658897326348165,
+                    "after": -0.1965889732634818,
+                    "absoluteError": 1.3877787807814457e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Position.X",
+                    "before": -0.0030651774930396457,
+                    "after": -0.0030651774930396556,
+                    "absoluteError": 9.974659986866641e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Position.Z",
+                    "before": -0.007350375306033142,
+                    "after": -0.0073503753060331495,
+                    "absoluteError": 7.806255641895632e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Velocity.X",
+                    "before": -0.012392591154536184,
+                    "after": -0.01239259115453619,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Velocity.Y",
+                    "before": 0.006583471622240138,
+                    "after": 0.00658347162224015,
+                    "absoluteError": 1.1275702593849246e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Velocity.Z",
+                    "before": -0.023260205672306487,
+                    "after": -0.023260205672306494,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[1].Target.X",
+                    "before": -0.030429419801712,
+                    "after": -0.030429419801711998,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Personality.Sociality",
+                    "before": 0.9252725690254011,
+                    "after": 0.9252725690254012,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Position.X",
+                    "before": -0.07696989788988261,
+                    "after": -0.07696989788988279,
+                    "absoluteError": 1.8041124150158794e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Position.Y",
+                    "before": 0.16997639454792698,
+                    "after": 0.1699763945479271,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Position.Z",
+                    "before": -0.13380843395353892,
+                    "after": -0.13380843395353909,
+                    "absoluteError": 1.6653345369377348e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Velocity.X",
+                    "before": -0.0235934010596268,
+                    "after": -0.023593401059627307,
+                    "absoluteError": 5.065392549852277e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Velocity.Y",
+                    "before": 0.013272319854602341,
+                    "after": 0.013272319854602338,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Velocity.Z",
+                    "before": 0.021537471023192135,
+                    "after": 0.021537471023191625,
+                    "absoluteError": 5.100087019371813e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Position.X",
+                    "before": -0.07580474070990721,
+                    "after": -0.0758047407099072,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Position.Y",
+                    "before": 0.1651006138674989,
+                    "after": 0.16510061386749889,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Position.Z",
+                    "before": -0.13428908634020825,
+                    "after": -0.13428908634020822,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Velocity.X",
+                    "before": -0.0027798861337151246,
+                    "after": -0.002779886133715084,
+                    "absoluteError": 4.0766001685454967e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Velocity.Y",
+                    "before": 0.00093710140821829,
+                    "after": 0.0009371014082183111,
+                    "absoluteError": 2.1141942363467336e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Velocity.Z",
+                    "before": 0.0021832808081646065,
+                    "after": 0.0021832808081646594,
+                    "absoluteError": 5.2909066017292616e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Personality.Sociality",
+                    "before": 1.0388936356059277,
+                    "after": 1.0388936356059275,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.0388936356059278e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Position.X",
+                    "before": 0.046560341160267575,
+                    "after": 0.04656034116026756,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Position.Z",
+                    "before": 0.03386121164831525,
+                    "after": 0.033861211648315265,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Velocity.X",
+                    "before": 0.012926485725359173,
+                    "after": 0.012926485725359309,
+                    "absoluteError": 1.3530843112619095e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Velocity.Y",
+                    "before": 0.02654817651837289,
+                    "after": 0.026548176518372976,
+                    "absoluteError": 8.673617379884035e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Velocity.Z",
+                    "before": -0.005402525061660099,
+                    "after": -0.005402525061660126,
+                    "absoluteError": 2.688821387764051e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Personality.Curiosity",
+                    "before": 1.1594221623032355,
+                    "after": 1.1594221623032357,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1594221623032356e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Personality.Sociality",
+                    "before": 0.9824955898686313,
+                    "after": 0.9824955898686312,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Velocity.Y",
+                    "before": 0.002198259236365632,
+                    "after": 0.0021982592363656256,
+                    "absoluteError": 6.5052130349130266e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Velocity.Z",
+                    "before": 0.004659203723545531,
+                    "after": 0.0046592037235455306,
+                    "absoluteError": 8.673617379884035e-19,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Target.X",
+                    "before": -0.020396888786815212,
+                    "after": -0.020396888786815226,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Target.Y",
+                    "before": 0.23080941302305716,
+                    "after": 0.23080941302305713,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Personality.Boldness",
+                    "before": 1.2484315110254103,
+                    "after": 1.2484315110254105,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2484315110254104e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Personality.Activity",
+                    "before": 1.1291491725714877,
+                    "after": 1.1291491725714875,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1291491725714876e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Position.X",
+                    "before": 0.00909008220919186,
+                    "after": 0.009090082209191856,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Velocity.X",
+                    "before": 0.02402022395160536,
+                    "after": 0.024020223951605354,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Velocity.Y",
+                    "before": 0.012452255543878667,
+                    "after": 0.012452255543878668,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Velocity.Z",
+                    "before": -0.033398992286205,
+                    "after": -0.03339899228620499,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Personality.Boldness",
+                    "before": 1.2659656620933675,
+                    "after": 1.2659656620933677,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2659656620933677e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Position.X",
+                    "before": 0.00850532465649268,
+                    "after": 0.008505324656492686,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Position.Z",
+                    "before": 0.003018627535278688,
+                    "after": 0.003018627535278685,
+                    "absoluteError": 3.0357660829594124e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Velocity.X",
+                    "before": -0.02487777228179704,
+                    "after": -0.024877772281797047,
+                    "absoluteError": 6.938893903907228e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Velocity.Z",
+                    "before": -0.0031612794423183654,
+                    "after": -0.0031612794423183624,
+                    "absoluteError": 3.0357660829594124e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Personality.Curiosity",
+                    "before": 1.2532148162950763,
+                    "after": 1.2532148162950765,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2532148162950764e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Personality.Sociality",
+                    "before": 1.2590983604430221,
+                    "after": 1.259098360443022,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2590983604430222e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Position.Z",
+                    "before": 0.005114242090165226,
+                    "after": 0.005114242090165224,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Velocity.X",
+                    "before": -1.6484909958123538e-9,
+                    "after": -1.6484909958123554e-9,
+                    "absoluteError": 1.6543612251060553e-24,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Target.Z",
+                    "before": 0.013044199488312926,
+                    "after": 0.013044199488312924,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[9].Position.X",
+                    "before": -0.09291015757601277,
+                    "after": -0.09291015757601279,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[9].Position.Z",
+                    "before": -0.0890370170592926,
+                    "after": -0.08903701705929261,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[10].Personality.Boldness",
+                    "before": 0.9391100379056297,
+                    "after": 0.9391100379056296,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Personality.Curiosity",
+                    "before": 0.9054332984494977,
+                    "after": 0.9054332984494976,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Position.X",
+                    "before": -0.19602196287343637,
+                    "after": -0.1960219628734364,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Position.Y",
+                    "before": 0.00970274077852741,
+                    "after": 0.009702740778527412,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Velocity.Y",
+                    "before": 0.0002262874317306004,
+                    "after": 0.00022628743173060034,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Velocity.Z",
+                    "before": -0.0019304857933943004,
+                    "after": -0.0019304857933943,
+                    "absoluteError": 4.336808689942018e-19,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.State.NitrateMgN",
+                    "before": 26.589640625535473,
+                    "after": 26.589640625535477,
+                    "absoluteError": 3.552713678800501e-15,
+                    "allowedError": 2.6589640625535477e-11
+                },
+                {
+                    "path": "$.Ecology.Audit.TransferMgN[17]",
+                    "before": 26.589640625535473,
+                    "after": 26.589640625535477,
+                    "absoluteError": 3.552713678800501e-15,
+                    "allowedError": 2.6589640625535477e-11
+                },
+                {
+                    "path": "$.Ecology.Audit.TransferMgN[25]",
+                    "before": 26.589640625535473,
+                    "after": 26.589640625535477,
+                    "absoluteError": 3.552713678800501e-15,
+                    "allowedError": 2.6589640625535477e-11
+                },
+                {
+                    "path": "$.Ecology.TrialObservation.StableGameHours",
+                    "before": 1.9999999999999978,
+                    "after": 1.9999999999999976,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.999999999999998e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[9].MgN",
+                    "before": 0.011679183557384865,
+                    "after": 0.011679183557384863,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[10].MgN",
+                    "before": 0.011679183557384865,
+                    "after": 0.011679183557384863,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[15].MgN",
+                    "before": 0.011693301592468307,
+                    "after": 0.011693301592468308,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[16].MgN",
+                    "before": 0.011693301592468307,
+                    "after": 0.011693301592468308,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[17].MgN",
+                    "before": 0.011698011395626427,
+                    "after": 0.011698011395626429,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[18].MgN",
+                    "before": 0.011698011395626427,
+                    "after": 0.011698011395626429,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[21].MgN",
+                    "before": 0.011707436693720253,
+                    "after": 0.011707436693720251,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[22].MgN",
+                    "before": 0.011707436693720253,
+                    "after": 0.011707436693720251,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[27].MgN",
+                    "before": 0.011721588881770639,
+                    "after": 0.01172158888177064,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[28].MgN",
+                    "before": 0.011721588881770639,
+                    "after": 0.01172158888177064,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[29].MgN",
+                    "before": 0.011726310078423015,
+                    "after": 0.011726310078423017,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[30].MgN",
+                    "before": 0.011726310078423015,
+                    "after": 0.011726310078423017,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[35].MgN",
+                    "before": 0.011740485081005433,
+                    "after": 0.011740485081005432,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[36].MgN",
+                    "before": 0.011740485081005433,
+                    "after": 0.011740485081005432,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[45].MgN",
+                    "before": 0.000029163122393636166,
+                    "after": 0.00002916312239363617,
+                    "absoluteError": 3.3881317890172014e-21,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[46].MgN",
+                    "before": 0.000029163122393636166,
+                    "after": 0.00002916312239363617,
+                    "absoluteError": 3.3881317890172014e-21,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[47].MgN",
+                    "before": 0.000029163122393636166,
+                    "after": 0.00002916312239363617,
+                    "absoluteError": 3.3881317890172014e-21,
+                    "allowedError": 1e-12
+                }
+            ]
+        },
+        {
+            "name": "completed full route roundtrips with Unity JsonUtility",
+            "failure": "",
+            "maxErrorPath": "$.World.Agents[8].MinActionRemaining",
+            "passed": true,
+            "strictlyComparedValues": 2425,
+            "doubleValues": 1673,
+            "maxAbsoluteError": 4.440892098500626e-16,
+            "nonzeroDoubleDifferences": [
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[6].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Personality.FoodDrive",
+                    "before": 0.9739238918991759,
+                    "after": 0.973923891899176,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Position.Z",
+                    "before": -0.13404748607355355,
+                    "after": -0.13404748607355357,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[0].Hunger",
+                    "before": 0.19193333333333173,
+                    "after": 0.1919333333333317,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Personality.Sociality",
+                    "before": 0.9252725690254011,
+                    "after": 0.9252725690254012,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Velocity.Y",
+                    "before": -0.012214199327815527,
+                    "after": -0.012214199327815528,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[2].Target.X",
+                    "before": 0.21948057041422514,
+                    "after": 0.2194805704142251,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Position.X",
+                    "before": -0.09396257580564643,
+                    "after": -0.09396257580564644,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[3].Velocity.Z",
+                    "before": -0.026641208043949666,
+                    "after": -0.026641208043949663,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Personality.Sociality",
+                    "before": 1.0388936356059277,
+                    "after": 1.0388936356059275,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.0388936356059278e-12
+                },
+                {
+                    "path": "$.World.Agents[4].Velocity.Z",
+                    "before": 0.013866902969886007,
+                    "after": 0.013866902969886009,
+                    "absoluteError": 1.734723475976807e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[4].NextTargetRefresh",
+                    "before": 1.6966646542345787,
+                    "after": 1.696664654234579,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.696664654234579e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Personality.Curiosity",
+                    "before": 1.1594221623032355,
+                    "after": 1.1594221623032357,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1594221623032356e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Personality.Sociality",
+                    "before": 0.9824955898686313,
+                    "after": 0.9824955898686312,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Position.Y",
+                    "before": 0.12236539764163111,
+                    "after": 0.12236539764163112,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[5].Velocity.Y",
+                    "before": -0.027060303323614778,
+                    "after": -0.027060303323614775,
+                    "absoluteError": 3.469446951953614e-18,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Personality.Boldness",
+                    "before": 1.2484315110254103,
+                    "after": 1.2484315110254105,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2484315110254104e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Personality.Activity",
+                    "before": 1.1291491725714877,
+                    "after": 1.1291491725714875,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1291491725714876e-12
+                },
+                {
+                    "path": "$.World.Agents[6].Hunger",
+                    "before": 0.24119999999999298,
+                    "after": 0.24119999999999295,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Personality.Boldness",
+                    "before": 1.2659656620933675,
+                    "after": 1.2659656620933677,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2659656620933677e-12
+                },
+                {
+                    "path": "$.World.Agents[7].Hunger",
+                    "before": 0.24026666666665975,
+                    "after": 0.24026666666665977,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Personality.Curiosity",
+                    "before": 1.2532148162950763,
+                    "after": 1.2532148162950765,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2532148162950764e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Personality.Sociality",
+                    "before": 1.2590983604430221,
+                    "after": 1.259098360443022,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.2590983604430222e-12
+                },
+                {
+                    "path": "$.World.Agents[8].Hunger",
+                    "before": 0.45201700410804213,
+                    "after": 0.4520170041080422,
+                    "absoluteError": 5.551115123125783e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[8].MinActionRemaining",
+                    "before": 3.9917883220012325,
+                    "after": 3.991788322001233,
+                    "absoluteError": 4.440892098500626e-16,
+                    "allowedError": 3.9917883220012325e-12
+                },
+                {
+                    "path": "$.World.Agents[10].Personality.Boldness",
+                    "before": 0.9391100379056297,
+                    "after": 0.9391100379056296,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[10].Velocity.X",
+                    "before": -0.0031862172560000474,
+                    "after": -0.003186217256000047,
+                    "absoluteError": 4.336808689942018e-19,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[11].Position.X",
+                    "before": -0.11023417297525985,
+                    "after": -0.11023417297525984,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Personality.Curiosity",
+                    "before": 0.9054332984494977,
+                    "after": 0.9054332984494976,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Position.Y",
+                    "before": 0.0074211315120688934,
+                    "after": 0.007421131512068893,
+                    "absoluteError": 8.673617379884035e-19,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].Velocity.Z",
+                    "before": 5.7510851777108805e-15,
+                    "after": 5.751085177710881e-15,
+                    "absoluteError": 7.888609052210118e-31,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[12].NextTargetRefresh",
+                    "before": -1.8693207702483075,
+                    "after": -1.8693207702483077,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.869320770248308e-12
+                },
+                {
+                    "path": "$.World.Agents[13].Velocity.Z",
+                    "before": -3.394665026959527e-8,
+                    "after": -3.3946650269595275e-8,
+                    "absoluteError": 6.617444900424222e-24,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[14].Personality.Sociality",
+                    "before": 1.1949380198144355,
+                    "after": 1.1949380198144357,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.1949380198144357e-12
+                },
+                {
+                    "path": "$.World.Agents[15].Position.X",
+                    "before": -0.21350599823053926,
+                    "after": -0.21350599823053928,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[15].Target.X",
+                    "before": -0.21350599823053926,
+                    "after": -0.21350599823053928,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[17].Position.X",
+                    "before": 0.19145286579150705,
+                    "after": 0.19145286579150703,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[17].Target.X",
+                    "before": 0.19145286579150705,
+                    "after": 0.19145286579150703,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[18].Personality.FoodDrive",
+                    "before": 0.9117288046749309,
+                    "after": 0.9117288046749308,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[18].Position.X",
+                    "before": -0.11970347191672773,
+                    "after": -0.11970347191672771,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[18].Target.X",
+                    "before": -0.11970347191672773,
+                    "after": -0.11970347191672771,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[18].NextDecision",
+                    "before": 0.10611079517984763,
+                    "after": 0.10611079517984764,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[19].Position.Z",
+                    "before": -0.09841955542797223,
+                    "after": -0.09841955542797225,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[19].Target.Z",
+                    "before": -0.09841955542797223,
+                    "after": -0.09841955542797225,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[19].Hunger",
+                    "before": 0.49261594633571804,
+                    "after": 0.4926159463357181,
+                    "absoluteError": 5.551115123125783e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[19].NextDecision",
+                    "before": 0.9879617601050995,
+                    "after": 0.9879617601050996,
+                    "absoluteError": 1.1102230246251565e-16,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.World.Agents[21].Personality.Boldness",
+                    "before": 1.2260056664817967,
+                    "after": 1.2260056664817969,
+                    "absoluteError": 2.220446049250313e-16,
+                    "allowedError": 1.226005666481797e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[4].Position.X",
+                    "before": -0.13999999999999999,
+                    "after": -0.14,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Gameplay.Layout.Placements[5].Position.X",
+                    "before": -0.09999999999999999,
+                    "after": -0.1,
+                    "absoluteError": 1.3877787807814457e-17,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[8].MgN",
+                    "before": 0.00036951193087866164,
+                    "after": 0.0003695119308786616,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[9].MgN",
+                    "before": 0.00036951193087866164,
+                    "after": 0.0003695119308786616,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[32].MgN",
+                    "before": 0.00036893080598296164,
+                    "after": 0.0003689308059829616,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[33].MgN",
+                    "before": 0.00036893080598296164,
+                    "after": 0.0003689308059829616,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[48].MgN",
+                    "before": 0.00036854392404707235,
+                    "after": 0.0003685439240470723,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[49].MgN",
+                    "before": 0.00036854392404707235,
+                    "after": 0.0003685439240470723,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[52].MgN",
+                    "before": 0.00036844727032295677,
+                    "after": 0.0003684472703229568,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[53].MgN",
+                    "before": 0.00036844727032295677,
+                    "after": 0.0003684472703229568,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[152].MgN",
+                    "before": 0.00036603958026633685,
+                    "after": 0.0003660395802663369,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[153].MgN",
+                    "before": 0.00036603958026633685,
+                    "after": 0.0003660395802663369,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[156].MgN",
+                    "before": 0.00036594361786179084,
+                    "after": 0.0003659436178617909,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[157].MgN",
+                    "before": 0.00036594361786179084,
+                    "after": 0.0003659436178617909,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[160].MgN",
+                    "before": 0.00036584768193999003,
+                    "after": 0.00036584768193999,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[161].MgN",
+                    "before": 0.00036584768193999003,
+                    "after": 0.00036584768193999,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[212].MgN",
+                    "before": 0.00036460292131235475,
+                    "after": 0.0003646029213123547,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[213].MgN",
+                    "before": 0.00036460292131235475,
+                    "after": 0.0003646029213123547,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[236].MgN",
+                    "before": 0.00036402992070526044,
+                    "after": 0.0003640299207052605,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.Ecology.RecentLedger[237].MgN",
+                    "before": 0.00036402992070526044,
+                    "after": 0.0003640299207052605,
+                    "absoluteError": 5.421010862427522e-20,
+                    "allowedError": 1e-12
+                },
+                {
+                    "path": "$.LivingReserves.Entries[3].MgN",
+                    "before": 0.16647419988515857,
+                    "after": 0.16647419988515855,
+                    "absoluteError": 2.7755575615628914e-17,
+                    "allowedError": 1e-12
+                }
+            ]
+        }
+    ],
+    "startupObservations": [],
+    "errors": [],
+    "warnings": []
+}

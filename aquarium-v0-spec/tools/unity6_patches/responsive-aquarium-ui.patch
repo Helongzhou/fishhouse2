@@ -1,0 +1,142 @@
+--- a/Assets/_Game/UnityAdapter/AquariumGameEntry.cs
++++ b/Assets/_Game/UnityAdapter/AquariumGameEntry.cs
+@@ -36,7 +36,11 @@
+         private bool placing;
+         private bool applicationPaused, applicationFocused = true, skipResumeFrame;
+         private double approachCooldown;
++        private GUISkin uiSkin;
++        private GUIStyle productButtonStyle;
++        private string loggedUiLayout;
+         public bool EnableDevelopmentQaLocales;
++        private const float DesignWidth = 1280f, DesignPanelWidth = 288f;
+         private const string LanguageKey = "aquarium.language";
+         private string SavePath { get { return Path.Combine(Application.persistentDataPath, "aquarium-session-v1.json"); } }
+         private static string Tx() { return Guid.NewGuid().ToString("N"); }
+@@ -142,7 +146,7 @@
+             if(Input.GetKeyDown(KeyCode.L))Apply(session.SetLight(Tx(),!session.World.LightIsOn),false);
+             if(Input.GetKeyDown(KeyCode.R))RotateSelected();
+             if(Input.GetKeyDown(KeyCode.Escape)){placing=false;selectedBatch=null;selectedPlacement=null;RebuildLayout();}
+-            bool inView=Input.mousePosition.x>312;
++            bool inView=Input.mousePosition.x>PanelPixels();
+             float scroll=inView?Input.mouseScrollDelta.y:0;
+             distance=Mathf.Clamp(distance-scroll*.035f,.36f,1.3f);
+             if(inView&&Input.GetMouseButton(1)){yaw=Mathf.Clamp(yaw+Input.GetAxis("Mouse X")*2,-55,55);pitch=Mathf.Clamp(pitch-Input.GetAxis("Mouse Y")*2,-4,48);}
+@@ -180,9 +184,16 @@
+         }
+         private void UpdateCamera()
+         {
+-            view.rect=new Rect(Mathf.Min(.45f,312f/Screen.width),0,1-Mathf.Min(.45f,312f/Screen.width),1);
++            float left = PanelPixels() / Mathf.Max(1, Screen.width);
++            view.rect=new Rect(left,0,1-left,1);
+             Vector3 target=new Vector3(0,.17f,0);view.transform.localPosition=target+Quaternion.Euler(pitch,yaw,0)*new Vector3(0,0,-distance);view.transform.LookAt(root.TransformPoint(target));
+         }
++        private float PanelWidth()
++        { return Screen.width<=DesignWidth?DesignPanelWidth:Mathf.Clamp(Screen.width*.25f,DesignPanelWidth,960f); }
++        private float PanelPixels()
++        { return 12f+PanelWidth()+12f; }
++        private int UiFontSize()
++        { return Screen.width<=DesignWidth?14:Mathf.Clamp(Mathf.RoundToInt(14f*(1f+.35f*(Screen.width/DesignWidth-1f))),14,24); }
+         private void UpdateAnimals()
+         {
+             var live=new HashSet<string>();
+@@ -277,9 +288,24 @@
+         {try{string source;string payload=Store().Load(out source);GameSession candidate=GameSession.Restore(catalog,JsonUtility.FromJson<SessionSnapshot>(payload));session=candidate;selectedBatch=selectedPlacement=null;placing=false;RebuildLayout();status=source==SavePath?"game.loaded":"game.recovered";}catch(Exception e){status="ui.load_error";Debug.LogException(e);}}
+         private void OnGUI()
+         {
+-            if(session==null)return;Font prior=GUI.skin.font;GUI.skin.font=FontFor();
+-            GUILayout.BeginArea(new Rect(12,12,288,Screen.height-24),GUI.skin.box);
+-            GUILayout.Label(T("game.title"));GUILayout.Label(T("game.prototype"));GUILayout.Label(T("ui.wallet",session.Gameplay.WalletCoin));
++            if(session==null)return;GUISkin priorSkin=GUI.skin;float panelWidth=PanelWidth();
++            if(uiSkin==null)uiSkin=Instantiate(priorSkin);
++            if(productButtonStyle==null)productButtonStyle=new GUIStyle(uiSkin.button);
++            uiSkin.font=FontFor();int fontSize=UiFontSize();
++            foreach(GUIStyle style in new[]{uiSkin.label,uiSkin.button,uiSkin.box,productButtonStyle})
++            {style.font=uiSkin.font;style.fontSize=fontSize;style.fixedHeight=0;style.wordWrap=true;style.padding.top=6;style.padding.bottom=6;}
++            productButtonStyle.alignment=TextAnchor.MiddleLeft;
++            GUI.skin=uiSkin;
++            string layoutKey=Screen.width+"x"+Screen.height+":"+text.Language;
++            if(loggedUiLayout!=layoutKey && Event.current.type==EventType.Repaint)
++            {
++                loggedUiLayout=layoutKey;
++                Debug.Log("AQUARIUM_UI_LAYOUT "+layoutKey+" panel="+panelWidth+" cameraLeft="+(PanelPixels()/Screen.width)+" font="+uiSkin.font.name+" fontSize="+fontSize+" labelLineHeight="+uiSkin.label.lineHeight+" fixedHeight="+uiSkin.label.fixedHeight+" wordWrap="+uiSkin.label.wordWrap+" matrix="+GUI.matrix);
++            }
++            try
++            {
++            GUILayout.BeginArea(new Rect(12,12,panelWidth,Screen.height-24),GUI.skin.box);
++            UiLabel(T("game.title"));UiLabel(T("game.prototype"));UiLabel(T("ui.wallet",session.Gameplay.WalletCoin));
+             GUILayout.BeginHorizontal();if(GUILayout.Button(T(session.Paused?"ui.resume":"ui.pause")))session.SetPaused(!session.Paused);
+             foreach(int rate in new[]{1,2,4})if(GUILayout.Button(T("game.rate",rate)))session.SetEcologyRate(rate);GUILayout.EndHorizontal();
+             GUILayout.BeginHorizontal();if(GUILayout.Button(T("ui.save")))Save();if(GUILayout.Button(T("ui.load")))Load();if(GUILayout.Button(T("ui.language"))){text.CycleLanguage();PlayerPrefs.SetString(LanguageKey,text.CaptureLanguagePreference());PlayerPrefs.Save();}GUILayout.EndHorizontal();
+@@ -288,9 +314,12 @@
+             foreach(ItemConfig item in catalog.Items)if(item.ContentStatus=="shipping"&&item.ItemKind!="care"&&item.ItemId!="wood_optional")
+             {
+                 PurchaseBatch owned=null;int count=0;foreach(PurchaseBatch b in guiState.Batches)if(b.ItemId==item.ItemId&&!b.Refunded&&!b.Sold){owned=b;count++;}
+-                GUILayout.BeginHorizontal();if(GUILayout.Button(T("game.product",T("item."+item.ItemId+".name"),count),GUILayout.Width(190))&&owned!=null)SelectBatch(owned);
++                GUIContent productLabel=new GUIContent(T("game.product",T("item."+item.ItemId+".name"),count)),priceLabel=new GUIContent(T("ui.price",item.PurchasePriceCoin));
++                float priceWidth=Mathf.Ceil(uiSkin.button.CalcSize(priceLabel).x)+4;
++                float productWidth=Mathf.Max(80,panelWidth-uiSkin.box.padding.horizontal-uiSkin.verticalScrollbar.fixedWidth-12-priceWidth-productButtonStyle.margin.horizontal-uiSkin.button.margin.horizontal);
++                GUILayout.BeginHorizontal();if(GUILayout.Button(productLabel,productButtonStyle,GUILayout.Width(productWidth),GUILayout.Height(Mathf.Ceil(productButtonStyle.CalcHeight(productLabel,productWidth))))&&owned!=null)SelectBatch(owned);
+                 bool oldEnabled=GUI.enabled;GUI.enabled=!session.Paused&&(session.Gameplay.Stage==GameplayStage.Editing||item.ItemKind=="fish"||item.ItemKind=="shrimp");
+-                if(GUILayout.Button(T("ui.price",item.PurchasePriceCoin)))
++                if(GUILayout.Button(priceLabel,GUILayout.Width(priceWidth)))
+                 {CommandResult result=session.Buy(Tx(),item.ItemId);Apply(result);if(result.Success&&item.ItemKind!="fish"&&item.ItemKind!="shrimp")SelectBatch(Batch(result.BatchId));}
+                 GUI.enabled=oldEnabled;GUILayout.EndHorizontal();
+             }
+@@ -302,11 +331,11 @@
+             PurchaseBatch selected=Batch(selectedBatch);
+             if(selected!=null)
+             {
+-                GUILayout.Space(6);GUILayout.Label(T("item."+selected.ItemId+".name"));
++                GUILayout.Space(6);UiLabel(T("item."+selected.ItemId+".name"));
+                 if(catalog.Item(selected.ItemId).ItemKind=="substrate"&&session.Gameplay.Stage==GameplayStage.Editing)
+                 {
+-                    GUILayout.Label(T("game.front"));GUILayout.BeginHorizontal();fl=GUILayout.HorizontalSlider(fl,.005f,.055f);fr=GUILayout.HorizontalSlider(fr,.005f,.055f);GUILayout.EndHorizontal();
+-                    GUILayout.Label(T("game.back"));GUILayout.BeginHorizontal();bl=GUILayout.HorizontalSlider(bl,.005f,.055f);br=GUILayout.HorizontalSlider(br,.005f,.055f);GUILayout.EndHorizontal();
++                    UiLabel(T("game.front"));GUILayout.BeginHorizontal();fl=GUILayout.HorizontalSlider(fl,.005f,.055f);fr=GUILayout.HorizontalSlider(fr,.005f,.055f);GUILayout.EndHorizontal();
++                    UiLabel(T("game.back"));GUILayout.BeginHorizontal();bl=GUILayout.HorizontalSlider(bl,.005f,.055f);br=GUILayout.HorizontalSlider(br,.005f,.055f);GUILayout.EndHorizontal();
+                     if(GUILayout.Button(T("game.apply_slope")))ApplySlope(selected.Id);
+                 }
+                 else if(catalog.Item(selected.ItemId).ItemKind!="fish"&&catalog.Item(selected.ItemId).ItemKind!="shrimp")
+@@ -315,7 +344,7 @@
+                 else if(session.Gameplay.Stage==GameplayStage.Complete){if(GUILayout.Button(T("ui.sell")))Apply(session.Sell(Tx(),selected.Id));}
+             }
+             GUILayout.EndScrollView();
+-            GUILayout.Label(T("game.stage."+session.Gameplay.Stage));
++            UiLabel(T("game.stage."+session.Gameplay.Stage));
+             GUI.enabled=!session.Paused;
+             if(session.Gameplay.Stage==GameplayStage.Editing){if(GUILayout.Button(T("ui.confirm")))Apply(session.ConfirmLayout(Tx()));}
+             else if(session.Gameplay.Stage==GameplayStage.Confirmed){if(GUILayout.Button(T("guide.fill")))Apply(session.Fill(Tx()));}
+@@ -326,11 +355,20 @@
+                 if(GUILayout.Button(T(session.World.LightIsOn?"ui.light_off":"ui.light_on")))Apply(session.SetLight(Tx(),!session.World.LightIsOn),false);
+                 if(GUILayout.Button(T("ui.retry")))Apply(session.Retry(Tx()));
+             }
+-            GUI.enabled=true;GUILayout.Label(T(status,statusArgs));GUILayout.EndArea();
+-            GUILayout.BeginArea(new Rect(326,16,Mathf.Max(260,Screen.width-344),104));
+-            GUILayout.Label(T("game.clock",session.World.EcologyDays,session.EcologyRate,session.Gameplay.CalculateEffectiveWaterLiters()));
+-            if(session.Gameplay.Filled)GUILayout.Label(T("game.water",session.Ecology.TanMgNPerLiter,session.Ecology.NitriteMgNPerLiter,session.Ecology.NitrateMgNPerLiter,T(session.Ecology.WaterIsStable?"ui.stable":"ui.needs_attention")));
+-            GUILayout.Label(T(placing?"game.place":"game.camera"));GUILayout.EndArea();GUI.skin.font=prior;
++            GUI.enabled=true;UiLabel(T(status,statusArgs));GUILayout.EndArea();
++            float overlayWidth=Mathf.Max(260,Screen.width-panelWidth-40);
++            GUILayout.BeginArea(new Rect(panelWidth+28,16,overlayWidth,Mathf.Max(160,UiFontSize()*8)));
++            UiLabel(T("game.clock",session.World.EcologyDays,session.EcologyRate,session.Gameplay.CalculateEffectiveWaterLiters()),overlayWidth);
++            if(session.Gameplay.Filled)UiLabel(T("game.water",session.Ecology.TanMgNPerLiter,session.Ecology.NitriteMgNPerLiter,session.Ecology.NitrateMgNPerLiter,T(session.Ecology.WaterIsStable?"ui.stable":"ui.needs_attention")),overlayWidth);
++            UiLabel(T(placing?"game.place":"game.camera"),overlayWidth);GUILayout.EndArea();
++            }
++            finally { GUI.enabled=true;GUI.skin=priorSkin; }
++        }
++        private void UiLabel(string content,float width=0)
++        {
++            float available=width>0?width:PanelWidth()-36;
++            float height=Mathf.Ceil(Mathf.Max(uiSkin.label.lineHeight+uiSkin.label.padding.vertical,uiSkin.label.CalcHeight(new GUIContent(content),available)));
++            GUILayout.Label(content,uiSkin.label,GUILayout.MinHeight(height));
+         }
+         private Font FontFor()
+         {
+@@ -341,6 +379,6 @@
+             if(font==null)throw new InvalidOperationException("Missing bundled font asset for font_group "+group+".");
+             fonts.Add(group,font);return font;
+         }
+-        private void OnDestroy(){if(substrateMesh!=null)Destroy(substrateMesh);foreach(Material m in materials)if(m!=null)Destroy(m);fonts.Clear();}
++        private void OnDestroy(){if(substrateMesh!=null)Destroy(substrateMesh);foreach(Material m in materials)if(m!=null)Destroy(m);if(uiSkin!=null)Destroy(uiSkin);fonts.Clear();}
+     }
+ }

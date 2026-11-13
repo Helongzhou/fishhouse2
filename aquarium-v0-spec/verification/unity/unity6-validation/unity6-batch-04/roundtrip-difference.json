@@ -1,0 +1,52 @@
+{
+  "before": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-batch-04/filled-before-restore.json",
+  "after": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-batch-04/filled-after-restore.json",
+  "byte_equal": false,
+  "semantic_equal": false,
+  "first_value_path": "$.Gameplay.Layout.Placements[4].Position.X",
+  "differences_first_12": [
+    {
+      "path": "$.Gameplay.Layout.Placements[4].Position.X",
+      "kind": "value",
+      "before": -0.13999999999999999,
+      "after": -0.14
+    },
+    {
+      "path": "$.Gameplay.Layout.Placements[5].Position.X",
+      "kind": "value",
+      "before": -0.09999999999999999,
+      "after": -0.1
+    },
+    {
+      "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[4].Position.X",
+      "kind": "value",
+      "before": -0.13999999999999999,
+      "after": -0.14
+    },
+    {
+      "path": "$.RetryCheckpoint.Gameplay.Layout.Placements[5].Position.X",
+      "kind": "value",
+      "before": -0.09999999999999999,
+      "after": -0.1
+    },
+    {
+      "path": "$.RetryCheckpoint.Gameplay.UndoHistory[6].Placements[4].Position.X",
+      "kind": "value",
+      "before": -0.13999999999999999,
+      "after": -0.14
+    },
+    {
+      "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[4].Position.X",
+      "kind": "value",
+      "before": -0.13999999999999999,
+      "after": -0.14
+    },
+    {
+      "path": "$.RetryCheckpoint.Gameplay.UndoHistory[7].Placements[5].Position.X",
+      "kind": "value",
+      "before": -0.09999999999999999,
+      "after": -0.1
+    }
+  ],
+  "note": "Diagnostic only. This never changes the C# exact roundtrip assertion or run result."
+}

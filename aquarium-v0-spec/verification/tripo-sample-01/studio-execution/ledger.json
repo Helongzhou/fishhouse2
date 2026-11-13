@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-09",
+  "status": "blocked_preflight_native_input",
+  "account_display_name": "zhouhlwork",
+  "balance_before": 200,
+  "credits_spent": 0,
+  "generation_submissions": [],
+  "downloads": [],
+  "observed_default": {"model": "H3.1", "displayed_price": 30, "public": true, "part_generation": false, "texture_8k": false},
+  "h2_5_price_verified": false,
+  "free_export_verified": false,
+  "existing_demo_task_ids": ["1b674e7b-65fa-4d4a-9c38-a7a668e8b3a0", "3ae3b5a0-e9c4-4cb8-9b40-9125e9b769f4", "5342c4fd-9759-4690-b95b-075a76c3a442", "fbe6ea7e-3c82-457c-9622-e1bdb038df1d"],
+  "blocker": "Native coordinate input returned -10005 noWindowsAvailable; AX model-selector click and keyboard did not open selector."
+}

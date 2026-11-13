@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/Applications/Unity/Hub/Editor/6000.6.8f1/Unity.app/Contents/MacOS/Unity",
+    "-batchmode",
+    "-quit",
+    "-projectPath",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "-executeMethod",
+    "Aquarium.UnityEditorTools.AquariumProjectSetup.BuildMacOS",
+    "-logFile",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-macos-build-05/editor.log",
+    "-aquariumBuildOutput",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app",
+    "-aquariumBuildReport",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-macos-build-05/build-report.json"
+  ],
+  "cwd": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+  "startedUtc": "2026-11-06T07:42:25.646276+00:00",
+  "source_sha256": {
+    "Assets/_Game/UnityAdapter/AquariumGameEntry.cs": "c50e07f82ac58c77ad26c31d36cb152842be3ca05778e963578ed7489c65f46a",
+    "Assets/_Game/UnityAdapter/AquariumInteractionDemo.cs": "ac89d4dce92c0e2a901eafb69bf71f40b28b3cbfe1d6652ab0e21646e97c1323",
+    "Assets/_Game/Editor/AquariumProjectSetup.cs": "7426ff97212ea1819638141603c4f9871e30a120ea171441b1940209554fad29",
+    "Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs": "c82fc949301c41c4882355e0c865b0519ec62921f096ae38d9a0680de46ff1d1",
+    "Assets/_Game/Resources/Fonts/NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "Assets/_Game/Resources/Fonts/NotoSansCJKsc-Regular.otf.meta": "86d02f2f79f97daee79a8a788edce5bf8429766e83e39dc095745db13c581c50",
+    "Assets/_Game/Resources/Fonts/OFL-1.1.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "Assets/_Game/Resources/Fonts/NOTICE.txt": "cde4fb2bd2283d4e4e75d98cf640048ecbcd0d6cdfdc8d317ad97f716009327e"
+  },
+  "finishedUtc": "2026-11-06T07:42:39.209502+00:00",
+  "exitCode": 0
+}

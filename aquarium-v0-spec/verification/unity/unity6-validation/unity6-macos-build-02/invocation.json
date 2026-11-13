@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Applications/Unity/Hub/Editor/6000.6.8f1/Unity.app/Contents/MacOS/Unity",
+    "-batchmode",
+    "-quit",
+    "-projectPath",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "-executeMethod",
+    "Aquarium.UnityEditorTools.AquariumProjectSetup.BuildMacOS",
+    "-aquariumBuildOutput",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app",
+    "-aquariumBuildReport",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-macos-build-02/build-report.json",
+    "-logFile",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-macos-build-02/editor.log"
+  ],
+  "cwd": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+  "startedUtc": "2026-11-06T04:01:25.031263+00:00",
+  "source_sha256": {
+    "Assets/_Game/Editor/AquariumProjectSetup.cs": "11f1b8ab73b9742531931197beb04f21ee27ea60c1f37ff5655d2084f1612ea7",
+    "Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs": "faf4e61f199eb1f135fb1eb95fc0011509718954f3a751794328372805977814",
+    "Assets/_Game/UnityAdapter/AquariumGameEntry.cs": "89d99616039e16aef071bd20717a869846cba464e19dfa5eb6cb41d8e9678454",
+    "Assets/_Game/UnityAdapter/AquariumInteractionDemo.cs": "f5ebb98c9a25da57486edcac587d42e1ef137c8fc386478a78e9314f48f65234",
+    "Assets/_Game/Resources/Fonts/NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "Assets/_Game/Resources/Fonts/OFL-1.1.txt": "1d361a8f8e8ce6e68457dcd93fb56e162e6baa3bbb7e7573a290d44399f6b57e",
+    "Assets/_Game/Resources/Fonts/NOTICE.txt": "073200778e2989ae68ba0aae81f09a1aa7e1aef573d7e920120b21d687fe564e",
+    "Packages/manifest.json": "2f50caae375aa376e1554466b86ca29d69a4316c6398c18f507db8aee7b50b08",
+    "ProjectSettings/ProjectVersion.txt": "1eac9aed61309ea22f15b0324e5a6e73f2e45db08c90deb7ae4495a25f454664"
+  },
+  "finishedUtc": "2026-11-06T04:01:39.129980+00:00",
+  "exitCode": 0
+}

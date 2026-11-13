@@ -1,0 +1,5275 @@
+{
+    "SchemaVersion": 1,
+    "ContentVersion": "900a16ba2a5be1e60797b85cd5b0a8cf964888fbcf0249cfc24958593bac7ff4",
+    "Mode": 0,
+    "EcologyRate": 4.0,
+    "World": {
+        "SchemaVersion": 2,
+        "NextEventId": 5,
+        "RealSeconds": 763.399999999963,
+        "EcologyDays": 5.861666666667489,
+        "EcologyRate": 4.0,
+        "FixedAccumulator": 0.00012563113123239406,
+        "LightIsOn": true,
+        "Agents": [
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+                "SpeciesId": "ember_tetra",
+                "RngState": 3862342131,
+                "Personality": {
+                    "Boldness": 0.9977743358234876,
+                    "Curiosity": 1.297398286976386,
+                    "Sociality": 0.6705129368812778,
+                    "Activity": 0.7458636726019904,
+                    "FoodDrive": 0.9729469011770562
+                },
+                "Position": {
+                    "X": -0.18548451129902327,
+                    "Y": 0.26324063344037807,
+                    "Z": 0.07167168380761751
+                },
+                "Velocity": {
+                    "X": 0.019909493970613357,
+                    "Y": -0.005198730913462611,
+                    "Z": -0.021586273810775863
+                },
+                "Target": {
+                    "X": -0.10743418696817345,
+                    "Y": 0.2429785494464251,
+                    "Z": -0.012599555143874758
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.08646666666666866,
+                "Stress": 0.0,
+                "MinActionRemaining": 0.8819048472292117,
+                "NextDecision": 1.9527279831372133,
+                "NextTargetRefresh": 1.2318765423105402,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 2,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 6,
+                "Meals": 1,
+                "Startles": 0,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+                "SpeciesId": "ember_tetra",
+                "RngState": 4141696412,
+                "Personality": {
+                    "Boldness": 0.9280731713748538,
+                    "Curiosity": 1.0635654543410056,
+                    "Sociality": 0.7447152306209319,
+                    "Activity": 0.7287184670334681,
+                    "FoodDrive": 1.1971923503791913
+                },
+                "Position": {
+                    "X": 0.022009097610194175,
+                    "Y": 0.143445452661576,
+                    "Z": -0.0507543962664328
+                },
+                "Velocity": {
+                    "X": 0.004290167522147772,
+                    "Y": 0.002303204489892977,
+                    "Z": 0.007601515654455306
+                },
+                "Target": {
+                    "X": 0.11490395609502883,
+                    "Y": 0.2062260899874497,
+                    "Z": -0.04449550369850192
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.07106666666666715,
+                "Stress": 0.0,
+                "MinActionRemaining": 1.0836298659211012,
+                "NextDecision": 1.242486505018314,
+                "NextTargetRefresh": 2.561961016415929,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 0,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 11,
+                "Meals": 2,
+                "Startles": 0,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+                "SpeciesId": "ember_tetra",
+                "RngState": 1954245199,
+                "Personality": {
+                    "Boldness": 0.8310191183933058,
+                    "Curiosity": 0.9539620994008148,
+                    "Sociality": 1.0024603320402097,
+                    "Activity": 0.7219022458186373,
+                    "FoodDrive": 0.7540195979876443
+                },
+                "Position": {
+                    "X": 0.08363937112769,
+                    "Y": 0.1733307002337781,
+                    "Z": 0.0433970575930484
+                },
+                "Velocity": {
+                    "X": -0.01792095693355818,
+                    "Y": -0.007328977077930336,
+                    "Z": -0.00609773812710849
+                },
+                "Target": {
+                    "X": 0.031601649964498726,
+                    "Y": 0.16201738767855894,
+                    "Z": 0.016210925923886094
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.04899999999999973,
+                "Stress": 0.0,
+                "MinActionRemaining": 0.03281089088413868,
+                "NextDecision": 0.8842424272501406,
+                "NextTargetRefresh": 1.443349668647472,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 2,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 10,
+                "Meals": 3,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+                "SpeciesId": "ember_tetra",
+                "RngState": 2981655459,
+                "Personality": {
+                    "Boldness": 1.1058051881962456,
+                    "Curiosity": 0.9433022591634654,
+                    "Sociality": 0.8819874990382233,
+                    "Activity": 0.9645684759365396,
+                    "FoodDrive": 1.2486951076658444
+                },
+                "Position": {
+                    "X": 0.06832381442890267,
+                    "Y": 0.14732760580070903,
+                    "Z": 0.06931281159697893
+                },
+                "Velocity": {
+                    "X": 0.03581471289991014,
+                    "Y": 0.0030260777853518884,
+                    "Z": 0.012914312447850103
+                },
+                "Target": {
+                    "X": 0.16476897480202632,
+                    "Y": 0.16555964445886048,
+                    "Z": 0.09267123687800066
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.06786666666666684,
+                "Stress": 0.0,
+                "MinActionRemaining": 0.18085253577834448,
+                "NextDecision": 0.401663374305157,
+                "NextTargetRefresh": 0.5622269529189574,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 1,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 12,
+                "Meals": 2,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+                "SpeciesId": "ember_tetra",
+                "RngState": 2367995076,
+                "Personality": {
+                    "Boldness": 1.264622216753196,
+                    "Curiosity": 1.3024022559286097,
+                    "Sociality": 1.2010504798847252,
+                    "Activity": 1.024255650653504,
+                    "FoodDrive": 1.0709393088473007
+                },
+                "Position": {
+                    "X": 0.01433492237127352,
+                    "Y": 0.2798936383146037,
+                    "Z": -0.10539077932792355
+                },
+                "Velocity": {
+                    "X": 0.006844622856275911,
+                    "Y": 0.00009331801265940414,
+                    "Z": -0.031193988240201753
+                },
+                "Target": {
+                    "X": -0.06989029282682832,
+                    "Y": 0.27999999999999997,
+                    "Z": -0.142
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.06533333333333326,
+                "Stress": 0.0,
+                "MinActionRemaining": 1.2468036419013526,
+                "NextDecision": 1.5195373188296826,
+                "NextTargetRefresh": 1.8693503023280449,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 0,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 8,
+                "Meals": 1,
+                "Startles": 0,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+                "SpeciesId": "ember_tetra",
+                "RngState": 2291817570,
+                "Personality": {
+                    "Boldness": 1.0156459445483053,
+                    "Curiosity": 0.9485386513988489,
+                    "Sociality": 0.7462351482012309,
+                    "Activity": 0.8502394886454567,
+                    "FoodDrive": 1.0845732804154975
+                },
+                "Position": {
+                    "X": 0.05169980814062981,
+                    "Y": 0.15295392262057828,
+                    "Z": 0.055137731721120985
+                },
+                "Velocity": {
+                    "X": 0.008312746200625425,
+                    "Y": 0.0013336401948989352,
+                    "Z": 0.0033384459559835183
+                },
+                "Target": {
+                    "X": 0.051445358965995266,
+                    "Y": 0.15375535607807833,
+                    "Z": 0.05440076189030586
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.056266666666666354,
+                "Stress": 0.0,
+                "MinActionRemaining": -0.01476935639511958,
+                "NextDecision": 1.081658651569159,
+                "NextTargetRefresh": 0.23542407563654455,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 2,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 14,
+                "Meals": 2,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+                "SpeciesId": "ember_tetra",
+                "RngState": 4113551187,
+                "Personality": {
+                    "Boldness": 1.1264027889701538,
+                    "Curiosity": 1.299972857197281,
+                    "Sociality": 1.0510588272823953,
+                    "Activity": 0.9068688079016284,
+                    "FoodDrive": 0.996888769348152
+                },
+                "Position": {
+                    "X": -0.16968448516254686,
+                    "Y": 0.2395634876654926,
+                    "Z": -0.0317889094468839
+                },
+                "Velocity": {
+                    "X": -0.026467070155587916,
+                    "Y": -0.0027378012989003908,
+                    "Z": 0.022527182285530717
+                },
+                "Target": {
+                    "X": -0.2374879389812471,
+                    "Y": 0.19752373287111125,
+                    "Z": 0.050539688698317785
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.06339999999999973,
+                "Stress": 0.0,
+                "MinActionRemaining": -0.2391056225247044,
+                "NextDecision": 0.3821416038418378,
+                "NextTargetRefresh": 2.6155215413775297,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 0,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 8,
+                "Meals": 2,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+                "SpeciesId": "ember_tetra",
+                "RngState": 131057312,
+                "Personality": {
+                    "Boldness": 0.8898275882354938,
+                    "Curiosity": 0.9408230536268092,
+                    "Sociality": 1.2882051505497658,
+                    "Activity": 0.8796052550664172,
+                    "FoodDrive": 0.9038155668182298
+                },
+                "Position": {
+                    "X": -0.02700263277038318,
+                    "Y": 0.16789603111717338,
+                    "Z": 0.0650784926687513
+                },
+                "Velocity": {
+                    "X": 0.020398335418103847,
+                    "Y": 0.003193882624590339,
+                    "Z": -0.011226791346667998
+                },
+                "Target": {
+                    "X": 0.04499274446349448,
+                    "Y": 0.200143041047553,
+                    "Z": -0.03404840592887318
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.12314539202787328,
+                "Stress": 0.0,
+                "MinActionRemaining": 2.557413863724409,
+                "NextDecision": 2.9200753296977693,
+                "NextTargetRefresh": 0.6031775101282013,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 1,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -43.4000000000001,
+                "ActionChanges": 13,
+                "Meals": 1,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 0
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+                "SpeciesId": "neocaridina_red",
+                "RngState": 3450786523,
+                "Personality": {
+                    "Boldness": 0.7733537007006817,
+                    "Curiosity": 1.3470411603455432,
+                    "Sociality": 1.034605538554024,
+                    "Activity": 1.060436263657175,
+                    "FoodDrive": 1.0218196463538334
+                },
+                "Position": {
+                    "X": 0.010669855077465158,
+                    "Y": 0.013494893490372905,
+                    "Z": 0.0025167512471766097
+                },
+                "Velocity": {
+                    "X": 9.021316001287047e-30,
+                    "Y": -4.206853009939333e-30,
+                    "Z": 2.5636107900071035e-30
+                },
+                "Target": {
+                    "X": 0.016350758735968824,
+                    "Y": 0.00873765924887266,
+                    "Z": 0.009950347858548803
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.4679197139214677,
+                "Stress": 0.0,
+                "MinActionRemaining": -0.0922402461796598,
+                "NextDecision": 0.8613285440854693,
+                "NextTargetRefresh": -4.2963772947705925,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 6,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": 1.0662648536051462,
+                "ActionChanges": 8,
+                "Meals": 0,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 17
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+                "SpeciesId": "neocaridina_red",
+                "RngState": 3481047209,
+                "Personality": {
+                    "Boldness": 0.8479307909845375,
+                    "Curiosity": 0.9926856595440768,
+                    "Sociality": 0.9290875873179176,
+                    "Activity": 0.8957966036861762,
+                    "FoodDrive": 1.1198113087331876
+                },
+                "Position": {
+                    "X": 0.0636428978216662,
+                    "Y": 0.011632132023749818,
+                    "Z": 0.0010679010825932506
+                },
+                "Velocity": {
+                    "X": -0.003856200486666706,
+                    "Y": -0.0012900191145629777,
+                    "Z": 0.00967483484760396
+                },
+                "Target": {
+                    "X": 0.03967935106596546,
+                    "Y": 0.004,
+                    "Z": 0.05870253436628083
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.44048310044370115,
+                "Stress": 0.0,
+                "MinActionRemaining": 2.3676830634086734,
+                "NextDecision": 3.2909205888184596,
+                "NextTargetRefresh": 0.5562326278265861,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 0,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -18.380163516548613,
+                "ActionChanges": 10,
+                "Meals": 0,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 15
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+                "SpeciesId": "neocaridina_red",
+                "RngState": 4174526139,
+                "Personality": {
+                    "Boldness": 1.3448006323422306,
+                    "Curiosity": 1.338024118205067,
+                    "Sociality": 0.9667778206174262,
+                    "Activity": 1.0945345589192583,
+                    "FoodDrive": 1.196188476937823
+                },
+                "Position": {
+                    "X": 0.02350935010258101,
+                    "Y": 0.016024345933421506,
+                    "Z": -0.006739416611786229
+                },
+                "Velocity": {
+                    "X": 1.0458963548903803e-10,
+                    "Y": -9.87607912639434e-11,
+                    "Z": 1.3199139226057118e-10
+                },
+                "Target": {
+                    "X": 0.02497246389640638,
+                    "Y": 0.010255894415662624,
+                    "Z": 0.0025739864088449808
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.3071690186966163,
+                "Stress": 0.0,
+                "MinActionRemaining": 0.5894186533405542,
+                "NextDecision": 0.7953664230939573,
+                "NextTargetRefresh": -3.979313766246192,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 6,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": 0.10949730014156768,
+                "ActionChanges": 2,
+                "Meals": 0,
+                "Startles": 0,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 5
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+                "SpeciesId": "neocaridina_red",
+                "RngState": 3539087848,
+                "Personality": {
+                    "Boldness": 0.671098687814083,
+                    "Curiosity": 0.9027911300421692,
+                    "Sociality": 1.1269783804542386,
+                    "Activity": 0.8179682844085618,
+                    "FoodDrive": 1.2642553135054186
+                },
+                "Position": {
+                    "X": -0.1424657385327633,
+                    "Y": 0.010928857810651747,
+                    "Z": 0.06081239607567473
+                },
+                "Velocity": {
+                    "X": -0.005696135414931172,
+                    "Y": -0.00021290776989379092,
+                    "Z": -0.002990573747581029
+                },
+                "Target": {
+                    "X": -0.2397069469337232,
+                    "Y": 0.017599999999999998,
+                    "Z": 0.11619436009478971
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.681628744408111,
+                "Stress": 0.0,
+                "MinActionRemaining": 0.77940590477083,
+                "NextDecision": 0.9677486943255664,
+                "NextTargetRefresh": 2.3480162034276875,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 1,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -4.8401063508916735,
+                "ActionChanges": 9,
+                "Meals": 0,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 29
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+                "SpeciesId": "neocaridina_red",
+                "RngState": 3045312998,
+                "Personality": {
+                    "Boldness": 1.0306627312325871,
+                    "Curiosity": 1.231060086505022,
+                    "Sociality": 0.8719145079026931,
+                    "Activity": 0.9443665179656818,
+                    "FoodDrive": 0.9029494757996872
+                },
+                "Position": {
+                    "X": -0.03606853780589988,
+                    "Y": 0.013259551095654371,
+                    "Z": -0.0007126573008914672
+                },
+                "Velocity": {
+                    "X": -0.000010672848804021063,
+                    "Y": -0.000006031298176360273,
+                    "Z": -0.000003801597562633796
+                },
+                "Target": {
+                    "X": -0.04520937806658741,
+                    "Y": 0.00809309423493687,
+                    "Z": -0.003973370084395095
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.5203257253501516,
+                "Stress": 0.0,
+                "MinActionRemaining": 2.173077368414198,
+                "NextDecision": 3.2148530806977593,
+                "NextTargetRefresh": -1.8416545398494588,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 6,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": 1.1193525243996796,
+                "ActionChanges": 11,
+                "Meals": 0,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 10
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5",
+                "SpeciesId": "neocaridina_red",
+                "RngState": 603316520,
+                "Personality": {
+                    "Boldness": 1.2698137361207047,
+                    "Curiosity": 1.2139120720676146,
+                    "Sociality": 0.8810334654408507,
+                    "Activity": 0.7531453462084755,
+                    "FoodDrive": 1.190015191421844
+                },
+                "Position": {
+                    "X": -0.008374625655145742,
+                    "Y": 0.012915708814037674,
+                    "Z": -0.011091611683874347
+                },
+                "Velocity": {
+                    "X": -0.0026659575884535654,
+                    "Y": -0.0009101800746859048,
+                    "Z": -0.0014382958608732694
+                },
+                "Target": {
+                    "X": -0.025804118959976183,
+                    "Y": 0.006608530618599616,
+                    "Z": -0.020294175794481513
+                },
+                "GlassTarget": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                },
+                "Hunger": 0.39820049676261365,
+                "Stress": 0.0,
+                "MinActionRemaining": 2.2378828869628187,
+                "NextDecision": 3.1611756469491805,
+                "NextTargetRefresh": -1.7444017937911385,
+                "ApproachMemory": 0.0,
+                "GlassCooldown": 0.0,
+                "LightHabituation": 0.0,
+                "StartleDelay": -1.0,
+                "SecondsSinceLightChange": 42.200000000000166,
+                "SafeLightSeconds": 12.2333333333333,
+                "LightBurstLoad": 0.0,
+                "Action": 6,
+                "LastLightId": 3,
+                "LastGlassId": 0,
+                "LastFoodId": 4,
+                "NextProbe": -1.8127178593984985,
+                "ActionChanges": 7,
+                "Meals": 0,
+                "Startles": 1,
+                "GlassApproaches": 0,
+                "ProbeBursts": 0,
+                "GrazeDwells": 11
+            }
+        ],
+        "Stimuli": []
+    },
+    "Gameplay": {
+        "SchemaVersion": 2,
+        "SaveId": "e45d778765d54b099e8ce9938366d0c3",
+        "WalletCoin": 90,
+        "Stage": 5,
+        "Paused": true,
+        "Filled": true,
+        "WaterlineHeight": 0.32999999999999996,
+        "Layout": {
+            "HasSubstrate": true,
+            "Substrate": {
+                "PurchaseBatchId": "batch:unity-accept-6",
+                "FrontLeftHeight": 0.015,
+                "FrontRightHeight": 0.015,
+                "BackLeftHeight": 0.045,
+                "BackRightHeight": 0.045
+            },
+            "Placements": [
+                {
+                    "Id": "main",
+                    "PurchaseBatchId": "batch:unity-accept-7",
+                    "SupportPlacementId": "",
+                    "Position": {
+                        "X": -0.12,
+                        "Y": 0.0905,
+                        "Z": 0.02
+                    },
+                    "Size": {
+                        "X": 0.09,
+                        "Y": 0.11,
+                        "Z": 0.07
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                },
+                {
+                    "Id": "second",
+                    "PurchaseBatchId": "batch:unity-accept-8",
+                    "SupportPlacementId": "",
+                    "Position": {
+                        "X": 0.09,
+                        "Y": 0.0565,
+                        "Z": -0.01
+                    },
+                    "Size": {
+                        "X": 0.06,
+                        "Y": 0.05,
+                        "Z": 0.05
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                },
+                {
+                    "Id": "filter",
+                    "PurchaseBatchId": "batch:unity-accept-9",
+                    "SupportPlacementId": "",
+                    "Position": {
+                        "X": 0.24,
+                        "Y": 0.28,
+                        "Z": 0.11
+                    },
+                    "Size": {
+                        "X": 0.04,
+                        "Y": 0.06,
+                        "Z": 0.04
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                },
+                {
+                    "Id": "light",
+                    "PurchaseBatchId": "batch:unity-accept-10",
+                    "SupportPlacementId": "",
+                    "Position": {
+                        "X": -0.2,
+                        "Y": 0.33,
+                        "Z": 0.0
+                    },
+                    "Size": {
+                        "X": 0.06,
+                        "Y": 0.015,
+                        "Z": 0.15
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                },
+                {
+                    "Id": "anubias",
+                    "PurchaseBatchId": "batch:unity-accept-11",
+                    "SupportPlacementId": "main",
+                    "Position": {
+                        "X": -0.14,
+                        "Y": 0.1455,
+                        "Z": 0.02
+                    },
+                    "Size": {
+                        "X": 0.02,
+                        "Y": 0.035,
+                        "Z": 0.02
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                },
+                {
+                    "Id": "fern",
+                    "PurchaseBatchId": "batch:unity-accept-12",
+                    "SupportPlacementId": "main",
+                    "Position": {
+                        "X": -0.1,
+                        "Y": 0.1455,
+                        "Z": 0.02
+                    },
+                    "Size": {
+                        "X": 0.02,
+                        "Y": 0.05,
+                        "Z": 0.02
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                },
+                {
+                    "Id": "moss",
+                    "PurchaseBatchId": "batch:unity-accept-13",
+                    "SupportPlacementId": "second",
+                    "Position": {
+                        "X": 0.09,
+                        "Y": 0.0815,
+                        "Z": -0.01
+                    },
+                    "Size": {
+                        "X": 0.025,
+                        "Y": 0.015,
+                        "Z": 0.025
+                    },
+                    "YawDegrees": 0.0,
+                    "RhizomeBuried": false
+                }
+            ]
+        },
+        "Batches": [
+            {
+                "Id": "batch:unity-accept-6",
+                "ItemId": "substrate_natural_sand",
+                "TransactionId": "unity-accept-6",
+                "PaidCoin": 120,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-7",
+                "ItemId": "stone_main",
+                "TransactionId": "unity-accept-7",
+                "PaidCoin": 160,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-8",
+                "ItemId": "stone_secondary",
+                "TransactionId": "unity-accept-8",
+                "PaidCoin": 80,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-9",
+                "ItemId": "filter_hangon_basic",
+                "TransactionId": "unity-accept-9",
+                "PaidCoin": 260,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-10",
+                "ItemId": "light_low",
+                "TransactionId": "unity-accept-10",
+                "PaidCoin": 220,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-11",
+                "ItemId": "plant_anubias_nana",
+                "TransactionId": "unity-accept-11",
+                "PaidCoin": 90,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-12",
+                "ItemId": "plant_java_fern",
+                "TransactionId": "unity-accept-12",
+                "PaidCoin": 110,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-13",
+                "ItemId": "plant_java_moss",
+                "TransactionId": "unity-accept-13",
+                "PaidCoin": 70,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:unity-accept-28",
+                "ItemId": "fish_trial_pack",
+                "TransactionId": "unity-accept-28",
+                "PaidCoin": 120,
+                "DeliveredUnits": 8,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": [
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7"
+                ]
+            },
+            {
+                "Id": "batch:unity-accept-29",
+                "ItemId": "shrimp_pack",
+                "TransactionId": "unity-accept-29",
+                "PaidCoin": 180,
+                "DeliveredUnits": 6,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": [
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5"
+                ]
+            }
+        ],
+        "Receipts": [
+            {
+                "TransactionId": "unity-accept-6",
+                "Fingerprint": "buy:22:substrate_natural_sand",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-6",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-7",
+                "Fingerprint": "buy:10:stone_main",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-7",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-8",
+                "Fingerprint": "buy:15:stone_secondary",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-8",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-9",
+                "Fingerprint": "buy:19:filter_hangon_basic",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-9",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-10",
+                "Fingerprint": "buy:9:light_low",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-10",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-11",
+                "Fingerprint": "buy:18:plant_anubias_nana",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-11",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-12",
+                "Fingerprint": "buy:15:plant_java_fern",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-12",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-13",
+                "Fingerprint": "buy:15:plant_java_moss",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-13",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-14",
+                "Fingerprint": "substrate:20:batch:unity-accept-60.015,0.015,0.045,0.045",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-15",
+                "Fingerprint": "place:4:main20:batch:unity-accept-7-1:-0.12,0.0905,0.02;0.09,0.11,0.07;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-16",
+                "Fingerprint": "place:6:second20:batch:unity-accept-8-1:0.09,0.0565,-0.01;0.06,0.05,0.05;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-17",
+                "Fingerprint": "place:6:filter20:batch:unity-accept-9-1:0.24,0.28,0.11;0.04,0.06,0.04;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-18",
+                "Fingerprint": "place:5:light21:batch:unity-accept-10-1:-0.2,0.33,0;0.06,0.015,0.15;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-19",
+                "Fingerprint": "place:7:anubias21:batch:unity-accept-114:main-0.13999999999999999,0.1455,0.02;0.02,0.035,0.02;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-20",
+                "Fingerprint": "place:4:fern21:batch:unity-accept-124:main-0.099999999999999992,0.1455,0.02;0.02,0.05,0.02;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-21",
+                "Fingerprint": "place:4:moss21:batch:unity-accept-136:second0.09,0.0815,-0.01;0.025,0.015,0.025;0;False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-22",
+                "Fingerprint": "confirm",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-23",
+                "Fingerprint": "fill",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "progress:challenge:unity-accept-27",
+                "Fingerprint": "refresh",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "progress:Cycling",
+                "Fingerprint": "refresh",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-28",
+                "Fingerprint": "buy:15:fish_trial_pack",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-28",
+                    "EntityIds": [
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7"
+                    ]
+                }
+            },
+            {
+                "TransactionId": "unity-accept-29",
+                "Fingerprint": "buy:11:shrimp_pack",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-29",
+                    "EntityIds": [
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+                        "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5"
+                    ]
+                }
+            }
+        ],
+        "ClaimedRewardIds": [
+            "starter_grant"
+        ],
+        "UndoHistory": [],
+        "RedoHistory": []
+    },
+    "Ecology": {
+        "SchemaVersion": 1,
+        "Parameters": {
+            "VolumeLiters": 53.15699999999999,
+            "FixedStepGameDays": 0.0006944444444444445,
+            "OrganicMineralizationPerDay": 0.65,
+            "LivingMetabolismPerDay": 0.35,
+            "InitialTanCapacityMgNPerDay": 1.5,
+            "InitialNitriteCapacityMgNPerDay": 1.5,
+            "MaximumCapacityMgNPerDay": 54.0,
+            "CapacityGainPerProcessedMgN": 0.6,
+            "CapacityDecayPerDay": 0.02,
+            "PlantUptakeMgNPerDay": 0.0,
+            "ChallengeDoseMgNPerLiter": 0.5,
+            "MaximumStableTanMgNPerLiter": 0.05,
+            "MaximumStableNitriteMgNPerLiter": 0.05,
+            "RequiredProcessedFraction": 0.9,
+            "StableGameHours": 24.0,
+            "RecentLedgerLimit": 256
+        },
+        "State": {
+            "FoodMgN": 0.0,
+            "OrganicMgN": 1.269583967098172,
+            "TanMgN": 0.0,
+            "NitriteMgN": 0.0,
+            "NitrateMgN": 26.77771748104671,
+            "LivingMgN": 1.531198551855082,
+            "PlantMgN": 0.0
+        },
+        "Audit": {
+            "CumulativeInputMgN": 29.5785,
+            "CumulativeOutputMgN": 0.0,
+            "InputByPoolMgN": [
+                3.0,
+                0.0,
+                26.578499999999995,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "OutputByPoolMgN": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "TransferMgN": [
+                0.0,
+                1.3199999999999985,
+                0.0,
+                0.0,
+                0.0,
+                1.6800000000000006,
+                0.0,
+                0.0,
+                0.0,
+                0.050416032901827466,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                26.77771748104671,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                26.77771748104671,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.14880144814491694,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "GameDays": 5.861111111110677,
+        "FixedAccumulatorGameDays": 0.000555555556393317,
+        "TanCapacityMgNPerDay": 16.474871997996924,
+        "NitriteCapacityMgNPerDay": 16.474871997996924,
+        "FilterEnabled": true,
+        "NextSequence": 13701,
+        "Challenge": {
+            "Status": 3,
+            "DoseMgN": 26.578499999999995,
+            "OxidizedTanMgN": 26.57849999999996,
+            "OxidizedNitriteMgN": 26.57849999999996,
+            "StableGameHours": 23.99999999999992,
+            "StartedGameDay": 0.0,
+            "DoseSequence": 1,
+            "InvalidatedReason": ""
+        },
+        "TrialObservation": {
+            "Status": 1,
+            "StableGameHours": 8.666666666666677,
+            "StartedGameDay": 5.499999999999741,
+            "LiveAnimalCount": 8
+        },
+        "RecentLedger": [
+            {
+                "Sequence": 13445,
+                "GameDay": 5.817361111110698,
+                "MgN": 0.0005897399718517962,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13446,
+                "GameDay": 5.817361111110698,
+                "MgN": 0.0003779548965079404,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13447,
+                "GameDay": 5.817361111110698,
+                "MgN": 0.0009676948683597366,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13448,
+                "GameDay": 5.817361111110698,
+                "MgN": 0.0009676948683597366,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13449,
+                "GameDay": 5.8180555555551425,
+                "MgN": 0.0005894738298524582,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13450,
+                "GameDay": 5.8180555555551425,
+                "MgN": 0.0003778630436337226,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13451,
+                "GameDay": 5.8180555555551425,
+                "MgN": 0.0009673368734861808,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13452,
+                "GameDay": 5.8180555555551425,
+                "MgN": 0.0009673368734861808,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13453,
+                "GameDay": 5.818749999999587,
+                "MgN": 0.0005892078079595522,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13454,
+                "GameDay": 5.818749999999587,
+                "MgN": 0.0003777712130821432,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13455,
+                "GameDay": 5.818749999999587,
+                "MgN": 0.0009669790210416956,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13456,
+                "GameDay": 5.818749999999587,
+                "MgN": 0.0009669790210416956,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13457,
+                "GameDay": 5.819444444444031,
+                "MgN": 0.0005889419061188758,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13458,
+                "GameDay": 5.819444444444031,
+                "MgN": 0.0003776794048477774,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13459,
+                "GameDay": 5.819444444444031,
+                "MgN": 0.0009666213109666532,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13460,
+                "GameDay": 5.819444444444031,
+                "MgN": 0.0009666213109666532,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13461,
+                "GameDay": 5.820138888888475,
+                "MgN": 0.0005886761242762507,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13462,
+                "GameDay": 5.820138888888475,
+                "MgN": 0.00037758761892520127,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13463,
+                "GameDay": 5.820138888888475,
+                "MgN": 0.000966263743201452,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13464,
+                "GameDay": 5.820138888888475,
+                "MgN": 0.000966263743201452,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13465,
+                "GameDay": 5.820833333332919,
+                "MgN": 0.0005884104623775237,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13466,
+                "GameDay": 5.820833333332919,
+                "MgN": 0.0003774958553089926,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13467,
+                "GameDay": 5.820833333332919,
+                "MgN": 0.0009659063176865164,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13468,
+                "GameDay": 5.820833333332919,
+                "MgN": 0.0009659063176865164,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13469,
+                "GameDay": 5.821527777777363,
+                "MgN": 0.0005881449203685654,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13470,
+                "GameDay": 5.821527777777363,
+                "MgN": 0.0003774041139937304,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13471,
+                "GameDay": 5.821527777777363,
+                "MgN": 0.0009655490343622958,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13472,
+                "GameDay": 5.821527777777363,
+                "MgN": 0.0009655490343622958,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13473,
+                "GameDay": 5.822222222221807,
+                "MgN": 0.0005878794981952712,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13474,
+                "GameDay": 5.822222222221807,
+                "MgN": 0.00037731239497399495,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13475,
+                "GameDay": 5.822222222221807,
+                "MgN": 0.0009651918931692662,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13476,
+                "GameDay": 5.822222222221807,
+                "MgN": 0.0009651918931692662,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13477,
+                "GameDay": 5.822916666666251,
+                "MgN": 0.0005876141958035608,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13478,
+                "GameDay": 5.822916666666251,
+                "MgN": 0.00037722069824436776,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13479,
+                "GameDay": 5.822916666666251,
+                "MgN": 0.0009648348940479286,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13480,
+                "GameDay": 5.822916666666251,
+                "MgN": 0.0009648348940479286,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13481,
+                "GameDay": 5.823611111110695,
+                "MgN": 0.0005873490131393783,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13482,
+                "GameDay": 5.823611111110695,
+                "MgN": 0.0003771290237994318,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13483,
+                "GameDay": 5.823611111110695,
+                "MgN": 0.00096447803693881,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13484,
+                "GameDay": 5.823611111110695,
+                "MgN": 0.00096447803693881,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13485,
+                "GameDay": 5.8243055555551395,
+                "MgN": 0.0005870839501486923,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13486,
+                "GameDay": 5.8243055555551395,
+                "MgN": 0.0003770373716337713,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13487,
+                "GameDay": 5.8243055555551395,
+                "MgN": 0.0009641213217824636,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13488,
+                "GameDay": 5.8243055555551395,
+                "MgN": 0.0009641213217824636,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13489,
+                "GameDay": 5.824999999999584,
+                "MgN": 0.0005868190067774957,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13490,
+                "GameDay": 5.824999999999584,
+                "MgN": 0.0003769457417419719,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13491,
+                "GameDay": 5.824999999999584,
+                "MgN": 0.0009637647485194676,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13492,
+                "GameDay": 5.824999999999584,
+                "MgN": 0.0009637647485194676,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13493,
+                "GameDay": 5.825694444444028,
+                "MgN": 0.0005865541829718058,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13494,
+                "GameDay": 5.825694444444028,
+                "MgN": 0.0003768541341186204,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13495,
+                "GameDay": 5.825694444444028,
+                "MgN": 0.0009634083170904262,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13496,
+                "GameDay": 5.825694444444028,
+                "MgN": 0.0009634083170904262,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13497,
+                "GameDay": 5.826388888888472,
+                "MgN": 0.0005862894786776641,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13498,
+                "GameDay": 5.826388888888472,
+                "MgN": 0.00037676254875830496,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13499,
+                "GameDay": 5.826388888888472,
+                "MgN": 0.000963052027435969,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13500,
+                "GameDay": 5.826388888888472,
+                "MgN": 0.000963052027435969,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13501,
+                "GameDay": 5.827083333332916,
+                "MgN": 0.0005860248938411367,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13502,
+                "GameDay": 5.827083333332916,
+                "MgN": 0.00037667098565561513,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13503,
+                "GameDay": 5.827083333332916,
+                "MgN": 0.000962695879496752,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13504,
+                "GameDay": 5.827083333332916,
+                "MgN": 0.000962695879496752,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13505,
+                "GameDay": 5.82777777777736,
+                "MgN": 0.0005857604284083139,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13506,
+                "GameDay": 5.82777777777736,
+                "MgN": 0.00037657944480514176,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13507,
+                "GameDay": 5.82777777777736,
+                "MgN": 0.0009623398732134556,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13508,
+                "GameDay": 5.82777777777736,
+                "MgN": 0.0009623398732134556,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13509,
+                "GameDay": 5.828472222221804,
+                "MgN": 0.0005854960823253102,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13510,
+                "GameDay": 5.828472222221804,
+                "MgN": 0.0003764879262014769,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13511,
+                "GameDay": 5.828472222221804,
+                "MgN": 0.0009619840085267872,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13512,
+                "GameDay": 5.828472222221804,
+                "MgN": 0.0009619840085267872,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13513,
+                "GameDay": 5.829166666666248,
+                "MgN": 0.000585231855538265,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13514,
+                "GameDay": 5.829166666666248,
+                "MgN": 0.0003763964298392141,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13515,
+                "GameDay": 5.829166666666248,
+                "MgN": 0.0009616282853774792,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13516,
+                "GameDay": 5.829166666666248,
+                "MgN": 0.0009616282853774792,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13517,
+                "GameDay": 5.829861111110692,
+                "MgN": 0.0005849677479933411,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13518,
+                "GameDay": 5.829861111110692,
+                "MgN": 0.00037630495571294807,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13519,
+                "GameDay": 5.829861111110692,
+                "MgN": 0.0009612727037062892,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13520,
+                "GameDay": 5.829861111110692,
+                "MgN": 0.0009612727037062892,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13521,
+                "GameDay": 5.8305555555551365,
+                "MgN": 0.0005847037596367264,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13522,
+                "GameDay": 5.8305555555551365,
+                "MgN": 0.0003762135038172748,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13523,
+                "GameDay": 5.8305555555551365,
+                "MgN": 0.0009609172634540012,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13524,
+                "GameDay": 5.8305555555551365,
+                "MgN": 0.0009609172634540012,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13525,
+                "GameDay": 5.831249999999581,
+                "MgN": 0.0005844398904146326,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13526,
+                "GameDay": 5.831249999999581,
+                "MgN": 0.0003761220741467918,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13527,
+                "GameDay": 5.831249999999581,
+                "MgN": 0.0009605619645614244,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13528,
+                "GameDay": 5.831249999999581,
+                "MgN": 0.0009605619645614244,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13529,
+                "GameDay": 5.831944444444025,
+                "MgN": 0.0005841761402732959,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13530,
+                "GameDay": 5.831944444444025,
+                "MgN": 0.0003760306666960977,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13531,
+                "GameDay": 5.831944444444025,
+                "MgN": 0.0009602068069693936,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13532,
+                "GameDay": 5.831944444444025,
+                "MgN": 0.0009602068069693936,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13533,
+                "GameDay": 5.832638888888469,
+                "MgN": 0.0005839125091589766,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13534,
+                "GameDay": 5.832638888888469,
+                "MgN": 0.0003759392814597926,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13535,
+                "GameDay": 5.832638888888469,
+                "MgN": 0.0009598517906187692,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13536,
+                "GameDay": 5.832638888888469,
+                "MgN": 0.0009598517906187692,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13537,
+                "GameDay": 5.833333333332913,
+                "MgN": 0.0005836489970179595,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13538,
+                "GameDay": 5.833333333332913,
+                "MgN": 0.0003758479184324777,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13539,
+                "GameDay": 5.833333333332913,
+                "MgN": 0.0009594969154504372,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13540,
+                "GameDay": 5.833333333332913,
+                "MgN": 0.0009594969154504372,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13541,
+                "GameDay": 5.834027777777357,
+                "MgN": 0.0005833856037965535,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13542,
+                "GameDay": 5.834027777777357,
+                "MgN": 0.0003757565776087558,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13543,
+                "GameDay": 5.834027777777357,
+                "MgN": 0.0009591421814053092,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13544,
+                "GameDay": 5.834027777777357,
+                "MgN": 0.0009591421814053092,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13545,
+                "GameDay": 5.834722222221801,
+                "MgN": 0.0005831223294410916,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13546,
+                "GameDay": 5.834722222221801,
+                "MgN": 0.00037566525898323055,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13547,
+                "GameDay": 5.834722222221801,
+                "MgN": 0.0009587875884243222,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13548,
+                "GameDay": 5.834722222221801,
+                "MgN": 0.0009587875884243222,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13549,
+                "GameDay": 5.835416666666245,
+                "MgN": 0.0005828591738979312,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13550,
+                "GameDay": 5.835416666666245,
+                "MgN": 0.00037557396255050754,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13551,
+                "GameDay": 5.835416666666245,
+                "MgN": 0.0009584331364484388,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13552,
+                "GameDay": 5.835416666666245,
+                "MgN": 0.0009584331364484388,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13553,
+                "GameDay": 5.836111111110689,
+                "MgN": 0.0005825961371134538,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13554,
+                "GameDay": 5.836111111110689,
+                "MgN": 0.0003754826883051931,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13555,
+                "GameDay": 5.836111111110689,
+                "MgN": 0.000958078825418647,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13556,
+                "GameDay": 5.836111111110689,
+                "MgN": 0.000958078825418647,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13557,
+                "GameDay": 5.8368055555551335,
+                "MgN": 0.0005823332190340653,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13558,
+                "GameDay": 5.8368055555551335,
+                "MgN": 0.00037539143624189535,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13559,
+                "GameDay": 5.8368055555551335,
+                "MgN": 0.0009577246552759606,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13560,
+                "GameDay": 5.8368055555551335,
+                "MgN": 0.0009577246552759606,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13561,
+                "GameDay": 5.837499999999578,
+                "MgN": 0.0005820704196061953,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13562,
+                "GameDay": 5.837499999999578,
+                "MgN": 0.00037530020635522334,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13563,
+                "GameDay": 5.837499999999578,
+                "MgN": 0.0009573706259614188,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13564,
+                "GameDay": 5.837499999999578,
+                "MgN": 0.0009573706259614188,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13565,
+                "GameDay": 5.838194444444022,
+                "MgN": 0.0005818077387762983,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13566,
+                "GameDay": 5.838194444444022,
+                "MgN": 0.00037520899863978754,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13567,
+                "GameDay": 5.838194444444022,
+                "MgN": 0.000957016737416086,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13568,
+                "GameDay": 5.838194444444022,
+                "MgN": 0.000957016737416086,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13569,
+                "GameDay": 5.838888888888466,
+                "MgN": 0.0005815451764908525,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13570,
+                "GameDay": 5.838888888888466,
+                "MgN": 0.00037511781309019983,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13571,
+                "GameDay": 5.838888888888466,
+                "MgN": 0.0009566629895810524,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13572,
+                "GameDay": 5.838888888888466,
+                "MgN": 0.0009566629895810524,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13573,
+                "GameDay": 5.83958333333291,
+                "MgN": 0.0005812827326963601,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13574,
+                "GameDay": 5.83958333333291,
+                "MgN": 0.00037502664970107336,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13575,
+                "GameDay": 5.83958333333291,
+                "MgN": 0.0009563093823974334,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13576,
+                "GameDay": 5.83958333333291,
+                "MgN": 0.0009563093823974334,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13577,
+                "GameDay": 5.840277777777354,
+                "MgN": 0.0005810204073393477,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13578,
+                "GameDay": 5.840277777777354,
+                "MgN": 0.0003749355084670224,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13579,
+                "GameDay": 5.840277777777354,
+                "MgN": 0.00095595591580637,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13580,
+                "GameDay": 5.840277777777354,
+                "MgN": 0.00095595591580637,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13581,
+                "GameDay": 5.840972222221798,
+                "MgN": 0.0005807582003663663,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13582,
+                "GameDay": 5.840972222221798,
+                "MgN": 0.0003748443893826629,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13583,
+                "GameDay": 5.840972222221798,
+                "MgN": 0.0009556025897490292,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13584,
+                "GameDay": 5.840972222221798,
+                "MgN": 0.0009556025897490292,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13585,
+                "GameDay": 5.841666666666242,
+                "MgN": 0.0005804961117239904,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13586,
+                "GameDay": 5.841666666666242,
+                "MgN": 0.00037475329244261176,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13587,
+                "GameDay": 5.841666666666242,
+                "MgN": 0.000955249404166602,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13588,
+                "GameDay": 5.841666666666242,
+                "MgN": 0.000955249404166602,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13589,
+                "GameDay": 5.842361111110686,
+                "MgN": 0.0005802341413588191,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13590,
+                "GameDay": 5.842361111110686,
+                "MgN": 0.0003746622176414874,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13591,
+                "GameDay": 5.842361111110686,
+                "MgN": 0.0009548963590003064,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13592,
+                "GameDay": 5.842361111110686,
+                "MgN": 0.0009548963590003064,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13593,
+                "GameDay": 5.8430555555551305,
+                "MgN": 0.0005799722892174754,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13594,
+                "GameDay": 5.8430555555551305,
+                "MgN": 0.0003745711649739095,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13595,
+                "GameDay": 5.8430555555551305,
+                "MgN": 0.0009545434541913848,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13596,
+                "GameDay": 5.8430555555551305,
+                "MgN": 0.0009545434541913848,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13597,
+                "GameDay": 5.843749999999575,
+                "MgN": 0.0005797105552466064,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13598,
+                "GameDay": 5.843749999999575,
+                "MgN": 0.000374480134434499,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13599,
+                "GameDay": 5.843749999999575,
+                "MgN": 0.0009541906896811054,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13600,
+                "GameDay": 5.843749999999575,
+                "MgN": 0.0009541906896811054,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13601,
+                "GameDay": 5.844444444444019,
+                "MgN": 0.0005794489393928832,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13602,
+                "GameDay": 5.844444444444019,
+                "MgN": 0.0003743891260178782,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13603,
+                "GameDay": 5.844444444444019,
+                "MgN": 0.0009538380654107616,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13604,
+                "GameDay": 5.844444444444019,
+                "MgN": 0.0009538380654107616,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13605,
+                "GameDay": 5.845138888888463,
+                "MgN": 0.0005791874416030013,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13606,
+                "GameDay": 5.845138888888463,
+                "MgN": 0.0003742981397186706,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13607,
+                "GameDay": 5.845138888888463,
+                "MgN": 0.000953485581321672,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13608,
+                "GameDay": 5.845138888888463,
+                "MgN": 0.000953485581321672,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13609,
+                "GameDay": 5.845833333332907,
+                "MgN": 0.0005789260618236799,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13610,
+                "GameDay": 5.845833333332907,
+                "MgN": 0.00037420717553150127,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13611,
+                "GameDay": 5.845833333332907,
+                "MgN": 0.0009531332373551812,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13612,
+                "GameDay": 5.845833333332907,
+                "MgN": 0.0009531332373551812,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13613,
+                "GameDay": 5.846527777777351,
+                "MgN": 0.0005786648000016622,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13614,
+                "GameDay": 5.846527777777351,
+                "MgN": 0.00037411623345099624,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13615,
+                "GameDay": 5.846527777777351,
+                "MgN": 0.0009527810334526584,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13616,
+                "GameDay": 5.846527777777351,
+                "MgN": 0.0009527810334526584,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13617,
+                "GameDay": 5.847222222221795,
+                "MgN": 0.0005784036560837159,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13618,
+                "GameDay": 5.847222222221795,
+                "MgN": 0.0003740253134717831,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13619,
+                "GameDay": 5.847222222221795,
+                "MgN": 0.000952428969555499,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13620,
+                "GameDay": 5.847222222221795,
+                "MgN": 0.000952428969555499,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13621,
+                "GameDay": 5.847916666666239,
+                "MgN": 0.0005781426300166322,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13622,
+                "GameDay": 5.847916666666239,
+                "MgN": 0.0003739344155884906,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13623,
+                "GameDay": 5.847916666666239,
+                "MgN": 0.0009520770456051228,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13624,
+                "GameDay": 5.847916666666239,
+                "MgN": 0.0009520770456051228,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13625,
+                "GameDay": 5.848611111110683,
+                "MgN": 0.0005778817217472267,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13626,
+                "GameDay": 5.848611111110683,
+                "MgN": 0.00037384353979574896,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13627,
+                "GameDay": 5.848611111110683,
+                "MgN": 0.0009517252615429756,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13628,
+                "GameDay": 5.848611111110683,
+                "MgN": 0.0009517252615429756,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13629,
+                "GameDay": 5.849305555555127,
+                "MgN": 0.0005776209312223386,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13630,
+                "GameDay": 5.849305555555127,
+                "MgN": 0.0003737526860881895,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13631,
+                "GameDay": 5.849305555555127,
+                "MgN": 0.000951373617310528,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13632,
+                "GameDay": 5.849305555555127,
+                "MgN": 0.000951373617310528,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13633,
+                "GameDay": 5.8499999999995715,
+                "MgN": 0.0005773602583888316,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13634,
+                "GameDay": 5.8499999999995715,
+                "MgN": 0.00037366185446044507,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13635,
+                "GameDay": 5.8499999999995715,
+                "MgN": 0.0009510221128492766,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13636,
+                "GameDay": 5.8499999999995715,
+                "MgN": 0.0009510221128492766,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13637,
+                "GameDay": 5.850694444444016,
+                "MgN": 0.000577099703193593,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13638,
+                "GameDay": 5.850694444444016,
+                "MgN": 0.0003735710449071495,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13639,
+                "GameDay": 5.850694444444016,
+                "MgN": 0.0009506707481007424,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13640,
+                "GameDay": 5.850694444444016,
+                "MgN": 0.0009506707481007424,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13641,
+                "GameDay": 5.85138888888846,
+                "MgN": 0.0005768392655835341,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13642,
+                "GameDay": 5.85138888888846,
+                "MgN": 0.0003734802574229383,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13643,
+                "GameDay": 5.85138888888846,
+                "MgN": 0.0009503195230064724,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13644,
+                "GameDay": 5.85138888888846,
+                "MgN": 0.0009503195230064724,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13645,
+                "GameDay": 5.852083333332904,
+                "MgN": 0.0005765789455055902,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13646,
+                "GameDay": 5.852083333332904,
+                "MgN": 0.00037338949200244807,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13647,
+                "GameDay": 5.852083333332904,
+                "MgN": 0.0009499684375080384,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13648,
+                "GameDay": 5.852083333332904,
+                "MgN": 0.0009499684375080384,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13649,
+                "GameDay": 5.852777777777348,
+                "MgN": 0.0005763187429067208,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13650,
+                "GameDay": 5.852777777777348,
+                "MgN": 0.0003732987486403167,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13651,
+                "GameDay": 5.852777777777348,
+                "MgN": 0.0009496174915470376,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13652,
+                "GameDay": 5.852777777777348,
+                "MgN": 0.0009496174915470376,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13653,
+                "GameDay": 5.853472222221792,
+                "MgN": 0.0005760586577339088,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13654,
+                "GameDay": 5.853472222221792,
+                "MgN": 0.0003732080273311834,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13655,
+                "GameDay": 5.853472222221792,
+                "MgN": 0.0009492666850650924,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13656,
+                "GameDay": 5.853472222221792,
+                "MgN": 0.0009492666850650924,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13657,
+                "GameDay": 5.854166666666236,
+                "MgN": 0.0005757986899341618,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13658,
+                "GameDay": 5.854166666666236,
+                "MgN": 0.00037311732806968894,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13659,
+                "GameDay": 5.854166666666236,
+                "MgN": 0.0009489160180038507,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13660,
+                "GameDay": 5.854166666666236,
+                "MgN": 0.0009489160180038507,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13661,
+                "GameDay": 5.85486111111068,
+                "MgN": 0.0005755388394545104,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13662,
+                "GameDay": 5.85486111111068,
+                "MgN": 0.0003730266508504749,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13663,
+                "GameDay": 5.85486111111068,
+                "MgN": 0.0009485654903049852,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13664,
+                "GameDay": 5.85486111111068,
+                "MgN": 0.0009485654903049852,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13665,
+                "GameDay": 5.855555555555124,
+                "MgN": 0.0005752791062420097,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13666,
+                "GameDay": 5.855555555555124,
+                "MgN": 0.00037293599566818464,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13667,
+                "GameDay": 5.855555555555124,
+                "MgN": 0.0009482151019101944,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13668,
+                "GameDay": 5.855555555555124,
+                "MgN": 0.0009482151019101944,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13669,
+                "GameDay": 5.8562499999995685,
+                "MgN": 0.0005750194902437387,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13670,
+                "GameDay": 5.8562499999995685,
+                "MgN": 0.0003728453625174624,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13671,
+                "GameDay": 5.8562499999995685,
+                "MgN": 0.0009478648527612011,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13672,
+                "GameDay": 5.8562499999995685,
+                "MgN": 0.0009478648527612011,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13673,
+                "GameDay": 5.856944444444013,
+                "MgN": 0.0005747599914068001,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13674,
+                "GameDay": 5.856944444444013,
+                "MgN": 0.00037275475139295414,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13675,
+                "GameDay": 5.856944444444013,
+                "MgN": 0.0009475147427997542,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13676,
+                "GameDay": 5.856944444444013,
+                "MgN": 0.0009475147427997542,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13677,
+                "GameDay": 5.857638888888457,
+                "MgN": 0.0005745006096783204,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13678,
+                "GameDay": 5.857638888888457,
+                "MgN": 0.0003726641622893068,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13679,
+                "GameDay": 5.857638888888457,
+                "MgN": 0.0009471647719676272,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13680,
+                "GameDay": 5.857638888888457,
+                "MgN": 0.0009471647719676272,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13681,
+                "GameDay": 5.858333333332901,
+                "MgN": 0.0005742413450054502,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13682,
+                "GameDay": 5.858333333332901,
+                "MgN": 0.0003725735952011688,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13683,
+                "GameDay": 5.858333333332901,
+                "MgN": 0.000946814940206619,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13684,
+                "GameDay": 5.858333333332901,
+                "MgN": 0.000946814940206619,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13685,
+                "GameDay": 5.859027777777345,
+                "MgN": 0.0005739821973353637,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13686,
+                "GameDay": 5.859027777777345,
+                "MgN": 0.0003724830501231898,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13687,
+                "GameDay": 5.859027777777345,
+                "MgN": 0.0009464652474585534,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13688,
+                "GameDay": 5.859027777777345,
+                "MgN": 0.0009464652474585534,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13689,
+                "GameDay": 5.859722222221789,
+                "MgN": 0.0005737231666152591,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13690,
+                "GameDay": 5.859722222221789,
+                "MgN": 0.0003723925270500205,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13691,
+                "GameDay": 5.859722222221789,
+                "MgN": 0.0009461156936652796,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13692,
+                "GameDay": 5.859722222221789,
+                "MgN": 0.0009461156936652796,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13693,
+                "GameDay": 5.860416666666233,
+                "MgN": 0.0005734642527923584,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13694,
+                "GameDay": 5.860416666666233,
+                "MgN": 0.0003723020259763136,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13695,
+                "GameDay": 5.860416666666233,
+                "MgN": 0.000945766278768672,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13696,
+                "GameDay": 5.860416666666233,
+                "MgN": 0.000945766278768672,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            },
+            {
+                "Sequence": 13697,
+                "GameDay": 5.861111111110677,
+                "MgN": 0.0005732054558139074,
+                "Operation": 2,
+                "From": 1,
+                "To": 2,
+                "SourceId": "mineralization"
+            },
+            {
+                "Sequence": 13698,
+                "GameDay": 5.861111111110677,
+                "MgN": 0.0003722115468967224,
+                "Operation": 2,
+                "From": 5,
+                "To": 2,
+                "SourceId": "ingested-reserve-metabolism"
+            },
+            {
+                "Sequence": 13699,
+                "GameDay": 5.861111111110677,
+                "MgN": 0.0009454170027106296,
+                "Operation": 2,
+                "From": 2,
+                "To": 3,
+                "SourceId": "tan-oxidation"
+            },
+            {
+                "Sequence": 13700,
+                "GameDay": 5.861111111110677,
+                "MgN": 0.0009454170027106296,
+                "Operation": 2,
+                "From": 3,
+                "To": 4,
+                "SourceId": "nitrite-oxidation"
+            }
+        ]
+    },
+    "LivingReserves": {
+        "SchemaVersion": 1,
+        "Entries": [
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+                "MgN": 0.10577835447911628
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+                "MgN": 0.21636693429308915
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+                "MgN": 0.3351454732795582
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+                "MgN": 0.2173684395395959
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+                "MgN": 0.10909444391471104
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+                "MgN": 0.21944473599744072
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+                "MgN": 0.21879961081855345
+            },
+            {
+                "EntityId": "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7",
+                "MgN": 0.1092005595330175
+            }
+        ]
+    },
+    "Food": [],
+    "Receipts": [
+        {
+            "TransactionId": "unity-accept-6",
+            "Fingerprint": "3:buy22:substrate_natural_sand",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-6",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-7",
+            "Fingerprint": "3:buy10:stone_main",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-7",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-8",
+            "Fingerprint": "3:buy15:stone_secondary",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-8",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-9",
+            "Fingerprint": "3:buy19:filter_hangon_basic",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-9",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-10",
+            "Fingerprint": "3:buy9:light_low",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-10",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-11",
+            "Fingerprint": "3:buy18:plant_anubias_nana",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-11",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-12",
+            "Fingerprint": "3:buy15:plant_java_fern",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-12",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-13",
+            "Fingerprint": "3:buy15:plant_java_moss",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-13",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-14",
+            "Fingerprint": "9:substrate20:batch:unity-accept-65:0.0155:0.0155:0.0455:0.045",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-15",
+            "Fingerprint": "5:place4:main20:batch:unity-accept-75:-0.126:0.09054:0.024:0.094:0.114:0.071:0-1:5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-16",
+            "Fingerprint": "5:place6:second20:batch:unity-accept-84:0.096:0.05655:-0.014:0.064:0.054:0.051:0-1:5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-17",
+            "Fingerprint": "5:place6:filter20:batch:unity-accept-94:0.244:0.284:0.114:0.044:0.064:0.041:0-1:5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-18",
+            "Fingerprint": "5:place5:light21:batch:unity-accept-104:-0.24:0.331:04:0.065:0.0154:0.151:0-1:5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-19",
+            "Fingerprint": "5:place7:anubias21:batch:unity-accept-1120:-0.139999999999999996:0.14554:0.024:0.025:0.0354:0.021:04:main5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-20",
+            "Fingerprint": "5:place4:fern21:batch:unity-accept-1221:-0.0999999999999999926:0.14554:0.024:0.024:0.054:0.021:04:main5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-21",
+            "Fingerprint": "5:place4:moss21:batch:unity-accept-134:0.096:0.08155:-0.015:0.0255:0.0155:0.0251:06:second5:False",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-22",
+            "Fingerprint": "confirm",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-23",
+            "Fingerprint": "fill",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-27",
+            "Fingerprint": "challenge",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-28",
+            "Fingerprint": "3:buy15:fish_trial_pack",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-28",
+                "EntityIds": [
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/0",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/1",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/2",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/3",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/4",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/5",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/6",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-28/7"
+                ]
+            }
+        },
+        {
+            "TransactionId": "unity-accept-29",
+            "Fingerprint": "3:buy11:shrimp_pack",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:unity-accept-29",
+                "EntityIds": [
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/0",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/1",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/2",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/3",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/4",
+                    "e45d778765d54b099e8ce9938366d0c3/batch:unity-accept-29/5"
+                ]
+            }
+        },
+        {
+            "TransactionId": "unity-accept-30",
+            "Fingerprint": "4:feed20:0.04974192150402811918:0.193033681620145220:0.0548841364332474661:1",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "unity-accept-31",
+            "Fingerprint": "4:feed1:04:0.291:02:12",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "28f554483ed04c639fce8c84b6a6cae8",
+            "Fingerprint": "5:light4:True",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "b09053b5395e429a85a1b593a63e97e3",
+            "Fingerprint": "4:feed1:04:0.291:02:12",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        }
+    ],
+    "HasRetryCheckpoint": true,
+    "RetryCheckpoint": {
+        "SchemaVersion": 1,
+        "ContentVersion": "900a16ba2a5be1e60797b85cd5b0a8cf964888fbcf0249cfc24958593bac7ff4",
+        "Mode": 0,
+        "EcologyRate": 1.0,
+        "World": {
+            "SchemaVersion": 2,
+            "NextEventId": 1,
+            "RealSeconds": 59.999999999999154,
+            "EcologyDays": 0.0,
+            "EcologyRate": 0.0,
+            "FixedAccumulator": 0.0,
+            "LightIsOn": false,
+            "Agents": [],
+            "Stimuli": []
+        },
+        "Gameplay": {
+            "SchemaVersion": 2,
+            "SaveId": "e45d778765d54b099e8ce9938366d0c3",
+            "WalletCoin": 390,
+            "Stage": 0,
+            "Paused": false,
+            "Filled": false,
+            "WaterlineHeight": 0.32999999999999996,
+            "Layout": {
+                "HasSubstrate": true,
+                "Substrate": {
+                    "PurchaseBatchId": "batch:unity-accept-6",
+                    "FrontLeftHeight": 0.015,
+                    "FrontRightHeight": 0.015,
+                    "BackLeftHeight": 0.045,
+                    "BackRightHeight": 0.045
+                },
+                "Placements": [
+                    {
+                        "Id": "main",
+                        "PurchaseBatchId": "batch:unity-accept-7",
+                        "SupportPlacementId": "",
+                        "Position": {
+                            "X": -0.12,
+                            "Y": 0.0905,
+                            "Z": 0.02
+                        },
+                        "Size": {
+                            "X": 0.09,
+                            "Y": 0.11,
+                            "Z": 0.07
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    },
+                    {
+                        "Id": "second",
+                        "PurchaseBatchId": "batch:unity-accept-8",
+                        "SupportPlacementId": "",
+                        "Position": {
+                            "X": 0.09,
+                            "Y": 0.0565,
+                            "Z": -0.01
+                        },
+                        "Size": {
+                            "X": 0.06,
+                            "Y": 0.05,
+                            "Z": 0.05
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    },
+                    {
+                        "Id": "filter",
+                        "PurchaseBatchId": "batch:unity-accept-9",
+                        "SupportPlacementId": "",
+                        "Position": {
+                            "X": 0.24,
+                            "Y": 0.28,
+                            "Z": 0.11
+                        },
+                        "Size": {
+                            "X": 0.04,
+                            "Y": 0.06,
+                            "Z": 0.04
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    },
+                    {
+                        "Id": "light",
+                        "PurchaseBatchId": "batch:unity-accept-10",
+                        "SupportPlacementId": "",
+                        "Position": {
+                            "X": -0.2,
+                            "Y": 0.33,
+                            "Z": 0.0
+                        },
+                        "Size": {
+                            "X": 0.06,
+                            "Y": 0.015,
+                            "Z": 0.15
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    },
+                    {
+                        "Id": "anubias",
+                        "PurchaseBatchId": "batch:unity-accept-11",
+                        "SupportPlacementId": "main",
+                        "Position": {
+                            "X": -0.14,
+                            "Y": 0.1455,
+                            "Z": 0.02
+                        },
+                        "Size": {
+                            "X": 0.02,
+                            "Y": 0.035,
+                            "Z": 0.02
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    },
+                    {
+                        "Id": "fern",
+                        "PurchaseBatchId": "batch:unity-accept-12",
+                        "SupportPlacementId": "main",
+                        "Position": {
+                            "X": -0.1,
+                            "Y": 0.1455,
+                            "Z": 0.02
+                        },
+                        "Size": {
+                            "X": 0.02,
+                            "Y": 0.05,
+                            "Z": 0.02
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    },
+                    {
+                        "Id": "moss",
+                        "PurchaseBatchId": "batch:unity-accept-13",
+                        "SupportPlacementId": "second",
+                        "Position": {
+                            "X": 0.09,
+                            "Y": 0.0815,
+                            "Z": -0.01
+                        },
+                        "Size": {
+                            "X": 0.025,
+                            "Y": 0.015,
+                            "Z": 0.025
+                        },
+                        "YawDegrees": 0.0,
+                        "RhizomeBuried": false
+                    }
+                ]
+            },
+            "Batches": [
+                {
+                    "Id": "batch:unity-accept-6",
+                    "ItemId": "substrate_natural_sand",
+                    "TransactionId": "unity-accept-6",
+                    "PaidCoin": 120,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-7",
+                    "ItemId": "stone_main",
+                    "TransactionId": "unity-accept-7",
+                    "PaidCoin": 160,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-8",
+                    "ItemId": "stone_secondary",
+                    "TransactionId": "unity-accept-8",
+                    "PaidCoin": 80,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-9",
+                    "ItemId": "filter_hangon_basic",
+                    "TransactionId": "unity-accept-9",
+                    "PaidCoin": 260,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-10",
+                    "ItemId": "light_low",
+                    "TransactionId": "unity-accept-10",
+                    "PaidCoin": 220,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-11",
+                    "ItemId": "plant_anubias_nana",
+                    "TransactionId": "unity-accept-11",
+                    "PaidCoin": 90,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-12",
+                    "ItemId": "plant_java_fern",
+                    "TransactionId": "unity-accept-12",
+                    "PaidCoin": 110,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                },
+                {
+                    "Id": "batch:unity-accept-13",
+                    "ItemId": "plant_java_moss",
+                    "TransactionId": "unity-accept-13",
+                    "PaidCoin": 70,
+                    "DeliveredUnits": 1,
+                    "SaleCoin": 0,
+                    "Refunded": false,
+                    "Sold": false,
+                    "EntityIds": []
+                }
+            ],
+            "Receipts": [
+                {
+                    "TransactionId": "unity-accept-6",
+                    "Fingerprint": "buy:22:substrate_natural_sand",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-6",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-7",
+                    "Fingerprint": "buy:10:stone_main",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-7",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-8",
+                    "Fingerprint": "buy:15:stone_secondary",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-8",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-9",
+                    "Fingerprint": "buy:19:filter_hangon_basic",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-9",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-10",
+                    "Fingerprint": "buy:9:light_low",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-10",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-11",
+                    "Fingerprint": "buy:18:plant_anubias_nana",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-11",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-12",
+                    "Fingerprint": "buy:15:plant_java_fern",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-12",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-13",
+                    "Fingerprint": "buy:15:plant_java_moss",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "batch:unity-accept-13",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-14",
+                    "Fingerprint": "substrate:20:batch:unity-accept-60.015,0.015,0.045,0.045",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-15",
+                    "Fingerprint": "place:4:main20:batch:unity-accept-7-1:-0.12,0.0905,0.02;0.09,0.11,0.07;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-16",
+                    "Fingerprint": "place:6:second20:batch:unity-accept-8-1:0.09,0.0565,-0.01;0.06,0.05,0.05;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-17",
+                    "Fingerprint": "place:6:filter20:batch:unity-accept-9-1:0.24,0.28,0.11;0.04,0.06,0.04;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-18",
+                    "Fingerprint": "place:5:light21:batch:unity-accept-10-1:-0.2,0.33,0;0.06,0.015,0.15;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-19",
+                    "Fingerprint": "place:7:anubias21:batch:unity-accept-114:main-0.13999999999999999,0.1455,0.02;0.02,0.035,0.02;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-20",
+                    "Fingerprint": "place:4:fern21:batch:unity-accept-124:main-0.099999999999999992,0.1455,0.02;0.02,0.05,0.02;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                },
+                {
+                    "TransactionId": "unity-accept-21",
+                    "Fingerprint": "place:4:moss21:batch:unity-accept-136:second0.09,0.0815,-0.01;0.025,0.015,0.025;0;False",
+                    "Result": {
+                        "Success": true,
+                        "Code": "gameplay.ok",
+                        "Args": [],
+                        "BatchId": "",
+                        "EntityIds": []
+                    }
+                }
+            ],
+            "ClaimedRewardIds": [
+                "starter_grant"
+            ],
+            "UndoHistory": [
+                {
+                    "HasSubstrate": false,
+                    "Substrate": {
+                        "PurchaseBatchId": "",
+                        "FrontLeftHeight": 0.0,
+                        "FrontRightHeight": 0.0,
+                        "BackLeftHeight": 0.0,
+                        "BackRightHeight": 0.0
+                    },
+                    "Placements": []
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": []
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": [
+                        {
+                            "Id": "main",
+                            "PurchaseBatchId": "batch:unity-accept-7",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.12,
+                                "Y": 0.0905,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.09,
+                                "Y": 0.11,
+                                "Z": 0.07
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        }
+                    ]
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": [
+                        {
+                            "Id": "main",
+                            "PurchaseBatchId": "batch:unity-accept-7",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.12,
+                                "Y": 0.0905,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.09,
+                                "Y": 0.11,
+                                "Z": 0.07
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "second",
+                            "PurchaseBatchId": "batch:unity-accept-8",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.09,
+                                "Y": 0.0565,
+                                "Z": -0.01
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.05,
+                                "Z": 0.05
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        }
+                    ]
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": [
+                        {
+                            "Id": "main",
+                            "PurchaseBatchId": "batch:unity-accept-7",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.12,
+                                "Y": 0.0905,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.09,
+                                "Y": 0.11,
+                                "Z": 0.07
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "second",
+                            "PurchaseBatchId": "batch:unity-accept-8",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.09,
+                                "Y": 0.0565,
+                                "Z": -0.01
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.05,
+                                "Z": 0.05
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "filter",
+                            "PurchaseBatchId": "batch:unity-accept-9",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.24,
+                                "Y": 0.28,
+                                "Z": 0.11
+                            },
+                            "Size": {
+                                "X": 0.04,
+                                "Y": 0.06,
+                                "Z": 0.04
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        }
+                    ]
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": [
+                        {
+                            "Id": "main",
+                            "PurchaseBatchId": "batch:unity-accept-7",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.12,
+                                "Y": 0.0905,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.09,
+                                "Y": 0.11,
+                                "Z": 0.07
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "second",
+                            "PurchaseBatchId": "batch:unity-accept-8",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.09,
+                                "Y": 0.0565,
+                                "Z": -0.01
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.05,
+                                "Z": 0.05
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "filter",
+                            "PurchaseBatchId": "batch:unity-accept-9",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.24,
+                                "Y": 0.28,
+                                "Z": 0.11
+                            },
+                            "Size": {
+                                "X": 0.04,
+                                "Y": 0.06,
+                                "Z": 0.04
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "light",
+                            "PurchaseBatchId": "batch:unity-accept-10",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.2,
+                                "Y": 0.33,
+                                "Z": 0.0
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.015,
+                                "Z": 0.15
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        }
+                    ]
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": [
+                        {
+                            "Id": "main",
+                            "PurchaseBatchId": "batch:unity-accept-7",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.12,
+                                "Y": 0.0905,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.09,
+                                "Y": 0.11,
+                                "Z": 0.07
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "second",
+                            "PurchaseBatchId": "batch:unity-accept-8",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.09,
+                                "Y": 0.0565,
+                                "Z": -0.01
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.05,
+                                "Z": 0.05
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "filter",
+                            "PurchaseBatchId": "batch:unity-accept-9",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.24,
+                                "Y": 0.28,
+                                "Z": 0.11
+                            },
+                            "Size": {
+                                "X": 0.04,
+                                "Y": 0.06,
+                                "Z": 0.04
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "light",
+                            "PurchaseBatchId": "batch:unity-accept-10",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.2,
+                                "Y": 0.33,
+                                "Z": 0.0
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.015,
+                                "Z": 0.15
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "anubias",
+                            "PurchaseBatchId": "batch:unity-accept-11",
+                            "SupportPlacementId": "main",
+                            "Position": {
+                                "X": -0.14,
+                                "Y": 0.1455,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.02,
+                                "Y": 0.035,
+                                "Z": 0.02
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        }
+                    ]
+                },
+                {
+                    "HasSubstrate": true,
+                    "Substrate": {
+                        "PurchaseBatchId": "batch:unity-accept-6",
+                        "FrontLeftHeight": 0.015,
+                        "FrontRightHeight": 0.015,
+                        "BackLeftHeight": 0.045,
+                        "BackRightHeight": 0.045
+                    },
+                    "Placements": [
+                        {
+                            "Id": "main",
+                            "PurchaseBatchId": "batch:unity-accept-7",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.12,
+                                "Y": 0.0905,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.09,
+                                "Y": 0.11,
+                                "Z": 0.07
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "second",
+                            "PurchaseBatchId": "batch:unity-accept-8",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.09,
+                                "Y": 0.0565,
+                                "Z": -0.01
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.05,
+                                "Z": 0.05
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "filter",
+                            "PurchaseBatchId": "batch:unity-accept-9",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": 0.24,
+                                "Y": 0.28,
+                                "Z": 0.11
+                            },
+                            "Size": {
+                                "X": 0.04,
+                                "Y": 0.06,
+                                "Z": 0.04
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "light",
+                            "PurchaseBatchId": "batch:unity-accept-10",
+                            "SupportPlacementId": "",
+                            "Position": {
+                                "X": -0.2,
+                                "Y": 0.33,
+                                "Z": 0.0
+                            },
+                            "Size": {
+                                "X": 0.06,
+                                "Y": 0.015,
+                                "Z": 0.15
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "anubias",
+                            "PurchaseBatchId": "batch:unity-accept-11",
+                            "SupportPlacementId": "main",
+                            "Position": {
+                                "X": -0.14,
+                                "Y": 0.1455,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.02,
+                                "Y": 0.035,
+                                "Z": 0.02
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        },
+                        {
+                            "Id": "fern",
+                            "PurchaseBatchId": "batch:unity-accept-12",
+                            "SupportPlacementId": "main",
+                            "Position": {
+                                "X": -0.1,
+                                "Y": 0.1455,
+                                "Z": 0.02
+                            },
+                            "Size": {
+                                "X": 0.02,
+                                "Y": 0.05,
+                                "Z": 0.02
+                            },
+                            "YawDegrees": 0.0,
+                            "RhizomeBuried": false
+                        }
+                    ]
+                }
+            ],
+            "RedoHistory": []
+        },
+        "Ecology": {
+            "SchemaVersion": 1,
+            "Parameters": {
+                "VolumeLiters": 54.0,
+                "FixedStepGameDays": 0.0006944444444444445,
+                "OrganicMineralizationPerDay": 0.65,
+                "LivingMetabolismPerDay": 0.35,
+                "InitialTanCapacityMgNPerDay": 1.5,
+                "InitialNitriteCapacityMgNPerDay": 1.5,
+                "MaximumCapacityMgNPerDay": 54.0,
+                "CapacityGainPerProcessedMgN": 0.6,
+                "CapacityDecayPerDay": 0.02,
+                "PlantUptakeMgNPerDay": 0.0,
+                "ChallengeDoseMgNPerLiter": 0.5,
+                "MaximumStableTanMgNPerLiter": 0.05,
+                "MaximumStableNitriteMgNPerLiter": 0.05,
+                "RequiredProcessedFraction": 0.9,
+                "StableGameHours": 24.0,
+                "RecentLedgerLimit": 256
+            },
+            "State": {
+                "FoodMgN": 0.0,
+                "OrganicMgN": 0.0,
+                "TanMgN": 0.0,
+                "NitriteMgN": 0.0,
+                "NitrateMgN": 0.0,
+                "LivingMgN": 0.0,
+                "PlantMgN": 0.0
+            },
+            "Audit": {
+                "CumulativeInputMgN": 0.0,
+                "CumulativeOutputMgN": 0.0,
+                "InputByPoolMgN": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "OutputByPoolMgN": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "TransferMgN": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "GameDays": 0.0,
+            "FixedAccumulatorGameDays": 0.0,
+            "TanCapacityMgNPerDay": 1.5,
+            "NitriteCapacityMgNPerDay": 1.5,
+            "FilterEnabled": true,
+            "NextSequence": 1,
+            "Challenge": {
+                "Status": 0,
+                "DoseMgN": 0.0,
+                "OxidizedTanMgN": 0.0,
+                "OxidizedNitriteMgN": 0.0,
+                "StableGameHours": 0.0,
+                "StartedGameDay": 0.0,
+                "DoseSequence": 0,
+                "InvalidatedReason": ""
+            },
+            "TrialObservation": {
+                "Status": 0,
+                "StableGameHours": 0.0,
+                "StartedGameDay": 0.0,
+                "LiveAnimalCount": 0
+            },
+            "RecentLedger": []
+        },
+        "LivingReserves": {
+            "SchemaVersion": 1,
+            "Entries": []
+        },
+        "Food": [],
+        "Receipts": [
+            {
+                "TransactionId": "unity-accept-6",
+                "Fingerprint": "3:buy22:substrate_natural_sand",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-6",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-7",
+                "Fingerprint": "3:buy10:stone_main",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-7",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-8",
+                "Fingerprint": "3:buy15:stone_secondary",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-8",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-9",
+                "Fingerprint": "3:buy19:filter_hangon_basic",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-9",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-10",
+                "Fingerprint": "3:buy9:light_low",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-10",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-11",
+                "Fingerprint": "3:buy18:plant_anubias_nana",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-11",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-12",
+                "Fingerprint": "3:buy15:plant_java_fern",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-12",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-13",
+                "Fingerprint": "3:buy15:plant_java_moss",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:unity-accept-13",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-14",
+                "Fingerprint": "9:substrate20:batch:unity-accept-65:0.0155:0.0155:0.0455:0.045",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-15",
+                "Fingerprint": "5:place4:main20:batch:unity-accept-75:-0.126:0.09054:0.024:0.094:0.114:0.071:0-1:5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-16",
+                "Fingerprint": "5:place6:second20:batch:unity-accept-84:0.096:0.05655:-0.014:0.064:0.054:0.051:0-1:5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-17",
+                "Fingerprint": "5:place6:filter20:batch:unity-accept-94:0.244:0.284:0.114:0.044:0.064:0.041:0-1:5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-18",
+                "Fingerprint": "5:place5:light21:batch:unity-accept-104:-0.24:0.331:04:0.065:0.0154:0.151:0-1:5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-19",
+                "Fingerprint": "5:place7:anubias21:batch:unity-accept-1120:-0.139999999999999996:0.14554:0.024:0.025:0.0354:0.021:04:main5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-20",
+                "Fingerprint": "5:place4:fern21:batch:unity-accept-1221:-0.0999999999999999926:0.14554:0.024:0.024:0.054:0.021:04:main5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "unity-accept-21",
+                "Fingerprint": "5:place4:moss21:batch:unity-accept-134:0.096:0.08155:-0.015:0.0255:0.0155:0.0251:06:second5:False",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "",
+                    "EntityIds": []
+                }
+            }
+        ]
+    }
+}

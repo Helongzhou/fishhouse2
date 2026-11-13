@@ -1,0 +1,2 @@
+﻿tank_id,display_name,display_name_en,display_name_zh_cn,content_status,inner_length_cm,inner_width_cm,inner_height_cm,gross_volume_l,effective_volume_l_design,water_type,game_bioload_capacity,simulation_model_id,simulation_ready,notes
+tank_60cm,教学60缸,60 cm teaching aquarium,教学60缸,shipping,60,30,36,64.8,54,freshwater,12,pending_mass_balance_v1,false,60缸指长度60cm；54L为水位底砂硬景后设计值；负荷点只用于游戏调参

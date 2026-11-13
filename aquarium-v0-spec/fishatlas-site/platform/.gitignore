@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.runtime/
+.env
+.env.local
+media/
+payload-types.ts
+*.tsbuildinfo

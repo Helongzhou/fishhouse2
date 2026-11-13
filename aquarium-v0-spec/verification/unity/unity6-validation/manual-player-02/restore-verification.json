@@ -1,0 +1,91 @@
+{
+  "verifiedAtUtc": "2026-11-06T05:08:29.725085+00:00",
+  "restoreCommand": [
+    "python3",
+    "tools/manual_player_save.py",
+    "restore",
+    "--evidence",
+    "verification/unity/unity6-validation/manual-player-02"
+  ],
+  "restoreCommandExitCode": 0,
+  "manifestStatus": "restored",
+  "saveDirectory": "/Users/zhouhelong/Library/Application Support/Aquarium Journal/Aquarium Journal",
+  "files": {
+    "aquarium-session-v1.json": {
+      "existedBefore": false,
+      "existsAfterRestore": false,
+      "matchesOriginalState": true,
+      "retainedAcceptanceFile": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/after/aquarium-session-v1.json",
+      "retainedAcceptanceSha256": "dcfe29a5d3968b2798af85d2ec521115ef877a9e494dd6f4ba4e5b919bc2621a"
+    },
+    "aquarium-session-v1.json.bak1": {
+      "existedBefore": false,
+      "existsAfterRestore": false,
+      "matchesOriginalState": true,
+      "retainedAcceptanceFile": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/after/aquarium-session-v1.json.bak1",
+      "retainedAcceptanceSha256": "52455db68d0eea8f52bc306648ad74acb7643d265927627dcc879159fd4f8c6a"
+    },
+    "aquarium-session-v1.json.bak2": {
+      "existedBefore": false,
+      "existsAfterRestore": false,
+      "matchesOriginalState": true,
+      "retainedAcceptanceFile": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/after/aquarium-session-v1.json.bak2",
+      "retainedAcceptanceSha256": "edb1095b7b74b4fc881e46977461109753c2d2420a8bd786e96e8f327d0ad092"
+    },
+    "aquarium-session-v1.json.bak3": {
+      "existedBefore": false,
+      "existsAfterRestore": false,
+      "matchesOriginalState": true,
+      "retainedAcceptanceFile": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/after/aquarium-session-v1.json.bak3",
+      "retainedAcceptanceSha256": "42139ce1725e7853d13e5f959b34c5fd1d79e9c3dd8db121e173718963d90052"
+    },
+    "aquarium-session-v1.json.tmp": {
+      "existedBefore": false,
+      "existsAfterRestore": false,
+      "matchesOriginalState": true,
+      "retainedAcceptanceFile": null,
+      "retainedAcceptanceSha256": null
+    }
+  },
+  "allFiveOriginalAbsenceStatesRestored": true,
+  "allAcceptanceAfterFilesVerified": true,
+  "originalFixture": {
+    "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-batch-04/stocked-with-food-and-checkpoint.json",
+    "sha256": "523cb867ae4b53d73cad4cb5498e0fda6abbad80c988cff5785f0124cc19807a",
+    "matchesStageHash": true
+  },
+  "playerPrefsReadOnlyVerification": [
+    {
+      "path": "/Users/zhouhelong/Library/Preferences/unity.Aquarium Journal.Aquarium Journal.plist",
+      "sha256BeforeCleanup": "7d21405ee2ebe183b79be0decb74f29b7b69df1a77bd739f3603153ae560e932",
+      "sha256AfterCleanup": "7d21405ee2ebe183b79be0decb74f29b7b69df1a77bd739f3603153ae560e932",
+      "unchangedDuringCleanup": true,
+      "languageKeyPresent": false,
+      "languageValue": null
+    },
+    {
+      "path": "/Users/zhouhelong/Library/Preferences/com.Aquarium-Journal.Aquarium-Journal.plist",
+      "sha256BeforeCleanup": "70d6e9d7ec44f5bb9f62d48b1a311755b5938519c547a4c2ea58a983bc315de8",
+      "sha256AfterCleanup": "70d6e9d7ec44f5bb9f62d48b1a311755b5938519c547a4c2ea58a983bc315de8",
+      "unchangedDuringCleanup": true,
+      "languageKeyPresent": false,
+      "languageValue": null
+    }
+  ],
+  "languageLimit": "Both inspected preference plists have no aquarium.language key. Actual Player log/root screenshot locale remained en; no successful language toggle was observed. Whole preference hashes unchanged during cleanup, not a pre-session baseline claim.",
+  "pid53279PsExitCode": 1,
+  "matchingEditorOrPlayerProcesses": [],
+  "playerRestarted": false,
+  "editorLaunched": false,
+  "sourceModified": false,
+  "followupSnapshots": {
+    "05-fed-paused.json": {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/05-fed-paused.json",
+      "sha256": "52455db68d0eea8f52bc306648ad74acb7643d265927627dcc879159fd4f8c6a"
+    },
+    "06-restored-paused.json": {
+      "path": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/manual-player-02/snapshots/06-restored-paused.json",
+      "sha256": "dcfe29a5d3968b2798af85d2ec521115ef877a9e494dd6f4ba4e5b919bc2621a"
+    }
+  }
+}

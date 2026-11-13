@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A practical freshwater aquatic life reference for choosing species and planning a suitable tank." />
+    <title>FishAtlas | Aquatic life</title>
+    <link rel="stylesheet" href="styles.css?v=20261106-aquatic-2" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="site-header">
+        <a class="brand" href="?view=home" aria-label="FishAtlas home">
+          <span class="brand-mark" aria-hidden="true">FA</span>
+          <span>FishAtlas</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="?view=database" data-nav="database" data-i18n="navDatabase">Aquatic life</a>
+          <a href="?view=calculator" data-nav="calculator" data-i18n="navCalculator">Tank calculator</a>
+        </nav>
+        <div class="header-actions">
+          <span class="locale-label" data-i18n="language">Language</span>
+          <div class="locale-switch" role="group" aria-label="Language">
+            <button type="button" data-locale="en">EN</button>
+            <button type="button" data-locale="zh-CN">中文</button>
+          </div>
+        </div>
+      </header>
+      <main id="main-content" tabindex="-1"></main>
+      <footer class="site-footer">
+        <div>
+          <strong>FishAtlas</strong>
+          <span data-i18n="footerText">A calm reference for freshwater keepers.</span>
+        </div>
+        <span class="footer-note" data-i18n="footerNote">Personal notes, shared for fellow aquarists.</span>
+      </footer>
+    </div>
+    <script type="module" src="app.js?v=20261106-aquatic-2"></script>
+  </body>
+</html>

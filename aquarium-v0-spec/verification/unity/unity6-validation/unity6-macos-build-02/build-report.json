@@ -1,0 +1,18 @@
+{
+    "unityVersion": "6000.6.8f1",
+    "target": "StandaloneOSX",
+    "architecture": "ARM64",
+    "backend": "Mono2x",
+    "options": "None",
+    "outputPath": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Builds/macOS/AquariumJournal.app",
+    "result": "Succeeded",
+    "failure": "",
+    "totalErrors": 0,
+    "totalWarnings": 0,
+    "totalSizeBytes": 93127793,
+    "totalSeconds": 3.443678,
+    "messages": [
+        "Preprocess Player: Log: 1 URP assets included in build\n- AquariumURP - Assets/_Game/Rendering/AquariumURP.asset\n\t - AquariumRenderer - Assets/_Game/Rendering/AquariumRenderer.asset - UnityEngine.Rendering.Universal.UniversalRendererData\n",
+        "Prepare splash screen: Log: Including Unity Splash Screen logo because 'Show Unity Logo' is enabled."
+    ]
+}

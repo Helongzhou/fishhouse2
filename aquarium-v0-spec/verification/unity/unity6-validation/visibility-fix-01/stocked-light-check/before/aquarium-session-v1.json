@@ -1,0 +1,431 @@
+{
+    "SchemaVersion": 1,
+    "ContentVersion": "900a16ba2a5be1e60797b85cd5b0a8cf964888fbcf0249cfc24958593bac7ff4",
+    "Mode": 0,
+    "EcologyRate": 1.0,
+    "World": {
+        "SchemaVersion": 2,
+        "NextEventId": 2,
+        "RealSeconds": 256.69999999998856,
+        "EcologyDays": 0.0,
+        "EcologyRate": 0.0,
+        "FixedAccumulator": 0.0025950560343732804,
+        "LightIsOn": false,
+        "Agents": [],
+        "Stimuli": []
+    },
+    "Gameplay": {
+        "SchemaVersion": 2,
+        "SaveId": "2348b1d76a4f42cd834a820bc8eab831",
+        "WalletCoin": 1300,
+        "Stage": 0,
+        "Paused": false,
+        "Filled": false,
+        "WaterlineHeight": 0.32999999999999996,
+        "Layout": {
+            "HasSubstrate": false,
+            "Substrate": {
+                "PurchaseBatchId": "",
+                "FrontLeftHeight": 0.0,
+                "FrontRightHeight": 0.0,
+                "BackLeftHeight": 0.0,
+                "BackRightHeight": 0.0
+            },
+            "Placements": []
+        },
+        "Batches": [
+            {
+                "Id": "batch:a8285d78384f4b35bf6b2de38887b70b",
+                "ItemId": "plant_java_fern",
+                "TransactionId": "a8285d78384f4b35bf6b2de38887b70b",
+                "PaidCoin": 110,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            },
+            {
+                "Id": "batch:65fb9db55d004624bd1dca7947e2bf21",
+                "ItemId": "plant_anubias_nana",
+                "TransactionId": "65fb9db55d004624bd1dca7947e2bf21",
+                "PaidCoin": 90,
+                "DeliveredUnits": 1,
+                "SaleCoin": 0,
+                "Refunded": false,
+                "Sold": false,
+                "EntityIds": []
+            }
+        ],
+        "Receipts": [
+            {
+                "TransactionId": "a8285d78384f4b35bf6b2de38887b70b",
+                "Fingerprint": "buy:15:plant_java_fern",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:a8285d78384f4b35bf6b2de38887b70b",
+                    "EntityIds": []
+                }
+            },
+            {
+                "TransactionId": "65fb9db55d004624bd1dca7947e2bf21",
+                "Fingerprint": "buy:18:plant_anubias_nana",
+                "Result": {
+                    "Success": true,
+                    "Code": "gameplay.ok",
+                    "Args": [],
+                    "BatchId": "batch:65fb9db55d004624bd1dca7947e2bf21",
+                    "EntityIds": []
+                }
+            }
+        ],
+        "ClaimedRewardIds": [
+            "starter_grant"
+        ],
+        "UndoHistory": [],
+        "RedoHistory": []
+    },
+    "Ecology": {
+        "SchemaVersion": 1,
+        "Parameters": {
+            "VolumeLiters": 54.0,
+            "FixedStepGameDays": 0.0006944444444444445,
+            "OrganicMineralizationPerDay": 0.65,
+            "LivingMetabolismPerDay": 0.35,
+            "InitialTanCapacityMgNPerDay": 1.5,
+            "InitialNitriteCapacityMgNPerDay": 1.5,
+            "MaximumCapacityMgNPerDay": 54.0,
+            "CapacityGainPerProcessedMgN": 0.6,
+            "CapacityDecayPerDay": 0.02,
+            "PlantUptakeMgNPerDay": 0.0,
+            "ChallengeDoseMgNPerLiter": 0.5,
+            "MaximumStableTanMgNPerLiter": 0.05,
+            "MaximumStableNitriteMgNPerLiter": 0.05,
+            "RequiredProcessedFraction": 0.9,
+            "StableGameHours": 24.0,
+            "RecentLedgerLimit": 256
+        },
+        "State": {
+            "FoodMgN": 0.0,
+            "OrganicMgN": 0.0,
+            "TanMgN": 0.0,
+            "NitriteMgN": 0.0,
+            "NitrateMgN": 0.0,
+            "LivingMgN": 0.0,
+            "PlantMgN": 0.0
+        },
+        "Audit": {
+            "CumulativeInputMgN": 0.0,
+            "CumulativeOutputMgN": 0.0,
+            "InputByPoolMgN": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "OutputByPoolMgN": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "TransferMgN": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "GameDays": 0.0,
+        "FixedAccumulatorGameDays": 0.0,
+        "TanCapacityMgNPerDay": 1.5,
+        "NitriteCapacityMgNPerDay": 1.5,
+        "FilterEnabled": true,
+        "NextSequence": 1,
+        "Challenge": {
+            "Status": 0,
+            "DoseMgN": 0.0,
+            "OxidizedTanMgN": 0.0,
+            "OxidizedNitriteMgN": 0.0,
+            "StableGameHours": 0.0,
+            "StartedGameDay": 0.0,
+            "DoseSequence": 0,
+            "InvalidatedReason": ""
+        },
+        "TrialObservation": {
+            "Status": 0,
+            "StableGameHours": 0.0,
+            "StartedGameDay": 0.0,
+            "LiveAnimalCount": 0
+        },
+        "RecentLedger": []
+    },
+    "LivingReserves": {
+        "SchemaVersion": 1,
+        "Entries": []
+    },
+    "Food": [],
+    "Receipts": [
+        {
+            "TransactionId": "a8285d78384f4b35bf6b2de38887b70b",
+            "Fingerprint": "3:buy15:plant_java_fern",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:a8285d78384f4b35bf6b2de38887b70b",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "65fb9db55d004624bd1dca7947e2bf21",
+            "Fingerprint": "3:buy18:plant_anubias_nana",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "batch:65fb9db55d004624bd1dca7947e2bf21",
+                "EntityIds": []
+            }
+        },
+        {
+            "TransactionId": "0a354b5435924039ba1d693cc0c32554",
+            "Fingerprint": "5:glass1:04:0.185:-0.15",
+            "Result": {
+                "Success": true,
+                "Code": "gameplay.ok",
+                "Args": [],
+                "BatchId": "",
+                "EntityIds": []
+            }
+        }
+    ],
+    "HasRetryCheckpoint": false,
+    "RetryCheckpoint": {
+        "SchemaVersion": 1,
+        "ContentVersion": "",
+        "Mode": 0,
+        "EcologyRate": 1.0,
+        "World": {
+            "SchemaVersion": 2,
+            "NextEventId": 0,
+            "RealSeconds": 0.0,
+            "EcologyDays": 0.0,
+            "EcologyRate": 0.0,
+            "FixedAccumulator": 0.0,
+            "LightIsOn": false,
+            "Agents": [],
+            "Stimuli": []
+        },
+        "Gameplay": {
+            "SchemaVersion": 2,
+            "SaveId": "",
+            "WalletCoin": 0,
+            "Stage": 0,
+            "Paused": false,
+            "Filled": false,
+            "WaterlineHeight": 0.0,
+            "Layout": {
+                "HasSubstrate": false,
+                "Substrate": {
+                    "PurchaseBatchId": "",
+                    "FrontLeftHeight": 0.0,
+                    "FrontRightHeight": 0.0,
+                    "BackLeftHeight": 0.0,
+                    "BackRightHeight": 0.0
+                },
+                "Placements": []
+            },
+            "Batches": [],
+            "Receipts": [],
+            "ClaimedRewardIds": [],
+            "UndoHistory": [],
+            "RedoHistory": []
+        },
+        "Ecology": {
+            "SchemaVersion": 1,
+            "Parameters": {
+                "VolumeLiters": 54.0,
+                "FixedStepGameDays": 0.0006944444444444445,
+                "OrganicMineralizationPerDay": 0.65,
+                "LivingMetabolismPerDay": 0.35,
+                "InitialTanCapacityMgNPerDay": 1.5,
+                "InitialNitriteCapacityMgNPerDay": 1.5,
+                "MaximumCapacityMgNPerDay": 54.0,
+                "CapacityGainPerProcessedMgN": 0.6,
+                "CapacityDecayPerDay": 0.02,
+                "PlantUptakeMgNPerDay": 0.0,
+                "ChallengeDoseMgNPerLiter": 0.5,
+                "MaximumStableTanMgNPerLiter": 0.05,
+                "MaximumStableNitriteMgNPerLiter": 0.05,
+                "RequiredProcessedFraction": 0.9,
+                "StableGameHours": 24.0,
+                "RecentLedgerLimit": 256
+            },
+            "State": {
+                "FoodMgN": 0.0,
+                "OrganicMgN": 0.0,
+                "TanMgN": 0.0,
+                "NitriteMgN": 0.0,
+                "NitrateMgN": 0.0,
+                "LivingMgN": 0.0,
+                "PlantMgN": 0.0
+            },
+            "Audit": {
+                "CumulativeInputMgN": 0.0,
+                "CumulativeOutputMgN": 0.0,
+                "InputByPoolMgN": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "OutputByPoolMgN": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "TransferMgN": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "GameDays": 0.0,
+            "FixedAccumulatorGameDays": 0.0,
+            "TanCapacityMgNPerDay": 0.0,
+            "NitriteCapacityMgNPerDay": 0.0,
+            "FilterEnabled": true,
+            "NextSequence": 1,
+            "Challenge": {
+                "Status": 0,
+                "DoseMgN": 0.0,
+                "OxidizedTanMgN": 0.0,
+                "OxidizedNitriteMgN": 0.0,
+                "StableGameHours": 0.0,
+                "StartedGameDay": 0.0,
+                "DoseSequence": 0,
+                "InvalidatedReason": ""
+            },
+            "TrialObservation": {
+                "Status": 0,
+                "StableGameHours": 0.0,
+                "StartedGameDay": 0.0,
+                "LiveAnimalCount": 0
+            },
+            "RecentLedger": []
+        },
+        "LivingReserves": {
+            "SchemaVersion": 1,
+            "Entries": []
+        },
+        "Food": [],
+        "Receipts": []
+    }
+}

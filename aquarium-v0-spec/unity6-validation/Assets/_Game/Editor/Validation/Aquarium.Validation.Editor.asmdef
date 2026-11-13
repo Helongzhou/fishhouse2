@@ -1,0 +1,7 @@
+{
+  "name": "Aquarium.Validation.Editor",
+  "rootNamespace": "Aquarium.Validation",
+  "references": ["Aquarium.Core", "Aquarium.UnityAdapter", "Aquarium.Editor", "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Universal.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

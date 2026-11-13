@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "project": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+  "started_utc": "2026-11-05T12:02:17.914680+00:00",
+  "resource_roots": {
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/Assets": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/unity": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/data": "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/data"
+  },
+  "sources_sha256": {
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/AquariumWorld.cs": "ce89c5fec17361c6225639aef501bcf05965c6b0daf0da42ca7340c0b4505c04",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Compatibility/CompatibilityEvaluator.cs": "bc11bfacb3d551bcacb5ad086b974ab1c420be48d40c1835e0d8a7fdc7bbfb0c",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Compatibility/CompatibilityModels.cs": "96db7a922815320bdf20e297624ab47eb9cad33c6ef1f582cce71bdb23f45aed",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Configuration/CatalogFactory.cs": "dc00ee2804f0be184bbe0d821b686acd34c684ee8ee5fcf1cfa17562d4bd6eca",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Configuration/RuntimeCatalog.cs": "23ae1a4d3038763050aeb220a6b158d6780e95934ff39938c768d055996bd066",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Ecology/EcologyEngine.cs": "fe4040aeab6dd0ccd9f09ef157fab59b75bb7343cfa426d0cd1fabf76525c029",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Ecology/EcologyModels.cs": "86c7463976fc75d8ae44bab58854c9d859b57ecd6dd15bea5aeb411d5583c603",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Ecology/LivingReserveLedger.cs": "e293bbb6c7b37031c8eb0a7196c6d349450a75883cb2e7677de0a57c6c6f5e22",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplayLayoutCommands.cs": "e29123d462e93c6208a06342011317f62aa571984bb4f231ef650e66b17f32b5",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplayModels.cs": "ca06fe0331e638a3256383d3476e2ee858bb4ecebe7ddb530e4f64cdbcc5b6f6",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySession.cs": "8eb7bf34d70c978013a677e431c5de01f34eb491bda9de7c4b5af76568344b98",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/GameplaySnapshotValidation.cs": "d307c5fed68a2473e9035744070d603015088d6e7fd172af1ac8c903e1a8fdd6",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Gameplay/LayoutGeometry.cs": "9e5b9e40e7d70c522de4f6800e322970073ea1be756d7ccfdd51750385b31860",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/MathTypes.cs": "43dd2ae55c5e2de02677ce561bad6fcb7be9efa394e9d5e554c43ee6d151518a",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Profiles.cs": "b18ccb9d0281d9a7e47d22957ca3806f86f94628e73e966e83d37ffd928d581f",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/AtomicSaveStore.cs": "4ac91d709f27b7fbb860dbf671fb1a6706a8cda8cee6a11d38a9311f4a0eeb92",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/GameSession.cs": "4caa6a5a15d3d5defa59beb7e317fada1b97211bf12a63774fb7c48bd1bc8c83",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/Session/SessionModels.cs": "6a59c1359a91116e5608f9a08f023fd16d184124cc2078c5e45e628c247b84da",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Core/State.cs": "573a0cde5bf067fcfea525b5ec25c3dfb14af912c445356f78a8bce361f78e78",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/UnityAdapter/DemoLocalization.cs": "ea88d877302b9f449f541fea4a657014deb9674e4545bfda409a84a2eeae2aec",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/Verification/Program.cs": "0c6b70c823ea3f8b27770601844e470434a034523394800a628bb5ec1a9c5d34",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/compatibility-checks/Program.cs": "20654e25be2a7b1be655836b0aed358caf47dac9ebf587c0100e0713920d47a2",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/ecology-checks/Program.cs": "3a2ab34215970afe017d5a023a32ceb8d7062c66df5d0c280617b9c911b31e65",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/gameplay-checks/Program.cs": "6cd41d936e1297433ec2296255d6618c1b5a43f763dcb1a8135793c74aa2da00",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/integration-checks/Program.cs": "3d942717acfd76b4fd2dbfbfa29001225434378d98d8783dd4d1ab8fb189c9fc",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Resources/Configuration/runtime.json": "521af01fdb1ba4167cfd249d14c2485d34f19c36428155a36102d67de87c91f1",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Resources/Localization/en.json": "ad04f4fec9f7bbb2753a74a5fbc59b5fdafaec2624f1ed78478dec24e71c16c1",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Resources/Localization/locales.json": "6cf7bf3ceae9b1c7c55a44c73b02d2b81dd915e6384e5c17ac001d1c673a233d",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Resources/Localization/qps-ploc.json": "a1e6d002056b00b66563624ab9e29d393334018d043b08bc4a061748ce88ea5c",
+    "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity6-validation/Assets/_Game/Resources/Localization/zh-CN.json": "c43bd6f78192eafe9d1a2ef44cc65866f88db1ef8bd17fd5f54f21fba1ced23f"
+  },
+  "checks": [
+    {
+      "name": "Core-netstandard2.1",
+      "exit_code": 0,
+      "command": [
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/.tools/dotnet/dotnet",
+        "build",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/Core-netstandard2.1/Core-netstandard2.1.csproj",
+        "--configuration",
+        "Release",
+        "-p:UseSharedCompilation=false"
+      ],
+      "tail": [
+        "Build succeeded.",
+        "    0 Warning(s)",
+        "    0 Error(s)",
+        "",
+        "Time Elapsed 00:00:00.62"
+      ]
+    },
+    {
+      "name": "behavior",
+      "exit_code": 0,
+      "command": [
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/.tools/dotnet/dotnet",
+        "run",
+        "--project",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/behavior/behavior.csproj",
+        "--configuration",
+        "Release",
+        "-p:UseSharedCompilation=false"
+      ],
+      "tail": [
+        "PASS: unknown snapshot schema is rejected rather than silently loaded",
+        "Behavior checks complete: 49",
+        "Observed actions: Roam, Flee, Forage, Shoal, Hide, BottomProbe, Graze, Rest, ApproachGlass, SeekFood",
+        "Meals=28 probes=573 grazes=437 startles=15",
+        "Light stress integral across 8 seeds: flashing=153.990 steady=27.964"
+      ]
+    },
+    {
+      "name": "compatibility",
+      "exit_code": 0,
+      "command": [
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/.tools/dotnet/dotnet",
+        "run",
+        "--project",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/compatibility/compatibility.csproj",
+        "--configuration",
+        "Release",
+        "-p:UseSharedCompilation=false"
+      ],
+      "tail": [
+        "PASS invalid or duplicate stock cannot produce a clean result",
+        "PASS same species id with inconsistent profile instances is unverified",
+        "PASS every emitted reason has structured source, target, keys and parameters",
+        "PASS registry-driven compatibility message coverage for every ready and QA locale",
+        "Compatibility checks: 42 passed, 0 failed; observed 28 reason codes."
+      ]
+    },
+    {
+      "name": "ecology",
+      "exit_code": 0,
+      "command": [
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/.tools/dotnet/dotnet",
+        "run",
+        "--project",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/ecology/ecology.csproj",
+        "--configuration",
+        "Release",
+        "-p:UseSharedCompilation=false"
+      ],
+      "tail": [
+        "Ecology checks passed: 287. Pure C#/.NET only; Unity import, Play and builds remain unverified."
+      ]
+    },
+    {
+      "name": "gameplay",
+      "exit_code": 0,
+      "command": [
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/.tools/dotnet/dotnet",
+        "run",
+        "--project",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/gameplay/gameplay.csproj",
+        "--configuration",
+        "Release",
+        "-p:UseSharedCompilation=false"
+      ],
+      "tail": [
+        "PASS: failed restore candidates leave the live session unchanged",
+        "PASS: whole-pack sale pays once and removes all eight main fish IDs",
+        "PASS: balanced wallet cannot conceal a corrupted whole-pack sale price",
+        "PASS: domain checkpoint replacement restores wallet and batches together without retaining sale money",
+        "Gameplay checks passed: 47"
+      ]
+    },
+    {
+      "name": "integration",
+      "exit_code": 0,
+      "command": [
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/unity/.tools/dotnet/dotnet",
+        "run",
+        "--project",
+        "/Users/zhouhelong/Documents/vibe coding/aquarium-v0-spec/verification/unity/unity6-validation/unity6-source-regression-01/stage/integration/integration.csproj",
+        "--configuration",
+        "Release",
+        "-p:UseSharedCompilation=false"
+      ],
+      "tail": [
+        "PASS retry then reconfirm then retry keeps a unique recoverable receipt ledger",
+        "PASS observation waits for the still-missing required shrimp purchase",
+        "PASS delayed reward scenario reaches unstable water",
+        "PASS unstable no-op cannot consume the observation progress transaction and softlock rewards",
+        "Integration checks: 49 passed."
+      ]
+    }
+  ],
+  "coverage": "Production pure C# from the selected project and unchanged existing Program.cs checks. This does not replace real Unity adapter/import/Play acceptance.",
+  "changed_sources_during_run": [],
+  "finished_utc": "2026-11-05T12:02:28.634800+00:00"
+}

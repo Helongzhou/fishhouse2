@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "batch_id": "tripo-sample-01-budget-200",
+  "created_on": "2026-11-09",
+  "status": "offline_preflight_only_pending_credit_pool_confirmation",
+  "parent_manifest": "art/tripo-sample-01/manifest.json",
+  "parent_manifest_sha256": "770daf5a653601e85f5b092f987a4b7ec835f96862561b74868a2201f3df6c12",
+  "scope": "This round is a 9-asset subset of the original 11; original manifest and P2 plans are unchanged.",
+  "selected_model": "H3.1",
+  "wire_model": "v3.1-20260211",
+  "input_type": "text",
+  "texture": true,
+  "pbr": false,
+  "texture_quality": "standard",
+  "assets": [
+    {
+      "asset_id": "ember_tetra",
+      "display_name_zh_cn": "火焰灯",
+      "face_limit": 5000,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/ember_tetra.json",
+      "plan_sha256": "8b7b38056fd993f3f71f3574da908b706a806073650db9dba8d87d3cc952d532"
+    },
+    {
+      "asset_id": "neocaridina_red",
+      "display_name_zh_cn": "樱花虾",
+      "face_limit": 10000,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/neocaridina_red.json",
+      "plan_sha256": "200ab6a50fd85894a563350ce6a6693bf8199f578c8571f430fc2c648f8a44ba"
+    },
+    {
+      "asset_id": "snail_reference",
+      "display_name_zh_cn": "汽水螺类参考",
+      "face_limit": 6500,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/snail_reference.json",
+      "plan_sha256": "17651cdcf9fd772d9a15952d4975d530c7aa90b091cb72ff472d5e9e899048f8"
+    },
+    {
+      "asset_id": "anubias_nana",
+      "display_name_zh_cn": "矮水榕",
+      "face_limit": 6500,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/anubias_nana.json",
+      "plan_sha256": "ab33d3be2214a151fbfc2e398a6b22a8d52c6b45472673fbbc940d57ea370106"
+    },
+    {
+      "asset_id": "java_fern",
+      "display_name_zh_cn": "铁皇冠",
+      "face_limit": 7000,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/java_fern.json",
+      "plan_sha256": "cbdf108acd92e18a466808913d6cde178b84d5160f07292899bd7c71abe75714"
+    },
+    {
+      "asset_id": "java_moss",
+      "display_name_zh_cn": "爪哇莫丝",
+      "face_limit": 9000,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/java_moss.json",
+      "plan_sha256": "3df5aae13a44e1a23535ae55cbaf93e4027ee2290aef43df8a5adab63f490684"
+    },
+    {
+      "asset_id": "crypt_wendtii",
+      "display_name_zh_cn": "绿温蒂椒草",
+      "face_limit": 6500,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/crypt_wendtii.json",
+      "plan_sha256": "6a35e018e324de850e8553ff2128069002951ce469a567676d1674d1d24cacb3"
+    },
+    {
+      "asset_id": "stone_main",
+      "display_name_zh_cn": "主景脊石",
+      "face_limit": 6500,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/stone_main.json",
+      "plan_sha256": "a141a96e93ef1c154b2568586ccbb8b7f77d84291eb6f90f2a3c299987da67cf"
+    },
+    {
+      "asset_id": "wood_optional",
+      "display_name_zh_cn": "分叉沉木",
+      "face_limit": 8000,
+      "generation_credits_estimate": 20,
+      "plan_file": "plans/wood_optional.json",
+      "plan_sha256": "4244d00162a0b4b514682d3c22c029f60c9bf334721e786c3eab2d3ba67843bd"
+    }
+  ],
+  "deferred_asset_ids": [
+    "stone_secondary",
+    "buce_bukit_kelam"
+  ],
+  "selected_count": 9,
+  "total_generation_credits_estimate": 180,
+  "gift_credit_cap": 200,
+  "estimated_remaining_api_credits": 20,
+  "budget_conditions": {
+    "api": "180 API credits only if the gift is available in the API credit pool; reported API balance remains 0 pending confirmation.",
+    "studio": "If Studio HD base 15 + texture 10 = 25 Studio credits each, 200 supports only 8 assets, not these 9. Studio and API credits/prices cannot be mixed.",
+    "purchase_authorized": false
+  },
+  "excludes": [
+    "rerolls",
+    "extra candidates",
+    "rigging",
+    "animation",
+    "format conversion",
+    "additional processing"
+  ],
+  "offline_limitations": "Official CLI list-price estimate; no live quotation, balance verification or remote acceptance test.",
+  "paid_tasks_submitted": 0,
+  "uploads": 0
+}

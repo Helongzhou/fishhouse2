@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "result": {
+    "balance": 0,
+    "frozen": 0
+  },
+  "stdout": "{\"balance\":0,\"frozen\":0}\n",
+  "stderr": ""
+}

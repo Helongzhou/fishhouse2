@@ -1,0 +1,72 @@
+{
+  "time": "2026-11-06T06:16:18.021Z",
+  "browser": "Installed Google Chrome, headless desktop automation",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "mobile": "Desktop viewport emulation only; not physical mobile evidence",
+  "results": [
+    {
+      "name": "Chinese home real photograph, English layout",
+      "status": "PASS"
+    },
+    {
+      "name": "Color OR and cross-dimension AND; legacy discovery traits",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid numeric values and duplicate/unknown enum handling",
+      "status": "PASS"
+    },
+    {
+      "name": "Type change drops irrelevant category and preserves shared color",
+      "status": "PASS"
+    },
+    {
+      "name": "List/detail return, language query preservation",
+      "status": "PASS"
+    },
+    {
+      "name": "Correct planted template and adult instances, real rules",
+      "status": "PASS",
+      "detail": {
+        "instances": 16
+      }
+    },
+    {
+      "name": "Quantity/duplicate/delete/undo count conservation",
+      "status": "PASS"
+    },
+    {
+      "name": "Numerical x/y/z front and top projection agreement",
+      "status": "PASS",
+      "detail": {
+        "front": "translate(120 180)",
+        "top": "translate(120 80)",
+        "groupCount": 12
+      }
+    },
+    {
+      "name": "Refresh restores committed plan and selection; local saving",
+      "status": "PASS"
+    },
+    {
+      "name": "JSON and CSV export; valid front PNG download",
+      "status": "PASS"
+    },
+    {
+      "name": "Import preview then new plan, quantities and coordinates preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "390px and 320px desktop emulation, numerical mobile editing",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser exceptions",
+      "status": "PASS"
+    }
+  ],
+  "exceptions": []
+}

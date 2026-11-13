@@ -1,0 +1,6 @@
+{
+  "name": "Aquarium.TripoSample.Editor",
+  "includePlatforms": ["Editor"],
+  "references": [],
+  "autoReferenced": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "version": "20261106-aquatic-2",
+  "resources": {
+    "css": "http://127.0.0.1:4173/styles.css?v=20261106-aquatic-2",
+    "js": "http://127.0.0.1:4173/app.js?v=20261106-aquatic-2",
+    "heroBackground": "rgba(0, 0, 0, 0)",
+    "careDisplay": "grid"
+  },
+  "detailJsonCount": 7,
+  "columns": 3,
+  "widths": {
+    "viewport": 390,
+    "document": 390
+  },
+  "pageErrors": []
+}

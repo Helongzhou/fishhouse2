@@ -1,0 +1,11 @@
+--- a/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs
++++ b/Assets/_Game/Editor/Validation/UnitySliceAcceptance.cs
+@@ -153,6 +153,8 @@
+             report.urpVersion = package == null ? "not-found" : package.version;
+             Check(report.urpVersion == report.expectedUrpVersion, "selected project's pinned URP package resolved", report.expectedUrpVersion + " expected; " + report.urpVersion + " actual");
+             AquariumProjectSetup.Prepare();
++            Font bundledUiFont = Resources.Load<Font>("Fonts/NotoSansCJKsc-Regular");
++            Check(bundledUiFont != null, "bundled UI font imports and loads from Resources", bundledUiFont == null ? "missing Fonts/NotoSansCJKsc-Regular" : string.Join(",", bundledUiFont.fontNames));
+ #if UNITY_6000_0_OR_NEWER
+             Check(GraphicsSettings.defaultRenderPipeline is UniversalRenderPipelineAsset && QualitySettings.renderPipeline is UniversalRenderPipelineAsset,
+ #else
