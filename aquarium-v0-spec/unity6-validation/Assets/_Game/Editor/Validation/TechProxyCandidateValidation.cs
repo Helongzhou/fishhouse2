@@ -231,16 +231,7 @@ namespace Aquarium.Validation
 
         static string[] ForbiddenRoots()
         {
-            string project = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
-            string home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            return new[]
-            {
-                project,
-                Application.persistentDataPath,
-                Path.Combine(home, "Library/Application Support/Aquarium Journal"),
-                Path.Combine(home, "Library/Application Support/unity.Aquarium Journal.Aquarium Journal"),
-                Path.Combine(home, ".config/unity3d/Aquarium Journal")
-            };
+            return SessionSaveLocation.ForbiddenRoots();
         }
     }
 }

@@ -80,3 +80,28 @@ echo save_exit:$?
 `$OUT/save` is only the report directory and must exist before Unity starts. `$SAVE` itself must not exist; the test creates that one directory and no parents.
 
 A missing result file together with a non-zero exit means that stage did not finish. Do not treat a source file's existence as a pass. BatchMode does not prove the rendered picture; a person can open `Assets/_Game/TechProxies/TechProxyValidation.unity` outside these commands and record a screenshot separately.
+
+4. Visual capture. Run this only after the three commands above exit 0. Leave graphics enabled. Do not call the older play-smoke entry. The entry opens `TechProxyVisualCapture.unity` and does not open the player scene. `SAVE` must not exist. `$OUT/visual` must exist and is only the output parent. The test creates `$OUT/visual/frames` and refuses to write the player save. A passing result still leaves `visual_review` and `visual_video` as `not_run`.
+
+```sh
+mkdir -p "$OUT/visual"
+SAVE="$OUT/save-parent/visual-$COMMIT"
+test ! -e "$SAVE"
+python3 /absolute/path/to/aquarium-v0-spec/tools/unity6_bounded_launch.py \
+  --timeout-seconds 900 \
+  --result "$OUT/visual/result.json" \
+  --wrapper-log "$OUT/visual/wrapper.log" \
+  -- "$UNITY" -batchmode \
+  -projectPath "$COPY" \
+  -executeMethod Aquarium.Validation.TechProxyVisualCapture.Run \
+  -aquariumVisual \
+  -aquariumCommit "$COMMIT" \
+  -aquariumSaveRoot "$SAVE" \
+  -aquariumOut "$OUT/visual" \
+  -aquariumReport "$OUT/visual/result.json" \
+  -aquariumLog "$OUT/visual/editor.log" \
+  -logFile "$OUT/visual/editor.log"
+echo visual_exit:$?
+```
+
+Nine 640×360 frames is a bounded sample for a person to review. It is not a visual approval. If the editor has no graphics device, the entry exits non-zero and does not invent frames.

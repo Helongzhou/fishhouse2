@@ -64,6 +64,25 @@ def main():
         fail("candidate test does not require an injected save root")
     if "SwimClip" not in validator or "skin.bones" not in validator:
         fail("proxy structure check does not require a skinned clip")
+    visual = text(U6 / "Assets/_Game/Editor/Validation/TechProxyVisualCapture.cs")
+    if "RunPlaySmoke" in visual or "Aquarium.unity" in visual:
+        fail("visual capture calls the old play smoke or the player scene")
+    location = text(U6 / "Assets/_Game/UnityAdapter/SessionSaveLocation.cs")
+    if "BeforeSceneLoad" not in location or "FailClosed" not in location or "VisualFlag" not in location:
+        fail("visual isolation is not restored before scene load")
+    if "if (FailClosed || ValidationMode) return RequiredIsolated(DemoFileName);" not in location:
+        fail("demo save can fall back to the player directory during validation")
+    launcher = text(ROOT / "tools/unity6_bounded_launch.py")
+    if "signal_saved_group" not in launcher or "/proc" in launcher:
+        fail("reviewed launcher bytes were replaced")
+    build = text(U6 / "ProjectSettings/EditorBuildSettings.asset")
+    if "TechProxyVisualCapture" in build:
+        fail("visual scene was added to the player build")
+    guide = text(U6 / "RUN-MAC.md")
+    if "RunPlaySmoke" in guide:
+        fail("Mac commands call RunPlaySmoke")
+    if "4. Visual capture" not in guide or "-nographics" in guide.split("4. Visual capture", 1)[1]:
+        fail("visual command is missing or disables graphics")
     for name in ("proxy_off", "proxy_import_failure_fallback", "proxy_missing_file_fallback", "proxy_on_structure", "save_isolated_roundtrip", "visual_screenshot", "not_run"):
         if name not in validator:
             fail("report vocabulary missing " + name)
