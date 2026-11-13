@@ -12,7 +12,13 @@ namespace Aquarium.UnityAdapter
         public const string VisualFlag = "-aquariumVisual";
         public static bool ValidationMode;
         public static bool FailClosed;
+        public static bool VisualIsolationFailed;
         public static string OverrideDirectory;
+
+        public static bool VisualCommandPresent()
+        {
+            return CommandLineHas(VisualFlag);
+        }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         static void RestoreVisualIsolationBeforeScene()
@@ -21,17 +27,19 @@ namespace Aquarium.UnityAdapter
             ValidationMode = true;
             OverrideDirectory = null;
             FailClosed = true;
+            VisualIsolationFailed = true;
             try
             {
                 AdoptExistingVisualRoot(CommandLineValue("-aquariumSaveRoot"));
                 FailClosed = false;
+                VisualIsolationFailed = false;
             }
             catch (Exception error)
             {
                 OverrideDirectory = null;
                 FailClosed = true;
+                VisualIsolationFailed = true;
                 Debug.LogError("Visual save isolation failed closed before scene load: " + error.Message);
-                throw;
             }
         }
 

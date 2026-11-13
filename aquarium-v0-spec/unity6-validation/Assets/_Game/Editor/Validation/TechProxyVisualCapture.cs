@@ -30,6 +30,7 @@ namespace Aquarium.Validation
         static bool started;
         static float readyAt;
         static int sample;
+        static int sealedExit = -1;
         static readonly List<byte[]> pngs = new List<byte[]>();
         static readonly List<string> notes = new List<string>();
 
@@ -41,6 +42,15 @@ namespace Aquarium.Validation
 
         public static void Run()
         {
+            if (!SessionSaveLocation.VisualCommandPresent())
+            {
+                TechProxyRunReport rejected = NewReport();
+                Stage(rejected, "visual_isolation", false, "Missing -aquariumVisual. Play was not entered and no save directory was created.");
+                NotRun(rejected, "visual_structure", "visual_frames", "visual_review", "visual_video");
+                rejected.failure = "Missing -aquariumVisual.";
+                Finish(rejected, 1);
+                return;
+            }
             SessionSaveLocation.ValidationMode = true;
             SessionSaveLocation.FailClosed = true;
             SessionSaveLocation.OverrideDirectory = null;
@@ -76,6 +86,13 @@ namespace Aquarium.Validation
 
         static void Tick()
         {
+            if (sealedExit >= 0) return;
+            if (SessionSaveLocation.VisualIsolationFailed)
+            {
+                Fail("Visual isolation failed closed before scene load.", null);
+                return;
+            }
+            string isolation;
             double armedAt;
             double.TryParse(SessionState.GetString(ArmedAtKey, "0"), NumberStyles.Float, CultureInfo.InvariantCulture, out armedAt);
             if (!EditorApplication.isPlaying)
@@ -94,6 +111,11 @@ namespace Aquarium.Validation
                 if (EditorApplication.timeSinceStartup - armedAt > 45d) Fail("Visual rig is missing.", null);
                 return;
             }
+            if (!IsolationReady(out isolation))
+            {
+                Fail(isolation, rig);
+                return;
+            }
             if (!started)
             {
                 if (rig.attachedCount >= 3 && rig.boneCount > 0)
@@ -109,9 +131,19 @@ namespace Aquarium.Validation
             }
             if (sample >= Samples.Length) return;
             if (Time.time < readyAt + Samples[sample]) return;
+            if (!IsolationReady(out isolation))
+            {
+                Fail(isolation, rig);
+                return;
+            }
             Camera[] cameras = { rig.front, rig.back, rig.side };
             for (int i = 0; i < cameras.Length; i++)
             {
+                if (!IsolationReady(out isolation))
+                {
+                    Fail(isolation, rig);
+                    return;
+                }
                 byte[] png = Render(cameras[i]);
                 if (png == null || Blank(png))
                 {
@@ -119,9 +151,12 @@ namespace Aquarium.Validation
                     return;
                 }
                 pngs.Add(png);
-                notes.Add(Cameras[i] + " t=" + Samples[sample].ToString("0.0", CultureInfo.InvariantCulture)
-                    + " bones=" + rig.boneCount + " playing=" + rig.clipPlaying
-                    + " clipTime=" + rig.clipTime.ToString("0.000", CultureInfo.InvariantCulture));
+                notes.Add(Cameras[i] + " sample=" + Samples[sample].ToString("0.0", CultureInfo.InvariantCulture)
+                    + "s bones=" + rig.boneCount
+                    + " fish=" + TechProxyVisuals.SwimClip + ":" + rig.fishClipPlaying
+                    + " fishTime=" + rig.fishClipTime.ToString("0.000", CultureInfo.InvariantCulture)
+                    + " sway=" + TechProxyVisuals.SwayClip + ":" + rig.swayPlayingCount
+                    + " swayTime=" + rig.swayTime.ToString("0.000", CultureInfo.InvariantCulture));
             }
             sample++;
             if (sample < Samples.Length) return;
@@ -130,15 +165,28 @@ namespace Aquarium.Validation
 
         static void Complete(TechProxyVisualRig rig)
         {
+            if (sealedExit >= 0) return;
+            string isolation;
+            if (!IsolationReady(out isolation))
+            {
+                Fail(isolation, rig);
+                return;
+            }
             EditorApplication.update -= Tick;
             string frames = SessionState.GetString(OutKey, "");
             var manifest = new StringBuilder();
             manifest.Append("{\"test_name\":\"visual_capture\",\"commit\":\"").Append(SessionState.GetString(CommitKey, ""))
                 .Append("\",\"width\":").Append(Width).Append(",\"height\":").Append(Height)
+                .Append(",\"sample_seconds\":[0,0.4,0.8],\"views\":[\"front\",\"back\",\"side\"]")
                 .Append(",\"gpu\":\"").Append(SystemInfo.graphicsDeviceName.Replace("\"", "'"))
                 .Append("\",\"gpu_type\":\"").Append(SystemInfo.graphicsDeviceType)
                 .Append("\",\"bones\":").Append(rig.boneCount)
-                .Append(",\"clip_playing\":").Append(rig.clipPlaying ? "true" : "false")
+                .Append(",\"fish_clip\":\"").Append(TechProxyVisuals.SwimClip)
+                .Append("\",\"fish_playing\":").Append(rig.fishClipPlaying ? "true" : "false")
+                .Append(",\"fish_time\":").Append(rig.fishClipTime.ToString("0.000", CultureInfo.InvariantCulture))
+                .Append(",\"sway_clip\":\"").Append(TechProxyVisuals.SwayClip)
+                .Append("\",\"sway_playing_count\":").Append(rig.swayPlayingCount)
+                .Append(",\"sway_time\":").Append(rig.swayTime.ToString("0.000", CultureInfo.InvariantCulture))
                 .Append(",\"frames\":[");
             for (int i = 0; i < pngs.Count; i++)
             {
@@ -151,29 +199,29 @@ namespace Aquarium.Validation
             }
             manifest.Append("]}");
             File.WriteAllText(Path.Combine(frames, "frames.json"), manifest.ToString());
-            bool structure = rig.attachedCount >= 3 && rig.boneCount > 0 && rig.clipPlaying;
+            bool structure = rig.attachedCount >= 3 && rig.boneCount > 0 && rig.fishClipPlaying && rig.swayPlayingCount >= 2;
+            bool isolated = IsolationReady(out isolation);
             TechProxyRunReport report = NewReport();
-            Stage(report, "visual_isolation", true, "save=" + SessionState.GetString(SaveKey, ""));
+            Stage(report, "visual_isolation", isolated, isolated ? "save=" + SessionState.GetString(SaveKey, "") : isolation);
             Stage(report, "visual_structure", structure, "attached=" + rig.attachedCount + "; bones=" + rig.boneCount
-                + "; " + TechProxyVisuals.SwimClip + " playing=" + rig.clipPlaying + ". Not a visual approval.");
-            Stage(report, "visual_frames", pngs.Count == 9, "9 bounded frames at 640x360. Human review is separate.");
+                + "; " + TechProxyVisuals.SwimClip + " playing=" + rig.fishClipPlaying
+                + "; " + TechProxyVisuals.SwayClip + " playing=" + rig.swayPlayingCount + ". Not a visual approval.");
+            Stage(report, "visual_frames", pngs.Count == 9, "Sparse samples at 0, 0.4 and 0.8 seconds from front, back and side. Not a visual approval.");
             NotRun(report, "visual_review", "visual_video");
-            SessionState.SetBool(ArmedKey, false);
-            EditorApplication.isPlaying = false;
-            Finish(report, structure && pngs.Count == 9 ? 0 : 1);
+            Finish(report, isolated && structure && pngs.Count == 9 ? 0 : 1);
         }
 
         static void Fail(string detail, TechProxyVisualRig rig)
         {
+            if (sealedExit >= 0) return;
             EditorApplication.update -= Tick;
             TechProxyRunReport report = NewReport();
-            Stage(report, "visual_isolation", Directory.Exists(SessionState.GetString(SaveKey, "missing-save-root")), detail);
-            Stage(report, "visual_structure", false, rig == null ? detail : "attached=" + rig.attachedCount + "; bones=" + rig.boneCount);
-            Stage(report, "visual_frames", false, "No success frames were committed.");
+            Stage(report, "visual_isolation", false, detail);
+            Stage(report, "visual_structure", false, rig == null ? detail : "attached=" + rig.attachedCount + "; bones=" + rig.boneCount
+                + "; fish=" + rig.fishClipPlaying + "; sway=" + rig.swayPlayingCount);
+            Stage(report, "visual_frames", false, "Sampling stopped. No success frames were committed.");
             NotRun(report, "visual_review", "visual_video");
             report.failure = detail;
-            SessionState.SetBool(ArmedKey, false);
-            EditorApplication.isPlaying = false;
             Finish(report, 1);
         }
 
@@ -252,19 +300,77 @@ namespace Aquarium.Validation
         { report.stages.Add(new TechProxyStage { name = name, status = passed ? "pass" : "fail", detail = detail }); }
         static void NotRun(TechProxyRunReport report, params string[] names)
         { foreach (string name in names) report.stages.Add(new TechProxyStage { name = name, status = "not_run", detail = "not a human visual approval and not a video" }); }
+        static bool IsolationReady(out string detail)
+        {
+            detail = "";
+            if (!SessionSaveLocation.VisualCommandPresent())
+            {
+                detail = "Missing -aquariumVisual.";
+                return false;
+            }
+            if (SessionSaveLocation.VisualIsolationFailed || SessionSaveLocation.FailClosed || !SessionSaveLocation.ValidationMode
+                || string.IsNullOrEmpty(SessionSaveLocation.OverrideDirectory))
+            {
+                detail = "Visual isolation is not restored.";
+                return false;
+            }
+            try
+            {
+                string canonical = SaveRootGuard.Canonicalize(SessionSaveLocation.OverrideDirectory);
+                if (!Directory.Exists(canonical))
+                {
+                    detail = "Restored save root does not exist.";
+                    return false;
+                }
+                SaveRootGuard.RejectInside(canonical, SessionSaveLocation.ForbiddenRoots());
+                string armed = SaveRootGuard.Canonicalize(SessionState.GetString(SaveKey, ""));
+                if (!string.Equals(canonical.TrimEnd(Path.DirectorySeparatorChar), armed.TrimEnd(Path.DirectorySeparatorChar), StringComparison.OrdinalIgnoreCase))
+                {
+                    detail = "Restored save root does not match the armed root.";
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception error)
+            {
+                detail = error.Message;
+                return false;
+            }
+        }
+
         static void Finish(TechProxyRunReport report, int exit)
         {
-            report.process_exit_code = exit;
+            if (sealedExit >= 0) return;
+            sealedExit = exit == 0 ? 0 : 1;
+            SessionState.SetBool(ArmedKey, false);
+            report.process_exit_code = sealedExit;
             report.finished_utc = DateTime.UtcNow.ToString("O", CultureInfo.InvariantCulture);
-            string path = SessionState.GetString(ReportKey, Argument("-aquariumReport"));
-            if (!string.IsNullOrWhiteSpace(path))
+            try
             {
-                string parent = Path.GetDirectoryName(Path.GetFullPath(path));
-                string full = Path.Combine(SaveRootGuard.Canonicalize(parent), Path.GetFileName(path));
-                SaveRootGuard.RejectInside(full, SessionSaveLocation.ForbiddenRoots());
-                File.WriteAllText(full, JsonUtility.ToJson(report, true));
+                WriteReport(report);
             }
-            EditorApplication.Exit(exit);
+            catch (Exception error)
+            {
+                Debug.LogError("Visual report was not written: " + error.Message);
+                if (sealedExit == 0) sealedExit = 1;
+                report.failure = error.Message;
+            }
+            EditorApplication.Exit(sealedExit);
+        }
+
+        static void WriteReport(TechProxyRunReport report)
+        {
+            string path = SessionState.GetString(ReportKey, Argument("-aquariumReport"));
+            if (string.IsNullOrWhiteSpace(path)) throw new InvalidOperationException("Visual mode requires -aquariumReport.");
+            string parent = Path.GetDirectoryName(Path.GetFullPath(path));
+            if (string.IsNullOrEmpty(parent) || !Directory.Exists(parent))
+                throw new DirectoryNotFoundException("Report directory must already exist.");
+            string canonicalParent = SaveRootGuard.Canonicalize(parent);
+            if (!Directory.Exists(canonicalParent))
+                throw new DirectoryNotFoundException("Report directory must already exist.");
+            string full = Path.Combine(canonicalParent, Path.GetFileName(path));
+            SaveRootGuard.RejectInside(full, SessionSaveLocation.ForbiddenRoots());
+            File.WriteAllText(full, JsonUtility.ToJson(report, true));
         }
         static string Argument(string name)
         { string[] args = Environment.GetCommandLineArgs(); for (int i = 0; i + 1 < args.Length; i++) if (args[i] == name) return args[i + 1]; return null; }

@@ -83,6 +83,34 @@ def main():
         fail("Mac commands call RunPlaySmoke")
     if "4. Visual capture" not in guide or "-nographics" in guide.split("4. Visual capture", 1)[1]:
         fail("visual command is missing or disables graphics")
+    run = visual.split("public static void Run()", 1)[1].split("static void Tick()", 1)[0]
+    if "VisualCommandPresent" not in run or run.find("CreateFreshDirectory") < run.find("VisualCommandPresent"):
+        fail("visual Run can create a save before the visual flag is checked")
+    print("PASS negative: missing -aquariumVisual is rejected before save creation or Play")
+    if "VisualIsolationFailed = true" not in location or "FailClosed = true" not in location.split("catch", 1)[1]:
+        fail("restore failure does not stay failed closed")
+    print("PASS negative: restore failure sets FailClosed and VisualIsolationFailed, not only throw")
+    if "IsolationReady" not in visual.split("static void Tick()", 1)[1]:
+        fail("Tick does not recheck isolation")
+    if visual.count("IsolationReady") < 4:
+        fail("frame output and completion do not recheck isolation")
+    print("PASS negative: Tick, each frame and completion recheck the armed protected root")
+    if 'Stage(report, "visual_isolation", true' in visual or "Directory.Exists(SessionState" in visual:
+        fail("isolation pass is unconditional or only checks that a directory exists")
+    print("PASS negative: isolation pass requires the restored protected root")
+    if "isPlaying = false" in visual:
+        fail("leaving Play can interrupt the report write")
+    if visual.find("WriteReport") > visual.find("EditorApplication.Exit") or "sealedExit" not in visual:
+        fail("the report is not sealed before exit")
+    print("PASS negative: the report is written and sealed before exit, and a failure cannot become success")
+    if "Report directory must already exist." not in visual:
+        fail("report parent directory is not required to exist")
+    print("PASS negative: report parent must already exist")
+    rig = text(U6 / "Assets/_Game/UnityAdapter/TechProxyVisualRig.cs")
+    if "IsPlaying(TechProxyVisuals.SwayClip)" not in rig or "swayPlayingCount >= 2" not in visual:
+        fail("plant sway playback is not required separately from the fish clip")
+    print("PASS negative: both plant sway_loop players are recorded separately from swim_tail_loop")
+    print("PASS static only: Unity editor, Play and screenshots were not run")
     for name in ("proxy_off", "proxy_import_failure_fallback", "proxy_missing_file_fallback", "proxy_on_structure", "save_isolated_roundtrip", "visual_screenshot", "not_run"):
         if name not in validator:
             fail("report vocabulary missing " + name)

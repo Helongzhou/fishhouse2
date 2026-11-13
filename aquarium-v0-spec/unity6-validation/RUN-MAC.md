@@ -81,7 +81,7 @@ echo save_exit:$?
 
 A missing result file together with a non-zero exit means that stage did not finish. Do not treat a source file's existence as a pass. BatchMode does not prove the rendered picture; a person can open `Assets/_Game/TechProxies/TechProxyValidation.unity` outside these commands and record a screenshot separately.
 
-4. Visual capture. Run this only after the three commands above exit 0. Leave graphics enabled. Do not call the older play-smoke entry. The entry opens `TechProxyVisualCapture.unity` and does not open the player scene. `SAVE` must not exist. `$OUT/visual` must exist and is only the output parent. The test creates `$OUT/visual/frames` and refuses to write the player save. A passing result still leaves `visual_review` and `visual_video` as `not_run`.
+4. Visual capture. Run this only after the three commands above exit 0. Leave graphics enabled. Do not call the older play-smoke entry. The command must include `-aquariumVisual`; without it the entry exits 1 before creating a save directory or entering Play. The entry opens `TechProxyVisualCapture.unity` and does not open the player scene. `SAVE` must not exist. `$OUT/visual` must exist and is only the output parent. The test creates `$OUT/visual/frames` and refuses to write the player save. Nine frames are sparse samples at 0, 0.4 and 0.8 seconds. `visual_review` and `visual_video` stay `not_run`.
 
 ```sh
 mkdir -p "$OUT/visual"

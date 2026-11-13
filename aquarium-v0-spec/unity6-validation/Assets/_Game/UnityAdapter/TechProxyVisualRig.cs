@@ -5,9 +5,9 @@ namespace Aquarium.UnityAdapter
     // Controlled viewing rig. It does not save. Screenshots are taken by the editor driver.
     public sealed class TechProxyVisualRig : MonoBehaviour
     {
-        public int attachedCount, boneCount;
-        public bool clipPlaying;
-        public float clipTime;
+        public int attachedCount, boneCount, swayPlayingCount;
+        public bool fishClipPlaying;
+        public float fishClipTime, swayTime;
         public Camera front, back, side;
 
         void Awake()
@@ -29,18 +29,28 @@ namespace Aquarium.UnityAdapter
         {
             attachedCount = 0;
             boneCount = 0;
-            clipPlaying = false;
-            clipTime = 0f;
+            swayPlayingCount = 0;
+            fishClipPlaying = false;
+            fishClipTime = 0f;
+            swayTime = 0f;
             foreach (TechProxyBinding binding in GetComponentsInChildren<TechProxyBinding>(true))
                 if (binding.Outcome == ProxyOutcome.Attached) attachedCount++;
             foreach (SkinnedMeshRenderer skin in GetComponentsInChildren<SkinnedMeshRenderer>(true))
                 if (skin.bones != null) boneCount += skin.bones.Length;
-            Animation animation = GetComponentInChildren<Animation>(true);
-            if (animation != null && animation.GetClip(TechProxyVisuals.SwimClip) != null)
+            foreach (Animation animation in GetComponentsInChildren<Animation>(true))
             {
-                clipPlaying = animation.IsPlaying(TechProxyVisuals.SwimClip);
-                AnimationState state = animation[TechProxyVisuals.SwimClip];
-                if (state != null) clipTime = state.time;
+                if (animation.GetClip(TechProxyVisuals.SwimClip) != null && animation.IsPlaying(TechProxyVisuals.SwimClip))
+                {
+                    fishClipPlaying = true;
+                    AnimationState state = animation[TechProxyVisuals.SwimClip];
+                    if (state != null) fishClipTime = state.time;
+                }
+                if (animation.GetClip(TechProxyVisuals.SwayClip) != null && animation.IsPlaying(TechProxyVisuals.SwayClip))
+                {
+                    swayPlayingCount++;
+                    AnimationState state = animation[TechProxyVisuals.SwayClip];
+                    if (state != null) swayTime = state.time;
+                }
             }
         }
 
