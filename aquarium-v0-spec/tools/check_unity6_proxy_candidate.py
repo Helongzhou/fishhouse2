@@ -43,6 +43,9 @@ def main():
         fail("candidate entry does not use the save-location resolver")
     if "EnableTechnicalProxyVisuals" not in entry:
         fail("candidate entry has no proxy switch")
+    visuals = text(U6 / "Assets/_Game/UnityAdapter/TechProxyVisuals.cs")
+    if "UnityEngine.Rendering.CullMode.Off" not in visuals or "(float)CullMode.Off" in visuals:
+        fail("Unity 6 plant cull override does not name UnityEngine.Rendering.CullMode")
     scene = text(U6 / "Assets/_Game/Scenes/Aquarium.unity")
     if "EnableTechnicalProxyVisuals" in scene:
         fail("player scene enables the proxy")

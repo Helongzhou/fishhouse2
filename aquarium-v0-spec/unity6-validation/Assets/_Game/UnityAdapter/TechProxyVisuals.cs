@@ -177,7 +177,7 @@ namespace Aquarium.UnityAdapter
                     if (material == null) continue;
                     if (material.HasProperty("_AlphaClip")) material.SetFloat("_AlphaClip", 1f);
                     if (material.HasProperty("alphaCutoff") && material.GetFloat("alphaCutoff") <= 0f) material.SetFloat("alphaCutoff", 0.4f);
-                    if (material.HasProperty("_Cull")) material.SetFloat("_Cull", (float)CullMode.Off);
+                    if (material.HasProperty("_Cull")) material.SetFloat("_Cull", (float)UnityEngine.Rendering.CullMode.Off);
                     material.EnableKeyword("_ALPHATEST_ON");
                 }
                 renderer.materials = materials;
