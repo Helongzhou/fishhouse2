@@ -124,9 +124,14 @@ namespace Aquarium.Validation
             {
                 if (liveBinding.Outcome == ProxyOutcome.Pending && EditorApplication.timeSinceStartup < deadline) return;
                 EditorApplication.update -= wait;
-                bool attached = liveBinding.Outcome == ProxyOutcome.Attached && !live.GetComponent<Renderer>().enabled
-                    && live.GetComponentInChildren<SkinnedMeshRenderer>() != null;
-                Stage(report, "proxy_on_structure", attached, "outcome=" + liveBinding.Outcome + ". This is a structure check, not a screenshot.");
+                SkinnedMeshRenderer skin = live.GetComponentInChildren<SkinnedMeshRenderer>(true);
+                Animation animation = live.GetComponentInChildren<Animation>(true);
+                bool skinned = skin != null && skin.sharedMesh != null && skin.bones != null && skin.bones.Length > 0;
+                bool clip = animation != null && animation.GetClip(TechProxyVisuals.SwimClip) != null;
+                bool attached = liveBinding.Outcome == ProxyOutcome.Attached && !live.GetComponent<Renderer>().enabled && skinned && clip;
+                Stage(report, "proxy_on_structure", attached,
+                    "outcome=" + liveBinding.Outcome + "; skinned=" + skinned + "; bones=" + (skin == null || skin.bones == null ? 0 : skin.bones.Length)
+                    + "; clip=" + TechProxyVisuals.SwimClip + ":" + clip + ". Structure only, not a screenshot.");
                 UnityEngine.Object.DestroyImmediate(live);
                 int exit = AnyFail(report) ? 1 : 0;
                 report.process_exit_code = exit;

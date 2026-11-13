@@ -46,6 +46,8 @@ def main():
     visuals = text(U6 / "Assets/_Game/UnityAdapter/TechProxyVisuals.cs")
     if "UnityEngine.Rendering.CullMode.Off" not in visuals or "(float)CullMode.Off" in visuals:
         fail("Unity 6 plant cull override does not name UnityEngine.Rendering.CullMode")
+    if "new UninterruptedDeferAgent()" not in visuals or "DontDestroyOnLoad(" in visuals:
+        fail("Unity 6 editor import still uses the play-mode defer agent")
     scene = text(U6 / "Assets/_Game/Scenes/Aquarium.unity")
     if "EnableTechnicalProxyVisuals" in scene:
         fail("player scene enables the proxy")
@@ -60,6 +62,8 @@ def main():
         fail("validation mode is not fail-closed")
     if "CreateFreshDirectory" not in validator or "-aquariumSaveRoot" not in validator or "ValidationMode = true" not in validator:
         fail("candidate test does not require an injected save root")
+    if "SwimClip" not in validator or "skin.bones" not in validator:
+        fail("proxy structure check does not require a skinned clip")
     for name in ("proxy_off", "proxy_import_failure_fallback", "proxy_missing_file_fallback", "proxy_on_structure", "save_isolated_roundtrip", "visual_screenshot", "not_run"):
         if name not in validator:
             fail("report vocabulary missing " + name)

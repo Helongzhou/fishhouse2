@@ -141,7 +141,12 @@ namespace Aquarium.UnityAdapter
 
         static async Task<GltfImport> LoadNew(string path, string fileName)
         {
-            var gltf = new GltfImport();
+            // Editor executeMethod is not Play mode. glTFast 6.16.1 otherwise creates
+            // glTF-StableFramerate and calls DontDestroyOnLoad, which the editor rejects.
+            // The package's own editor importer passes UninterruptedDeferAgent for that case.
+            GltfImport gltf = Application.isPlaying
+                ? new GltfImport()
+                : new GltfImport(null, new UninterruptedDeferAgent());
             bool loaded = await gltf.LoadFile(path);
             if (!loaded)
             {
