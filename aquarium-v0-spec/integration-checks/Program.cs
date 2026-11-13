@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text.Json;
 using Aquarium.Core;
 using Aquarium.Core.Configuration;
@@ -20,6 +21,8 @@ internal static class Program
     private static SessionSnapshot Decode(string s){return JsonSerializer.Deserialize<SessionSnapshot>(s,Json);}
     private static bool Reject(Action action){try{action();return false;}catch(ArgumentException){return true;}catch(InvalidOperationException){return true;}}
     private static RuntimeCatalog Catalog;
+    private static double layoutLitres, layoutDose;
+    private static string releaseEvidence;
     private static void Place(GameSession s,string id,string batch,Vec3 pos,Vec3 size,string host=null)
     {Ok(s.Place(Tx(),new LayoutPlacement{Id=id,PurchaseBatchId=batch,Position=pos,Size=size,SupportPlacementId=host}));}
     internal static void Main()
@@ -53,6 +56,8 @@ internal static class Program
         s.SetEcologyRate(4);Ok(s.BeginChallenge(Tx()));
         for(int i=0;i<600&&s.Gameplay.Capture().Stage!=GameplayStage.CyclePassed;i++)s.Advance(60);
         Check(s.Ecology.Challenge.Status==FishlessChallengeStatus.Passed&&s.Gameplay.Capture().Stage==GameplayStage.CyclePassed,"real nonzero nitrogen challenge unlocks first stocking");
+        Check(Math.Abs(s.Ecology.Challenge.DoseMgN-0.5*s.Ecology.VolumeLiters)<1e-6,"filled layout dose is 0.5 mgN per actual litre");
+        layoutLitres=s.Ecology.VolumeLiters; layoutDose=s.Ecology.Challenge.DoseMgN;
         SessionSnapshot cycleReady=s.Capture();
         string buyTx=Tx();CommandResult first=s.Buy(buyTx,"fish_trial_pack");Ok(first);Ok(s.Buy(buyTx,"fish_trial_pack"));
         Check(s.World.Agents.Count==8&&s.Gameplay.Capture().WalletCoin==270,"duplicate purchase creates exactly one stable eight-fish delivery");
@@ -94,7 +99,25 @@ internal static class Program
         Check(Reject(()=>GameSession.Restore(Catalog,snapshot)),"planned species cannot be introduced by save mutation");
         snapshot=s.Capture();snapshot.Ecology.GameDays+=1;
         Check(Reject(()=>GameSession.Restore(Catalog,snapshot)),"restore rejects cross-domain clock mismatch");
-        Check(Reject(()=>GameSession.Restore(Catalog,s.Capture(),SessionMode.Release)),"prototype snapshot cannot bypass the release mode gate");
+        string releaseModeMessage=null; bool releaseModeRejected=false;
+        try { GameSession.Restore(Catalog,s.Capture(),SessionMode.Release); }
+        catch (ArgumentException error) { releaseModeRejected=true; releaseModeMessage=error.Message; }
+        catch (InvalidOperationException error) { releaseModeRejected=true; releaseModeMessage=error.Message; }
+        Check(releaseModeRejected,"prototype snapshot cannot bypass the release mode gate");
+        SessionSnapshot switched=s.Capture(); switched.Mode=SessionMode.Release;
+        if(switched.RetryCheckpoint!=null) switched.RetryCheckpoint.Mode=SessionMode.Release;
+        string animalMessage=null; bool animalRejected=false;
+        try { GameSession.Restore(Catalog,switched,SessionMode.Release); }
+        catch (ArgumentException error) { animalRejected=true; animalMessage=error.Message; }
+        catch (InvalidOperationException error) { animalRejected=true; animalMessage=error.Message; }
+        Check(animalRejected&&s.World.Agents.Count>0,"prototype save with animals cannot be restored as Release");
+        GameSession release=new GameSession(Catalog,SessionMode.Release);
+        CommandResult releaseFish=release.Buy(Tx(),"fish_trial_pack");
+        CommandResult releaseShrimp=release.Buy(Tx(),"shrimp_pack");
+        Check(!releaseFish.Success&&releaseFish.Code=="gameplay.ecology_review_pending","Release mode blocks the fish pack before delivery");
+        Check(!releaseShrimp.Success&&releaseShrimp.Code=="gameplay.ecology_review_pending","Release mode blocks the shrimp pack before delivery");
+        Check(Catalog.Tanks[0].SimulationReady==false,"loaded catalog keeps simulation_ready false");
+        releaseEvidence="{\"fish\":{\"success\":false,\"code\":\""+releaseFish.Code+"\"},\"shrimp\":{\"success\":false,\"code\":\""+releaseShrimp.Code+"\"},\"prototype_restore_as_release\":{\"rejected\":true,\"message\":\""+releaseModeMessage+"\",\"animal_count\":"+s.World.Agents.Count+"},\"mode_switched_save_with_animals\":{\"rejected\":true,\"message\":\""+animalMessage+"\",\"animal_count\":"+s.World.Agents.Count+"},\"simulation_ready\":false,\"layout_litres\":"+layoutLitres.ToString("G17",CultureInfo.InvariantCulture)+",\"layout_dose_mgN\":"+layoutDose.ToString("G17",CultureInfo.InvariantCulture)+",\"dose_mgN_per_l\":0.5,\"gold_volume_l\":54}";
         string temporary=Path.Combine(Path.GetTempPath(),"aquarium-integration-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(temporary);
         try
         {
@@ -130,6 +153,12 @@ internal static class Program
         for(int i=0;i<500&&!delayed.Ecology.WaterIsStable;i++){delayed.Advance(60);Ok(delayed.ChangeWater(Tx(),delayed.Ecology.VolumeLiters));}
         Ok(delayed.Buy(Tx(),"shrimp_pack"));delayed.Advance(1);
         Check(delayed.Gameplay.Stage==GameplayStage.MainUnlocked,"unstable no-op cannot consume the observation progress transaction and softlock rewards");
+        string directory=Environment.GetEnvironmentVariable("AQUARIUM_EVIDENCE_DIR");
+        if(!string.IsNullOrEmpty(directory))
+        {
+            Directory.CreateDirectory(directory);
+            File.WriteAllText(Path.Combine(directory,"integration.json"),"{\"new_run\":true,\"unity\":\"not_run\",\"checks_passed\":"+passed.ToString(CultureInfo.InvariantCulture)+",\"item\":"+releaseEvidence+"}");
+        }
         Console.WriteLine("Integration checks: "+passed+" passed.");
     }
 }

@@ -12,6 +12,7 @@ using Aquarium.Core.Ecology;
 internal static class Program
 {
     private static int checks, sequence;
+    private static string layoutEvidence;
     private static readonly JsonSerializerOptions Json = new JsonSerializerOptions { IncludeFields = true, IgnoreReadOnlyProperties = true };
     private static string Tx() { return "check-" + (++sequence).ToString(CultureInfo.InvariantCulture); }
     private static void Check(bool value, string label)
@@ -140,7 +141,13 @@ internal static class Program
         Check(session.Stage == GameplayStage.Filled && ecology.WaterIsStable && ecology.Challenge.Status == FishlessChallengeStatus.NotStarted && ecology.State.TanMgN == 0 && !session.Buy(Tx(), "fish_trial_pack").Success,
             "stable zero TAN without a completed challenge does not open the fish gate");
         ecology.BeginFishlessChallenge(0); Ok(session.RefreshProgress(Tx(), ecology));
-        Check(session.Stage == GameplayStage.Cycling && ecology.Challenge.DoseMgN > 0, "real nonzero nitrogen dose starts cycling stage");
+        double layoutLitres = session.CalculateEffectiveWaterLiters();
+        Check(session.Stage == GameplayStage.Cycling && Math.Abs(ecology.Challenge.DoseMgN - 0.5 * layoutLitres) < 1e-9,
+            "layout challenge dose is 0.5 mgN/L times effective litres, separate from the 54 L gold dose");
+        layoutEvidence = "{\"id\":\"layout-dose\",\"kind\":\"filled_layout_not_54L_gold\",\"effective_litres\":" + layoutLitres.ToString("G17", CultureInfo.InvariantCulture)
+            + ",\"dose_mgN\":" + ecology.Challenge.DoseMgN.ToString("G17", CultureInfo.InvariantCulture)
+            + ",\"dose_mgN_per_l\":0.5,\"gold_volume_l\":54,\"gold_dose_mgN\":27,\"simulation_ready\":"
+            + (Rows("tanks").Single(r => r["tank_id"] == "tank_60cm")["simulation_ready"] == "false" ? "false" : "true") + "}";
         for (int day = 0; day < 60 && ecology.Challenge.Status != FishlessChallengeStatus.Passed; day++) ecology.AdvanceGameDays(1);
         Check(ecology.Challenge.Status == FishlessChallengeStatus.Passed, "default ecology actually processes challenge dose and observes continuous stable window");
         ecology.SetFilterEnabled(false); Ok(session.RefreshProgress(Tx(), ecology));
@@ -198,6 +205,12 @@ internal static class Program
         for (int i = 0; i < 3; i++) session = GameplaySession.Restore(JsonSerializer.Deserialize<GameplaySnapshot>(checkpoint, Json), catalog, new TankBounds());
         Check(session.WalletCoin == 280 && session.LiveAnimalCount() == 22 && Serialized(session) == checkpoint,
             "domain checkpoint replacement restores wallet and batches together without retaining sale money");
+        string directory = Environment.GetEnvironmentVariable("AQUARIUM_EVIDENCE_DIR");
+        if (!string.IsNullOrEmpty(directory))
+        {
+            Directory.CreateDirectory(directory);
+            File.WriteAllText(Path.Combine(directory, "gameplay.json"), "{\"new_run\":true,\"unity\":\"not_run\",\"checks_passed\":" + checks.ToString(CultureInfo.InvariantCulture) + ",\"item\":" + layoutEvidence + "}");
+        }
     }
     private static int Main()
     {

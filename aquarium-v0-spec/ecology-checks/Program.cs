@@ -9,6 +9,58 @@ using Aquarium.Core.Ecology;
 internal static class Program
 {
     private static int checks;
+    private static readonly List<string> gapItems = new List<string>();
+    private static string Num(double value) { return value.ToString("G17", CultureInfo.InvariantCulture); }
+    private static void GapRaw(string json) { gapItems.Add(json); }
+    private static void Gap(string id, string note, EcologyEngine engine)
+    {
+        GapRaw("{\"id\":\"" + id + "\",\"note\":\"" + note + "\"" + PoolFields(engine) + "}");
+    }
+    private static string PoolFields(EcologyEngine engine)
+    {
+        NitrogenState state = engine.State;
+        NitrogenAudit audit = engine.Audit;
+        double residual = state.TotalMgN - audit.CumulativeInputMgN + audit.CumulativeOutputMgN;
+        var text = new StringBuilder();
+        text.Append(",\"pools\":{");
+        for (int i = 0; i < 7; i++)
+        {
+            if (i > 0) text.Append(',');
+            text.Append('"').Append((NitrogenPool)i).Append("\":").Append(Num(state.Get((NitrogenPool)i)));
+        }
+        text.Append("},\"input_by_pool\":{");
+        for (int i = 0; i < 7; i++)
+        {
+            if (i > 0) text.Append(',');
+            text.Append('"').Append((NitrogenPool)i).Append("\":").Append(Num(audit.InputByPoolMgN[i]));
+        }
+        text.Append("},\"output_by_pool\":{");
+        for (int i = 0; i < 7; i++)
+        {
+            if (i > 0) text.Append(',');
+            text.Append('"').Append((NitrogenPool)i).Append("\":").Append(Num(audit.OutputByPoolMgN[i]));
+        }
+        text.Append("},\"residual_mgN\":").Append(Num(residual));
+        text.Append(",\"volume_l\":").Append(Num(engine.VolumeLiters));
+        text.Append(",\"plant_uptake_mgN_per_day\":").Append(Num(engine.Parameters.PlantUptakeMgNPerDay));
+        text.Append(",\"fixed_step_game_days\":").Append(Num(engine.Parameters.FixedStepGameDays));
+        return text.ToString();
+    }
+    private static void WriteGapEvidence()
+    {
+        string directory = Environment.GetEnvironmentVariable("AQUARIUM_EVIDENCE_DIR");
+        if (string.IsNullOrEmpty(directory)) return;
+        Directory.CreateDirectory(directory);
+        var body = new StringBuilder();
+        body.Append("{\"new_run\":true,\"unity\":\"not_run\",\"items\":[");
+        for (int i = 0; i < gapItems.Count; i++)
+        {
+            if (i > 0) body.Append(',');
+            body.Append(gapItems[i]);
+        }
+        body.Append("]}");
+        File.WriteAllText(Path.Combine(directory, "ecology.json"), body.ToString());
+    }
     private static void Check(bool condition, string name) { if (!condition) throw new Exception(name); checks++; }
     private static void Near(double actual, double expected, string name, double tolerance = 1e-7) { Check(Math.Abs(actual - expected) <= tolerance, name + ": " + actual + " != " + expected); }
     private static void Reject(Action action, string name)
@@ -56,10 +108,26 @@ internal static class Program
         }
         var plant = new EcologyEngine(new EcologyParameters { PlantUptakeMgNPerDay = 2 }); plant.AddNitrogen(NitrogenPool.Nitrate, 10, "plant-fixture"); plant.AdvanceGameDays(2);
         Near(plant.State.PlantMgN, 4, "plants store nitrogen rather than delete"); Balance(plant, "plant balance");
-        var stopped = new EcologyEngine(); stopped.BeginFishlessChallenge(0); stopped.AdvanceGameDays(5); stopped.SetFilterEnabled(false);
-        Near(stopped.Challenge.StableGameHours, 0, "filter off resets continuous window"); stopped.AdvanceGameDays(2);
-        Check(stopped.Challenge.Status != FishlessChallengeStatus.Passed, "filter off cannot pass"); stopped.SetFilterEnabled(true); stopped.AdvanceGameDays(2);
+        Gap("plant-nitrate-to-plant", "Existing fixture: uptake 2 mgN/day, 10 mgN nitrate, 2 game days. Default uptake remains 0.", plant);
+        var stopped = new EcologyEngine(); stopped.BeginFishlessChallenge(0); stopped.AdvanceGameDays(5);
+        double beforeHours = stopped.Challenge.StableGameHours, beforeTan = stopped.Challenge.OxidizedTanMgN, beforeNit = stopped.Challenge.OxidizedNitriteMgN;
+        Check(beforeHours > 0 && stopped.Challenge.Status != FishlessChallengeStatus.Passed, "filter-off snapshot starts during a nonzero unfinished window");
+        stopped.SetFilterEnabled(false);
+        Near(stopped.Challenge.StableGameHours, 0, "filter off resets continuous window");
+        Near(stopped.Challenge.OxidizedTanMgN, beforeTan, "switching the filter off does not oxidize TAN");
+        Near(stopped.Challenge.OxidizedNitriteMgN, beforeNit, "switching the filter off does not oxidize nitrite");
+        stopped.AdvanceGameDays(2);
+        Near(stopped.Challenge.OxidizedTanMgN, beforeTan, "filter off adds no TAN oxidation");
+        Near(stopped.Challenge.OxidizedNitriteMgN, beforeNit, "filter off adds no nitrite oxidation");
+        Check(stopped.Challenge.Status != FishlessChallengeStatus.Passed, "filter off cannot pass");
+        double offTan = stopped.Challenge.OxidizedTanMgN, offNit = stopped.Challenge.OxidizedNitriteMgN, offHours = stopped.Challenge.StableGameHours;
+        stopped.SetFilterEnabled(true); stopped.AdvanceGameDays(2);
         Check(stopped.Challenge.Status == FishlessChallengeStatus.Passed, "restart obtains a new continuous window");
+        Check(stopped.Challenge.StableGameHours + 1e-9 >= 24, "restored filter reaches a full 24-hour window");
+        GapRaw("{\"id\":\"C-filter-window\",\"before_off\":{\"stable_game_hours\":" + Num(beforeHours) + ",\"oxidized_tan_mgN\":" + Num(beforeTan) + ",\"oxidized_nitrite_mgN\":" + Num(beforeNit)
+            + "},\"after_off\":{\"stable_game_hours\":" + Num(offHours) + ",\"oxidized_tan_mgN\":" + Num(offTan) + ",\"oxidized_nitrite_mgN\":" + Num(offNit)
+            + ",\"delta_oxidized_tan_mgN\":" + Num(offTan - beforeTan) + ",\"delta_oxidized_nitrite_mgN\":" + Num(offNit - beforeNit)
+            + "},\"after_restore\":{\"status\":\"" + stopped.Challenge.Status + "\",\"stable_game_hours\":" + Num(stopped.Challenge.StableGameHours) + ",\"filter_on\":true},\"declared_zero_tolerance\":0}");
         e.BeginTrialObservation(8); e.AdvanceGameDays(.5); Check(e.TrialObservation.Status == TrialObservationStatus.Observing, "half day cannot pass trial");
         e.AddNitrogen(NitrogenPool.Tan, 54, "trial-overfeed"); Near(e.TrialObservation.StableGameHours, 0, "unsafe chemistry resets trial");
         e.SetFilterEnabled(false); e.AdvanceGameDays(1); Check(e.TrialObservation.Status == TrialObservationStatus.Observing, "unsafe trial cannot pass");
@@ -108,6 +176,7 @@ internal static class Program
         LivingReserves();
         GateLedger();
         WriteCurves();
+        WriteGapEvidence();
         Console.WriteLine("Ecology checks passed: " + checks + ". Pure C#/.NET only; Unity import, Play and builds remain unverified.");
         return 0;
     }
@@ -148,23 +217,27 @@ internal static class Program
             if (!first) report.Append(',');
             first = false;
             var c = engine.Challenge;
-            report.Append("{\"id\":\"").Append(id).Append("\",\"rule\":\"").Append(rule).Append("\",\"note\":\"").Append(note)
-                .Append("\",\"game_day\":").Append(engine.GameDays.ToString("G17", CultureInfo.InvariantCulture))
+            var item = new StringBuilder();
+            item.Append("{\"id\":\"").Append(id).Append("\",\"rule\":\"").Append(rule).Append("\",\"note\":\"").Append(note)
+                .Append("\",\"game_day\":").Append(Num(engine.GameDays))
                 .Append(",\"filter_on\":").Append(engine.FilterEnabled ? "true" : "false")
                 .Append(",\"water_stable\":").Append(engine.WaterIsStable ? "true" : "false")
-                .Append(",\"challenge\":\"").Append(c.Status).Append("\",\"stable_game_hours\":").Append(c.StableGameHours.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"dose_mgN\":").Append(c.DoseMgN.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"oxidized_tan_mgN\":").Append(c.OxidizedTanMgN.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"oxidized_nitrite_mgN\":").Append(c.OxidizedNitriteMgN.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"tan_to_nitrite_mgN\":").Append(Moved(engine, NitrogenPool.Tan, NitrogenPool.Nitrite).ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"nitrite_to_nitrate_mgN\":").Append(Moved(engine, NitrogenPool.Nitrite, NitrogenPool.Nitrate).ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"tan_output_mgN\":").Append(Left(engine, NitrogenPool.Tan).ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"tan_mgN\":").Append(engine.State.TanMgN.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"total_mgN\":").Append(engine.State.TotalMgN.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"input_mgN\":").Append(engine.Audit.CumulativeInputMgN.ToString("G17", CultureInfo.InvariantCulture))
-                .Append(",\"output_mgN\":").Append(engine.Audit.CumulativeOutputMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"challenge\":\"").Append(c.Status).Append("\",\"stable_game_hours\":").Append(Num(c.StableGameHours))
+                .Append(",\"dose_mgN\":").Append(Num(c.DoseMgN))
+                .Append(",\"oxidized_tan_mgN\":").Append(Num(c.OxidizedTanMgN))
+                .Append(",\"oxidized_nitrite_mgN\":").Append(Num(c.OxidizedNitriteMgN))
+                .Append(",\"tan_to_nitrite_mgN\":").Append(Num(Moved(engine, NitrogenPool.Tan, NitrogenPool.Nitrite)))
+                .Append(",\"nitrite_to_nitrate_mgN\":").Append(Num(Moved(engine, NitrogenPool.Nitrite, NitrogenPool.Nitrate)))
+                .Append(",\"tan_output_mgN\":").Append(Num(Left(engine, NitrogenPool.Tan)))
+                .Append(",\"tan_mgN\":").Append(Num(engine.State.TanMgN))
+                .Append(",\"total_mgN\":").Append(Num(engine.State.TotalMgN))
+                .Append(",\"input_mgN\":").Append(Num(engine.Audit.CumulativeInputMgN))
+                .Append(",\"output_mgN\":").Append(Num(engine.Audit.CumulativeOutputMgN))
+                .Append(PoolFields(engine))
                 .Append("}");
+            report.Append(item);
             Balance(engine, id);
+            GapRaw(item.ToString());
         };
         var frozen = new EcologyParameters();
         Near(frozen.VolumeLiters, 54, "frozen volume");
@@ -221,14 +294,25 @@ internal static class Program
             scaled.BeginFishlessChallenge(0);
             Near(scaled.Challenge.DoseMgN, .5 * litres, "dose follows volume " + litres);
             Check(scaled.State.TanMgN >= 0 && scaled.State.TotalMgN >= 0, "dose mass is nonnegative");
+            GapRaw("{\"id\":\"parameter-dose-" + litres.ToString("G17", CultureInfo.InvariantCulture) + "\",\"kind\":\"parameter_volume_not_layout\",\"volume_l\":" + Num(litres) + ",\"dose_mgN\":" + Num(scaled.Challenge.DoseMgN) + ",\"dose_mgN_per_l\":0.5}");
         }
         var lumped = new EcologyEngine(); lumped.BeginFishlessChallenge(0); lumped.AdvanceGameDays(3);
         var stepped = new EcologyEngine(); stepped.BeginFishlessChallenge(0);
         double left = 3, step = stepped.Parameters.FixedStepGameDays;
-        while (left > 1e-12) { double dt = Math.Min(step, left); stepped.AdvanceGameDays(dt); left -= dt; }
-        Near(stepped.Challenge.OxidizedTanMgN, lumped.Challenge.OxidizedTanMgN, "fixed steps match one three-day advance", 1e-6);
-        Near(stepped.State.NitrateMgN, lumped.State.NitrateMgN, "fixed steps match nitrate", 1e-6);
-        emit("time-step", "consistency", stepped, "3 game days as fixed ecology steps versus one advance.");
+        int externalCalls = 0;
+        while (left > 1e-12) { double dt = Math.Min(step, left); stepped.AdvanceGameDays(dt); left -= dt; externalCalls++; }
+        const double stepTolerance = 1e-6;
+        Near(stepped.Challenge.OxidizedTanMgN, lumped.Challenge.OxidizedTanMgN, "fixed steps match one three-day advance", stepTolerance);
+        Near(stepped.State.NitrateMgN, lumped.State.NitrateMgN, "fixed steps match nitrate", stepTolerance);
+        emit("time-step", "consistency", stepped, "3 game days as fixed ecology steps versus one advance. The paired object records both sides.");
+        GapRaw("{\"id\":\"external-chunk-pair\",\"internal_fixed_step_game_days\":" + Num(step)
+            + ",\"declared_tolerance\":" + Num(stepTolerance)
+            + ",\"lumped\":{\"external_calls\":[3],\"result\":{" + PoolFields(lumped).TrimStart(',') + "}}"
+            + ",\"stepped\":{\"external_chunk_game_days\":" + Num(step) + ",\"external_call_count\":" + externalCalls.ToString(CultureInfo.InvariantCulture)
+            + ",\"result\":{" + PoolFields(stepped).TrimStart(',') + "}}"
+            + ",\"difference\":{\"oxidized_tan_mgN\":" + Num(stepped.Challenge.OxidizedTanMgN - lumped.Challenge.OxidizedTanMgN)
+            + ",\"nitrate_mgN\":" + Num(stepped.State.NitrateMgN - lumped.State.NitrateMgN)
+            + ",\"total_mgN\":" + Num(stepped.State.TotalMgN - lumped.State.TotalMgN) + "}}");
         report.Append("]}");
         string path = Environment.GetEnvironmentVariable("AQUARIUM_GATE_EVIDENCE");
         if (!string.IsNullOrEmpty(path)) File.WriteAllText(path, report.ToString());
