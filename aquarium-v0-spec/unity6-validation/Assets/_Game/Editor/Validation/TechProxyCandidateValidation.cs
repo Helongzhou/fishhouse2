@@ -34,6 +34,9 @@ namespace Aquarium.Validation
         static bool holdExit;
         static void Run(string testName, Action<TechProxyRunReport> body)
         {
+            SessionSaveLocation.ValidationMode = true;
+            if (string.IsNullOrEmpty(SessionSaveLocation.OverrideDirectory))
+                SessionSaveLocation.OverrideDirectory = null;
             TechProxyRunReport report = NewReport(testName);
             holdExit = false;
             int exit = 1;
@@ -146,23 +149,12 @@ namespace Aquarium.Validation
                 Stage(report, "save_isolated_roundtrip", false, "Missing -aquariumSaveRoot. No player save was opened.");
                 return;
             }
-            string full = Path.GetFullPath(requested);
+            string full = SaveRootGuard.CreateFreshDirectory(requested, ForbiddenRoots());
             report.save_root = full;
-            SessionSaveLocation.RejectPlayerSaveRoot(full);
-            string project = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
-            string projectPrefix = project.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar;
-            if (full.StartsWith(projectPrefix, StringComparison.Ordinal))
-                throw new InvalidOperationException("Save root must be outside the Unity project.");
-            string parent = Path.GetDirectoryName(full);
-            if (string.IsNullOrEmpty(parent) || !Directory.Exists(parent))
-                throw new InvalidOperationException("Parent of the save root must already exist. Refusing to create parent directories.");
-            if (Directory.Exists(full) || File.Exists(full))
-                throw new InvalidOperationException("Save root already exists. Refusing to delete or reuse it.");
-            Directory.CreateDirectory(full);
             if (Directory.GetFileSystemEntries(full).Length != 0)
                 throw new InvalidOperationException("Newly created save root is not empty.");
             SessionSaveLocation.OverrideDirectory = full;
-            string file = SessionSaveLocation.IsolatedFile(full);
+            string file = SessionSaveLocation.RequiredIsolated(SessionSaveLocation.FileName);
             TextAsset resource = Resources.Load<TextAsset>("Configuration/runtime");
             if (resource == null) throw new InvalidOperationException("Missing runtime configuration.");
             RuntimeCatalog catalog = JsonUtility.FromJson<RuntimeCatalog>(resource.text);
@@ -176,8 +168,7 @@ namespace Aquarium.Validation
             File.WriteAllText(file, "{invalid-json");
             string recoveredFrom;
             string payload = store.Load(out recoveredFrom);
-            string prefix = full.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar;
-            bool inside = recoveredFrom.StartsWith(prefix, StringComparison.Ordinal) && file.StartsWith(prefix, StringComparison.Ordinal);
+            bool inside = SaveRootGuard.SameOrInside(recoveredFrom, full) && SaveRootGuard.SameOrInside(file, full);
             bool backup = recoveredFrom == file + ".bak1" && valid(payload);
             bool onlyOwned = true;
             foreach (string entry in Directory.GetFileSystemEntries(full))
@@ -222,13 +213,29 @@ namespace Aquarium.Validation
             if (string.IsNullOrWhiteSpace(path)) return;
             try
             {
-                string full = Path.GetFullPath(path);
-                SessionSaveLocation.RejectPlayerSaveRoot(full);
-                string parent = Path.GetDirectoryName(full);
-                if (!string.IsNullOrEmpty(parent)) Directory.CreateDirectory(parent);
+                string parent = Path.GetDirectoryName(Path.GetFullPath(path));
+                if (string.IsNullOrEmpty(parent) || !Directory.Exists(parent))
+                    throw new DirectoryNotFoundException("Report directory must already exist.");
+                string full = Path.Combine(SaveRootGuard.Canonicalize(parent), Path.GetFileName(path));
+                SaveRootGuard.RejectInside(full, ForbiddenRoots());
                 File.WriteAllText(full, JsonUtility.ToJson(report, true));
+                report.result_path = full;
             }
             catch (Exception error) { Debug.LogError("Could not write the test report: " + error.Message); }
+        }
+
+        static string[] ForbiddenRoots()
+        {
+            string project = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
+            string home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            return new[]
+            {
+                project,
+                Application.persistentDataPath,
+                Path.Combine(home, "Library/Application Support/Aquarium Journal"),
+                Path.Combine(home, "Library/Application Support/unity.Aquarium Journal.Aquarium Journal"),
+                Path.Combine(home, ".config/unity3d/Aquarium Journal")
+            };
         }
     }
 }

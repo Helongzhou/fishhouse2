@@ -43,11 +43,15 @@ def main():
     if "EnableTechnicalProxyVisuals" in scene:
         fail("player scene enables the proxy")
     validator = text(U6 / "Assets/_Game/Editor/Validation/TechProxyCandidateValidation.cs")
-    if "Application.persistentDataPath" in validator:
-        fail("candidate test reads Application.persistentDataPath")
+    if "Path.Combine(Application.persistentDataPath" in validator:
+        fail("candidate test writes through persistentDataPath")
     if "Directory.Delete" in validator or "File.Delete" in validator:
         fail("candidate test deletes paths")
-    if "RejectPlayerSaveRoot" not in validator or "-aquariumSaveRoot" not in validator:
+    if "CreateFreshDirectory" not in validator or "readlink" not in text(U6 / "Assets/_Game/UnityAdapter/SaveRootGuard.cs"):
+        fail("save root is not canonicalized")
+    if "ValidationMode" not in text(U6 / "Assets/_Game/UnityAdapter/SessionSaveLocation.cs"):
+        fail("validation mode is not fail-closed")
+    if "CreateFreshDirectory" not in validator or "-aquariumSaveRoot" not in validator or "ValidationMode = true" not in validator:
         fail("candidate test does not require an injected save root")
     for name in ("proxy_off", "proxy_import_failure_fallback", "proxy_missing_file_fallback", "proxy_on_structure", "save_isolated_roundtrip", "visual_screenshot", "not_run"):
         if name not in validator:

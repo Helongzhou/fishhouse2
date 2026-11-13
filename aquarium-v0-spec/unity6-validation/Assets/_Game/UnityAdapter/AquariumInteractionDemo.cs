@@ -26,7 +26,7 @@ namespace Aquarium.UnityAdapter
         private string statusKey = "demo.status.ready", statusDetail = "";
         private readonly Dictionary<string, Font> localeFonts = new Dictionary<string, Font>();
         private readonly Vec3 feedPoint = new Vec3(0, .29, -.02);
-        private string SavePath { get { return Path.Combine(Application.persistentDataPath, "aquarium-behaviour-demo-v2.json"); } }
+        private string SavePath { get { return SessionSaveLocation.ResolveDemo(); } }
 
         private void Awake()
         {

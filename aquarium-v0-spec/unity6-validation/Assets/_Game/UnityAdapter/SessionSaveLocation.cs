@@ -4,38 +4,47 @@ using UnityEngine;
 
 namespace Aquarium.UnityAdapter
 {
-    // Default play still uses Application.persistentDataPath. Tests must set OverrideDirectory
-    // first and then call IsolatedFile. -projectPath does not isolate the player save directory.
+    // Validation mode never falls back to the player directory. Normal play does.
     public static class SessionSaveLocation
     {
         public const string FileName = "aquarium-session-v1.json";
+        public const string DemoFileName = "aquarium-behaviour-demo-v2.json";
+        public static bool ValidationMode;
         public static string OverrideDirectory;
 
         public static string Resolve()
         {
-            if (string.IsNullOrEmpty(OverrideDirectory)) return Path.Combine(Application.persistentDataPath, FileName);
-            return IsolatedFile(OverrideDirectory);
+            return ValidationMode ? RequiredIsolated(FileName) : ProductionOrOverride(FileName);
         }
 
-        public static string IsolatedFile(string root)
+        public static string ResolveDemo()
         {
-            if (string.IsNullOrWhiteSpace(root)) throw new InvalidOperationException("Injected save root is required.");
-            string fullRoot = Path.GetFullPath(root);
-            RejectPlayerSaveRoot(fullRoot);
-            if (!Directory.Exists(fullRoot)) throw new DirectoryNotFoundException("Injected save root does not exist.");
-            string prefix = fullRoot.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar) + Path.DirectorySeparatorChar;
-            string file = Path.GetFullPath(Path.Combine(fullRoot, FileName));
-            if (!file.StartsWith(prefix, StringComparison.Ordinal)) throw new InvalidOperationException("Save path escaped the injected root.");
+            return ValidationMode ? RequiredIsolated(DemoFileName) : Path.Combine(Application.persistentDataPath, DemoFileName);
+        }
+
+        public static string RequiredIsolated(string fileName)
+        {
+            if (string.IsNullOrEmpty(OverrideDirectory))
+                throw new InvalidOperationException("Validation mode requires an injected save root.");
+            return IsolatedFile(OverrideDirectory, fileName);
+        }
+
+        public static string IsolatedFile(string root, string fileName)
+        {
+            if (string.IsNullOrWhiteSpace(root) || string.IsNullOrWhiteSpace(fileName) || fileName != Path.GetFileName(fileName))
+                throw new InvalidOperationException("Injected save root and file name are required.");
+            string canonicalRoot = SaveRootGuard.Canonicalize(root);
+            if (!Directory.Exists(canonicalRoot)) throw new DirectoryNotFoundException("Injected save root does not exist.");
+            string file = Path.Combine(canonicalRoot, fileName);
+            if (!SaveRootGuard.SameOrInside(SaveRootGuard.Canonicalize(file), canonicalRoot))
+                throw new InvalidOperationException("Save path escaped the injected root.");
             return file;
         }
 
-        public static void RejectPlayerSaveRoot(string fullRoot)
+        static string ProductionOrOverride(string fileName)
         {
-            string normalized = fullRoot.Replace('\\', '/');
-            if (normalized.IndexOf("Application Support/Aquarium Journal", StringComparison.OrdinalIgnoreCase) >= 0
-                || normalized.IndexOf("AppData/LocalLow", StringComparison.OrdinalIgnoreCase) >= 0
-                || normalized.IndexOf("/Library/Application Support/", StringComparison.OrdinalIgnoreCase) >= 0)
-                throw new InvalidOperationException("Refusing a save root inside the default player data directory.");
+            if (string.IsNullOrEmpty(OverrideDirectory)) return Path.Combine(Application.persistentDataPath, fileName);
+            return IsolatedFile(OverrideDirectory, fileName);
         }
     }
 }
