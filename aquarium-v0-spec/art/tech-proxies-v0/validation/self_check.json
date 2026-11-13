@@ -1,0 +1,5771 @@
+{
+  "generated_at_timezone": "Asia/Shanghai (UTC+8)",
+  "loader": "independent GLB parser + pygltflib cross-check",
+  "files": [
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/fh_v0_tetra_proxy_L0.glb",
+      "file_name": "fh_v0_tetra_proxy_L0.glb",
+      "file_bytes": 834476,
+      "glb_meta": {
+        "version": 2,
+        "length": 834476,
+        "file_size": 834476,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 10,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 2,
+        "accessors": 26,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "fh_v0_tetra_proxy_L0",
+        "pivot": "body_center",
+        "length_m": 0.038,
+        "animations": [
+          "swim_tail_loop",
+          "turn_left"
+        ],
+        "root_motion": false,
+        "species_claim": "none_technical_proxy_only"
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "fh_v0_tetra_proxy_L0",
+          "tris": 534,
+          "verts": 304,
+          "aabb_min": [
+            -0.006965140346437693,
+            -0.00405494961887598,
+            -0.026599999517202377
+          ],
+          "aabb_max": [
+            0.006965140346437693,
+            0.010134062729775906,
+            0.021299999207258224
+          ],
+          "size_m": [
+            0.013930280692875385,
+            0.014189012348651886,
+            0.0478999987244606
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 534,
+      "world_aabb_bind": {
+        "min": [
+          -0.006965140345633345,
+          -0.00405494961887598,
+          -0.026599999535153428
+        ],
+        "max": [
+          0.006965140345680737,
+          0.010134062729775906,
+          0.021299999311339014
+        ],
+        "size_m": [
+          0.013930280691314082,
+          0.014189012348651886,
+          0.047899998846492445
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "fh_head",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            0.01
+          ],
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "fh_spine_01",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0,
+            2,
+            6,
+            7
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "fh_spine_02",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            3
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.006
+          ],
+          "rotation": null
+        },
+        {
+          "i": 3,
+          "name": "fh_spine_03",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            4
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.006
+          ],
+          "rotation": null
+        },
+        {
+          "i": 4,
+          "name": "fh_tail_01",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            5
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.005999999999999998
+          ],
+          "rotation": null
+        },
+        {
+          "i": 5,
+          "name": "fh_tail_02",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            -0.008
+          ],
+          "rotation": null
+        },
+        {
+          "i": 6,
+          "name": "fh_pectoral_L",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.003,
+            0.0,
+            0.005
+          ],
+          "rotation": null
+        },
+        {
+          "i": 7,
+          "name": "fh_pectoral_R",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.003,
+            0.0,
+            0.005
+          ],
+          "rotation": null
+        },
+        {
+          "i": 8,
+          "name": "fh_v0_tetra_proxy_L0_mesh",
+          "mesh": 0,
+          "skin": 0,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 9,
+          "name": "fh_v0_tetra_proxy_L0",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            1,
+            8
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [
+        {
+          "name": "fh_v0_tetra_proxy_L0_skin",
+          "joints": [
+            "fh_head",
+            "fh_spine_01",
+            "fh_spine_02",
+            "fh_spine_03",
+            "fh_tail_01",
+            "fh_tail_02",
+            "fh_pectoral_L",
+            "fh_pectoral_R"
+          ],
+          "joint_count": 8
+        }
+      ],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [
+        {
+          "name": "swim_tail_loop",
+          "duration_s": 2.0,
+          "t0": 0.0,
+          "t1": 2.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_03",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_02",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_L",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_R",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.007826496524299783,
+                -0.00405494961887598,
+                -0.025971732050371617
+              ],
+              "aabb_max": [
+                0.008761466313386292,
+                0.010134062729775906,
+                0.021111495652120418
+              ],
+              "centroid": [
+                0.0008096194583615964,
+                0.0005636868612016674,
+                -0.0008993752829902019
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.007848476653061435,
+                -0.00405494961887598,
+                -0.02593512878476205
+              ],
+              "aabb_max": [
+                0.007806166150378256,
+                0.010134062729775906,
+                0.021111495652120418
+              ],
+              "centroid": [
+                -0.0009027519033678319,
+                0.0005636868612016674,
+                -0.0008002581404129088
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.011863090272873881,
+                -0.00405494961887598,
+                -0.024996216430629967
+              ],
+              "aabb_max": [
+                0.008273754796576932,
+                0.010134062729775906,
+                0.020531904735793
+              ],
+              "centroid": [
+                0.0002447237995447268,
+                0.0005636868612016674,
+                -0.00025954791031295826
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.007826496524299783,
+                -0.00405494961887598,
+                -0.025971732050371617
+              ],
+              "aabb_max": [
+                0.008761466313386292,
+                0.010134062729775906,
+                0.021111495652120418
+              ],
+              "centroid": [
+                0.0008096194583615964,
+                0.0005636868612016674,
+                -0.0008993752829902019
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.004527520763595588,
+            "mean_disp_m": 0.00213932932418135,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        },
+        {
+          "name": "turn_left",
+          "duration_s": 1.5,
+          "t0": 0.0,
+          "t1": 1.5,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_03",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_02",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_L",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_R",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.006965140345633345,
+                -0.00405494961887598,
+                -0.026599999535153428
+              ],
+              "aabb_max": [
+                0.006965140345680737,
+                0.010134062729775906,
+                0.021299999311339014
+              ],
+              "centroid": [
+                -5.291521458487605e-13,
+                0.0005636868612016674,
+                -0.00014347948704073412
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.01948806622947641,
+                -0.00405494961887598,
+                -0.020298221221307172
+              ],
+              "aabb_max": [
+                0.013273864236286747,
+                0.010134062729775906,
+                0.01600212623551139
+              ],
+              "centroid": [
+                6.84505865818387e-05,
+                0.0006552572320595606,
+                -0.0013086977823327252
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.013116441971520773,
+                -0.00405494961887598,
+                -0.024754469571243953
+              ],
+              "aabb_max": [
+                0.00924091899593659,
+                0.010134062729775906,
+                0.019866378446962728
+              ],
+              "centroid": [
+                0.0005364668938526734,
+                0.0006145894364093735,
+                -0.0009797688520530145
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.006965140345633345,
+                -0.00405494961887598,
+                -0.026599999535153428
+              ],
+              "aabb_max": [
+                0.006965140345680737,
+                0.010134062729775906,
+                0.021299999311339014
+              ],
+              "centroid": [
+                -5.291521458487605e-13,
+                0.0005636868612016674,
+                -0.00014347948704073412
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.012883751917134208,
+            "mean_disp_m": 0.00408384454132666,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        }
+      ],
+      "movement": {
+        "swim_tail_loop": {
+          "max_vertex_disp_m": 0.004527520763595588,
+          "mean_disp_m": 0.00213932932418135,
+          "moved": true
+        },
+        "turn_left": {
+          "max_vertex_disp_m": 0.012883751917134208,
+          "mean_disp_m": 0.00408384454132666,
+          "moved": true
+        }
+      },
+      "fish_length_m": 0.047899998846492445,
+      "fish_length_cm": 4.789999884649244,
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/fh_v0_tetra_proxy_L1.glb",
+      "file_name": "fh_v0_tetra_proxy_L1.glb",
+      "file_bytes": 810576,
+      "glb_meta": {
+        "version": 2,
+        "length": 810576,
+        "file_size": 810576,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 6,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 2,
+        "accessors": 18,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "fh_v0_tetra_proxy_L1",
+        "pivot": "body_center",
+        "length_m": 0.038,
+        "animations": [
+          "swim_tail_loop",
+          "turn_left"
+        ],
+        "root_motion": false,
+        "species_claim": "none_technical_proxy_only"
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "fh_v0_tetra_proxy_L1",
+          "tris": 216,
+          "verts": 136,
+          "aabb_min": [
+            -0.0069677559658885,
+            -0.00405963184311986,
+            -0.026599999517202377
+          ],
+          "aabb_max": [
+            0.0069677559658885,
+            0.010138042271137238,
+            0.021299999207258224
+          ],
+          "size_m": [
+            0.013935511931777,
+            0.014197674114257097,
+            0.0478999987244606
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 216,
+      "world_aabb_bind": {
+        "min": [
+          -0.0069677559658885,
+          -0.00405963184311986,
+          -0.02659999965388618
+        ],
+        "max": [
+          0.0069677559658885,
+          0.010138042271137238,
+          0.021299999139904106
+        ],
+        "size_m": [
+          0.013935511931777,
+          0.014197674114257097,
+          0.04789999879379028
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "fh_head",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            0.006
+          ],
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "fh_spine_01",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0,
+            2
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "fh_spine_02",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            3
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.01
+          ],
+          "rotation": null
+        },
+        {
+          "i": 3,
+          "name": "fh_tail_01",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            -0.011999999999999999
+          ],
+          "rotation": null
+        },
+        {
+          "i": 4,
+          "name": "fh_v0_tetra_proxy_L1_mesh",
+          "mesh": 0,
+          "skin": 0,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 5,
+          "name": "fh_v0_tetra_proxy_L1",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            1,
+            4
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [
+        {
+          "name": "fh_v0_tetra_proxy_L1_skin",
+          "joints": [
+            "fh_head",
+            "fh_spine_01",
+            "fh_spine_02",
+            "fh_tail_01"
+          ],
+          "joint_count": 4
+        }
+      ],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [
+        {
+          "name": "swim_tail_loop",
+          "duration_s": 2.0,
+          "t0": 0.0,
+          "t1": 2.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.006349781899755688,
+                -0.00405963184311986,
+                -0.02632518338263582
+              ],
+              "aabb_max": [
+                0.0075706095235314845,
+                0.010138042271137238,
+                0.021121033444488003
+              ],
+              "centroid": [
+                0.0006042609387211179,
+                0.0008403551148469834,
+                -0.0007152920600225585
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.0075706095235314845,
+                -0.00405963184311986,
+                -0.02632518338263582
+              ],
+              "aabb_max": [
+                0.006349781899755688,
+                0.010138042271137238,
+                0.021121033444488003
+              ],
+              "centroid": [
+                -0.0006042609387211177,
+                0.0008403551148469834,
+                -0.0007152920600225592
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.009563230505921052,
+                -0.00405963184311986,
+                -0.02591608019091393
+              ],
+              "aabb_max": [
+                0.008176955444054184,
+                0.010138042271137238,
+                0.020855559790160655
+              ],
+              "centroid": [
+                0.0003193493858046835,
+                0.0008403551148469834,
+                -0.0006708972510941309
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.006349781899755688,
+                -0.00405963184311986,
+                -0.02632518338263582
+              ],
+              "aabb_max": [
+                0.0075706095235314845,
+                0.010138042271137238,
+                0.021121033444488003
+              ],
+              "centroid": [
+                0.0006042609387211179,
+                0.0008403551148469834,
+                -0.0007152920600225585
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.003495734147465427,
+            "mean_disp_m": 0.0015547860854379688,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        },
+        {
+          "name": "turn_left",
+          "duration_s": 1.5,
+          "t0": 0.0,
+          "t1": 1.5,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.0069677559658885,
+                -0.00405963184311986,
+                -0.02659999965388618
+              ],
+              "aabb_max": [
+                0.0069677559658885,
+                0.010138042271137238,
+                0.021299999139904106
+              ],
+              "centroid": [
+                0.0,
+                0.0008403551148469834,
+                -0.0005692049015675152
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.016659356620253578,
+                -0.00405963184311986,
+                -0.02281546529915588
+              ],
+              "aabb_max": [
+                0.012491974499731528,
+                0.010138042271137238,
+                0.0167803397723329
+              ],
+              "centroid": [
+                0.0003275613363841463,
+                0.0008403551148469834,
+                -0.0011445993045624229
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.011433244152489292,
+                -0.00405963184311986,
+                -0.02527074139566666
+              ],
+              "aabb_max": [
+                0.008733115529757307,
+                0.010138042271137238,
+                0.020122948667291557
+              ],
+              "centroid": [
+                0.0004437749501768041,
+                0.0008403551148469834,
+                -0.0008477657842411015
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.0069677559658885,
+                -0.00405963184311986,
+                -0.02659999965388618
+              ],
+              "aabb_max": [
+                0.0069677559658885,
+                0.010138042271137238,
+                0.021299999139904106
+              ],
+              "centroid": [
+                0.0,
+                0.0008403551148469834,
+                -0.0005692049015675152
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.008613473118417378,
+            "mean_disp_m": 0.0032268464831670222,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        }
+      ],
+      "movement": {
+        "swim_tail_loop": {
+          "max_vertex_disp_m": 0.003495734147465427,
+          "mean_disp_m": 0.0015547860854379688,
+          "moved": true
+        },
+        "turn_left": {
+          "max_vertex_disp_m": 0.008613473118417378,
+          "mean_disp_m": 0.0032268464831670222,
+          "moved": true
+        }
+      },
+      "fish_length_m": 0.04789999879379028,
+      "fish_length_cm": 4.789999879379028,
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/fh_v0_tetra_proxy_L2.glb",
+      "file_name": "fh_v0_tetra_proxy_L2.glb",
+      "file_bytes": 806068,
+      "glb_meta": {
+        "version": 2,
+        "length": 806068,
+        "file_size": 806068,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 6,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 2,
+        "accessors": 18,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "fh_v0_tetra_proxy_L2",
+        "pivot": "body_center",
+        "length_m": 0.038,
+        "animations": [
+          "swim_tail_loop",
+          "turn_left"
+        ],
+        "root_motion": false,
+        "species_claim": "none_technical_proxy_only"
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "fh_v0_tetra_proxy_L2",
+          "tris": 114,
+          "verts": 82,
+          "aabb_min": [
+            -0.006951401475816965,
+            -0.003490390256047249,
+            -0.026599999517202377
+          ],
+          "aabb_max": [
+            0.006951401475816965,
+            0.010113157331943512,
+            0.021299999207258224
+          ],
+          "size_m": [
+            0.01390280295163393,
+            0.01360354758799076,
+            0.0478999987244606
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 114,
+      "world_aabb_bind": {
+        "min": [
+          -0.006951401475816965,
+          -0.003490390256047249,
+          -0.02659999965388618
+        ],
+        "max": [
+          0.006951401475816965,
+          0.010113157331943512,
+          0.021299999139904106
+        ],
+        "size_m": [
+          0.01390280295163393,
+          0.01360354758799076,
+          0.04789999879379028
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "fh_head",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            0.006
+          ],
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "fh_spine_01",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0,
+            2
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "fh_spine_02",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            3
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.01
+          ],
+          "rotation": null
+        },
+        {
+          "i": 3,
+          "name": "fh_tail_01",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            -0.011999999999999999
+          ],
+          "rotation": null
+        },
+        {
+          "i": 4,
+          "name": "fh_v0_tetra_proxy_L2_mesh",
+          "mesh": 0,
+          "skin": 0,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 5,
+          "name": "fh_v0_tetra_proxy_L2",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            1,
+            4
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [
+        {
+          "name": "fh_v0_tetra_proxy_L2_skin",
+          "joints": [
+            "fh_head",
+            "fh_spine_01",
+            "fh_spine_02",
+            "fh_tail_01"
+          ],
+          "joint_count": 4
+        }
+      ],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [
+        {
+          "name": "swim_tail_loop",
+          "duration_s": 2.0,
+          "t0": 0.0,
+          "t1": 2.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.00628864654539316,
+                -0.003490390256047249,
+                -0.02632518338263582
+              ],
+              "aabb_max": [
+                0.007554325415335471,
+                0.010113157331943512,
+                0.021121033444488003
+              ],
+              "centroid": [
+                0.0006186914558350032,
+                0.0013901180042544517,
+                0.0005289190716925359
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.007554325415335471,
+                -0.003490390256047249,
+                -0.02632518338263582
+              ],
+              "aabb_max": [
+                0.00628864654539316,
+                0.010113157331943512,
+                0.021121033444488003
+              ],
+              "centroid": [
+                -0.0006186914558350033,
+                0.0013901180042544517,
+                0.0005289190716925356
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.009424803884752966,
+                -0.003490390256047249,
+                -0.02591608019091393
+              ],
+              "aabb_max": [
+                0.008160873642727735,
+                0.010113157331943512,
+                0.020855559790160655
+              ],
+              "centroid": [
+                0.0005177406676366696,
+                0.0013901180042544517,
+                0.0005503338361934193
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.00628864654539316,
+                -0.003490390256047249,
+                -0.02632518338263582
+              ],
+              "aabb_max": [
+                0.007554325415335471,
+                0.010113157331943512,
+                0.021121033444488003
+              ],
+              "centroid": [
+                0.0006186914558350032,
+                0.0013901180042544517,
+                0.0005289190716925359
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.003495734147465427,
+            "mean_disp_m": 0.0014102322226999234,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        },
+        {
+          "name": "turn_left",
+          "duration_s": 1.5,
+          "t0": 0.0,
+          "t1": 1.5,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.006951401475816965,
+                -0.003490390256047249,
+                -0.02659999965388618
+              ],
+              "aabb_max": [
+                0.006951401475816965,
+                0.010113157331943512,
+                0.021299999139904106
+              ],
+              "centroid": [
+                0.0,
+                0.0013901180042544517,
+                0.0006705870690375998
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.01639233301677661,
+                -0.003490390256047249,
+                -0.022924647983431877
+              ],
+              "aabb_max": [
+                0.012491974499731528,
+                0.010113157331943512,
+                0.0167803397723329
+              ],
+              "centroid": [
+                0.0009782363966149429,
+                0.0013901180042544517,
+                -9.416752373856873e-05
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.011445462451515913,
+                -0.003490390256047249,
+                -0.024956104755957914
+              ],
+              "aabb_max": [
+                0.008717518304033937,
+                0.010113157331943512,
+                0.020122948667291557
+              ],
+              "centroid": [
+                0.000764196469782816,
+                0.0013901180042544517,
+                0.0003516566343814772
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.006951401475816965,
+                -0.003490390256047249,
+                -0.02659999965388618
+              ],
+              "aabb_max": [
+                0.006951401475816965,
+                0.010113157331943512,
+                0.021299999139904106
+              ],
+              "centroid": [
+                0.0,
+                0.0013901180042544517,
+                0.0006705870690375998
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.008613473118417378,
+            "mean_disp_m": 0.003086781766705921,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        }
+      ],
+      "movement": {
+        "swim_tail_loop": {
+          "max_vertex_disp_m": 0.003495734147465427,
+          "mean_disp_m": 0.0014102322226999234,
+          "moved": true
+        },
+        "turn_left": {
+          "max_vertex_disp_m": 0.008613473118417378,
+          "mean_disp_m": 0.003086781766705921,
+          "moved": true
+        }
+      },
+      "fish_length_m": 0.04789999879379028,
+      "fish_length_cm": 4.789999879379028,
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/pl_fg_v0_carpet_proxy.glb",
+      "file_name": "pl_fg_v0_carpet_proxy.glb",
+      "file_bytes": 848212,
+      "glb_meta": {
+        "version": 2,
+        "length": 848212,
+        "file_size": 848212,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 6,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 1,
+        "accessors": 13,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "pl_fg_v0_carpet_proxy",
+        "pivot": "base_on_substrate",
+        "animation": [
+          "sway_loop"
+        ],
+        "root_motion": false
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "pl_fg_v0_carpet_proxy",
+          "tris": 720,
+          "verts": 648,
+          "aabb_min": [
+            -0.06776580959558487,
+            -0.00782730896025896,
+            -0.06829629093408585
+          ],
+          "aabb_max": [
+            0.06563632190227509,
+            0.0444086492061615,
+            0.07041527330875397
+          ],
+          "size_m": [
+            0.13340213149785995,
+            0.05223595816642046,
+            0.1387115642428398
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 1
+        }
+      ],
+      "total_tris": 720,
+      "world_aabb_bind": {
+        "min": [
+          -0.06776580939211599,
+          -0.007827308216979589,
+          -0.06829629080844496
+        ],
+        "max": [
+          0.06563632198868602,
+          0.04440864977198081,
+          0.07041527338012665
+        ],
+        "size_m": [
+          0.133402131380802,
+          0.0522359579889604,
+          0.1387115641885716
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "pl_fg_v0_carpet_proxy_root",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            1,
+            2,
+            3
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "pl_fg_v0_carpet_proxy_stem_01",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.012,
+            0.018,
+            0.0
+          ],
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "pl_fg_v0_carpet_proxy_stem_02",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.008,
+            0.018,
+            0.01
+          ],
+          "rotation": null
+        },
+        {
+          "i": 3,
+          "name": "pl_fg_v0_carpet_proxy_stem_03",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.004,
+            0.018,
+            -0.012
+          ],
+          "rotation": null
+        },
+        {
+          "i": 4,
+          "name": "pl_fg_v0_carpet_proxy_mesh",
+          "mesh": 0,
+          "skin": 0,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 5,
+          "name": "pl_fg_v0_carpet_proxy",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0,
+            4
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_fg_v0_carpet_proxy_skin",
+          "joints": [
+            "pl_fg_v0_carpet_proxy_root",
+            "pl_fg_v0_carpet_proxy_stem_01",
+            "pl_fg_v0_carpet_proxy_stem_02",
+            "pl_fg_v0_carpet_proxy_stem_03"
+          ],
+          "joint_count": 4
+        }
+      ],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "t0": 0.0,
+          "t1": 3.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_root",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_stem_01",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_stem_02",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_stem_03",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.06688531490418381,
+                -0.005346332410455926,
+                -0.06929461939608238
+              ],
+              "aabb_max": [
+                0.06608530663731017,
+                0.04561946524150473,
+                0.07003698964705307
+              ],
+              "centroid": [
+                0.001464853399613651,
+                0.010961642916198657,
+                -0.0010263982757864442
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.06833239034475484,
+                -0.011396440803952534,
+                -0.06739388930382346
+              ],
+              "aabb_max": [
+                0.0649883010912197,
+                0.04461327905058971,
+                0.07087277870259764
+              ],
+              "centroid": [
+                0.0007128111497939174,
+                0.0104363965475422,
+                -8.865481512782764e-05
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.06800760757005161,
+                -0.008620096603878314,
+                -0.06868279005510104
+              ],
+              "aabb_max": [
+                0.06552724146384149,
+                0.044928982447650596,
+                0.06975686548075916
+              ],
+              "centroid": [
+                0.0009874585336637643,
+                0.01098241999358308,
+                -0.0009696675581976894
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.06688531490418381,
+                -0.005346332410455926,
+                -0.06929461939608238
+              ],
+              "aabb_max": [
+                0.06608530663731017,
+                0.04561946524150473,
+                0.07003698964705307
+              ],
+              "centroid": [
+                0.001464853399613651,
+                0.010961642916198657,
+                -0.0010263982757864442
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.005305462040683735,
+            "mean_disp_m": 0.0022330350643952157,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        }
+      ],
+      "movement": {
+        "sway_loop": {
+          "max_vertex_disp_m": 0.005305462040683735,
+          "mean_disp_m": 0.0022330350643952157,
+          "moved": true
+        }
+      },
+      "plant_height_m": 0.0522359579889604,
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/pl_md_v0_leaf_proxy.glb",
+      "file_name": "pl_md_v0_leaf_proxy.glb",
+      "file_bytes": 821872,
+      "glb_meta": {
+        "version": 2,
+        "length": 821872,
+        "file_size": 821872,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 6,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 1,
+        "animations": 1,
+        "accessors": 13,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "pl_md_v0_leaf_proxy",
+        "pivot": "base_on_substrate",
+        "animation": [
+          "sway_loop"
+        ],
+        "root_motion": false
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "pl_md_v0_leaf_proxy",
+          "tris": 464,
+          "verts": 306,
+          "aabb_min": [
+            -0.0778682678937912,
+            -0.0065338388085365295,
+            -0.004000000189989805
+          ],
+          "aabb_max": [
+            0.07373887300491333,
+            0.07005180418491364,
+            0.07649237662553787
+          ],
+          "size_m": [
+            0.15160714089870453,
+            0.07658564299345016,
+            0.08049237681552768
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 2
+        }
+      ],
+      "total_tris": 464,
+      "world_aabb_bind": {
+        "min": [
+          -0.0778682679187982,
+          -0.00653383847468796,
+          -0.004000000158795691
+        ],
+        "max": [
+          0.07373887302391888,
+          0.07005180485384936,
+          0.07649237671548628
+        ],
+        "size_m": [
+          0.15160714094271707,
+          0.07658564332853732,
+          0.08049237687428197
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "pl_md_v0_leaf_proxy_root",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            1,
+            2,
+            3
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "pl_md_v0_leaf_proxy_stem_01",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "pl_md_v0_leaf_proxy_stem_02",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.01,
+            0.04,
+            0.005
+          ],
+          "rotation": null
+        },
+        {
+          "i": 3,
+          "name": "pl_md_v0_leaf_proxy_stem_03",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.01,
+            0.04,
+            -0.004
+          ],
+          "rotation": null
+        },
+        {
+          "i": 4,
+          "name": "pl_md_v0_leaf_proxy_mesh",
+          "mesh": 0,
+          "skin": 0,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 5,
+          "name": "pl_md_v0_leaf_proxy",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0,
+            4
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_md_v0_leaf_proxy_skin",
+          "joints": [
+            "pl_md_v0_leaf_proxy_root",
+            "pl_md_v0_leaf_proxy_stem_01",
+            "pl_md_v0_leaf_proxy_stem_02",
+            "pl_md_v0_leaf_proxy_stem_03"
+          ],
+          "joint_count": 4
+        }
+      ],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "t0": 0.0,
+          "t1": 3.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_root",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_stem_01",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_stem_02",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_stem_03",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.07673326812305192,
+                -0.008213826451990983,
+                -0.0048057398459176994
+              ],
+              "aabb_max": [
+                0.07484542490884996,
+                0.07005716832880338,
+                0.07561145461039465
+              ],
+              "centroid": [
+                0.002189444906072468,
+                0.01765830906496256,
+                0.02845644731977173
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.07876403516799961,
+                -0.005386464124531898,
+                -0.0032378937508505223
+              ],
+              "aabb_max": [
+                0.07244002650515198,
+                0.0697979518258005,
+                0.07713706171973504
+              ],
+              "centroid": [
+                0.0014122848452053434,
+                0.020564296952801805,
+                0.029451353029985736
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.0782909289855119,
+                -0.009032831973728799,
+                -0.004833796128304866
+              ],
+              "aabb_max": [
+                0.07330081888818935,
+                0.06946369049013762,
+                0.07592376766591931
+              ],
+              "centroid": [
+                0.0016935285863105903,
+                0.0177659522753785,
+                0.0285369884740249
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.07673326812305192,
+                -0.008213826451990983,
+                -0.0048057398459176994
+              ],
+              "aabb_max": [
+                0.07484542490884996,
+                0.07005716832880338,
+                0.07561145461039465
+              ],
+              "centroid": [
+                0.002189444906072468,
+                0.01765830906496256,
+                0.02845644731977173
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.007057429807058753,
+            "mean_disp_m": 0.001672436027627305,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false,
+            "units": "seconds"
+          }
+        }
+      ],
+      "movement": {
+        "sway_loop": {
+          "max_vertex_disp_m": 0.007057429807058753,
+          "mean_disp_m": 0.001672436027627305,
+          "moved": true
+        }
+      },
+      "plant_height_m": 0.07658564332853732,
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/rk_v0_stone_set.glb",
+      "file_name": "rk_v0_stone_set.glb",
+      "file_bytes": 821840,
+      "glb_meta": {
+        "version": 2,
+        "length": 821840,
+        "file_size": 821840,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 0,
+        "animations": 0,
+        "accessors": 5,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "rk_v0_stone_set",
+        "pivot": "bottom_center_local",
+        "count": 5,
+        "scene_translation_m": [
+          -0.0473279245197773,
+          0.0,
+          0.00628389697521925
+        ]
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "rk_v0_stone_set",
+          "tris": 1120,
+          "verts": 570,
+          "aabb_min": [
+            -0.16292788088321686,
+            0.0,
+            -0.08345887064933777
+          ],
+          "aabb_max": [
+            0.16292788088321686,
+            0.038379427045583725,
+            0.08345887064933777
+          ],
+          "size_m": [
+            0.3258557617664337,
+            0.038379427045583725,
+            0.16691774129867554
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 4
+        }
+      ],
+      "total_tris": 1120,
+      "world_aabb_bind": {
+        "min": [
+          -0.16292788088321686,
+          0.0,
+          -0.08345887064933777
+        ],
+        "max": [
+          0.16292788088321686,
+          0.038379427045583725,
+          0.08345887064933777
+        ],
+        "size_m": [
+          0.3258557617664337,
+          0.038379427045583725,
+          0.16691774129867554
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "rk_v0_stone_set",
+          "mesh": 0,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "rk_v0_stone_set",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [],
+      "movement": {},
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/sb_v0_sand.glb",
+      "file_name": "sb_v0_sand.glb",
+      "file_bytes": 868496,
+      "glb_meta": {
+        "version": 2,
+        "length": 868496,
+        "file_size": 868496,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 0,
+        "animations": 0,
+        "accessors": 5,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "sb_v0_sand",
+        "pivot": "inner_floor_center",
+        "nominal_thickness_m": 0.03
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "sb_v0_sand",
+          "tris": 2550,
+          "verts": 1368,
+          "aabb_min": [
+            -0.2939999997615814,
+            0.0,
+            -0.14399999380111694
+          ],
+          "aabb_max": [
+            0.2939999997615814,
+            0.03108663111925125,
+            0.14399999380111694
+          ],
+          "size_m": [
+            0.5879999995231628,
+            0.03108663111925125,
+            0.2879999876022339
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 5
+        }
+      ],
+      "total_tris": 2550,
+      "world_aabb_bind": {
+        "min": [
+          -0.2939999997615814,
+          0.0,
+          -0.14399999380111694
+        ],
+        "max": [
+          0.2939999997615814,
+          0.03108663111925125,
+          0.14399999380111694
+        ],
+        "size_m": [
+          0.5879999995231628,
+          0.03108663111925125,
+          0.2879999876022339
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "sb_v0_sand",
+          "mesh": 0,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "sb_v0_sand",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [],
+      "movement": {},
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/scn_v0_tank60_triangle_proxy.glb",
+      "file_name": "scn_v0_tank60_triangle_proxy.glb",
+      "file_bytes": 1086452,
+      "glb_meta": {
+        "version": 2,
+        "length": 1086452,
+        "file_size": 1086452,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 27,
+        "meshes": 8,
+        "materials": 9,
+        "skins": 3,
+        "animations": 4,
+        "accessors": 77,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "scn_v0_tank60_triangle_proxy",
+        "layout": "triangle-ish technical layout, not a template signoff",
+        "contains": [
+          "tank",
+          "water_proxy",
+          "sand",
+          "wood",
+          "stones",
+          "carpet",
+          "midleaf",
+          "one_fish"
+        ]
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "tk_v0_tank60_glass",
+          "tris": 60,
+          "verts": 120,
+          "aabb_min": [
+            -0.30000001192092896,
+            -0.004999999888241291,
+            -0.15000000596046448
+          ],
+          "aabb_max": [
+            0.30000001192092896,
+            0.35499998927116394,
+            0.15000000596046448
+          ],
+          "size_m": [
+            0.6000000238418579,
+            0.35999998915940523,
+            0.30000001192092896
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 6
+        },
+        {
+          "name": "tk_v0_water_proxy",
+          "tris": 12,
+          "verts": 24,
+          "aabb_min": [
+            -0.2944999933242798,
+            0.029999999329447746,
+            -0.1445000022649765
+          ],
+          "aabb_max": [
+            0.2944999933242798,
+            0.33000001311302185,
+            0.1445000022649765
+          ],
+          "size_m": [
+            0.5889999866485596,
+            0.3000000137835741,
+            0.289000004529953
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 7
+        },
+        {
+          "name": "sb_v0_sand",
+          "tris": 2550,
+          "verts": 1368,
+          "aabb_min": [
+            -0.2939999997615814,
+            0.0,
+            -0.14399999380111694
+          ],
+          "aabb_max": [
+            0.2939999997615814,
+            0.03108663111925125,
+            0.14399999380111694
+          ],
+          "size_m": [
+            0.5879999995231628,
+            0.03108663111925125,
+            0.2879999876022339
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 5
+        },
+        {
+          "name": "wd_v0_driftwood",
+          "tris": 864,
+          "verts": 436,
+          "aabb_min": [
+            -0.19056928157806396,
+            0.0,
+            -0.07714468985795975
+          ],
+          "aabb_max": [
+            0.19056928157806396,
+            0.1187966838479042,
+            0.07714468985795975
+          ],
+          "size_m": [
+            0.38113856315612793,
+            0.1187966838479042,
+            0.1542893797159195
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 3
+        },
+        {
+          "name": "rk_v0_stone_set",
+          "tris": 1120,
+          "verts": 570,
+          "aabb_min": [
+            -0.16292788088321686,
+            0.0,
+            -0.08345887064933777
+          ],
+          "aabb_max": [
+            0.16292788088321686,
+            0.038379427045583725,
+            0.08345887064933777
+          ],
+          "size_m": [
+            0.3258557617664337,
+            0.038379427045583725,
+            0.16691774129867554
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 4
+        },
+        {
+          "name": "pl_fg_v0_carpet_proxy",
+          "tris": 720,
+          "verts": 648,
+          "aabb_min": [
+            -0.06776580959558487,
+            -0.00782730896025896,
+            -0.06829629093408585
+          ],
+          "aabb_max": [
+            0.06563632190227509,
+            0.0444086492061615,
+            0.07041527330875397
+          ],
+          "size_m": [
+            0.13340213149785995,
+            0.05223595816642046,
+            0.1387115642428398
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 1
+        },
+        {
+          "name": "pl_md_v0_leaf_proxy",
+          "tris": 464,
+          "verts": 306,
+          "aabb_min": [
+            -0.0778682678937912,
+            -0.0065338388085365295,
+            -0.004000000189989805
+          ],
+          "aabb_max": [
+            0.07373887300491333,
+            0.07005180418491364,
+            0.07649237662553787
+          ],
+          "size_m": [
+            0.15160714089870453,
+            0.07658564299345016,
+            0.08049237681552768
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 2
+        },
+        {
+          "name": "fh_v0_tetra_proxy_L0",
+          "tris": 534,
+          "verts": 304,
+          "aabb_min": [
+            -0.006965140346437693,
+            -0.00405494961887598,
+            -0.026599999517202377
+          ],
+          "aabb_max": [
+            0.006965140346437693,
+            0.010134062729775906,
+            0.021299999207258224
+          ],
+          "size_m": [
+            0.013930280692875385,
+            0.014189012348651886,
+            0.0478999987244606
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": true,
+          "material_index": 0
+        }
+      ],
+      "total_tris": 6324,
+      "world_aabb_bind": {
+        "min": [
+          -0.30000001192092896,
+          -0.004999999888241291,
+          -0.15000000596046448
+        ],
+        "max": [
+          0.30000001192092896,
+          0.35499998927116394,
+          0.15000000596046448
+        ],
+        "size_m": [
+          0.6000000238418579,
+          0.35999998915940523,
+          0.30000001192092896
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "tk_v0_tank60_glass",
+          "mesh": 0,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "tk_v0_water_proxy",
+          "mesh": 1,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "sb_v0_sand",
+          "mesh": 2,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 3,
+          "name": "wd_v0_driftwood",
+          "mesh": 3,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.04393386095762253,
+            0.0,
+            -0.0032637715339660645
+          ],
+          "rotation": null
+        },
+        {
+          "i": 4,
+          "name": "rk_v0_stone_set",
+          "mesh": 4,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.0473279245197773,
+            0.0,
+            0.00628389697521925
+          ],
+          "rotation": null
+        },
+        {
+          "i": 5,
+          "name": "pl_fg_v0_carpet_proxy_root",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            6,
+            7,
+            8
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 6,
+          "name": "pl_fg_v0_carpet_proxy_stem_01",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.012,
+            0.018,
+            0.0
+          ],
+          "rotation": null
+        },
+        {
+          "i": 7,
+          "name": "pl_fg_v0_carpet_proxy_stem_02",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.008,
+            0.018,
+            0.01
+          ],
+          "rotation": null
+        },
+        {
+          "i": 8,
+          "name": "pl_fg_v0_carpet_proxy_stem_03",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.004,
+            0.018,
+            -0.012
+          ],
+          "rotation": null
+        },
+        {
+          "i": 9,
+          "name": "pl_fg_v0_carpet_proxy_mesh",
+          "mesh": 5,
+          "skin": 0,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 10,
+          "name": "pl_fg_v0_carpet_proxy",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            5,
+            9
+          ],
+          "translation": [
+            -0.16,
+            0.020999999999999998,
+            0.07
+          ],
+          "rotation": null
+        },
+        {
+          "i": 11,
+          "name": "pl_md_v0_leaf_proxy_root",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            12,
+            13,
+            14
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 12,
+          "name": "pl_md_v0_leaf_proxy_stem_01",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.02,
+            0.0
+          ],
+          "rotation": null
+        },
+        {
+          "i": 13,
+          "name": "pl_md_v0_leaf_proxy_stem_02",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.01,
+            0.04,
+            0.005
+          ],
+          "rotation": null
+        },
+        {
+          "i": 14,
+          "name": "pl_md_v0_leaf_proxy_stem_03",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.01,
+            0.04,
+            -0.004
+          ],
+          "rotation": null
+        },
+        {
+          "i": 15,
+          "name": "pl_md_v0_leaf_proxy_mesh",
+          "mesh": 6,
+          "skin": 1,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 16,
+          "name": "pl_md_v0_leaf_proxy",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            11,
+            15
+          ],
+          "translation": [
+            -0.12,
+            0.020999999999999998,
+            -0.02
+          ],
+          "rotation": null
+        },
+        {
+          "i": 17,
+          "name": "fh_head",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            0.01
+          ],
+          "rotation": null
+        },
+        {
+          "i": 18,
+          "name": "fh_spine_01",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            17,
+            19,
+            23,
+            24
+          ],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 19,
+          "name": "fh_spine_02",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            20
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.006
+          ],
+          "rotation": null
+        },
+        {
+          "i": 20,
+          "name": "fh_spine_03",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            21
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.006
+          ],
+          "rotation": null
+        },
+        {
+          "i": 21,
+          "name": "fh_tail_01",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            22
+          ],
+          "translation": [
+            0.0,
+            0.0,
+            -0.005999999999999998
+          ],
+          "rotation": null
+        },
+        {
+          "i": 22,
+          "name": "fh_tail_02",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.0,
+            0.0,
+            -0.008
+          ],
+          "rotation": null
+        },
+        {
+          "i": 23,
+          "name": "fh_pectoral_L",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            0.003,
+            0.0,
+            0.005
+          ],
+          "rotation": null
+        },
+        {
+          "i": 24,
+          "name": "fh_pectoral_R",
+          "mesh": null,
+          "skin": null,
+          "children": [],
+          "translation": [
+            -0.003,
+            0.0,
+            0.005
+          ],
+          "rotation": null
+        },
+        {
+          "i": 25,
+          "name": "fh_v0_tetra_proxy_L0_mesh",
+          "mesh": 7,
+          "skin": 2,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 26,
+          "name": "fh_v0_tetra_proxy_L0",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            18,
+            25
+          ],
+          "translation": [
+            0.08,
+            0.11,
+            0.02
+          ],
+          "rotation": [
+            0.0,
+            0.7071067811865475,
+            0.0,
+            0.7071067811865476
+          ]
+        }
+      ],
+      "skins": [
+        {
+          "name": "pl_fg_v0_carpet_proxy_skin",
+          "joints": [
+            "pl_fg_v0_carpet_proxy_root",
+            "pl_fg_v0_carpet_proxy_stem_01",
+            "pl_fg_v0_carpet_proxy_stem_02",
+            "pl_fg_v0_carpet_proxy_stem_03"
+          ],
+          "joint_count": 4
+        },
+        {
+          "name": "pl_md_v0_leaf_proxy_skin",
+          "joints": [
+            "pl_md_v0_leaf_proxy_root",
+            "pl_md_v0_leaf_proxy_stem_01",
+            "pl_md_v0_leaf_proxy_stem_02",
+            "pl_md_v0_leaf_proxy_stem_03"
+          ],
+          "joint_count": 4
+        },
+        {
+          "name": "fh_v0_tetra_proxy_L0_skin",
+          "joints": [
+            "fh_head",
+            "fh_spine_01",
+            "fh_spine_02",
+            "fh_spine_03",
+            "fh_tail_01",
+            "fh_tail_02",
+            "fh_pectoral_L",
+            "fh_pectoral_R"
+          ],
+          "joint_count": 8
+        }
+      ],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "t0": 0.0,
+          "t1": 3.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_root",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_stem_01",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_stem_02",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_fg_v0_carpet_proxy_stem_03",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05163450123341309,
+                0.03778159902626332,
+                0.018704997973420234
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05176867617225759,
+                0.037687887669740856,
+                0.018872304626092757
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05171967520729406,
+                0.03778530594976139,
+                0.018715119533166198
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05163450123341309,
+                0.03778159902626332,
+                0.018704997973420234
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.005305462040683728,
+            "mean_disp_m": 0.0022330350643952166,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false
+          }
+        },
+        {
+          "name": "sway_loop",
+          "duration_s": 3.0,
+          "t0": 0.0,
+          "t1": 3.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_root",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_stem_01",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_stem_02",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "pl_md_v0_leaf_proxy_stem_03",
+              "frames": 91,
+              "t0": 0.0,
+              "t1": 3.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05166979087199026,
+                0.03760828124552149,
+                0.018741576460199312
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05173526746302152,
+                0.03785311392549919,
+                0.01882539836199594
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05171157236809348,
+                0.03761735030454881,
+                0.018748362141146845
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05166979087199026,
+                0.03760828124552149,
+                0.018741576460199312
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.007057429807058747,
+            "mean_disp_m": 0.0016724360276273054,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false
+          }
+        },
+        {
+          "name": "swim_tail_loop",
+          "duration_s": 2.0,
+          "t0": 0.0,
+          "t1": 2.0,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_03",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_02",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_L",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_R",
+              "frames": 61,
+              "t0": 0.0,
+              "t1": 2.0,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.051765786937309655,
+                0.03772809666514256,
+                0.01872071686130818
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.051757490788812026,
+                0.03772809666514256,
+                0.01886404309863353
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05171223310435444,
+                0.03772809666514256,
+                0.018767998876803853
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.051765786937309655,
+                0.03772809666514256,
+                0.01872071686130818
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.0045275207635955906,
+            "mean_disp_m": 0.00213932932418135,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false
+          }
+        },
+        {
+          "name": "turn_left",
+          "duration_s": 1.5,
+          "t0": 0.0,
+          "t1": 1.5,
+          "channels": [
+            {
+              "path": "rotation",
+              "node": "fh_head",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_02",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_spine_03",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_01",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_tail_02",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_L",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            },
+            {
+              "path": "rotation",
+              "node": "fh_pectoral_R",
+              "frames": 46,
+              "t0": 0.0,
+              "t1": 1.5,
+              "interpolation": "LINEAR"
+            }
+          ],
+          "loop_keys_close": true,
+          "root_motion_declared_false": true,
+          "samples": {
+            "t0": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05170251812619481,
+                0.03772809666514256,
+                0.01878848236667781
+              ]
+            },
+            "t_mid": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05180004741082302,
+                0.03773576114552257,
+                0.018782753022382227
+              ]
+            },
+            "t_q": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05177251591445598,
+                0.03773235723311135,
+                0.018743579851289077
+              ]
+            },
+            "t1": {
+              "aabb_min": [
+                -0.2939999997615814,
+                0.0,
+                -0.14399999380111694
+              ],
+              "aabb_max": [
+                0.2939999997615814,
+                0.12013406272977592,
+                0.14399999380111694
+              ],
+              "centroid": [
+                -0.05170251812619481,
+                0.03772809666514256,
+                0.01878848236667781
+              ]
+            }
+          },
+          "vertex_motion": {
+            "max_vertex_disp_m": 0.012883751917134208,
+            "mean_disp_m": 0.004083844541326663,
+            "moved": true
+          },
+          "extras": {
+            "loop": true,
+            "root_motion": false
+          }
+        }
+      ],
+      "movement": {
+        "sway_loop": {
+          "max_vertex_disp_m": 0.007057429807058747,
+          "mean_disp_m": 0.0016724360276273054,
+          "moved": true
+        },
+        "swim_tail_loop": {
+          "max_vertex_disp_m": 0.0045275207635955906,
+          "mean_disp_m": 0.00213932932418135,
+          "moved": true
+        },
+        "turn_left": {
+          "max_vertex_disp_m": 0.012883751917134208,
+          "mean_disp_m": 0.004083844541326663,
+          "moved": true
+        }
+      },
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/tk_v0_tank60.glb",
+      "file_name": "tk_v0_tank60.glb",
+      "file_bytes": 796144,
+      "glb_meta": {
+        "version": 2,
+        "length": 796144,
+        "file_size": 796144,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 9,
+        "skins": 0,
+        "animations": 0,
+        "accessors": 10,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "tk_v0_tank60",
+        "pivot": "inner_floor_center",
+        "glass_thickness_m": 0.005,
+        "open_top": true,
+        "warning": "Glass/water use alpha+KHR_materials_transmission in glTF only. Unity URP transparency/refraction is NOT validated by this export."
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "tk_v0_tank60_glass",
+          "tris": 60,
+          "verts": 120,
+          "aabb_min": [
+            -0.30000001192092896,
+            -0.004999999888241291,
+            -0.15000000596046448
+          ],
+          "aabb_max": [
+            0.30000001192092896,
+            0.35499998927116394,
+            0.15000000596046448
+          ],
+          "size_m": [
+            0.6000000238418579,
+            0.35999998915940523,
+            0.30000001192092896
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 6
+        },
+        {
+          "name": "tk_v0_water_proxy",
+          "tris": 12,
+          "verts": 24,
+          "aabb_min": [
+            -0.2944999933242798,
+            0.029999999329447746,
+            -0.1445000022649765
+          ],
+          "aabb_max": [
+            0.2944999933242798,
+            0.33000001311302185,
+            0.1445000022649765
+          ],
+          "size_m": [
+            0.5889999866485596,
+            0.3000000137835741,
+            0.289000004529953
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 7
+        }
+      ],
+      "total_tris": 72,
+      "world_aabb_bind": {
+        "min": [
+          -0.30000001192092896,
+          -0.004999999888241291,
+          -0.15000000596046448
+        ],
+        "max": [
+          0.30000001192092896,
+          0.35499998927116394,
+          0.15000000596046448
+        ],
+        "size_m": [
+          0.6000000238418579,
+          0.35999998915940523,
+          0.30000001192092896
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "tk_v0_tank60_glass",
+          "mesh": 0,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "tk_v0_water_proxy",
+          "mesh": 1,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 2,
+          "name": "tk_v0_tank60",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0,
+            1
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [],
+      "movement": {},
+      "tank_size_measured_m": {
+        "x_width": 0.6000000238418579,
+        "y_height": 0.35999998915940523,
+        "z_depth": 0.30000001192092896
+      },
+      "issues": [],
+      "notes": [
+        "Glass/water materials use BLEND + optional KHR_materials_transmission. File self-check cannot pass Unity URP refraction."
+      ],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    },
+    {
+      "path": "/workspace/aquarium-art-v0/export/glb/wd_v0_driftwood.glb",
+      "file_name": "wd_v0_driftwood.glb",
+      "file_bytes": 813952,
+      "glb_meta": {
+        "version": 2,
+        "length": 813952,
+        "file_size": 813952,
+        "chunks": [
+          "JSON",
+          "BIN\u0000"
+        ]
+      },
+      "pygltflib": {
+        "ok": true,
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 9,
+        "skins": 0,
+        "animations": 0,
+        "accessors": 5,
+        "images": 18,
+        "textures": 18
+      },
+      "asset_extras": {
+        "project": "观赏鱼布景养成游戏",
+        "role": "technical_proxy",
+        "not_final_art": true,
+        "not_real_species": true,
+        "units": "meter",
+        "up": "+Y",
+        "forward": "+Z",
+        "handed": "right",
+        "tank_outer_m": [
+          0.6,
+          0.36,
+          0.3
+        ],
+        "tank_outer_cm": [
+          60,
+          36,
+          30
+        ],
+        "asset": "wd_v0_driftwood",
+        "pivot": "bottom_center_local",
+        "note": "Local-space piece. Scene file places it with translation = pre-center tank-space offset.",
+        "scene_translation_m": [
+          -0.04393386095762253,
+          0.0,
+          -0.0032637715339660645
+        ]
+      },
+      "extensionsUsed": [
+        "KHR_materials_transmission"
+      ],
+      "meshes": [
+        {
+          "name": "wd_v0_driftwood",
+          "tris": 864,
+          "verts": 436,
+          "aabb_min": [
+            -0.19056928157806396,
+            0.0,
+            -0.07714468985795975
+          ],
+          "aabb_max": [
+            0.19056928157806396,
+            0.1187966838479042,
+            0.07714468985795975
+          ],
+          "size_m": [
+            0.38113856315612793,
+            0.1187966838479042,
+            0.1542893797159195
+          ],
+          "has_normals": true,
+          "has_uv": true,
+          "has_tangents": true,
+          "has_skin": false,
+          "material_index": 3
+        }
+      ],
+      "total_tris": 864,
+      "world_aabb_bind": {
+        "min": [
+          -0.19056928157806396,
+          0.0,
+          -0.07714468985795975
+        ],
+        "max": [
+          0.19056928157806396,
+          0.1187966838479042,
+          0.07714468985795975
+        ],
+        "size_m": [
+          0.38113856315612793,
+          0.1187966838479042,
+          0.1542893797159195
+        ]
+      },
+      "nodes": [
+        {
+          "i": 0,
+          "name": "wd_v0_driftwood",
+          "mesh": 0,
+          "skin": null,
+          "children": [],
+          "translation": null,
+          "rotation": null
+        },
+        {
+          "i": 1,
+          "name": "wd_v0_driftwood",
+          "mesh": null,
+          "skin": null,
+          "children": [
+            0
+          ],
+          "translation": null,
+          "rotation": null
+        }
+      ],
+      "skins": [],
+      "materials": [
+        {
+          "name": "mat_fish",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.02,
+          "roughnessFactor": 0.45,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_fg",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_leaf_md",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.55,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "MASK",
+          "doubleSided": true,
+          "extensions": []
+        },
+        {
+          "name": "mat_wood",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.62,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_stone",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.78,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_sand",
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.88,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": true,
+          "has_normalTexture": true,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        },
+        {
+          "name": "mat_glass",
+          "baseColorFactor": [
+            0.9,
+            0.95,
+            0.97,
+            0.16
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.08,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_water",
+          "baseColorFactor": [
+            0.35,
+            0.6,
+            0.55,
+            0.14
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.2,
+          "has_baseColorTexture": true,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "BLEND",
+          "doubleSided": true,
+          "extensions": [
+            "KHR_materials_transmission"
+          ]
+        },
+        {
+          "name": "mat_rim",
+          "baseColorFactor": [
+            0.12,
+            0.13,
+            0.14,
+            1.0
+          ],
+          "metallicFactor": 0.1,
+          "roughnessFactor": 0.5,
+          "has_baseColorTexture": false,
+          "has_metallicRoughnessTexture": false,
+          "has_normalTexture": false,
+          "alphaMode": "OPAQUE",
+          "doubleSided": false,
+          "extensions": []
+        }
+      ],
+      "image_count": 18,
+      "animations": [],
+      "movement": {},
+      "wood_diag_span_m": 0.4280005480266349,
+      "issues": [],
+      "notes": [],
+      "passed_file_self_check": true,
+      "engine_tests": {
+        "unity_urp_import": "NOT_RUN",
+        "unity_urp_glass_refraction": "NOT_RUN",
+        "unity_urp_water": "NOT_RUN",
+        "unity_camera_near_lod": "NOT_RUN",
+        "blender_viewport": "NOT_RUN_blender_not_installed",
+        "fbx_roundtrip": "NOT_EXPORTED"
+      }
+    }
+  ],
+  "preview_index": [
+    {
+      "file": "/workspace/aquarium-art-v0/preview/01_tank_front_bind.png",
+      "source_glb": "tk_v0_tank60.glb",
+      "animation": null,
+      "t": 0,
+      "bytes": 18893,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/02_sand_oblique.png",
+      "source_glb": "sb_v0_sand.glb",
+      "animation": null,
+      "t": 0,
+      "bytes": 31217,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/03_driftwood.png",
+      "source_glb": "wd_v0_driftwood.glb",
+      "animation": null,
+      "t": 0,
+      "bytes": 10913,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/04_stones.png",
+      "source_glb": "rk_v0_stone_set.glb",
+      "animation": null,
+      "t": 0,
+      "bytes": 12063,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/05_fish_L0_swim_t0.png",
+      "source_glb": "fh_v0_tetra_proxy_L0.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.0,
+      "bytes": 10602,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/06_fish_L0_swim_t0.5.png",
+      "source_glb": "fh_v0_tetra_proxy_L0.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.5,
+      "bytes": 10558,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/07_fish_L0_turn_left_t0.75.png",
+      "source_glb": "fh_v0_tetra_proxy_L0.glb",
+      "animation": "turn_left",
+      "t": 0.75,
+      "bytes": 7485,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/08_carpet_sway_t0.png",
+      "source_glb": "pl_fg_v0_carpet_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 27234,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/09_carpet_sway_t1.5.png",
+      "source_glb": "pl_fg_v0_carpet_proxy.glb",
+      "animation": "sway_loop",
+      "t": 1.5,
+      "bytes": 27239,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/10_midleaf_sway_t0.png",
+      "source_glb": "pl_md_v0_leaf_proxy.glb",
+      "animation": "sway_loop",
+      "t": 0.0,
+      "bytes": 13257,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/11_midleaf_sway_t1.5.png",
+      "source_glb": "pl_md_v0_leaf_proxy.glb",
+      "animation": "sway_loop",
+      "t": 1.5,
+      "bytes": 12428,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/12_scene_front_swim.png",
+      "source_glb": "scn_v0_tank60_triangle_proxy.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.4,
+      "bytes": 33957,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/13_scene_oblique.png",
+      "source_glb": "scn_v0_tank60_triangle_proxy.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.4,
+      "bytes": 43480,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/14_scene_near_fish.png",
+      "source_glb": "scn_v0_tank60_triangle_proxy.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.4,
+      "bytes": 20834,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/15_fish_L1_swim.png",
+      "source_glb": "fh_v0_tetra_proxy_L1.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.5,
+      "bytes": 8264,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/16_fish_L2_swim.png",
+      "source_glb": "fh_v0_tetra_proxy_L2.glb",
+      "animation": "swim_tail_loop",
+      "t": 0.5,
+      "bytes": 7515,
+      "renderer": "cpu_software_zbuffer",
+      "not_unity_urp": true
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/17_contact_fish_motion.png",
+      "kind": "contact_sheet",
+      "bytes": 20524
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/18_contact_carpet_sway.png",
+      "kind": "contact_sheet",
+      "bytes": 50827
+    },
+    {
+      "file": "/workspace/aquarium-art-v0/preview/19_contact_midleaf_sway.png",
+      "kind": "contact_sheet",
+      "bytes": 22493
+    }
+  ],
+  "pass_count": 10,
+  "fail_count": 0,
+  "explicitly_not_passed": [
+    "Unity URP import was not performed.",
+    "Unity URP glass/water transparency, refraction, caustics and volumetrics were not tested and cannot be signed off from Blender or this software raster.",
+    "Near-camera LOD switching in engine was not tested.",
+    "FBX was not exported (no Blender, no Autodesk FBX SDK on this machine).",
+    "Samples are technical proxies, not real fish/plant species and not final art.",
+    "AI reference stills in the bot asset store are 2D images, not engine-ready 3D assets."
+  ]
+}

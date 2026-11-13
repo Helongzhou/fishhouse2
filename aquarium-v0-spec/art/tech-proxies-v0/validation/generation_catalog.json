@@ -1,0 +1,309 @@
+[
+  {
+    "id": "tk_v0_tank60",
+    "kind": "tank+water_proxy",
+    "lod": "L0",
+    "tris_glass": 60,
+    "tris_water": 12,
+    "aabb_min": [
+      -0.30000001192092896,
+      -0.004999999888241291,
+      -0.15000000596046448
+    ],
+    "aabb_max": [
+      0.30000001192092896,
+      0.35499998927116394,
+      0.15000000596046448
+    ],
+    "pivot": "inner_floor_center",
+    "formats": [
+      "glb",
+      "obj"
+    ],
+    "skinned": false,
+    "animations": []
+  },
+  {
+    "id": "sb_v0_sand",
+    "kind": "sand",
+    "lod": "L0",
+    "tris": 2550,
+    "aabb_min": [
+      -0.2939999997615814,
+      0.0,
+      -0.14399999380111694
+    ],
+    "aabb_max": [
+      0.2939999997615814,
+      0.03108663111925125,
+      0.14399999380111694
+    ],
+    "pivot": "inner_floor_center",
+    "formats": [
+      "glb",
+      "obj"
+    ],
+    "skinned": false,
+    "animations": []
+  },
+  {
+    "id": "wd_v0_driftwood",
+    "kind": "hardscape_wood",
+    "lod": "L0",
+    "tris": 864,
+    "aabb_min": [
+      -0.19056928157806396,
+      0.0,
+      -0.07714468985795975
+    ],
+    "aabb_max": [
+      0.19056928157806396,
+      0.1187966838479042,
+      0.07714468985795975
+    ],
+    "span_m": 0.4280005693435669,
+    "pivot": "bottom_center_local",
+    "formats": [
+      "glb",
+      "obj"
+    ],
+    "skinned": false,
+    "animations": [],
+    "scene_translation_m": [
+      -0.04393386095762253,
+      0.0,
+      -0.0032637715339660645
+    ]
+  },
+  {
+    "id": "rk_v0_stone_set",
+    "kind": "hardscape_stone",
+    "lod": "L0",
+    "tris": 1120,
+    "aabb_min": [
+      -0.16292788088321686,
+      0.0,
+      -0.08345887064933777
+    ],
+    "aabb_max": [
+      0.16292788088321686,
+      0.038379427045583725,
+      0.08345887064933777
+    ],
+    "pivot": "bottom_center_local",
+    "formats": [
+      "glb",
+      "obj"
+    ],
+    "skinned": false,
+    "animations": [],
+    "scene_translation_m": [
+      -0.0473279245197773,
+      0.0,
+      0.00628389697521925
+    ]
+  },
+  {
+    "id": "pl_fg_v0_carpet_proxy",
+    "kind": "plant_foreground_proxy",
+    "lod": "L0",
+    "tris": 720,
+    "bones": [
+      "pl_fg_v0_carpet_proxy_root",
+      "pl_fg_v0_carpet_proxy_stem_01",
+      "pl_fg_v0_carpet_proxy_stem_02",
+      "pl_fg_v0_carpet_proxy_stem_03"
+    ],
+    "aabb_min": [
+      -0.06776580959558487,
+      -0.00782730896025896,
+      -0.06829629093408585
+    ],
+    "aabb_max": [
+      0.06563632190227509,
+      0.0444086492061615,
+      0.07041527330875397
+    ],
+    "height_m": 0.06540864706039429,
+    "pivot": "base_on_substrate",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "skinned": true,
+    "animations": [
+      "sway_loop"
+    ],
+    "root_motion": false,
+    "placement": [
+      -0.16,
+      0.020999999999999998,
+      0.07
+    ]
+  },
+  {
+    "id": "pl_md_v0_leaf_proxy",
+    "kind": "plant_midground_proxy",
+    "lod": "L0",
+    "tris": 464,
+    "bones": [
+      "pl_md_v0_leaf_proxy_root",
+      "pl_md_v0_leaf_proxy_stem_01",
+      "pl_md_v0_leaf_proxy_stem_02",
+      "pl_md_v0_leaf_proxy_stem_03"
+    ],
+    "aabb_min": [
+      -0.0778682678937912,
+      -0.0065338388085365295,
+      -0.004000000189989805
+    ],
+    "aabb_max": [
+      0.07373887300491333,
+      0.07005180418491364,
+      0.07649237662553787
+    ],
+    "height_m": 0.09105180203914642,
+    "pivot": "base_on_substrate",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "skinned": true,
+    "animations": [
+      "sway_loop"
+    ],
+    "root_motion": false,
+    "placement": [
+      -0.12,
+      0.020999999999999998,
+      -0.02
+    ]
+  },
+  {
+    "id": "fh_v0_tetra_proxy_L0",
+    "kind": "fish_proxy",
+    "lod": "L0",
+    "tris": 534,
+    "bones": [
+      "fh_head",
+      "fh_spine_01",
+      "fh_spine_02",
+      "fh_spine_03",
+      "fh_tail_01",
+      "fh_tail_02",
+      "fh_pectoral_L",
+      "fh_pectoral_R"
+    ],
+    "length_m": 0.0478999987244606,
+    "aabb_min": [
+      -0.006965140346437693,
+      -0.00405494961887598,
+      -0.026599999517202377
+    ],
+    "aabb_max": [
+      0.006965140346437693,
+      0.010134062729775906,
+      0.021299999207258224
+    ],
+    "pivot": "body_center",
+    "forward": "+Z",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "skinned": true,
+    "animations": [
+      "swim_tail_loop",
+      "turn_left"
+    ],
+    "root_motion": false,
+    "suggested_budget_tris": 2500
+  },
+  {
+    "id": "fh_v0_tetra_proxy_L1",
+    "kind": "fish_proxy",
+    "lod": "L1",
+    "tris": 216,
+    "bones": [
+      "fh_head",
+      "fh_spine_01",
+      "fh_spine_02",
+      "fh_tail_01"
+    ],
+    "length_m": 0.0478999987244606,
+    "aabb_min": [
+      -0.0069677559658885,
+      -0.00405963184311986,
+      -0.026599999517202377
+    ],
+    "aabb_max": [
+      0.0069677559658885,
+      0.010138042271137238,
+      0.021299999207258224
+    ],
+    "pivot": "body_center",
+    "forward": "+Z",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "skinned": true,
+    "animations": [
+      "swim_tail_loop",
+      "turn_left"
+    ],
+    "root_motion": false,
+    "suggested_budget_tris": 800
+  },
+  {
+    "id": "fh_v0_tetra_proxy_L2",
+    "kind": "fish_proxy",
+    "lod": "L2",
+    "tris": 114,
+    "bones": [
+      "fh_head",
+      "fh_spine_01",
+      "fh_spine_02",
+      "fh_tail_01"
+    ],
+    "length_m": 0.0478999987244606,
+    "aabb_min": [
+      -0.006951401475816965,
+      -0.003490390256047249,
+      -0.026599999517202377
+    ],
+    "aabb_max": [
+      0.006951401475816965,
+      0.010113157331943512,
+      0.021299999207258224
+    ],
+    "pivot": "body_center",
+    "forward": "+Z",
+    "formats": [
+      "glb",
+      "obj(bind_pose)"
+    ],
+    "skinned": true,
+    "animations": [
+      "swim_tail_loop",
+      "turn_left"
+    ],
+    "root_motion": false,
+    "suggested_budget_tris": 300
+  },
+  {
+    "id": "scn_v0_tank60_triangle_proxy",
+    "kind": "assembled_scene",
+    "lod": "L0",
+    "formats": [
+      "glb"
+    ],
+    "skinned": true,
+    "animations": [
+      "swim_tail_loop",
+      "turn_left",
+      "sway_loop"
+    ],
+    "note": "One file containing tank, water proxy, sand, wood, stones, two plants, one fish. Clips share names; Unity should play per-renderer or split prefabs."
+  }
+]
