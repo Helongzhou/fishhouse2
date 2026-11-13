@@ -137,8 +137,8 @@ internal static class Program
         session.SetPaused(false);
         EcologyEngine ecology = new EcologyEngine(new EcologyParameters { VolumeLiters = session.CalculateEffectiveWaterLiters() });
         ecology.AdvanceGameDays(5); Ok(session.RefreshProgress(Tx(), ecology));
-        Check(session.Stage == GameplayStage.Filled && !session.Buy(Tx(), "fish_trial_pack").Success,
-            "empty zero readings and elapsed calendar cannot pass fishless gate");
+        Check(session.Stage == GameplayStage.Filled && ecology.WaterIsStable && ecology.Challenge.Status == FishlessChallengeStatus.NotStarted && ecology.State.TanMgN == 0 && !session.Buy(Tx(), "fish_trial_pack").Success,
+            "stable zero TAN without a completed challenge does not open the fish gate");
         ecology.BeginFishlessChallenge(0); Ok(session.RefreshProgress(Tx(), ecology));
         Check(session.Stage == GameplayStage.Cycling && ecology.Challenge.DoseMgN > 0, "real nonzero nitrogen dose starts cycling stage");
         for (int day = 0; day < 60 && ecology.Challenge.Status != FishlessChallengeStatus.Passed; day++) ecology.AdvanceGameDays(1);
@@ -156,6 +156,10 @@ internal static class Program
             "real stable stocked observation atomically unlocks main fish and grants 450 once");
         int wallet = session.WalletCoin; Ok(session.RefreshProgress(Tx(), ecology));
         Check(session.WalletCoin == wallet, "repeated observation completion never repeats the stage reward");
+        ecology.AddNitrogen(NitrogenPool.Tan, 54, "post-unlock-load");
+        Check(!ecology.WaterIsStable && ecology.Challenge.Status == FishlessChallengeStatus.Passed, "new load is unstable and does not erase the passed challenge");
+        Ok(session.RefreshProgress(Tx(), ecology));
+        Check(session.Stage == GameplayStage.MainUnlocked && session.WalletCoin == wallet, "current instability does not revoke the unlocked stage or its reward");
         GameplaySession optional = GameplaySession.Restore(session.Capture(), catalog, new TankBounds());
         Ok(optional.Buy(Tx(), "wood_optional")); Ok(optional.Buy(Tx(), "wood_optional"));
         Check(optional.Buy(Tx(), "wood_optional").Code == "gameplay.budget_reserved" && optional.WalletCoin == 260,
@@ -163,6 +167,12 @@ internal static class Program
         CommandResult neon = session.Buy(Tx(), "fish_main_pack"); Ok(neon);
         Check(neon.EntityIds.Length == 8 && session.WalletCoin == 280 && session.Stage == GameplayStage.Complete && session.LiveAnimalCount() == 22,
             "authoritative CSV route finishes with 8 Ember, 8 Neon, 6 shrimp and 280 coins");
+        double Per(string id) { return double.Parse(Rows("species").Single(r => r["species_id"] == id)["game_bioload_per_individual"], CultureInfo.InvariantCulture); }
+        double load = 8 * Per("ember_tetra") + 8 * Per("neon_tetra") + 6 * Per("neocaridina_red");
+        double capacity = double.Parse(Rows("tanks").Single(r => r["tank_id"] == "tank_60cm")["game_bioload_capacity"], CultureInfo.InvariantCulture);
+        Check(Math.Abs(load - 8.4) < 1e-9 && Math.Abs(capacity - 12) < 1e-9 && Math.Abs((capacity - load) / capacity - .3) < 1e-9,
+            "current teaching route bioload is 8.4 of capacity 12, margin 0.3");
+        Check(Rows("tanks").Single(r => r["tank_id"] == "tank_60cm")["simulation_ready"] == "false", "simulation_ready stays false");
         Check(session.Buy(Tx(), "food_basic").Code == "gameplay.care_requires_simulation", "free care must execute ecology and cannot masquerade as inert inventory");
         GameplaySnapshot valid = session.Capture(); string serialized = Serialized(session);
         GameplaySession loaded = GameplaySession.Restore(JsonSerializer.Deserialize<GameplaySnapshot>(serialized, Json), catalog, new TankBounds());

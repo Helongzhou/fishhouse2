@@ -106,6 +106,7 @@ internal static class Program
         Check(invalid.Challenge.Status == FishlessChallengeStatus.Processing, "rejected operations do not invalidate challenge");
         FoodEvents();
         LivingReserves();
+        GateLedger();
         WriteCurves();
         Console.WriteLine("Ecology checks passed: " + checks + ". Pure C#/.NET only; Unity import, Play and builds remain unverified.");
         return 0;
@@ -133,6 +134,104 @@ internal static class Program
         var duplicate = new LivingReserveSnapshot { Entries = new[] { new LivingReserveEntry { EntityId = "fish", MgN = 1 }, new LivingReserveEntry { EntityId = "fish", MgN = 1 } } };
         Reject(() => LivingReserveLedger.Restore(duplicate, 2), "duplicate reserve owner rejected");
         Reject(() => LivingReserveLedger.Restore(new LivingReserveSnapshot(), 1), "reserve ecology mismatch rejected");
+    }
+    private static double Moved(EcologyEngine e, NitrogenPool from, NitrogenPool to)
+    { return e.Audit.TransferMgN[(int)from * 7 + (int)to]; }
+    private static double Left(EcologyEngine e, NitrogenPool pool) { return e.Audit.OutputByPoolMgN[(int)pool]; }
+    private static void GateLedger()
+    {
+        var report = new StringBuilder();
+        report.Append("{\"prototype\":true,\"husbandry_guidance\":false,\"parameters\":{\"volume_l\":54,\"dose_mgN_per_l\":0.5,\"dose_mgN\":27,\"stable_mgN_per_l\":0.05,\"required_oxidized_fraction\":0.9,\"required_oxidized_mgN\":24.3,\"stable_game_hours\":24},\"pools\":[\"Food\",\"Organic\",\"Tan\",\"Nitrite\",\"Nitrate\",\"Living\",\"Plant\"],\"cases\":[");
+        bool first = true;
+        Action<string, string, EcologyEngine, string> emit = (id, rule, engine, note) =>
+        {
+            if (!first) report.Append(',');
+            first = false;
+            var c = engine.Challenge;
+            report.Append("{\"id\":\"").Append(id).Append("\",\"rule\":\"").Append(rule).Append("\",\"note\":\"").Append(note)
+                .Append("\",\"game_day\":").Append(engine.GameDays.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"filter_on\":").Append(engine.FilterEnabled ? "true" : "false")
+                .Append(",\"water_stable\":").Append(engine.WaterIsStable ? "true" : "false")
+                .Append(",\"challenge\":\"").Append(c.Status).Append("\",\"stable_game_hours\":").Append(c.StableGameHours.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"dose_mgN\":").Append(c.DoseMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"oxidized_tan_mgN\":").Append(c.OxidizedTanMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"oxidized_nitrite_mgN\":").Append(c.OxidizedNitriteMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"tan_to_nitrite_mgN\":").Append(Moved(engine, NitrogenPool.Tan, NitrogenPool.Nitrite).ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"nitrite_to_nitrate_mgN\":").Append(Moved(engine, NitrogenPool.Nitrite, NitrogenPool.Nitrate).ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"tan_output_mgN\":").Append(Left(engine, NitrogenPool.Tan).ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"tan_mgN\":").Append(engine.State.TanMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"total_mgN\":").Append(engine.State.TotalMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"input_mgN\":").Append(engine.Audit.CumulativeInputMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append(",\"output_mgN\":").Append(engine.Audit.CumulativeOutputMgN.ToString("G17", CultureInfo.InvariantCulture))
+                .Append("}");
+            Balance(engine, id);
+        };
+        var frozen = new EcologyParameters();
+        Near(frozen.VolumeLiters, 54, "frozen volume");
+        Near(frozen.ChallengeDoseMgNPerLiter, .5, "frozen dose per litre");
+        Near(frozen.MaximumStableTanMgNPerLiter, .05, "frozen TAN limit");
+        Near(frozen.MaximumStableNitriteMgNPerLiter, .05, "frozen nitrite limit");
+        Near(frozen.RequiredProcessedFraction, .9, "frozen oxidation fraction");
+        Near(frozen.StableGameHours, 24, "frozen stable hours");
+        Check((int)NitrogenPool.Plant == 6, "seven existing nitrogen pools and no extra pool");
+        var empty = new EcologyEngine(); empty.AdvanceGameDays(10);
+        Check(empty.WaterIsStable && empty.State.TanMgN == 0 && empty.Challenge.Status == FishlessChallengeStatus.NotStarted && empty.Challenge.OxidizedTanMgN == 0, "zero ammonia without a challenge is not a pass");
+        emit("A-zero-ammonia", "A", empty, "Ten game days at zero TAN stay NotStarted.");
+        var proven = new EcologyEngine(); proven.BeginFishlessChallenge(0); proven.AdvanceGameDays(7);
+        Near(proven.Challenge.DoseMgN, 27, "54 L times 0.5 mgN/L");
+        Check(proven.Challenge.OxidizedTanMgN + 1e-9 >= 24.3 && proven.Challenge.OxidizedNitriteMgN + 1e-9 >= 24.3, "both stages reach the 24.3 mgN oxidation floor");
+        Check(proven.Challenge.OxidizedTanMgN <= proven.Challenge.DoseMgN + 1e-6 && Moved(proven, NitrogenPool.Tan, NitrogenPool.Nitrite) + 1e-6 >= proven.Challenge.OxidizedTanMgN, "TAN oxidation is biological transfer, not removal");
+        Check(Moved(proven, NitrogenPool.Nitrite, NitrogenPool.Nitrate) + 1e-6 >= proven.Challenge.OxidizedNitriteMgN && Left(proven, NitrogenPool.Tan) == 0, "passed challenge has no water-change TAN removal");
+        Check(proven.Challenge.Status == FishlessChallengeStatus.Passed && proven.Challenge.StableGameHours + 1e-9 >= 24, "24 game hours after real oxidation");
+        emit("B-oxidized-27", "B", proven, "7 game days; 27 mgN dose; oxidation floor 24.3 mgN.");
+        var diluted = new EcologyEngine(); diluted.BeginFishlessChallenge(0); diluted.AdvanceGameDays(1);
+        double oxTan = diluted.Challenge.OxidizedTanMgN, oxNit = diluted.Challenge.OxidizedNitriteMgN;
+        double tanToNit = Moved(diluted, NitrogenPool.Tan, NitrogenPool.Nitrite), nitToNitrate = Moved(diluted, NitrogenPool.Nitrite, NitrogenPool.Nitrate);
+        double tanBefore = diluted.State.TanMgN;
+        diluted.ChangeWater(27, new WaterComposition());
+        Near(diluted.Challenge.OxidizedTanMgN, oxTan, "water change does not increase TAN oxidation");
+        Near(diluted.Challenge.OxidizedNitriteMgN, oxNit, "water change does not increase nitrite oxidation");
+        Near(Moved(diluted, NitrogenPool.Tan, NitrogenPool.Nitrite), tanToNit, "water change does not add a TAN transfer");
+        Near(Moved(diluted, NitrogenPool.Nitrite, NitrogenPool.Nitrate), nitToNitrate, "water change does not add a nitrite transfer");
+        Near(Left(diluted, NitrogenPool.Tan), tanBefore * .5, "half the TAN leaves as water output", 1e-6);
+        Check(diluted.Challenge.Status == FishlessChallengeStatus.Invalidated, "dilution invalidates the active challenge");
+        diluted.AdvanceGameDays(7);
+        Check(diluted.Challenge.Status != FishlessChallengeStatus.Passed, "diluted challenge does not become a pass");
+        emit("B-water-change", "B", diluted, "50 percent exchange after 1 game day, then 7 more days.");
+        var stopped = new EcologyEngine(); stopped.BeginFishlessChallenge(0); stopped.AdvanceGameDays(1); stopped.SetFilterEnabled(false);
+        double stoppedOx = stopped.Challenge.OxidizedTanMgN;
+        stopped.AdvanceGameDays(3);
+        Near(stopped.Challenge.OxidizedTanMgN, stoppedOx, "filter off adds no oxidation");
+        Near(stopped.Challenge.StableGameHours, 0, "filter off keeps the effective window at zero");
+        Check(stopped.Challenge.Status != FishlessChallengeStatus.Passed && !stopped.WaterIsStable, "filter off is not stable and not passed");
+        emit("C-filter-off", "C", stopped, "Filter disabled after 1 game day, then 3 game days.");
+        var kept = new EcologyEngine(); kept.BeginFishlessChallenge(0); kept.AdvanceGameDays(7);
+        double keptHours = kept.Challenge.StableGameHours;
+        kept.BeginTrialObservation(8); kept.AdvanceGameDays(.5);
+        Check(kept.TrialObservation.StableGameHours > 1, "trial window started");
+        kept.AddNitrogen(NitrogenPool.Tan, 54, "new-bioload");
+        Check(kept.Challenge.Status == FishlessChallengeStatus.Passed && Math.Abs(kept.Challenge.StableGameHours - keptHours) < 1e-6, "passed challenge and its completed window stay");
+        Check(kept.TrialObservation.Status == TrialObservationStatus.Observing && kept.TrialObservation.StableGameHours == 0, "current trial window restarts without erasing the trial");
+        Check(!kept.WaterIsStable, "new TAN load is currently unstable");
+        Reject(() => kept.BeginFishlessChallenge(0), "completed challenge is not restarted");
+        emit("D-new-load", "D", kept, "Passed challenge, half-day trial, then 54 mgN TAN.");
+        foreach (double litres in new[] { 27.0, 54.0, 108.0 })
+        {
+            var scaled = new EcologyEngine(new EcologyParameters { VolumeLiters = litres });
+            scaled.BeginFishlessChallenge(0);
+            Near(scaled.Challenge.DoseMgN, .5 * litres, "dose follows volume " + litres);
+            Check(scaled.State.TanMgN >= 0 && scaled.State.TotalMgN >= 0, "dose mass is nonnegative");
+        }
+        var lumped = new EcologyEngine(); lumped.BeginFishlessChallenge(0); lumped.AdvanceGameDays(3);
+        var stepped = new EcologyEngine(); stepped.BeginFishlessChallenge(0);
+        double left = 3, step = stepped.Parameters.FixedStepGameDays;
+        while (left > 1e-12) { double dt = Math.Min(step, left); stepped.AdvanceGameDays(dt); left -= dt; }
+        Near(stepped.Challenge.OxidizedTanMgN, lumped.Challenge.OxidizedTanMgN, "fixed steps match one three-day advance", 1e-6);
+        Near(stepped.State.NitrateMgN, lumped.State.NitrateMgN, "fixed steps match nitrate", 1e-6);
+        emit("time-step", "consistency", stepped, "3 game days as fixed ecology steps versus one advance.");
+        report.Append("]}");
+        string path = Environment.GetEnvironmentVariable("AQUARIUM_GATE_EVIDENCE");
+        if (!string.IsNullOrEmpty(path)) File.WriteAllText(path, report.ToString());
     }
     private static void WriteCurves()
     {
