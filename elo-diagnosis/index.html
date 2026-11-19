@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>峡谷冤种鉴定所 · 排位病历单</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f3ebe0;
+      --paper-deep: #e8dccb;
+      --ink: #1c1612;
+      --ink-soft: #5a4d42;
+      --rule: #c9b8a2;
+      --stamp: #b42318;
+      --stamp-soft: rgba(180, 35, 24, 0.12);
+      --seal: #c6281c;
+      --ok: #2f5d3a;
+      --shadow: 0 18px 50px rgba(40, 24, 12, 0.18);
+      --radius: 4px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: "Noto Serif SC", "Songti SC", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 15% 10%, rgba(180, 35, 24, 0.08), transparent 42%),
+        radial-gradient(ellipse at 90% 0%, rgba(80, 55, 30, 0.08), transparent 35%),
+        linear-gradient(160deg, #d9cbb8 0%, #cfc0aa 45%, #bba890 100%);
+      background-attachment: fixed;
+    }
+
+    .noise {
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(720px, calc(100% - 28px));
+      margin: 28px auto 64px;
+    }
+
+    .masthead {
+      text-align: center;
+      margin-bottom: 18px;
+      animation: rise 0.7s ease both;
+    }
+    .masthead .brand {
+      font-family: "ZCOOL QingKe HuangYou", "Noto Serif SC", serif;
+      font-size: clamp(2rem, 7vw, 3rem);
+      letter-spacing: 0.08em;
+      color: var(--stamp);
+      line-height: 1.1;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+    }
+    .masthead p {
+      margin: 10px 0 0;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+    }
+    .badge-row {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .pill {
+      border: 1px solid var(--stamp);
+      color: var(--stamp);
+      background: var(--stamp-soft);
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, #f7f0e6, var(--paper));
+      border: 1px solid #b9a48a;
+      box-shadow: var(--shadow);
+      padding: 22px 20px 24px;
+      animation: rise 0.75s ease 0.08s both;
+    }
+
+    .step {
+      margin-bottom: 22px;
+    }
+    .step h2 {
+      margin: 0 0 10px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--stamp);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .step h2::before {
+      content: attr(data-n);
+      display: inline-grid;
+      place-items: center;
+      width: 1.4rem;
+      height: 1.4rem;
+      border: 1px solid var(--stamp);
+      font-size: 0.75rem;
+      background: #fff8f0;
+    }
+
+    .field {
+      width: 100%;
+      border: 1px solid var(--rule);
+      background: rgba(255, 255, 255, 0.55);
+      color: var(--ink);
+      font: inherit;
+      font-size: 1rem;
+      padding: 12px 14px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .field:focus {
+      border-color: var(--stamp);
+      box-shadow: 0 0 0 3px var(--stamp-soft);
+    }
+    .hint {
+      margin: 8px 0 0;
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+    }
+
+    .options {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 560px) {
+      .options.lanes { grid-template-columns: repeat(5, 1fr); }
+      .options.ranks { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .opt {
+      appearance: none;
+      border: 1px solid var(--rule);
+      background: rgba(255, 255, 255, 0.45);
+      color: var(--ink);
+      font: inherit;
+      padding: 12px 10px;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.15s ease, background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .opt:hover { transform: translateY(-1px); border-color: #9a8268; }
+    .opt.active {
+      border-color: var(--stamp);
+      background: var(--stamp-soft);
+      color: var(--stamp);
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .btn {
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 14px 16px;
+      transition: transform 0.15s ease, opacity 0.15s;
+    }
+    .btn:active { transform: scale(0.985); }
+    .btn-primary {
+      background: var(--stamp);
+      color: #fff8f0;
+      box-shadow: 0 8px 20px rgba(180, 35, 24, 0.28);
+    }
+    .btn-primary:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink-soft);
+      border: 1px dashed var(--rule);
+    }
+
+    .disclaimer {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--stamp);
+      background: rgba(255, 255, 255, 0.35);
+      color: var(--ink-soft);
+      font-size: 0.78rem;
+      line-height: 1.55;
+    }
+
+    .result-view { display: none; }
+    .result-view.show { display: block; animation: rise 0.55s ease both; }
+    .form-view.hide { display: none; }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .toolbar .btn { flex: 1; min-width: 140px; }
+
+    .poster-shell {
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+    }
+
+    .poster {
+      width: min(420px, 100%);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.35), transparent 30%),
+        repeating-linear-gradient(
+          transparent,
+          transparent 27px,
+          rgba(180, 140, 100, 0.12) 28px
+        ),
+        linear-gradient(180deg, #fffaf2, #f1e5d4);
+      border: 1.5px solid #8d7358;
+      box-shadow: var(--shadow);
+      padding: 18px 18px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(180, 35, 24, 0.25);
+      pointer-events: none;
+    }
+
+    .poster-head {
+      text-align: center;
+      border-bottom: 2px solid var(--stamp);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      position: relative;
+    }
+    .poster-head .org {
+      font-family: "ZCOOL QingKe HuangYou", serif;
+      color: var(--stamp);
+      font-size: 1.55rem;
+      letter-spacing: 0.12em;
+    }
+    .poster-head .doc-type {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      letter-spacing: 0.28em;
+      color: var(--ink);
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 12px;
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+      margin-top: 10px;
+    }
+    .meta-grid b { color: var(--ink); font-weight: 700; }
+
+    .verdict-banner {
+      margin: 14px 0 12px;
+      border: 2px solid var(--stamp);
+      background: var(--stamp-soft);
+      padding: 12px 10px;
+      text-align: center;
+    }
+    .verdict-banner .kicker {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: var(--stamp);
+    }
+    .verdict-banner .label {
+      margin-top: 4px;
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--stamp);
+      letter-spacing: 0.06em;
+      line-height: 1.25;
+    }
+
+    .block { margin: 14px 0; position: relative; z-index: 1; }
+    .block h3 {
+      margin: 0 0 6px;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      color: var(--stamp);
+    }
+    .block p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--ink);
+    }
+    .quote {
+      margin-top: 8px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--stamp);
+      background: rgba(255, 255, 255, 0.45);
+      font-weight: 700;
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .seal {
+      position: absolute;
+      right: 22px;
+      top: 118px;
+      width: 88px;
+      height: 88px;
+      border: 3px solid var(--seal);
+      border-radius: 50%;
+      color: var(--seal);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      transform: rotate(-18deg);
+      opacity: 0.82;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: inset 0 0 0 1px rgba(198, 40, 28, 0.35);
+      z-index: 2;
+      animation: stamp-in 0.55s cubic-bezier(.2,.9,.2,1) 0.25s both;
+    }
+    .seal span { line-height: 1.25; padding: 8px; }
+
+    .barcode-wrap {
+      margin-top: 16px;
+      border-top: 1px dashed var(--rule);
+      padding-top: 12px;
+      text-align: center;
+    }
+    .barcode {
+      height: 42px;
+      width: 100%;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          #1c1612 0 2px,
+          transparent 2px 4px,
+          #1c1612 4px 5px,
+          transparent 5px 8px,
+          #1c1612 8px 11px,
+          transparent 11px 13px
+        );
+      opacity: 0.85;
+      filter: contrast(1.2);
+    }
+    .barcode-caption {
+      margin-top: 8px;
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.04em;
+    }
+    .share-hook {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--stamp);
+      font-weight: 700;
+    }
+    .fineprint {
+      margin-top: 12px;
+      font-size: 0.68rem;
+      line-height: 1.5;
+      color: #7a6b5c;
+      text-align: justify;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--ink);
+      color: #f7f0e6;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s, transform 0.25s;
+      z-index: 20;
+      max-width: calc(100% - 32px);
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes stamp-in {
+      from { opacity: 0; transform: rotate(-18deg) scale(1.4); }
+      to { opacity: 0.82; transform: rotate(-18deg) scale(1); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="brand">峡谷冤种鉴定所</div>
+      <p>三步点选 + 昵称入档，开具你的排位病历单</p>
+      <div class="badge-row">
+        <span class="pill">纯娱乐吐槽</span>
+        <span class="pill">非真实匹配数据</span>
+        <span class="pill">同名同判</span>
+      </div>
+    </header>
+
+    <section class="panel form-view" id="formView">
+      <div class="step">
+        <h2 data-n="1">召唤师昵称</h2>
+        <input class="field" id="nickname" maxlength="16" placeholder="输入你的游戏昵称（用于生成稳定结果）" autocomplete="off" />
+        <p class="hint">同一昵称每次结果相同；不同昵称各不相同。仅用于本地随机，不会上传。</p>
+      </div>
+
+      <div class="step">
+        <h2 data-n="2">当前段位</h2>
+        <div class="options ranks" id="rankOptions"></div>
+      </div>
+
+      <div class="step">
+        <h2 data-n="3">近期战绩</h2>
+        <div class="options" id="recordOptions"></div>
+      </div>
+
+      <div class="step">
+        <h2 data-n="4">常用分路</h2>
+        <div class="options lanes" id="laneOptions"></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" id="generateBtn" disabled>生成我的排位病历单</button>
+      </div>
+
+      <aside class="disclaimer">
+        本页为娱乐向吐槽生成器，所有「诊断」「匹配逻辑」均为虚构段子，与任何游戏官方、匹配系统、隐藏分无关，也不构成对局分析或账号评价。未成年人请在监护人指导下使用，请勿用于引战或骚扰他人。
+      </aside>
+    </section>
+
+    <section class="result-view" id="resultView">
+      <div class="toolbar">
+        <button class="btn btn-primary" id="saveBtn">保存病历海报</button>
+        <button class="btn btn-ghost" id="againBtn">开一张平行病历</button>
+        <button class="btn btn-ghost" id="backBtn">返回修改</button>
+      </div>
+      <div class="poster-shell">
+        <article class="poster" id="poster" aria-label="排位病历单海报"></article>
+      </div>
+      <aside class="disclaimer">
+        分享时请自行注明娱乐向。海报仅供自嘲与社交传播，不代表真实对局机制。搜索词：峡谷冤种鉴定所
+      </aside>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+    const RANKS = [
+      { id: "star", label: "高分段入门" },
+      { id: "king_low", label: "王者低星档" },
+      { id: "king_mid", label: "无双档" },
+      { id: "king_top", label: "荣耀巅峰档" },
+    ];
+
+    const RECORDS = [
+      { id: "win_then_lose", label: "连胜后突然崩盘" },
+      { id: "alternate", label: "赢一局输一局" },
+      { id: "pure_lose", label: "纯纯连败" },
+      { id: "rankup_crash", label: "刚上大段就崩盘" },
+    ];
+
+    const LANES = [
+      { id: "top", label: "对抗路" },
+      { id: "jg", label: "打野" },
+      { id: "mid", label: "中路" },
+      { id: "adc", label: "发育路" },
+      { id: "sup", label: "游走" },
+    ];
+
+    /** @type {{id:string, title:string, seal:string, logic:string, quote:string, advice:string, when:(c:any)=>boolean}[]} */
+    const CASES = [
+      {
+        id: "svp_factory",
+        title: "败方高光专业户",
+        seal: "精神\n损失费",
+        logic: "监测到你近期评分偏高，匹配池倾向于把你放进「需要有人扛锅」的房间。你的队友可能刚刚经历连败，沟通意愿接近于零，而你仍在努力把节奏往回拉。",
+        quote: "你的败方高光，是匹配池发给你的精神损失费。",
+        advice: "连败三局就下号。把「我能带」改成「我先保心态」，比硬刚下一把更赚。",
+        when: (c) => (c.lane === "jg" || c.lane === "adc") && c.record === "pure_lose",
+      },
+      {
+        id: "daily_worker",
+        title: "头铁型日活贡献者",
+        seal: "日活\n打工人",
+        logic: "你的手感与心态都偏稳，匹配池很清楚你不会轻易退游。于是你被精准卡在五五开附近：赢一局给糖，输一局收回，成为房间里最可靠的「体验缓冲垫」。",
+        quote: "你不是在打排位，你是在替匹配池打工。建议自查有没有签过电子义务劳动协议。",
+        advice: "改打两把娱乐再排，或固定双排位。打断「赢一输一」的节律，比加练一个英雄更有效。",
+        when: (c) => c.record === "alternate",
+      },
+      {
+        id: "win_curse",
+        title: "连胜终结者",
+        seal: "防飘\n机制",
+        logic: "连胜抬升了你的房间难度。系统侧（虚构）更愿意让你遇见状态波动的队友，好把你的曲线重新压平。你不是突然变菜，是难度被调了档。",
+        quote: "匹配池觉得你该赢够了，但觉得你的队友还可以再练练。",
+        advice: "连胜后主动降强度：换熟练英雄、少开麦争执。把「保段」当成连胜的一部分。",
+        when: (c) => c.record === "win_then_lose" && (c.lane === "sup" || c.lane === "mid"),
+      },
+      {
+        id: "solo_orphan",
+        title: "边路孤儿院院长",
+        seal: "单机\n认证",
+        logic: "鉴于你常年锁边路，匹配池默认你抗压强、不需要被关怀。中野游走更可能抱团在另一侧，而你将在塔下度过漫长的发育课时。",
+        quote: "这条线只有你，和不断试探的河道资源。你打的是五排，但你的世界经常是单机。",
+        advice: "提前跟打野约定支援时机；对线以不送为第一KPI，别为「打出气势」交付两波节奏。",
+        when: (c) => c.lane === "top" && (c.record === "alternate" || c.record === "pure_lose"),
+      },
+      {
+        id: "rankup_tax",
+        title: "晋级税征收对象",
+        seal: "晋级\n税单",
+        logic: "刚上大段时，匹配池会把你扔进「适应期房间」：队友磨合差、对手更凶。看起来像诅咒，更像是分段跃迁后的难度税。",
+        quote: "大段是门票，税在下一局收。",
+        advice: "晋级后先打两把热身局，别连夜冲星。把「站稳」写进今晚的唯一目标。",
+        when: (c) => c.record === "rankup_crash",
+      },
+      {
+        id: "vision_saint",
+        title: "视野义务劳动委员",
+        seal: "眼位\n义工",
+        logic: "游走位被默认定责为「全图保姆」。你一开团就有人指责节奏，你一发育就被说没视野。匹配池享受你的责任感，多于回馈你的胜负。",
+        quote: "你在为整张地图打工，结算页却只记得你的死亡次数。",
+        advice: "把「能开」改成「该开」。少送一次死亡，比多探一个草丛更能救胜率。",
+        when: (c) => c.lane === "sup",
+      },
+      {
+        id: "jungle_blame",
+        title: "锅从天上来专业户",
+        seal: "天降\n锅盖",
+        logic: "打野位承担最高的叙事压力：对面雪球、己方崩线，最终都可能写成「野做错了」。连败时这种叙事会被放大到失真。",
+        quote: "不是你带不动四个人，是四个人的情绪都想找一个出口。",
+        advice: "前八分钟只打「能拿的目标」。少听语音里的催促，多看小地图上的传送。",
+        when: (c) => c.lane === "jg",
+      },
+      {
+        id: "mid_tempo",
+        title: "中路节奏志愿者",
+        seal: "节奏\n义工",
+        logic: "中路被期待既要对线又要支援。你一支援，线权丢；你一清线，边路喊。匹配池很喜欢把「全能期待」塞给中路。",
+        quote: "你以为自己在带节奏，其实在填别人的坑位空缺。",
+        advice: "每局只选一个主支援侧。与其两边都迟到，不如一边真正打穿。",
+        when: (c) => c.lane === "mid",
+      },
+      {
+        id: "adc_farm",
+        title: "发育路工期延误员",
+        seal: "工期\n延误",
+        logic: "发育路需要时间，但房间节奏常常不等你。连败局里，你的「再两波」会变成队友的「怎么还不团」。",
+        quote: "你的经济曲线是诚实的，房间的耐心不是。",
+        advice: "明确告知「几级参团」。与其默默挨打，不如用一句话对齐预期。",
+        when: (c) => c.lane === "adc",
+      },
+      {
+        id: "high_mmr_bait",
+        title: "高光诱饵型体验官",
+        seal: "体验\n担保",
+        logic: "段位越高，房间对「稳定发挥」的索取越强。你被安排进波动更大的对局，好让其他人完成他们的上分/掉分剧本。",
+        quote: "你是房间里的定海神针，也是最容易被写成背锅侠的那一根。",
+        advice: "巅峰时段少排。选你最熟的两三英雄，把变量只留给队友和对手。",
+        when: (c) => c.rank === "king_top" || c.rank === "king_mid",
+      },
+      {
+        id: "generic_victim",
+        title: "匹配池情绪回收站",
+        seal: "情绪\n回收",
+        logic: "你的样本特征显示：会继续打、会反思、会把责任揽到自己身上。于是连败被包装成「再来一把就能翻」——这是最典型的情绪回收路径。",
+        quote: "不是玄学针对你，是你太适合当「还能再打」的人。",
+        advice: "设定硬性停损：两连败洗澡，三连败睡觉。身体下线，比心态下线便宜。",
+        when: () => true,
+      },
+    ];
+
+    const ADVICE_EXTRA = [
+      "把今晚目标从「上星」改成「不红温」。",
+      "连败时关掉战绩页，少看「我比他们分高」。",
+      "优先双排固定好友，减少纯随机房间的情绪税。",
+      "同一英雄连输两局就换，别用倔强交学费。",
+      "语音只报事实：时间、位置、技能，不报评价。",
+    ];
+
+    const state = {
+      nickname: "",
+      rank: "",
+      record: "",
+      lane: "",
+      variant: 0,
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const toastEl = $("toast");
+
+    function showToast(msg) {
+      toastEl.textContent = msg;
+      toastEl.classList.add("show");
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => toastEl.classList.remove("show"), 2200);
+    }
+
+    function hashString(input) {
+      let h = 2166136261;
+      for (let i = 0; i < input.length; i++) {
+        h ^= input.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      return h >>> 0;
+    }
+
+    function mulberry32(a) {
+      return function () {
+        let t = (a += 0x6d2b79f5);
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      };
+    }
+
+    function seedKey() {
+      return [state.nickname.trim(), state.rank, state.record, state.lane, state.variant].join("|");
+    }
+
+    function pickCase(ctx, rand) {
+      const matched = CASES.filter((c) => c.when(ctx));
+      const pool = matched.length ? matched : CASES.slice(-1);
+      return pool[Math.floor(rand() * pool.length)];
+    }
+
+    function caseNo(rand) {
+      const n = Math.floor(rand() * 900000) + 100000;
+      return `YK-${n}`;
+    }
+
+    function renderOptions(container, items, key) {
+      container.innerHTML = "";
+      items.forEach((item) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "opt" + (state[key] === item.id ? " active" : "");
+        btn.textContent = item.label;
+        btn.addEventListener("click", () => {
+          state[key] = item.id;
+          renderOptions(container, items, key);
+          syncGenerate();
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    function syncGenerate() {
+      const ready =
+        state.nickname.trim().length >= 1 &&
+        state.rank &&
+        state.record &&
+        state.lane;
+      $("generateBtn").disabled = !ready;
+    }
+
+    function labelOf(list, id) {
+      return list.find((x) => x.id === id)?.label || id;
+    }
+
+    function buildPoster() {
+      const name = state.nickname.trim() || "匿名召唤师";
+      const rand = mulberry32(hashString(seedKey()));
+      const ctx = {
+        rank: state.rank,
+        record: state.record,
+        lane: state.lane,
+      };
+      const item = pickCase(ctx, rand);
+      const extra = ADVICE_EXTRA[Math.floor(rand() * ADVICE_EXTRA.length)];
+      const no = caseNo(rand);
+      const today = new Date();
+      const dateStr = `${today.getFullYear()}.${String(today.getMonth() + 1).padStart(2, "0")}.${String(today.getDate()).padStart(2, "0")}`;
+
+      const sealLines = item.seal.split("\n").map((l) => l).join("<br>");
+
+      $("poster").innerHTML = `
+        <div class="seal" aria-hidden="true"><span>${sealLines}</span></div>
+        <header class="poster-head">
+          <div class="org">峡谷冤种鉴定所</div>
+          <div class="doc-type">排 位 病 历 单</div>
+          <div class="meta-grid">
+            <div>档案号：<b>${no}</b></div>
+            <div>开具日：<b>${dateStr}</b></div>
+            <div>昵称：<b>${escapeHtml(name)}</b></div>
+            <div>分路：<b>${labelOf(LANES, state.lane)}</b></div>
+            <div>段位：<b>${labelOf(RANKS, state.rank)}</b></div>
+            <div>战绩：<b>${labelOf(RECORDS, state.record)}</b></div>
+          </div>
+        </header>
+
+        <div class="verdict-banner">
+          <div class="kicker">诊断结果</div>
+          <div class="label">${item.title}</div>
+        </div>
+
+        <section class="block">
+          <h3>匹配逻辑剖析（虚构）</h3>
+          <p>${item.logic}</p>
+          <div class="quote">「${item.quote}」</div>
+        </section>
+
+        <section class="block">
+          <h3>破局建议</h3>
+          <p>${item.advice} ${extra}</p>
+        </section>
+
+        <div class="barcode-wrap">
+          <div class="barcode" aria-hidden="true"></div>
+          <div class="barcode-caption">匹配池扫描中：正在为您检索「最会送也最会骂」的随机队友……</div>
+          <div class="share-hook">将此图发至群聊，立刻获得今日豁免权（假的）</div>
+        </div>
+
+        <p class="fineprint">
+          娱乐声明：本单为段子生成内容，非医学/非官方鉴定，与任何游戏公司、匹配算法、隐藏分体系无关；禁止用于攻击、歧视或骚扰他人。搜索「峡谷冤种鉴定所」可自测。
+        </p>
+      `;
+    }
+
+    function escapeHtml(str) {
+      return str
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function showResult() {
+      state.variant = 0;
+      buildPoster();
+      $("formView").classList.add("hide");
+      $("resultView").classList.add("show");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    async function savePoster() {
+      const node = $("poster");
+      showToast("正在生成图片…");
+      try {
+        const canvas = await html2canvas(node, {
+          backgroundColor: "#f1e5d4",
+          scale: Math.min(2.5, window.devicePixelRatio || 2),
+          useCORS: true,
+        });
+        const link = document.createElement("a");
+        const safe = (state.nickname.trim() || "summoner").replace(/[\\/:*?"<>|]/g, "_");
+        link.download = `峡谷冤种鉴定所-${safe}.png`;
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        showToast("已保存，去群里晒吧");
+      } catch (err) {
+        console.error(err);
+        showToast("保存失败，请尝试截图");
+      }
+    }
+
+    $("nickname").addEventListener("input", (e) => {
+      state.nickname = e.target.value;
+      syncGenerate();
+    });
+
+    $("generateBtn").addEventListener("click", showResult);
+    $("saveBtn").addEventListener("click", savePoster);
+    $("backBtn").addEventListener("click", () => {
+      $("resultView").classList.remove("show");
+      $("formView").classList.remove("hide");
+    });
+    $("againBtn").addEventListener("click", () => {
+      // Keep nickname stable identity, but allow a second card by bumping variant
+      // only when user explicitly asks — still deterministic per variant index.
+      state.variant += 1;
+      buildPoster();
+      showToast(state.variant === 1 ? "已按同一昵称开具平行病历" : `平行病历 #${state.variant + 1}`);
+    });
+
+    renderOptions($("rankOptions"), RANKS, "rank");
+    renderOptions($("recordOptions"), RECORDS, "record");
+    renderOptions($("laneOptions"), LANES, "lane");
+    syncGenerate();
+  </script>
+</body>
+</html>
