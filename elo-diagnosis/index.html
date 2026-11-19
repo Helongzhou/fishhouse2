@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>峡谷冤种鉴定所 · 排位病历单</title>
+  <title>峡谷冤种门诊 · 诊断证明书</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
   <style>
     :root {
       --paper: #f3ebe0;
-      --paper-deep: #e8dccb;
-      --ink: #1c1612;
+      --ink: #111;
       --ink-soft: #5a4d42;
-      --rule: #c9b8a2;
+      --rule: #222;
       --stamp: #b42318;
       --stamp-soft: rgba(180, 35, 24, 0.12);
-      --seal: #c6281c;
-      --ok: #2f5d3a;
+      --seal: #d32f2f;
       --shadow: 0 18px 50px rgba(40, 24, 12, 0.18);
-      --radius: 4px;
+      --doc-bg: #fffcf7;
     }
 
     * { box-sizing: border-box; }
     html, body { margin: 0; min-height: 100%; }
     body {
-      font-family: "Noto Serif SC", "Songti SC", serif;
+      font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
       color: var(--ink);
       background:
         radial-gradient(ellipse at 15% 10%, rgba(180, 35, 24, 0.08), transparent 42%),
@@ -61,7 +59,6 @@
       letter-spacing: 0.08em;
       color: var(--stamp);
       line-height: 1.1;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
     }
     .masthead p {
       margin: 10px 0 0;
@@ -92,9 +89,7 @@
       animation: rise 0.75s ease 0.08s both;
     }
 
-    .step {
-      margin-bottom: 22px;
-    }
+    .step { margin-bottom: 22px; }
     .step h2 {
       margin: 0 0 10px;
       font-size: 0.92rem;
@@ -118,14 +113,13 @@
 
     .field {
       width: 100%;
-      border: 1px solid var(--rule);
+      border: 1px solid #c9b8a2;
       background: rgba(255, 255, 255, 0.55);
       color: var(--ink);
       font: inherit;
       font-size: 1rem;
       padding: 12px 14px;
       outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
     }
     .field:focus {
       border-color: var(--stamp);
@@ -149,7 +143,7 @@
 
     .opt {
       appearance: none;
-      border: 1px solid var(--rule);
+      border: 1px solid #c9b8a2;
       background: rgba(255, 255, 255, 0.45);
       color: var(--ink);
       font: inherit;
@@ -158,7 +152,7 @@
       text-align: center;
       transition: transform 0.15s ease, background 0.15s, border-color 0.15s, color 0.15s;
     }
-    .opt:hover { transform: translateY(-1px); border-color: #9a8268; }
+    .opt:hover { transform: translateY(-1px); }
     .opt.active {
       border-color: var(--stamp);
       background: var(--stamp-soft);
@@ -180,7 +174,6 @@
       font-weight: 700;
       letter-spacing: 0.08em;
       padding: 14px 16px;
-      transition: transform 0.15s ease, opacity 0.15s;
     }
     .btn:active { transform: scale(0.985); }
     .btn-primary {
@@ -196,7 +189,7 @@
     .btn-ghost {
       background: transparent;
       color: var(--ink-soft);
-      border: 1px dashed var(--rule);
+      border: 1px dashed #c9b8a2;
     }
 
     .disclaimer {
@@ -227,167 +220,167 @@
       padding: 4px;
     }
 
+    /* ===== Real outpatient certificate look ===== */
     .poster {
-      width: min(420px, 100%);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.35), transparent 30%),
-        repeating-linear-gradient(
-          transparent,
-          transparent 27px,
-          rgba(180, 140, 100, 0.12) 28px
-        ),
-        linear-gradient(180deg, #fffaf2, #f1e5d4);
-      border: 1.5px solid #8d7358;
+      width: min(440px, 100%);
+      background: var(--doc-bg);
+      border: 1px solid #888;
       box-shadow: var(--shadow);
-      padding: 18px 18px 16px;
+      padding: 22px 20px 18px;
       position: relative;
+      color: #111;
       overflow: hidden;
     }
-    .poster::before {
-      content: "";
-      position: absolute;
-      inset: 8px;
-      border: 1px solid rgba(180, 35, 24, 0.25);
-      pointer-events: none;
-    }
 
-    .poster-head {
+    .doc-hospital {
       text-align: center;
-      border-bottom: 2px solid var(--stamp);
-      padding-bottom: 12px;
-      margin-bottom: 14px;
-      position: relative;
-    }
-    .poster-head .org {
-      font-family: "ZCOOL QingKe HuangYou", serif;
-      color: var(--stamp);
-      font-size: 1.55rem;
-      letter-spacing: 0.12em;
-    }
-    .poster-head .doc-type {
-      margin-top: 4px;
-      font-size: 0.85rem;
-      letter-spacing: 0.28em;
-      color: var(--ink);
-    }
-    .meta-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6px 12px;
-      font-size: 0.78rem;
-      color: var(--ink-soft);
-      margin-top: 10px;
-    }
-    .meta-grid b { color: var(--ink); font-weight: 700; }
-
-    .verdict-banner {
-      margin: 14px 0 12px;
-      border: 2px solid var(--stamp);
-      background: var(--stamp-soft);
-      padding: 12px 10px;
-      text-align: center;
-    }
-    .verdict-banner .kicker {
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
-      color: var(--stamp);
-    }
-    .verdict-banner .label {
-      margin-top: 4px;
-      font-size: 1.35rem;
       font-weight: 900;
-      color: var(--stamp);
-      letter-spacing: 0.06em;
+      font-size: 1.35rem;
+      letter-spacing: 0.12em;
       line-height: 1.25;
     }
-
-    .block { margin: 14px 0; position: relative; z-index: 1; }
-    .block h3 {
-      margin: 0 0 6px;
+    .doc-sub {
+      text-align: center;
+      margin-top: 4px;
+      font-size: 0.72rem;
+      color: #444;
+      letter-spacing: 0.04em;
+    }
+    .doc-title {
+      text-align: center;
+      margin: 14px 0 8px;
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: 0.35em;
+      text-indent: 0.35em;
+    }
+    .doc-no {
+      text-align: right;
       font-size: 0.78rem;
-      letter-spacing: 0.16em;
-      color: var(--stamp);
+      margin-bottom: 8px;
     }
-    .block p {
-      margin: 0;
-      font-size: 0.88rem;
-      line-height: 1.65;
-      color: var(--ink);
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      table-layout: fixed;
     }
-    .quote {
-      margin-top: 8px;
-      padding: 10px 12px;
-      border-left: 3px solid var(--stamp);
-      background: rgba(255, 255, 255, 0.45);
+    .info-table th,
+    .info-table td {
+      border: 1px solid #222;
+      padding: 7px 6px;
+      vertical-align: middle;
+      word-break: break-all;
+    }
+    .info-table th {
+      width: 18%;
       font-weight: 700;
-      font-size: 0.92rem;
-      line-height: 1.5;
+      background: #f7f7f7;
+      white-space: nowrap;
+      text-align: center;
+    }
+    .info-table td { text-align: left; }
+
+    .clinical {
+      margin-top: 16px;
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+    .clinical .row {
+      margin-bottom: 18px;
+      min-height: 2.6em;
+    }
+    .clinical .label {
+      font-weight: 900;
+      display: inline;
+    }
+    .clinical .value {
+      display: inline;
+      border-bottom: 1px solid transparent;
+    }
+    .clinical .diagnosis-name {
+      font-weight: 700;
+      font-size: 1.02rem;
+    }
+    .clinical ol {
+      margin: 6px 0 0 1.2em;
+      padding: 0;
+    }
+    .clinical li { margin: 2px 0; }
+
+    .sign-block {
+      margin-top: 28px;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      min-height: 96px;
+    }
+    .sign-inner {
+      text-align: left;
+      font-size: 0.88rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+      min-width: 46%;
+    }
+    .doctor-sign {
+      font-family: "ZCOOL QingKe HuangYou", "Noto Serif SC", serif;
+      font-size: 1.25rem;
+      color: #1a3a8a;
+      letter-spacing: 0.08em;
+      transform: rotate(-4deg);
+      display: inline-block;
+      margin-left: 4px;
     }
 
     .seal {
       position: absolute;
-      right: 22px;
-      top: 118px;
-      width: 88px;
-      height: 88px;
-      border: 3px solid var(--seal);
+      right: 8px;
+      bottom: -6px;
+      width: 108px;
+      height: 108px;
       border-radius: 50%;
+      border: 3px solid var(--seal);
       color: var(--seal);
       display: grid;
       place-items: center;
       text-align: center;
-      font-size: 0.72rem;
+      font-size: 0.62rem;
       font-weight: 900;
-      letter-spacing: 0.08em;
-      transform: rotate(-18deg);
-      opacity: 0.82;
-      background: rgba(255, 255, 255, 0.2);
-      box-shadow: inset 0 0 0 1px rgba(198, 40, 28, 0.35);
-      z-index: 2;
-      animation: stamp-in 0.55s cubic-bezier(.2,.9,.2,1) 0.25s both;
-    }
-    .seal span { line-height: 1.25; padding: 8px; }
-
-    .barcode-wrap {
-      margin-top: 16px;
-      border-top: 1px dashed var(--rule);
-      padding-top: 12px;
-      text-align: center;
-    }
-    .barcode {
-      height: 42px;
-      width: 100%;
-      background:
-        repeating-linear-gradient(
-          90deg,
-          #1c1612 0 2px,
-          transparent 2px 4px,
-          #1c1612 4px 5px,
-          transparent 5px 8px,
-          #1c1612 8px 11px,
-          transparent 11px 13px
-        );
-      opacity: 0.85;
-      filter: contrast(1.2);
-    }
-    .barcode-caption {
-      margin-top: 8px;
-      font-size: 0.72rem;
-      color: var(--ink-soft);
+      line-height: 1.25;
       letter-spacing: 0.04em;
+      transform: rotate(-16deg);
+      opacity: 0.88;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: inset 0 0 0 1px rgba(211, 47, 47, 0.45);
+      z-index: 2;
+      animation: stamp-in 0.55s cubic-bezier(.2,.9,.2,1) 0.2s both;
+      padding: 10px;
+    }
+    .seal .star {
+      font-size: 0.85rem;
+      margin: 2px 0;
+    }
+
+    .doc-note {
+      margin-top: 18px;
+      font-size: 0.72rem;
+      color: #333;
+      line-height: 1.5;
     }
     .share-hook {
       margin-top: 10px;
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--stamp);
       font-weight: 700;
     }
     .fineprint {
-      margin-top: 12px;
-      font-size: 0.68rem;
-      line-height: 1.5;
-      color: #7a6b5c;
+      margin-top: 8px;
+      font-size: 0.65rem;
+      line-height: 1.45;
+      color: #777;
       text-align: justify;
     }
 
@@ -396,7 +389,7 @@
       left: 50%;
       bottom: 24px;
       transform: translateX(-50%) translateY(20px);
-      background: var(--ink);
+      background: #111;
       color: #f7f0e6;
       padding: 10px 14px;
       font-size: 0.85rem;
@@ -416,8 +409,8 @@
       to { opacity: 1; transform: none; }
     }
     @keyframes stamp-in {
-      from { opacity: 0; transform: rotate(-18deg) scale(1.4); }
-      to { opacity: 0.82; transform: rotate(-18deg) scale(1); }
+      from { opacity: 0; transform: rotate(-16deg) scale(1.35); }
+      to { opacity: 0.88; transform: rotate(-16deg) scale(1); }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -432,8 +425,8 @@
   <div class="noise" aria-hidden="true"></div>
   <div class="wrap">
     <header class="masthead">
-      <div class="brand">峡谷冤种鉴定所</div>
-      <p>三步点选 + 昵称入档，开具你的排位病历单</p>
+      <div class="brand">峡谷冤种门诊</div>
+      <p>点选病情 → 开具「诊断证明书」海报</p>
       <div class="badge-row">
         <span class="pill">纯娱乐吐槽</span>
         <span class="pill">非真实匹配数据</span>
@@ -443,9 +436,9 @@
 
     <section class="panel form-view" id="formView">
       <div class="step">
-        <h2 data-n="1">召唤师昵称</h2>
-        <input class="field" id="nickname" maxlength="16" placeholder="输入你的游戏昵称（用于生成稳定结果）" autocomplete="off" />
-        <p class="hint">同一昵称每次结果相同；不同昵称各不相同。仅用于本地随机，不会上传。</p>
+        <h2 data-n="1">姓名（游戏昵称）</h2>
+        <input class="field" id="nickname" maxlength="16" placeholder="写入病历姓名栏，并作为稳定种子" autocomplete="off" />
+        <p class="hint">同一昵称每次结果相同；不同昵称各不相同。仅本地计算，不会上传。</p>
       </div>
 
       <div class="step">
@@ -454,35 +447,35 @@
       </div>
 
       <div class="step">
-        <h2 data-n="3">近期战绩</h2>
+        <h2 data-n="3">近期战绩（主诉素材）</h2>
         <div class="options" id="recordOptions"></div>
       </div>
 
       <div class="step">
-        <h2 data-n="4">常用分路</h2>
+        <h2 data-n="4">常用分路（职业）</h2>
         <div class="options lanes" id="laneOptions"></div>
       </div>
 
       <div class="actions">
-        <button class="btn btn-primary" id="generateBtn" disabled>生成我的排位病历单</button>
+        <button class="btn btn-primary" id="generateBtn" disabled>开具诊断证明书</button>
       </div>
 
       <aside class="disclaimer">
-        本页为娱乐向吐槽生成器，所有「诊断」「匹配逻辑」均为虚构段子，与任何游戏官方、匹配系统、隐藏分无关，也不构成对局分析或账号评价。未成年人请在监护人指导下使用，请勿用于引战或骚扰他人。
+        本页为娱乐向吐槽生成器，仿门诊证明书版式仅供玩梗。所有「诊断」「处理意见」均为虚构段子，与任何游戏官方、匹配系统无关。未成年人请在监护人指导下使用，请勿用于引战或骚扰他人。
       </aside>
     </section>
 
     <section class="result-view" id="resultView">
       <div class="toolbar">
-        <button class="btn btn-primary" id="saveBtn">保存病历海报</button>
+        <button class="btn btn-primary" id="saveBtn">保存证明书海报</button>
         <button class="btn btn-ghost" id="againBtn">开一张平行病历</button>
         <button class="btn btn-ghost" id="backBtn">返回修改</button>
       </div>
       <div class="poster-shell">
-        <article class="poster" id="poster" aria-label="排位病历单海报"></article>
+        <article class="poster" id="poster" aria-label="诊断证明书海报"></article>
       </div>
       <aside class="disclaimer">
-        分享时请自行注明娱乐向。海报仅供自嘲与社交传播，不代表真实对局机制。搜索词：峡谷冤种鉴定所
+        分享时请注明娱乐向。搜索词：峡谷冤种门诊
       </aside>
     </section>
   </div>
@@ -513,115 +506,124 @@
       { id: "sup", label: "游走" },
     ];
 
-    /** @type {{id:string, title:string, seal:string, logic:string, quote:string, advice:string, when:(c:any)=>boolean}[]} */
+    const CHIEF_COMPLAINT = {
+      win_then_lose: (n) => `连胜后突然连跪${n}局，伴情绪波动、失眠倾向1晚`,
+      alternate: (n) => `近${n + 2}局呈「赢一输一」节律，自觉被精准五五开，伴无力感`,
+      pure_lose: (n) => `连跪${n}局，伴语音区血压升高、结算页不敢看`,
+      rankup_crash: (n) => `刚上大段后连崩${n}局，自觉「晋级税」发作`,
+    };
+
+    const JOB_TITLE = {
+      top: "对抗路抗压员",
+      jg: "打野节奏调度员",
+      mid: "中路线权志愿者",
+      adc: "发育路工期管理员",
+      sup: "游走视野义工",
+    };
+
+    const DOCTORS = ["王匹配", "李隐藏分", "张日活", "赵峡谷", "陈段位"];
+
+    /** @type {{id:string, title:string, seal:string, logic:string, quote:string, advice:string[], when:(c:any)=>boolean}[]} */
     const CASES = [
       {
         id: "svp_factory",
-        title: "败方高光专业户",
-        seal: "精神\n损失费",
-        logic: "监测到你近期评分偏高，匹配池倾向于把你放进「需要有人扛锅」的房间。你的队友可能刚刚经历连败，沟通意愿接近于零，而你仍在努力把节奏往回拉。",
-        quote: "你的败方高光，是匹配池发给你的精神损失费。",
-        advice: "连败三局就下号。把「我能带」改成「我先保心态」，比硬刚下一把更赚。",
+        title: "败方高光综合征",
+        seal: "病情证明",
+        logic: "近期评分偏高，匹配池倾向将其放入「需有人扛锅」房间；队友沟通意愿低，患者仍尝试回拉节奏。",
+        quote: "败方高光视为精神损失费。",
+        advice: ["对症停损：连败三局立即下号", "门诊随诊：改打娱乐局缓冲", "建议休息治疗：今晚只保心态不上星"],
         when: (c) => (c.lane === "jg" || c.lane === "adc") && c.record === "pure_lose",
       },
       {
         id: "daily_worker",
-        title: "头铁型日活贡献者",
-        seal: "日活\n打工人",
-        logic: "你的手感与心态都偏稳，匹配池很清楚你不会轻易退游。于是你被精准卡在五五开附近：赢一局给糖，输一局收回，成为房间里最可靠的「体验缓冲垫」。",
-        quote: "你不是在打排位，你是在替匹配池打工。建议自查有没有签过电子义务劳动协议。",
-        advice: "改打两把娱乐再排，或固定双排位。打断「赢一输一」的节律，比加练一个英雄更有效。",
+        title: "头铁型日活贡献症",
+        seal: "病情证明",
+        logic: "患者不易退游，隐藏分区间稳定，房间内常被用作「体验缓冲垫」，胜率趋近五五开。",
+        quote: "疑似签订电子义务劳动协议。",
+        advice: ["打断赢一输一节律", "固定双排减少随机税", "建议休息：少看战绩页对比"],
         when: (c) => c.record === "alternate",
       },
       {
         id: "win_curse",
-        title: "连胜终结者",
-        seal: "防飘\n机制",
-        logic: "连胜抬升了你的房间难度。系统侧（虚构）更愿意让你遇见状态波动的队友，好把你的曲线重新压平。你不是突然变菜，是难度被调了档。",
-        quote: "匹配池觉得你该赢够了，但觉得你的队友还可以再练练。",
-        advice: "连胜后主动降强度：换熟练英雄、少开麦争执。把「保段」当成连胜的一部分。",
+        title: "连胜后难度上调反应",
+        seal: "病情证明",
+        logic: "连胜抬升房间难度后出现崩盘；属虚构「防飘机制」适应期，而非操作突然退化。",
+        quote: "你该赢够了，队友还可以再练练。",
+        advice: ["降低开局强度，改用熟练英雄", "少开麦争执", "保段优先于冲星"],
         when: (c) => c.record === "win_then_lose" && (c.lane === "sup" || c.lane === "mid"),
       },
       {
         id: "solo_orphan",
-        title: "边路孤儿院院长",
-        seal: "单机\n认证",
-        logic: "鉴于你常年锁边路，匹配池默认你抗压强、不需要被关怀。中野游走更可能抱团在另一侧，而你将在塔下度过漫长的发育课时。",
-        quote: "这条线只有你，和不断试探的河道资源。你打的是五排，但你的世界经常是单机。",
-        advice: "提前跟打野约定支援时机；对线以不送为第一KPI，别为「打出气势」交付两波节奏。",
+        title: "边路单机隔离状态",
+        seal: "病情证明",
+        logic: "长期锁边路，匹配池默认抗压强、无需关怀；中野游走抱团对侧，患者塔下单机时长偏高。",
+        quote: "打的是五排，过的是单机。",
+        advice: ["提前约定支援窗口", "对线以不送为第一KPI", "建议休息：少为气势交两波节奏"],
         when: (c) => c.lane === "top" && (c.record === "alternate" || c.record === "pure_lose"),
       },
       {
         id: "rankup_tax",
-        title: "晋级税征收对象",
-        seal: "晋级\n税单",
-        logic: "刚上大段时，匹配池会把你扔进「适应期房间」：队友磨合差、对手更凶。看起来像诅咒，更像是分段跃迁后的难度税。",
+        title: "晋级税急性发作",
+        seal: "病情证明",
+        logic: "大段跃迁后进入适应期房间，队友磨合差、对手更凶，表现为「刚上就崩」。",
         quote: "大段是门票，税在下一局收。",
-        advice: "晋级后先打两把热身局，别连夜冲星。把「站稳」写进今晚的唯一目标。",
+        advice: ["晋级后先打热身局", "勿连夜冲星", "今晚唯一目标：站稳"],
         when: (c) => c.record === "rankup_crash",
       },
       {
         id: "vision_saint",
-        title: "视野义务劳动委员",
-        seal: "眼位\n义工",
-        logic: "游走位被默认定责为「全图保姆」。你一开团就有人指责节奏，你一发育就被说没视野。匹配池享受你的责任感，多于回馈你的胜负。",
-        quote: "你在为整张地图打工，结算页却只记得你的死亡次数。",
-        advice: "把「能开」改成「该开」。少送一次死亡，比多探一个草丛更能救胜率。",
+        title: "视野义务过劳",
+        seal: "病情证明",
+        logic: "游走位被默认定责全图保姆；开团被骂节奏，发育被骂没视野，责任感被过度征用。",
+        quote: "为地图打工，结算只记死亡。",
+        advice: ["把「能开」改成「该开」", "减少无效死亡", "门诊随诊：对齐开团预期"],
         when: (c) => c.lane === "sup",
       },
       {
         id: "jungle_blame",
-        title: "锅从天上来专业户",
-        seal: "天降\n锅盖",
-        logic: "打野位承担最高的叙事压力：对面雪球、己方崩线，最终都可能写成「野做错了」。连败时这种叙事会被放大到失真。",
-        quote: "不是你带不动四个人，是四个人的情绪都想找一个出口。",
-        advice: "前八分钟只打「能拿的目标」。少听语音里的催促，多看小地图上的传送。",
+        title: "天降锅盖综合征",
+        seal: "病情证明",
+        logic: "打野位叙事压力最高，雪球与崩线易被归因于野；连败时归因失真加重。",
+        quote: "不是带不动，是情绪要出口。",
+        advice: ["前八分钟只拿能拿的目标", "少听催促，多看小地图", "建议休息治疗贰局"],
         when: (c) => c.lane === "jg",
       },
       {
         id: "mid_tempo",
-        title: "中路节奏志愿者",
-        seal: "节奏\n义工",
-        logic: "中路被期待既要对线又要支援。你一支援，线权丢；你一清线，边路喊。匹配池很喜欢把「全能期待」塞给中路。",
-        quote: "你以为自己在带节奏，其实在填别人的坑位空缺。",
-        advice: "每局只选一个主支援侧。与其两边都迟到，不如一边真正打穿。",
+        title: "中路全能期待过载",
+        seal: "病情证明",
+        logic: "既被要求对线又被要求支援；支援丢线权，清线则边路喊，期待相互矛盾。",
+        quote: "以为在带节奏，其实在填坑。",
+        advice: ["每局只选一个主支援侧", "与其两边迟到不如一边打穿", "随诊观察心态"],
         when: (c) => c.lane === "mid",
       },
       {
         id: "adc_farm",
-        title: "发育路工期延误员",
-        seal: "工期\n延误",
-        logic: "发育路需要时间，但房间节奏常常不等你。连败局里，你的「再两波」会变成队友的「怎么还不团」。",
-        quote: "你的经济曲线是诚实的，房间的耐心不是。",
-        advice: "明确告知「几级参团」。与其默默挨打，不如用一句话对齐预期。",
+        title: "发育工期延误反应",
+        seal: "病情证明",
+        logic: "发育需要时间，房间节奏不等待；「再两波」常被解读为消极参团。",
+        quote: "经济曲线诚实，房间耐心不诚实。",
+        advice: ["明确告知几级参团", "用一句话对齐预期", "建议休息：少默默挨打"],
         when: (c) => c.lane === "adc",
       },
       {
         id: "high_mmr_bait",
-        title: "高光诱饵型体验官",
-        seal: "体验\n担保",
-        logic: "段位越高，房间对「稳定发挥」的索取越强。你被安排进波动更大的对局，好让其他人完成他们的上分/掉分剧本。",
-        quote: "你是房间里的定海神针，也是最容易被写成背锅侠的那一根。",
-        advice: "巅峰时段少排。选你最熟的两三英雄，把变量只留给队友和对手。",
+        title: "高光诱饵型体验担保",
+        seal: "病情证明",
+        logic: "高段位房间对稳定发挥索取更强，患者易被写入他人上分/掉分剧本。",
+        quote: "定海神针，亦是背锅首选。",
+        advice: ["避开巅峰拥堵时段", "英雄池收缩至最熟两三名", "门诊随诊"],
         when: (c) => c.rank === "king_top" || c.rank === "king_mid",
       },
       {
         id: "generic_victim",
-        title: "匹配池情绪回收站",
-        seal: "情绪\n回收",
-        logic: "你的样本特征显示：会继续打、会反思、会把责任揽到自己身上。于是连败被包装成「再来一把就能翻」——这是最典型的情绪回收路径。",
-        quote: "不是玄学针对你，是你太适合当「还能再打」的人。",
-        advice: "设定硬性停损：两连败洗澡，三连败睡觉。身体下线，比心态下线便宜。",
+        title: "匹配池情绪回收状态",
+        seal: "病情证明",
+        logic: "患者会继续打、会反思、易揽责，连败被包装成「再来一把就能翻」。",
+        quote: "不是玄学针对，是太适合再打一把。",
+        advice: ["硬性停损：两连败洗澡", "三连败睡觉", "身体下线优先于心态下线"],
         when: () => true,
       },
-    ];
-
-    const ADVICE_EXTRA = [
-      "把今晚目标从「上星」改成「不红温」。",
-      "连败时关掉战绩页，少看「我比他们分高」。",
-      "优先双排固定好友，减少纯随机房间的情绪税。",
-      "同一英雄连输两局就换，别用倔强交学费。",
-      "语音只报事实：时间、位置、技能，不报评价。",
     ];
 
     const state = {
@@ -670,11 +672,6 @@
       return pool[Math.floor(rand() * pool.length)];
     }
 
-    function caseNo(rand) {
-      const n = Math.floor(rand() * 900000) + 100000;
-      return `YK-${n}`;
-    }
-
     function renderOptions(container, items, key) {
       container.innerHTML = "";
       items.forEach((item) => {
@@ -692,12 +689,12 @@
     }
 
     function syncGenerate() {
-      const ready =
+      $("generateBtn").disabled = !(
         state.nickname.trim().length >= 1 &&
         state.rank &&
         state.record &&
-        state.lane;
-      $("generateBtn").disabled = !ready;
+        state.lane
+      );
     }
 
     function labelOf(list, id) {
@@ -713,58 +710,86 @@
         lane: state.lane,
       };
       const item = pickCase(ctx, rand);
-      const extra = ADVICE_EXTRA[Math.floor(rand() * ADVICE_EXTRA.length)];
-      const no = caseNo(rand);
+      const loseN = 3 + Math.floor(rand() * 5); // 3-7
+      const gender = rand() > 0.5 ? "男" : "女";
+      const age = 16 + Math.floor(rand() * 18); // 16-33 峡谷年龄玩笑
+      const outpatientNo = String(1000000000 + Math.floor(rand() * 8999999999)).slice(0, 10);
+      const doctor = DOCTORS[Math.floor(rand() * DOCTORS.length)];
       const today = new Date();
-      const dateStr = `${today.getFullYear()}.${String(today.getMonth() + 1).padStart(2, "0")}.${String(today.getDate()).padStart(2, "0")}`;
-
-      const sealLines = item.seal.split("\n").map((l) => l).join("<br>");
+      const dateStr = `${today.getFullYear()}年${today.getMonth() + 1}月${today.getDate()}日`;
+      const job = `${JOB_TITLE[state.lane]}（${labelOf(RANKS, state.rank)}）`;
+      const chief = CHIEF_COMPLAINT[state.record](loseN);
+      const adviceHtml = item.advice
+        .map((a, i) => `<li>${i + 1}. ${a}</li>`)
+        .join("");
 
       $("poster").innerHTML = `
-        <div class="seal" aria-hidden="true"><span>${sealLines}</span></div>
-        <header class="poster-head">
-          <div class="org">峡谷冤种鉴定所</div>
-          <div class="doc-type">排 位 病 历 单</div>
-          <div class="meta-grid">
-            <div>档案号：<b>${no}</b></div>
-            <div>开具日：<b>${dateStr}</b></div>
-            <div>昵称：<b>${escapeHtml(name)}</b></div>
-            <div>分路：<b>${labelOf(LANES, state.lane)}</b></div>
-            <div>段位：<b>${labelOf(RANKS, state.rank)}</b></div>
-            <div>战绩：<b>${labelOf(RECORDS, state.record)}</b></div>
+        <div class="doc-hospital">峡谷冤种门诊部</div>
+        <div class="doc-sub">娱乐向情绪康复专科（非医疗机构 · 纯属玩梗）</div>
+        <div class="doc-title">诊断证明书</div>
+        <div class="doc-no">编号：YK${outpatientNo.slice(-6)}</div>
+
+        <table class="info-table">
+          <tr>
+            <th>姓名</th>
+            <td>${escapeHtml(name)}</td>
+            <th>性别</th>
+            <td>${gender}</td>
+          </tr>
+          <tr>
+            <th>年龄</th>
+            <td>${age}岁</td>
+            <th>门诊号</th>
+            <td>${outpatientNo}</td>
+          </tr>
+          <tr>
+            <th>职业</th>
+            <td colspan="3">${job}</td>
+          </tr>
+          <tr>
+            <th>分路/单位</th>
+            <td colspan="3">峡谷排位赛场 · ${labelOf(LANES, state.lane)}</td>
+          </tr>
+        </table>
+
+        <div class="clinical">
+          <div class="row">
+            <span class="label">主诉：</span>
+            <span class="value">${chief}</span>
           </div>
-        </header>
-
-        <div class="verdict-banner">
-          <div class="kicker">诊断结果</div>
-          <div class="label">${item.title}</div>
+          <div class="row">
+            <span class="label">诊断：</span>
+            <span class="value diagnosis-name">1、${item.title}</span>
+            <div style="margin-top:6px;font-size:0.84rem;color:#333;">（附记）${item.logic} ${item.quote}</div>
+          </div>
+          <div class="row">
+            <span class="label">处理意见：</span>
+            <ol>${adviceHtml}</ol>
+          </div>
         </div>
 
-        <section class="block">
-          <h3>匹配逻辑剖析（虚构）</h3>
-          <p>${item.logic}</p>
-          <div class="quote">「${item.quote}」</div>
-        </section>
-
-        <section class="block">
-          <h3>破局建议</h3>
-          <p>${item.advice} ${extra}</p>
-        </section>
-
-        <div class="barcode-wrap">
-          <div class="barcode" aria-hidden="true"></div>
-          <div class="barcode-caption">匹配池扫描中：正在为您检索「最会送也最会骂」的随机队友……</div>
-          <div class="share-hook">将此图发至群聊，立刻获得今日豁免权（假的）</div>
+        <div class="sign-block">
+          <div class="seal" aria-hidden="true">
+            <div>峡谷冤种门诊部</div>
+            <div class="star">★</div>
+            <div>${item.seal}</div>
+          </div>
+          <div class="sign-inner">
+            <div>经治医生：<span class="doctor-sign">${doctor}</span></div>
+            <div>${dateStr}</div>
+          </div>
         </div>
 
+        <p class="doc-note">注：本证明必须加盖本院公章有效，涂改无效。（玩梗章，无法律效力）</p>
+        <div class="share-hook">将此图发至群聊，立刻获得今日豁免权（假的）</div>
         <p class="fineprint">
-          娱乐声明：本单为段子生成内容，非医学/非官方鉴定，与任何游戏公司、匹配算法、隐藏分体系无关；禁止用于攻击、歧视或骚扰他人。搜索「峡谷冤种鉴定所」可自测。
+          娱乐声明：本单为段子生成内容，非医学诊断、非官方鉴定，与任何游戏公司及匹配算法无关；禁止用于攻击、歧视或骚扰他人。搜索「峡谷冤种门诊」可自测。
         </p>
       `;
     }
 
     function escapeHtml(str) {
-      return str
+      return String(str)
         .replaceAll("&", "&amp;")
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
@@ -784,13 +809,13 @@
       showToast("正在生成图片…");
       try {
         const canvas = await html2canvas(node, {
-          backgroundColor: "#f1e5d4",
+          backgroundColor: "#fffcf7",
           scale: Math.min(2.5, window.devicePixelRatio || 2),
           useCORS: true,
         });
         const link = document.createElement("a");
         const safe = (state.nickname.trim() || "summoner").replace(/[\\/:*?"<>|]/g, "_");
-        link.download = `峡谷冤种鉴定所-${safe}.png`;
+        link.download = `峡谷冤种门诊-诊断证明书-${safe}.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
         showToast("已保存，去群里晒吧");
@@ -812,11 +837,9 @@
       $("formView").classList.remove("hide");
     });
     $("againBtn").addEventListener("click", () => {
-      // Keep nickname stable identity, but allow a second card by bumping variant
-      // only when user explicitly asks — still deterministic per variant index.
       state.variant += 1;
       buildPoster();
-      showToast(state.variant === 1 ? "已按同一昵称开具平行病历" : `平行病历 #${state.variant + 1}`);
+      showToast(state.variant === 1 ? "已开具平行病历" : `平行病历 #${state.variant + 1}`);
     });
 
     renderOptions($("rankOptions"), RANKS, "rank");
