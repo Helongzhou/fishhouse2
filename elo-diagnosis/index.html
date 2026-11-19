@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>峡谷冤种门诊 · 诊断证明书</title>
+  <title>王者ELO门诊 · 诊断证明书</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
@@ -12,12 +12,12 @@
       --paper: #f3ebe0;
       --ink: #111;
       --ink-soft: #5a4d42;
-      --rule: #222;
       --stamp: #b42318;
       --stamp-soft: rgba(180, 35, 24, 0.12);
       --seal: #d32f2f;
       --shadow: 0 18px 50px rgba(40, 24, 12, 0.18);
       --doc-bg: #fffcf7;
+      --gold: #8a6a1a;
     }
 
     * { box-sizing: border-box; }
@@ -26,8 +26,8 @@
       font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
       color: var(--ink);
       background:
-        radial-gradient(ellipse at 15% 10%, rgba(180, 35, 24, 0.08), transparent 42%),
-        radial-gradient(ellipse at 90% 0%, rgba(80, 55, 30, 0.08), transparent 35%),
+        radial-gradient(ellipse at 12% 8%, rgba(180, 35, 24, 0.1), transparent 40%),
+        radial-gradient(ellipse at 88% 0%, rgba(138, 106, 26, 0.12), transparent 38%),
         linear-gradient(160deg, #d9cbb8 0%, #cfc0aa 45%, #bba890 100%);
       background-attachment: fixed;
     }
@@ -55,10 +55,10 @@
     }
     .masthead .brand {
       font-family: "ZCOOL QingKe HuangYou", "Noto Serif SC", serif;
-      font-size: clamp(2rem, 7vw, 3rem);
-      letter-spacing: 0.08em;
+      font-size: clamp(2rem, 7vw, 2.8rem);
+      letter-spacing: 0.06em;
       color: var(--stamp);
-      line-height: 1.1;
+      line-height: 1.15;
     }
     .masthead p {
       margin: 10px 0 0;
@@ -78,7 +78,7 @@
       background: var(--stamp-soft);
       padding: 4px 10px;
       font-size: 0.75rem;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
     }
 
     .panel {
@@ -94,7 +94,7 @@
       margin: 0 0 10px;
       font-size: 0.92rem;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.08em;
       color: var(--stamp);
       display: flex;
       align-items: center;
@@ -160,20 +160,16 @@
       font-weight: 700;
     }
 
-    .actions {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 8px;
-    }
+    .actions { margin-top: 8px; }
     .btn {
       appearance: none;
       border: none;
       cursor: pointer;
       font: inherit;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       padding: 14px 16px;
+      width: 100%;
     }
     .btn:active { transform: scale(0.985); }
     .btn-primary {
@@ -181,11 +177,7 @@
       color: #fff8f0;
       box-shadow: 0 8px 20px rgba(180, 35, 24, 0.28);
     }
-    .btn-primary:disabled {
-      opacity: 0.45;
-      cursor: not-allowed;
-      box-shadow: none;
-    }
+    .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; box-shadow: none; }
     .btn-ghost {
       background: transparent;
       color: var(--ink-soft);
@@ -212,21 +204,16 @@
       gap: 8px;
       margin-bottom: 14px;
     }
-    .toolbar .btn { flex: 1; min-width: 140px; }
+    .toolbar .btn { flex: 1; min-width: 140px; width: auto; }
 
-    .poster-shell {
-      display: flex;
-      justify-content: center;
-      padding: 4px;
-    }
+    .poster-shell { display: flex; justify-content: center; padding: 4px; }
 
-    /* ===== Real outpatient certificate look ===== */
     .poster {
       width: min(440px, 100%);
       background: var(--doc-bg);
       border: 1px solid #888;
       box-shadow: var(--shadow);
-      padding: 22px 20px 18px;
+      padding: 20px 18px 16px;
       position: relative;
       color: #111;
       overflow: hidden;
@@ -235,35 +222,30 @@
     .doc-hospital {
       text-align: center;
       font-weight: 900;
-      font-size: 1.35rem;
-      letter-spacing: 0.12em;
-      line-height: 1.25;
+      font-size: 1.28rem;
+      letter-spacing: 0.08em;
+      line-height: 1.3;
     }
     .doc-sub {
       text-align: center;
       margin-top: 4px;
-      font-size: 0.72rem;
-      color: #444;
-      letter-spacing: 0.04em;
+      font-size: 0.7rem;
+      color: #555;
     }
     .doc-title {
       text-align: center;
-      margin: 14px 0 8px;
+      margin: 12px 0 6px;
       font-size: 1.55rem;
       font-weight: 900;
       letter-spacing: 0.35em;
       text-indent: 0.35em;
     }
-    .doc-no {
-      text-align: right;
-      font-size: 0.78rem;
-      margin-bottom: 8px;
-    }
+    .doc-no { text-align: right; font-size: 0.78rem; margin-bottom: 8px; }
 
     .info-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       table-layout: fixed;
     }
     .info-table th,
@@ -274,96 +256,89 @@
       word-break: break-all;
     }
     .info-table th {
-      width: 18%;
+      width: 16%;
       font-weight: 700;
-      background: #f7f7f7;
+      background: #f3f3f3;
       white-space: nowrap;
       text-align: center;
     }
-    .info-table td { text-align: left; }
 
     .clinical {
-      margin-top: 16px;
-      font-size: 0.9rem;
-      line-height: 1.75;
+      margin-top: 14px;
+      font-size: 0.88rem;
+      line-height: 1.7;
     }
-    .clinical .row {
-      margin-bottom: 18px;
-      min-height: 2.6em;
-    }
-    .clinical .label {
-      font-weight: 900;
-      display: inline;
-    }
-    .clinical .value {
-      display: inline;
-      border-bottom: 1px solid transparent;
-    }
+    .clinical .row { margin-bottom: 14px; }
+    .clinical .label { font-weight: 900; }
     .clinical .diagnosis-name {
+      font-weight: 900;
+      font-size: 1.08rem;
+      color: var(--stamp);
+    }
+    .clinical .punch {
+      margin-top: 6px;
+      padding: 8px 10px;
+      border-left: 3px solid var(--stamp);
+      background: #fff4f0;
       font-weight: 700;
-      font-size: 1.02rem;
+      font-size: 0.9rem;
+      line-height: 1.45;
     }
-    .clinical .advice-list {
-      margin: 6px 0 0;
-    }
-    .clinical .advice-list div { margin: 2px 0; }
+    .clinical .advice-list { margin-top: 6px; }
+    .clinical .advice-list div { margin: 3px 0; }
 
     .sign-block {
-      margin-top: 28px;
+      margin-top: 22px;
       display: flex;
       justify-content: flex-end;
       position: relative;
-      min-height: 96px;
+      min-height: 100px;
     }
     .sign-inner {
       text-align: left;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       line-height: 1.8;
       position: relative;
       z-index: 1;
-      min-width: 46%;
+      min-width: 48%;
     }
     .doctor-sign {
       font-family: "ZCOOL QingKe HuangYou", "Noto Serif SC", serif;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: #1a3a8a;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.04em;
       transform: rotate(-4deg);
       display: inline-block;
-      margin-left: 4px;
     }
 
     .seal {
       position: absolute;
-      right: 8px;
-      bottom: -6px;
-      width: 108px;
-      height: 108px;
+      right: 4px;
+      bottom: -4px;
+      width: 112px;
+      height: 112px;
       border-radius: 50%;
       border: 3px solid var(--seal);
       color: var(--seal);
       display: grid;
       place-items: center;
       text-align: center;
-      font-size: 0.62rem;
+      font-size: 0.58rem;
       font-weight: 900;
-      line-height: 1.25;
-      letter-spacing: 0.04em;
-      transform: rotate(-16deg);
-      opacity: 0.88;
-      background: rgba(255, 255, 255, 0.15);
+      line-height: 1.2;
+      transform: rotate(-18deg);
+      opacity: 0.9;
+      background: rgba(255, 255, 255, 0.12);
       box-shadow: inset 0 0 0 1px rgba(211, 47, 47, 0.45);
       z-index: 2;
       animation: stamp-in 0.55s cubic-bezier(.2,.9,.2,1) 0.2s both;
-      padding: 10px;
+      padding: 10px 8px;
     }
-    .seal .star {
-      font-size: 0.85rem;
-      margin: 2px 0;
-    }
+    .seal .star { font-size: 0.9rem; margin: 2px 0; }
+    .seal .big { font-size: 0.78rem; letter-spacing: 0.06em; }
 
     .doc-note {
-      margin-top: 18px;
+      margin-top: 16px;
       font-size: 0.72rem;
       color: #333;
       line-height: 1.5;
@@ -371,13 +346,14 @@
     .share-hook {
       margin-top: 10px;
       text-align: center;
-      font-size: 0.78rem;
+      font-size: 0.84rem;
       color: var(--stamp);
-      font-weight: 700;
+      font-weight: 900;
+      line-height: 1.4;
     }
     .fineprint {
       margin-top: 8px;
-      font-size: 0.65rem;
+      font-size: 0.62rem;
       line-height: 1.45;
       color: #777;
       text-align: justify;
@@ -408,15 +384,11 @@
       to { opacity: 1; transform: none; }
     }
     @keyframes stamp-in {
-      from { opacity: 0; transform: rotate(-16deg) scale(1.35); }
-      to { opacity: 0.88; transform: rotate(-16deg) scale(1); }
+      from { opacity: 0; transform: rotate(-18deg) scale(1.35); }
+      to { opacity: 0.9; transform: rotate(-18deg) scale(1); }
     }
-
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-      }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
     }
   </style>
 </head>
@@ -424,58 +396,56 @@
   <div class="noise" aria-hidden="true"></div>
   <div class="wrap">
     <header class="masthead">
-      <div class="brand">峡谷冤种门诊</div>
-      <p>点选病情 → 开具「诊断证明书」海报</p>
+      <div class="brand">王者ELO门诊</div>
+      <p>连跪了？来开一张能发群里的诊断证明书</p>
       <div class="badge-row">
-        <span class="pill">纯娱乐吐槽</span>
-        <span class="pill">非真实匹配数据</span>
+        <span class="pill">纯属玩梗</span>
+        <span class="pill">不是真匹配数据</span>
         <span class="pill">同名同判</span>
       </div>
     </header>
 
     <section class="panel form-view" id="formView">
       <div class="step">
-        <h2 data-n="1">姓名（游戏昵称）</h2>
-        <input class="field" id="nickname" maxlength="16" placeholder="写入病历姓名栏，并作为稳定种子" autocomplete="off" />
-        <p class="hint">同一昵称每次结果相同；不同昵称各不相同。仅本地计算，不会上传。</p>
+        <h2 data-n="1">游戏昵称</h2>
+        <input class="field" id="nickname" maxlength="16" placeholder="例如：今晚必须上王者" autocomplete="off" />
+        <p class="hint">写进病历姓名栏。同一昵称每次结果一样，方便你反复晒。</p>
       </div>
 
       <div class="step">
-        <h2 data-n="2">当前段位</h2>
+        <h2 data-n="2">你现在什么段</h2>
         <div class="options ranks" id="rankOptions"></div>
       </div>
 
       <div class="step">
-        <h2 data-n="3">近期战绩（主诉素材）</h2>
+        <h2 data-n="3">最近怎么输的</h2>
         <div class="options" id="recordOptions"></div>
       </div>
 
       <div class="step">
-        <h2 data-n="4">常用分路（职业）</h2>
+        <h2 data-n="4">你主玩哪路</h2>
         <div class="options lanes" id="laneOptions"></div>
       </div>
 
       <div class="actions">
-        <button class="btn btn-primary" id="generateBtn" disabled>开具诊断证明书</button>
+        <button class="btn btn-primary" id="generateBtn" disabled>开证明 · 我要伸冤</button>
       </div>
 
       <aside class="disclaimer">
-        本页为娱乐向吐槽生成器，仿门诊证明书版式仅供玩梗。所有「诊断」「处理意见」均为虚构段子，与任何游戏官方、匹配系统无关。未成年人请在监护人指导下使用，请勿用于引战或骚扰他人。
+        纯娱乐玩梗生成器。所有诊断都是段子，不是真的隐藏分/匹配机制鉴定。别拿去引战骂人；未成年请监护人陪同玩玩梗就好。
       </aside>
     </section>
 
     <section class="result-view" id="resultView">
       <div class="toolbar">
-        <button class="btn btn-primary" id="saveBtn">保存证明书海报</button>
-        <button class="btn btn-ghost" id="againBtn">开一张平行病历</button>
-        <button class="btn btn-ghost" id="backBtn">返回修改</button>
+        <button class="btn btn-primary" id="saveBtn">保存海报发群</button>
+        <button class="btn btn-ghost" id="againBtn">再开一张更惨的</button>
+        <button class="btn btn-ghost" id="backBtn">返回重填</button>
       </div>
       <div class="poster-shell">
-        <article class="poster" id="poster" aria-label="诊断证明书海报"></article>
+        <article class="poster" id="poster" aria-label="王者诊断证明书"></article>
       </div>
-      <aside class="disclaimer">
-        分享时请注明娱乐向。搜索词：峡谷冤种门诊
-      </aside>
+      <aside class="disclaimer">搜索「王者ELO门诊」可自测。记得标娱乐。</aside>
     </section>
   </div>
 
@@ -484,155 +454,207 @@
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script>
     const RANKS = [
-      { id: "star", label: "高分段入门" },
-      { id: "king_low", label: "王者低星档" },
-      { id: "king_mid", label: "无双档" },
-      { id: "king_top", label: "荣耀巅峰档" },
+      { id: "star", label: "星耀" },
+      { id: "king_low", label: "王者低星" },
+      { id: "king_mid", label: "无双王者" },
+      { id: "king_top", label: "荣耀王者" },
     ];
 
     const RECORDS = [
-      { id: "win_then_lose", label: "连胜后突然崩盘" },
+      { id: "win_then_lose", label: "五连胜后暴毙" },
       { id: "alternate", label: "赢一局输一局" },
-      { id: "pure_lose", label: "纯纯连败" },
-      { id: "rankup_crash", label: "刚上大段就崩盘" },
+      { id: "pure_lose", label: "纯纯大红地毯" },
+      { id: "rankup_crash", label: "刚上大段就崩" },
     ];
 
     const LANES = [
-      { id: "top", label: "对抗路" },
+      { id: "top", label: "对抗" },
       { id: "jg", label: "打野" },
       { id: "mid", label: "中路" },
-      { id: "adc", label: "发育路" },
+      { id: "adc", label: "发育" },
       { id: "sup", label: "游走" },
     ];
 
-    const CHIEF_COMPLAINT = {
-      win_then_lose: (n) => `连胜后突然连跪${n}局，伴情绪波动、失眠倾向1晚`,
-      alternate: (n) => `近${n + 2}局呈「赢一输一」节律，自觉被精准五五开，伴无力感`,
-      pure_lose: (n) => `连跪${n}局，伴语音区血压升高、结算页不敢看`,
-      rankup_crash: (n) => `刚上大段后连崩${n}局，自觉「晋级税」发作`,
+    const HEROES = {
+      top: ["狂铁", "马超", "镜", "曜", "关羽", "吕布", "司空震"],
+      jg: ["镜", "澜", "裴擒虎", "云缨", "赵云", "李白", "娜可露露"],
+      mid: ["嫦娥", "干将莫邪", "诸葛亮", "小乔", "不知火舞", "海月", "沈梦溪"],
+      adc: ["艾琳", "公孙离", "狄仁杰", "伽罗", "戈娅", "黄忠", "孙尚香"],
+      sup: ["瑶", "大乔", "张飞", "苏烈", "太乙真人", "明世隐", "牛魔"],
     };
 
-    const JOB_TITLE = {
-      top: "对抗路抗压员",
-      jg: "打野节奏调度员",
-      mid: "中路线权志愿者",
-      adc: "发育路工期管理员",
-      sup: "游走视野义工",
+    const FEEDERS = ["一级送的亚瑟", "挂机程咬金", "绝活露娜", "镜子刷到飞起的对面", "开麦只会骂人的辅助", "补位射手", "演员中单", "四人游野王"];
+
+    const GENDERS = ["打野型", "射手心态", "辅助人格", "对抗体质", "中单情绪"];
+
+    const JOBS = {
+      top: ["边路孤儿院院长", "对抗路人形木桩", "被中野遗忘的编外人员", "塔下单机主播"],
+      jg: ["锅从天上来收集者", "野区环卫工", "四路求救热线接线员", "节奏背锅侠"],
+      mid: ["支援义务劳动委员", "清线机器人", "半路被抓专业户", "带不动还被骂的那个"],
+      adc: ["发育路工期延误员", "经济第一输出第零", "等两波就被催的人", "被辅助送进ICU的射手"],
+      sup: ["开团背锅专业户", "视野义务保姆", "被骂没主动的那个", "保不住C位还要挨骂"],
     };
 
-    const DOCTORS = ["王匹配", "李隐藏分", "张日活", "赵峡谷", "陈段位"];
+    const DOCTORS = ["王匹配", "李隐藏分", "张日活牛马", "赵ELO", "孙剧本杀", "周演员科"];
 
-    /** @type {{id:string, title:string, seal:string, logic:string, quote:string, advice:string[], when:(c:any)=>boolean}[]} */
+    const SEALS = ["ELO重症", "匹配冤种", "连跪认证", "精神损失", "日活牛马"];
+
+    function pick(arr, rand) {
+      return arr[Math.floor(rand() * arr.length)];
+    }
+
+    function buildChief(record, lane, rand) {
+      const n = 4 + Math.floor(rand() * 4); // 4-7
+      const hero = pick(HEROES[lane], rand);
+      const feeder = pick(FEEDERS, rand);
+      const feeder2 = pick(FEEDERS.filter((x) => x !== feeder), rand);
+
+      const byRecord = {
+        win_then_lose: `五连胜飘了之后连跪${n}把。刚想冲王者，匹配直接发来${feeder}和${feeder2}。本人${hero}发挥正常，队友发挥超神（对面的）。`,
+        alternate: `近${n + 2}把严格「赢一输一」，准到像签了合同。赢的时候我带飞，输的时候送来${feeder}。怀疑自己是日活工具人。`,
+        pure_lose: `排位大红地毯连跪${n}把。其中不止一把有人挂机/演员，还有${feeder}。结算页金句：败方MVP是我，精神损失费也是我。`,
+        rankup_crash: `刚摸到新大段，转头连崩${n}把。晋级那把还挺帅，下一把直接配来${feeder}。典型「门票已售，税款后付」。`,
+      };
+      return byRecord[record];
+    }
+
+    /** cases: title + punchline + advice, gated by lane/record */
     const CASES = [
       {
-        id: "svp_factory",
-        title: "败方高光综合征",
-        seal: "病情证明",
-        logic: "近期评分偏高，匹配池倾向将其放入「需有人扛锅」房间；队友沟通意愿低，患者仍尝试回拉节奏。",
-        quote: "败方高光视为精神损失费。",
-        advice: ["对症停损：连败三局立即下号", "门诊随诊：改打娱乐局缓冲", "建议休息治疗：今晚只保心态不上星"],
+        id: "svp",
+        title: "败方MVP专业户（慢性）",
+        punch: "你的SVP，是系统发给你的精神损失费。",
+        advice: [
+          "Rx：连跪三把立刻下号，禁止「再来一把翻盘」妄想",
+          "禁开战绩页对比，违者加重红温",
+          "今晚只许打匹配，禁止排位（医嘱，假的）",
+        ],
         when: (c) => (c.lane === "jg" || c.lane === "adc") && c.record === "pure_lose",
       },
       {
-        id: "daily_worker",
-        title: "头铁型日活贡献症",
-        seal: "病情证明",
-        logic: "患者不易退游，隐藏分区间稳定，房间内常被用作「体验缓冲垫」，胜率趋近五五开。",
-        quote: "疑似签订电子义务劳动协议。",
-        advice: ["打断赢一输一节律", "固定双排减少随机税", "建议休息：少看战绩页对比"],
+        id: "worker",
+        title: "头铁型日活牛马",
+        punch: "你不是在上分，你是在给峡谷交社保。",
+        advice: [
+          "确诊五五开稳定器，建议查查有没有电子劳务合同",
+          "处方：双排固定好友，单排等同自愿献血",
+          "口服「关掉语音」一日三次",
+        ],
         when: (c) => c.record === "alternate",
       },
       {
-        id: "win_curse",
-        title: "连胜后难度上调反应",
-        seal: "病情证明",
-        logic: "连胜抬升房间难度后出现崩盘；属虚构「防飘机制」适应期，而非操作突然退化。",
-        quote: "你该赢够了，队友还可以再练练。",
-        advice: ["降低开局强度，改用熟练英雄", "少开麦争执", "保段优先于冲星"],
-        when: (c) => c.record === "win_then_lose" && (c.lane === "sup" || c.lane === "mid"),
+        id: "curse",
+        title: "连胜诅咒急性发作",
+        punch: "系统觉得你该赢够了；系统觉得你的队友还能再练练。",
+        advice: [
+          "连胜后强制降难度：禁用露娜/镜/李白等绝活自杀英雄",
+          "改锁妲己亚瑟降温，保住星星比保住面子重要",
+          "建议休息贰小时，禁止「我还能打」自诊",
+        ],
+        when: (c) => c.record === "win_then_lose",
       },
       {
-        id: "solo_orphan",
-        title: "边路单机隔离状态",
-        seal: "病情证明",
-        logic: "长期锁边路，匹配池默认抗压强、无需关怀；中野游走抱团对侧，患者塔下单机时长偏高。",
-        quote: "打的是五排，过的是单机。",
-        advice: ["提前约定支援窗口", "对线以不送为第一KPI", "建议休息：少为气势交两波节奏"],
-        when: (c) => c.lane === "top" && (c.record === "alternate" || c.record === "pure_lose"),
+        id: "orphan",
+        title: "对抗路单机晚期",
+        punch: "你打的是5v5，你的世界只有1v1和河蟹。",
+        advice: [
+          "中野已失联，请不要再@打野「来不来」",
+          "对线KPI改为：不送、不炸、活着看兵线",
+          "处方英雄：坦克边，禁用马超镜冲脸表演",
+        ],
+        when: (c) => c.lane === "top",
       },
       {
-        id: "rankup_tax",
-        title: "晋级税急性发作",
-        seal: "病情证明",
-        logic: "大段跃迁后进入适应期房间，队友磨合差、对手更凶，表现为「刚上就崩」。",
-        quote: "大段是门票，税在下一局收。",
-        advice: ["晋级后先打热身局", "勿连夜冲星", "今晚唯一目标：站稳"],
+        id: "tax",
+        title: "晋级税重症监护",
+        punch: "大段是门票，税在下一局用挂机队友征收。",
+        advice: [
+          "晋级成功后冷冻排位24小时",
+          "先打两把星耀局热身（心理作用，但有效）",
+          "禁止通宵冲荣耀，违者星耀见",
+        ],
         when: (c) => c.record === "rankup_crash",
       },
       {
-        id: "vision_saint",
-        title: "视野义务过劳",
-        seal: "病情证明",
-        logic: "游走位被默认定责全图保姆；开团被骂节奏，发育被骂没视野，责任感被过度征用。",
-        quote: "为地图打工，结算只记死亡。",
-        advice: ["把「能开」改成「该开」", "减少无效死亡", "门诊随诊：对齐开团预期"],
+        id: "sup",
+        title: "辅助保姆过劳综合征",
+        punch: "你在给全图当保姆，结算只记得你死了几次。",
+        advice: [
+          "开团前默念三遍：该开才开，能开不等于该开",
+          "禁用大乔「飞飞飞」然后自己先躺",
+          "C位骂你就静音，医嘱保护听力",
+        ],
         when: (c) => c.lane === "sup",
       },
       {
-        id: "jungle_blame",
-        title: "天降锅盖综合征",
-        seal: "病情证明",
-        logic: "打野位叙事压力最高，雪球与崩线易被归因于野；连败时归因失真加重。",
-        quote: "不是带不动，是情绪要出口。",
-        advice: ["前八分钟只拿能拿的目标", "少听催促，多看小地图", "建议休息治疗贰局"],
+        id: "jg",
+        title: "打野天降锅盖症",
+        punch: "不是你带不动四个人，是四个人的情绪都要找打野出口。",
+        advice: [
+          "前八分钟只打能拿的，别听「野呢」催命符",
+          "对面雪球时请记住：锅盖尺寸与你无关",
+          "处方：少入侵，多吃自己野，活着比帅重要",
+        ],
         when: (c) => c.lane === "jg",
       },
       {
-        id: "mid_tempo",
-        title: "中路全能期待过载",
-        seal: "病情证明",
-        logic: "既被要求对线又被要求支援；支援丢线权，清线则边路喊，期待相互矛盾。",
-        quote: "以为在带节奏，其实在填坑。",
-        advice: ["每局只选一个主支援侧", "与其两边迟到不如一边打穿", "随诊观察心态"],
+        id: "mid",
+        title: "中路两头不讨好症",
+        punch: "你一支援，线没了；你一清线，边路炸了。恭喜，你是人间补丁。",
+        advice: [
+          "每局只认准一边支援，两边都救=两边都送",
+          "禁用「我来支援」空头支票",
+          "被抓两次后允许发育，医生同意摆烂十分钟",
+        ],
         when: (c) => c.lane === "mid",
       },
       {
-        id: "adc_farm",
-        title: "发育工期延误反应",
-        seal: "病情证明",
-        logic: "发育需要时间，房间节奏不等待；「再两波」常被解读为消极参团。",
-        quote: "经济曲线诚实，房间耐心不诚实。",
-        advice: ["明确告知几级参团", "用一句话对齐预期", "建议休息：少默默挨打"],
+        id: "adc",
+        title: "射手发育妄想症",
+        punch: "你的经济很诚实，队友的耐心是假的。",
+        advice: [
+          "出门先喊：我六级再打团。不喊就算你默许送",
+          "辅助送了别跟着送，一个人进泉就够了",
+          "处方输出位：狄仁杰/孙尚香，禁用需要脑子的英雄",
+        ],
         when: (c) => c.lane === "adc",
       },
       {
-        id: "high_mmr_bait",
-        title: "高光诱饵型体验担保",
-        seal: "病情证明",
-        logic: "高段位房间对稳定发挥索取更强，患者易被写入他人上分/掉分剧本。",
-        quote: "定海神针，亦是背锅首选。",
-        advice: ["避开巅峰拥堵时段", "英雄池收缩至最熟两三名", "门诊随诊"],
+        id: "glory",
+        title: "荣耀局人形体验券",
+        punch: "高段位不是更菜，是剧本更贵。你是赞助商。",
+        advice: [
+          "避开晚上八点黄金坑货时段",
+          "英雄池砍到三个，绝活留给匹配秀",
+          "星星不重要，血压重要",
+        ],
         when: (c) => c.rank === "king_top" || c.rank === "king_mid",
       },
       {
-        id: "generic_victim",
-        title: "匹配池情绪回收状态",
-        seal: "病情证明",
-        logic: "患者会继续打、会反思、易揽责，连败被包装成「再来一把就能翻」。",
-        quote: "不是玄学针对，是太适合再打一把。",
-        advice: ["硬性停损：两连败洗澡", "三连败睡觉", "身体下线优先于心态下线"],
+        id: "star_jail",
+        title: "星耀无期徒刑",
+        punch: "不是你上不去王者，是星耀需要你留在这儿打工。",
+        advice: [
+          "接受现实：星耀是刑，不是段",
+          "少看「差一颗星」的诱惑，那是陷阱",
+          "处方：明天再排，今天先活",
+        ],
+        when: (c) => c.rank === "star",
+      },
+      {
+        id: "generic",
+        title: "峡谷情绪回收站患者",
+        punch: "不是玄学针对你，是你太适合「再来一把」。",
+        advice: [
+          "两连败洗澡，三连败睡觉，四连败卸载（假的）",
+          "把「我能带」改成「我先润」",
+          "本证明可发群：今晚输的不是技术",
+        ],
         when: () => true,
       },
     ];
 
-    const state = {
-      nickname: "",
-      rank: "",
-      record: "",
-      lane: "",
-      variant: 0,
-    };
-
+    const state = { nickname: "", rank: "", record: "", lane: "", variant: 0 };
     const $ = (id) => document.getElementById(id);
     const toastEl = $("toast");
 
@@ -666,8 +688,9 @@
     }
 
     function pickCase(ctx, rand) {
-      const matched = CASES.filter((c) => c.when(ctx));
-      const pool = matched.length ? matched : CASES.slice(-1);
+      // Prefer specific tags; only fall back to generic when nothing else fits.
+      const matched = CASES.filter((c) => c.id !== "generic" && c.when(ctx));
+      const pool = matched.length ? matched : CASES.filter((c) => c.id === "generic");
       return pool[Math.floor(rand() * pool.length)];
     }
 
@@ -689,10 +712,7 @@
 
     function syncGenerate() {
       $("generateBtn").disabled = !(
-        state.nickname.trim().length >= 1 &&
-        state.rank &&
-        state.record &&
-        state.lane
+        state.nickname.trim().length >= 1 && state.rank && state.record && state.lane
       );
     }
 
@@ -701,32 +721,27 @@
     }
 
     function buildPoster() {
-      const name = state.nickname.trim() || "匿名召唤师";
+      const name = state.nickname.trim() || "匿名冤种";
       const rand = mulberry32(hashString(seedKey()));
-      const ctx = {
-        rank: state.rank,
-        record: state.record,
-        lane: state.lane,
-      };
+      const ctx = { rank: state.rank, record: state.record, lane: state.lane };
       const item = pickCase(ctx, rand);
-      const loseN = 3 + Math.floor(rand() * 5); // 3-7
-      const gender = rand() > 0.5 ? "男" : "女";
-      const age = 16 + Math.floor(rand() * 18); // 16-33 峡谷年龄玩笑
+      const gender = pick(GENDERS, rand);
+      const ageYears = 1 + Math.floor(rand() * 8);
+      const age = `排龄${ageYears}年仍${labelOf(RANKS, state.rank)}`;
       const outpatientNo = String(1000000000 + Math.floor(rand() * 8999999999)).slice(0, 10);
-      const doctor = DOCTORS[Math.floor(rand() * DOCTORS.length)];
+      const doctor = pick(DOCTORS, rand);
+      const job = pick(JOBS[state.lane], rand);
+      const seal = pick(SEALS, rand);
+      const chief = buildChief(state.record, state.lane, rand);
       const today = new Date();
       const dateStr = `${today.getFullYear()}年${today.getMonth() + 1}月${today.getDate()}日`;
-      const job = `${JOB_TITLE[state.lane]}（${labelOf(RANKS, state.rank)}）`;
-      const chief = CHIEF_COMPLAINT[state.record](loseN);
-      const adviceHtml = item.advice
-        .map((a, i) => `<div>${i + 1}　${a}</div>`)
-        .join("");
+      const adviceHtml = item.advice.map((a, i) => `<div>${i + 1}　${a}</div>`).join("");
 
       $("poster").innerHTML = `
-        <div class="doc-hospital">峡谷冤种门诊部</div>
-        <div class="doc-sub">娱乐向情绪康复专科（非医疗机构 · 纯属玩梗）</div>
+        <div class="doc-hospital">王者荣耀精神卫生中心</div>
+        <div class="doc-sub">ELO专科 · 连跪急诊 · 娱乐玩梗科室（非医疗机构）</div>
         <div class="doc-title">诊断证明书</div>
-        <div class="doc-no">编号：YK${outpatientNo.slice(-6)}</div>
+        <div class="doc-no">编号：WZ${outpatientNo.slice(-6)}</div>
 
         <table class="info-table">
           <tr>
@@ -737,17 +752,17 @@
           </tr>
           <tr>
             <th>年龄</th>
-            <td>${age}岁</td>
+            <td colspan="3">${age}</td>
+          </tr>
+          <tr>
             <th>门诊号</th>
             <td>${outpatientNo}</td>
+            <th>段位</th>
+            <td>${labelOf(RANKS, state.rank)}</td>
           </tr>
           <tr>
             <th>职业</th>
-            <td colspan="3">${job}</td>
-          </tr>
-          <tr>
-            <th>分路/单位</th>
-            <td colspan="3">峡谷排位赛场 · ${labelOf(LANES, state.lane)}</td>
+            <td colspan="3">${job}（主玩${labelOf(LANES, state.lane)}）</td>
           </tr>
         </table>
 
@@ -758,8 +773,8 @@
           </div>
           <div class="row">
             <span class="label">诊断：</span>
-            <span class="value diagnosis-name">1、${item.title}</span>
-            <div style="margin-top:6px;font-size:0.84rem;color:#333;">（附记）${item.logic} ${item.quote}</div>
+            <div class="diagnosis-name">1、${item.title}</div>
+            <div class="punch">「${item.punch}」</div>
           </div>
           <div class="row">
             <span class="label">处理意见：</span>
@@ -769,9 +784,9 @@
 
         <div class="sign-block">
           <div class="seal" aria-hidden="true">
-            <div>峡谷冤种门诊部</div>
+            <div>王者ELO门诊</div>
             <div class="star">★</div>
-            <div>${item.seal}</div>
+            <div class="big">${seal}</div>
           </div>
           <div class="sign-inner">
             <div>经治医生：<span class="doctor-sign">${doctor}</span></div>
@@ -779,10 +794,10 @@
           </div>
         </div>
 
-        <p class="doc-note">注：本证明必须加盖本院公章有效，涂改无效。（玩梗章，无法律效力）</p>
-        <div class="share-hook">将此图发至群聊，立刻获得今日豁免权（假的）</div>
+        <p class="doc-note">注：本证明加盖玩梗章有效，涂改无效；无任何法律效力，输了别真去闹。</p>
+        <div class="share-hook">截图发群/贴吧<br>证明：今晚输的不是技术</div>
         <p class="fineprint">
-          娱乐声明：本单为段子生成内容，非医学诊断、非官方鉴定，与任何游戏公司及匹配算法无关；禁止用于攻击、歧视或骚扰他人。搜索「峡谷冤种门诊」可自测。
+          娱乐声明：本单为段子，非医学诊断，也不是真实匹配/隐藏分鉴定。玩梗而已，别引战。搜索「王者ELO门诊」。
         </p>
       `;
     }
@@ -804,23 +819,22 @@
     }
 
     async function savePoster() {
-      const node = $("poster");
       showToast("正在生成图片…");
       try {
-        const canvas = await html2canvas(node, {
+        const canvas = await html2canvas($("poster"), {
           backgroundColor: "#fffcf7",
           scale: Math.min(2.5, window.devicePixelRatio || 2),
           useCORS: true,
         });
         const link = document.createElement("a");
         const safe = (state.nickname.trim() || "summoner").replace(/[\\/:*?"<>|]/g, "_");
-        link.download = `峡谷冤种门诊-诊断证明书-${safe}.png`;
+        link.download = `王者ELO门诊-${safe}.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
-        showToast("已保存，去群里晒吧");
+        showToast("已保存，去群里伸冤吧");
       } catch (err) {
         console.error(err);
-        showToast("保存失败，请尝试截图");
+        showToast("保存失败，直接截图也行");
       }
     }
 
@@ -828,7 +842,6 @@
       state.nickname = e.target.value;
       syncGenerate();
     });
-
     $("generateBtn").addEventListener("click", showResult);
     $("saveBtn").addEventListener("click", savePoster);
     $("backBtn").addEventListener("click", () => {
@@ -838,7 +851,7 @@
     $("againBtn").addEventListener("click", () => {
       state.variant += 1;
       buildPoster();
-      showToast(state.variant === 1 ? "已开具平行病历" : `平行病历 #${state.variant + 1}`);
+      showToast("已开更惨的一张");
     });
 
     renderOptions($("rankOptions"), RANKS, "rank");
