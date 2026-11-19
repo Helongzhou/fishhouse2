@@ -303,11 +303,10 @@
       font-weight: 700;
       font-size: 1.02rem;
     }
-    .clinical ol {
-      margin: 6px 0 0 1.2em;
-      padding: 0;
+    .clinical .advice-list {
+      margin: 6px 0 0;
     }
-    .clinical li { margin: 2px 0; }
+    .clinical .advice-list div { margin: 2px 0; }
 
     .sign-block {
       margin-top: 28px;
@@ -720,7 +719,7 @@
       const job = `${JOB_TITLE[state.lane]}（${labelOf(RANKS, state.rank)}）`;
       const chief = CHIEF_COMPLAINT[state.record](loseN);
       const adviceHtml = item.advice
-        .map((a, i) => `<li>${i + 1}. ${a}</li>`)
+        .map((a, i) => `<div>${i + 1}　${a}</div>`)
         .join("");
 
       $("poster").innerHTML = `
@@ -764,7 +763,7 @@
           </div>
           <div class="row">
             <span class="label">处理意见：</span>
-            <ol>${adviceHtml}</ol>
+            <div class="advice-list">${adviceHtml}</div>
           </div>
         </div>
 
